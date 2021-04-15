@@ -1,1 +1,1 @@
-# catalog-model
+# catalogus-profiel
