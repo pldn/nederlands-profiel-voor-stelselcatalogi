@@ -1,8 +1,6 @@
-# catalogus-profiel
+# PLDN Catalogusprofiel Werkgroep
 
 Deze repository is onderdeel van de activiteiten voor de PLDN Catalogusprofiel Werkgroep. 
-
-<H2>PLDN Catalogusprofiel Werkgroep</H2>
 
 De PLDN Catalogusprofiel Werkgroep heeft de volgende ambities:
 -	Een basisprofiel met elkaar afspreken en beschrijven, waarmee verschillende catalogi meer uniform ingericht kunnen worden en makkelijker naar elkaars (meta)data kunnen verwijzen
