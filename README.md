@@ -10,4 +10,4 @@ De PLDN Catalogusprofiel Werkgroep heeft de volgende ambities:
 
 De volgende personen en organisatie nemen deel aan deze werkgroep:
 - Trekker: Finn Tiebout (Kadaster)
-- Deelnemers: Arjen Santema (Kadaster), Pano Maria (Kadaster), Marco Brattinga (Ordina), Hans Overbeek (KOOP), Linda van den Brink (Geonnovum), Frank Terpstra (Geonovum), Kees Trautwein (Logius), Mick Baggen (RWS), Koos Boersma (IHW), Jan Willem van Veen (ArchiXL), Pieter van Everdingen (PLDN)
+- Deelnemers: Arjen Santema (Kadaster), Roel Stap (Kadaster), Pano Maria (Kadaster), Marco Brattinga (Ordina), Hans Overbeek (KOOP), Linda van den Brink (Geonnovum), Frank Terpstra (Geonovum), Kees Trautwein (Logius), Mick Baggen (RWS), Koos Boersma (IHW), Jan Willem van Veen (ArchiXL), Pieter van Everdingen (PLDN)
