@@ -1,6 +1,6 @@
 # catalogus-profiel
 
-Deze repository is onderdeel van de activiteiten voor de <strong>[PLDN Catalogusprofiel Werkgroep](https://www.pldn.nl/wiki/PLDN_Catalogusprofiel_Werkgroep)</strong>. 
+Deze repository is onderdeel van de activiteiten voor de PLDN Catalogusprofiel Werkgroep. 
 
 <H2>PLDN Catalogusprofiel Werkgroep</H2>
 
