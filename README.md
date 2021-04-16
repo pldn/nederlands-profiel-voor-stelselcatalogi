@@ -3,7 +3,7 @@
 Deze repository is onderdeel van de activiteiten voor de PLDN Catalogusprofiel Werkgroep. 
 
 De PLDN Catalogusprofiel Werkgroep heeft de volgende ambities:
--	Een basisprofiel met elkaar afspreken en beschrijven, waarmee verschillende catalogi meer uniform ingericht kunnen worden en makkelijker naar elkaars (meta)data kunnen verwijzen
+-	Een basisprofiel met elkaar afspreken en beschrijven, waarmee verschillende catalogi meer uniform ingericht kunnen worden en makkelijker naar elkaars (meta)data kunnen verwijzen (en naast het basisprofiel kunnen er meerdere extensies zijn voor verschillende domeinen)
 -	Een best practice met elkaar afspreken en beschrijven, waarmee we de huidige knelpunten bij het maken, publiceren en beheren van verschillende thesauri op een praktische manier kunnen oplossen en die thesauri op een centrale plaats in BegrippenXL kunnen publiceren, zodat deze voor anderen makkelijker te vinden zijn en hergebruikt kunnen worden via een REST API
 
 De volgende personen en organisaties nemen deel aan deze werkgroep:
