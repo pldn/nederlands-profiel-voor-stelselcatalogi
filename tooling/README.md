@@ -1,6 +1,6 @@
 # Tooling
 
-In dit document staat een eerste overzicht met de belangrijkste tooling die de werkgroep kan gebruiken.
+In dit document staat een eerste overzicht met de tooling die de werkgroep kan gebruiken.
 
 - [PLDN VocBench](http://vocbench.pldn.nl/vocbench3)
 - [PLDN TriplyDB](https://data.pldn.nl/)
