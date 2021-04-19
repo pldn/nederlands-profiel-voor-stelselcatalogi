@@ -12,5 +12,5 @@ De ambitie is om in de 2e helft van april en mei de basis te leggen voor een bre
  
 De volgende personen en organisaties nemen deel aan deze werkgroep:
 
-Trekker: Finn Tiebout (Kadaster)
+Trekker: Finn Tiebout (Kadaster)<br>
 Deelnemers: Arjen Santema (Kadaster), Roel Stap (Kadaster), Pano Maria (Skemu), Marco Brattinga (Politie), Hans Overbeek (KOOP), Marc van Opeinen (KOOP), Linda van den Brink (Geonovum), Frank Terpstra (Geonovum), Kees Trautwein (Logius), Mick Baggen (RWS), Koos Boersma (IHW),  Gerald Groot Roesink (DUO), Jan Willem van Veen (ArchiXL), Pieter van Everdingen (PLDN)
