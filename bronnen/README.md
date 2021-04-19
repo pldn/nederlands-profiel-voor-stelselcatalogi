@@ -8,13 +8,5 @@ In dit document staat een eerste overzicht met de belangrijkste bronnen die de w
 -	[Datamodel Stelselcatalogus Omgevingswet](https://stelselcatalogus.omgevingswet.overheid.nl/datamodel)
 -	...
 
-<strong>Tooling</strong>
-- [PLDN VocBench](http://vocbench.pldn.nl/vocbench3)
-- [LD Wizards](https://github.com/netwerk-digitaal-erfgoed/LDWizard)
-- [PLDN OpenRefine](http://openrefine.server.pldn.nl/)
-- [PLDN TriplyDB](https://data.pldn.nl/)
-- [BegrippenXL](https://www.begrippenxl.nl/en/)
-
-
 Deze lijst nog verder aanvullen met de bronnen die nu ook relevant zijn en binnen de scope vallen van de werkzaamheden van de werkgroep.
 
