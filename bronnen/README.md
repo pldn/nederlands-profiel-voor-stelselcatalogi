@@ -2,12 +2,13 @@
 
 In dit document staat een eerste overzicht met de belangrijkste bronnen die de werkgroep kan gebruiken.
 
-Best Practices, Profielen en Datamodellen
+<h3>Best Practices, Profielen en Datamodellen</h3>
 -	[BP4mc2]( https://bp4mc2.org/20181107/)
 -	[Nederlands profiel voor gegevenscatalogi](https://bp4mc2.org/profiles/)
 -	[Datamodel Stelselcatalogus Omgevingswet](https://stelselcatalogus.omgevingswet.overheid.nl/datamodel)
+-	...
 
-Tooling
+<h3>Tooling</h3>
 - [PLDN VocBench](http://vocbench.pldn.nl/vocbench3)
 - [LD Wizards](https://github.com/netwerk-digitaal-erfgoed/LDWizard)
 - [PLDN OpenRefine](http://openrefine.server.pldn.nl/)
