@@ -1,6 +1,6 @@
 #  Werkgroepsessies
 
-Sessies van de PLDN Catalogusprofiel Werkgroep<br> 
+Sessies van de PLDN Werkgroep Nederlands profiel voor stelselcatalogi<br> 
 (2-wekelijks op donderdag van 15:00-17:00 uur)<br><br>
 
 - 4e sessie: 29 april 2021
