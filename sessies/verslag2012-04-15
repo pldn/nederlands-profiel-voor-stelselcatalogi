@@ -1,0 +1,20 @@
+#Verslag werkgroep ‘’Nederlands Model Stelselcatalogus’ 15 april
+
+*Aanwezig:* Tiebout, Finn, Stap, Roel, Arjen Santema (Kadaster), Kees Trautwein (Logius.nl), Koos Boersma (IHW), Hans Overbeek (Koop), Mick Baggen (GPO), Pieter van Everdingen (PLDN),  Pano Mario (Skemu), Linda van den Brink, Frank Terpstra (Geonuvom), Jan Willem van Veel (ArchiXL)
+*Afwezig:* Jan Voskuil (Taxonic), Marc van Opijnen (KOOP), Gerald Groot Roessink (DUO), Henk Nijstad (Kennisnet), Marco Brattinga (Ordina)
+
+*	De eerste helft van de bijeenkomst stond de opzet van TOOI.
+*	De presentatie over TOOI zette meteen de piketpaaltjes voor de scope van de discussie: 
+we focussen ons in eerste instantie op een model voor concepten. Een ‘concept’ is in dit verband synoniem met een ‘begrip’. Het is een term met een definitie, nodig om als mens dingen te begrijpen. Het model is een thesaurus, die naast definities ook hiërarchische en andere semantische relaties tussen concepten kan beschrijven.
+*	Het onderscheiden van een aparte use-case voor een beschrijvende, voor mensen leesbare thesaurus naast een formele, voor computers interpreteerbare ontologie is een breed gedragen principe. Dit onderscheid wordt gemaakt in de Stelselcatalogus voor de Basisregistraties, in de Catalogus voor het DSO, in de opzet van de SOR (Samenhangende Objecten Registratie) in het domein van de geo-basisregistraties en in de NEN 8035 en in de nieuwere NEN 2660 voor de bebouwde omgeving.
+*	Breed gedragen is ook SKOS als standaard voor het op het web publiceren van zo’n thesaurus. Als je daarvoor geen SKOS gebruikt heb je als overheids- of verwante organisatie overigens ook wat uit te leggen volgens de pas-toe-leg-uit lijst, waar SKOS op staat.
+*	Onderwerpen die aan de orde kwamen, die in het volgende overleg moeten worden uitgediept zijn:
+**	Omgaan met labels. Waarvoor gebruik je het prefLabel? Is er 1 prefLabel mogelijk of meerdere (bijvoorbeeld voor iedere vertaling 1)? Wanneer gebruik je een altLabel? Hoe ga je om met de good practice om voor iedere resource op het web een rdfs:label te definiëren? Naast een prefLabel? Hoe disambigueren bij homoniemen? 
+**	Toekennen van uri’s: betekenisvol op basis van prefLabels? Of anders? Of niet betekenisvol?
+**	Omgaan met definities: Formele definitie versus publieksvriendelijke definitie op taalniveau B2?
+*	De werkwijze waarbij we starten met het delen van een good practice, zoals deze keer TOOI en in het 2e deel bij de bijeenkomst werken aan de inhoudelijke uitdieping van de onderwerpen, lijkt prima. Voor de volgende keer zal Mick de NEN 2660, die momenteel ter consultatie ligt, toelichten.
+*	Samenwerking:
+**	We gebruiken de PLDN website als algemene pagina voor deze werkgroep. Daar worden ook de bijeenkomsten aangekondigd.
+**	We gebruiken de PLDN github pagina als samenwerkingspagina om de good practices en uitwerkingen te delen. Hier worden ook de verslagen gedeeld.
+
+De volgende werkgroep vindt plaats op 2 april van 15 tot 17 uur. Nieuwe mensen die een actieve bijdrage willen brengen aan deze werkgroep kunnen zich aanmelden bij [Finn Tiebout](mailto:finn.tibout@kadaster.nl).
