@@ -1,5 +1,5 @@
 <h2>Begrippenkader of thesaurus</h2>
-** Voorkeursterm
+<h3>Voorkeursterm</h3>
 De good practices voor het gebruik van een voorkeursterm
 ** Andere labels
 De good practices voor het gebruik van andere labels
