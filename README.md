@@ -1,6 +1,8 @@
 # Nederlands profiel voor stelselcatalogi
 
 Deze repository is onderdeel van de activiteiten voor de PLDN Werkgroep Nederlands profiel voor stelselcatalogi.
+
+De werkversie van het profiel is te vinden op https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi.
  
 De PLDN Werkgroep ‘Nederlands profiel voor stelselcatalogi’ als ambitie een basisprofiel voor stelselcatalogi met elkaar te beschrijven, waarmee verschillende stelselcatalogi interoperabel ingericht kunnen worden. De bedoeling is dat catalogi gemakkelijk naar elkaars begrippen kunnen verwijzen. Daarmee ontstaat en soort van samenhangend stelsel van stelselcatogi, waarbij ieder stelsel een samenhangend domein representeert. Voorbeelden zijn de [stelselcatalogus voor de basisregistraties](https://www.stelselcatalogus.nl/) (de moeder van alle catalogi), de [stelselcatalogus voor het DSO](https://stelselcatalogus.omgevingswet.overheid.nl/) en de [stelselcatalogus voor het Zorgeloos Vastgoed Stelsel](https://taxonomie.zorgeloosvastgoed.nl/).  Naast het basisprofiel zullen meerdere extensies ontstaan. Dit kunnen extensies zijn om tot een volledige ISO compatable thesaurus te komen, maar ook extensies die relevant zijn voor een specifiek domein. Er lijkt in Nederland op dit moment echt momentum om dit gezamenlijk op te pakken en naar semantisch interoperabele publiek-private domeinen toe te werken.
  
