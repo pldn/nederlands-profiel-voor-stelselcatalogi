@@ -6,8 +6,8 @@ In dit document staat een eerste overzicht met de belangrijkste bronnen die de w
 -	[BP4mc2]( https://bp4mc2.org/20181107/)
 -	[Nederlands profiel voor gegevenscatalogi](https://bp4mc2.org/profiles/)
 -	[Datamodel Stelselcatalogus Omgevingswet](https://stelselcatalogus.omgevingswet.overheid.nl/datamodel)
-- [aanzet voor Stelselcatalogus Onderwijs](https://www.edustandaard.nl/standaard_afspraken/mim-profiel-onderwijs/mim-profiel-onderwijs-0-7/)
-- 
+- [Aanzet voor Stelselcatalogus Onderwijs](https://www.edustandaard.nl/standaard_afspraken/mim-profiel-onderwijs/mim-profiel-onderwijs-0-7/)
+- [Richtlijnen GMK v1.3](https://github.com/pldn/nederlands-profiel-voor-stelselcatalogi/blob/main/bronnen/Richtlijnen%20GMK%20v1.3.pdf)
 
 Deze lijst nog verder aanvullen met de bronnen die nu ook relevant zijn en binnen de scope vallen van de werkzaamheden van de werkgroep.
 
