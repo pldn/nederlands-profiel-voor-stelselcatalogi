@@ -1,4 +1,4 @@
-<h2>Begrippenkader of thesaurus</h2>
+## Begrippenkader of thesaurus 
 <h3>Voorkeursterm</h3>
 De good practices voor het gebruik van een voorkeursterm
 <h3>Andere labels</h3>
