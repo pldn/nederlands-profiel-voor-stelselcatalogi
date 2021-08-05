@@ -5,7 +5,7 @@ Het profiel dient tenminste aan de volgende richtlijnen te voldoen:
 <ul>
   <li>Laagdrempelig door modulair opbouw en duidelijk in vertalingen en uitleg.</li>
   <li>We beginnen met begrippen, de overeenkomstige behoefte binnen de diverse deelnemende organisaties ligt voor een groot deel bij begrippen, dit is het laaghangende fruit voor een overeengekomen profiel.</li>
-  <ul><li>Doel van het profiel is in eerste instantie om begrippen binnen organisaties kenbaar te maken.</li></ul>
+  <li>Doel van het profiel is in eerste instantie om begrippen binnen organisaties kenbaar te maken.</li>
   <li>Onder Concept en Begrip verstaan we hetzelfde.
   <li>Zoveel mogelijk in het Nederlands, dus zowel de labels, termen en de definities. De context is in principe de Nederlandse omgeving. 
   <li>Voorlopig concentreren we ons tot hiërarchische relaties en eenvoudige niet hiërarchische relaties om te kaderen. We gaan voorlopig geen domein specifieke relaties introduceren. <br>
