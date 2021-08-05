@@ -21,7 +21,7 @@ We onderkennen vier niveaus voor Catalogi:
 - **Thesaurus** (begrippen en hiërarchische relaties en tevens eenvoudige niet hiërarchische relaties).
 - **Ontolgy** (Samenhangend stelsel waarover geredeneerd kan worden met ‘specifieke’ relaties.
 
-### uitgangspunten Thesaurus:
+Uitgangspunten Thesaurus:
 Een Thesaurus kent drie type relaties: 
   - Hiërarchisch (is specialisatie van)
   - Associatief (zie ook)
@@ -29,8 +29,8 @@ Een Thesaurus kent drie type relaties:
  
  Een Thesaurus kent vaak ook documentatie eigenschappen (scope notes) en mogelijk een history model. 
 
-## functionele invulling
-### Verplichte eigenschappen van een begrip:
+## Functionele invulling
+### Verplichte begrip eigenschappen:
 
 - Een begrip kent altijd een **_voorkeursterm_**. Het woord (de voorkeursterm) welke binnen het betreffende domein hoofdzakelijk gebruikt wordt om een bepaald begrip kenbaar te maken. De voorkeursterm vind zijn oorsprong in de natuurlijke taal of vakjargon.
 - Een begrip kent altijd een **_definitie_** (niet perse publieksvriendelijk, wel juridisch geldig waar mogelijk), deze definitie dient compleet en sluitend te zijn en voldoende informatie te bevatten om binnen het domein herkenbaar te zijn. 
@@ -42,7 +42,7 @@ In een begrippenlijst met plaatsnamen kan bijvoorbeeld expliciet de keuze gemaak
 Het toevoegen van context aan begrippen dient niet om dubbellingen van termen te voorkomen, het is goed mogelijk dat binnen een bepaald domein een term met verschillende definities voorkomt. 
     
   
-### Optionele eigenschappen van een begrip:
+### Optionele begrip eigenschappen:
 - Een begrip kan een gebruiksvriendelijke toelichting hebben als aanvulling op de definitie. 
 - Een begrip kan één of meerdere alternatieven termen hebben. 
 - Een begrip kan één of meerdere alternatieve schrijfwijzen (ook typefouten) hebben. 
