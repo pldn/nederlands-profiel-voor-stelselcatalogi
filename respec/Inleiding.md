@@ -1,4 +1,4 @@
-<h2>Inleiding</h2>
+## Inleiding
 
 De PLDN Werkgroep ‘Nederlands profiel voor stelselcatalogi’ heeft als ambitie een basisprofiel voor stelselcatalogi te beschrijven, waarmee verschillende stelselcatalogi interoperabel ingericht kunnen worden. De bedoeling is dat catalogi gemakkelijk naar elkaars concepten (begrippen) kunnen verwijzen. Daarmee ontstaat en soort van samenhangend stelsel van stelselcatogi, waarbij ieder stelsel een samenhangend domein representeert. Voorbeelden zijn de stelselcatalogus voor de basisregistraties (de moeder van alle catalogi), de stelselcatalogus voor het DSO en de stelselcatalogus voor het Zorgeloos Vastgoed Stelsel. Naast het basisprofiel zullen meerdere extensies ontstaan. Dit kunnen extensies zijn om tot een volledige ISO compatable thesaurus te komen, maar ook extensies die relevant zijn voor een specifiek domein. Er lijkt in Nederland op dit moment nu momentum om dit gezamenlijk op te pakken en naar semantisch interoperabele publiek-private domeinen toe te werken.
 
