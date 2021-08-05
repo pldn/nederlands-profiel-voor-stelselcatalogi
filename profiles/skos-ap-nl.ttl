@@ -1,0 +1,6 @@
+
+@prefix skos-ap-nl: <http://xxx.org/nederlands-profiel-voor-stelselcatalogi#>. 
+
+#---------------------
+# Concept
+#---------------------
