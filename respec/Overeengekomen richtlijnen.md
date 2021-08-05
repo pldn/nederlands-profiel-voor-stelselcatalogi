@@ -1,4 +1,4 @@
-# Overeengekomen richtlijnen
+<h2> Overeengekomen richtlijnen </h2>
 
 Om het profiel succesvol te laten zijn dient het breed gedragen te zijn. Om dit te realiseren hebben we een breed scala aan vertegenwoordigers samen gesteld vanuit diverse (semi-overheid)instanties. Vanuit deze werkgroep hebben we een aantal richtlijnen opgesteld voor het profiel. Deze lijst is niet uitputtend en volledig, maar dient als een basis. 
 
