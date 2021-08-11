@@ -15,9 +15,9 @@ Het profiel dient tenminste aan de volgende richtlijnen te voldoen:
 
 Dit heeft als consequentie dat we tot en met Thesaurus niveau werken en voorlopig niet verder.
 
-### Vier niveau's voor Catalogi:
+### Vier niveau's voor begrippenkaders:
 
-We onderkennen vier niveaus voor Catalogi:
+We onderkennen vier niveaus voor begrippenkaders:
 - **Begrippenlijsten** (begrippen binnen een gegeven domein kenbaar maken, geen onderlinge relaties)
 - **Taxonomie** (begrippen en hiërarchische relaties)
 - **Thesaurus** (begrippen en hiërarchische relaties en tevens eenvoudige niet hiërarchische relaties).
@@ -25,12 +25,11 @@ We onderkennen vier niveaus voor Catalogi:
 
 Uitgangspunten Thesaurus:
 Een Thesaurus kent drie type relaties: 
-  - Hiërarchisch (is specialisatie van)
-  - Associatief (zie ook)
-  - Equivalent (is gelijk aan)
+  - **Hiërarchisch** (is specialisatie van)
+  - **Associatief** (zie ook)
+  - **Equivalent** (is gelijk aan)
 
 Een Thesaurus kent vaak ook documentatie eigenschappen (scope notes) en mogelijk een history model. 
-
 
 Binnen deze vier niveau's herkennen we de volgende usecases:
 - **Begrippenlijsten**              TODO
