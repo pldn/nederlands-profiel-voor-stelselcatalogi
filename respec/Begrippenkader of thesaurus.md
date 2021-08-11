@@ -15,7 +15,7 @@ Het profiel dient tenminste aan de volgende richtlijnen te voldoen:
 
 Dit heeft als consequentie dat we tot en met Thesaurus niveau werken en voorlopig niet verder.
 
-## Vier niveau's voor begrippenkaders:
+## Vier niveau's voor begrippenkaders
 
 We onderkennen vier niveaus voor begrippenkaders:
 - **Begrippenlijsten** (begrippen binnen een gegeven domein kenbaar maken, geen onderlinge relaties)
@@ -23,7 +23,7 @@ We onderkennen vier niveaus voor begrippenkaders:
 - **Thesaurus** (begrippen en hiërarchische relaties en tevens eenvoudige niet hiërarchische relaties).
 - **Thesaurus met extra semantiek** (Samenhangend stelsel waarover geredeneerd kan worden met ‘specifieke’ relaties).
 
-Uitgangspunten Thesaurus:
+## Drie type relaties
 Een Thesaurus kent drie type relaties: 
   - **Hiërarchisch** (is specialisatie van)
   - **Associatief** (zie ook)
