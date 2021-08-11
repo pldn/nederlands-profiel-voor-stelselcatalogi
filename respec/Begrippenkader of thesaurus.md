@@ -1,6 +1,6 @@
-## Begrippenkader
+# Begrippenkader
 
-### Overeengekomen richtlijnen
+## Overeengekomen richtlijnen
 
 Om het profiel succesvol te laten zijn dient het breed gedragen te zijn. Om dit te realiseren hebben we een breed scala aan vertegenwoordigers samen gesteld vanuit diverse (semi-overheid)instanties. Vanuit deze werkgroep hebben we een aantal richtlijnen opgesteld voor het profiel. Deze lijst is niet uitputtend en volledig, maar dient als een basis. 
 
@@ -15,7 +15,7 @@ Het profiel dient tenminste aan de volgende richtlijnen te voldoen:
 
 Dit heeft als consequentie dat we tot en met Thesaurus niveau werken en voorlopig niet verder.
 
-### Vier niveau's voor begrippenkaders:
+## Vier niveau's voor begrippenkaders:
 
 We onderkennen vier niveaus voor begrippenkaders:
 - **Begrippenlijsten** (begrippen binnen een gegeven domein kenbaar maken, geen onderlinge relaties)
