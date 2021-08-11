@@ -1,5 +1,5 @@
-## Waardelijsten
+# Informatiemodellen
 
-### Overeengekomen richtlijnen
+## Overeengekomen richtlijnen
 
-## Functionele invulling
+# Functionele invulling
