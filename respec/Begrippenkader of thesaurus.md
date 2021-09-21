@@ -53,9 +53,9 @@ Het toevoegen van context aan begrippen dient niet om dubbellingen van termen te
 - Een begrip kan een gebruiksvriendelijke toelichting hebben als aanvulling op de definitie. 
 
 ### Optionele begrip eigenschappen:
-- Een begrip kan één of meerdere alternatieven termen hebben. 
-- Een begrip kan één of meerdere alternatieve schrijfwijzen (ook typefouten) hebben. 
-- Een begrip kan één of meerdere zoektermen en/of trefwoorden hebben. 
+- Een begrip kan één of meerdere [alternatieven termen](https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi/#andere-labels) hebben. 
+- Een begrip kan één of meerdere [alternatieve schrijfwijzen](https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi/#andere-labels) (ook typefouten) hebben. 
+- Een begrip kan één of meerdere [zoektermen en/of trefwoorden](andere-labels) hebben. 
 - Een begrip kan hetzelfde zijn als een ander begrip.
 - Een begrip kan ongeveer hetzelfde zijn als een ander begrip. 
 - Een begrip kan een verbijzondering zijn van een ander begrip 
@@ -69,9 +69,9 @@ We gebruiken geen post of prefix om  voorkeurstermen context te geven of uniek t
 Een begrip krijgt expliciet één rdfs:Label om compatibiliteit met bestaande tools te bevorderen.
 
 ### Andere labels
-- skos:altLabel
-Alternatieve lexicale labels, bruikbaar voor aanvullende termen (labels) naast de voorkeursterm. Bruikbaar voor bijvoorbeeld synoniemen. 
-- skos:hiddenLabel
+- Alternatieve termen (alternative labels)
+Alternatieve lexicale termen (labels), bruikbaar voor aanvullende termen (labels) naast de voorkeursterm. Bruikbaar voor bijvoorbeeld synoniemen. 
+- Verborgen termen (hidden labels)
 Een lexicaal label welke niet bedoeld is om getoond te worden, maar enkel dient als hulpmiddel voor toepassingen die op tekst gebaseerde indexerings- en zoekbewerkingen uitvoeren. Verborgen labels kunnen bijvoorbeeld gebruikt worden voor veel voorkomende type of spellingsfouten. 
 
 ### Definitie en uitleg
