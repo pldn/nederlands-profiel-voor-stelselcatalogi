@@ -53,9 +53,9 @@ Het toevoegen van context aan begrippen dient niet om dubbellingen van termen te
 - Een begrip kan een gebruiksvriendelijke toelichting hebben als aanvulling op de definitie. 
 
 ### Optionele begrip eigenschappen:
-- Een begrip kan één of meerdere [alternatieven termen](https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi/#andere-labels) hebben. 
-- Een begrip kan één of meerdere [alternatieve schrijfwijzen](https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi/#andere-labels) (ook typefouten) hebben. 
-- Een begrip kan één of meerdere [zoektermen en/of trefwoorden](andere-labels) hebben. 
+- Een begrip kan één of meerdere [alternatieven termen](#andere-labels) hebben. 
+- Een begrip kan één of meerdere [alternatieve schrijfwijzen](#andere-labels) (ook typefouten) hebben. 
+- Een begrip kan één of meerdere [zoektermen en/of trefwoorden](#andere-labels) hebben. 
 - Een begrip kan hetzelfde zijn als een ander begrip.
 - Een begrip kan ongeveer hetzelfde zijn als een ander begrip. 
 - Een begrip kan een verbijzondering zijn van een ander begrip 
