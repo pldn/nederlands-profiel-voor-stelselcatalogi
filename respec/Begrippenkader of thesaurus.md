@@ -56,9 +56,9 @@ Het toevoegen van context aan begrippen dient niet om dubbellingen van termen te
 - Een begrip kan één of meerdere [alternatieven termen](#andere-labels) hebben. 
 - Een begrip kan één of meerdere [alternatieve schrijfwijzen](#andere-labels) (ook typefouten) hebben. 
 - Een begrip kan één of meerdere [zoektermen en/of trefwoorden](#andere-labels) hebben. 
-- Een begrip kan [hetzelfde zijn als](#Semantische relaties) een ander begrip.
-- Een begrip kan [ongeveer hetzelfde zijn](#Semantische relaties) als een ander begrip. 
-- Een begrip kan [een verbijzondering zijn](#Semantische relaties) van een ander begrip 
+- Een begrip kan [hetzelfde zijn als](#semantische-relaties) een ander begrip.
+- Een begrip kan [ongeveer hetzelfde zijn](#semantische-relaties) als een ander begrip. 
+- Een begrip kan [een verbijzondering zijn](#semantische-relaties) van een ander begrip 
 
 ## Best practices voor gebruik:
 
