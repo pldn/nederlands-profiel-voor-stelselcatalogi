@@ -56,9 +56,9 @@ Het toevoegen van context aan begrippen dient niet om dubbellingen van termen te
 - Een begrip kan één of meerdere [alternatieven termen](#andere-labels) hebben. 
 - Een begrip kan één of meerdere [alternatieve schrijfwijzen](#andere-labels) (ook typefouten) hebben. 
 - Een begrip kan één of meerdere [zoektermen en/of trefwoorden](#andere-labels) hebben. 
-- Een begrip kan hetzelfde zijn als een ander begrip.
-- Een begrip kan ongeveer hetzelfde zijn als een ander begrip. 
-- Een begrip kan een verbijzondering zijn van een ander begrip 
+- Een begrip kan [hetzelfde zijn als](#Semantische relaties) een ander begrip.
+- Een begrip kan [ongeveer hetzelfde zijn](#Semantische relaties) als een ander begrip. 
+- Een begrip kan [een verbijzondering zijn](#Semantische relaties) van een ander begrip 
 
 ## Best practices voor gebruik:
 
@@ -78,11 +78,16 @@ Een lexicaal label welke niet bedoeld is om getoond te worden, maar enkel dient 
 De definitie van een begrip is een volledige uitleg van de betekenis van het begrip. De definitie hoeft niet persé gebruiksvriendelijk te zijn en kan in de jargon van het domein worden vastgelegd. Denk aan de juridische definitie van een begrip uit de wet. 
 Indien een bron aanwezig is voor een definitie, de definitie uit die bron overnemen en verwijzen naar de bron. Deze bron hoeft niet persé digitaal te zijn. 
 
-### Interne semantische relaties
-Relaties tussen twee begrippen 
+### Semantische relaties
+TODO: verschillende type semantische relaties nog verder uitwerken
 
+#### Interne semantische relaties
+Relaties tussen twee begrippen binnen het huidige begrippenkader
+related
+broader: 
+narrower
 
-### Externe semantische relaties
+#### Externe semantische relaties
 Relaties tussen twee begrippen in verschillende begrippenkaders kunnen gelegd worden middels:
 closeMatch: is ongeveer hetzelfde als
 exactMatch: is exact hetzelfde als
