@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="nl"><head>
 <meta charset="utf-8">
-<meta name="generator" content="ReSpec 26.13.4">
+<meta name="generator" content="ReSpec 26.16.1">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <style>
 dfn{cursor:pointer}
@@ -33,7 +33,7 @@ dfn{cursor:pointer}
 100%{transform:scale(1,1)}
 }
 .hljs{background:0 0!important}
-a abbr,h1 abbr,h2 abbr,h3 abbr,h4 abbr,h5 abbr,h6 abbr{border:none}
+:is(h1,h2,h3,h4,h5,h6,a) abbr{border:none}
 dfn{font-weight:700}
 a.internalDFN{color:inherit;border-bottom:1px solid #99c;text-decoration:none}
 a.externalDFN{color:inherit;border-bottom:1px dotted #ccc;text-decoration:none}
@@ -75,11 +75,11 @@ details.respec-tests-details>li{padding-left:1em}
 a[href].self-link:hover{opacity:1;text-decoration:none;background-color:transparent}
 h2,h3,h4,h5,h6{position:relative}
 aside.example .marker>a.self-link{color:inherit}
-h2>a.self-link,h3>a.self-link,h4>a.self-link,h5>a.self-link,h6>a.self-link{border:none;color:inherit;font-size:83%;height:2em;left:-1.6em;opacity:.5;position:absolute;text-align:center;text-decoration:none;top:0;transition:opacity .2s;width:2em}
-h2>a.self-link::before,h3>a.self-link::before,h4>a.self-link::before,h5>a.self-link::before,h6>a.self-link::before{content:"§";display:block}
+:is(h2,h3,h4,h5,h6)>a.self-link{border:none;color:inherit;font-size:83%;height:2em;left:-1.6em;opacity:.5;position:absolute;text-align:center;text-decoration:none;top:0;transition:opacity .2s;width:2em}
+:is(h2,h3,h4,h5,h6)>a.self-link::before{content:"§";display:block}
 @media (max-width:767px){
 dd{margin-left:0}
-h2>a.self-link,h3>a.self-link,h4>a.self-link,h5>a.self-link,h6>a.self-link{left:auto;top:auto}
+:is(h2,h3,h4,h5,h6)>a.self-link{left:auto;top:auto}
 }
 @media print{
 .removeOnSave{display:none}
@@ -160,33 +160,35 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     "repoURL": "pldn/nederlands-profiel-voor-stelselcatalogi"
   },
   "xref": "web-platform",
-  "publishISODate": "2021-09-21T00:00:00.000Z",
-  "generatedSubtitle": "Unofficial Draft 21 September 2021"
+  "publishISODate": "2021-10-21T00:00:00.000Z",
+  "generatedSubtitle": "Unofficial Draft 21 October 2021"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-UD"></head>
   <body class="h-entry" data-cite="HTML INFRA URL WEBIDL DOM FETCH"><div class="head">
      <h1 id="title" class="title">Nederlands profiel voor stelselcatalogi </h1>
     
-    <h2>
-      Unofficial Draft
-      <time class="dt-published" datetime="2021-09-21">21 September 2021</time>
-    </h2>
-    <dl>
-      
-      <dt>Laatste werkversie:</dt><dd><a href="https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi/">https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi/</a></dd>
-      
-      
-      
-      
-      
-      <dt>Redacteurs:</dt>
-      <dd class="editor p-author h-card vcard">
+    <h2>Unofficial Draft <time class="dt-published" datetime="2021-10-21">21 October 2021</time></h2>
+    <details open="">
+      <summary>More details about this document</summary>
+      <dl>
+        
+        <dt>Laatste werkversie:</dt><dd><a href="https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi/">https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi/</a></dd>
+        <dt>History:</dt><dd>
+        <a href="https://github.com/pldn/nederlands-profiel-voor-stelselcatalogi/commits/main">Commit history</a>
+      </dd>
+        
+        
+        
+        
+        
+        <dt>Redacteurs:</dt>
+        <dd class="editor p-author h-card vcard">
     <span class="p-name fn">Finn Tiebout</span>
   </dd><dd class="editor p-author h-card vcard">
     <span class="p-name fn">Arjen Santema</span>
   </dd>
-      
-      <dt>Auteurs:</dt><dd class="editor p-author h-card vcard">
+        
+        <dt>Auteurs:</dt><dd class="editor p-author h-card vcard">
     <span class="p-name fn">Finn Tiebout</span>
   </dd><dd class="editor p-author h-card vcard">
     <span class="p-name fn">Roel Stap</span>
@@ -219,23 +221,24 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   </dd><dd class="editor p-author h-card vcard">
     <span class="p-name fn">Jos van der Arend</span>
   </dd>
-      <dt>Doe mee:</dt><dd>
-    <a href="https://github.com/pldn/nederlands-profiel-voor-stelselcatalogi/">GitHub pldn/nederlands-profiel-voor-stelselcatalogi</a>
-  </dd><dd>
-    <a href="https://github.com/pldn/nederlands-profiel-voor-stelselcatalogi/issues/">Dien een melding in</a>
-  </dd><dd>
-    <a href="https://github.com/pldn/nederlands-profiel-voor-stelselcatalogi/commits/main">Revisiehistorie</a>
-  </dd><dd>
-    <a href="https://github.com/pldn/nederlands-profiel-voor-stelselcatalogi/pulls/">Pull requests</a>
-  </dd>
-    </dl>
+        <dt>Feedback:</dt><dd>
+        <a href="https://github.com/pldn/nederlands-profiel-voor-stelselcatalogi/">GitHub pldn/nederlands-profiel-voor-stelselcatalogi</a>
+        (<a href="https://github.com/pldn/nederlands-profiel-voor-stelselcatalogi/pulls/">pull requests</a>,
+        <a href="https://github.com/pldn/nederlands-profiel-voor-stelselcatalogi/issues/new/choose">new issue</a>,
+        <a href="https://github.com/pldn/nederlands-profiel-voor-stelselcatalogi/issues/">open issues</a>)
+      </dd>
+        
+      </dl>
+    </details>
     
     
     
     <p class="copyright">
-      This document is licensed under a
-      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/legalcode" class="subfoot">Creative Commons Attribution 4.0 International Public License</a>
-      (CC-BY).
+      Copyright ©
+      2021
+      the document editors/authors.
+      Text is available under the
+            <a rel="license" href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 International Public License</a>; additional terms may apply.
     </p>
     <hr title="Separator for header">
   </div>
