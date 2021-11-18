@@ -42,12 +42,10 @@ Binnen deze vier niveau's herkennen we de volgende usecases:
 
 - Een begrip kent altijd één **_voorkeursterm_**. Het woord (de voorkeursterm) welke binnen het betreffende domein hoofdzakelijk gebruikt wordt om een bepaald begrip kenbaar te maken. De voorkeursterm vindt zijn oorsprong in de natuurlijke taal of vakjargon.
 - Een begrip kent altijd een **_definitie_** (niet perse publieksvriendelijk, wel juridisch geldig waar mogelijk), deze definitie dient compleet en sluitend te zijn en voldoende informatie te bevatten om binnen het domein herkenbaar te zijn. 
-- Een begrip kent altijd een **_context_** ter aanvulling van de definitie. Bijvoorbeeld om het onderscheid te maken tussen verschillende domeinen. Denk aan water en bouw steiger. 
-
+- Een begrip kent altijd een **_context_** ter aanvulling van de definitie. Bijvoorbeeld om het onderscheid te maken tussen verschillende domeinen. Denk aan water en bouw _steiger_. 
 We voegen bij voorkeur geen context aan de term toe indien dit niet strikt noodzakelijk is. Er zijn scenario’s te bedenken waarin dit toch noodzakelijk is indien de drie eigenschappen (_**term, definitie, context**_) niet voldoende zijn om een begrip te duiden/identificeren. 
-In een begrippenlijst met plaatsnamen kan bijvoorbeeld expliciet de keuze gemaakt worden om _Hengelo (GLD)_ en _Hengelo (OV)_ als termen aan te houden. Mogelijk omdat binnen het gegeven domein dit de manier is waarop over dit begrip gecommuniceerd wordt, het wordt zo gebruikt in de natuurlijke taal. 
-
-Het toevoegen van context aan begrippen dient niet om dubbellingen van termen te voorkomen, het is goed mogelijk dat binnen een bepaald domein een term met verschillende definities voorkomt. 
+Het toevoegen van context aan begrippen dient niet om dubbellingen van termen te voorkomen, het is goed mogelijk dat binnen een bepaald domein (begrippenkader) een term met verschillende definities voorkomt, de term is geen identifier. 
+De context wordt in principe gevormd door het begrippenkader waarbinnen het begrip zich bevindt, context is de _universe of discourse_. 
 
 ### Aanbevolen begrip eigenschappen:
 - Een begrip kan een gebruiksvriendelijke toelichting hebben als aanvulling op de definitie. 
