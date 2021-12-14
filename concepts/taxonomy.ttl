@@ -1,0 +1,69 @@
+#@prefix skos-ap-nl: <http://xxx.org/nederlands-profiel-voor-stelselcatalogi#>. 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+@prefix taxonomy: <http://bp4mc2.org/concepts/taxonomy#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix dctype: <http://purl.org/dc/dcmitype/>.
+@prefix wdrs: <http://www.w3.org/2007/05/powder-s#>.
+@prefix skoslex: <http://bp4mc2.org/def/skos-lex#>.
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dcmiperiod:   <http://dublincore.org/documents/2006/04/10/dcmi-period/>.
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#>.
+@prefix frbr: <http://purl.org/vocab/frbr/core#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix dstype: <http://bp4mc2.org/def/dataset-type#>.
+
+#---------------------
+# IMPORT
+#---------------------
+
+#ISO 25964 gives recommendations for the development and maintenance of thesauri intended for information retrieval applications. It is applicable to vocabularies used for retrieving information from all types of information resources, irrespective of the media used (text, sound, still or moving image, physical object or multimedia) including knowledge bases and portals, bibliographic databases, text, museum or multimedia collections, and the items within them.
+
+#---------------------
+# Concept
+#---------------------
+taxonomy:Concept a skos:Concept;
+  rdfs:label "Begrip"@nl;
+  rdfs:label "Concept"@en;
+  skos:prefLabel "Begrip"@nl;
+  skos:prefLabel "Concept"@en;
+  skos:definition "Concepts are the units  of thought —ideas, meanings, or (categories of) objects and events— which underlie many knowledge organization systems."@en;
+  skok:scopeNote "ISO 25964: The prime application for a thesaurus is in information retrieval, where the aim is to search for concepts. Concepts are represented by terms. Each term included in a thesaurus should represent a single concept (or unit of thought). Concepts can range from the simple (e.g. cats) to the very complex (e.g. racial discrimination among ethnic minorities). Compound terms or phrases are generally needed to express the more complex concepts."@en;
+  skos:example "het begrip 'Perceel' in de BRK"@nl;
+
+taxonomy:Label a skos:Concept;
+  sh:order 1;
+  rdfs:label "Label"@nl;
+  rdfs:label "Label"@en;
+  skos:prefLabel "Label"@nl;
+  skos:prefLabel "Label"@en;
+  skos:definition "Een voor mensen leesbare versie van de naam van een resource";
+  skos:definition "A human-readable version of a resource's name";
+  skos:scopeNote "Een begrip wordt aangeduid met een voor mensen leesbare term (inclusief spaties en diacrieten). Deze is gelijk aan het skos:prefLabel. Uitzondering hierop is de situatie dat binnen 1 conceptschema er vaker dezelfde skos:prefLabel wordt gebruikt. Dit is geen good practice en dient zoveel mogelijk voorkomen te worden. In het geval dat dit toch voorkomt, krijgt het rdfs:label een toevoeging tussen haakjes die het onderscheid aangeeft. Dit label kan meertalig zijn, aangegeven door @nl of @en"@nl;
+  skos:scopeNote "A concept has a human-readable label (including spaces and diacritics). This is equal to the skos: prefLabel. An exception to this is the situation that within one concept scheme the same skos:prefLabel is used more than once. This is not a good practice and should be avoided as much as possible. In case this occurs nonetheless, the rdfs: label gets an addition between brackets that indicates the distinction. This label can be multilingual, indicated by @nl or @en"@en;
+  skos:example '''"Kadastraal perceel"@nl / "Cadastral parcel"@en'''@nl;
+.
+#lexical labels
+taxonomy:PrefLabel a skos:Concept;
+  sh:order 2;
+  rdfs:label "Voorkeursterm"@nl;
+  rdfs:label "Preferred label"@en;
+  skos:prefLabel "Voorkeursterm"@nl;
+  skos:prefLabel "Preferred label"@en;
+  skos:definition "Een voorkeursterm voor een begrip is de term, in een specifieke taal."@nl;
+  skos:definition "The preferred lexical label for a resource, in a given language."@en;
+  skos:scopeNote 'ISO 25964: The terms selected to represent concepts may be single-word terms or multi-word terms. In ordinary discourse, a single term might have more than one meaning, and the most common meaning is not always the one needed to represent the concept wanted in the thesaurus. If the context provided by the hierarchy of broader and narrower concepts linked to the concept in question is insufficient to elucidate the intended scope, additional measures should be applied. While all thesaurus terms should be expressed as unambiguously as possible, it is especially important to formulate the preferred term of a given concept in such a way that it conveys the intended scope to any user. For example, the multi-meaning term "depression" could be reformulated as "economic depression" or "meteorological depression", as appropriate. Alternatively
+a qualifier may be used. In cases where these measures are not appropriate or sufficient, or where additional information would help to clarify the meaning and make the usage more consistent, an explicit scope note should be used.'@en;
+  skos:related taxonomy:Concept; 
+  skos:example "Kadastraal perceel"@nl;
+.
