@@ -3,7 +3,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix sh: <http://www.w3.org/ns/shacl#>.
-@prefix taxonomy: <http://bp4mc2.org/concepts/taxonomy#>.
+@prefix taxonomy: <http://pldn.nl/concepts/taxonomy#>.
 @prefix adms: <http://www.w3.org/ns/adms#>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
@@ -30,6 +30,42 @@
 #ISO 25964 gives recommendations for the development and maintenance of thesauri intended for information retrieval applications. It is applicable to vocabularies used for retrieving information from all types of information resources, irrespective of the media used (text, sound, still or moving image, physical object or multimedia) including knowledge bases and portals, bibliographic databases, text, museum or multimedia collections, and the items within them.
 
 #---------------------
+# GENERAL
+#---------------------
+taxonomy:ControlledVocabulary a skos:Concept;
+  rdfs:label "Begrippenlijst"@nl;
+  rdfs:label "Controlled vocabulary"@en;
+  skos:prefLabel "Begrippenlijst"@nl;
+  skos:prefLabel "Controlled vocabulary"@en;
+  skos:definiton "Een begrippenlijst is een geselecteerde lijst van woorden en frasen, die worden gebruikt om eenheden van informatie (een document of werk) te indexeren zodat deze gemakkelijk kunnen worden gevonden."@nl;
+  skos:definition "A controlled vocabulary is a carefully selected list of words and phrases, which are used to tag units of information (document or work) so that they may be more easily retrieved by a search."@en;
+  skos:scopeNote "Begrippenkaders bieden een manier om kennis te ordenen voor het later kunnen ophalen. Ze worden gebruikt in indexeringsschema's, koppen, thesauri, taxonomieën en andere kennisorganisatiesystemen. Begrippenkader schema's verplichten het gebruik van vooraf gedefinieerde, geautoriseerde termen die vooraf zijn geselecteerd door de ontwerpers van de schema's, in tegenstelling tot natuurlijke taalvocabulaires, die een dergelijke beperking niet hebben."@nl;
+  skos:scopeNote "Controlled vocabularies provide a way to organize knowledge for subsequent retrieval. They are used in subject indexing schemes, subject headings, thesauri, taxonomies and other knowledge organization systems. Controlled vocabulary schemes mandate the use of predefined, authorised terms that have been preselected by the designers of the schemes, in contrast to natural language vocabularies, which have no such restriction."@en;
+  dcterms:source <https://en.wikipedia.org/wiki/Controlled_vocabulary>;
+.
+taxonomy:Taxonomy a skos:Concept;
+  rdfs:label "Taxonomie"@nl;
+  rdfs:label "Taxonomy"@en;
+  skos:prefLabel "Taxonomie"@nl;
+  skos:prefLabel "Taxonomy"@en;
+  skos:definiton "Een taxonomie (of taxonomische classificatie) is een classificatieschema, met name een hiërarchische classificatie, waarin concepten zijn georganiseerd in groepen of typen."@nl;
+  skos:definition "A taxonomy (or taxonomical classification) is a scheme of classification, especially a hierarchical classification, in which concepts are organized into groups or types."@en;
+  skos:scopeNote ""@nl;
+  skos:scopeNote "Een taxonomie wordt gebruikt om kennis te ordenen en te indexeren (opgeslagen als documenten, artikelen, video's, enz.), zoals in de vorm van een bibliotheekclassificatiesysteem of een taxonomie van een zoekmachine, zodat gebruikers de informatie die ze zoeken gemakkelijker kunnen vinden. op zoek naar. Taxonomieën zijn hiërarchieën (en hebben dus een intrinsieke boomstructuur)."@en;
+  dcterms:source <https://en.wikipedia.org/wiki/Taxonomy>;
+.
+taxonomy:Thesaurus a skos:Concept;
+  rdfs:label "Thesaurus"@nl;
+  rdfs:label "Thesaurus"@en;
+  skos:prefLabel "Thesaurus"@nl;
+  skos:prefLabel "Thesaurus"@en;
+  skos:definiton ""@nl;
+  skos:definition ""@en;
+  skos:scopeNote ""@nl;
+  skos:scopeNote ""@en;
+  dcterms:source <https://en.wikipedia.org/wiki/Thesaurus>;
+.
+#---------------------
 # Concept
 #---------------------
 taxonomy:Concept a skos:Concept;
@@ -41,10 +77,10 @@ taxonomy:Concept a skos:Concept;
   skos:definition "Concepts are the units  of thought —ideas, meanings, or (categories of) objects and events— which underlie many knowledge organization systems."@en;
   skos:scopeNote "De belangrijkste toepassing voor een thesaurus is het ophalen van informatie, waarbij het doel is om naar begrippen te zoeken. Begrippen worden weergegeven door termen. Elke term in een thesaurus moet een enkel begrip (of denkeenheid) vertegenwoordigen. Begrippen kunnen variëren van eenvoudig (bijv. katten) tot zeer complex (bijv. rassendiscriminatie onder etnische minderheden). Samengestelde termen of zinsdelen zijn over het algemeen nodig om de meer complexe begrippen uit te drukken."@nl;
   skos:scopeNote "The prime application for a thesaurus is in information retrieval, where the aim is to search for concepts. Concepts are represented by terms. Each term included in a thesaurus should represent a single concept (or unit of thought). Concepts can range from the simple (e.g. cats) to the very complex (e.g. racial discrimination among ethnic minorities). Compound terms or phrases are generally needed to express the more complex concepts."@en;
-  dcterms:source <https://www.w3.org/TR/skos-primer/#secconcept>;
+  dcterms:source <https://www.w3.org/TR/skos-reference/#Concept>;
   dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
   skos:example "het begrip 'Perceel' in de BRK"@nl;
-
+.
 taxonomy:Label a skos:Concept;
   sh:order 1;
   rdfs:label "Label"@nl;
@@ -68,8 +104,10 @@ taxonomy:PrefLabel a skos:Concept;
   skos:prefLabel "Preferred label"@en;
   skos:definition "Een voorkeursterm voor een begrip is de term, in een specifieke taal."@nl;
   skos:definition "The preferred lexical label for a resource, in a given language."@en;
-  skos:scopeNote 'ISO 25964: De termen die zijn geselecteerd om begrippen weer te geven, kunnen termen van één of meerdere woorden zijn. In het gewone spraakgebruik kan een enkele term meer dan één betekenis hebben. De meest voorkomende betekenis is niet altijd de betekenis die nodig is om het in de thesaurus gezochte concept weer te geven. Indien de context die wordt geboden door de hiërarchie van bredere en smallere concepten gekoppeld aan het betreffende concept onvoldoende is om de beoogde reikwijdte te verduidelijken, dienen aanvullende maatregelen te worden genomen. Hoewel alle thesaurustermen zo ondubbelzinnig mogelijk moeten worden uitgedrukt, is het vooral belangrijk om de voorkeursterm van een bepaald concept zo te formuleren dat het de beoogde reikwijdte aan elke gebruiker overbrengt. De term "depressie" met meerdere betekenissen kan bijvoorbeeld worden geherformuleerd als "economische depressie" of "meteorologische depressie", al naar gelang het geval. Als alternatief kan een kwalificatie worden gebruikt. In gevallen waarin deze maatregelen niet passend of voldoende zijn, of waar aanvullende informatie zou helpen om de betekenis te verduidelijken en het gebruik consistenter te maken, moet een expliciete scope note worden gebruikt.'@nl;
-  skos:scopeNote 'ISO 25964: The terms selected to represent concepts may be single-word terms or multi-word terms. In ordinary discourse, a single term might have more than one meaning, and the most common meaning is not always the one needed to represent the concept wanted in the thesaurus. If the context provided by the hierarchy of broader and narrower concepts linked to the concept in question is insufficient to elucidate the intended scope, additional measures should be applied. While all thesaurus terms should be expressed as unambiguously as possible, it is especially important to formulate the preferred term of a given concept in such a way that it conveys the intended scope to any user. For example, the multi-meaning term "depression" could be reformulated as "economic depression" or "meteorological depression", as appropriate. Alternatively a qualifier may be used. In cases where these measures are not appropriate or sufficient, or where additional information would help to clarify the meaning and make the usage more consistent, an explicit scope note should be used.'@en;
+  skos:scopeNote 'De termen die zijn geselecteerd om begrippen weer te geven, kunnen termen van één of meerdere woorden zijn. In het gewone spraakgebruik kan een enkele term meer dan één betekenis hebben. De meest voorkomende betekenis is niet altijd de betekenis die nodig is om het in de thesaurus gezochte concept weer te geven. Indien de context die wordt geboden door de hiërarchie van bredere en smallere concepten gekoppeld aan het betreffende concept onvoldoende is om de beoogde reikwijdte te verduidelijken, dienen aanvullende maatregelen te worden genomen. Hoewel alle thesaurustermen zo ondubbelzinnig mogelijk moeten worden uitgedrukt, is het vooral belangrijk om de voorkeursterm van een bepaald concept zo te formuleren dat het de beoogde reikwijdte aan elke gebruiker overbrengt. De term "depressie" met meerdere betekenissen kan bijvoorbeeld worden geherformuleerd als "economische depressie" of "meteorologische depressie", al naar gelang het geval. Als alternatief kan een kwalificatie worden gebruikt. In gevallen waarin deze maatregelen niet passend of voldoende zijn, of waar aanvullende informatie zou helpen om de betekenis te verduidelijken en het gebruik consistenter te maken, moet een expliciete scope note worden gebruikt.'@nl;
+  skos:scopeNote 'The terms selected to represent concepts may be single-word terms or multi-word terms. In ordinary discourse, a single term might have more than one meaning, and the most common meaning is not always the one needed to represent the concept wanted in the thesaurus. If the context provided by the hierarchy of broader and narrower concepts linked to the concept in question is insufficient to elucidate the intended scope, additional measures should be applied. While all thesaurus terms should be expressed as unambiguously as possible, it is especially important to formulate the preferred term of a given concept in such a way that it conveys the intended scope to any user. For example, the multi-meaning term "depression" could be reformulated as "economic depression" or "meteorological depression", as appropriate. Alternatively a qualifier may be used. In cases where these measures are not appropriate or sufficient, or where additional information would help to clarify the meaning and make the usage more consistent, an explicit scope note should be used.'@en;
+  dcterms:source <https://www.w3.org/TR/skos-reference/#prefLabel>;
+  dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
   skos:related taxonomy:Concept; 
   skos:example "Kadastraal perceel"@nl;
 .
