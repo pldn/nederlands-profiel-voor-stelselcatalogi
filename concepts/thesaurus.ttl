@@ -30,95 +30,545 @@
 #ISO 25964 gives recommendations for the development and maintenance of thesauri intended for information retrieval applications. It is applicable to vocabularies used for retrieving information from all types of information resources, irrespective of the media used (text, sound, still or moving image, physical object or multimedia) including knowledge bases and portals, bibliographic databases, text, museum or multimedia collections, and the items within them.
 
 #---------------------
-# GENERAL
+# Controlled vocabulary concepts
 #---------------------
-#De vraag is of we onderscheid moeten maken tussen een begrippenkader voor 1 domein/dataset en een begrippenstelsel voor een stelselcatalogus die meerdere datasets kan omvatten.
-#Een stelselcatalogus is opgebouwd uit begrippen uit meerdere domeinen, bijvoorbeeld de stelselcatalogus voor de basisregistraties.
-#Een begrip in het ene domein (bijvoorbeeld 'Perceel' in de BRK) kan in zo'n stelselcatalogus worden verbonden met een begrip in een ander domein (bijvoorbeeld 'Adres' in de BAG).
-#We kunnen dit ook in het middel laten en door de context laten uitwijzen waarom het gaat. 
-#En nog simpeler 'Begrippenkader'/'Concept scheme' een alt-label maken van 'Begrippenlijst'/'Controlled vocuabulary'.
 
 thesaurus:ControlledVocabulary a skos:Concept;
-  rdfs:label "Begrippenlijst"@nl;
-  rdfs:label "Controlled vocabulary"@en;
-  skos:prefLabel "Begrippenlijst"@nl;
-  skos:prefLabel "Controlled vocabulary"@en;
-  skos:altLabel "Begrippenkader"@nl;
-  skos:altLabel "Concept scheme"@en;
+  rdfs:label "begrippenlijst"@nl;
+  rdfs:label "controlled vocabulary"@en;
+  skos:prefLabel "begrippenlijst"@nl;
+  skos:prefLabel "controlled vocabulary"@en;
+  skos:altLabel "begrippenkader"@nl;
+  skos:altLabel "concept scheme"@en;
   skos:definiton "Een begrippenlijst is een geselecteerde lijst van woorden en frasen, die worden gebruikt om eenheden van informatie (een document of werk) te indexeren zodat deze gemakkelijk kunnen worden gevonden."@nl;
   skos:definition "A controlled vocabulary is a carefully selected list of words and phrases, which are used to tag units of information (document or work) so that they may be more easily retrieved by a search."@en;
   skos:scopeNote "Begrippenkaders bieden een manier om kennis te ordenen voor het later kunnen ophalen. Ze worden gebruikt in indexeringsschema's, koppen, thesauri, taxonomieën en andere kennisorganisatiesystemen. Begrippenkader schema's verplichten het gebruik van vooraf gedefinieerde, geautoriseerde termen die vooraf zijn geselecteerd door de ontwerpers van de schema's, in tegenstelling tot natuurlijke taalvocabulaires, die een dergelijke beperking niet hebben."@nl;
   skos:scopeNote "Controlled vocabularies provide a way to organize knowledge for subsequent retrieval. They are used in subject indexing schemes, subject headings, thesauri, taxonomies and other knowledge organization systems. Controlled vocabulary schemes mandate the use of predefined, authorised terms that have been preselected by the designers of the schemes, in contrast to natural language vocabularies, which have no such restriction."@en;
   dcterms:source <https://en.wikipedia.org/wiki/Controlled_vocabulary>;
+  skos:related thesaurus:Label; 
+  skos:related thesaurus:Comment; 
+  skos:related thesaurus:PrefLabel;
+  skos:related thesaurus:Notation;
+  skos:related thesaurus:AltfLabel;
+  skos:related thesaurus:HiddenLabel;
+  skos:related thesaurus:Definiton;
+  skos:related thesaurus:ScopeNote;
+  skos:related thesaurus:EditorialNote;
+  skos:related thesaurus:Source;
 .
+thesaurus:Concept a skos:Concept;
+  rdfs:label "begrip"@nl;
+  rdfs:label "concept"@en;
+  skos:prefLabel "begrip"@nl;
+  skos:prefLabel "concept"@en;
+  skos:definiton "Concepten zijn de eenheden van denken - ideeën, betekenissen of (categorieën van) objecten en gebeurtenissen - die ten grondslag liggen aan veel kennisorganisatiesystemen."@nl;
+  skos:definition "Concepts are the units  of thought —ideas, meanings, or (categories of) objects and events— which underlie many knowledge organization systems."@en;
+  skos:scopeNote "De belangrijkste toepassing voor een thesaurus is het ophalen van informatie, waarbij het doel is om naar begrippen te zoeken. Begrippen worden weergegeven door termen. Elke term in een thesaurus moet een enkel begrip (of denkeenheid) vertegenwoordigen. Begrippen kunnen variëren van eenvoudig (bijv. katten) tot zeer complex (bijv. rassendiscriminatie onder etnische minderheden). Samengestelde termen of zinsdelen zijn over het algemeen nodig om de meer complexe begrippen uit te drukken."@nl;
+  skos:scopeNote "The prime application for a thesaurus is in information retrieval, where the aim is to search for concepts. Concepts are represented by terms. Each term included in a thesaurus should represent a single concept (or unit of thought). Concepts can range from the simple (e.g. cats) to the very complex (e.g. racial discrimination among ethnic minorities). Compound terms or phrases are generally needed to express the more complex concepts."@en;
+  dcterms:source <http://www.w3.org/2004/02/skos/core#Concept>;
+  dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
+.
+
+#
+#In de basis heeft een begrip altijd een term met een beschrijving van de betekenis. Dit is in lijn met de good practice op het web om iedere resoure een rdfs:label en een rdfs:comment (een voor mensen leesbare beschrijving) te geven. Dat maakt deze 2 basiselementen altijd en overal goed vindbaar op het web, ook als ze niet worden bekeken in een thesaurus-achtige omgeving.
+#
+
+thesaurus:Label a skos:Concept;
+  rdfs:label "term"@nl;
+  rdfs:label "label"@en;
+  skos:prefLabel "term"@nl;
+  skos:prefLabel "label"@en;
+  skos:definition "Een voor mensen leesbare versie van de naam van iets";
+  skos:definition "A human-readable version of a something's name";
+  skos:scopeNote "Een begrip wordt aangeduid met een voor mensen leesbare term (inclusief spaties en diacrieten). Deze is gelijk aan het skos:prefLabel. Uitzondering hierop is de situatie dat binnen 1 conceptschema er vaker dezelfde skos:prefLabel wordt gebruikt. Dit is geen good practice en dient zoveel mogelijk voorkomen te worden. In het geval dat dit toch voorkomt, krijgt het rdfs:label een toevoeging tussen haakjes die het onderscheid aangeeft. Dit label kan meertalig zijn, aangegeven door @nl of @en"@nl;
+  skos:scopeNote "A concept has a human-readable label (including spaces and diacritics). This is equal to the skos: prefLabel. An exception to this is the situation that within one concept scheme the same skos:prefLabel is used more than once. This is not a good practice and should be avoided as much as possible. In case this occurs nonetheless, the rdfs: label gets an addition between brackets that indicates the distinction. This label can be multilingual, indicated by @nl or @en"@en;
+  dcterms:source <https://www.w3.org/TR/rdf-schema/#ch_label>;
+  dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
+  skos:related thesaurus:Concept; 
+  skos:related thesaurus:ConceptScheme;
+  skos:related thesaurus:Collection;
+.
+thesaurus:Comment a skos:Concept;
+  rdfs:label "beschrijving"@nl;
+  rdfs:label "comment"@en;
+  skos:prefLabel "beschrijving"@nl;
+  skos:prefLabel "comment"@en;
+  skos:definition ""@nl;
+  skos:definition ""@en;
+  skos:scopeNote ""@nl;
+  skos:scopeNote ""@en;
+  dcterms:source <https://www.w3.org/TR/rdf-schema/#ch_comment;
+  skos:related thesaurus:Concept; 
+  skos:related thesaurus:ConceptScheme;
+  skos:related thesaurus:Collection;
+.
+
+#
+#In een controlled vocabulary worden voorkeurstermen, codes, alternatieve termen, strakke definities, toelichtingen, etc. toegevoegd
+#
+
+#lexical labels
+
+thesaurus:PrefLabel a skos:Concept;
+  rdfs:label "voorkeursterm"@nl;
+  rdfs:label "preferred label"@en;
+  skos:prefLabel "voorkeursterm"@nl;
+  skos:prefLabel "preferred label"@en;
+  skos:definition "Een voorkeursterm voor een begrip is de term, in een specifieke taal."@nl;
+  skos:definition "The preferred lexical label for a resource, in a given language."@en;
+  skos:scopeNote 'De termen die zijn geselecteerd om begrippen weer te geven, kunnen termen van één of meerdere woorden zijn. In het gewone spraakgebruik kan een enkele term meer dan één betekenis hebben. De meest voorkomende betekenis is niet altijd de betekenis die nodig is om het in de thesaurus gezochte concept weer te geven. Indien de context die wordt geboden door de hiërarchie van bredere en smallere concepten gekoppeld aan het betreffende concept onvoldoende is om de beoogde reikwijdte te verduidelijken, dienen aanvullende maatregelen te worden genomen. Hoewel alle thesaurustermen zo ondubbelzinnig mogelijk moeten worden uitgedrukt, is het vooral belangrijk om de voorkeursterm van een bepaald concept zo te formuleren dat het de beoogde reikwijdte aan elke gebruiker overbrengt. De term "depressie" met meerdere betekenissen kan bijvoorbeeld worden geherformuleerd als "economische depressie" of "meteorologische depressie", al naar gelang het geval. Als alternatief kan een kwalificatie worden gebruikt. In gevallen waarin deze maatregelen niet passend of voldoende zijn, of waar aanvullende informatie zou helpen om de betekenis te verduidelijken en het gebruik consistenter te maken, moet een expliciete scope note worden gebruikt.'@nl;
+  skos:scopeNote 'The terms selected to represent concepts may be single-word terms or multi-word terms. In ordinary discourse, a single term might have more than one meaning, and the most common meaning is not always the one needed to represent the concept wanted in the thesaurus. If the context provided by the hierarchy of broader and narrower concepts linked to the concept in question is insufficient to elucidate the intended scope, additional measures should be applied. While all thesaurus terms should be expressed as unambiguously as possible, it is especially important to formulate the preferred term of a given concept in such a way that it conveys the intended scope to any user. For example, the multi-meaning term "depression" could be reformulated as "economic depression" or "meteorological depression", as appropriate. Alternatively a qualifier may be used. In cases where these measures are not appropriate or sufficient, or where additional information would help to clarify the meaning and make the usage more consistent, an explicit scope note should be used.'@en;
+  dcterms:source <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
+  skos:related thesaurus:Concept; 
+  skos:related thesaurus:ConceptScheme;
+  skos:related thesaurus:Collection;
+.
+thesaurus:Notation a skos:Concept;
+  rdfs:label "code"@nl;
+  rdfs:label "notation"@en;
+  skos:prefLabel "code"@nl;
+  skos:prefLabel "notation"@en;
+  skos:definition ""@nl;
+  skos:definition ""@en;
+  skos:scopeNote ""@nl;
+  skos:scopeNote ""@en;
+  dcterms:source <http://www.w3.org/2004/02/skos/core#notation>;
+  dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
+  skos:related thesaurus:Concept; 
+.
+thesaurus:AltLabel a skos:Concept;
+  rdfs:label "alternatieve term"@nl;
+  rdfs:label "alternative label"@en;
+  skos:prefLabel "alternatieve term"@nl;
+  skos:prefLabel "alternative label"@en;
+  skos:definition ""@nl;
+  skos:definition ""@en;
+  skos:scopeNote ""@nl;
+  skos:scopeNote ""@en;
+  dcterms:source <http://www.w3.org/2004/02/skos/core#altLabel>;
+  dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
+  skos:related thesaurus:Concept; 
+.
+thesaurus:HiddenLabel a skos:Concept;
+  rdfs:label "zoekterm"@nl;
+  rdfs:label hidden label"@en;
+  skos:prefLabel "zoekterm"@nl;
+  skos:prefLabel hidden label"@en;
+  skos:definition ""@nl;
+  skos:definition ""@en;
+  skos:scopeNote ""@nl;
+  skos:scopeNote ""@en;
+  dcterms:source <http://www.w3.org/2004/02/skos/core#hiddenLabel>;
+  dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
+  skos:related thesaurus:Concept; 
+.
+
+#Documentation properties
+
+thesaurus:Definiton a skos:Concept;
+  rdfs:label "definitie"@nl;
+  rdfs:label "definition"@en;
+  skos:prefLabel "definitie"@nl;
+  skos:prefLabel "definition"@en;
+  skos:definition ""@nl;
+  skos:definition ""@en;
+  skos:scopeNote ""@nl;
+  skos:scopeNote ""@en;
+  dcterms:source <http://www.w3.org/2004/02/skos/core#definition>;
+  dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
+  skos:related thesaurus:Concept; 
+.
+thesaurus:ScopeNote a skos:Concept;
+  rdfs:label "toelichting"@nl;
+  rdfs:label "scope note"@en;
+  skos:prefLabel "toelichting"@nl;
+  skos:prefLabel "scope note"@en;
+  skos:definition ""@nl;
+  skos:definition ""@en;
+  skos:scopeNote ""@nl;
+  skos:scopeNote ""@en;
+  dcterms:source <http://www.w3.org/2004/02/skos/core#scopeNote>;
+  dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
+  skos:related thesaurus:Concept; 
+.
+thesaurus:EditorialNote a skos:Concept;
+  rdfs:label "redactionele opmerking"@nl;
+  rdfs:label "editorial note"@en;
+  skos:prefLabel "redactionele opmerking"@nl;
+  skos:prefLabel "editorial note"@en;
+  skos:definition ""@nl;
+  skos:definition ""@en;
+  skos:scopeNote ""@nl;
+  skos:scopeNote ""@en;
+  dcterms:source <http://www.w3.org/2004/02/skos/core#editorialNote>;
+  dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
+  skos:related thesaurus:Concept; 
+.
+
+#
+#reference to bibliographic resource
+#
+
+thesaurus:Source a skos:Concept;
+  rdfs:label "bron"@nl;
+  rdfs:label "source"@en;
+  skos:prefLabel "bron"@nl;
+  skos:prefLabel "source"@en;
+  skos:definition ""@nl;
+  skos:definition "A related resource from which the described resource is derived."@en;
+  skos:scopeNote ""@nl;
+  skos:scopeNote "The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."@en;
+  dcterms:source <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/elements11/source/>;
+  skos:related thesaurus:Concept; 
+.
+thesaurus:BibliographicResource a skos:Concept;
+  rdfs:label "brondocument"@nl;
+  rdfs:label "bibliographic resource"@en;
+  skos:prefLabel "brondocument"@nl;
+  skos:prefLabel "bibliographic resource"@en;
+  skos:definition ""@nl;
+  skos:definition "A book, article, or other documentary resource."@en;
+  skos:scopeNote ""@nl;
+  skos:scopeNote ""@en;
+  dcterms:BibliographicResource <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/BibliographicResource/>;
+  skos:related thesaurus:Concept; 
+.
+
+#skos:example kan literal zijn, maar ook verwijzing naar resource. Niet handig voor een api.
+#foaf:depiction kan een afbeelding van een concept zijn, dus een voorbeeld. Maar er is ook behoefte aan een symbool.
+
+
+#---------------------
+# Taxonomy concepts
+#---------------------
+
 thesaurus:Taxonomy a skos:Concept;
-  rdfs:label "Taxonomie"@nl;
-  rdfs:label "Taxonomy"@en;
-  skos:prefLabel "Taxonomie"@nl;
-  skos:prefLabel "Taxonomy"@en;
+  rdfs:label "taxonomie"@nl;
+  rdfs:label "taxonomy"@en;
+  skos:prefLabel "taxonomie"@nl;
+  skos:prefLabel "taxonomy"@en;
   skos:definiton "Een taxonomie (of taxonomische classificatie) is een classificatieschema, met name een hiërarchische classificatie, waarin concepten zijn georganiseerd in groepen of typen."@nl;
   skos:definition "A taxonomy (or taxonomical classification) is a scheme of classification, especially a hierarchical classification, in which concepts are organized into groups or types."@en;
   skos:scopeNote "Een taxonomie wordt gebruikt om kennis te ordenen en te indexeren (opgeslagen als documenten, artikelen, video's, enz.), zoals in de vorm van een bibliotheekclassificatiesysteem of een taxonomie van een zoekmachine, zodat gebruikers de informatie die ze zoeken gemakkelijker kunnen vinden. op zoek naar. Taxonomieën zijn hiërarchieën (en hebben dus een intrinsieke boomstructuur)."@nl;
   skos:scopeNote "A taxonomy is be used to organize and index knowledge (stored as documents, articles, videos, etc.), such as in the form of a library classification system, or a search engine taxonomy, so that users can more easily find the information they are searching for. Taxonomies are hierarchies (and thus, have an intrinsic tree structure)."@en;
   dcterms:source <https://en.wikipedia.org/wiki/Taxonomy>;
 skosthes:broaderGeneric thesaurus:ControlledVocabulary;
+  skos:related thesaurus:Broader; 
+  skos:related thesaurus:Narrower; 
 .
+thesaurus:Broader a skos:Concept;
+  rdfs:label "heeft breder begrip"@nl;
+  rdfs:label "has broader"@en;
+  skos:prefLabel "heeft breder begrip"@nl;
+  skos:prefLabel "has broader"@en;
+  skos:definition ""@nl;
+  skos:definition ""@en;
+  skos:scopeNote ""@nl;
+  skos:scopeNote ""@en;
+  dcterms:source <http://www.w3.org/2004/02/skos/core#broader>;
+  dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
+  skos:related thesaurus:Concept; 
+.
+thesaurus:Narrower a skos:Concept;
+  rdfs:label "heeft enger begrip"@nl;
+  rdfs:label "has narrower"@en;
+  skos:prefLabel "heeft enger begrip"@nl;
+  skos:prefLabel "has narrower"@en;
+  skos:definition ""@nl;
+  skos:definition ""@en;
+  skos:scopeNote ""@nl;
+  skos:scopeNote ""@en;
+  dcterms:source <http://www.w3.org/2004/02/skos/core#narrower>;
+  dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
+  skos:related thesaurus:Concept; 
+.
+
+#---------------------
+# Thesaurus concepts
+#---------------------
+
 thesaurus:Thesaurus a skos:Concept;
-  rdfs:label "Thesaurus"@nl;
-  rdfs:label "Thesaurus"@en;
-  skos:prefLabel "Thesaurus"@nl;
-  skos:prefLabel "Thesaurus"@en;
+  rdfs:label "thesaurus"@nl;
+  rdfs:label "thesaurus"@en;
+  skos:prefLabel "thesaurus"@nl;
+  skos:prefLabel "thesaurus"@en;
   skos:definiton ""@nl;
   skos:definition ""@en;
   skos:scopeNote ""@nl;
   skos:scopeNote ""@en;
   dcterms:source <https://en.wikipedia.org/wiki/Thesaurus>;
-skosthes:broaderGeneric thesaurus:ControlledVocabulary;
+  skosthes:broaderGeneric thesaurus:Taxonomy; 
+  skos:related thesaurus:Related; 
+  skos:related thesaurus:BroaderGeneric; 
+  skos:related thesaurus:BroaderPartitive; 
+  skos:related thesaurus:BroaderInstantial; 
+  skos:related thesaurus:NarrowerGeneric; 
+  skos:related thesaurus:NarrowerPartitive; 
+  skos:related thesaurus:NarrowerInstantial; 
 .
-
-#---------------------
-# Controlled vocabulary concepts
-#---------------------
-thesaurus:Concept a skos:Concept;
-  rdfs:label "Begrip"@nl;
-  rdfs:label "Concept"@en;
-  skos:prefLabel "Begrip"@nl;
-  skos:prefLabel "Concept"@en;
-  skos:definiton "Concepten zijn de eenheden van denken - ideeën, betekenissen of (categorieën van) objecten en gebeurtenissen - die ten grondslag liggen aan veel kennisorganisatiesystemen."@nl;
-  skos:definition "Concepts are the units  of thought —ideas, meanings, or (categories of) objects and events— which underlie many knowledge organization systems."@en;
-  skos:scopeNote "De belangrijkste toepassing voor een thesaurus is het ophalen van informatie, waarbij het doel is om naar begrippen te zoeken. Begrippen worden weergegeven door termen. Elke term in een thesaurus moet een enkel begrip (of denkeenheid) vertegenwoordigen. Begrippen kunnen variëren van eenvoudig (bijv. katten) tot zeer complex (bijv. rassendiscriminatie onder etnische minderheden). Samengestelde termen of zinsdelen zijn over het algemeen nodig om de meer complexe begrippen uit te drukken."@nl;
-  skos:scopeNote "The prime application for a thesaurus is in information retrieval, where the aim is to search for concepts. Concepts are represented by terms. Each term included in a thesaurus should represent a single concept (or unit of thought). Concepts can range from the simple (e.g. cats) to the very complex (e.g. racial discrimination among ethnic minorities). Compound terms or phrases are generally needed to express the more complex concepts."@en;
-  dcterms:source <https://www.w3.org/TR/skos-reference/#Concept>;
-  dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
-  skos:example "het begrip 'Perceel' in de BRK"@nl;
-.
-thesaurus:Label a skos:Concept;
-  sh:order 1;
-  rdfs:label "Label"@nl;
-  rdfs:label "Label"@en;
-  skos:prefLabel "Label"@nl;
-  skos:prefLabel "Label"@en;
-  skos:definition "Een voor mensen leesbare versie van de naam van een resource";
-  skos:definition "A human-readable version of a resource's name";
-  skos:scopeNote "Een begrip wordt aangeduid met een voor mensen leesbare term (inclusief spaties en diacrieten). Deze is gelijk aan het skos:prefLabel. Uitzondering hierop is de situatie dat binnen 1 conceptschema er vaker dezelfde skos:prefLabel wordt gebruikt. Dit is geen good practice en dient zoveel mogelijk voorkomen te worden. In het geval dat dit toch voorkomt, krijgt het rdfs:label een toevoeging tussen haakjes die het onderscheid aangeeft. Dit label kan meertalig zijn, aangegeven door @nl of @en"@nl;
-  skos:scopeNote "A concept has a human-readable label (including spaces and diacritics). This is equal to the skos: prefLabel. An exception to this is the situation that within one concept scheme the same skos:prefLabel is used more than once. This is not a good practice and should be avoided as much as possible. In case this occurs nonetheless, the rdfs: label gets an addition between brackets that indicates the distinction. This label can be multilingual, indicated by @nl or @en"@en;
-  dcterms:source <https://www.w3.org/TR/rdf-schema/#ch_label>;
-  dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
-  skos:example '''"Kadastraal perceel"@nl / "Cadastral parcel"@en'''@nl;
-.
-#lexical labels
-thesaurus:PrefLabel a skos:Concept;
-  sh:order 2;
-  rdfs:label "Voorkeursterm"@nl;
-  rdfs:label "Preferred label"@en;
-  skos:prefLabel "Voorkeursterm"@nl;
-  skos:prefLabel "Preferred label"@en;
-  skos:definition "Een voorkeursterm voor een begrip is de term, in een specifieke taal."@nl;
-  skos:definition "The preferred lexical label for a resource, in a given language."@en;
-  skos:scopeNote 'De termen die zijn geselecteerd om begrippen weer te geven, kunnen termen van één of meerdere woorden zijn. In het gewone spraakgebruik kan een enkele term meer dan één betekenis hebben. De meest voorkomende betekenis is niet altijd de betekenis die nodig is om het in de thesaurus gezochte concept weer te geven. Indien de context die wordt geboden door de hiërarchie van bredere en smallere concepten gekoppeld aan het betreffende concept onvoldoende is om de beoogde reikwijdte te verduidelijken, dienen aanvullende maatregelen te worden genomen. Hoewel alle thesaurustermen zo ondubbelzinnig mogelijk moeten worden uitgedrukt, is het vooral belangrijk om de voorkeursterm van een bepaald concept zo te formuleren dat het de beoogde reikwijdte aan elke gebruiker overbrengt. De term "depressie" met meerdere betekenissen kan bijvoorbeeld worden geherformuleerd als "economische depressie" of "meteorologische depressie", al naar gelang het geval. Als alternatief kan een kwalificatie worden gebruikt. In gevallen waarin deze maatregelen niet passend of voldoende zijn, of waar aanvullende informatie zou helpen om de betekenis te verduidelijken en het gebruik consistenter te maken, moet een expliciete scope note worden gebruikt.'@nl;
-  skos:scopeNote 'The terms selected to represent concepts may be single-word terms or multi-word terms. In ordinary discourse, a single term might have more than one meaning, and the most common meaning is not always the one needed to represent the concept wanted in the thesaurus. If the context provided by the hierarchy of broader and narrower concepts linked to the concept in question is insufficient to elucidate the intended scope, additional measures should be applied. While all thesaurus terms should be expressed as unambiguously as possible, it is especially important to formulate the preferred term of a given concept in such a way that it conveys the intended scope to any user. For example, the multi-meaning term "depression" could be reformulated as "economic depression" or "meteorological depression", as appropriate. Alternatively a qualifier may be used. In cases where these measures are not appropriate or sufficient, or where additional information would help to clarify the meaning and make the usage more consistent, an explicit scope note should be used.'@en;
-  dcterms:source <https://www.w3.org/TR/skos-reference/#prefLabel>;
+thesaurus:Related a skos:Concept;
+  rdfs:label "is gerelateerd aan"@nl;
+  rdfs:label "has related"@en;
+  skos:prefLabel "is gerelateerd aan"@nl;
+  skos:prefLabel "has related"@en;
+  skos:definition ""@nl;
+  skos:definition ""@en;
+  skos:scopeNote ""@nl;
+  skos:scopeNote ""@en;
+  dcterms:source <http://www.w3.org/2004/02/skos/core#related>;
   dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
   skos:related thesaurus:Concept; 
-  skos:example "Kadastraal perceel"@nl;
 .
+
+#
+#Nuancering broader en narrower tbv ISO 25964 compatibilitiet. Dit maakt ook meer genuanceerde semantiek mogelijk die aansluit bij de definite.
+#
+
+thesaurus:BroaderGeneric a skos:Concept;
+  rdfs:label "is specialisatie van"@nl;
+  rdfs:label "broader term (generic)"@en;
+  skos:prefLabel "is specialisatie van"@nl;
+  skos:prefLabel "broader term (generic)"@en;
+  skos:definition "Relateert een begrip aan een meer generiek begrip."@nl;
+  skos:definition "The immediate (direct or one-step) class - generalized class relationship."@en;
+  skos:scopeNote ""@nl;
+  skos:scopeNote ""@en;
+  dcterms:source <http://purl.org/iso25964/skos-thes#broaderGeneric>;
+  dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
+  skos:related thesaurus:Concept;
+  skosthes:broaderGeneric thesaurus:Broader;
+.
+thesaurus:BroaderInstantial a skos:Concept;
+  rdfs:label "is exemplaar van"@nl;
+  rdfs:label "broader term (instantial)"@en;
+  skos:prefLabel "is exemplaar van"@nl;
+  skos:prefLabel "broader term (instantial)"@en;
+  skos:definition "Relateert een begrip, een exemplaar, aan een ander begrip, de categorie, waartoe eerstgenoemde begrip behoort."@nl;
+  skos:definition "The immediate (direct or one-step) instance - class relationship."@en;
+  skos:scopeNote ""@nl;
+  skos:scopeNote ""@en;
+  dcterms:source <http://purl.org/iso25964/skos-thes#broaderInstantial>;
+  dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
+  skos:related thesaurus:Concept;
+  skosthes:broaderGeneric thesaurus:Broader;
+.
+thesaurus:BroaderPartitive a skos:Concept;
+  rdfs:label "is onderdeel van"@nl;
+  rdfs:label "broader term (partitive)"@en;
+  skos:prefLabel "is onderdeel van"@nl;
+  skos:prefLabel "broader term (partitive)"@en;
+  skos:definition "Relateert een begrip aan een meer omvattend begrip. Voorbeelden van eerstgenoemde begrip zullen onderdeel van voorbeelden van het meer omvattende begrip zijn."@nl;
+  skos:definition "When the ISO 25964 standard is followed, the broader partitive relationship should qualify for a transitive closure."@en;
+  skos:scopeNote ""@nl;
+  skos:scopeNote ''A "bicycle wheel" for instance belongs uniquely to a "bicycle" while a "wheel" does not. A broader partitive relationship should not be established between "bicycles" and "wheels" because a wheel could be part of a motor car, a wheelbarrow or one of many other artefacts.''@en;
+  dcterms:source <http://purl.org/iso25964/skos-thes#broaderPartitive>;
+  dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
+  skos:related thesaurus:Concept;
+  skosthes:broaderGeneric thesaurus:Broader;
+.
+thesaurus:NarrowerGeneric a skos:Concept;
+  rdfs:label "is generalisatie van"@nl;
+  rdfs:label "broader term (generic)"@en;
+  skos:prefLabel "is generalisatie van"@nl;
+  skos:prefLabel "broader term (generic)"@en;
+  skos:definition "Relateert een begrip aan een meer specifieker begrip."@nl;
+  skos:definition "The immediate (direct or one-step) class - specialized class relationship."@en;
+  skos:scopeNote ""@nl;
+  skos:scopeNote ""@en;
+  dcterms:source <http://purl.org/iso25964/skos-thes#narrowerGeneric>;
+  dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
+  skos:related thesaurus:Concept;
+  skosthes:broaderGeneric thesaurus:Narrower;
+.
+thesaurus:NarrowerInstantial a skos:Concept;
+  rdfs:label "is categorie van"@nl;
+  rdfs:label "narrower term (instantial)"@en;
+  skos:prefLabel "is categorie van"@nl;
+  skos:prefLabel "narrower term (instantial)"@en;
+  skos:definition "Relateert een begrip, de categorie, aan een begrip dat exemplarisch is voor eerstgenoemde begrip."@nl;
+  skos:definition "The immediate (direct or one-step) class - instance relationship."@en;
+  skos:scopeNote ""@nl;
+  skos:scopeNote ""@en;
+  dcterms:source <http://purl.org/iso25964/skos-thes#narrowerInstantial>;
+  dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
+  skos:related thesaurus:Concept;
+  skosthes:broaderGeneric thesaurus:Narrower;
+.
+thesaurus:NarrowerPartitive a skos:Concept;
+  rdfs:label "omvat"@nl;
+  rdfs:label "broader term (partitive)"@en;
+  skos:prefLabel "omvat"@nl;
+  skos:prefLabel "broader term (partitive)"@en;
+  skos:definition "Relateert een begrip aan een minder omvattend begrip. Voorbeelden van eerstgenoemde begrip zullen bestaan uit voorbeelden van het minder omvattende begrip zijn."@nl;
+  skos:definition "When the ISO 25964 standard is followed, the narrower partitive relationship should qualify for a transitive closure."@en;
+  skos:scopeNote ""@nl;
+  skos:scopeNote "A "bicycle wheel" for instance belongs uniquely to a "bicycle" while a "wheel" does not. A narrower partitive relationship should not be established between "bicycles" and "wheels" because a wheel could be part of a motor car, a wheelbarrow or one of many other artefacts."@en;
+  dcterms:source <http://purl.org/iso25964/skos-thes#narrowerPartitive>;
+  dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
+  skos:related thesaurus:Concept;
+  skosthes:broaderGeneric thesaurus:Narrower;
+.
+
+#
+#Ordering concepts
+#
+
+#De vraag is of we onderscheid moeten maken tussen een begrippenkader voor 1 domein/dataset en een begrippenstelsel voor een stelselcatalogus die meerdere datasets kan omvatten.
+#Een stelselcatalogus is opgebouwd uit begrippen uit meerdere domeinen, bijvoorbeeld de stelselcatalogus voor de basisregistraties.
+#Een begrip in het ene domein (bijvoorbeeld 'Perceel' in de BRK) kan in zo'n stelselcatalogus worden verbonden met een begrip in een ander domein (bijvoorbeeld 'Adres' in de BAG).
+#We kunnen dit ook in het middel laten en door de context laten uitwijzen waarom het gaat. 
+#En nog simpeler 'Begrippenkader'/'Concept scheme' een alt-label maken van 'Begrippenlijst'/'Controlled vocuabulary'.
+
+thesaurus:ConceptScheme a skos:Concept;
+  rdfs:label "begrippenkader"@nl;
+  rdfs:label "concept scheme"@en;
+  skos:prefLabel "begrippenkader"@nl;
+  skos:prefLabel "concept scheme"@en;
+  skos:definition "";
+  skos:definition "";
+  skos:scopeNote ""@nl;
+  skos:scopeNote ""@en;
+  dcterms:source <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+  dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
+.
+thesaurus:TopConcept a skos:Concept;
+  rdfs:label "heeft topbegrip"@nl;
+  rdfs:label "has top concept"@en;
+  skos:prefLabel "heeft topbegrip"@nl;
+  skos:prefLabel "has top concept"@en;
+  skos:definition "";
+  skos:definition "";
+  skos:scopeNote ""@nl;
+  skos:scopeNote ""@en;
+  dcterms:source <http://www.w3.org/2004/02/skos/core#hasTopConcept>;
+  dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
+  skos:related thesaurus:ConceptScheme;
+.
+thesaurus:InScheme a skos:Concept;
+  rdfs:label "behoort tot"@nl;
+  rdfs:label "is in scheme"@en;
+  skos:prefLabel "behoort tot"@nl;
+  skos:prefLabel "is in scheme"@en;
+  skos:definition "";
+  skos:definition "";
+  skos:scopeNote ""@nl;
+  skos:scopeNote ""@en;
+  dcterms:source <http://www.w3.org/2004/02/skos/core#inScheme>;
+  dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
+  skos:related thesaurus:Concept;
+.
+
+thesaurus:Collection a skos:Concept;
+  rdfs:label "collectie"@nl;
+  rdfs:label "collection"@en;
+  skos:prefLabel "collectie"@nl;
+  skos:prefLabel "collection"@en;
+  skos:definition "";
+  skos:definition "";
+  skos:scopeNote ""@nl;
+  skos:scopeNote ""@en;
+  dcterms:source <http://www.w3.org/2004/02/skos/core#Collection>;
+  dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
+.
+thesaurus:Member a skos:Concept;
+  rdfs:label "heeft topbegrip"@nl;
+  rdfs:label "has top concept"@en;
+  skos:prefLabel "heeft topbegrip"@nl;
+  skos:prefLabel "has top concept"@en;
+  skos:definition "";
+  skos:definition "";
+  skos:scopeNote ""@nl;
+  skos:scopeNote ""@en;
+  dcterms:source <http://www.w3.org/2004/02/skos/core#hasTopConcept>;
+  dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
+  skos:related thesaurus:Collection;
+.
+
+#
+#Concepts to match concepts in one scheme to concepts in another scheme
+#
+
+thesaurus:ExactMatch a skos:Concept;
+  rdfs:label "exact overeenkomstig"@nl;
+  rdfs:label "has exact match"@en;
+  skos:prefLabel "exact overeenkomstig"@nl;
+  skos:prefLabel "has exact match"@en;
+  skos:definition "";
+  skos:definition "";
+  skos:scopeNote ""@nl;
+  skos:scopeNote ""@en;
+  dcterms:source <http://www.w3.org/2004/02/skos/core#exactMatch>;
+  skos:related thesaurus:Concept;
+.
+thesaurus:CloseMatch a skos:Concept;
+  rdfs:label "vrijwel overeenkomstig"@nl;
+  rdfs:label "has close match"@en;
+  skos:prefLabel "vrijwel overeenkomstig"@nl;
+  skos:prefLabel "has close match"@en;
+  skos:definition "";
+  skos:definition "";
+  skos:scopeNote ""@nl;
+  skos:scopeNote ""@en;
+  dcterms:source <http://www.w3.org/2004/02/skos/core#closeMatch>;
+  skos:related thesaurus:Concept;
+.
+thesaurus:RelatedMatch a skos:Concept;
+  rdfs:label "overeenkomstig verwant"@nl;
+  rdfs:label "has related match"@en;
+  skos:prefLabel "overeenkomstig verwant"@nl;
+  skos:prefLabel "has related match"@en;
+  skos:definition "";
+  skos:definition "";
+  skos:scopeNote ""@nl;
+  skos:scopeNote ""@en;
+  dcterms:source <http://www.w3.org/2004/02/skos/core#relatedMatch>;
+  skos:related thesaurus:Concept;
+.
+thesaurus:NarrowMatch a skos:Concept;
+  rdfs:label "overeenkomstig specifieker"@nl;
+  rdfs:label "has narrower match"@en;
+  skos:prefLabel "overeenkomstig specifieker"@nl;
+  skos:prefLabel "has narrower match"@en;
+  skos:definition "";
+  skos:definition "";
+  skos:scopeNote ""@nl;
+  skos:scopeNote ""@en;
+  dcterms:source <http://www.w3.org/2004/02/skos/core#narrowMatch>;
+  skos:related thesaurus:Concept;
+.
+thesaurus:BroadMatch a skos:Concept;
+  rdfs:label "overeenkomstig generieker"@nl;
+  rdfs:label "has broader match"@en;
+  skos:prefLabel "overeenkomstig generieker"@nl;
+  skos:prefLabel "has broader match"@en;
+  skos:definition "";
+  skos:definition "";
+  skos:scopeNote ""@nl;
+  skos:scopeNote ""@en;
+  dcterms:source <http://www.w3.org/2004/02/skos/core#broadMatch>;
+  skos:related thesaurus:Concept;
+.
+
+#
+#housekeeping concepts#
+#
+
+thesaurus:DefinedBy a skos:Concept;
+  rdfs:label "gedefinieerd in"@nl;
+  rdfs:label "is defined by"@en;
+  skos:prefLabel "gedefinieerd in"@nl;
+  skos:prefLabel "is defined by"@en;
+  skos:definition "";
+  skos:definition "";
+  skos:scopeNote ""@nl;
+  skos:scopeNote ""@en;
+  dcterms:source <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>;
+  skos:related thesaurus:Concept;
+.
+
+#dct:temporal -> validity period	geldig	valididy
+#dct:issued	gepubliceerd	issued
+#skos:changeNote	wijzigingsnotitie	change note
+#adms:status	status	status
+#uri en download informatie
