@@ -472,15 +472,15 @@ thesaurus:Collection a skos:Concept;
   dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
 .
 thesaurus:Member a skos:Concept;
-  rdfs:label "heeft topbegrip"@nl;
-  rdfs:label "has top concept"@en;
-  skos:prefLabel "heeft topbegrip"@nl;
-  skos:prefLabel "has top concept"@en;
+  rdfs:label "bevat"@nl;
+  rdfs:label "has member"@en;
+  skos:prefLabel "bevat"@nl;
+  skos:prefLabel "has member"@en;
   skos:definition "";
   skos:definition "";
   skos:scopeNote ""@nl;
   skos:scopeNote ""@en;
-  dcterms:source <http://www.w3.org/2004/02/skos/core#hasTopConcept>;
+  dcterms:source <http://www.w3.org/2004/02/skos/core#member>;
   dcterms:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>;
   skos:related thesaurus:Collection;
 .
