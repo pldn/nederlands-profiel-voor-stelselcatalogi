@@ -1,4 +1,6 @@
 
+**ISO25964**  "The traditional aim of a thesaurus is to guide the indexer and the searcher to choose the same term for the same concept."
+
 **User story DUO 1**  Transparantie.  Als wettelijk registerhouder wil ik dat ontwikkelaars, ondersteuners en gebruikers met een druk op de knop een passende en blijvende uitleg (de betekenis) van door mij verstrekte gegevens kunnen vinden, zodat zij deze juist kunnen interpreteren, hergebruiken en feedback kunnen geven.
 
 **User story DUO 2**  Interoperabel.  Als uitvoeringsorganisatie wil is dat wettelijke registers die ik nodig heb, hun begrippen volgens nationaal afgesproken naamgevings- en ontwerpregels opstellen zodat ik deze met een minimum aan inspanning kan inpassen in mijn eigen gegevensverwerking.
