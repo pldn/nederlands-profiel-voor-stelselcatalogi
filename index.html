@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="nl"><head>
 <meta charset="utf-8">
-<meta name="generator" content="ReSpec 32.1.0">
+<meta name="generator" content="ReSpec 32.1.2">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <style>
 dfn{cursor:pointer}
@@ -21,6 +21,22 @@ dfn{cursor:pointer}
 .dfn-panel ul{padding:0}
 .dfn-panel li{margin-left:1em}
 .dfn-panel.docked{position:fixed;left:.5em;top:unset;bottom:2em;margin:0 auto;max-width:calc(100vw - .75em * 2 - .5em - .2em * 2);max-height:30vh;overflow:auto}
+</style>
+    
+    
+<style>
+
+      table {
+        padding: 15px;
+      }
+      th {
+        border-bottom: 3px solid #ddd;
+      }
+      th, td {
+        border-bottom: 1px solid #ddd;
+      }
+      tr:nth-child(even) {background-color: #f2f2f2;}
+    
 </style>
     
     
@@ -155,6 +171,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     },
     {
       "name": "Jos van der Arend"
+    },
+    {
+      "name": "Jesse Bakker"
     }
   ],
   "github": {
@@ -162,19 +181,19 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     "repoURL": "pldn/nederlands-profiel-voor-stelselcatalogi"
   },
   "xref": "web-platform",
-  "publishISODate": "2022-03-31T00:00:00.000Z",
-  "generatedSubtitle": "Unofficial Draft 31 maart 2022"
+  "publishISODate": "2022-04-19T00:00:00.000Z",
+  "generatedSubtitle": "Unofficial Draft 19 april 2022"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-UD"></head>
   <body class="h-entry" data-cite="HTML INFRA URL WEBIDL DOM FETCH"><div class="head">
     
     <h1 id="title" class="title">Nederlands profiel voor stelselcatalogi </h1> 
-    <p id="w3c-state">Unofficial Draft <time class="dt-published" datetime="2022-03-31">31 maart 2022</time></p>
+    <p id="w3c-state">Unofficial Draft <time class="dt-published" datetime="2022-04-19">19 april 2022</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
         <dt>Deze versie:</dt><dd>
-                <a class="u-url" href="https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20220331/">https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20220331/</a>
+                <a class="u-url" href="https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20220419/">https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20220419/</a>
               </dd>
         <dt>Laatst gepubliceerde versie:</dt><dd>
                 <a href="https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi">https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi</a>
@@ -226,6 +245,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <span class="p-name fn">Viyanti Ramdhiansing</span>
   </dd><dd class="editor p-author h-card vcard">
     <span class="p-name fn">Jos van der Arend</span>
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Jesse Bakker</span>
   </dd>
         <dt>Feedback:</dt><dd>
         <a href="https://github.com/pldn/nederlands-profiel-voor-stelselcatalogi/">GitHub pldn/nederlands-profiel-voor-stelselcatalogi</a>
@@ -262,7 +283,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       <p>
         This is required.
       </p>
-    </section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#samenvatting"><bdi class="secno">1. </bdi>Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">2. </bdi>Inleiding</a></li><li class="tocline"><a class="tocxref" href="#begrippenkader"><bdi class="secno">3. </bdi>Begrippenkader</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#overeengekomen-richtlijnen"><bdi class="secno">3.1 </bdi>Overeengekomen richtlijnen</a></li><li class="tocline"><a class="tocxref" href="#vier-niveau-s-voor-begrippenkaders"><bdi class="secno">3.2 </bdi>Vier niveau's voor begrippenkaders</a></li><li class="tocline"><a class="tocxref" href="#drie-type-relaties"><bdi class="secno">3.3 </bdi>Drie type relaties</a></li><li class="tocline"><a class="tocxref" href="#functionele-invulling"><bdi class="secno">3.4 </bdi>Functionele invulling</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#verplichte-begrip-eigenschappen"><bdi class="secno">3.4.1 </bdi>Verplichte begrip eigenschappen:</a></li><li class="tocline"><a class="tocxref" href="#aanbevolen-begrip-eigenschappen"><bdi class="secno">3.4.2 </bdi>Aanbevolen begrip eigenschappen:</a></li><li class="tocline"><a class="tocxref" href="#optionele-begrip-eigenschappen"><bdi class="secno">3.4.3 </bdi>Optionele begrip eigenschappen:</a></li></ol></li><li class="tocline"><a class="tocxref" href="#best-practices-voor-gebruik"><bdi class="secno">3.5 </bdi>Best practices voor gebruik:</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#voorkeursterm"><bdi class="secno">3.5.1 </bdi>Voorkeursterm</a></li><li class="tocline"><a class="tocxref" href="#andere-labels"><bdi class="secno">3.5.2 </bdi>Andere labels</a></li><li class="tocline"><a class="tocxref" href="#definitie-en-uitleg"><bdi class="secno">3.5.3 </bdi>Definitie en uitleg</a></li><li class="tocline"><a class="tocxref" href="#semantische-relaties"><bdi class="secno">3.5.4 </bdi>Semantische relaties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#interne-semantische-relaties"><bdi class="secno">3.5.4.1 </bdi>Interne semantische relaties</a></li><li class="tocline"><a class="tocxref" href="#externe-semantische-relaties"><bdi class="secno">3.5.4.2 </bdi>Externe semantische relaties</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#waardelijsten"><bdi class="secno">4. </bdi>Waardelijsten</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#overeengekomen-richtlijnen-0"><bdi class="secno">4.1 </bdi>Overeengekomen richtlijnen</a></li><li class="tocline"><a class="tocxref" href="#functionele-invulling-0"><bdi class="secno">4.2 </bdi>Functionele invulling</a></li></ol></li><li class="tocline"><a class="tocxref" href="#informatiemodellen"><bdi class="secno">5. </bdi>Informatiemodellen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#overeengekomen-richtlijnen-1"><bdi class="secno">5.1 </bdi>Overeengekomen richtlijnen</a></li><li class="tocline"><a class="tocxref" href="#functionele-invulling-1"><bdi class="secno">5.2 </bdi>Functionele invulling</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">6. </bdi>Conformance</a></li></ol></nav>
+    </section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#samenvatting"><bdi class="secno">1. </bdi>Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">2. </bdi>Inleiding</a></li><li class="tocline"><a class="tocxref" href="#begrippenkader"><bdi class="secno">3. </bdi>Begrippenkader</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#overeengekomen-richtlijnen"><bdi class="secno">3.1 </bdi>Overeengekomen richtlijnen</a></li><li class="tocline"><a class="tocxref" href="#vier-niveau-s-voor-begrippenkaders"><bdi class="secno">3.2 </bdi>Vier niveau's voor begrippenkaders</a></li><li class="tocline"><a class="tocxref" href="#drie-type-relaties"><bdi class="secno">3.3 </bdi>Drie type relaties</a></li><li class="tocline"><a class="tocxref" href="#functionele-invulling"><bdi class="secno">3.4 </bdi>Functionele invulling</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#verplichte-begrip-eigenschappen"><bdi class="secno">3.4.1 </bdi>Verplichte begrip eigenschappen:</a></li><li class="tocline"><a class="tocxref" href="#aanbevolen-begrip-eigenschappen"><bdi class="secno">3.4.2 </bdi>Aanbevolen begrip eigenschappen:</a></li><li class="tocline"><a class="tocxref" href="#optionele-begrip-eigenschappen"><bdi class="secno">3.4.3 </bdi>Optionele begrip eigenschappen:</a></li></ol></li><li class="tocline"><a class="tocxref" href="#best-practices-voor-gebruik"><bdi class="secno">3.5 </bdi>Best practices voor gebruik:</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#voorkeursterm"><bdi class="secno">3.5.1 </bdi>Voorkeursterm</a></li><li class="tocline"><a class="tocxref" href="#andere-labels"><bdi class="secno">3.5.2 </bdi>Andere labels</a></li><li class="tocline"><a class="tocxref" href="#definitie-en-uitleg"><bdi class="secno">3.5.3 </bdi>Definitie en uitleg</a></li><li class="tocline"><a class="tocxref" href="#semantische-relaties"><bdi class="secno">3.5.4 </bdi>Semantische relaties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#interne-semantische-relaties"><bdi class="secno">3.5.4.1 </bdi>Interne semantische relaties</a></li><li class="tocline"><a class="tocxref" href="#externe-semantische-relaties"><bdi class="secno">3.5.4.2 </bdi>Externe semantische relaties</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#waardelijsten"><bdi class="secno">4. </bdi>Waardelijsten</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#overeengekomen-richtlijnen-0"><bdi class="secno">4.1 </bdi>Overeengekomen richtlijnen</a></li><li class="tocline"><a class="tocxref" href="#functionele-invulling-0"><bdi class="secno">4.2 </bdi>Functionele invulling</a></li></ol></li><li class="tocline"><a class="tocxref" href="#informatiemodellen"><bdi class="secno">5. </bdi>Informatiemodellen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#overeengekomen-richtlijnen-1"><bdi class="secno">5.1 </bdi>Overeengekomen richtlijnen</a></li><li class="tocline"><a class="tocxref" href="#functionele-invulling-1"><bdi class="secno">5.2 </bdi>Functionele invulling</a></li></ol></li><li class="tocline"><a class="tocxref" href="#begrippenkader-skos-ap-nl"><bdi class="secno">6. </bdi>Begrippenkader SKOS AP NL</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#term"><bdi class="secno">6.1 </bdi>term</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#voorkeursterm-0"><bdi class="secno">6.1.1 </bdi>voorkeursterm</a></li><li class="tocline"><a class="tocxref" href="#alternatieve-term"><bdi class="secno">6.1.2 </bdi>alternatieve term</a></li><li class="tocline"><a class="tocxref" href="#zoekterm"><bdi class="secno">6.1.3 </bdi>zoekterm</a></li><li class="tocline"><a class="tocxref" href="#label"><bdi class="secno">6.1.4 </bdi>label</a></li><li class="tocline"><a class="tocxref" href="#note"><bdi class="secno">6.1.5 </bdi>note</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#history-note"><bdi class="secno">6.1.5.1 </bdi>history note</a></li><li class="tocline"><a class="tocxref" href="#change-note"><bdi class="secno">6.1.5.2 </bdi>change note</a></li><li class="tocline"><a class="tocxref" href="#uitleg"><bdi class="secno">6.1.5.3 </bdi>uitleg</a></li><li class="tocline"><a class="tocxref" href="#redactionele-opmerking"><bdi class="secno">6.1.5.4 </bdi>redactionele opmerking</a></li><li class="tocline"><a class="tocxref" href="#definition"><bdi class="secno">6.1.5.5 </bdi>definition</a></li><li class="tocline"><a class="tocxref" href="#scope-note"><bdi class="secno">6.1.5.6 </bdi>scope note</a></li></ol></li><li class="tocline"><a class="tocxref" href="#semantische-relatie"><bdi class="secno">6.1.6 </bdi>Semantische relatie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#has-related"><bdi class="secno">6.1.6.1 </bdi>has related</a></li><li class="tocline"><a class="tocxref" href="#heeft-breder-begrip"><bdi class="secno">6.1.6.2 </bdi>heeft breder begrip</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#is-onderdeel-van"><bdi class="secno">6.1.6.2.1 </bdi>is onderdeel van</a></li><li class="tocline"><a class="tocxref" href="#is-exemplaar-van"><bdi class="secno">6.1.6.2.2 </bdi>is exemplaar van</a></li><li class="tocline"><a class="tocxref" href="#broader-term-generic"><bdi class="secno">6.1.6.2.3 </bdi>broader term (generic)</a></li></ol></li><li class="tocline"><a class="tocxref" href="#heeft-enger-begrip"><bdi class="secno">6.1.6.3 </bdi>heeft enger begrip</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#omvat"><bdi class="secno">6.1.6.3.1 </bdi>omvat</a></li><li class="tocline"><a class="tocxref" href="#is-generalisatie-van"><bdi class="secno">6.1.6.3.2 </bdi>is generalisatie van</a></li><li class="tocline"><a class="tocxref" href="#narrower-term-instantial"><bdi class="secno">6.1.6.3.3 </bdi>narrower term (instantial)</a></li></ol></li><li class="tocline"><a class="tocxref" href="#harmonisatierelatie"><bdi class="secno">6.1.6.4 </bdi>Harmonisatierelatie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#has-related-match"><bdi class="secno">6.1.6.4.1 </bdi>has related match</a></li><li class="tocline"><a class="tocxref" href="#overeenkomstig-generieker"><bdi class="secno">6.1.6.4.2 </bdi>overeenkomstig generieker</a></li><li class="tocline"><a class="tocxref" href="#has-narrower-match"><bdi class="secno">6.1.6.4.3 </bdi>has narrower match</a></li><li class="tocline"><a class="tocxref" href="#has-exact-match"><bdi class="secno">6.1.6.4.4 </bdi>has exact match</a></li><li class="tocline"><a class="tocxref" href="#vrijwel-overeenkomstig"><bdi class="secno">6.1.6.4.5 </bdi>vrijwel overeenkomstig</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#brondocument"><bdi class="secno">6.1.7 </bdi>brondocument</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#source"><bdi class="secno">6.1.7.1 </bdi>source</a></li></ol></li><li class="tocline"><a class="tocxref" href="#concept"><bdi class="secno">6.1.8 </bdi>concept</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#topbegrip"><bdi class="secno">6.1.8.1 </bdi>topbegrip</a></li></ol></li><li class="tocline"><a class="tocxref" href="#begrippenkader-0"><bdi class="secno">6.1.9 </bdi>begrippenkader</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#begrippenlijst"><bdi class="secno">6.1.9.1 </bdi>begrippenlijst</a></li><li class="tocline"><a class="tocxref" href="#thesaurus"><bdi class="secno">6.1.9.2 </bdi>thesaurus</a></li><li class="tocline"><a class="tocxref" href="#taxonomie"><bdi class="secno">6.1.9.3 </bdi>taxonomie</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#profiel-skos-ap-nl"><bdi class="secno">7. </bdi>Profiel SKOS AP NL</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#collectie"><bdi class="secno">7.1 </bdi>Collectie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#eigenschappen"><bdi class="secno">7.1.1 </bdi>Eigenschappen</a></li><li class="tocline"><a class="tocxref" href="#brondocument-0"><bdi class="secno">7.1.2 </bdi>Brondocument</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#eigenschappen-0"><bdi class="secno">7.1.2.1 </bdi>Eigenschappen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#begrip"><bdi class="secno">7.1.3 </bdi>Begrip</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#eigenschappen-1"><bdi class="secno">7.1.3.1 </bdi>Eigenschappen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#begrippenkader-1"><bdi class="secno">7.1.4 </bdi>Begrippenkader</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#eigenschappen-2"><bdi class="secno">7.1.4.1 </bdi>Eigenschappen</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">8. </bdi>Conformance</a></li></ol></nav>
     <section data-format="markdown" id="samenvatting"><div class="header-wrapper"><h2 id="x1-samenvatting"><bdi class="secno">1. </bdi>Samenvatting</h2><a class="self-link" href="#samenvatting" aria-label="Permalink for Section 1."></a></div>
 
 <p>Hier komt de samenvatting van het werkdocument</p>
@@ -378,7 +399,2236 @@ narrowMatch: TODO</p>
 <section id="overeengekomen-richtlijnen-1"><div class="header-wrapper"><h3 id="x5-1-overeengekomen-richtlijnen"><bdi class="secno">5.1 </bdi>Overeengekomen richtlijnen</h3><a class="self-link" href="#overeengekomen-richtlijnen-1" aria-label="Permalink for Section 5.1"></a></div>
 </section><section id="functionele-invulling-1"><div class="header-wrapper"><h3 id="x5-2-functionele-invulling"><bdi class="secno">5.2 </bdi>Functionele invulling</h3><a class="self-link" href="#functionele-invulling-1" aria-label="Permalink for Section 5.2"></a></div>
 </section></section>
-    <section id="conformance"><div class="header-wrapper"><h2 id="x6-conformance"><bdi class="secno">6. </bdi>Conformance</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 6."></a></div><p>As well as sections marked as non-normative, all authoring guidelines, diagrams, examples, and notes in this specification are non-normative. Everything else in this specification is normative.</p>
+    <section id="begrippenkader-skos-ap-nl"><div class="header-wrapper"><h2 id="x6-begrippenkader-skos-ap-nl"><bdi class="secno">6. </bdi>Begrippenkader SKOS AP NL</h2><a class="self-link" href="#begrippenkader-skos-ap-nl" aria-label="Permalink for Section 6."></a></div>
+      
+      <section data-format="markdown" id="term"><div class="header-wrapper"><h3 id="x6-1-term"><bdi class="secno">6.1 </bdi>term</h3><a class="self-link" href="#term" aria-label="Permalink for Section 6.1"></a></div>
+<p><strong>voorkeursterm</strong>: term;
+term</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: Een term is een aaneenschakeling van één of meerdere woorden ter aanduiding van een object.;
+Word or phrase used to label a concept.</p>
+<p><strong>label</strong>: label</p>
+<p><strong>bovenliggend begrip</strong>: </p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.61">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.61</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#concept">concept</a></p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: In de definitie moet 'woord' breed worden geÃ¯nterpreteerd. Een term mag ook een afkorting zijn, zoals 'B.T.W.' (de voorkeursterm voor 'Belasting op toegevoegde waarde'), of een code zoals '013' (Een poppodium in Tilburg).;
+Een begrip wordt aangeduid met een voor mensen leesbare term (inclusief spaties en diacrieten). Deze is gelijk aan het skos:prefLabel. Uitzondering hierop is de situatie dat binnen 1 conceptschema er vaker dezelfde skos:prefLabel wordt gebruikt. Dit is geen good practice en dient zoveel mogelijk voorkomen te worden. In het geval dat dit toch voorkomt, krijgt het rdfs:label een toevoeging tussen haakjes die het onderscheid aangeeft. Dit label kan meertalig zijn, aangegeven door @nl of @en;
+A concept has a human-readable label (including spaces and diacritics). This is equal to the skos: prefLabel. An exception to this is the situation that within one concept scheme the same skos:prefLabel is used more than once. This is not a good practice and should be avoided as much as possible. In case this occurs nonetheless, the rdfs: label gets an addition between brackets that indicates the distinction. This label can be multilingual, indicated by @nl or @en</p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+<section id="voorkeursterm-0"><div class="header-wrapper"><h4 id="x6-1-1-voorkeursterm"><bdi class="secno">6.1.1 </bdi>voorkeursterm</h4><a class="self-link" href="#voorkeursterm-0" aria-label="Permalink for Section 6.1.1"></a></div>
+<p><strong>voorkeursterm</strong>: voorkeursterm;
+preferred label</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: The preferred lexical label for a resource, in a given language.;
+Een gepreferreerde term voor een begrip, in een specifieke taal.</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: <a href="#term">term</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="http://www.w3.org/2004/02/skos/core#prefLabel">http://www.w3.org/2004/02/skos/core#prefLabel</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#alternatieve-term">alternatieve term</a>;
+<a href="#concept">concept</a></p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: The terms selected to represent concepts may be single-word terms or multi-word terms. In ordinary discourse, a single term might have more than one meaning, and the most common meaning is not always the one needed to represent the concept wanted in the thesaurus. If the context provided by the hierarchy of broader and narrower concepts linked to the concept in question is insufficient to elucidate the intended scope, additional measures should be applied. While all thesaurus terms should be expressed as unambiguously as possible, it is especially important to formulate the preferred term of a given concept in such a way that it conveys the intended scope to any user. For example, the multi-meaning term "depression" could be reformulated as "economic depression" or "meteorological depression", as appropriate. Alternatively a qualifier may be used. In cases where these measures are not appropriate or sufficient, or where additional information would help to clarify the meaning and make the usage more consistent, an explicit scope note should be used.;
+De termen die zijn geselecteerd om begrippen weer te geven, kunnen termen van één of meerdere woorden zijn. In het gewone spraakgebruik kan een enkele term meer dan één betekenis hebben. De meest voorkomende betekenis is niet altijd de betekenis die nodig is om het in de thesaurus gezochte concept weer te geven. Indien de context die wordt geboden door de hiërarchie van bredere en smallere concepten gekoppeld aan het betreffende concept onvoldoende is om de beoogde reikwijdte te verduidelijken, dienen aanvullende maatregelen te worden genomen. Hoewel alle thesaurustermen zo ondubbelzinnig mogelijk moeten worden uitgedrukt, is het vooral belangrijk om de voorkeursterm van een bepaald concept zo te formuleren dat het de beoogde reikwijdte aan elke gebruiker overbrengt. De term "depressie" met meerdere betekenissen kan bijvoorbeeld worden geherformuleerd als "economische depressie" of "meteorologische depressie", al naar gelang het geval. Als alternatief kan een kwalificatie worden gebruikt. In gevallen waarin deze maatregelen niet passend of voldoende zijn, of waar aanvullende informatie zou helpen om de betekenis te verduidelijken en het gebruik consistenter te maken, moet een expliciete scope note worden gebruikt.</p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: Een begip kent één voorkeursterm, deze voorkeursterm hoeft niet persé uniek te zijn. Het is goed mogelijk dat binnen een bepaald domein één term meerdere betekenissen heeft en dus gaat over meerdere begrippen, mogelijk is het doel van een Thesaurus zelfs om dit inzicht te geven. We gebruiken geen post of prefix om voorkeurstermen context te geven of uniek te maken, tenzij deze post/prefix algemeen gebruikt wordt. Denk aan Hengelo (OV) en Hengelo (GLD). Een begrip krijgt expliciet één rdfs:Label om compatibiliteit met bestaande tools te bevorderen.</p>
+<p><strong>code</strong>: </p>
+</section><section id="alternatieve-term"><div class="header-wrapper"><h4 id="x6-1-2-alternatieve-term"><bdi class="secno">6.1.2 </bdi>alternatieve term</h4><a class="self-link" href="#alternatieve-term" aria-label="Permalink for Section 6.1.2"></a></div>
+<p><strong>voorkeursterm</strong>: alternatieve term;
+alternative label</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: An alternative lexical label for a resource.;
+Een alternatieve term voor een begrip is een term die gebruikt kan worden als alternatief voor de voorkeursterm van dit begrip, maar niet de voorkeur heeft.</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: <a href="#term">term</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="http://www.w3.org/2004/02/skos/core#altLabel">http://www.w3.org/2004/02/skos/core#altLabel</a>;
+<a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#concept">concept</a>;
+<a href="#voorkeursterm">voorkeursterm</a></p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: Acroniemen, afkortingen, spellingsvarianten en onregelmatige meervouds-/enkelvoudsvormen kunnen worden opgenomen in de alternatieve labels voor een concept. Verkeerd gespelde termen worden normaal gesproken als verborgen labels opgenomen (zie skos:hiddenLabel).;
+Acronyms, abbreviations, spelling variants, and irregular plural/singular forms may be included among the alternative labels for a concept. Mis-spelled terms are normally included as hidden labels (see skos:hiddenLabel).</p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: </p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+</section><section id="zoekterm"><div class="header-wrapper"><h4 id="x6-1-3-zoekterm"><bdi class="secno">6.1.3 </bdi>zoekterm</h4><a class="self-link" href="#zoekterm" aria-label="Permalink for Section 6.1.3"></a></div>
+<p><strong>voorkeursterm</strong>: zoekterm;
+hidden label</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: A lexical label for a resource that should be hidden when generating visual displays of the resource, but should still be accessible to free text search operations.;
+Een zoekterm voor een begrip is een term die beoogd is om het begrip te vinden, maar verder verborgen blijft.</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: <a href="#term">term</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="https://www.w3.org/2009/08/skos-reference/skos.html#hiddenLabel">https://www.w3.org/2009/08/skos-reference/skos.html#hiddenLabel</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#concept">concept</a></p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: </p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+</section><section id="label"><div class="header-wrapper"><h4 id="x6-1-4-label"><bdi class="secno">6.1.4 </bdi>label</h4><a class="self-link" href="#label" aria-label="Permalink for Section 6.1.4"></a></div>
+<p><strong>voorkeursterm</strong>: label;
+label</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: A human-readable name for the subject.;
+Een label voor een object is een voor mensen leesbare naam ter aanduiding van een object.</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: <a href="#term">term</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: </p>
+<p><strong>gerelateerd begrip</strong>: </p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: </p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+</section><section id="note"><div class="header-wrapper"><h4 id="x6-1-5-note"><bdi class="secno">6.1.5 </bdi>note</h4><a class="self-link" href="#note" aria-label="Permalink for Section 6.1.5"></a></div>
+<p><strong>voorkeursterm</strong>: note;
+notitie</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: Een algemene notitie zonder specifiek gebruiksdoel.;
+A general note, for any purpose.</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: </p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: </p>
+<p><strong>gerelateerd begrip</strong>: </p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: Notes are used to provide information relating to SKOS concepts. There is no restriction on the nature of this information, e.g., it could be plain text, hypertext, or an image; it could be a definition, information about the scope of a concept, editorial information, or any other type of information.;
+This property may be used directly, or as a super-property for more specific note types.;</p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+<section id="history-note"><div class="header-wrapper"><h5 id="x6-1-5-1-history-note"><bdi class="secno">6.1.5.1 </bdi>history note</h5><a class="self-link" href="#history-note" aria-label="Permalink for Section 6.1.5.1"></a></div>
+<p><strong>voorkeursterm</strong>: history note;
+historische notitie</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: Notitie over de voormalige status/gebruik/betekenis van het concept.;
+A note about the past state/use/meaning of a concept.</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: <a href="#note">note</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: </p>
+<p><strong>gerelateerd begrip</strong>: </p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: </p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+</section><section id="change-note"><div class="header-wrapper"><h5 id="x6-1-5-2-change-note"><bdi class="secno">6.1.5.2 </bdi>change note</h5><a class="self-link" href="#change-note" aria-label="Permalink for Section 6.1.5.2"></a></div>
+<p><strong>voorkeursterm</strong>: change note;
+wijzigingsnotitie</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: A note about a modification to a concept.;
+Notitie over een wijziging aan het concept.</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: <a href="#note">note</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: </p>
+<p><strong>gerelateerd begrip</strong>: </p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: </p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+</section><section id="uitleg"><div class="header-wrapper"><h5 id="x6-1-5-3-uitleg"><bdi class="secno">6.1.5.3 </bdi>uitleg</h5><a class="self-link" href="#uitleg" aria-label="Permalink for Section 6.1.5.3"></a></div>
+<p><strong>voorkeursterm</strong>: uitleg;
+comment</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: Een uitleg van een begrip is een beschrijving van dit begrip in eenvoudige taal die zonder verdere context begrepen kan worden.;
+A description of the subject resource.</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: <a href="#note">note</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="https://www.w3.org/TR/rdf-schema/#ch_comment">https://www.w3.org/TR/rdf-schema/#ch_comment</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#concept">concept</a></p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: De definitie moet 'precies kloppen'. De uitleg is er veel meer op gericht om de lezer te laten snappen wat er wordt bedoeld. Er vanuit gaande dat hij/zij dat nog niet weet. </p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+</section><section id="redactionele-opmerking"><div class="header-wrapper"><h5 id="x6-1-5-4-redactionele-opmerking"><bdi class="secno">6.1.5.4 </bdi>redactionele opmerking</h5><a class="self-link" href="#redactionele-opmerking" aria-label="Permalink for Section 6.1.5.4"></a></div>
+<p><strong>voorkeursterm</strong>: redactionele opmerking;
+editorial note</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: A note for an editor, translator or maintainer of the vocabulary.;
+Een redactionele opmerking voor een begrip is een notitie voor de redacteur, vertaler of beheerder van het begrippenkader.</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: <a href="#note">note</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="http://www.w3.org/2004/02/skos/core#editorialNote">http://www.w3.org/2004/02/skos/core#editorialNote</a>;
+<a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#concept">concept</a></p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: De redactionele opmerking geeft aan hoe de beschrijving van het begrip tot stand is gekomen, en waarom bepaalde keuzes zijn gemaakt.</p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+</section><section id="definition"><div class="header-wrapper"><h5 id="x6-1-5-5-definition"><bdi class="secno">6.1.5.5 </bdi>definition</h5><a class="self-link" href="#definition" aria-label="Permalink for Section 6.1.5.5"></a></div>
+<p><strong>voorkeursterm</strong>: definition;
+definitie</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: SKOS: A statement or formal explanation of the meaning of a concept. ISO11179: Representation of a concept by a descriptive statement which serves to differentiate it from related concepts.;
+Een definitie van een begrip is een tekstuele beschrijving van de betekenis van dit begrip waarmee het begrip kan worden onderscheiden van andere begrippen.</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: <a href="#note">note</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#concept">concept</a></p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: De definitie dient te voldoen aan specifieke formuleringsregels voor definitie en dient in een voor mensen leesbare taal te begrijpen zijn. 
+  In dit laatste onderscheid de definitie zich daarmee van een machine-leesbare formele beschrijving.
+  Aan de hand van een definitie kan iemand bepalen of zijn eigen begrip behorende bij een term overeenkomt met het begrip dat gedefinieerd wordt.
+De uitleg of de toelichting bij een begrip kan gebruik worden voor iemand die het begrip nog niet kent om te begrijpen waar het over gaat.</p>
+<p><strong>redactionele opmerking</strong>: De ISO11179 is gevolgd bij het opstellen van de Nederlandse definitie en niet de SKOS definitie vanwege de verwarring die kan optreden m.b.t. 'formele uitleg': dit laatste zou je eerder bij een ontologie verwachten.</p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+</section><section id="scope-note"><div class="header-wrapper"><h5 id="x6-1-5-6-scope-note"><bdi class="secno">6.1.5.6 </bdi>scope note</h5><a class="self-link" href="#scope-note" aria-label="Permalink for Section 6.1.5.6"></a></div>
+<p><strong>voorkeursterm</strong>: scope note;
+toelichting</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: Een toelichting voor een begrip is een notitie die meer duidelijk geeft over de betekenis of gebruik van een begrip;
+A note that helps to clarify the meaning and/or the use of a concept.</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: <a href="#note">note</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="http://www.w3.org/2004/02/skos/core#scopeNote">http://www.w3.org/2004/02/skos/core#scopeNote</a>;
+<a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#concept">concept</a></p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: De toelichting geeft een aanvulling op de definitie waardoor deze beter begrepen kan worden, zonder dat daarmee de formele beschrijving onnodig of onjuist wordt aangepast. Zie: <a href="https://www.w3.org/TR/2009/NOTE-skos-primer-20090818/#secdocumentation">https://www.w3.org/TR/2009/NOTE-skos-primer-20090818/#secdocumentation</a> </p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+</section></section><section id="semantische-relatie"><div class="header-wrapper"><h4 id="x6-1-6-semantische-relatie"><bdi class="secno">6.1.6 </bdi>Semantische relatie</h4><a class="self-link" href="#semantische-relatie" aria-label="Permalink for Section 6.1.6"></a></div>
+<p><strong>voorkeursterm</strong>: Semantische relatie</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: Links a concept to a concept related by meaning.;
+Relateert een begrip aan een ander begrip op basis van de betekenis.</p>
+<p><strong>label</strong>: is in semantic relation with</p>
+<p><strong>bovenliggend begrip</strong>: </p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: </p>
+<p><strong>gerelateerd begrip</strong>: </p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: </p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+<section id="has-related"><div class="header-wrapper"><h5 id="x6-1-6-1-has-related"><bdi class="secno">6.1.6.1 </bdi>has related</h5><a class="self-link" href="#has-related" aria-label="Permalink for Section 6.1.6.1"></a></div>
+<p><strong>voorkeursterm</strong>: has related;
+is gerelateerd aan</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: Relateert een begrip aan een andere begrip waarmee het semantisch samenhangt;
+Relates a concept to a concept with which there is an associative semantic relationship.</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: <a href="#semantische-relatie">Semantische relatie</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12</a>;
+<a href="http://www.w3.org/2004/02/skos/core#related">http://www.w3.org/2004/02/skos/core#related</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#concept">concept</a>;
+<a href="#thesaurus">thesaurus</a></p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: Het begrip is voor zijn betekenis afhankelijk van de betekenis van het andere begrip. Dit betekent dat in de definitie van eerstgenoemde begrip het andere begrip wordt gebruikt.</p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+</section><section id="heeft-breder-begrip"><div class="header-wrapper"><h5 id="x6-1-6-2-heeft-breder-begrip"><bdi class="secno">6.1.6.2 </bdi>heeft breder begrip</h5><a class="self-link" href="#heeft-breder-begrip" aria-label="Permalink for Section 6.1.6.2"></a></div>
+<p><strong>voorkeursterm</strong>: heeft breder begrip;
+has broader</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: Relates a concept to a concept that is more general in meaning.;
+Relateert een begrip aan een bovenliggend begrip in de hierarchie.</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: <a href="#semantische-relatie">Semantische relatie</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12</a>;
+<a href="http://www.w3.org/2004/02/skos/core#broader">http://www.w3.org/2004/02/skos/core#broader</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#taxonomie">taxonomie</a>;
+<a href="#concept">concept</a></p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources.</p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+<section id="is-onderdeel-van"><div class="header-wrapper"><h6 id="x6-1-6-2-1-is-onderdeel-van"><bdi class="secno">6.1.6.2.1 </bdi>is onderdeel van</h6><a class="self-link" href="#is-onderdeel-van" aria-label="Permalink for Section 6.1.6.2.1"></a></div>
+<p><strong>voorkeursterm</strong>: is onderdeel van;
+broader term (partitive)</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: Relateert een begrip aan een meer omvattend begrip. Voorbeelden van eerstgenoemde begrip zullen onderdeel van voorbeelden van het meer omvattende begrip zijn.;
+When the ISO 25964 standard is followed, the broader partitive relationship should qualify for a transitive closure.</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: <a href="#heeft-breder-begrip">heeft breder begrip</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="http://purl.org/iso25964/skos-thes#broaderPartitive">http://purl.org/iso25964/skos-thes#broaderPartitive</a>;
+<a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#concept">concept</a>;
+<a href="#thesaurus">thesaurus</a></p>
+<p><strong>is specialisatie van</strong>: <a href="#heeft-breder-begrip">heeft breder begrip</a></p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: A "bicycle wheel" for instance belongs uniquely to a "bicycle" while a "wheel" does not. A broader partitive relationship should not be established between "bicycles" and "wheels" because a wheel could be part of a motor car, a wheelbarrow or one of many other artefacts.</p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+</section><section id="is-exemplaar-van"><div class="header-wrapper"><h6 id="x6-1-6-2-2-is-exemplaar-van"><bdi class="secno">6.1.6.2.2 </bdi>is exemplaar van</h6><a class="self-link" href="#is-exemplaar-van" aria-label="Permalink for Section 6.1.6.2.2"></a></div>
+<p><strong>voorkeursterm</strong>: is exemplaar van;
+broader term (instantial)</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: The immediate (direct or one-step) instance - class relationship.;
+Relateert een begrip, een exemplaar, aan een ander begrip, de categorie, waartoe eerstgenoemde begrip behoort.</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: <a href="#heeft-breder-begrip">heeft breder begrip</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="http://purl.org/iso25964/skos-thes#broaderInstantial">http://purl.org/iso25964/skos-thes#broaderInstantial</a>;
+<a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#thesaurus">thesaurus</a>;
+<a href="#concept">concept</a></p>
+<p><strong>is specialisatie van</strong>: <a href="#heeft-breder-begrip">heeft breder begrip</a></p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: </p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+</section><section id="broader-term-generic"><div class="header-wrapper"><h6 id="x6-1-6-2-3-broader-term-generic"><bdi class="secno">6.1.6.2.3 </bdi>broader term (generic)</h6><a class="self-link" href="#broader-term-generic" aria-label="Permalink for Section 6.1.6.2.3"></a></div>
+<p><strong>voorkeursterm</strong>: broader term (generic);
+is specialisatie van</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: Relateert een begrip aan een meer generiek begrip.;
+The immediate (direct or one-step) class - generalized class relationship.</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: <a href="#heeft-breder-begrip">heeft breder begrip</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="http://purl.org/iso25964/skos-thes#broaderGeneric">http://purl.org/iso25964/skos-thes#broaderGeneric</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#concept">concept</a>;
+<a href="#thesaurus">thesaurus</a></p>
+<p><strong>is specialisatie van</strong>: <a href="#heeft-breder-begrip">heeft breder begrip</a></p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: </p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+</section></section><section id="heeft-enger-begrip"><div class="header-wrapper"><h5 id="x6-1-6-3-heeft-enger-begrip"><bdi class="secno">6.1.6.3 </bdi>heeft enger begrip</h5><a class="self-link" href="#heeft-enger-begrip" aria-label="Permalink for Section 6.1.6.3"></a></div>
+<p><strong>voorkeursterm</strong>: heeft enger begrip;
+has narrower</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: Relates a concept to a concept that is more specific in meaning.;
+Relateert een concept aan een ander concept die meer specifiek in betekenis is.</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: <a href="#semantische-relatie">Semantische relatie</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="http://www.w3.org/2004/02/skos/core#narrower">http://www.w3.org/2004/02/skos/core#narrower</a>;
+<a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#concept">concept</a>;
+<a href="#taxonomie">taxonomie</a></p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources.</p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+<section id="omvat"><div class="header-wrapper"><h6 id="x6-1-6-3-1-omvat"><bdi class="secno">6.1.6.3.1 </bdi>omvat</h6><a class="self-link" href="#omvat" aria-label="Permalink for Section 6.1.6.3.1"></a></div>
+<p><strong>voorkeursterm</strong>: omvat;
+broader term (partitive)</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: Relateert een begrip aan een minder omvattend begrip. Voorbeelden van eerstgenoemde begrip zullen bestaan uit voorbeelden van het minder omvattende begrip zijn.;
+When the ISO 25964 standard is followed, the narrower partitive relationship should qualify for a transitive closure.</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: <a href="#heeft-enger-begrip">heeft enger begrip</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="http://purl.org/iso25964/skos-thes#narrowerPartitive">http://purl.org/iso25964/skos-thes#narrowerPartitive</a>;
+<a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#thesaurus">thesaurus</a>;
+<a href="#concept">concept</a></p>
+<p><strong>is specialisatie van</strong>: <a href="#heeft-enger-begrip">heeft enger begrip</a></p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: A "bicycle wheel" for instance belongs uniquely to a "bicycle" while a "wheel" does not. A narrower partitive relationship should not be established between "bicycles" and "wheels" because a wheel could be part of a motor car, a wheelbarrow or one of many other artefacts.</p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+</section><section id="is-generalisatie-van"><div class="header-wrapper"><h6 id="x6-1-6-3-2-is-generalisatie-van"><bdi class="secno">6.1.6.3.2 </bdi>is generalisatie van</h6><a class="self-link" href="#is-generalisatie-van" aria-label="Permalink for Section 6.1.6.3.2"></a></div>
+<p><strong>voorkeursterm</strong>: is generalisatie van;
+broader term (generic)</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: The immediate (direct or one-step) class - specialized class relationship.;
+Relateert een begrip aan een meer specifieker begrip.</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: <a href="#heeft-enger-begrip">heeft enger begrip</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="http://purl.org/iso25964/skos-thes#narrowerGeneric">http://purl.org/iso25964/skos-thes#narrowerGeneric</a>;
+<a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#concept">concept</a>;
+<a href="#thesaurus">thesaurus</a></p>
+<p><strong>is specialisatie van</strong>: <a href="#heeft-enger-begrip">heeft enger begrip</a></p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: </p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+</section><section id="narrower-term-instantial"><div class="header-wrapper"><h6 id="x6-1-6-3-3-narrower-term-instantial"><bdi class="secno">6.1.6.3.3 </bdi>narrower term (instantial)</h6><a class="self-link" href="#narrower-term-instantial" aria-label="Permalink for Section 6.1.6.3.3"></a></div>
+<p><strong>voorkeursterm</strong>: narrower term (instantial);
+is categorie van</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: Relateert een begrip, de categorie, aan een begrip dat exemplarisch is voor eerstgenoemde begrip.;
+The immediate (direct or one-step) class - instance relationship.</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: <a href="#heeft-enger-begrip">heeft enger begrip</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="http://purl.org/iso25964/skos-thes#narrowerInstantial">http://purl.org/iso25964/skos-thes#narrowerInstantial</a>;
+<a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#thesaurus">thesaurus</a>;
+<a href="#concept">concept</a></p>
+<p><strong>is specialisatie van</strong>: <a href="#heeft-enger-begrip">heeft enger begrip</a></p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: </p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+</section></section><section id="harmonisatierelatie"><div class="header-wrapper"><h5 id="x6-1-6-4-harmonisatierelatie"><bdi class="secno">6.1.6.4 </bdi>Harmonisatierelatie</h5><a class="self-link" href="#harmonisatierelatie" aria-label="Permalink for Section 6.1.6.4"></a></div>
+<p><strong>voorkeursterm</strong>: Harmonisatierelatie</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: Relateert een begrip aan een overeenkomstig begrip uit een ander begrippenstelsel, op basis van de betekenis.;
+Relates two concepts coming, by convention, from different schemes, and that have comparable meanings</p>
+<p><strong>label</strong>: is in mapping relation with</p>
+<p><strong>bovenliggend begrip</strong>: <a href="#semantische-relatie">Semantische relatie</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: </p>
+<p><strong>gerelateerd begrip</strong>: </p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: </p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+<section id="has-related-match"><div class="header-wrapper"><h6 id="x6-1-6-4-1-has-related-match"><bdi class="secno">6.1.6.4.1 </bdi>has related match</h6><a class="self-link" href="#has-related-match" aria-label="Permalink for Section 6.1.6.4.1"></a></div>
+<p><strong>voorkeursterm</strong>: has related match;
+overeenkomstig verwant</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: skos:relatedMatch is used to state an associative mapping link between two conceptual resources in different concept schemes.;
+Relateert een begrip aan een verwant begrip uit een ander begrippenkader</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: <a href="#harmonisatierelatie">Harmonisatierelatie</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="http://www.w3.org/2004/02/skos/core#relatedMatch">http://www.w3.org/2004/02/skos/core#relatedMatch</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#concept">concept</a></p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: Een dergelijke relatie is aanwezig als de betekenis van het betreffende begrip tot stand is gekomen op basis van kennis over het begrip uit het andere begrippenkader</p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+</section><section id="overeenkomstig-generieker"><div class="header-wrapper"><h6 id="x6-1-6-4-2-overeenkomstig-generieker"><bdi class="secno">6.1.6.4.2 </bdi>overeenkomstig generieker</h6><a class="self-link" href="#overeenkomstig-generieker" aria-label="Permalink for Section 6.1.6.4.2"></a></div>
+<p><strong>voorkeursterm</strong>: overeenkomstig generieker;
+has broader match</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: skos:broadMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes.;
+Relateert een begrip aan een generieker begrip uit een ander begrippenkader</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: <a href="#harmonisatierelatie">Harmonisatierelatie</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="http://www.w3.org/2004/02/skos/core#broadMatch">http://www.w3.org/2004/02/skos/core#broadMatch</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#concept">concept</a></p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: Een dergelijke relatie is aanwezig als de betekenis van het betreffende begrip tot stand is gekomen op basis van kennis over het begrip uit het andere begrippenkader</p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+</section><section id="has-narrower-match"><div class="header-wrapper"><h6 id="x6-1-6-4-3-has-narrower-match"><bdi class="secno">6.1.6.4.3 </bdi>has narrower match</h6><a class="self-link" href="#has-narrower-match" aria-label="Permalink for Section 6.1.6.4.3"></a></div>
+<p><strong>voorkeursterm</strong>: has narrower match;
+overeenkomstig specifieker</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: skos:narrowMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes.;
+Relateert een begrip aan een specifieker begrip uit een ander begrippenkader</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: <a href="#harmonisatierelatie">Harmonisatierelatie</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="http://www.w3.org/2004/02/skos/core#narrowMatch">http://www.w3.org/2004/02/skos/core#narrowMatch</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#concept">concept</a></p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: ;</p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+</section><section id="has-exact-match"><div class="header-wrapper"><h6 id="x6-1-6-4-4-has-exact-match"><bdi class="secno">6.1.6.4.4 </bdi>has exact match</h6><a class="self-link" href="#has-exact-match" aria-label="Permalink for Section 6.1.6.4.4"></a></div>
+<p><strong>voorkeursterm</strong>: has exact match;
+exact overeenkomstig</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: Relateert een begrip aan een overeenkomstig begrip uit een ander begrippenkader, waarbij de betekenis van deze begrippen bij uiteenlopende toepassingen gelijk aan elkaar kan worden verondersteld;
+skos:exactMatch is used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. skos:exactMatch is a transitive property, and is a sub-property of skos:closeMatch.</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: <a href="#harmonisatierelatie">Harmonisatierelatie</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="http://www.w3.org/2004/02/skos/core#exactMatch">http://www.w3.org/2004/02/skos/core#exactMatch</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#concept">concept</a></p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: Een dergelijke relatie is aanwezig als de betekenis van het betreffende begrip gelijk wordt verondersteld aan het begrip uit het andere begrippenkader. Het is een 'leenwoord': het begrip is overgenomen uit het andere begrippenkader.</p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+</section><section id="vrijwel-overeenkomstig"><div class="header-wrapper"><h6 id="x6-1-6-4-5-vrijwel-overeenkomstig"><bdi class="secno">6.1.6.4.5 </bdi>vrijwel overeenkomstig</h6><a class="self-link" href="#vrijwel-overeenkomstig" aria-label="Permalink for Section 6.1.6.4.5"></a></div>
+<p><strong>voorkeursterm</strong>: vrijwel overeenkomstig;
+has close match</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: skos:closeMatch is used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of "compound errors" when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property.;
+Relateert een begrip aan een overeenkomstig begrip uit een ander begrippenkader, waarbij de betekenis van deze begrippen bij enkele toepassingen gelijk aan elkaar kan worden verondersteld.</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: <a href="#harmonisatierelatie">Harmonisatierelatie</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="http://www.w3.org/2004/02/skos/core#closeMatch">http://www.w3.org/2004/02/skos/core#closeMatch</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#concept">concept</a></p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: </p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+</section></section></section><section id="brondocument"><div class="header-wrapper"><h4 id="x6-1-7-brondocument"><bdi class="secno">6.1.7 </bdi>brondocument</h4><a class="self-link" href="#brondocument" aria-label="Permalink for Section 6.1.7"></a></div>
+<p><strong>voorkeursterm</strong>: brondocument;
+bibliographic resource</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: Een brondocument is een boek, een artikel of enig ander documentair object;
+A book, article, or other documentary resource.</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: </p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/BibliographicResource">https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/BibliographicResource</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#concept">concept</a></p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: </p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+<section id="source"><div class="header-wrapper"><h5 id="x6-1-7-1-source"><bdi class="secno">6.1.7.1 </bdi>source</h5><a class="self-link" href="#source" aria-label="Permalink for Section 6.1.7.1"></a></div>
+<p><strong>voorkeursterm</strong>: source;
+bron</p>
+<p><strong>alternative label</strong>: herkomst</p>
+<p><strong>definitie</strong>: A related resource from which the described resource is derived.;</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: <a href="#brondocument">brondocument</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/elements11/source/">https://www.dublincore.org/specifications/dublin-core/dcmi-terms/elements11/source/</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#concept">concept</a></p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system.</p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+</section></section><section id="concept"><div class="header-wrapper"><h4 id="x6-1-8-concept"><bdi class="secno">6.1.8 </bdi>concept</h4><a class="self-link" href="#concept" aria-label="Permalink for Section 6.1.8"></a></div>
+<p><strong>voorkeursterm</strong>: concept;
+begrip</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: Concepts are the units  of thought —ideas, meanings, or (categories of) objects and events— which underlie many knowledge organization systems.</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: </p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="http://www.w3.org/2004/02/skos/core#Concept">http://www.w3.org/2004/02/skos/core#Concept</a>;
+<a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#brondocument">brondocument</a>;
+<a href="#zoekterm">zoekterm</a>;
+<a href="#omvat">omvat</a>;
+<a href="#is-defined-by" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document">is defined by</a>;
+<a href="#term">term</a>;
+<a href="#heeft-breder-begrip">heeft breder begrip</a>;
+<a href="#code" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document-0">code</a>;
+<a href="#scope-note">scope note</a>;
+<a href="#heeft-enger-begrip">heeft enger begrip</a>;
+<a href="#is-generalisatie-van">is generalisatie van</a>;
+<a href="#source">source</a>;
+<a href="#is-in-scheme" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document-1">is in scheme</a>;
+<a href="#narrower-term-instantial">narrower term (instantial)</a>;
+<a href="#has-related-match">has related match</a>;
+<a href="#uitleg">uitleg</a>;
+<a href="#definition">definition</a>;
+<a href="#collectie">Collectie</a>;
+<a href="#is-onderdeel-van">is onderdeel van</a>;
+<a href="#has-related">has related</a>;
+<a href="#overeenkomstig-generieker">overeenkomstig generieker</a>;
+<a href="#voorkeursterm">voorkeursterm</a>;
+<a href="#redactionele-opmerking">redactionele opmerking</a>;
+<a href="#is-exemplaar-van">is exemplaar van</a>;
+<a href="#has-exact-match">has exact match</a>;
+<a href="#broader-term-generic">broader term (generic)</a>;
+<a href="#has-narrower-match">has narrower match</a>;
+<a href="#vrijwel-overeenkomstig">vrijwel overeenkomstig</a>;
+<a href="#alternatieve-term">alternatieve term</a></p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: The prime application for a thesaurus is in information retrieval, where the aim is to search for concepts. Concepts are represented by terms. Each term included in a thesaurus should represent a single concept (or unit of thought). Concepts can range from the simple (e.g. cats) to the very complex (e.g. racial discrimination among ethnic minorities). Compound terms or phrases are generally needed to express the more complex concepts.;
+De belangrijkste toepassing voor een thesaurus is het ophalen van informatie, waarbij het doel is om naar begrippen te zoeken. Begrippen worden weergegeven door termen. Elke term in een thesaurus moet een enkel begrip (of denkeenheid) vertegenwoordigen. Begrippen kunnen variëren van eenvoudig (bijv. katten) tot zeer complex (bijv. rassendiscriminatie onder etnische minderheden). Samengestelde termen of zinsdelen zijn over het algemeen nodig om de meer complexe begrippen uit te drukken.</p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+<section id="topbegrip"><div class="header-wrapper"><h5 id="x6-1-8-1-topbegrip"><bdi class="secno">6.1.8.1 </bdi>topbegrip</h5><a class="self-link" href="#topbegrip" aria-label="Permalink for Section 6.1.8.1"></a></div>
+<p><strong>voorkeursterm</strong>: topbegrip;
+top concept</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: Top concepts are concepts which are topmost in the hierarchical relations for a scheme.;
+Topbegrip is een begrip die bovenaan de hierarchie staat in een bepaald begrippenkader</p>
+<p><strong>label</strong>: has top concept</p>
+<p><strong>bovenliggend begrip</strong>: <a href="#concept">concept</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="http://www.w3.org/2004/02/skos/core#hasTopConcept">http://www.w3.org/2004/02/skos/core#hasTopConcept</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#begrippenkader">begrippenkader</a></p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: ;</p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+</section></section><section id="begrippenkader-0"><div class="header-wrapper"><h4 id="x6-1-9-begrippenkader"><bdi class="secno">6.1.9 </bdi>begrippenkader</h4><a class="self-link" href="#begrippenkader-0" aria-label="Permalink for Section 6.1.9"></a></div>
+<p><strong>voorkeursterm</strong>: begrippenkader;
+concept scheme</p>
+<p><strong>alternative label</strong>: controlled vocabulary;
+structured vocabulary;
+knowledge organisation system</p>
+<p><strong>definitie</strong>: A set of concepts, optionally including statements about semantic relationships between those concepts.;
+Een begrippenstelsel is een verzameling van begrippen, inclusief eventuele semantische relaties tussen deze begrippen.</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: </p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">http://www.w3.org/2004/02/skos/core#ConceptScheme</a>;
+<a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#topbegrip">topbegrip</a></p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes. Concept schemes are also embedded in glossaries and terminologies.</p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: </p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+<section id="begrippenlijst"><div class="header-wrapper"><h5 id="x6-1-9-1-begrippenlijst"><bdi class="secno">6.1.9.1 </bdi>begrippenlijst</h5><a class="self-link" href="#begrippenlijst" aria-label="Permalink for Section 6.1.9.1"></a></div>
+<p><strong>voorkeursterm</strong>: begrippenlijst;
+controlled vocabulary</p>
+<p><strong>alternative label</strong>: begrippenkader;
+concept scheme</p>
+<p><strong>definitie</strong>: A controlled vocabulary is a carefully selected list of words and phrases, which are used to tag units of information (document or work) so that they may be more easily retrieved by a search.</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: <a href="#begrippenkader">begrippenkader</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="https://en.wikipedia.org/wiki/Controlled_vocabulary">https://en.wikipedia.org/wiki/Controlled_vocabulary</a></p>
+<p><strong>gerelateerd begrip</strong>: </p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: Begrippenkaders bieden een manier om kennis te ordenen voor het later kunnen ophalen. Ze worden gebruikt in indexeringsschema's, koppen, thesauri, taxonomieën en andere kennisorganisatiesystemen. Begrippenkader schema's verplichten het gebruik van vooraf gedefinieerde, geautoriseerde termen die vooraf zijn geselecteerd door de ontwerpers van de schema's, in tegenstelling tot natuurlijke taalvocabulaires, die een dergelijke beperking niet hebben.;
+Controlled vocabularies provide a way to organize knowledge for subsequent retrieval. They are used in subject indexing schemes, subject headings, thesauri, taxonomies and other knowledge organization systems. Controlled vocabulary schemes mandate the use of predefined, authorised terms that have been preselected by the designers of the schemes, in contrast to natural language vocabularies, which have no such restriction.</p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+</section><section id="thesaurus"><div class="header-wrapper"><h5 id="x6-1-9-2-thesaurus"><bdi class="secno">6.1.9.2 </bdi>thesaurus</h5><a class="self-link" href="#thesaurus" aria-label="Permalink for Section 6.1.9.2"></a></div>
+<p><strong>voorkeursterm</strong>: thesaurus;
+thesaurus</p>
+<p><strong>alternative label</strong>: </p>
+<p><strong>definitie</strong>: </p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: <a href="#begrippenkader">begrippenkader</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="https://en.wikipedia.org/wiki/Thesaurus">https://en.wikipedia.org/wiki/Thesaurus</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#broader-term-generic">broader term (generic)</a>;
+<a href="#has-related">has related</a>;
+<a href="#omvat">omvat</a>;
+<a href="#is-exemplaar-van">is exemplaar van</a>;
+<a href="#is-generalisatie-van">is generalisatie van</a>;
+<a href="#is-onderdeel-van">is onderdeel van</a>;
+<a href="#narrower-term-instantial">narrower term (instantial)</a></p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: </p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>: </p>
+</section><section id="taxonomie"><div class="header-wrapper"><h5 id="x6-1-9-3-taxonomie"><bdi class="secno">6.1.9.3 </bdi>taxonomie</h5><a class="self-link" href="#taxonomie" aria-label="Permalink for Section 6.1.9.3"></a></div>
+<p><strong>voorkeursterm</strong>: taxonomie;
+taxonomy</p>
+<p><strong>alternative label</strong>: classificatieschema</p>
+<p><strong>definitie</strong>: A taxonomy (or taxonomical classification) is a scheme of classification, especially a hierarchical classification, in which concepts are organized into groups or types.</p>
+<p><strong>label</strong>: </p>
+<p><strong>bovenliggend begrip</strong>: <a href="#begrippenkader">begrippenkader</a></p>
+<p><strong>behoort tot</strong>: <a href="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS">http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS</a></p>
+<p><strong>bron</strong>: <a href="https://en.wikipedia.org/wiki/Taxonomy">https://en.wikipedia.org/wiki/Taxonomy</a></p>
+<p><strong>gerelateerd begrip</strong>: <a href="#heeft-enger-begrip">heeft enger begrip</a>;
+<a href="#heeft-breder-begrip">heeft breder begrip</a></p>
+<p><strong>is specialisatie van</strong>: </p>
+<p><strong>is onderdeel van</strong>: </p>
+<p><strong>exemplaar van</strong>: </p>
+<p><strong>is generalisatie van</strong>: </p>
+<p><strong>categorie van</strong>: </p>
+<p><strong>omvat</strong>: </p>
+<p><strong>overeenkomstig generieker</strong>: </p>
+<p><strong>exact overeenkomstig</strong>: </p>
+<p><strong>Overeenkomstig verwant</strong>: </p>
+<p><strong>vrijwel overeenkomstig</strong>: </p>
+<p><strong>voorbeeld</strong>: </p>
+<p><strong>zoekterm</strong>: </p>
+<p><strong>historische notitie</strong>: </p>
+<p><strong>toelichting</strong>: Een taxonomie wordt gebruikt om kennis te ordenen en te indexeren (opgeslagen als documenten, artikelen, video's, enz.), zoals in de vorm van een bibliotheekclassificatiesysteem of een taxonomie van een zoekmachine, zodat gebruikers de informatie die ze zoeken gemakkelijker kunnen vinden. op zoek naar. Taxonomieën zijn hiërarchieën (en hebben dus een intrinsieke boomstructuur).;
+A taxonomy is be used to organize and index knowledge (stored as documents, articles, videos, etc.), such as in the form of a library classification system, or a search engine taxonomy, so that users can more easily find the information they are searching for. Taxonomies are hierarchies (and thus, have an intrinsic tree structure).</p>
+<p><strong>redactionele opmerking</strong>: </p>
+<p><strong>uitleg</strong>: </p>
+<p><strong>code</strong>:</p>
+</section></section></section>
+    </section>
+    <section id="profiel-skos-ap-nl"><div class="header-wrapper"><h2 id="x7-profiel-skos-ap-nl"><bdi class="secno">7. </bdi>Profiel SKOS AP NL</h2><a class="self-link" href="#profiel-skos-ap-nl" aria-label="Permalink for Section 7."></a></div>
+      
+      <section data-format="markdown" id="collectie"><div class="header-wrapper"><h3 id="x7-1-collectie"><bdi class="secno">7.1 </bdi>Collectie</h3><a class="self-link" href="#collectie" aria-label="Permalink for Section 7.1"></a></div>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Collection">Klasse</div></th>
+<th>Collectie</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>rdfs:label</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#Collection">Collection</a></td>
+</tr>
+<tr>
+<td>rdfs:label</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#Collection">Collectie</a></td>
+</tr>
+<tr>
+<td>Uitleg en</td>
+<td>A meaningful collection of concepts.</td>
+</tr>
+<tr>
+<td>Uitleg nl</td>
+<td>Een verzameling concepten met een samenhangende betekenis.</td>
+</tr>
+<tr>
+<td>Eigenschappen en relaties</td>
+<td><a href="#Collection-member">bevat</a>, <a href="#Collection-label">label</a></td>
+</tr>
+</tbody></table>
+<section id="eigenschappen"><div class="header-wrapper"><h4 id="x7-1-1-eigenschappen"><bdi class="secno">7.1.1 </bdi>Eigenschappen</h4><a class="self-link" href="#eigenschappen" aria-label="Permalink for Section 7.1.1"></a></div>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Collection-member">Eigenschap</div></th>
+<th>bevat</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name nl</td>
+<td>bevat</td>
+</tr>
+<tr>
+<td>sh:description nl</td>
+<td>Relateert een collectie aan een begrip dat onderdeel is van deze collectie.</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#member">member</a></td>
+</tr>
+<tr>
+<td>sh:class</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a></td>
+</tr>
+<tr>
+<td>sh:nodeKind</td>
+<td><a href="http://www.w3.org/ns/shacl#IRI">IRI</a></td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#Collection">Collectie</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Collection-label">Eigenschap</div></th>
+<th>label</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name nl</td>
+<td>label</td>
+</tr>
+<tr>
+<td>sh:description nl</td>
+<td>Een label voor een object is een voor mensen leesbare naam ter aanduiding van een object.</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td>
+</tr>
+<tr>
+<td>sh:nodeKind</td>
+<td><a href="http://www.w3.org/ns/shacl#IRI">IRI</a></td>
+</tr>
+<tr>
+<td>sh:minCount</td>
+<td>1</td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#Collection">Collectie</a></td>
+</tr>
+</tbody></table>
+</section><section id="brondocument-0"><div class="header-wrapper"><h4 id="x7-1-2-brondocument"><bdi class="secno">7.1.2 </bdi>Brondocument</h4><a class="self-link" href="#brondocument-0" aria-label="Permalink for Section 7.1.2"></a></div>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="BibliographicResource">Klasse</div></th>
+<th>Brondocument</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>rdfs:label</td>
+<td><a href="http://purl.org/dc/terms/BibliographicResource">Brondocument</a></td>
+</tr>
+<tr>
+<td>Uitleg en</td>
+<td>A book, article, or other documentary resource.</td>
+</tr>
+<tr>
+<td>Uitleg nl</td>
+<td>Een Brondocument is een boek, een artikel of enig ander documentair object</td>
+</tr>
+<tr>
+<td>Eigenschappen en relaties</td>
+<td><a href="#BibliographicResource-label">label</a></td>
+</tr>
+</tbody></table>
+<section id="eigenschappen-0"><div class="header-wrapper"><h5 id="x7-1-2-1-eigenschappen"><bdi class="secno">7.1.2.1 </bdi>Eigenschappen</h5><a class="self-link" href="#eigenschappen-0" aria-label="Permalink for Section 7.1.2.1"></a></div>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="BibliographicResource-label">Eigenschap</div></th>
+<th>label</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name nl</td>
+<td>label</td>
+</tr>
+<tr>
+<td>sh:description nl</td>
+<td>Een label voor een object is een voor mensen leesbare naam ter aanduiding van een object.</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td>
+</tr>
+<tr>
+<td>sh:nodeKind</td>
+<td><a href="http://www.w3.org/ns/shacl#IRI">IRI</a></td>
+</tr>
+<tr>
+<td>sh:minCount</td>
+<td>1</td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document-2">Brondocument</a></td>
+</tr>
+</tbody></table>
+</section></section><section id="begrip"><div class="header-wrapper"><h4 id="x7-1-3-begrip"><bdi class="secno">7.1.3 </bdi>Begrip</h4><a class="self-link" href="#begrip" aria-label="Permalink for Section 7.1.3"></a></div>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Concept">Klasse</div></th>
+<th>Begrip</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>rdfs:label</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#Concept">Begrip</a></td>
+</tr>
+<tr>
+<td>Uitleg nl</td>
+<td>Een abstract idee of notie.</td>
+</tr>
+<tr>
+<td>Uitleg en</td>
+<td>An idea or notion; a unit of thought.</td>
+</tr>
+<tr>
+<td>Eigenschappen en relaties</td>
+<td><a href="#Concept-exactMatch">exact overeenkomstig</a>, <a href="#Concept-example">voorbeeld</a>, <a href="#Concept-relatedMatch">overeenkomstig verwant</a>, <a href="#Concept-comment">uitleg</a>, <a href="#Concept-related">gerelateerd begrip</a>, <a href="#Concept-hiddenLabel">Zoekterm</a>, <a href="#Concept-source">bron</a>, <a href="#Concept-broader">bovenliggend begrip</a>, <a href="#Concept-notation">code</a>, <a href="#Concept-inScheme">behoort tot</a>, <a href="#Concept-closeMatch">Vrijwel overeenkomstig</a>, <a href="#Concept-narrowerInstantial">Categorie van</a>, <a href="#Concept-narrowerPartitive">omvat</a>, <a href="#Concept-editorialNote">redactionele opmerking</a>, <a href="#Concept-broaderPartitive">is onderdeel van</a>, <a href="#Concept-prefLabel">voorkeursterm</a>, <a href="#Concept-historyNote">historische notitie</a>, <a href="#Concept-changeNote">wijzigingsnotitie</a>, <a href="#Concept-altLabel">alternative label</a>, <a href="#Concept-label">label</a>, <a href="#Concept-broaderGeneric">is specialisatie van</a>, <a href="#Concept-scopeNote">toelichting</a>, <a href="#Concept-definition">definitie</a>, <a href="#Concept-broaderInstantial">exemplaar van</a>, <a href="#Concept-narrowerGeneric">is generalisatie van</a>, <a href="#Concept-broadMatch">overeenkomstig generieker</a></td>
+</tr>
+</tbody></table>
+<section id="eigenschappen-1"><div class="header-wrapper"><h5 id="x7-1-3-1-eigenschappen"><bdi class="secno">7.1.3.1 </bdi>Eigenschappen</h5><a class="self-link" href="#eigenschappen-1" aria-label="Permalink for Section 7.1.3.1"></a></div>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Concept-exactMatch">Eigenschap</div></th>
+<th>exact overeenkomstig</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name nl</td>
+<td>exact overeenkomstig</td>
+</tr>
+<tr>
+<td>sh:description en</td>
+<td>Used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. skos:exactMatch is a transitive property, and is a sub-property of skos:closeMatch.</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#exactMatch">exactMatch</a></td>
+</tr>
+<tr>
+<td>sh:class</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a></td>
+</tr>
+<tr>
+<td>sh:nodeKind</td>
+<td><a href="http://www.w3.org/ns/shacl#IRI">IRI</a></td>
+</tr>
+<tr>
+<td>sh:disjoint</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#broadMatch">broadMatch</a></td>
+</tr>
+<tr>
+<td>sh:disjoint</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#relatedMatch">relatedMatch</a></td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#Concept">Begrip</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Concept-example">Eigenschap</div></th>
+<th>voorbeeld</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name en</td>
+<td>example</td>
+</tr>
+<tr>
+<td>sh:name nl</td>
+<td>voorbeeld</td>
+</tr>
+<tr>
+<td>sh:description nl</td>
+<td>Een voorbeeld van het gebruik van het concept</td>
+</tr>
+<tr>
+<td>sh:description en</td>
+<td>An example of the use of a concept.</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#example">example</a></td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#Concept">Begrip</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Concept-relatedMatch">Eigenschap</div></th>
+<th>overeenkomstig verwant</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name nl</td>
+<td>overeenkomstig verwant</td>
+</tr>
+<tr>
+<td>sh:description en</td>
+<td>Used to state an associative mapping link between two conceptual resources in different concept schemes.</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#relatedMatch">relatedMatch</a></td>
+</tr>
+<tr>
+<td>sh:class</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a></td>
+</tr>
+<tr>
+<td>sh:nodeKind</td>
+<td><a href="http://www.w3.org/ns/shacl#IRI">IRI</a></td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#Concept">Begrip</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Concept-comment">Eigenschap</div></th>
+<th>uitleg</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name en</td>
+<td>comment</td>
+</tr>
+<tr>
+<td>sh:name nl</td>
+<td>uitleg</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#Concept">Begrip</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Concept-related">Eigenschap</div></th>
+<th>gerelateerd begrip</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name en</td>
+<td>related concept</td>
+</tr>
+<tr>
+<td>sh:name nl</td>
+<td>gerelateerd begrip</td>
+</tr>
+<tr>
+<td>sh:description nl</td>
+<td>Een concept met een associatieve semantische relatie</td>
+</tr>
+<tr>
+<td>sh:description en</td>
+<td>Relates a concept to a concept with which there is an associative semantic relationship.</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#related">related</a></td>
+</tr>
+<tr>
+<td>sh:class</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a></td>
+</tr>
+<tr>
+<td>sh:nodeKind</td>
+<td><a href="http://www.w3.org/ns/shacl#IRI">IRI</a></td>
+</tr>
+<tr>
+<td>sh:disjoint</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#broaderTransitive">broaderTransitive</a></td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#Concept">Begrip</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Concept-hiddenLabel">Eigenschap</div></th>
+<th>Zoekterm</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name nl</td>
+<td>Zoekterm</td>
+</tr>
+<tr>
+<td>sh:description en</td>
+<td>A lexical label for a resource that should be hidden when generating visual displays of the resource, but should still be accessible to free text search operations.</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#hiddenLabel">hiddenLabel</a></td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#Concept">Begrip</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Concept-source">Eigenschap</div></th>
+<th>bron</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name nl</td>
+<td>bron</td>
+</tr>
+<tr>
+<td>sh:description nl</td>
+<td>Een bron voor een begrip is een gerelateerde brondocument waaruit de betekenis van het begrip is afgeleid</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://purl.org/dc/terms/source"></a></td>
+</tr>
+<tr>
+<td>sh:class</td>
+<td><a href="http://purl.org/dc/terms/BibliographicResource"></a></td>
+</tr>
+<tr>
+<td>sh:nodeKind</td>
+<td><a href="http://www.w3.org/ns/shacl#IRI">IRI</a></td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#Concept">Begrip</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Concept-broader">Eigenschap</div></th>
+<th>bovenliggend begrip</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name nl</td>
+<td>bovenliggend begrip</td>
+</tr>
+<tr>
+<td>sh:description nl</td>
+<td>Relateert een begrip aan een bovenliggend begrip in de hierarchie.</td>
+</tr>
+<tr>
+<td>sh:description en</td>
+<td>Relates a concept to a concept that is more general in meaning.</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#broader">broader</a></td>
+</tr>
+<tr>
+<td>sh:class</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a></td>
+</tr>
+<tr>
+<td>sh:nodeKind</td>
+<td><a href="http://www.w3.org/ns/shacl#IRI">IRI</a></td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#Concept">Begrip</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Concept-notation">Eigenschap</div></th>
+<th>code</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name nl</td>
+<td>code</td>
+</tr>
+<tr>
+<td>sh:description en</td>
+<td>A notation, also known as classification code, is a string of characters such as "T58.5" or "303.4833" used to uniquely identify a concept within the scope of a given concept scheme.</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#notation">notation</a></td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#Concept">Begrip</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Concept-inScheme">Eigenschap</div></th>
+<th>behoort tot</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name nl</td>
+<td>behoort tot</td>
+</tr>
+<tr>
+<td>sh:description nl</td>
+<td>Een begrippenkader waartoe het concept behoort.</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#inScheme">inScheme</a></td>
+</tr>
+<tr>
+<td>sh:class</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">ConceptScheme</a></td>
+</tr>
+<tr>
+<td>sh:nodeKind</td>
+<td><a href="http://www.w3.org/ns/shacl#IRI">IRI</a></td>
+</tr>
+<tr>
+<td>sh:minCount</td>
+<td>1</td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#Concept">Begrip</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Concept-closeMatch">Eigenschap</div></th>
+<th>Vrijwel overeenkomstig</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name nl</td>
+<td>Vrijwel overeenkomstig</td>
+</tr>
+<tr>
+<td>sh:description en</td>
+<td>Used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of "compound errors" when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property.</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#closeMatch">closeMatch</a></td>
+</tr>
+<tr>
+<td>sh:class</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a></td>
+</tr>
+<tr>
+<td>sh:nodeKind</td>
+<td><a href="http://www.w3.org/ns/shacl#IRI">IRI</a></td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#Concept">Begrip</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Concept-narrowerInstantial">Eigenschap</div></th>
+<th>Categorie van</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name nl</td>
+<td>Categorie van</td>
+</tr>
+<tr>
+<td>sh:description nl</td>
+<td>Relateert een begrip, de categorie, aan een begrip dat exemplarisch is voor eerstgenoemde begrip.</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://purl.org/iso25964/skos-thes#narrowerInstantial">narrowerInstantial</a></td>
+</tr>
+<tr>
+<td>sh:class</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a></td>
+</tr>
+<tr>
+<td>sh:nodeKind</td>
+<td><a href="http://www.w3.org/ns/shacl#IRI">IRI</a></td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#Concept">Begrip</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Concept-narrowerPartitive">Eigenschap</div></th>
+<th>omvat</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name nl</td>
+<td>omvat</td>
+</tr>
+<tr>
+<td>sh:description nl</td>
+<td>Relateert een begrip aan een minder omvattend begrip. Voorbeelden van eerstgenoemde begrip zullen bestaan uit voorbeelden van het minder omvattende begrip zijn.</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://purl.org/iso25964/skos-thes#narrowerPartitive">narrowerPartitive</a></td>
+</tr>
+<tr>
+<td>sh:class</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a></td>
+</tr>
+<tr>
+<td>sh:nodeKind</td>
+<td><a href="http://www.w3.org/ns/shacl#IRI">IRI</a></td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#Concept">Begrip</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Concept-editorialNote">Eigenschap</div></th>
+<th>redactionele opmerking</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name en</td>
+<td>editorial note</td>
+</tr>
+<tr>
+<td>sh:name nl</td>
+<td>redactionele opmerking</td>
+</tr>
+<tr>
+<td>sh:description en</td>
+<td>A note for an editor, translator or maintainer of the vocabulary.</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#editorialNote">editorialNote</a></td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#Concept">Begrip</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Concept-broaderPartitive">Eigenschap</div></th>
+<th>is onderdeel van</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name nl</td>
+<td>is onderdeel van</td>
+</tr>
+<tr>
+<td>sh:description nl</td>
+<td>Relateert een begrip aan een meer omvattend begrip. Voorbeelden van eerstgenoemde begrip zullen onderdeel van voorbeelden van het meer omvattende begrip zijn.</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://purl.org/iso25964/skos-thes#broaderPartitive">broaderPartitive</a></td>
+</tr>
+<tr>
+<td>sh:class</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a></td>
+</tr>
+<tr>
+<td>sh:nodeKind</td>
+<td><a href="http://www.w3.org/ns/shacl#IRI">IRI</a></td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#Concept">Begrip</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Concept-prefLabel">Eigenschap</div></th>
+<th>voorkeursterm</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name nl</td>
+<td>voorkeursterm</td>
+</tr>
+<tr>
+<td>sh:description en</td>
+<td>The preferred lexical label for a resource, in a given language.</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#prefLabel">prefLabel</a></td>
+</tr>
+<tr>
+<td>sh:nodeKind</td>
+<td><a href="http://www.w3.org/ns/shacl#Literal">Literal</a></td>
+</tr>
+<tr>
+<td>sh:minCount</td>
+<td>1</td>
+</tr>
+<tr>
+<td>sh:maxCount</td>
+<td>1</td>
+</tr>
+<tr>
+<td>sh:disjoint</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#altLabel">altLabel</a></td>
+</tr>
+<tr>
+<td>sh:disjoint</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#hiddenLabel">hiddenLabel</a></td>
+</tr>
+<tr>
+<td>sh:uniqueLang</td>
+<td>true</td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#Concept">Begrip</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Concept-historyNote">Eigenschap</div></th>
+<th>historische notitie</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name en</td>
+<td>history note</td>
+</tr>
+<tr>
+<td>sh:name nl</td>
+<td>historische notitie</td>
+</tr>
+<tr>
+<td>sh:description nl</td>
+<td>Notitie over de voormalige status/gebruik/betekenis van het concept</td>
+</tr>
+<tr>
+<td>sh:description en</td>
+<td>A note about the past state/use/meaning of a concept.</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#historyNote">historyNote</a></td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#Concept">Begrip</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Concept-changeNote">Eigenschap</div></th>
+<th>wijzigingsnotitie</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name nl</td>
+<td>wijzigingsnotitie</td>
+</tr>
+<tr>
+<td>sh:name en</td>
+<td>change note</td>
+</tr>
+<tr>
+<td>sh:description nl</td>
+<td>Notitie over een wijziging aan het concept</td>
+</tr>
+<tr>
+<td>sh:description en</td>
+<td>A note about a modification to a concept.</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#changeNote">changeNote</a></td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#Concept">Begrip</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Concept-altLabel">Eigenschap</div></th>
+<th>alternative label</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name nl</td>
+<td>alternative label</td>
+</tr>
+<tr>
+<td>sh:description en</td>
+<td>An alternative lexical label for a resource.</td>
+</tr>
+<tr>
+<td>sh:description nl</td>
+<td>Een alternatieve term voor een begrip is een term die gebruikt kan worden als alternatief voor de voorkeursterm van dit begrip, maar niet de voorkeur heeft.</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#altLabel">altLabel</a></td>
+</tr>
+<tr>
+<td>sh:disjoint</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#hiddenLabel">hiddenLabel</a></td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#Concept">Begrip</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Concept-label">Eigenschap</div></th>
+<th>label</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name nl</td>
+<td>label</td>
+</tr>
+<tr>
+<td>sh:description nl</td>
+<td>Een label voor een object is een voor mensen leesbare naam ter aanduiding van een object.</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td>
+</tr>
+<tr>
+<td>sh:nodeKind</td>
+<td><a href="http://www.w3.org/ns/shacl#IRI">IRI</a></td>
+</tr>
+<tr>
+<td>sh:minCount</td>
+<td>1</td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#Concept">Begrip</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Concept-broaderGeneric">Eigenschap</div></th>
+<th>is specialisatie van</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name nl</td>
+<td>is specialisatie van</td>
+</tr>
+<tr>
+<td>sh:description nl</td>
+<td>Relateert een begrip aan een meer generieker begrip</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://purl.org/iso25964/skos-thes#broaderGeneric">broaderGeneric</a></td>
+</tr>
+<tr>
+<td>sh:class</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a></td>
+</tr>
+<tr>
+<td>sh:nodeKind</td>
+<td><a href="http://www.w3.org/ns/shacl#IRI">IRI</a></td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#Concept">Begrip</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Concept-scopeNote">Eigenschap</div></th>
+<th>toelichting</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name nl</td>
+<td>toelichting</td>
+</tr>
+<tr>
+<td>sh:description en</td>
+<td>A note that helps to clarify the meaning and/or the use of a concept.</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#scopeNote">scopeNote</a></td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#Concept">Begrip</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Concept-definition">Eigenschap</div></th>
+<th>definitie</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name nl</td>
+<td>definitie</td>
+</tr>
+<tr>
+<td>sh:description nl</td>
+<td>Een definitie van een begrip is een tekstuele beschrijving van de betekenis van dit begrip waarmee het begrip kan worden onderscheiden van andere begrippen.</td>
+</tr>
+<tr>
+<td>sh:description en</td>
+<td>A statement or formal explanation of the meaning of a concept.</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#definition">definition</a></td>
+</tr>
+<tr>
+<td>sh:nodeKind</td>
+<td><a href="http://www.w3.org/ns/shacl#Literal">Literal</a></td>
+</tr>
+<tr>
+<td>sh:minCount</td>
+<td>1</td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#Concept">Begrip</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Concept-broaderInstantial">Eigenschap</div></th>
+<th>exemplaar van</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name nl</td>
+<td>exemplaar van</td>
+</tr>
+<tr>
+<td>sh:description nl</td>
+<td>Relateert een begrip, een exemplaar, aan een ander begrip, de categorie, waartoe eerstgenoemde begrip behoort.</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://purl.org/iso25964/skos-thes#broaderInstantial">broaderInstantial</a></td>
+</tr>
+<tr>
+<td>sh:class</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a></td>
+</tr>
+<tr>
+<td>sh:nodeKind</td>
+<td><a href="http://www.w3.org/ns/shacl#IRI">IRI</a></td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#Concept">Begrip</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Concept-narrowerGeneric">Eigenschap</div></th>
+<th>is generalisatie van</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name nl</td>
+<td>is generalisatie van</td>
+</tr>
+<tr>
+<td>sh:description nl</td>
+<td>Relateert een begrip aan een meer specifieker begrip</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://purl.org/iso25964/skos-thes#narrowerGeneric">narrowerGeneric</a></td>
+</tr>
+<tr>
+<td>sh:class</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a></td>
+</tr>
+<tr>
+<td>sh:nodeKind</td>
+<td><a href="http://www.w3.org/ns/shacl#IRI">IRI</a></td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#Concept">Begrip</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="Concept-broadMatch">Eigenschap</div></th>
+<th>overeenkomstig generieker</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name nl</td>
+<td>overeenkomstig generieker</td>
+</tr>
+<tr>
+<td>sh:description en</td>
+<td>Used to state a hierarchical mapping link between two conceptual resources in different concept schemes.</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#broadMatch">broadMatch</a></td>
+</tr>
+<tr>
+<td>sh:class</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a></td>
+</tr>
+<tr>
+<td>sh:nodeKind</td>
+<td><a href="http://www.w3.org/ns/shacl#IRI">IRI</a></td>
+</tr>
+<tr>
+<td>sh:disjoint</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#relatedMatch">relatedMatch</a></td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#Concept">Begrip</a></td>
+</tr>
+</tbody></table>
+</section></section><section id="begrippenkader-1"><div class="header-wrapper"><h4 id="x7-1-4-begrippenkader"><bdi class="secno">7.1.4 </bdi>Begrippenkader</h4><a class="self-link" href="#begrippenkader-1" aria-label="Permalink for Section 7.1.4"></a></div>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="ConceptScheme">Klasse</div></th>
+<th>Begrippenkader</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>rdfs:label</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">ConceptScheme</a></td>
+</tr>
+<tr>
+<td>rdfs:label</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Begrippenkader</a></td>
+</tr>
+<tr>
+<td>Uitleg nl</td>
+<td>Een verzameling concepten en (optioneel) semantische relaties tussen de concepten</td>
+</tr>
+<tr>
+<td>Uitleg en</td>
+<td>A set of concepts, optionally including statements about semantic relationships between those concepts.</td>
+</tr>
+<tr>
+<td>Eigenschappen en relaties</td>
+<td><a href="#ConceptScheme-hasTopConcept">heeft topbegrip</a>, <a href="#ConceptScheme-label">label</a>, <a href="#ConceptScheme-comment">uitleg</a></td>
+</tr>
+</tbody></table>
+<section id="eigenschappen-2"><div class="header-wrapper"><h5 id="x7-1-4-1-eigenschappen"><bdi class="secno">7.1.4.1 </bdi>Eigenschappen</h5><a class="self-link" href="#eigenschappen-2" aria-label="Permalink for Section 7.1.4.1"></a></div>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="ConceptScheme-hasTopConcept">Eigenschap</div></th>
+<th>heeft topbegrip</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name nl</td>
+<td>heeft topbegrip</td>
+</tr>
+<tr>
+<td>sh:description en</td>
+<td>Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies.</td>
+</tr>
+<tr>
+<td>sh:description nl</td>
+<td>Relateert, bij conventie, een begrippenkader met een begrip dat is de top van een taxonomie.</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#hasTopConcept">hasTopConcept</a></td>
+</tr>
+<tr>
+<td>sh:class</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a></td>
+</tr>
+<tr>
+<td>sh:nodeKind</td>
+<td><a href="http://www.w3.org/ns/shacl#IRI">IRI</a></td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#ConceptScheme">Begrippenkader</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="ConceptScheme-label">Eigenschap</div></th>
+<th>label</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name nl</td>
+<td>label</td>
+</tr>
+<tr>
+<td>sh:description nl</td>
+<td>Een label voor een object is een voor mensen leesbare naam ter aanduiding van een object.</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td>
+</tr>
+<tr>
+<td>sh:nodeKind</td>
+<td><a href="http://www.w3.org/ns/shacl#IRI">IRI</a></td>
+</tr>
+<tr>
+<td>sh:minCount</td>
+<td>1</td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#ConceptScheme">Begrippenkader</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><div style="width:325px" id="ConceptScheme-comment">Eigenschap</div></th>
+<th>uitleg</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sh:name en</td>
+<td>comment</td>
+</tr>
+<tr>
+<td>sh:name nl</td>
+<td>uitleg</td>
+</tr>
+<tr>
+<td>sh:path</td>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td>
+</tr>
+<tr>
+<td>referencing nodeshape</td>
+<td><a href="#ConceptScheme">Begrippenkader</a></td>
+</tr>
+</tbody></table>
+</section></section></section>
+    </section>
+    <section id="conformance"><div class="header-wrapper"><h2 id="x8-conformance"><bdi class="secno">8. </bdi>Conformance</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 8."></a></div><p>As well as sections marked as non-normative, all authoring guidelines, diagrams, examples, and notes in this specification are non-normative. Everything else in this specification is normative.</p>
       
     </section>
   

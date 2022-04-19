@@ -1,0 +1,592 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:sh="http://www.w3.org/ns/shacl#"
+    xmlns:iso-thes="http://purl.org/iso25964/skos-thes#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:skosapnl="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi">
+    <rdfs:label xml:lang="nl">Nederlands profiel voor stelselcatalogi</rdfs:label>
+  </owl:Ontology>
+  <sh:NodeShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Collection">
+    <sh:name xml:lang="en">Collection</sh:name>
+    <sh:name xml:lang="nl">Collectie</sh:name>
+    <rdfs:comment xml:lang="en">A meaningful collection of concepts.</rdfs:comment>
+    <rdfs:label xml:lang="en">Collection</rdfs:label>
+    <rdfs:comment xml:lang="nl">Een verzameling concepten met een samenhangende betekenis.</rdfs:comment>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Collection-member">
+        <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <sh:path rdf:resource="http://www.w3.org/2004/02/skos/core#member"/>
+        <sh:name xml:lang="nl">bevat</sh:name>
+        <sh:description xml:lang="nl">Relateert een collectie aan een begrip dat onderdeel is van deze collectie.</sh:description>
+        <sh:decription xml:lang="en">Relates a collection to one of its members.</sh:decription>
+        <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="nl">bevat</rdfs:label>
+      </sh:PropertyShape>
+    </sh:property>
+    <rdfs:label xml:lang="nl">Collectie</rdfs:label>
+    <sh:targetClass rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Collection-label">
+        <sh:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <sh:name xml:lang="nl">label</sh:name>
+        <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >1</sh:minCount>
+        <sh:group>
+          <sh:PropertyGroup rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#LabelsAndDescriptionPropertyGroup">
+            <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >0</sh:order>
+            <rdfs:label xml:lang="nl">Termen en beschrijvingen</rdfs:label>
+            <rdfs:label xml:lang="en">Labels and Description</rdfs:label>
+          </sh:PropertyGroup>
+        </sh:group>
+        <sh:description xml:lang="nl">Een label voor een object is een voor mensen leesbare naam ter aanduiding van een object.</sh:description>
+        <sh:datatype rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:label xml:lang="nl">label</rdfs:label>
+      </sh:PropertyShape>
+    </sh:property>
+  </sh:NodeShape>
+  <sh:NodeShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#BibliographicResource">
+    <sh:targetClass rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#BibliographicResource-label">
+        <sh:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <sh:name xml:lang="nl">label</sh:name>
+        <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >1</sh:minCount>
+        <sh:group rdf:resource="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#LabelsAndDescriptionPropertyGroup"/>
+        <sh:description xml:lang="nl">Een label voor een object is een voor mensen leesbare naam ter aanduiding van een object.</sh:description>
+        <sh:datatype rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:label xml:lang="nl">label</rdfs:label>
+      </sh:PropertyShape>
+    </sh:property>
+    <sh:name xml:lang="nl">Brondocument</sh:name>
+    <rdfs:label xml:lang="nl">Brondocument</rdfs:label>
+    <rdfs:comment xml:lang="en">A book, article, or other documentary resource.</rdfs:comment>
+    <rdfs:comment xml:lang="nl">Een Brondocument is een boek, een artikel of enig ander documentair object</rdfs:comment>
+  </sh:NodeShape>
+  <rdf:Description rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-topConceptOf">
+    <sh:decription xml:lang="en">Relates a concept to the concept scheme that it is a top level concept of.</sh:decription>
+  </rdf:Description>
+  <sh:NodeShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept">
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-exactMatch">
+        <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <sh:name xml:lang="nl">exact overeenkomstig</sh:name>
+        <rdfs:label xml:lang="nl">exact overeenkomstig</rdfs:label>
+        <sh:group>
+          <sh:PropertyGroup rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#MatchingRelationshipsPropertyGroup">
+            <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >5</sh:order>
+            <rdfs:label xml:lang="nl">Harmonisatierelaties</rdfs:label>
+            <rdfs:label xml:lang="en">Matching Relationships</rdfs:label>
+          </sh:PropertyGroup>
+        </sh:group>
+        <sh:path rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <sh:disjoint rdf:resource="http://www.w3.org/2004/02/skos/core#broadMatch"/>
+        <sh:disjoint rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+        <sh:description xml:lang="en">Used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. skos:exactMatch is a transitive property, and is a sub-property of skos:closeMatch.</sh:description>
+        <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >2</sh:order>
+      </sh:PropertyShape>
+    </sh:property>
+    <rdfs:comment xml:lang="nl">Een abstract idee of notie.</rdfs:comment>
+    <rdfs:label xml:lang="nl">Begrip</rdfs:label>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-example">
+        <sh:group rdf:resource="http://www.w3.org/2004/02/skos/core#NotesPropertyGroup"/>
+        <sh:description xml:lang="nl">Een voorbeeld van het gebruik van het concept</sh:description>
+        <sh:path rdf:resource="http://www.w3.org/2004/02/skos/core#example"/>
+        <sh:description xml:lang="en">An example of the use of a concept.</sh:description>
+        <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >5</sh:order>
+        <sh:decription xml:lang="en">An example of the use of a concept.</sh:decription>
+        <sh:name xml:lang="en">example</sh:name>
+        <sh:decription xml:lang="nl">Een voorbeeld van het gebruik van het concept.</sh:decription>
+        <sh:name xml:lang="nl">voorbeeld</sh:name>
+      </sh:PropertyShape>
+    </sh:property>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-relatedMatch">
+        <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="nl">Overeenkomstig verwant</rdfs:label>
+        <sh:group rdf:resource="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#MatchingRelationshipsPropertyGroup"/>
+        <sh:decription xml:lang="en">skos:relatedMatch is used to state an associative mapping link between two conceptual resources in different concept schemes.</sh:decription>
+        <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <sh:name xml:lang="nl">overeenkomstig verwant</sh:name>
+        <sh:description xml:lang="en">Used to state an associative mapping link between two conceptual resources in different concept schemes.</sh:description>
+        <sh:path rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+        <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >3</sh:order>
+      </sh:PropertyShape>
+    </sh:property>
+    <sh:targetClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <sh:name xml:lang="nl">Begrip</sh:name>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-comment">
+        <sh:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <sh:or rdf:parseType="Collection">
+          <rdf:Description>
+            <sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sh:datatype rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+          </rdf:Description>
+        </sh:or>
+        <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >10</sh:order>
+        <sh:name xml:lang="en">comment</sh:name>
+        <sh:name xml:lang="nl">uitleg</sh:name>
+        <sh:group rdf:resource="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#LabelsAndDescriptionPropertyGroup"/>
+        <rdfs:comment xml:lang="en">Preferably a concept has a comment in 'clear language'.</rdfs:comment>
+        <rdfs:comment xml:lang="nl">Een begrip heeft bij voorkeur een uitleg in 'klare taal'.</rdfs:comment>
+      </sh:PropertyShape>
+    </sh:property>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-related">
+        <sh:description xml:lang="nl">Een concept met een associatieve semantische relatie</sh:description>
+        <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <sh:disjoint rdf:resource="http://www.w3.org/2004/02/skos/core#broaderTransitive"/>
+        <sh:group>
+          <sh:PropertyGroup rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#AssociativeRelationships">
+            <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >3</sh:order>
+            <rdfs:label xml:lang="nl">Associatieve relaties</rdfs:label>
+            <rdfs:label xml:lang="en">Associative Relationships</rdfs:label>
+          </sh:PropertyGroup>
+        </sh:group>
+        <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <sh:description xml:lang="en">Relates a concept to a concept with which there is an associative semantic relationship.</sh:description>
+        <sh:name xml:lang="en">related concept</sh:name>
+        <sh:name xml:lang="nl">gerelateerd begrip</sh:name>
+        <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >7</sh:order>
+        <sh:path rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
+        <rdfs:label xml:lang="nl">gerelateerd</rdfs:label>
+      </sh:PropertyShape>
+    </sh:property>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-hiddenLabel">
+        <sh:path rdf:resource="http://www.w3.org/2004/02/skos/core#hiddenLabel"/>
+        <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >2</sh:order>
+        <sh:or rdf:parseType="Collection">
+          <rdf:Description>
+            <sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sh:datatype rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+          </rdf:Description>
+        </sh:or>
+        <sh:name xml:lang="nl">Zoekterm</sh:name>
+        <sh:group rdf:resource="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#LabelsAndDescriptionPropertyGroup"/>
+        <sh:description xml:lang="en">A lexical label for a resource that should be hidden when generating visual displays of the resource, but should still be accessible to free text search operations.</sh:description>
+        <rdfs:label xml:lang="nl">zoekterm</rdfs:label>
+      </sh:PropertyShape>
+    </sh:property>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-source">
+        <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <sh:path rdf:resource="http://purl.org/dc/terms/source"/>
+        <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >6</sh:order>
+        <sh:name xml:lang="nl">bron</sh:name>
+        <sh:group>
+          <sh:PropertyGroup rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#DefinitionPropertyGroup">
+            <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >1</sh:order>
+            <rdfs:label xml:lang="nl">Definitie</rdfs:label>
+            <rdfs:label xml:lang="en">Definition</rdfs:label>
+          </sh:PropertyGroup>
+        </sh:group>
+        <sh:description xml:lang="nl">Een bron voor een begrip is een gerelateerde brondocument waaruit de betekenis van het begrip is afgeleid</sh:description>
+        <sh:class rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+      </sh:PropertyShape>
+    </sh:property>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-broader">
+        <sh:path rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+        <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >0</sh:order>
+        <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <rdfs:label xml:lang="nl">bovenliggend begrip</rdfs:label>
+        <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <sh:description xml:lang="nl">Relateert een begrip aan een bovenliggend begrip in de hierarchie.</sh:description>
+        <sh:name xml:lang="nl">bovenliggend begrip</sh:name>
+        <sh:group>
+          <sh:PropertyGroup rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#HierarchicalRelationships">
+            <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >2</sh:order>
+            <rdfs:label xml:lang="nl">Hierarchische relaties</rdfs:label>
+            <rdfs:label xml:lang="en">Hierarchical Relationships</rdfs:label>
+          </sh:PropertyGroup>
+        </sh:group>
+        <sh:description xml:lang="en">Relates a concept to a concept that is more general in meaning.</sh:description>
+      </sh:PropertyShape>
+    </sh:property>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-notation">
+        <sh:path rdf:resource="http://www.w3.org/2004/02/skos/core#notation"/>
+        <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >3</sh:order>
+        <sh:name xml:lang="nl">code</sh:name>
+        <sh:group rdf:resource="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#LabelsAndDescriptionPropertyGroup"/>
+        <sh:description xml:lang="en">A notation, also known as classification code, is a string of characters such as "T58.5" or "303.4833" used to uniquely identify a concept within the scope of a given concept scheme.</sh:description>
+        <sh:decription xml:lang="en">A notation, also known as classification code, is a string of characters such as "T58.5" or "303.4833" used to uniquely identify a concept within the scope of a given concept scheme.</sh:decription>
+        <rdfs:label xml:lang="nl">Code</rdfs:label>
+      </sh:PropertyShape>
+    </sh:property>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-inScheme">
+        <sh:description xml:lang="nl">Een begrippenkader waartoe het concept behoort.</sh:description>
+        <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <sh:decription xml:lang="en">Relates a resource (for example a concept) to a concept scheme in which it is included.</sh:decription>
+        <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >1</sh:minCount>
+        <sh:group rdf:resource="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#LabelsAndDescriptionPropertyGroup"/>
+        <sh:name xml:lang="nl">behoort tot</sh:name>
+        <rdfs:label xml:lang="nl">behoort tot</rdfs:label>
+        <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >6</sh:order>
+        <sh:path rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+      </sh:PropertyShape>
+    </sh:property>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-closeMatch">
+        <sh:name xml:lang="nl">Vrijwel overeenkomstig</sh:name>
+        <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="nl">Vrijwel overeenkomstig</rdfs:label>
+        <sh:description xml:lang="en">Used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of "compound errors" when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property.</sh:description>
+        <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >1</sh:order>
+        <sh:path rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+        <sh:decription xml:lang="en">skos:closeMatch is used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of "compound errors" when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property.</sh:decription>
+        <sh:group rdf:resource="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#MatchingRelationshipsPropertyGroup"/>
+      </sh:PropertyShape>
+    </sh:property>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-narrowerInstantial">
+        <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <sh:path rdf:resource="http://purl.org/iso25964/skos-thes#narrowerInstantial"/>
+        <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >6</sh:order>
+        <sh:name xml:lang="nl">Categorie van</sh:name>
+        <sh:group>
+          <sh:PropertyGroup rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Iso-thesRelationships">
+            <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >6</sh:order>
+            <rdfs:label xml:lang="nl">Iso-thes relaties</rdfs:label>
+            <rdfs:label xml:lang="en">Iso-thes Relationships</rdfs:label>
+          </sh:PropertyGroup>
+        </sh:group>
+        <sh:description xml:lang="nl">Relateert een begrip, de categorie, aan een begrip dat exemplarisch is voor eerstgenoemde begrip.</sh:description>
+        <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="nl">Categorie van</rdfs:label>
+      </sh:PropertyShape>
+    </sh:property>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-narrowerPartitive">
+        <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <sh:path rdf:resource="http://purl.org/iso25964/skos-thes#narrowerPartitive"/>
+        <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >4</sh:order>
+        <sh:name xml:lang="nl">omvat</sh:name>
+        <sh:group rdf:resource="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Iso-thesRelationships"/>
+        <sh:description xml:lang="nl">Relateert een begrip aan een minder omvattend begrip. Voorbeelden van eerstgenoemde begrip zullen bestaan uit voorbeelden van het minder omvattende begrip zijn.</sh:description>
+        <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="nl">Omvat</rdfs:label>
+      </sh:PropertyShape>
+    </sh:property>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-editorialNote">
+        <sh:path rdf:resource="http://www.w3.org/2004/02/skos/core#editorialNote"/>
+        <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >2</sh:order>
+        <sh:or rdf:parseType="Collection">
+          <rdf:Description>
+            <sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sh:datatype rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+          </rdf:Description>
+        </sh:or>
+        <sh:name xml:lang="en">editorial note</sh:name>
+        <sh:name xml:lang="nl">redactionele opmerking</sh:name>
+        <sh:group>
+          <sh:PropertyGroup rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#NotesPropertyGroup">
+            <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >4</sh:order>
+            <rdfs:label xml:lang="nl">Notities</rdfs:label>
+            <rdfs:label xml:lang="en">Notes</rdfs:label>
+          </sh:PropertyGroup>
+        </sh:group>
+        <sh:description xml:lang="en">A note for an editor, translator or maintainer of the vocabulary.</sh:description>
+        <sh:decription xml:lang="en">A note for an editor, translator or maintainer of the vocabulary.</sh:decription>
+      </sh:PropertyShape>
+    </sh:property>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-broaderPartitive">
+        <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <sh:path rdf:resource="http://purl.org/iso25964/skos-thes#broaderPartitive"/>
+        <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >3</sh:order>
+        <sh:name xml:lang="nl">is onderdeel van</sh:name>
+        <sh:group rdf:resource="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Iso-thesRelationships"/>
+        <sh:description xml:lang="nl">Relateert een begrip aan een meer omvattend begrip. Voorbeelden van eerstgenoemde begrip zullen onderdeel van voorbeelden van het meer omvattende begrip zijn.</sh:description>
+        <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="nl">Is onderdeel van</rdfs:label>
+      </sh:PropertyShape>
+    </sh:property>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-prefLabel">
+        <sh:path rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >1</sh:maxCount>
+        <sh:name xml:lang="nl">voorkeursterm</sh:name>
+        <rdfs:label xml:lang="nl">Voorkeursterm</rdfs:label>
+        <sh:disjoint rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <sh:description xml:lang="en">The preferred lexical label for a resource, in a given language.</sh:description>
+        <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >0</sh:order>
+        <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <sh:group rdf:resource="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#LabelsAndDescriptionPropertyGroup"/>
+        <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >1</sh:minCount>
+        <sh:uniqueLang rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</sh:uniqueLang>
+        <sh:datatype rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <sh:disjoint rdf:resource="http://www.w3.org/2004/02/skos/core#hiddenLabel"/>
+      </sh:PropertyShape>
+    </sh:property>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-historyNote">
+        <sh:path rdf:resource="http://www.w3.org/2004/02/skos/core#historyNote"/>
+        <sh:or rdf:parseType="Collection">
+          <rdf:Description>
+            <sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sh:datatype rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+          </rdf:Description>
+        </sh:or>
+        <sh:name xml:lang="en">history note</sh:name>
+        <sh:name xml:lang="nl">historische notitie</sh:name>
+        <sh:group rdf:resource="http://www.w3.org/2004/02/skos/core#NotesPropertyGroup"/>
+        <sh:description xml:lang="nl">Notitie over de voormalige status/gebruik/betekenis van het concept</sh:description>
+        <sh:decription xml:lang="en">A note about the past state/use/meaning of a concept.</sh:decription>
+        <sh:description xml:lang="en">A note about the past state/use/meaning of a concept.</sh:description>
+        <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >3</sh:order>
+      </sh:PropertyShape>
+    </sh:property>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-changeNote">
+        <sh:or rdf:parseType="Collection">
+          <rdf:Description>
+            <sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sh:datatype rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+          </rdf:Description>
+        </sh:or>
+        <sh:path rdf:resource="http://www.w3.org/2004/02/skos/core#changeNote"/>
+        <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >1</sh:order>
+        <sh:group rdf:resource="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#NotesPropertyGroup"/>
+        <sh:name xml:lang="nl">wijzigingsnotitie</sh:name>
+        <sh:name xml:lang="en">change note</sh:name>
+        <sh:description xml:lang="nl">Notitie over een wijziging aan het concept</sh:description>
+        <sh:description xml:lang="en">A note about a modification to a concept.</sh:description>
+      </sh:PropertyShape>
+    </sh:property>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-altLabel">
+        <sh:description xml:lang="en">An alternative lexical label for a resource.</sh:description>
+        <sh:name xml:lang="nl">alternative label</sh:name>
+        <sh:path rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <rdfs:label xml:lang="nl">alternative label</rdfs:label>
+        <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >1</sh:order>
+        <sh:group rdf:resource="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#LabelsAndDescriptionPropertyGroup"/>
+        <sh:disjoint rdf:resource="http://www.w3.org/2004/02/skos/core#hiddenLabel"/>
+        <sh:description xml:lang="nl">Een alternatieve term voor een begrip is een term die gebruikt kan worden als alternatief voor de voorkeursterm van dit begrip, maar niet de voorkeur heeft.</sh:description>
+        <sh:or rdf:parseType="Collection">
+          <rdf:Description>
+            <sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sh:datatype rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+          </rdf:Description>
+        </sh:or>
+      </sh:PropertyShape>
+    </sh:property>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-label">
+        <sh:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <sh:name xml:lang="nl">label</sh:name>
+        <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >1</sh:minCount>
+        <sh:group rdf:resource="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#LabelsAndDescriptionPropertyGroup"/>
+        <sh:description xml:lang="nl">Een label voor een object is een voor mensen leesbare naam ter aanduiding van een object.</sh:description>
+        <sh:datatype rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:label xml:lang="nl">label</rdfs:label>
+      </sh:PropertyShape>
+    </sh:property>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-broaderGeneric">
+        <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <sh:path rdf:resource="http://purl.org/iso25964/skos-thes#broaderGeneric"/>
+        <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >1</sh:order>
+        <sh:name xml:lang="nl">is specialisatie van</sh:name>
+        <sh:group rdf:resource="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Iso-thesRelationships"/>
+        <sh:description xml:lang="nl">Relateert een begrip aan een meer generieker begrip</sh:description>
+        <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="nl">Is specialisatie van</rdfs:label>
+      </sh:PropertyShape>
+    </sh:property>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-scopeNote">
+        <sh:path rdf:resource="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+        <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >4</sh:order>
+        <sh:or rdf:parseType="Collection">
+          <rdf:Description>
+            <sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sh:datatype rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+          </rdf:Description>
+        </sh:or>
+        <sh:name xml:lang="nl">toelichting</sh:name>
+        <sh:group rdf:resource="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#NotesPropertyGroup"/>
+        <sh:description xml:lang="en">A note that helps to clarify the meaning and/or the use of a concept.</sh:description>
+        <sh:decription xml:lang="en">A note that helps to clarify the meaning and/or the use of a concept.</sh:decription>
+        <rdfs:label xml:lang="nl">toelichting</rdfs:label>
+      </sh:PropertyShape>
+    </sh:property>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-definition">
+        <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <sh:path rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <sh:name xml:lang="nl">definitie</sh:name>
+        <sh:description xml:lang="nl">Een definitie van een begrip is een tekstuele beschrijving van de betekenis van dit begrip waarmee het begrip kan worden onderscheiden van andere begrippen.</sh:description>
+        <sh:description xml:lang="en">A statement or formal explanation of the meaning of a concept.</sh:description>
+        <sh:group rdf:resource="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#DefinitionPropertyGroup"/>
+        <sh:datatype rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <sh:decription xml:lang="en">A statement or formal explanation of the meaning of a concept.</sh:decription>
+        <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >5</sh:order>
+        <rdfs:label xml:lang="nl">definitie</rdfs:label>
+        <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >1</sh:minCount>
+      </sh:PropertyShape>
+    </sh:property>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-broaderInstantial">
+        <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <sh:path rdf:resource="http://purl.org/iso25964/skos-thes#broaderInstantial"/>
+        <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >5</sh:order>
+        <sh:name xml:lang="nl">exemplaar van</sh:name>
+        <sh:group rdf:resource="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Iso-thesRelationships"/>
+        <sh:description xml:lang="nl">Relateert een begrip, een exemplaar, aan een ander begrip, de categorie, waartoe eerstgenoemde begrip behoort.</sh:description>
+        <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="nl">exemplaar van</rdfs:label>
+      </sh:PropertyShape>
+    </sh:property>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-narrowerGeneric">
+        <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <sh:path rdf:resource="http://purl.org/iso25964/skos-thes#narrowerGeneric"/>
+        <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >2</sh:order>
+        <sh:name xml:lang="nl">is generalisatie van</sh:name>
+        <sh:group rdf:resource="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Iso-thesRelationships"/>
+        <sh:description xml:lang="nl">Relateert een begrip aan een meer specifieker begrip</sh:description>
+        <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="nl">Is generalisatie van</rdfs:label>
+      </sh:PropertyShape>
+    </sh:property>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-broadMatch">
+        <sh:name xml:lang="nl">overeenkomstig generieker</sh:name>
+        <rdfs:label xml:lang="nl">overeenkomstig generieker</rdfs:label>
+        <sh:group rdf:resource="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#MatchingRelationshipsPropertyGroup"/>
+        <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >0</sh:order>
+        <sh:path rdf:resource="http://www.w3.org/2004/02/skos/core#broadMatch"/>
+        <sh:disjoint rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+        <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <sh:description xml:lang="en">Used to state a hierarchical mapping link between two conceptual resources in different concept schemes.</sh:description>
+        <sh:decription xml:lang="en">skos:broadMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes.</sh:decription>
+        <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      </sh:PropertyShape>
+    </sh:property>
+    <rdfs:comment xml:lang="en">An idea or notion; a unit of thought.</rdfs:comment>
+  </sh:NodeShape>
+  <sh:NodeShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#ConceptScheme">
+    <sh:targetClass rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#ConceptScheme-hasTopConcept">
+        <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <sh:decription xml:lang="en">Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies.</sh:decription>
+        <sh:path rdf:resource="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+        <sh:group rdf:resource="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#HierarchicalRelationships"/>
+        <sh:description xml:lang="en">Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies.</sh:description>
+        <sh:description xml:lang="nl">Relateert, bij conventie, een begrippenkader met een begrip dat is de top van een taxonomie.</sh:description>
+        <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <sh:name xml:lang="nl">heeft topbegrip</sh:name>
+      </sh:PropertyShape>
+    </sh:property>
+    <rdfs:label xml:lang="en">ConceptScheme</rdfs:label>
+    <sh:name xml:lang="nl">Begrippenkader</sh:name>
+    <rdfs:comment xml:lang="nl">Een verzameling concepten en (optioneel) semantische relaties tussen de concepten</rdfs:comment>
+    <sh:name xml:lang="en">ConceptScheme</sh:name>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#ConceptScheme-label">
+        <sh:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <sh:name xml:lang="nl">label</sh:name>
+        <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >1</sh:minCount>
+        <sh:group rdf:resource="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#LabelsAndDescriptionPropertyGroup"/>
+        <sh:description xml:lang="nl">Een label voor een object is een voor mensen leesbare naam ter aanduiding van een object.</sh:description>
+        <sh:datatype rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:label xml:lang="nl">label</rdfs:label>
+      </sh:PropertyShape>
+    </sh:property>
+    <rdfs:label xml:lang="nl">Begrippenkader</rdfs:label>
+    <sh:property>
+      <sh:PropertyShape rdf:about="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#ConceptScheme-comment">
+        <sh:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <sh:or rdf:parseType="Collection">
+          <rdf:Description>
+            <sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+          </rdf:Description>
+          <rdf:Description>
+            <sh:datatype rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+          </rdf:Description>
+        </sh:or>
+        <sh:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >10</sh:order>
+        <sh:name xml:lang="en">comment</sh:name>
+        <sh:name xml:lang="nl">uitleg</sh:name>
+        <sh:group rdf:resource="http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#LabelsAndDescriptionPropertyGroup"/>
+        <rdfs:comment xml:lang="en">Preferably a concept has a comment in 'clear language'.</rdfs:comment>
+        <rdfs:comment xml:lang="nl">Een begrip heeft bij voorkeur een uitleg in 'klare taal'.</rdfs:comment>
+      </sh:PropertyShape>
+    </sh:property>
+    <rdfs:comment xml:lang="en">A set of concepts, optionally including statements about semantic relationships between those concepts.</rdfs:comment>
+  </sh:NodeShape>
+</rdf:RDF>
