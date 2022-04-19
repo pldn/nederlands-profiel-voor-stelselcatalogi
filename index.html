@@ -2,6 +2,19 @@
 <html lang="nl">
   <head>
     <meta charset='utf-8'>
+    <style>
+      table {
+        padding: 15px;
+      }
+      th {
+        border-bottom: 3px solid #ddd;
+      }
+      th, td {
+        border-bottom: 1px solid #ddd;
+      }
+      tr:nth-child(even) {background-color: #f2f2f2;}
+    </style>
+    <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/base.css" class="removeOnSave">
     <script src='https://www.w3.org/Tools/respec/respec-w3c' async class='remove'></script>
     <script class='remove'>
       // All config options at https://respec.org/docs/
@@ -68,6 +81,9 @@
           {
             name: "Jos van der Arend"
           },
+          {
+            name: "Jesse Bakker"
+          },
         ],
         github: {
           branch: "main",
@@ -95,6 +111,14 @@
     <section data-format="markdown" data-include="respec/Begrippenkader of thesaurus.md"></section>
     <section data-format="markdown" data-include="respec/Waardelijsten.md"></section>
     <section data-format="markdown" data-include="respec/Informatiemodellen.md"></section>
+    <section>
+      <h1>Begrippenkader SKOS AP NL</h1>
+      <section data-format="markdown" data-include="respec/rdf2respec/thesaurus.md"></section>
+    </section>
+    <section>
+      <h1>Profiel SKOS AP NL</h1>
+      <section data-format="markdown" data-include="respec/rdf2respec/profile.md"></section>
+    </section>
     <section id='conformance'>
       <!-- This section is filled automatically by ReSpec. -->
     </section>

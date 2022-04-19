@@ -220,7 +220,15 @@ De uitleg of de toelichting bij een begrip kan gebruik worden voor iemand die he
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/HistoryNote>
   skos:definition "Notitie over de voormalige status/gebruik/betekenis van het concept."@nl, "A note about the past state/use/meaning of a concept."@en ;
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Note> ;
+  skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   skos:prefLabel "history note"@en, "historische notitie"@nl ;
+  a skos:Concept .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/ChangeNote>
+  skos:definition "A note about a modification to a concept."@nl, "Notitie over een wijziging aan het concept."@en ;
+  skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Note> ;
+  skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
+  skos:prefLabel "change note"@en, "wijzigingsnotitie"@nl ;
   a skos:Concept .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/BroaderInstantial>
@@ -268,6 +276,7 @@ De uitleg of de toelichting bij een begrip kan gebruik worden voor iemand die he
   skos:definition "The preferred lexical label for a resource, in a given language."@en, "Een gepreferreerde term voor een begrip, in een specifieke taal."@nl ;
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Term> ;
   skos:scopeNote "The terms selected to represent concepts may be single-word terms or multi-word terms. In ordinary discourse, a single term might have more than one meaning, and the most common meaning is not always the one needed to represent the concept wanted in the thesaurus. If the context provided by the hierarchy of broader and narrower concepts linked to the concept in question is insufficient to elucidate the intended scope, additional measures should be applied. While all thesaurus terms should be expressed as unambiguously as possible, it is especially important to formulate the preferred term of a given concept in such a way that it conveys the intended scope to any user. For example, the multi-meaning term \"depression\" could be reformulated as \"economic depression\" or \"meteorological depression\", as appropriate. Alternatively a qualifier may be used. In cases where these measures are not appropriate or sufficient, or where additional information would help to clarify the meaning and make the usage more consistent, an explicit scope note should be used."@en, "De termen die zijn geselecteerd om begrippen weer te geven, kunnen termen van één of meerdere woorden zijn. In het gewone spraakgebruik kan een enkele term meer dan één betekenis hebben. De meest voorkomende betekenis is niet altijd de betekenis die nodig is om het in de thesaurus gezochte concept weer te geven. Indien de context die wordt geboden door de hiërarchie van bredere en smallere concepten gekoppeld aan het betreffende concept onvoldoende is om de beoogde reikwijdte te verduidelijken, dienen aanvullende maatregelen te worden genomen. Hoewel alle thesaurustermen zo ondubbelzinnig mogelijk moeten worden uitgedrukt, is het vooral belangrijk om de voorkeursterm van een bepaald concept zo te formuleren dat het de beoogde reikwijdte aan elke gebruiker overbrengt. De term \"depressie\" met meerdere betekenissen kan bijvoorbeeld worden geherformuleerd als \"economische depressie\" of \"meteorologische depressie\", al naar gelang het geval. Als alternatief kan een kwalificatie worden gebruikt. In gevallen waarin deze maatregelen niet passend of voldoende zijn, of waar aanvullende informatie zou helpen om de betekenis te verduidelijken en het gebruik consistenter te maken, moet een expliciete scope note worden gebruikt."@nl ;
+  rdfs:comment "Een begip kent één voorkeursterm, deze voorkeursterm hoeft niet persé uniek te zijn. Het is goed mogelijk dat binnen een bepaald domein één term meerdere betekenissen heeft en dus gaat over meerdere begrippen, mogelijk is het doel van een Thesaurus zelfs om dit inzicht te geven. We gebruiken geen post of prefix om voorkeurstermen context te geven of uniek te maken, tenzij deze post/prefix algemeen gebruikt wordt. Denk aan Hengelo (OV) en Hengelo (GLD). Een begrip krijgt expliciet één rdfs:Label om compatibiliteit met bestaande tools te bevorderen."@nl ;
   skos:prefLabel "voorkeursterm"@nl, "preferred label"@en ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   a skos:Concept ;
@@ -352,7 +361,6 @@ De uitleg of de toelichting bij een begrip kan gebruik worden voor iemand die he
   skos:prefLabel "thesaurus"@nl, "thesaurus"@en ;
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/ConceptScheme> ;
   skos:definiton ""@nl ;
-  skosthes:broaderGeneric <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Taxonomy> ;
   dct:source <https://en.wikipedia.org/wiki/Thesaurus> ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> .
 
@@ -396,6 +404,5 @@ De uitleg of de toelichting bij een begrip kan gebruik worden voor iemand die he
   skos:altLabel "classificatieschema" ;
   a skos:Concept ;
   dct:source <https://en.wikipedia.org/wiki/Taxonomy> ;
-  skosthes:broaderGeneric <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/ControlledVocabulary> ;
   skos:definition "A taxonomy (or taxonomical classification) is a scheme of classification, especially a hierarchical classification, in which concepts are organized into groups or types."@en ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> .

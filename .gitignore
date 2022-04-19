@@ -1,0 +1,5 @@
+
+.vscode/settings.json
+respec/rdf2respec/*.md
+respec/rdf2respec/*.xml
+!respec/rdf2respec/README.md

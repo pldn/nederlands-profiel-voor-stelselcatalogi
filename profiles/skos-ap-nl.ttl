@@ -8,13 +8,14 @@
 @prefix skosapnl: <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#> .
 @prefix iso-thes: <http://purl.org/iso25964/skos-thes#> .
 
+
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi>
   a owl:Ontology ;
   rdfs:label "Nederlands profiel voor stelselcatalogi"@nl .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-related>
   a <http://www.w3.org/ns/shacl#PropertyShape> ;
-  rdfs:label "Gerelateerd"@nl ;
+  rdfs:label "gerelateerd"@nl ;
   sh:class skos:Concept ;
   sh:description "Een concept met een associatieve semantische relatie"@nl, "Relates a concept to a concept with which there is an associative semantic relationship."@en ;
   sh:disjoint skos:broaderTransitive ;
@@ -37,9 +38,9 @@
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#ConceptScheme-hasTopConcept>
   a sh:PropertyShape ;
-  rdfs:label "heeft topbegrip"@nl ;
+  sh:name "heeft topbegrip"@nl ;
   sh:class skos:Concept ;
-  sh:description "Relateert, bij conventie, een begrippenkader met een begrip dat is de top van een taxonomie.", "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies."@en ;
+  sh:description "Relateert, bij conventie, een begrippenkader met een begrip dat is de top van een taxonomie."@nl, "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies."@en ;
   sh:group <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#HierarchicalRelationships> ;
   sh:path skos:hasTopConcept .
 
@@ -47,8 +48,10 @@
   a sh:NodeShape ;
   rdfs:comment "Een verzameling concepten met een samenhangende betekenis."@nl, "A meaningful collection of concepts."@en ;
   rdfs:label "Collectie"@nl ;
-  sh:name "Collection"@nl ;
-  sh:property <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Collection-member>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Resource-label> ;
+  sh:name "Collection"@en ;
+  rdfs:label "Collection"@en ;
+  sh:name "Collectie"@nl ;
+  sh:property <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Collection-member>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Collection-label> ;
   sh:targetClass skos:Collection .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Iso-thesRelationships>
@@ -58,7 +61,7 @@
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#ConceptScheme-comment>
   a sh:PropertyShape ;
-  rdfs:comment "Een begrip heeft bij voorkeur een uitleg in ‘klare taal’."@nl, "Preferably a concept has a comment in 'clear language'."@en ;
+  rdfs:comment "Een begrip heeft bij voorkeur een uitleg in 'klare taal'."@nl, "Preferably a concept has a comment in 'clear language'."@en ;
   sh:group <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#LabelsAndDescriptionPropertyGroup> ;
   sh:name "uitleg"@nl, "comment"@en ;
   sh:order 10 ;
@@ -86,8 +89,8 @@
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-changeNote>
   a sh:PropertyShape ;
-  sh:decription "A note about a modification to a concept."@en, "Notitie over een wijziging aan het concept"@nl ;
-  sh:description "A note about a modification to a concept."@en ;
+  sh:description "A note about a modification to a concept."@en, "Notitie over een wijziging aan het concept"@nl ;
+  sh:name "change note"@en, "wijzigingsnotitie"@nl ;
   sh:group <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#NotesPropertyGroup> ;
   sh:order 1 ;
   sh:path skos:changeNote ;
@@ -102,7 +105,9 @@
   rdfs:comment "Een verzameling concepten en (optioneel) semantische relaties tussen de concepten"@nl, "A set of concepts, optionally including statements about semantic relationships between those concepts."@en ;
   rdfs:label "Begrippenkader"@nl ;
   sh:name "Begrippenkader"@nl ;
-  sh:property <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#ConceptScheme-hasTopConcept>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Resource-label>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#ConceptScheme-comment> ;
+  sh:name "ConceptScheme"@en ;
+  rdfs:label "ConceptScheme"@en ;
+  sh:property <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#ConceptScheme-hasTopConcept>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#ConceptScheme-label>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#ConceptScheme-comment> ;
   sh:targetClass skos:ConceptScheme .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-broadMatch>
@@ -143,7 +148,7 @@
   sh:class skos:Concept ;
   sh:description "Relateert een begrip aan een minder omvattend begrip. Voorbeelden van eerstgenoemde begrip zullen bestaan uit voorbeelden van het minder omvattende begrip zijn."@nl ;
   sh:group <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Iso-thesRelationships> ;
-  sh:name "Omvat"@nl ;
+  sh:name "omvat"@nl ;
   sh:order 4 ;
   sh:path <http://purl.org/iso25964/skos-thes#narrowerPartitive> .
 
@@ -167,7 +172,7 @@
   sh:decription "skos:relatedMatch is used to state an associative mapping link between two conceptual resources in different concept schemes."@en ;
   sh:description "Used to state an associative mapping link between two conceptual resources in different concept schemes."@en ;
   sh:group <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#MatchingRelationshipsPropertyGroup> ;
-  sh:name "Overeenkomstig verwant"@nl ;
+  sh:name "overeenkomstig verwant"@nl ;
   sh:order 3 ;
   sh:path skos:relatedMatch .
 
@@ -180,7 +185,7 @@
   sh:group <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#LabelsAndDescriptionPropertyGroup> ;
   sh:maxCount 1 ;
   sh:minCount 1 ;
-  sh:name "Voorkeursterm"@nl ;
+  sh:name "voorkeursterm"@nl ;
   sh:order 0 ;
   sh:path skos:prefLabel ;
   sh:uniqueLang true .
@@ -190,23 +195,13 @@
   rdfs:label "Notes"@en, "Notities"@nl ;
   sh:order 4 .
 
-<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Resource-label>
-  a sh:PropertyShape ;
-  rdfs:label "Label"@nl ;
-  sh:datatype rdf:langString ;
-  sh:description "Een label voor een object is een voor mensen leesbare naam ter aanduiding van een object." ;
-  sh:group <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#LabelsAndDescriptionPropertyGroup> ;
-  sh:minCount 1 ;
-  sh:name "Label"@nl ;
-  sh:path rdfs:label .
-
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-broaderPartitive>
   a sh:PropertyShape ;
   rdfs:label "Is onderdeel van"@nl ;
   sh:class skos:Concept ;
   sh:description "Relateert een begrip aan een meer omvattend begrip. Voorbeelden van eerstgenoemde begrip zullen onderdeel van voorbeelden van het meer omvattende begrip zijn."@nl ;
   sh:group <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Iso-thesRelationships> ;
-  sh:name "Is onderdeel van"@nl ;
+  sh:name "is onderdeel van"@nl ;
   sh:order 3 ;
   sh:path <http://purl.org/iso25964/skos-thes#broaderPartitive> .
 
@@ -253,17 +248,17 @@
   sh:class skos:Concept ;
   sh:description "Relateert een begrip aan een meer generieker begrip"@nl ;
   sh:group <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Iso-thesRelationships> ;
-  sh:name "Is specialisatie van"@nl ;
+  sh:name "is specialisatie van"@nl ;
   sh:order 1 ;
   sh:path <http://purl.org/iso25964/skos-thes#broaderGeneric> .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Collection-member>
   a sh:PropertyShape ;
-  rdfs:label "Bevat"@nl ;
+  rdfs:label "bevat"@nl ;
   sh:class skos:Concept ;
   sh:decription "Relates a collection to one of its members."@en ;
-  sh:description "Relateert een collectie aan een begrip dat onderdeel is van deze collectie." ;
-  sh:name "Bevat"@nl ;
+  sh:description "Relateert een collectie aan een begrip dat onderdeel is van deze collectie."@nl ;
+  sh:name "bevat"@nl ;
   sh:path skos:member .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-narrowerGeneric>
@@ -272,7 +267,7 @@
   sh:class skos:Concept ;
   sh:description "Relateert een begrip aan een meer specifieker begrip"@nl ;
   sh:group <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Iso-thesRelationships> ;
-  sh:name "Is generalisatie van"@nl ;
+  sh:name "is generalisatie van"@nl ;
   sh:order 2 ;
   sh:path <http://purl.org/iso25964/skos-thes#narrowerGeneric> .
 
@@ -306,7 +301,7 @@
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-comment>
   a sh:PropertyShape ;
-  rdfs:comment "Een begrip heeft bij voorkeur een uitleg in ‘klare taal’."@nl, "Preferably a concept has a comment in 'clear language'."@en ;
+  rdfs:comment "Een begrip heeft bij voorkeur een uitleg in 'klare taal'."@nl, "Preferably a concept has a comment in 'clear language'."@en ;
   sh:group <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#LabelsAndDescriptionPropertyGroup> ;
   sh:name "uitleg"@nl, "comment"@en ;
   sh:order 10 ;
@@ -316,7 +311,6 @@
   ) ;
   sh:path rdfs:comment .
 
-<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-note> sh:decription "A general note, for any purpose."@en .
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-editorialNote>
   a sh:PropertyShape ;
   sh:decription "A note for an editor, translator or maintainer of the vocabulary."@en ;
@@ -335,16 +329,16 @@
   rdfs:comment "Een abstract idee of notie."@nl, "An idea or notion; a unit of thought."@en ;
   rdfs:label "Begrip"@nl ;
   sh:name "Begrip"@nl ;
-  sh:property <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-exactMatch>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-example>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-relatedMatch>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-comment>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-source>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-hiddenLabel>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-related>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-notation>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-broader>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-inScheme>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-closeMatch>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Resource-label>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-narrowerInstantial>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-narrowerPartitive>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-editorialNote>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-broaderPartitive>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-prefLabel>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-historyNote>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-altLabel>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-changeNote>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-scopeNote>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-broaderGeneric>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-definition>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-broaderInstantial>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-narrowerGeneric>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-broadMatch> ;
+  sh:property <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-exactMatch>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-example>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-relatedMatch>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-comment>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-source>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-hiddenLabel>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-related>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-notation>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-broader>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-inScheme>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-closeMatch>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-label>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-narrowerInstantial>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-narrowerPartitive>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-editorialNote>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-broaderPartitive>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-prefLabel>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-historyNote>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-altLabel>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-changeNote>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-scopeNote>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-broaderGeneric>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-definition>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-broaderInstantial>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-narrowerGeneric>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-broadMatch> ;
   sh:targetClass skos:Concept .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-broaderInstantial>
   a sh:PropertyShape ;
-  rdfs:label "Exemplaar van"@nl ;
+  rdfs:label "exemplaar van"@nl ;
   sh:class skos:Concept ;
   sh:description "Relateert een begrip, een exemplaar, aan een ander begrip, de categorie, waartoe eerstgenoemde begrip behoort."@nl ;
   sh:group <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Iso-thesRelationships> ;
-  sh:name "Exemplaar van"@nl ;
+  sh:name "exemplaar van"@nl ;
   sh:order 5 ;
   sh:path <http://purl.org/iso25964/skos-thes#broaderInstantial> .
 
@@ -364,7 +358,7 @@
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#AssociativeRelationships>
   a sh:PropertyGroup ;
-  rdfs:label "Associative Relationships"@en, "Associatieve relaties" ;
+  rdfs:label "Associative Relationships"@en, "Associatieve relaties"@nl ;
   sh:order 3 .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-closeMatch>
@@ -388,7 +382,7 @@
   rdfs:comment "Een Brondocument is een boek, een artikel of enig ander documentair object"@nl, "A book, article, or other documentary resource."@en ;
   rdfs:label "Brondocument"@nl ;
   sh:name "Brondocument"@nl ;
-  sh:property <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Resource-label> ;
+  sh:property <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#BibliographicResource-label> ;
   sh:targetClass dct:BibliographicResource .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#HierarchicalRelationships>
@@ -402,7 +396,102 @@
   sh:decription "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme."@en ;
   sh:description "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme."@en ;
   sh:group <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#LabelsAndDescriptionPropertyGroup> ;
-  sh:name "Code"@nl ;
+  sh:name "code"@nl ;
   sh:order 3 ;
   sh:path skos:notation .
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-label>
+  a sh:PropertyShape ;
+  rdfs:label "label"@nl ;
+  sh:datatype rdf:langString ;
+  sh:description "Een label voor een object is een voor mensen leesbare naam ter aanduiding van een object."@nl ;
+  sh:group <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#LabelsAndDescriptionPropertyGroup> ;
+  sh:minCount 1 ;
+  sh:name "label"@nl ;
+  sh:nodeKind sh:IRI ;
+  sh:path rdfs:label .
 
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#BibliographicResource-label>
+  a sh:PropertyShape ;
+  rdfs:label "label"@nl ;
+  sh:datatype rdf:langString ;
+  sh:description "Een label voor een object is een voor mensen leesbare naam ter aanduiding van een object."@nl ;
+  sh:group <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#LabelsAndDescriptionPropertyGroup> ;
+  sh:minCount 1 ;
+  sh:name "label"@nl ;
+  sh:nodeKind sh:IRI ;
+  sh:path rdfs:label .
+
+  <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Collection-label>
+  a sh:PropertyShape ;
+  rdfs:label "label"@nl ;
+  sh:datatype rdf:langString ;
+  sh:description "Een label voor een object is een voor mensen leesbare naam ter aanduiding van een object."@nl ;
+  sh:group <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#LabelsAndDescriptionPropertyGroup> ;
+  sh:minCount 1 ;
+  sh:name "label"@nl ;
+  sh:nodeKind sh:IRI ;
+  sh:path rdfs:label .
+
+    <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#ConceptScheme-label>
+  a sh:PropertyShape ;
+  rdfs:label "label"@nl ;
+  sh:datatype rdf:langString ;
+  sh:description "Een label voor een object is een voor mensen leesbare naam ter aanduiding van een object."@nl ;
+  sh:group <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#LabelsAndDescriptionPropertyGroup> ;
+  sh:minCount 1 ;
+  sh:name "label"@nl ;
+  sh:nodeKind sh:IRI ;
+  sh:path rdfs:label .
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-related> sh:nodeKind
+    sh:IRI .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-definition> sh:nodeKind
+    sh:Literal .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#ConceptScheme-hasTopConcept>
+  sh:nodeKind sh:IRI .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Collection-member> sh:nodeKind
+    sh:IRI .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-narrowerInstantial>
+  sh:nodeKind sh:IRI .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-broadMatch> sh:nodeKind
+    sh:IRI .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-broader> sh:nodeKind
+    sh:IRI .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-narrowerPartitive>
+  sh:nodeKind sh:IRI .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-relatedMatch> sh:nodeKind
+    sh:IRI .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-prefLabel> sh:nodeKind
+    sh:Literal .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-broaderPartitive>
+  sh:nodeKind sh:IRI .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-exactMatch> sh:nodeKind
+    sh:IRI .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-inScheme> sh:nodeKind
+    sh:IRI .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-broaderGeneric> sh:nodeKind
+    sh:IRI .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-narrowerGeneric> sh:nodeKind
+    sh:IRI .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-source> sh:nodeKind
+    sh:IRI .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-closeMatch> sh:nodeKind
+    sh:IRI .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-broaderInstantial>
+  sh:nodeKind sh:IRI .
