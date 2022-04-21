@@ -183,7 +183,6 @@
   sh:description "The preferred lexical label for a resource, in a given language."@en ;
   sh:disjoint skos:altLabel, skos:hiddenLabel ;
   sh:group <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#LabelsAndDescriptionPropertyGroup> ;
-  sh:maxCount 1 ;
   sh:minCount 1 ;
   sh:name "voorkeursterm"@nl ;
   sh:order 0 ;
@@ -287,7 +286,7 @@
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-source>
   a sh:PropertyShape ;
-  sh:class dct:BibliographicResource ;
+  # sh:class dct:BibliographicResource ;
   sh:description "Een bron voor een begrip is een gerelateerde brondocument waaruit de betekenis van het begrip is afgeleid"@nl ;
   sh:group <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#DefinitionPropertyGroup> ;
   sh:name "bron"@nl ;
@@ -405,9 +404,8 @@
   sh:datatype rdf:langString ;
   sh:description "Een label voor een object is een voor mensen leesbare naam ter aanduiding van een object."@nl ;
   sh:group <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#LabelsAndDescriptionPropertyGroup> ;
-  sh:minCount 1 ;
   sh:name "label"@nl ;
-  sh:nodeKind sh:IRI ;
+  sh:nodeKind sh:Literal ;
   sh:path rdfs:label .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#BibliographicResource-label>
@@ -418,7 +416,7 @@
   sh:group <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#LabelsAndDescriptionPropertyGroup> ;
   sh:minCount 1 ;
   sh:name "label"@nl ;
-  sh:nodeKind sh:IRI ;
+  sh:nodeKind sh:Literal ;
   sh:path rdfs:label .
 
   <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Collection-label>
@@ -429,7 +427,7 @@
   sh:group <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#LabelsAndDescriptionPropertyGroup> ;
   sh:minCount 1 ;
   sh:name "label"@nl ;
-  sh:nodeKind sh:IRI ;
+  sh:nodeKind sh:Literal ;
   sh:path rdfs:label .
 
     <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#ConceptScheme-label>
@@ -440,7 +438,7 @@
   sh:group <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#LabelsAndDescriptionPropertyGroup> ;
   sh:minCount 1 ;
   sh:name "label"@nl ;
-  sh:nodeKind sh:IRI ;
+  sh:nodeKind sh:Literal ;
   sh:path rdfs:label .
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-related> sh:nodeKind
     sh:IRI .
