@@ -7,7 +7,8 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix skosapnl: <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#> .
 @prefix iso-thes: <http://purl.org/iso25964/skos-thes#> .
-
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi>
   a owl:Ontology ;
@@ -493,3 +494,192 @@
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-broaderInstantial>
   sh:nodeKind sh:IRI .
+
+
+#### WIP WG METADATA 
+
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus> a sh:Nodeshape;
+  sh:property <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Voorkeursnaam%20begrippenkader>,
+    <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Alternatieve%20%20naam%20begrippenkader>,
+    <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Beschrijving%20begrippenkader>,
+    <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Klare%20taal%20beschrijving%20begrippenkader%20>,
+    <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Toelichting>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Documentatiepagina>,
+    <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Wetgeving>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Wetgeving%20%28URI%29>,
+    <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Taal>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Bronhouder>,
+    <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Uitgever>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Contactpunt>,
+    <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Toezichthouder>,
+    <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Opdrachtgever>,
+    <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Laatst%20bijgewerkt>,
+    <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Versie>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Frequentie%20%28URI%29>,
+    <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Publicatiedatum>,
+    <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Toegangsrechten>,
+    <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Licentie>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Conformeert%20aan>,
+    <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Geografisch%20gebied>,
+    <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Tijddekking>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Kwaliteit>,
+    <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Herkomst>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-herkomst%20%28URI%29>,
+    <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Toegangs-URL>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Download-URL>,
+    <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Thema%2Fcategorie>,
+    <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Keywords>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Type%2Fgenre> .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Voorkeursnaam%20begrippenkader>
+      sh:path [
+          sh:alternativePath (
+              skos:prefLabel
+              rdfs:label
+            ) ;
+        ] ;
+  sh:name "Voorkeursnaam begrippenkader";
+  sh:description "De naam waarmee de catalogus in UI wordt aangeduid" .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Alternatieve%20%20naam%20begrippenkader>
+  sh:path skos:altLabel;
+  sh:name "Alternatieve  naam begrippenkader";
+  sh:description "namen waaronder de catalogus ook bekend is, denk bijvoorbeeld aan afkortingen of een volledige naam";
+  rdfs:comment "s" .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Beschrijving%20begrippenkader>
+  sh:path skos:definition ;
+  sh:name "Beschrijving begrippenkader";
+  sh:description "Een formele beschrijving van het begrippenkader, het doel en de inhoud." .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Klare%20taal%20beschrijving%20begrippenkader%20>
+  sh:path skos:scopeNote;
+  sh:name "Klare taal beschrijving begrippenkader ";
+  sh:description "Een beschrijving van de catalogus, het doel en de inhoud in klare taal, niveau B2";
+  rdfs:comment "Verplicht omdat ieder begrippenkader een duidelijke beschrijving moet bevatten. In SHACL een vrij zware warning" .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Toelichting> sh:path
+    skos:scopeNote;
+  sh:name "Toelichting";
+  sh:description "nadere toelichting van de catalogus, bijvoorbeeld met gebruiksvoorbeelden. Geeft de mogelijkheid tot wat informeler taalgebruik" .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Documentatiepagina>
+  sh:path foaf:page;
+  sh:name "Documentatiepagina";
+  sh:description "De URI van de (start)pagina waarop informatie over deze catalogus te vinden is.Via deze pagina kunnen andere webpagina's bereikt worden" .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Wetgeving>
+  sh:name "Wetgeving";
+  sh:description "De naam van de wetgeving/besluit/... die tot de creatie van deze cataloigus heeft geleid ";
+  rdfs:comment "Verwijzen naar groepje van Koos hoe omm te gaan met dit soort objecten: URI met label " .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Wetgeving%20%28URI%29>
+
+  sh:name "Wetgeving (URI)";
+  rdfs:comment "Verwijzen naar groepje van Koos hoe omm te gaan met dit soort objecten: URI met label " .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Taal> sh:path dct:language;
+  sh:name "Taal";
+  rdfs:comment "welke waardelijst voor taal?" .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Bronhouder> sh:path
+    foaf:Organization;
+  sh:name "Bronhouder";
+  sh:description "Een bronhouder is verantwoordelijk voor het inwinnen en bijhouden van de  gegevens in de catalogus en voor het borgen van de kwaliteit van die gegevens";
+  rdfs:comment "Waardelijst toevoegen met bekende (Nederlandse) organisaties? " .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Uitgever> sh:path
+    dct:publisher;
+  sh:name "Uitgever";
+  sh:description "De uitgever of verstrekker is verantwoordelijk voor het verstrekken van de gegevens aan afnemers" .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Contactpunt> sh:path
+    <http://example.com/base/URI/Agent/Organization/%20.%20.%20.%20>;
+  sh:name "Contactpunt";
+  sh:description "Contactinformatie die gebruikt kan worden om opmerkingen over de catalogus door te geven" .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Toezichthouder>
+  sh:path foaf:Organization;
+  sh:name "Toezichthouder";
+  sh:description "De toezichthouder is de partij die  verantwoordelijk is dat wordt toegezien of de catalogus in overeenstemming met eisen, afspraken en wetgeving opereert";
+  rdfs:comment "Een optie is om hier prov:qualifiedAttribution te gebruiken, met bereik https://www.w3.org/TR/prov-o/#Attribution " .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Opdrachtgever> sh:path
+    foaf:Organization;
+  sh:name "Opdrachtgever";
+  sh:description "De opdrachtgever is de voor de catalogus verantwoordelijke instantie, i.e., de opdrachtgever van de ‘verstrekker’" .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Laatst%20bijgewerkt>
+  sh:path dct:modified;
+  sh:name "Laatst bijgewerkt" .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Versie> sh:name
+    "Versie";
+  sh:description "De versie van deze catalogus. Dit wordt niet gebruikt m.b.t. De inhoud van de catalogus, maar voor wijzigingen in de structuur van de catalogus";
+  rdfs:comment "Willen we in Linked Datavastleggen wanneer de structuur voor het laatst te gewijzigd en wat die wijziging was? Dit lijkt  beter op ijn plaat in rellease notes. Dan een URI openemen naar die notes?" .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Frequentie%20%28URI%29>
+  sh:path [ sh:alternativePath (dct:accrualPeriodicity <https://standaarden.overheid.nl/owms/terms/Frequentie> ) ];
+  sh:name "Frequentie (URI)";
+  sh:description "De frequentie waarmee de registratie wordt bijgewerkt. Kies de daarbij passende URI uit de desbetreffende waardelijst." .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Publicatiedatum>
+  sh:path dct:issued;
+  sh:name "Publicatiedatum";
+  sh:description "De dag waarop deze catalogus voor de eerste keer beschikbaar is gekomen. De dag waarom de eerste versie van de catalogus beschikbaar kwam." .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Toegangsrechten>
+  sh:path dct:accessRights;
+  sh:name "Toegangsrechten";
+  sh:description "geeft of een registratie moet worden gezien als open data, toegangsbeperkingen heeft of niet openbaar is.";
+  rdfs:comment "Er bestaan manieren om exact aan te geven met Linked Data onder welke rechten de informatie gebruikt kan worden. Probleem is dat deze standaarden moeilijk te maken en moeilijk te lezen zijn." .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Licentie> sh:path
+    dct:license ; rdfs:seeAlso <https://waardelijsten.dcat-ap-donl.nl/donl_license.json>;
+  sh:name "Licentie";
+  sh:description "Deze eigenschap verwijst naar het juridische document dat de gebruiksrechten van de catalogus beschrijft" .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Conformeert%20aan>
+  sh:path dct:conformsTo;
+  sh:name "Conformeert aan";
+  sh:description "Deze eigenschap verwijst naar de vastgestelde standaard waaraan de data van de beschreven resource voldoet. Hierbij kan worden gedacht aan het model, schema, ontology, view of profiel." .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Geografisch%20gebied>
+  sh:path dct:spatial;
+  sh:name "Geografisch gebied";
+  rdfs:comment "Voor een begrippencatalogus lijken dit veld minder relevant" .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Tijddekking> sh:path
+    dct:periodeoftime;
+  sh:name "Tijddekking";
+  rdfs:comment "Voor een begrippencatalogus lijken dit veld minder relevant" .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Kwaliteit> sh:name
+    "Kwaliteit";
+  sh:description "kwaliteit van de gegevens in de catalogus";
+  rdfs:comment "Willen we iets over kwaliteit zeggen? Daar wordt vaak om gevraagd, maar is bijna nooit eenduidig beschreven. In Stelselcatalogus is dit daarom een tekstveld " .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Herkomst> sh:path
+    dct:provenance;
+  sh:name "Herkomst" .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-herkomst%20%28URI%29>
+  sh:name "herkomst (URI)" .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Toegangs-URL> sh:name
+    "Toegangs-URL";
+  rdfs:comment "Zijn dit velden die in de catalogus staan? Of moeten die in DCAT van de catalogus opgenomen worden?" .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Download-URL> sh:name
+    "Download-URL";
+  rdfs:comment "Zijn dit velden die in de catalogus staan? Of moeten die in DCAT van de catalogus opgenomen worden?" .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Thema%2Fcategorie>
+  sh:path dcat:theme;
+  sh:name "Thema/categorie";
+  sh:description "Deze eigenschap verwijst naar een thema, bijvoorbeeld uit de taxonomie beleidsagenda";
+  rdfs:comment "Dit veld verwijst naar een waardelijst, maar welke waardelijsten zijn hiervoor geschikt " .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Keywords> sh:path
+    dcat:keyword;
+  sh:name "Keywords";
+  sh:description "Deze eigenschap bevat vrije keywords of termen die de resource beschrijven." .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Type%2Fgenre> sh:path
+    dct:type;
+  sh:name "Type/genre";
+  sh:description "Deze eigenschap beschrijft het type van de resource";
+  rdfs:comment "De DCAT standaard en DCAT-AP verschaffen geen duidelijkheid over de toepassing van eigenschap type/genre. DCAT-AP werkt aan een controlled vocabulary met mogelijke typen (de status hiervan is onbekend). W3C heeft hiervoor wel een issue aangemaakt. Zie https://github.com/w3c/dxwg/issues/64. Zie ook de use case Modelling resources different from datasets." .
+
+###
