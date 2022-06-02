@@ -499,9 +499,10 @@
 #### WIP WG METADATA 
 
 
-<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus> a sh:NodeShape;
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus> a sh:Nodeshape ;
   rdfs:label "Catalogus"@nl , "Catalog"@en ; 
-  sh:name "Catalogus"@nl, "Catalog"@en ;
+  sh:name "Catalogus"@nl , "Catalog"@en ; 
+  sh:targetClass skos:ConceptScheme ;
   sh:property <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Voorkeursnaam%20begrippenkader>,
     <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Alternatieve%20%20naam%20begrippenkader>,
     <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Beschrijving%20begrippenkader>,
@@ -703,8 +704,8 @@
   rdfs:comment "Dit veld verwijst naar een waardelijst, maar welke waardelijsten zijn hiervoor geschikt " .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Keywords>
-  a sh:PropertyShape ; 
-  sh:path dcat:keyword;
+  a sh:PropertyShape ; sh:path
+    dcat:keyword;
   sh:name "Keywords"@nl;
   sh:description "Deze eigenschap bevat vrije keywords of termen die de resource beschrijven." .
 

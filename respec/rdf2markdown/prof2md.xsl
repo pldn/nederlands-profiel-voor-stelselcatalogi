@@ -4,10 +4,11 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
 xmlns:sh="http://www.w3.org/ns/shacl#" 
-xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+xmlns:iso-thes="http://purl.org/iso25964/skos-thes#"
+xmlns:dct="http://purl.org/dc/terms/">
 
   <xsl:output method="text" omit-xml-declaration="yes"/>
-
 
 
 
@@ -147,8 +148,9 @@ xmlns:skos="http://www.w3.org/2004/02/skos/core#">
   </xsl:template>
 
   <xsl:template match="rdf:RDF">
+    <xsl:text># Shapes</xsl:text>
     <xsl:for-each select="sh:NodeShape[exists(rdfs:label)]">
-      <xsl:text>&#10;&#10;## </xsl:text>
+      <xsl:text>&#10;&#10;# </xsl:text>
       <xsl:value-of select="rdfs:label[@xml:lang='nl']"/>
       <xsl:text>&#10;</xsl:text>
       <xsl:apply-templates select="." mode="properties"/>

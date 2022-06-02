@@ -4,6 +4,11 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS>
+  skos:hasTopConcept <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Member>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/SemantischeRelatie>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Term>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Notation>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/ConceptScheme>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Collection>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/BibliographicResource>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/isDefinedBy>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/InScheme>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Note> ;
+  rdfs:label "Begrippenkader Nederlands Profiel voor Stelselcatalogi"@nl ;
+  a skos:ConceptScheme .
+
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/BroaderGeneric>
   dct:source <http://purl.org/iso25964/skos-thes#broaderGeneric> ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
@@ -60,7 +65,6 @@
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Narrower> ;
   dct:source skosthes:narrowerGeneric, <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> .
 
-<http://evn.topbraidlive.org/evnprojects#Taxonomy> rdfs:subClassOf <http://topbraid.org/teamwork#Vocabulary> .
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Related>
   a skos:Concept ;
   skos:prefLabel "has related"@en, "is gerelateerd aan"@nl ;
@@ -91,10 +95,7 @@
   skos:prefLabel "zoekterm"@nl, "hidden label"@en ;
   a skos:Concept .
 
-<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS>
-  skos:hasTopConcept <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Member>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/SemantischeRelatie>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Term>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Notation>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/ConceptScheme>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Collection>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/BibliographicResource>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/isDefinedBy>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/InScheme>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Note> ;
-  rdfs:label "Begrippenkader Nederlands Profiel voor Stelselcatalogi"@nl ;
-  a skos:ConceptScheme .
+
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/NarrowerPartitive>
   a skos:Concept ;
