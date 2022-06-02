@@ -499,7 +499,7 @@
 #### WIP WG METADATA 
 
 
-<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus> a sh:Nodeshape;
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus> a sh:NodeShape;
   rdfs:label "Catalogus"@nl , "Catalog"@en ; 
   sh:targetClass skos:ConceptScheme ;
   sh:name "Catalogus"@nl, "Catalog"@en ;
