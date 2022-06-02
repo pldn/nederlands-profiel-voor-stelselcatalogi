@@ -500,6 +500,8 @@
 
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus> a sh:Nodeshape;
+  rdfs:label "Catalogus"@nl , "Catalog"@en ; 
+  sh:targetClass skos:ConceptScheme ;
   sh:property <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Voorkeursnaam%20begrippenkader>,
     <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Alternatieve%20%20naam%20begrippenkader>,
     <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Catalogus-Beschrijving%20begrippenkader>,
