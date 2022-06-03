@@ -1,14 +1,30 @@
 ## Inleiding
 
-De PLDN Werkgroep ‘Nederlands profiel voor stelselcatalogi’ heeft als ambitie een basisprofiel voor stelselcatalogi te beschrijven, waarmee verschillende stelselcatalogi interoperabel ingericht kunnen worden. De bedoeling is dat catalogi gemakkelijk naar elkaars concepten (begrippen) kunnen verwijzen. Daarmee ontstaat en soort van samenhangend stelsel van stelselcatogi, waarbij ieder stelsel een samenhangend domein representeert. Voorbeelden zijn de stelselcatalogus voor de basisregistraties (de moeder van alle catalogi), de stelselcatalogus voor het DSO en de stelselcatalogus voor het Zorgeloos Vastgoed Stelsel. Naast het basisprofiel zullen meerdere extensies ontstaan. Dit kunnen extensies zijn om tot een volledige ISO compatable thesaurus te komen, maar ook extensies die relevant zijn voor een specifiek domein. Er lijkt in Nederland op dit moment nu momentum om dit gezamenlijk op te pakken en naar semantisch interoperabele publiek-private domeinen toe te werken.
-
-We richten ons in eerste instantie op een good practice voor het beschrijven van een begrippenkader met concepten. We zien concept en begrip als synoniem. Daarbij zullen we aandacht besteden aan de verschillende niveaus van detaillering voor het beschrijven van concepten. Dit begint met het minimaal beschrijven van een concept met een term en een definitie, waarbij we naast een formele definitie ook een publieksvriendelijke variant op taalniveau B2 willen hebben. Door hiërarchische relaties toe te voegen ontstaat een taxonomie en door nog meer verbanden tussen concepten toe te voegen ontstaat een thesaurus. In sommige gevallen willen we wellicht zelfs nog wat meer semantiek toevoegen zoals het nader duiden van subjecten, handelingen en objecten (onderwerp, lijdend voorwerp, gezegde). Dit willen we stap voor stap afpellen. We starten met techniekonafhankelijke principes voor het beschrijven van een begrippenkader. Uiteindelijk willen we komen tot een gedeelde standaard voor het beschrijven van zo’n begrippenkader. Deze standaard beschrijft hoe wij bestaande W3C standaarden toepassen. Voor begrippenkaders gaat het daarbij onder andere om rdfs, skos, dcterms, prov-o en adms /dcat. Ons doel is om het uiteindelijke profiel als aanbevolen standaard of wellicht zelfs als pas-toe-leg-uit standaard aan te bieden aan het Forum Standaardisatie.
+De PLDN Werkgroep ‘Nederlands profiel voor stelselcatalogi’ heeft als ambitie een basisprofiel voor stelselcatalogi te beschrijven, waarmee verschillende stelselcatalogi interoperabel ingericht kunnen worden. Het doel is een samenhangend stelsel van stelselcatogi, waarbij ieder stelsel een samenhangend domein representeert. Voorbeelden zijn de stelselcatalogus voor de basisregistraties (de moeder van alle catalogi), de stelselcatalogus voor het DSO en de stelselcatalogus voor het Zorgeloos Vastgoed afsprakenstelsel. Daartoe willen we het uiteindelijke profiel als aanbevolen standaard of wellicht zelfs als pas-toe-leg-uit standaard aan te bieden aan het Forum Standaardisatie.
 
 Een stelselcatalogus bestaat uit:
 - Een beschrijving van de alle begrippen in de registratie(s) van het stelsel, dit noemen we een begrippenkader.
-- Een overzicht van waardelijsten met referentiegegevens of classificaties. In het Engels worden dit ‘controlled vocabularies’ genoemd.
+- Een overzicht van waardelijsten met referentiegegevens of classificaties.
 - Een beschrijving van de gegevens en hun structuur in de vorm van een informatiemodel. Hiervoor bestaal al het  MIM (Metamodel voor InformatieModellelering).
+- Een beschrijving van de uitwisselingsstandaard. Ook hiervoor kunnen bestaandaarden als XML, OAS3 en NL api strategie worden gebruikt.
 
-Alles begint met elkaar begrijpen, dus met het begrippenkader. 
+De voorliggende standaard richt zich op het beschrijven van een begrippenkader met concepten en collecties van concepten. We zien concept en begrip als synoniem. Daarbij besteden we aandacht aan de verschillende niveaus van detaillering voor het beschrijven van concepten. Dit begint met het minimaal beschrijven van een concept met een term en een definitie, waarbij we naast een formele definitie ook een publieksvriendelijke variant op taalniveau B2 willen hebben. Door hiërarchische relaties toe te voegen ontstaat een taxonomie en door nog meer verbanden tussen concepten toe te voegen ontstaat een (ISO compatible) thesaurus. In sommige gevallen willen we wellicht zelfs nog wat meer semantiek toevoegen zoals het nader duiden van subjecten, handelingen en objecten (onderwerp, lijdend voorwerp, gezegde). 
 
-De ambitie is om in september/oktober de basis te leggen voor een breed gedeelde standaard voor een begrippenkader en daarna de basis te leggen voor de beschrijving van  waardelijsten in een stelselcatalogus. Het MIM staat al op de lijst met aanbevolen standaarden. Een ReSpec specificatie van een informatiemodel vormt de laatste component van een stelselcatalogus.
+De elementen in deze standaard, begrippenkader, concept en collectie, worden in 3 stappen beschreven:
+- Bij ieder concept in deze standaard starten we  met techniekonafhankelijke principes voor het beschrijven van een begrippenkader, de overeengekomen richtlijnen.
+- Iedere eigenschap van een concept beschrijven we inhoudelijk met een definitie, beschrijving op taalniveau B2, toelichting, een of meerdere redactionele notities en eventueel een voorbeeld.
+- Daarnaast beschrijven we per eigenschap van een concept of deze verplicht/aanbevolen/niet verplicht is en hoe kan worden gevalideerd dat deze beschrijving aan de standaard voldoet. 
+
+We gebruiken overal bestaande W3C standaarden, die soms nog behoorlijk wat ruimte voor interpretatie overlaten. De meerwaarde van de voorliggende standaard is dat deze  praktische handvatten biedt bij het toepassen van deze bestaande standaarden, inclusief een validatiemogelijkheid. Tevens worden alle concepten in de standaard vertaald naar het Nederlands. 
+
+### Algemene overeengekomen richtlijnen
+Om het profiel succesvol te laten zijn dient het breed gedragen te zijn. Om dit te realiseren hebben we een breed scala aan vertegenwoordigers samen gesteld vanuit diverse (semi-overheid)instanties. Vanuit deze werkgroep hebben we een aantal richtlijnen opgesteld voor het profiel. Deze lijst is niet uitputtend en volledig, maar dient als een basis.
+
+Het profiel dient tenminste aan de volgende richtlijnen te voldoen:
+
+- Laagdrempelig door modulair opbouw en duidelijk in vertalingen en uitleg.
+- We beginnen met begrippen, de overeenkomstige behoefte binnen de diverse deelnemende organisaties ligt voor een groot deel bij begrippen, dit is het laaghangende fruit voor een overeengekomen profiel.
+- Doel van het profiel is in eerste instantie om begrippen binnen organisaties kenbaar te maken.
+- Onder Concept en Begrip verstaan we hetzelfde.
+- Zoveel mogelijk in het Nederlands, dus zowel de labels, termen en de definities. De context is in principe de Nederlandse omgeving.
+- Voorlopig concentreren we ons tot hiërarchische relaties en eenvoudige niet hiërarchische relaties om te kaderen. We gaan voorlopig geen domein specifieke relaties introduceren.
