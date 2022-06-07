@@ -5,101 +5,98 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS>
+  a skos:ConceptScheme ;
   skos:hasTopConcept <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Member>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/SemantischeRelatie>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Term>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Notation>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/ConceptScheme>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Collection>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/BibliographicResource>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/isDefinedBy>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/InScheme>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Note> ;
-  rdfs:label "Begrippenkader Nederlands Profiel voor Stelselcatalogi"@nl ;
-  a skos:ConceptScheme .
+  rdfs:label "Begrippenkader Nederlands Profiel voor Stelselcatalogi"@nl .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/BroaderGeneric>
-  dct:source <http://purl.org/iso25964/skos-thes#broaderGeneric> ;
+  a skos:Concept ;
+  dct:source <http://purl.org/iso25964/skos-thes#broaderGeneric>, <http://purl.org/iso25964/skos-thes#> ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Thesaurus> ;
   skos:definition "Relateert een begrip aan een meer generiek begrip."@nl, "The immediate (direct or one-step) class - generalized class relationship."@en ;
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Broader> ;
   skos:prefLabel "broader term (generic)"@en, "is specialisatie van"@nl ;
-  a skos:Concept ;
   skosthes:broaderGeneric <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Broader> .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/BibliographicResource>
+  a skos:Concept ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept> ;
-  dct:source <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/BibliographicResource> ;
+  dct:source <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/BibliographicResource>, dct: ;
   skos:definition "Een brondocument is een boek, een artikel of enig ander documentair object"@nl, "A book, article, or other documentary resource."@en ;
-  skos:prefLabel "brondocument"@nl, "bibliographic resource"@en ;
-  a skos:Concept .
+  skos:prefLabel "brondocument"@nl, "bibliographic resource"@en .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Harmonisatierelatie>
+  a skos:Concept ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   skos:definition "Relateert een begrip aan een overeenkomstig begrip uit een ander begrippenstelsel, op basis van de betekenis."@nl, "Relates two concepts coming, by convention, from different schemes, and that have comparable meanings"@en ;
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/SemantischeRelatie> ;
-  skos:prefLabel "Harmonisatierelatie"@nl ;
-  a skos:Concept ;
-  skos:prefLabel "is in mapping relation with"@en .
+  skos:prefLabel "Harmonisatierelatie"@nl, "is in mapping relation with"@en ;
+  dct:source <https://www.w3.org/TR/skos-reference/#mapping>, skos: .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/RelatedMatch>
+  a skos:Concept ;
   skos:definition "skos:relatedMatch is used to state an associative mapping link between two conceptual resources in different concept schemes."@en, "Relateert een begrip aan een verwant begrip uit een ander begrippenkader"@nl ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
-  a skos:Concept ;
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Harmonisatierelatie> ;
   skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept> ;
   skos:prefLabel "has related match"@en, "overeenkomstig verwant"@nl ;
-  dct:source skos:relatedMatch ;
+  dct:source <https://www.w3.org/TR/skos-reference/#mapping>, skos: ;
   skos:scopeNote "Een dergelijke relatie is aanwezig als de betekenis van het betreffende begrip tot stand is gekomen op basis van kennis over het begrip uit het andere begrippenkader"@nl .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/TopConcept>
+  a skos:Concept ;
   rdfs:label "has top concept"@en ;
   skos:definition "Top concepts are concepts which are topmost in the hierarchical relations for a scheme."@en, "Topbegrip is een begrip die bovenaan de hierarchie staat in een bepaald begrippenkader"@en ;
   skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/ConceptScheme> ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept> ;
   skos:prefLabel "topbegrip"@nl, "top concept"@en ;
-  dct:source skos:hasTopConcept ;
-  a skos:Concept .
+  dct:source skos:, <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/NarrowerGeneric>
+  a skos:Concept ;
   skos:definition "The immediate (direct or one-step) class - specialized class relationship."@en, "Relateert een begrip aan een meer specifieker begrip."@nl ;
   skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Thesaurus> ;
-  a skos:Concept ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   skos:prefLabel "is generalisatie van"@nl, "broader term (generic)"@en ;
   skosthes:broaderGeneric <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Narrower> ;
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Narrower> ;
-  dct:source skosthes:narrowerGeneric, <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> .
+  dct:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>, skosthes: .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Related>
   a skos:Concept ;
   skos:prefLabel "has related"@en, "is gerelateerd aan"@nl ;
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/SemantischeRelatie> ;
-  dct:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>, skos:related ;
+  dct:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>, <https://www.w3.org/TR/skos-reference/#semantic-relations>, skos: ;
   skos:definition "Relateert een begrip aan een andere begrip waarmee het semantisch samenhangt"@nl, "Relates a concept to a concept with which there is an associative semantic relationship."@en ;
   skos:scopeNote "Het begrip is voor zijn betekenis afhankelijk van de betekenis van het andere begrip. Dit betekent dat in de definitie van eerstgenoemde begrip het andere begrip wordt gebruikt."@nl ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Thesaurus> .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/NarrowerInstantial>
+  a skos:Concept ;
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Narrower> ;
   skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Thesaurus>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept> ;
   skos:definition "Relateert een begrip, de categorie, aan een begrip dat exemplarisch is voor eerstgenoemde begrip."@nl, "The immediate (direct or one-step) class - instance relationship."@en ;
   skos:prefLabel "narrower term (instantial)"@en, "is categorie van"@nl ;
-  a skos:Concept ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
-  dct:source skosthes:narrowerInstantial, <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
-  skosthes:broaderGeneric <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Narrower> ;
-.
+  dct:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>, skosthes: ;
+  skosthes:broaderGeneric <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Narrower> .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/HiddenLabel>
+  a skos:Concept ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept> ;
-  dct:source <https://www.w3.org/2009/08/skos-reference/skos.html#hiddenLabel> ;
+  dct:source <https://www.w3.org/TR/skos-reference/#labels>, skos: ;
   skos:definition "A lexical label for a resource that should be hidden when generating visual displays of the resource, but should still be accessible to free text search operations."@en, "Een zoekterm voor een begrip is een term die beoogd is om het begrip te vinden, maar verder verborgen blijft."@nl ;
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Term> ;
-  skos:prefLabel "zoekterm"@nl, "hidden label"@en ;
-  a skos:Concept .
-
-
+  skos:prefLabel "zoekterm"@nl, "hidden label"@en .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/NarrowerPartitive>
   a skos:Concept ;
-  dct:source skosthes:narrowerPartitive, <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
+  dct:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>, skosthes: ;
   skos:definition "Relateert een begrip aan een minder omvattend begrip. Voorbeelden van eerstgenoemde begrip zullen bestaan uit voorbeelden van het minder omvattende begrip zijn."@nl, "When the ISO 25964 standard is followed, the narrower partitive relationship should qualify for a transitive closure."@en ;
   skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Thesaurus>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept> ;
   skos:prefLabel "omvat"@nl, "broader term (partitive)"@en ;
@@ -109,42 +106,44 @@
   skos:scopeNote "A \"bicycle wheel\" for instance belongs uniquely to a \"bicycle\" while a \"wheel\" does not. A narrower partitive relationship should not be established between \"bicycles\" and \"wheels\" because a wheel could be part of a motor car, a wheelbarrow or one of many other artefacts."@en .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Member>
-  skos:definition "Relates a collection to one of its members."@en, "Relateert een collectie aan een begrip dat onderdeel is van deze collectie"@nl ;
   a skos:Concept ;
-  dct:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>, skos:member ;
+  skos:definition "Relates a collection to one of its members."@en, "Relateert een collectie aan een begrip dat onderdeel is van deze collectie"@nl ;
+  dct:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>, skos:, <https://www.w3.org/TR/skos-reference/#collections> ;
   skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Collection> ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   skos:editorialNote "Specifiek gebruik van 'begrip' in plaats van het minderzeggende 'lid'"@nl ;
   skos:prefLabel "has member"@en, "bevat"@nl .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/ScopeNote>
+  a skos:Concept ;
   skos:definition "Een toelichting voor een begrip is een notitie die meer duidelijk geeft over de betekenis of gebruik van een begrip"@nl, "A note that helps to clarify the meaning and/or the use of a concept."@en ;
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Note> ;
-  dct:source skos:scopeNote, <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
-  a skos:Concept ;
+  dct:source <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes>, <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>, skos: ;
   skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept> ;
   skos:scopeNote "De toelichting geeft een aanvulling op de definitie waardoor deze beter begrepen kan worden, zonder dat daarmee de formele beschrijving onnodig of onjuist wordt aangepast. Zie: https://www.w3.org/TR/2009/NOTE-skos-primer-20090818/#secdocumentation "@nl ;
   skos:prefLabel "scope note"@en, "toelichting"@nl ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Note>
+  a skos:Concept ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   skos:definition "Een algemene notitie zonder specifiek gebruiksdoel."@nl, "A general note, for any purpose."@en ;
   skos:scopeNote "Notes are used to provide information relating to SKOS concepts. There is no restriction on the nature of this information, e.g., it could be plain text, hypertext, or an image; it could be a definition, information about the scope of a concept, editorial information, or any other type of information."@en, "This property may be used directly, or as a super-property for more specific note types."@en ;
   skos:prefLabel "note"@en, "notitie"@nl ;
-  a skos:Concept .
+  dct:source skos:, <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes> .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/BroadMatch>
-  dct:source skos:broadMatch ;
+  a skos:Concept ;
+  dct:source <https://www.w3.org/TR/skos-reference/#mapping>, skos: ;
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Harmonisatierelatie> ;
   skos:definition "skos:broadMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en, "Relateert een begrip aan een generieker begrip uit een ander begrippenkader"@nl ;
   skos:scopeNote "Een dergelijke relatie is aanwezig als de betekenis van het betreffende begrip tot stand is gekomen op basis van kennis over het begrip uit het andere begrippenkader"@nl ;
-  a skos:Concept ;
-  skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept> ;
+  skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Broader> ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   skos:prefLabel "overeenkomstig generieker"@nl, "has broader match"@en .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Definiton>
+  a skos:Concept ;
   skos:prefLabel "definition"@en, "definitie"@nl ;
   skos:editorialNote "De ISO11179 is gevolgd bij het opstellen van de Nederlandse definitie en niet de SKOS definitie vanwege de verwarring die kan optreden m.b.t. 'formele uitleg': dit laatste zou je eerder bij een ontologie verwachten."@nl ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
@@ -155,123 +154,138 @@
   In dit laatste onderscheid de definitie zich daarmee van een machine-leesbare formele beschrijving.
   Aan de hand van een definitie kan iemand bepalen of zijn eigen begrip behorende bij een term overeenkomt met het begrip dat gedefinieerd wordt.
 De uitleg of de toelichting bij een begrip kan gebruik worden voor iemand die het begrip nog niet kent om te begrijpen waar het over gaat."""@nl ;
-  dct:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
-  a skos:Concept .
+  dct:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>, skos:, <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes> .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Collection>
+  a skos:Concept ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   skos:definition "A meaningful collection of concepts."@en, "Een collectie is een verzameling van begrippen die voor een bepaalde situatie betekenisvol bij elkaar passen."@nl ;
   rdfs:label "collection"@en, "collectie"@nl ;
-  skos:scopeNote "Met betekenisvol wordt bedoeld dat de begrippen op een bepaalde manier met elkaar samenhangen. Een collectie betreft vaak een deel van de begrippen uit één begrippenstelsel, maar kan ook begrippen bevatten die afkomstig zijn uit meerdere begrippenstelsels"@nl ;
-  a skos:Concept ;
+  skos:scopeNote "Met betekenisvol wordt bedoeld dat de begrippen op een bepaalde manier met elkaar samenhangen. Een collectie betreft vaak een deel van de begrippen uit één begrippenstelsel, maar kan ook begrippen bevatten die afkomstig zijn uit meerdere begrippenstelsels"@nl, "Collections can be used where you would like a set of concepts to be displayed under a 'node label'."@en ;
   skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Member>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept> ;
-  dct:source <https://www.w3.org/TR/skos-reference/#collections>, <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
-  skos:prefLabel "Collectie"@nl , "Collection"@en .
+  dct:source <https://www.w3.org/TR/skos-reference/#collections>, <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.38>, skos: ;
+  skos:prefLabel "Collectie"@nl, "Collection"@en .
+
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Taxonomy>
+  a skos:Concept ;
+  skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
+  skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/ConceptScheme> ;
+  skos:definiton "Een taxonomie (of taxonomische classificatie) is een classificatieschema, met name een hiërarchische classificatie, waarin concepten zijn georganiseerd in groepen of typen."@nl ;
+  skos:scopeNote "Een taxonomie wordt gebruikt om kennis te ordenen en te indexeren (opgeslagen als documenten, artikelen, video's, enz.), zoals in de vorm van een bibliotheekclassificatiesysteem of een taxonomie van een zoekmachine, zodat gebruikers de informatie die ze zoeken gemakkelijker kunnen vinden. op zoek naar. Taxonomieën zijn hiërarchieën (en hebben dus een intrinsieke boomstructuur)."@nl, "A taxonomy is be used to organize and index knowledge (stored as documents, articles, videos, etc.), such as in the form of a library classification system, or a search engine taxonomy, so that users can more easily find the information they are searching for. Taxonomies are hierarchies (and thus, have an intrinsic tree structure)."@en ;
+  skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Narrower>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Broader> ;
+  skos:prefLabel "taxonomie"@nl, "taxonomy"@en ;
+  skos:altLabel "classificatieschema" ;
+  dct:source <https://en.wikipedia.org/wiki/Taxonomy> ;
+  skos:definition "A taxonomy (or taxonomical classification) is a scheme of classification, especially a hierarchical classification, in which concepts are organized into groups or types."@en .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/isDefinedBy>
+  a skos:Concept ;
   skos:definition "The defininition of the subject resource."@en, "Geeft aan welke resource het onderwerp definieert."@nl ;
   skos:prefLabel "is defined by"@en, "gedefinieerd in"@nl ;
   rdfs:label "isDefinedBy"@en ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept> ;
-  a skos:Concept ;
-  dct:source <https://www.w3.org/TR/rdf-schema/#ch_isdefinedby> .
+  dct:source <https://www.w3.org/TR/rdf-schema/#ch_isdefinedby>, rdfs: .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/AltLabel>
+  a skos:Concept ;
   skos:example "Acroniemen, afkortingen, spellingsvarianten en onregelmatige meervouds-/enkelvoudsvormen kunnen worden opgenomen in de alternatieve labels voor een concept. Verkeerd gespelde termen worden normaal gesproken als verborgen labels opgenomen (zie skos:hiddenLabel)."@nl, "Acronyms, abbreviations, spelling variants, and irregular plural/singular forms may be included among the alternative labels for a concept. Mis-spelled terms are normally included as hidden labels (see skos:hiddenLabel)."@en ;
   skos:prefLabel "alternatieve term"@nl, "alternative label"@en ;
-  dct:source skos:altLabel, <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
-  a skos:Concept ;
+  dct:source <https://www.w3.org/TR/skos-reference/#labels>, <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>, skos: ;
   skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/PrefLabel> ;
   skos:definition "An alternative lexical label for a resource."@en, "Een alternatieve term voor een begrip is een term die gebruikt kan worden als alternatief voor de voorkeursterm van dit begrip, maar niet de voorkeur heeft."@nl ;
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Term> ;
-  skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> .
+  skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
+  skos:scopeNote "What constitutes a unit of thought is subjective, and this definition is meant to be suggestive, rather than restrictive."@en .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/ExactMatch>
+  a skos:Concept ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept> ;
   skos:prefLabel "has exact match"@en, "exact overeenkomstig"@nl ;
   skos:definition "Relateert een begrip aan een overeenkomstig begrip uit een ander begrippenkader, waarbij de betekenis van deze begrippen bij uiteenlopende toepassingen gelijk aan elkaar kan worden verondersteld"@nl, "skos:exactMatch is used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. skos:exactMatch is a transitive property, and is a sub-property of skos:closeMatch."@en ;
-  a skos:Concept ;
   skos:scopeNote "Een dergelijke relatie is aanwezig als de betekenis van het betreffende begrip gelijk wordt verondersteld aan het begrip uit het andere begrippenkader. Het is een 'leenwoord': het begrip is overgenomen uit het andere begrippenkader."@nl ;
-  dct:source skos:exactMatch ;
+  dct:source <https://www.w3.org/TR/skos-reference/#mapping>, skos: ;
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Harmonisatierelatie> .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Narrower>
+  a skos:Concept ;
   skos:definition "Relates a concept to a concept that is more specific in meaning."@en, "Relateert een concept aan een ander concept die meer specifiek in betekenis is."@nl ;
-  dct:source skos:narrower, <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
+  dct:source <https://www.w3.org/TR/skos-reference/#semantic-relations>, <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>, skos: ;
   skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Taxonomy> ;
   skos:scopeNote "By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."@en ;
-  a skos:Concept ;
   skos:prefLabel "heeft enger begrip"@nl, "has narrower"@en ;
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/SemantischeRelatie> ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Broader>
-  skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/SemantischeRelatie> ;
   a skos:Concept ;
+  skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/SemantischeRelatie> ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Taxonomy>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept> ;
   skos:definition "Relates a concept to a concept that is more general in meaning."@en, "Relateert een begrip aan een bovenliggend begrip in de hierarchie."@nl ;
   skos:prefLabel "heeft breder begrip"@nl, "has broader"@en ;
-  dct:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>, skos:broader ;
+  dct:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>, <https://www.w3.org/TR/skos-reference/#semantic-relations>, skos: ;
   skos:scopeNote "By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."@en .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/HistoryNote>
+  a skos:Concept ;
   skos:definition "Notitie over de voormalige status/gebruik/betekenis van het concept."@nl, "A note about the past state/use/meaning of a concept."@en ;
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Note> ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   skos:prefLabel "history note"@en, "historische notitie"@nl ;
-  a skos:Concept .
+  dct:source skos:, <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes> .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/ChangeNote>
+  a skos:Concept ;
   skos:definition "A note about a modification to a concept."@nl, "Notitie over een wijziging aan het concept."@en ;
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Note> ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   skos:prefLabel "change note"@en, "wijzigingsnotitie"@nl ;
-  a skos:Concept .
+  dct:source skos:, <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes> .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/BroaderInstantial>
-  dct:source skosthes:broaderInstantial, <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
+  a skos:Concept ;
+  dct:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>, skosthes: ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   skos:definition "The immediate (direct or one-step) instance - class relationship."@en, "Relateert een begrip, een exemplaar, aan een ander begrip, de categorie, waartoe eerstgenoemde begrip behoort."@nl ;
-  a skos:Concept ;
   skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Thesaurus>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept> ;
   skos:prefLabel "is exemplaar van"@nl, "broader term (instantial)"@en ;
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Broader> ;
   skosthes:broaderGeneric <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Broader> .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/EditorialNote>
-  dct:source skos:editorialNote, <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
+  a skos:Concept ;
+  dct:source <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes>, <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>, skos: ;
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Note> ;
   skos:definition "A note for an editor, translator or maintainer of the vocabulary."@en, "Een redactionele opmerking voor een begrip is een notitie voor de redacteur, vertaler of beheerder van het begrippenkader."@nl ;
-  a skos:Concept ;
   skos:scopeNote "De redactionele opmerking geeft aan hoe de beschrijving van het begrip tot stand is gekomen, en waarom bepaalde keuzes zijn gemaakt."@nl ;
   skos:prefLabel "redactionele opmerking"@nl, "editorial note"@en ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept> .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Source>
+  a skos:Concept ;
   skos:definition "A related resource from which the described resource is derived."@en, "Een bron voor een begrip is een gerelateerde brondocument waaruit de betekenis van het begrip is afgeleid."@nl ;
-  dct:source <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/elements11/source/> ;
+  dct:source dct:, <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source> ;
   skos:prefLabel "source"@en, "bron"@nl ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/BibliographicResource> ;
   skos:altLabel "herkomst"@nl ;
-  a skos:Concept ;
   skos:scopeNote "The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."@en ;
   skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept> .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/InScheme>
+  a skos:Concept ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   skos:definition "Relateert een begrip tot het begrippenkader waartoe het behoort"@nl, "Relates a resource (for example a concept) to a concept scheme in which it is included."@en ;
-  dct:source skos:inScheme, <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
+  dct:source skos:, <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>, <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> ;
   skos:prefLabel "is in scheme"@en, "behoort tot"@nl ;
   skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept> ;
-  skos:scopeNote "According to the SKOS-standard, concepts can be linked to multipe conceptscheme. Practically, this can only be the case when conceptschemes overlap in terms of scope."@en, "Volgens de SKOS-standaard kan een begrip tot meerdere begrippenkaders behoren. Praktisch gezien kan dit slechts als sprake is van begrippenkaders waarvan de contexten overlappen"@nl ;
-  a skos:Concept .
+  skos:scopeNote "According to the SKOS-standard, concepts can be linked to multipe conceptscheme. Practically, this can only be the case when conceptschemes overlap in terms of scope."@en, "Volgens de SKOS-standaard kan een begrip tot meerdere begrippenkaders behoren. Praktisch gezien kan dit slechts als sprake is van begrippenkaders waarvan de contexten overlappen"@nl .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/PrefLabel>
+  a skos:Concept ;
   skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/AltLabel>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept> ;
   skos:definition "The preferred lexical label for a resource, in a given language."@en, "Een gepreferreerde term voor een begrip, in een specifieke taal."@nl ;
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Term> ;
@@ -279,56 +293,56 @@ De uitleg of de toelichting bij een begrip kan gebruik worden voor iemand die he
   rdfs:comment "Een begip kent één voorkeursterm, deze voorkeursterm hoeft niet persé uniek te zijn. Het is goed mogelijk dat binnen een bepaald domein één term meerdere betekenissen heeft en dus gaat over meerdere begrippen, mogelijk is het doel van een Thesaurus zelfs om dit inzicht te geven. We gebruiken geen post of prefix om voorkeurstermen context te geven of uniek te maken, tenzij deze post/prefix algemeen gebruikt wordt. Denk aan Hengelo (OV) en Hengelo (GLD). Een begrip krijgt expliciet één rdfs:Label om compatibiliteit met bestaande tools te bevorderen."@nl ;
   skos:prefLabel "voorkeursterm"@nl, "preferred label"@en ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
-  a skos:Concept ;
-  dct:source skos:prefLabel .
+  dct:source <https://www.w3.org/TR/skos-reference/#labels>, skos: .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Notation>
-  dct:source skos:notation, <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
-  skos:definition "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme."@en, "Een code voor een begrip is een tekenreeks ter aanduiding van precies éénn begrip uit een begrippenstelsel."@nl ;
   a skos:Concept ;
+  dct:source skos:, <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notations>, <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
+  skos:definition "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme."@en, "Een code voor een begrip is een tekenreeks ter aanduiding van precies éénn begrip uit een begrippenstelsel."@nl ;
   skos:altLabel "notatie"@nl, "classificatiecode"@nl ;
   skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept> ;
   skos:prefLabel "code"@nl, "notation"@en ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/NarrowMatch>
+  a skos:Concept ;
   skos:prefLabel "has narrower match"@en, "overeenkomstig specifieker"@nl ;
   skos:definition "skos:narrowMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en, "Relateert een begrip aan een specifieker begrip uit een ander begrippenkader"@nl ;
-  dct:source skos:narrowMatch ;
+  dct:source <https://www.w3.org/TR/skos-reference/#mapping>, skos: ;
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Harmonisatierelatie> ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
-  skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept> ;
-  a skos:Concept .
+  skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Narrower> .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/CloseMatch>
+  a skos:Concept ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept> ;
-  dct:source skos:closeMatch ;
+  dct:source skos:, <https://www.w3.org/TR/skos-reference/#mapping> ;
   skos:definition "skos:closeMatch is used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of \"compound errors\" when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property."@en, "Relateert een begrip aan een overeenkomstig begrip uit een ander begrippenkader, waarbij de betekenis van deze begrippen bij enkele toepassingen gelijk aan elkaar kan worden verondersteld."@nl ;
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Harmonisatierelatie> ;
-  skos:prefLabel "vrijwel overeenkomstig"@nl, "has close match"@en ;
-  a skos:Concept .
+  skos:prefLabel "vrijwel overeenkomstig"@nl, "has close match"@en .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/SemantischeRelatie>
+  a skos:Concept ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   skos:definition "Links a concept to a concept related by meaning."@en, "Relateert een begrip aan een ander begrip op basis van de betekenis."@nl ;
-  skos:prefLabel "Semantische relatie"@nl ;
-  a skos:Concept ;
-  skos:prefLabel "is in semantic relation with"@en .
+  skos:prefLabel "Semantische relatie"@nl, "is in semantic relation with"@en ;
+  dct:source <https://www.w3.org/TR/skos-reference/#semantic-relations>, skos: .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Term>
+  a skos:Concept ;
   rdfs:label "label"@en ;
   skos:definition "Een term is een aaneenschakeling van één of meerdere woorden ter aanduiding van een object."@nl, "Word or phrase used to label a concept."@en ;
   dct:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.61> ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept> ;
   skos:scopeNote "In de definitie moet 'woord' breed worden geÃ¯nterpreteerd. Een term mag ook een afkorting zijn, zoals 'B.T.W.' (de voorkeursterm voor 'Belasting op toegevoegde waarde'), of een code zoals '013' (Een poppodium in Tilburg)."@nl, "Een begrip wordt aangeduid met een voor mensen leesbare term (inclusief spaties en diacrieten). Deze is gelijk aan het skos:prefLabel. Uitzondering hierop is de situatie dat binnen 1 conceptschema er vaker dezelfde skos:prefLabel wordt gebruikt. Dit is geen good practice en dient zoveel mogelijk voorkomen te worden. In het geval dat dit toch voorkomt, krijgt het rdfs:label een toevoeging tussen haakjes die het onderscheid aangeeft. Dit label kan meertalig zijn, aangegeven door @nl of @en"@nl, "A concept has a human-readable label (including spaces and diacritics). This is equal to the skos: prefLabel. An exception to this is the situation that within one concept scheme the same skos:prefLabel is used more than once. This is not a good practice and should be avoided as much as possible. In case this occurs nonetheless, the rdfs: label gets an addition between brackets that indicates the distinction. This label can be multilingual, indicated by @nl or @en"@en ;
-  skos:prefLabel "term"@en, "term"@nl ;
-  a skos:Concept .
+  skos:prefLabel "term"@en, "term"@nl .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/ConceptScheme>
   a skos:Concept ;
-  dct:source skos:ConceptScheme, <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
+  dct:source <https://www.w3.org/TR/skos-reference/#schemes>, skos: ;
+  skos:scopeNote "A concept scheme may be defined to include concepts from different sources."@en ;
   skos:altLabel "controlled vocabulary", "structured vocabulary", "knowledge organisation system" ;
   skos:prefLabel "begrippenkader"@nl, "concept scheme"@en ;
   skos:definition "A set of concepts, optionally including statements about semantic relationships between those concepts."@en, "Een begrippenstelsel is een verzameling van begrippen, inclusief eventuele semantische relaties tussen deze begrippen."@nl ;
@@ -337,53 +351,55 @@ De uitleg of de toelichting bij een begrip kan gebruik worden voor iemand die he
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/BroaderPartitive>
+  a skos:Concept ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   skos:scopeNote "A \"bicycle wheel\" for instance belongs uniquely to a \"bicycle\" while a \"wheel\" does not. A broader partitive relationship should not be established between \"bicycles\" and \"wheels\" because a wheel could be part of a motor car, a wheelbarrow or one of many other artefacts."@en ;
   skos:prefLabel "is onderdeel van"@nl, "broader term (partitive)"@en ;
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Broader> ;
   skos:definition "Relateert een begrip aan een meer omvattend begrip. Voorbeelden van eerstgenoemde begrip zullen onderdeel van voorbeelden van het meer omvattende begrip zijn."@nl, "When the ISO 25964 standard is followed, the broader partitive relationship should qualify for a transitive closure."@en ;
-  dct:source skosthes:broaderPartitive, <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
+  dct:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>, skosthes: ;
   skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Thesaurus> ;
-  a skos:Concept ;
   skosthes:broaderGeneric <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Broader> .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Label>
+  a skos:Concept ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   skos:definition "A human-readable name for the subject."@en, "Een label voor een object is een voor mensen leesbare naam ter aanduiding van een object."@nl ;
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Term> ;
   skos:prefLabel "label"@nl, "label"@en ;
-  a skos:Concept .
+  dct:source <https://www.w3.org/TR/rdf-schema/#ch_label>, rdfs: .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Thesaurus>
-  skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/BroaderGeneric>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Related>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/NarrowerPartitive>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/BroaderInstantial>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/NarrowerGeneric>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/BroaderPartitive>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/NarrowerInstantial> ;
   a skos:Concept ;
+  skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/BroaderGeneric>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Related>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/NarrowerPartitive>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/BroaderInstantial>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/NarrowerGeneric>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/BroaderPartitive>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/NarrowerInstantial> ;
   skos:prefLabel "thesaurus"@nl, "thesaurus"@en ;
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/ConceptScheme> ;
-  dct:source <https://en.wikipedia.org/wiki/Thesaurus>, <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.62>;
+  dct:source <https://en.wikipedia.org/wiki/Thesaurus>, <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.62> ;
   skos:definition "Een thesaurus is een gecontroleerde en gestructureerde vocabulaire waarin begrippen semantisch en hierarchisch zijn georganiseerd."@nl ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Comment>
-  skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept> ;
-  dct:source <https://www.w3.org/TR/rdf-schema/#ch_comment> ;
-  skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   a skos:Concept ;
+  skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept> ;
+  dct:source <https://www.w3.org/TR/rdf-schema/#ch_comment>, rdfs: ;
+  skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   skos:scopeNote "De definitie moet 'precies kloppen'. De uitleg is er veel meer op gericht om de lezer te laten snappen wat er wordt bedoeld. Er vanuit gaande dat hij/zij dat nog niet weet. "@nl ;
   skos:definition "Een uitleg van een begrip is een beschrijving van dit begrip in eenvoudige taal die zonder verdere context begrepen kan worden."@nl, "A description of the subject resource."@en ;
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Note> ;
   skos:prefLabel "uitleg"@nl, "comment"@en .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept>
-  skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/BibliographicResource>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/HiddenLabel>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/NarrowerPartitive>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/isDefinedBy>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Term>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Broader>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Notation>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/ScopeNote>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Narrower>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/NarrowerGeneric>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Source>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/InScheme>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/NarrowerInstantial>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/RelatedMatch>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Comment>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Definiton>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Collection>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/BroaderPartitive>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Related>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/BroadMatch>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/PrefLabel>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/EditorialNote>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/BroaderInstantial>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/ExactMatch>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/BroaderGeneric>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/NarrowMatch>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/CloseMatch>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/AltLabel> ;
-  dct:source skos:Concept, <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
-  skos:prefLabel "concept"@en, "begrip"@nl ;
   a skos:Concept ;
+  skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/BibliographicResource>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/HiddenLabel>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/NarrowerPartitive>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/isDefinedBy>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Term>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Broader>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Notation>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/ScopeNote>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Narrower>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/NarrowerGeneric>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Source>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/InScheme>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/NarrowerInstantial>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/RelatedMatch>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Comment>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Definiton>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Collection>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/BroaderPartitive>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Related>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/BroadMatch>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/PrefLabel>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/EditorialNote>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/BroaderInstantial>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/ExactMatch>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/BroaderGeneric>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/NarrowMatch>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/CloseMatch>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/AltLabel> ;
+  dct:source skos:, <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12>, <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#concepts> ;
+  skos:prefLabel "concept"@en, "begrip"@nl ;
   skos:definiton "Concepten zijn de eenheden van denken - ideeën, betekenissen of (categorieën van) objecten en gebeurtenissen - die ten grondslag liggen aan veel kennisorganisatiesystemen."@nl ;
   skos:definition "Concepts are the units  of thought —ideas, meanings, or (categories of) objects and events— which underlie many knowledge organization systems."@en ;
   skos:scopeNote "The prime application for a thesaurus is in information retrieval, where the aim is to search for concepts. Concepts are represented by terms. Each term included in a thesaurus should represent a single concept (or unit of thought). Concepts can range from the simple (e.g. cats) to the very complex (e.g. racial discrimination among ethnic minorities). Compound terms or phrases are generally needed to express the more complex concepts."@en, "De belangrijkste toepassing voor een thesaurus is het ophalen van informatie, waarbij het doel is om naar begrippen te zoeken. Begrippen worden weergegeven door termen. Elke term in een thesaurus moet een enkel begrip (of denkeenheid) vertegenwoordigen. Begrippen kunnen variëren van eenvoudig (bijv. katten) tot zeer complex (bijv. rassendiscriminatie onder etnische minderheden). Samengestelde termen of zinsdelen zijn over het algemeen nodig om de meer complexe begrippen uit te drukken."@nl ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/ControlledVocabulary>
+  a skos:Concept ;
   skos:altLabel "begrippenkader"@nl, "concept scheme"@en ;
   skos:definiton "Een begrippenlijst is een geselecteerde lijst van woorden en frasen, die worden gebruikt om eenheden van informatie (een document of werk) te indexeren zodat deze gemakkelijk kunnen worden gevonden."@nl ;
   skos:scopeNote "Begrippenkaders bieden een manier om kennis te ordenen voor het later kunnen ophalen. Ze worden gebruikt in indexeringsschema's, koppen, thesauri, taxonomieën en andere kennisorganisatiesystemen. Begrippenkader schema's verplichten het gebruik van vooraf gedefinieerde, geautoriseerde termen die vooraf zijn geselecteerd door de ontwerpers van de schema's, in tegenstelling tot natuurlijke taalvocabulaires, die een dergelijke beperking niet hebben."@nl, "Controlled vocabularies provide a way to organize knowledge for subsequent retrieval. They are used in subject indexing schemes, subject headings, thesauri, taxonomies and other knowledge organization systems. Controlled vocabulary schemes mandate the use of predefined, authorised terms that have been preselected by the designers of the schemes, in contrast to natural language vocabularies, which have no such restriction."@en ;
@@ -391,17 +407,14 @@ De uitleg of de toelichting bij een begrip kan gebruik worden voor iemand die he
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/ConceptScheme> ;
   skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
   skos:definition "A controlled vocabulary is a carefully selected list of words and phrases, which are used to tag units of information (document or work) so that they may be more easily retrieved by a search."@en ;
-  dct:source <https://en.wikipedia.org/wiki/Controlled_vocabulary> ;
-  a skos:Concept .
+  dct:source <https://en.wikipedia.org/wiki/Controlled_vocabulary> .
 
-<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Taxonomy>
-  skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/ConceptScheme> ;
-  skos:definiton "Een taxonomie (of taxonomische classificatie) is een classificatieschema, met name een hiërarchische classificatie, waarin concepten zijn georganiseerd in groepen of typen."@nl ;
-  skos:scopeNote "Een taxonomie wordt gebruikt om kennis te ordenen en te indexeren (opgeslagen als documenten, artikelen, video's, enz.), zoals in de vorm van een bibliotheekclassificatiesysteem of een taxonomie van een zoekmachine, zodat gebruikers de informatie die ze zoeken gemakkelijker kunnen vinden. op zoek naar. Taxonomieën zijn hiërarchieën (en hebben dus een intrinsieke boomstructuur)."@nl, "A taxonomy is be used to organize and index knowledge (stored as documents, articles, videos, etc.), such as in the form of a library classification system, or a search engine taxonomy, so that users can more easily find the information they are searching for. Taxonomies are hierarchies (and thus, have an intrinsic tree structure)."@en ;
-  skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Narrower>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Broader> ;
-  skos:prefLabel "taxonomie"@nl, "taxonomy"@en ;
-  skos:altLabel "classificatieschema" ;
+<http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/OrderedCollection>
   a skos:Concept ;
-  dct:source <https://en.wikipedia.org/wiki/Taxonomy> ;
-  skos:definition "A taxonomy (or taxonomical classification) is a scheme of classification, especially a hierarchical classification, in which concepts are organized into groups or types."@en ;
-  skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> .
+  skos:prefLabel "Geordende collectie"@en ;
+  skos:inScheme <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/BegrippenkaderNPS> ;
+  skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Collection> ;
+  skos:altLabel "OrderedCollection"@en ;
+  skos:definition "An ordered collection is a collection of concepts that are placed in a meaningful order."@en ;
+  skos:scopeNote "Labelled collections can be used where you would like a set of concepts to be displayed under a 'node label' in the hierarchy."@en ;
+  dct:source skos:, <https://www.w3.org/TR/skos-reference/#collections> .
