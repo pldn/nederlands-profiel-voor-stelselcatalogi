@@ -33,7 +33,7 @@
   skos:broader <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/SemantischeRelatie> ;
   skos:prefLabel "Harmonisatierelatie"@nl ;
   a skos:Concept ;
-  rdfs:label "is in mapping relation with"@en .
+  skos:prefLabel "is in mapping relation with"@en .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/RelatedMatch>
   skos:definition "skos:relatedMatch is used to state an associative mapping link between two conceptual resources in different concept schemes."@en, "Relateert een begrip aan een verwant begrip uit een ander begrippenkader"@nl ;
@@ -166,7 +166,7 @@ De uitleg of de toelichting bij een begrip kan gebruik worden voor iemand die he
   a skos:Concept ;
   skos:related <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Member>, <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Concept> ;
   dct:source <https://www.w3.org/TR/skos-reference/#collections>, <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
-  skos:prefLabel "Collectie"@nl .
+  skos:prefLabel "Collectie"@nl , "Collection"@en .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/isDefinedBy>
   skos:definition "The defininition of the subject resource."@en, "Geeft aan welke resource het onderwerp definieert."@nl ;
@@ -314,7 +314,7 @@ De uitleg of de toelichting bij een begrip kan gebruik worden voor iemand die he
   skos:definition "Links a concept to a concept related by meaning."@en, "Relateert een begrip aan een ander begrip op basis van de betekenis."@nl ;
   skos:prefLabel "Semantische relatie"@nl ;
   a skos:Concept ;
-  rdfs:label "is in semantic relation with"@en .
+  skos:prefLabel "is in semantic relation with"@en .
 
 <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/Term>
   rdfs:label "label"@en ;
