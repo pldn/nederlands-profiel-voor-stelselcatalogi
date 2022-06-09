@@ -736,7 +736,7 @@ beg-nps:ControlledVocabulary
   skos:altLabel 
     "begrippenkader"@nl ,
     "concept scheme"@en ;
-  skos:definiton "Een begrippenlijst is een geselecteerde lijst van woorden en frasen, die worden gebruikt om eenheden van informatie (een document of werk) te indexeren zodat deze gemakkelijk kunnen worden gevonden."@nl ;
+  skos:definition "Een begrippenlijst is een geselecteerde lijst van woorden en frasen, die worden gebruikt om eenheden van informatie (een document of werk) te indexeren zodat deze gemakkelijk kunnen worden gevonden."@nl ;
   skos:scopeNote "Begrippenkaders bieden een manier om kennis te ordenen voor het later kunnen ophalen. Ze worden gebruikt in indexeringsschema's, koppen, thesauri, taxonomieën en andere kennisorganisatiesystemen. Begrippenkader schema's verplichten het gebruik van vooraf gedefinieerde,geautoriseerde termen die vooraf zijn geselecteerd door de ontwerpers van de schema's,in tegenstelling tot natuurlijke taalvocabulaires,die een dergelijke beperking niet hebben."@nl,"Controlled vocabularies provide a way to organize knowledge for subsequent retrieval. They are used in subject indexing schemes,subject headings,thesauri,taxonomies and other knowledge organization systems. Controlled vocabulary schemes mandate the use of predefined,authorised terms that have been preselected by the designers of the schemes,in contrast to natural language vocabularies,which have no such restriction."@en ;
   skos:prefLabel 
     "Begrippenlijst"@nl ,
