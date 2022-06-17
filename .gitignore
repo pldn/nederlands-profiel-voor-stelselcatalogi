@@ -3,3 +3,8 @@
 respec/rdf2respec/*.md
 respec/rdf2respec/*.xml
 !respec/rdf2respec/README.md
+respec/rdf2markdown/*.md
+respec/rdf2markdown/Begrippenkader-table.md
+respec/rdf2markdown/Bron-table.md
+respec/rdf2markdown/Collection-table.md
+respec/rdf2markdown/Concept-table.md
