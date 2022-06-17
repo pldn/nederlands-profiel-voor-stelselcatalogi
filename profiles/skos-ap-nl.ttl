@@ -14,7 +14,7 @@ skosapnl:
   a owl:Ontology ;
   rdfs:label "Nederlands profiel voor stelselcatalogi"@nl ;
   owl:versionInfo "0.0.1" .
-  
+
 skosapnl:Concept-related
   a sh:PropertyShape ;
   rdfs:label "gerelateerd"@nl ;
@@ -30,7 +30,7 @@ skosapnl:Concept-definition
   a sh:PropertyShape ;
   rdfs:label "definitie"@nl ;
   sh:datatype rdf:langString ;
-  sh:decription "A statement or formal explanation of the meaning of a concept."@en ;
+  sh:description "A statement or formal explanation of the meaning of a concept."@en ;
   sh:description "Een definitie van een begrip is een tekstuele beschrijving van de betekenis van dit begrip waarmee het begrip kan worden onderscheiden van andere begrippen."@nl, "A statement or formal explanation of the meaning of a concept."@en ;
   sh:group skosapnl:DefinitionPropertyGroup ;
   sh:minCount 1 ;
@@ -42,9 +42,12 @@ skosapnl:ConceptScheme-hasTopConcept
   a sh:PropertyShape ;
   sh:name "heeft topbegrip"@nl ;
   sh:class skos:Concept ;
-  sh:description "Relateert, bij conventie, een begrippenkader met een begrip dat is de top van een taxonomie."@nl, "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies."@en ;
+  sh:description
+    "Relateert, bij conventie, een begrippenkader met een begrip dat is de top van een taxonomie."@nl ,
+    "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies."@en ;
   sh:group skosapnl:HierarchicalRelationships ;
-  sh:path skos:hasTopConcept .
+  sh:path skos:hasTopConcept ;
+  sh:nodeKind sh:IRI .
 
 skosapnl:Collection
   a sh:NodeShape ;
@@ -88,7 +91,6 @@ skosapnl:Concept-narrowerInstantial
   sh:order 6 ;
   sh:path skosthes:narrowerInstantial .
 
-
 skosapnl:Concept-changeNote
   a sh:PropertyShape ;
   sh:description "A note about a modification to a concept."@en, "Notitie over een wijziging aan het concept"@nl ;
@@ -99,8 +101,7 @@ skosapnl:Concept-changeNote
   sh:or (
     [ sh:datatype xsd:string ]
     [ sh:datatype rdf:langString ]
-  ) ;
-.
+  ) .
 
 skosapnl:ConceptScheme
   a sh:NodeShape ;
@@ -116,7 +117,7 @@ skosapnl:Concept-broadMatch
   a sh:PropertyShape ;
   rdfs:label "overeenkomstig generieker"@nl ;
   sh:class skos:Concept ;
-  sh:decription "skos:broadMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en ;
+  sh:description "skos:broadMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en ;
   sh:description "Used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en ;
   sh:disjoint skos:relatedMatch ;
   sh:group skosapnl:MatchingRelationshipsPropertyGroup ;
@@ -134,10 +135,9 @@ skosapnl:Concept-broader
   sh:order 0 ;
   sh:path skos:broader .
 
-skosapnl:Concept-topConceptOf sh:decription "Relates a concept to the concept scheme that it is a top level concept of."@en .
 skosapnl:Concept-example
   a sh:PropertyShape ;
-  sh:decription "An example of the use of a concept."@en, "Een voorbeeld van het gebruik van het concept."@nl ;
+  sh:description "An example of the use of a concept."@en, "Een voorbeeld van het gebruik van het concept."@nl ;
   sh:description "Een voorbeeld van het gebruik van het concept"@nl, "An example of the use of a concept."@en ;
   sh:group skos:NotesPropertyGroup ;
   sh:name "example"@en, "voorbeeld"@nl ;
@@ -171,7 +171,7 @@ skosapnl:Concept-relatedMatch
   a sh:PropertyShape ;
   rdfs:label "Overeenkomstig verwant"@nl ;
   sh:class skos:Concept ;
-  sh:decription "skos:relatedMatch is used to state an associative mapping link between two conceptual resources in different concept schemes."@en ;
+  sh:description "skos:relatedMatch is used to state an associative mapping link between two conceptual resources in different concept schemes."@en ;
   sh:description "Used to state an associative mapping link between two conceptual resources in different concept schemes."@en ;
   sh:group skosapnl:MatchingRelationshipsPropertyGroup ;
   sh:name "overeenkomstig verwant"@nl ;
@@ -221,7 +221,7 @@ skosapnl:Concept-inScheme
   a sh:PropertyShape ;
   rdfs:label "behoort tot"@nl ;
   sh:class skos:ConceptScheme ;
-  sh:decription "Relates a resource (for example a concept) to a concept scheme in which it is included."@en ;
+  sh:description "Relates a resource (for example a concept) to a concept scheme in which it is included."@en ;
   sh:description "Een begrippenkader waartoe het concept behoort."@nl ;
   sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
   sh:minCount 1 ;
@@ -257,7 +257,7 @@ skosapnl:Collection-member
   a sh:PropertyShape ;
   rdfs:label "bevat"@nl ;
   sh:class skos:Concept ;
-  sh:decription "Relates a collection to one of its members."@en ;
+  sh:description "Relates a collection to one of its members."@en ;
   sh:description "Relateert een collectie aan een begrip dat onderdeel is van deze collectie."@nl ;
   sh:name "bevat"@nl ;
   sh:path skos:member .
@@ -272,10 +272,9 @@ skosapnl:Concept-narrowerGeneric
   sh:order 2 ;
   sh:path skosthes:narrowerGeneric .
 
-skosapnl:ConceptScheme-hasTopConcept sh:decription "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies."@en .
 skosapnl:Concept-historyNote
   a sh:PropertyShape ;
-  sh:decription "A note about the past state/use/meaning of a concept."@en ;
+  sh:description "A note about the past state/use/meaning of a concept."@en ;
   sh:description "Notitie over de voormalige status/gebruik/betekenis van het concept"@nl, "A note about the past state/use/meaning of a concept."@en ;
   sh:group skos:NotesPropertyGroup ;
   sh:name "history note"@en, "historische notitie"@nl ;
@@ -314,7 +313,7 @@ skosapnl:Concept-comment
 
 skosapnl:Concept-editorialNote
   a sh:PropertyShape ;
-  sh:decription "A note for an editor, translator or maintainer of the vocabulary."@en ;
+  sh:description "A note for an editor, translator or maintainer of the vocabulary."@en ;
   sh:description "A note for an editor, translator or maintainer of the vocabulary."@en ;
   sh:group skosapnl:NotesPropertyGroup ;
   sh:name "redactionele opmerking"@nl, "editorial note"@en ;
@@ -346,7 +345,6 @@ skosapnl:Concept-broaderInstantial
 skosapnl:Concept-scopeNote
   a sh:PropertyShape ;
   rdfs:label "toelichting"@nl ;
-  sh:decription "A note that helps to clarify the meaning and/or the use of a concept."@en ;
   sh:description "A note that helps to clarify the meaning and/or the use of a concept."@en ;
   sh:group skosapnl:NotesPropertyGroup ;
   sh:name "toelichting"@nl ;
@@ -366,7 +364,7 @@ skosapnl:Concept-closeMatch
   a sh:PropertyShape ;
   rdfs:label "Vrijwel overeenkomstig"@nl ;
   sh:class skos:Concept ;
-  sh:decription "skos:closeMatch is used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of \"compound errors\" when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property."@en ;
+  sh:description "skos:closeMatch is used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of \"compound errors\" when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property."@en ;
   sh:description "Used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of \"compound errors\" when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property."@en ;
   sh:group skosapnl:MatchingRelationshipsPropertyGroup ;
   sh:name "Vrijwel overeenkomstig"@nl ;
@@ -394,12 +392,12 @@ skosapnl:HierarchicalRelationships
 skosapnl:Concept-notation
   a sh:PropertyShape ;
   rdfs:label "Code"@nl ;
-  sh:decription "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme."@en ;
   sh:description "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme."@en ;
   sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
   sh:name "code"@nl ;
   sh:order 3 ;
   sh:path skos:notation .
+
 skosapnl:Concept-label
   a sh:PropertyShape ;
   rdfs:label "label"@nl ;
@@ -421,7 +419,7 @@ skosapnl:BibliographicResource-label
   sh:nodeKind sh:Literal ;
   sh:path rdfs:label .
 
-  skosapnl:Collection-label
+skosapnl:Collection-label
   a sh:PropertyShape ;
   rdfs:label "label"@nl ;
   sh:datatype rdf:langString ;
@@ -432,7 +430,7 @@ skosapnl:BibliographicResource-label
   sh:nodeKind sh:Literal ;
   sh:path rdfs:label .
 
-    skosapnl:ConceptScheme-label
+skosapnl:ConceptScheme-label
   a sh:PropertyShape ;
   rdfs:label "label"@nl ;
   sh:datatype rdf:langString ;
@@ -442,68 +440,34 @@ skosapnl:BibliographicResource-label
   sh:name "label"@nl ;
   sh:nodeKind sh:Literal ;
   sh:path rdfs:label .
-skosapnl:Concept-related sh:nodeKind
-    sh:IRI .
 
-skosapnl:Concept-definition sh:nodeKind
-    sh:Literal .
+skosapnl:Concept-related sh:nodeKind sh:IRI .
+skosapnl:Concept-definition sh:nodeKind sh:Literal .
+skosapnl:Collection-member sh:nodeKind sh:IRI .
+skosapnl:Concept-narrowerInstantial sh:nodeKind sh:IRI .
+skosapnl:Concept-broadMatch sh:nodeKind sh:IRI .
+skosapnl:Concept-broader sh:nodeKind sh:IRI .
+skosapnl:Concept-narrowerPartitive sh:nodeKind sh:IRI .
+skosapnl:Concept-relatedMatch sh:nodeKind sh:IRI .
+skosapnl:Concept-prefLabel sh:nodeKind sh:Literal .
+skosapnl:Concept-broaderPartitive sh:nodeKind sh:IRI .
+skosapnl:Concept-exactMatch sh:nodeKind sh:IRI .
+skosapnl:Concept-inScheme sh:nodeKind sh:IRI .
+skosapnl:Concept-broaderGeneric sh:nodeKind sh:IRI .
+skosapnl:Concept-narrowerGeneric sh:nodeKind sh:IRI .
+skosapnl:Concept-source sh:nodeKind sh:IRI .
+skosapnl:Concept-closeMatch sh:nodeKind sh:IRI .
+skosapnl:Concept-broaderInstantial sh:nodeKind sh:IRI .
 
-skosapnl:ConceptScheme-hasTopConcept
-  sh:nodeKind sh:IRI .
-
-skosapnl:Collection-member sh:nodeKind
-    sh:IRI .
-
-skosapnl:Concept-narrowerInstantial
-  sh:nodeKind sh:IRI .
-
-skosapnl:Concept-broadMatch sh:nodeKind
-    sh:IRI .
-
-skosapnl:Concept-broader sh:nodeKind
-    sh:IRI .
-
-skosapnl:Concept-narrowerPartitive
-  sh:nodeKind sh:IRI .
-
-skosapnl:Concept-relatedMatch sh:nodeKind
-    sh:IRI .
-
-skosapnl:Concept-prefLabel sh:nodeKind
-    sh:Literal .
-
-skosapnl:Concept-broaderPartitive
-  sh:nodeKind sh:IRI .
-
-skosapnl:Concept-exactMatch sh:nodeKind
-    sh:IRI .
-
-skosapnl:Concept-inScheme sh:nodeKind
-    sh:IRI .
-
-skosapnl:Concept-broaderGeneric sh:nodeKind
-    sh:IRI .
-
-skosapnl:Concept-narrowerGeneric sh:nodeKind
-    sh:IRI .
-
-skosapnl:Concept-source sh:nodeKind
-    sh:IRI .
-
-skosapnl:Concept-closeMatch sh:nodeKind
-    sh:IRI .
-
-skosapnl:Concept-broaderInstantial
-  sh:nodeKind sh:IRI .
-
-
-#### WIP WG METADATA 
+#### WIP WG METADATA
 
 
 skosapnl:Catalogus a sh:Nodeshape ;
+
   rdfs:label "Catalogus"@nl , "Catalog"@en ;
   sh:targetClass skos:ConceptScheme ;
-  sh:property skosapnl:Catalogus-Voorkeursnaam%20begrippenkader,
+  sh:property
+    skosapnl:Catalogus-Voorkeursnaam%20begrippenkader,
     skosapnl:Catalogus-Alternatieve%20%20naam%20begrippenkader,
     skosapnl:Catalogus-Beschrijving%20begrippenkader,
     skosapnl:Catalogus-Klare%20taal%20beschrijving%20begrippenkader%20,
@@ -556,7 +520,7 @@ skosapnl:Catalogus-Klare%20taal%20beschrijving%20begrippenkader%20
   sh:description "Een beschrijving van de catalogus, het doel en de inhoud in klare taal, niveau B2";
   rdfs:comment "Verplicht omdat ieder begrippenkader een duidelijke beschrijving moet bevatten. In SHACL een vrij zware warning" .
 
-skosapnl:Catalogus-Toelichting 
+skosapnl:Catalogus-Toelichting
   a sh:PropertyShape ;sh:path
     skos:scopeNote;
   sh:name "Toelichting"@nl;
@@ -592,13 +556,13 @@ skosapnl:Catalogus-Bronhouder
   sh:description "Een bronhouder is verantwoordelijk voor het inwinnen en bijhouden van de  gegevens in de catalogus en voor het borgen van de kwaliteit van die gegevens";
   rdfs:comment "Waardelijst toevoegen met bekende (Nederlandse) organisaties? " .
 
-skosapnl:Catalogus-Uitgever 
+skosapnl:Catalogus-Uitgever
   a sh:PropertyShape ;sh:path
     dct:publisher;
   sh:name "Uitgever"@nl;
   sh:description "De uitgever of verstrekker is verantwoordelijk voor het verstrekken van de gegevens aan afnemers" .
 
-skosapnl:Catalogus-Contactpunt 
+skosapnl:Catalogus-Contactpunt
   a sh:PropertyShape ;
   sh:name "Contactpunt"@nl;
   sh:description "Contactinformatie die gebruikt kan worden om opmerkingen over de catalogus door te geven" .
@@ -670,7 +634,7 @@ skosapnl:Catalogus-Tijddekking
   sh:name "Tijddekking"@nl;
   rdfs:comment "Voor een begrippencatalogus lijken dit veld minder relevant" .
 
-skosapnl:Catalogus-Kwaliteit 
+skosapnl:Catalogus-Kwaliteit
   a sh:PropertyShape ;sh:name
     "Kwaliteit"@nl;
   sh:description "kwaliteit van de gegevens in de catalogus";
@@ -690,7 +654,7 @@ skosapnl:Catalogus-Toegangs-URL
     "Toegangs-URL"@nl;
   rdfs:comment "Zijn dit velden die in de catalogus staan? Of moeten die in DCAT van de catalogus opgenomen worden?" .
 
-skosapnl:Catalogus-Download-URL 
+skosapnl:Catalogus-Download-URL
   a sh:PropertyShape ;sh:name
     "Download-URL"@nl;
   rdfs:comment "Zijn dit velden die in de catalogus staan? Of moeten die in DCAT van de catalogus opgenomen worden?" .
@@ -708,7 +672,7 @@ skosapnl:Catalogus-Keywords
   sh:name "Keywords"@nl;
   sh:description "Deze eigenschap bevat vrije keywords of termen die de resource beschrijven." .
 
-skosapnl:Catalogus-Type%2Fgenre 
+skosapnl:Catalogus-Type%2Fgenre
   a sh:PropertyShape ;sh:path
     dct:type;
   sh:name "Type/genre"@nl;
