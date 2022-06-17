@@ -9,6 +9,9 @@
 @prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 
 skosapnl:
   a owl:Ontology ;
@@ -459,224 +462,211 @@ skosapnl:Concept-source sh:nodeKind sh:IRI .
 skosapnl:Concept-closeMatch sh:nodeKind sh:IRI .
 skosapnl:Concept-broaderInstantial sh:nodeKind sh:IRI .
 
-#### WIP WG METADATA
+## shapes from WG Metadata
 
-
-skosapnl:Catalogus a sh:Nodeshape ;
-
-  rdfs:label "Catalogus"@nl , "Catalog"@en ;
+skosapnl:Begrippencatalogus a sh:Nodeshape ;
   sh:targetClass skos:ConceptScheme ;
+  rdfs:label "Begrippencatalogus"@nl ;
   sh:property
-    skosapnl:Catalogus-Voorkeursnaam%20begrippenkader,
-    skosapnl:Catalogus-Alternatieve%20%20naam%20begrippenkader,
-    skosapnl:Catalogus-Beschrijving%20begrippenkader,
-    skosapnl:Catalogus-Klare%20taal%20beschrijving%20begrippenkader%20,
-    skosapnl:Catalogus-Toelichting, skosapnl:Catalogus-Documentatiepagina,
-    skosapnl:Catalogus-Wetgeving, skosapnl:Catalogus-Wetgeving%20%28URI%29,
-    skosapnl:Catalogus-Taal, skosapnl:Catalogus-Bronhouder,
-    skosapnl:Catalogus-Uitgever, skosapnl:Catalogus-Contactpunt,
-    skosapnl:Catalogus-Toezichthouder,
-    skosapnl:Catalogus-Opdrachtgever,
-    skosapnl:Catalogus-Laatst%20bijgewerkt,
-    skosapnl:Catalogus-Versie, skosapnl:Catalogus-Frequentie%20%28URI%29,
-    skosapnl:Catalogus-Publicatiedatum,
-    skosapnl:Catalogus-Toegangsrechten,
-    skosapnl:Catalogus-Licentie, skosapnl:Catalogus-Conformeert%20aan,
-    skosapnl:Catalogus-Geografisch%20gebied,
-    skosapnl:Catalogus-Tijddekking, skosapnl:Catalogus-Kwaliteit,
-    skosapnl:Catalogus-Herkomst, skosapnl:Catalogus-herkomst%20%28URI%29,
-    skosapnl:Catalogus-Toegangs-URL, skosapnl:Catalogus-Download-URL,
-    skosapnl:Catalogus-Thema%2Fcategorie,
-    skosapnl:Catalogus-Keywords, skosapnl:Catalogus-Type%2Fgenre .
+    skosapnl:Begrippencatalogus-type ,
+    skosapnl:Begrippencatalogus-VoorkeursnaamBegrippenkader ,
+    skosapnl:Begrippencatalogus-AlternatieveNaamBegrippenkader ,
+    skosapnl:Begrippencatalogus-BeschrijvingBegrippenkader ,
+    skosapnl:Begrippencatalogus-KlareTaalBeschrijvingBegrippenkader ,
+    skosapnl:Begrippencatalogus-Toelichting ,
+    skosapnl:Begrippencatalogus-Ontwerpbeslissingen ,
+    skosapnl:Begrippencatalogus-Voorbeeld ,
+    skosapnl:Begrippencatalogus-Documentatiepagina ,
+    skosapnl:Begrippencatalogus-Wetgeving ,
+    skosapnl:Begrippencatalogus-WetgevingUri ,
+    skosapnl:Begrippencatalogus-Taal ,
+    skosapnl:Begrippencatalogus-Bronhouder ,
+    skosapnl:Begrippencatalogus-Uitgever ,
+    skosapnl:Begrippencatalogus-Contactpunt ,
+    skosapnl:Begrippencatalogus-Toezichthouder ,
+    skosapnl:Begrippencatalogus-Opdrachtgever ,
+    skosapnl:Begrippencatalogus-LaatstBijgewerkt ,
+    skosapnl:Begrippencatalogus-Versie ,
+    skosapnl:Begrippencatalogus-FrequentieUri ,
+    skosapnl:Begrippencatalogus-Publicatiedatum ,
+    skosapnl:Begrippencatalogus-Toegangsrechten ,
+    skosapnl:Begrippencatalogus-Licentie ,
+    skosapnl:Begrippencatalogus-ConformeertAan ,
+    skosapnl:Begrippencatalogus-ThemaCategorie ,
+    skosapnl:Begrippencatalogus-Keywords ;
+.
 
-skosapnl:Catalogus-Voorkeursnaam%20begrippenkader
-  a sh:PropertyShape ;
-      sh:path [
-          sh:alternativePath (
-              skos:prefLabel
-              rdfs:label
-            ) ;
-        ] ;
+skosapnl:Begrippencatalogus-type a sh:PropertyShape;
+  sh:name "Typering"@nl;
+  sh:path rdf:type ;
+  sh:and (
+    [ sh:hasValue skos:ConceptScheme ]
+    [ sh:hasValue adms:Asset ]
+  ) ;
+.
+
+skosapnl:Begrippencatalogus-VoorkeursnaamBegrippenkader a sh:PropertyShape;
   sh:name "Voorkeursnaam begrippenkader"@nl;
-  sh:description "De naam waarmee de catalogus in UI wordt aangeduid" .
+  sh:order "1"^^xsd:integer;
+  sh:path [
+      sh:alternativePath (
+        skos:prefLabel
+        rdfs:label
+        dct:title
+      ) ;
+  ] ;
+  sh:minCount "1"^^xsd:integer;
+  sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Catalogus-Alternatieve%20%20naam%20begrippenkader
-  a sh:PropertyShape ;
-  sh:path skos:altLabel;
-  sh:name "Alternatieve  naam begrippenkader"@nl;
-  sh:description "namen waaronder de catalogus ook bekend is, denk bijvoorbeeld aan afkortingen of een volledige naam";
-  rdfs:comment "s" .
+skosapnl:Begrippencatalogus-AlternatieveNaamBegrippenkader a sh:PropertyShape;
+  sh:name "Alternatieve naam begrippenkader"@nl;
+  sh:order "2"^^xsd:integer;
+  sh:path skos:altLabel .
 
-skosapnl:Catalogus-Beschrijving%20begrippenkader
-  a sh:PropertyShape ;
-  sh:path skos:definition ;
+skosapnl:Begrippencatalogus-BeschrijvingBegrippenkader a sh:PropertyShape;
   sh:name "Beschrijving begrippenkader"@nl;
-  sh:description "Een formele beschrijving van het begrippenkader, het doel en de inhoud." .
+  sh:order "3"^^xsd:integer;
+  sh:path skos:definition;
+  sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Catalogus-Klare%20taal%20beschrijving%20begrippenkader%20
-  a sh:PropertyShape ;
-  sh:path skos:scopeNote;
+skosapnl:Begrippencatalogus-KlareTaalBeschrijvingBegrippenkader a sh:PropertyShape;
   sh:name "Klare taal beschrijving begrippenkader "@nl;
-  sh:description "Een beschrijving van de catalogus, het doel en de inhoud in klare taal, niveau B2";
-  rdfs:comment "Verplicht omdat ieder begrippenkader een duidelijke beschrijving moet bevatten. In SHACL een vrij zware warning" .
+  sh:order "4"^^xsd:integer;
+  sh:path rdfs:comment;
+  sh:minCount "1"^^xsd:integer;
+  sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Catalogus-Toelichting
-  a sh:PropertyShape ;sh:path
-    skos:scopeNote;
+skosapnl:Begrippencatalogus-Toelichting a sh:PropertyShape;
   sh:name "Toelichting"@nl;
-  sh:description "nadere toelichting van de catalogus, bijvoorbeeld met gebruiksvoorbeelden. Geeft de mogelijkheid tot wat informeler taalgebruik" .
+  sh:order "5"^^xsd:integer;
+  sh:path skos:scopeNote;
+  sh:maxCount "1"^^xsd:integer .
+  
+skosapnl:Begrippencatalogus-Ontwerpbeslissingen a sh:PropertyShape;
+  sh:name "Ontwerpbeslissingen"@nl;
+  sh:order "6"^^xsd:integer;
+  sh:path skos:editorialNote .
 
-skosapnl:Catalogus-Documentatiepagina
-  a sh:PropertyShape ;
-  sh:path foaf:page;
+skosapnl:Begrippencatalogus-Voorbeeld a sh:PropertyShape;
+  sh:name "Voorbeeld"@nl;
+  sh:order "7"^^xsd:integer;
+  sh:path skos:example;
+  sh:maxCount "1"^^xsd:integer .
+
+skosapnl:Begrippencatalogus-Documentatiepagina a sh:PropertyShape;
   sh:name "Documentatiepagina"@nl;
-  sh:description "De URI van de (start)pagina waarop informatie over deze catalogus te vinden is.Via deze pagina kunnen andere webpagina's bereikt worden" .
+  sh:order "8"^^xsd:integer;
+  sh:path foaf:page;
+  sh:class foaf:Document;
+  sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Catalogus-Wetgeving
-  a sh:PropertyShape ;
+skosapnl:Begrippencatalogus-Wetgeving a sh:PropertyShape;
   sh:name "Wetgeving"@nl;
-  sh:description "De naam van de wetgeving/besluit/... die tot de creatie van deze cataloigus heeft geleid ";
-  rdfs:comment "Verwijzen naar groepje van Koos hoe omm te gaan met dit soort objecten: URI met label " .
+  sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Catalogus-Wetgeving%20%28URI%29
-  a sh:PropertyShape ;
-
+skosapnl:Begrippencatalogus-WetgevingUri a sh:PropertyShape;
   sh:name "Wetgeving (URI)"@nl;
-  rdfs:comment "Verwijzen naar groepje van Koos hoe omm te gaan met dit soort objecten: URI met label " .
+  sh:order "9"^^xsd:integer;
+  sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Catalogus-Taal
-  a sh:PropertyShape ; sh:path dct:language;
+skosapnl:Begrippencatalogus-Taal a sh:PropertyShape;
   sh:name "Taal"@nl;
-  rdfs:comment "welke waardelijst voor taal?" .
+  sh:order "10"^^xsd:integer;
+  sh:path dct:language;
+  sh:class <http://publications.europa.eu/resource/authority/language>;
+  sh:minCount "1"^^xsd:integer .
 
-skosapnl:Catalogus-Bronhouder
-  a sh:PropertyShape ; sh:path
-    foaf:Organization;
+skosapnl:Begrippencatalogus-Bronhouder a sh:PropertyShape;
   sh:name "Bronhouder"@nl;
-  sh:description "Een bronhouder is verantwoordelijk voor het inwinnen en bijhouden van de  gegevens in de catalogus en voor het borgen van de kwaliteit van die gegevens";
-  rdfs:comment "Waardelijst toevoegen met bekende (Nederlandse) organisaties? " .
+  sh:order "11"^^xsd:integer;
+  sh:path prov:qualifiedAttribution;
+  sh:class prov:Attribution;
+  sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Catalogus-Uitgever
-  a sh:PropertyShape ;sh:path
-    dct:publisher;
+skosapnl:Begrippencatalogus-Uitgever a sh:PropertyShape;
   sh:name "Uitgever"@nl;
-  sh:description "De uitgever of verstrekker is verantwoordelijk voor het verstrekken van de gegevens aan afnemers" .
+  sh:order "12"^^xsd:integer;
+  sh:path dct:publisher;
+  sh:class foaf:Organisation;
+  sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Catalogus-Contactpunt
-  a sh:PropertyShape ;
+skosapnl:Begrippencatalogus-Contactpunt a sh:PropertyShape;
   sh:name "Contactpunt"@nl;
-  sh:description "Contactinformatie die gebruikt kan worden om opmerkingen over de catalogus door te geven" .
+  sh:order "13"^^xsd:integer;
+  sh:path dcat:contactPoint;
+  sh:class vcard:Kind .
 
-skosapnl:Catalogus-Toezichthouder
-  a sh:PropertyShape ;
-  sh:path foaf:Organization;
+skosapnl:Begrippencatalogus-Toezichthouder a sh:PropertyShape;
   sh:name "Toezichthouder"@nl;
-  sh:description "De toezichthouder is de partij die  verantwoordelijk is dat wordt toegezien of de catalogus in overeenstemming met eisen, afspraken en wetgeving opereert";
-  rdfs:comment "Een optie is om hier prov:qualifiedAttribution te gebruiken, met bereik https://www.w3.org/TR/prov-o/#Attribution " .
+  sh:order "14"^^xsd:integer;
+  sh:path prov:qualifiedAttribution;
+  sh:class prov:Attribution;
+  sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Catalogus-Opdrachtgever
-  a sh:PropertyShape ; sh:path
-    foaf:Organization;
+skosapnl:Begrippencatalogus-Opdrachtgever a sh:PropertyShape;
   sh:name "Opdrachtgever"@nl;
-  sh:description "De opdrachtgever is de voor de catalogus verantwoordelijke instantie, i.e., de opdrachtgever van de ‘verstrekker’" .
+  sh:order "15"^^xsd:integer;
+  sh:path prov:qualifiedAttribution;
+  sh:class prov:Attribution;
+  sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Catalogus-Laatst%20bijgewerkt
-  a sh:PropertyShape ;
+skosapnl:Begrippencatalogus-LaatstBijgewerkt a sh:PropertyShape;
+  sh:name "Laatst bijgewerkt"@nl;
+  sh:order "16"^^xsd:integer;
   sh:path dct:modified;
-  sh:name "Laatst bijgewerkt"@nl .
+  sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Catalogus-Versie
-  a sh:PropertyShape ; sh:name
-    "Versie"@nl;
-  sh:description "De versie van deze catalogus. Dit wordt niet gebruikt m.b.t. De inhoud van de catalogus, maar voor wijzigingen in de structuur van de catalogus";
-  rdfs:comment "Willen we in Linked Datavastleggen wanneer de structuur voor het laatst te gewijzigd en wat die wijziging was? Dit lijkt  beter op ijn plaat in rellease notes. Dan een URI openemen naar die notes?" .
+skosapnl:Begrippencatalogus-Versie a sh:PropertyShape;
+  sh:name "Versie"@nl;
+  sh:order "17"^^xsd:integer;
+  sh:path dcat:version;
+  sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Catalogus-Frequentie%20%28URI%29
-  a sh:PropertyShape ;
-  sh:path [ sh:alternativePath (dct:accrualPeriodicity <https://standaarden.overheid.nl/owms/terms/Frequentie> ) ];
+skosapnl:Begrippencatalogus-FrequentieUri a sh:PropertyShape;
   sh:name "Frequentie (URI)"@nl;
-  sh:description "De frequentie waarmee de registratie wordt bijgewerkt. Kies de daarbij passende URI uit de desbetreffende waardelijst." .
+  sh:order "18"^^xsd:integer;
+  sh:path [ 
+    sh:alternativePath (
+      dct:accrualPeriodicity
+      <https://standaarden.overheid.nl/owms/terms/Frequentie>
+    ) ;
+  ] ;
+  sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Catalogus-Publicatiedatum
-  a sh:PropertyShape ;
-  sh:path dct:issued;
+skosapnl:Begrippencatalogus-Publicatiedatum a sh:PropertyShape;
   sh:name "Publicatiedatum"@nl;
-  sh:description "De dag waarop deze catalogus voor de eerste keer beschikbaar is gekomen. De dag waarom de eerste versie van de catalogus beschikbaar kwam." .
+  sh:order "19"^^xsd:integer;
+  sh:path dct:issued;
+  sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Catalogus-Toegangsrechten
-  a sh:PropertyShape ;
-  sh:path dct:accessRights;
+skosapnl:Begrippencatalogus-Toegangsrechten a sh:PropertyShape;
   sh:name "Toegangsrechten"@nl;
-  sh:description "geeft of een registratie moet worden gezien als open data, toegangsbeperkingen heeft of niet openbaar is.";
-  rdfs:comment "Er bestaan manieren om exact aan te geven met Linked Data onder welke rechten de informatie gebruikt kan worden. Probleem is dat deze standaarden moeilijk te maken en moeilijk te lezen zijn." .
+  sh:order "20"^^xsd:integer;
+  sh:path dct:accessRights;
+  sh:class dct:RightsStatement;
+  sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Catalogus-Licentie
-  a sh:PropertyShape ; sh:path
-    dct:license ; rdfs:seeAlso <https://waardelijsten.dcat-ap-donl.nl/donl_license.json>;
+skosapnl:Begrippencatalogus-Licentie a sh:PropertyShape;
   sh:name "Licentie"@nl;
-  sh:description "Deze eigenschap verwijst naar het juridische document dat de gebruiksrechten van de catalogus beschrijft" .
+  sh:order "21"^^xsd:integer;
+  sh:path dct:license;
+  sh:class dct:IicenseDocument;
+  sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Catalogus-Conformeert%20aan
-  a sh:PropertyShape ;
-  sh:path dct:conformsTo;
+skosapnl:Begrippencatalogus-ConformeertAan a sh:PropertyShape;
   sh:name "Conformeert aan"@nl;
-  sh:description "Deze eigenschap verwijst naar de vastgestelde standaard waaraan de data van de beschreven resource voldoet. Hierbij kan worden gedacht aan het model, schema, ontology, view of profiel." .
+  sh:order "22"^^xsd:integer;
+  sh:path dct:conformsTo;
+  sh:class dct:Standard;
+  sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Catalogus-Geografisch%20gebied
-  a sh:PropertyShape ;
-  sh:path dct:spatial;
-  sh:name "Geografisch gebied"@nl;
-  rdfs:comment "Voor een begrippencatalogus lijken dit veld minder relevant" .
-
-skosapnl:Catalogus-Tijddekking
-  a sh:PropertyShape ; sh:path
-    dct:periodeoftime;
-  sh:name "Tijddekking"@nl;
-  rdfs:comment "Voor een begrippencatalogus lijken dit veld minder relevant" .
-
-skosapnl:Catalogus-Kwaliteit
-  a sh:PropertyShape ;sh:name
-    "Kwaliteit"@nl;
-  sh:description "kwaliteit van de gegevens in de catalogus";
-  rdfs:comment "Willen we iets over kwaliteit zeggen? Daar wordt vaak om gevraagd, maar is bijna nooit eenduidig beschreven. In Stelselcatalogus is dit daarom een tekstveld " .
-
-skosapnl:Catalogus-Herkomst
-  a sh:PropertyShape ; sh:path
-    dct:provenance;
-  sh:name "Herkomst"@nl .
-
-skosapnl:Catalogus-herkomst%20%28URI%29
-  a sh:PropertyShape ;
-  sh:name "herkomst (URI)"@nl .
-
-skosapnl:Catalogus-Toegangs-URL
-  a sh:PropertyShape ; sh:name
-    "Toegangs-URL"@nl;
-  rdfs:comment "Zijn dit velden die in de catalogus staan? Of moeten die in DCAT van de catalogus opgenomen worden?" .
-
-skosapnl:Catalogus-Download-URL
-  a sh:PropertyShape ;sh:name
-    "Download-URL"@nl;
-  rdfs:comment "Zijn dit velden die in de catalogus staan? Of moeten die in DCAT van de catalogus opgenomen worden?" .
-
-skosapnl:Catalogus-Thema%2Fcategorie
-  a sh:PropertyShape ;
-  sh:path dcat:theme;
+skosapnl:Begrippencatalogus-ThemaCategorie a sh:PropertyShape;
   sh:name "Thema/categorie"@nl;
-  sh:description "Deze eigenschap verwijst naar een thema, bijvoorbeeld uit de taxonomie beleidsagenda";
-  rdfs:comment "Dit veld verwijst naar een waardelijst, maar welke waardelijsten zijn hiervoor geschikt " .
+  sh:order "23"^^xsd:integer;
+  sh:path dcat:theme;
+  sh:class skos:Concept .
 
-skosapnl:Catalogus-Keywords
-  a sh:PropertyShape ; sh:path
-    dcat:keyword;
+skosapnl:Begrippencatalogus-Keywords a sh:PropertyShape;
   sh:name "Keywords"@nl;
-  sh:description "Deze eigenschap bevat vrije keywords of termen die de resource beschrijven." .
-
-skosapnl:Catalogus-Type%2Fgenre
-  a sh:PropertyShape ;sh:path
-    dct:type;
-  sh:name "Type/genre"@nl;
-  sh:description "Deze eigenschap beschrijft het type van de resource";
-  rdfs:comment "De DCAT standaard en DCAT-AP verschaffen geen duidelijkheid over de toepassing van eigenschap type/genre. DCAT-AP werkt aan een controlled vocabulary met mogelijke typen (de status hiervan is onbekend). W3C heeft hiervoor wel een issue aangemaakt. Zie https://github.com/w3c/dxwg/issues/64. Zie ook de use case Modelling resources different from datasets." .
-
-###
+  sh:order "24"^^xsd:integer;
+  sh:path dcat:keyword .
