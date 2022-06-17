@@ -1,5 +1,3 @@
-# Profiel
-
 Inleidende tekst + samenhang begrippenkader, begrippen en collecties.
 
 Iets over SKOS, ISO 25964.

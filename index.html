@@ -22,7 +22,7 @@
         // hack to skip W3C specStatus validation
         latestVersion: "https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi",
         // Working Groups ids at https://respec.org/w3c/groups/
-        group: "webapps", 
+        group: "webapps",
         specStatus: "unofficial",
         editors: [
           {
@@ -87,7 +87,7 @@
         ],
         github: {
           branch: "main",
-          repoURL: "pldn/nederlands-profiel-voor-stelselcatalogi", 
+          repoURL: "pldn/nederlands-profiel-voor-stelselcatalogi",
         },
         // See https://respec.org/docs/#xref for usage.
         xref: "web-platform",
@@ -95,30 +95,62 @@
     </script>
   </head>
   <body>
-    <h1 id="title">Nederlands profiel voor stelselcatalogi </h1>
-    <section id='abstract'>
-      <p>
-        This is required.
-      </p>
-    </section>
-    <section id='sotd'>
-      <p>
-        This is required.
-      </p>
-    </section>
-    <section data-format="markdown" data-include="respec/Samenvatting.md"></section>
+    <h1 id="title">Nederlands Profiel voor Begrippencatalogi</h1>
+    <section id='abstract' data-format="markdown" data-include="respec/Samenvatting.md"></section>
+    <section id='sotd'></section>
     <section data-format="markdown" data-include="respec/Inleiding.md"></section>
-    <section data-format="markdown" data-include="respec/Begrippenkader.md"></section>
-    <section data-format="markdown" data-include="respec/Waardelijsten.md"></section>
-    <section data-format="markdown" data-include="respec/Informatiemodellen.md"></section>
+
     <section>
+      <h2>Profiel</h2>
+      <div data-format="markdown" data-include="respec/Profiel.md"></div>
+      <!-- <figure id="overzicht-profiel">
+        <img src="respec\img\profiel.jpg" alt=""/>
+        <figcaption>Overzicht profiel</figcaption>
+      </figure> -->
+<!-- <div>Hooflijn:
+  <ul>
+    <li>wat is een begrip?</li>
+    <li>  een verzameling begrippen noem je een begrippenkader</li>
+    <li>  begrippen hebben bronnen</li>
+    <li>  Begrippen kun je groeperen met collecties....</li>
+    </ul>
+</div> -->
+
+      <section>
+        <h2>Begrip</h2>
+        <div data-format="markdown" data-include="respec/Begrip.md"></div>
+        <section data-format="markdown" data-include="respec/rdf2markdown/Concept-table.md"></section>
+      </section>
+
+      <section>
+        <h2>Begrippenkader</h2>
+        <div data-format="markdown" data-include="respec/Begrippenkader.md"></div>
+        <section data-format="markdown" data-include="respec/rdf2markdown/Begrippenkader-table.md"></section>
+      </section>
+
+      <section>
+        <h2>Collectie</h2>
+        <div data-format="markdown" data-include="respec/Collectie.md"></div>
+        <section data-format="markdown" data-include="respec/rdf2markdown/Collection-table.md"></section>
+      </section>
+
+      <section>
+        <h2>Bron</h2>
+        <div data-format="markdown" data-include="respec/Bron.md"></div>
+        <section data-format="markdown" data-include="respec/rdf2markdown/Bron-table.md"></section>
+      </section>
+    </section>
+
+    <section data-format="markdown" data-include="respec/GerelateerdWerk.md"></section>
+
+    <!-- <section>
       <h1>Begrippenkader SKOS AP NL</h1>
       <section data-format="markdown" data-include="respec/rdf2respec/begrippenkader.md"></section>
     </section>
     <section>
       <h1>Profiel SKOS AP NL</h1>
       <section data-format="markdown" data-include="respec/rdf2respec/profile.md"></section>
-    </section>
+    </section> -->
     <section id='conformance'>
       <!-- This section is filled automatically by ReSpec. -->
     </section>

@@ -1,5 +1,3 @@
-## Begrippenkader
-
 Uit een inventarisatie binnen de werkgroep kwamen 4 uses cases naar voren, die overeenkomen met verschillende niveaus van diepgang waarop een begrippenkader kan worden beschreven: 
 - Begrippenlijst. Dit is de meest eenvoudige use case, die voor Geonovum geldt. In het geo domein is het vaak voldoende om de dingen die op de kaart moeten komen als begrip te definiëren, zonder verdere onderlinge relaties tussen de begrippen te definiëren.
 - Taxonomie: Hiërarchische relaties zijn soms ook relevant voor Geonovum. Zo kan een kaart wegen, en terrein bevatten, waarbij een weg een autoweg, spoorweg of vaarweg kan zijn, een terrein een bos, stad, weiland etc. kan zijn.
@@ -9,5 +7,3 @@ Uit een inventarisatie binnen de werkgroep kwamen 4 uses cases naar voren, die o
 Het profiel modulair opgebouwd. Met de basale bouwstenen kan laagdrempelig een eenvoudige begrippenlijst worden gepubliceerd. Door nieuwe bouwstenen toe te voegen kan steeds meer semantiek aan een begrippenkader worden toegevoegd zodat een taxonomie, een thesaurus ontstaat of zelfs een thesaurus inclusief annotatie van voor rechtshandelingen relevante begrippen ontstaat.
 
 Met metadata kan ook de geldigheid en zichtbaarheid (publicatiedatum) van een bepaalde versie van een begrip worden toegevoegd.
-
-

@@ -1,0 +1,110 @@
+title: Begrippenkader select concepts
+version: 0.1
+queries:
+  - title: select shapes
+    query: >
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX skosapnl: <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#>
+      PREFIX sh: <http://www.w3.org/ns/shacl#>
+      PREFIX : <http://pldn.nl/>
+      INSERT {
+        GRAPH <urn:output> {
+          ?table ?p ?o .
+          ?attrtable :attributeof ?table .
+          ?attrtable ?psp ?pso .
+        }
+      }
+      WHERE {
+        GRAPH <urn:input> {
+          BIND(skosapnl:ConceptScheme as ?s)
+          ?s ?p ?o .
+          ?s sh:property ?ps .
+          ?ps ?psp ?pso .
+          BIND(IRI(CONCAT("http://pldn.nl/", LCASE(STRAFTER(STR(?s), "#")))) as ?table)
+          BIND(IRI(CONCAT("http://pldn.nl/", LCASE(STRAFTER(STR(?ps), "ConceptScheme-")))) as ?attrtable)
+        }
+      }
+  - title: select concepts
+    query: >
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX beg-nps: <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/>
+      PREFIX : <http://pldn.nl/>
+      INSERT {
+        GRAPH <urn:output> {
+          ?table ?p ?o .
+          ?rttable ?rtp ?rto ; :rt ?table .
+          ?nttable ?ntp ?nto ; :bt ?table .
+        }
+      }
+      WHERE {
+        GRAPH <urn:input> {
+          BIND(beg-nps:ConceptScheme as ?s)
+          ?s ?p ?o .
+          OPTIONAL { ?s skos:related ?rt .
+                     ?rt ?rtp ?rto . }
+          OPTIONAL { ?nt skos:broader ?s .
+                     ?nt ?ntp ?nto . }
+          BIND(IRI(CONCAT("http://pldn.nl/", LCASE(STRAFTER(STR(?s), "id/concept/")))) as ?table)
+          BIND(IRI(CONCAT("http://pldn.nl/", LCASE(STRAFTER(STR(?rt), "id/concept/")))) as ?rttable)
+          BIND(IRI(CONCAT("http://pldn.nl/", LCASE(STRAFTER(STR(?nt), "id/concept/")))) as ?nttable)
+        }
+      }
+  - title: select concepts from shapes
+    query: >
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX beg-nps: <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/>
+      PREFIX sh: <http://www.w3.org/ns/shacl#>
+      PREFIX : <http://pldn.nl/>
+      INSERT {
+        GRAPH <urn:output> {
+          ?ps ?p ?o .
+        }
+      }
+      WHERE {
+            GRAPH <urn:output> {
+              ?ps a sh:PropertyShape . 
+            }
+            bind(STRAFTER(STR(?ps), "http://pldn.nl/") as ?code)
+        GRAPH <urn:input> {
+          ?s a skos:Concept ;
+            ?p ?o .
+          filter exists {
+            ?s ?lp ?literal . FILTER (isLiteral(?literal))
+            FILTER(sameTerm(LCASE(STR(?literal)), lcase(?code)))
+          }
+          # BIND(IRI(CONCAT("http://pldn.nl/", ?code)) as ?table)
+        }
+      }
+  - title: set root
+    query: >
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX beg-nps: <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/>
+      PREFIX sh: <http://www.w3.org/ns/shacl#>
+      PREFIX : <http://pldn.nl/>
+      INSERT {
+        GRAPH <urn:output> {
+          ?s <http://pldn.nl/index> 1 .
+        }
+      }
+      WHERE {
+        GRAPH <urn:output> {
+          ?s a sh:NodeShape ;
+        }
+      }
+  - title: remove rts that are attributes
+    query: >
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX beg-nps: <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/>
+      PREFIX sh: <http://www.w3.org/ns/shacl#>
+      PREFIX : <http://pldn.nl/>
+
+      delete {
+        GRAPH <urn:output> {
+          ?s :rt  ?o.
+        }
+      }
+      WHERE {
+        GRAPH <urn:output> {
+          ?s :rt ?o . ?s :attributeof ?o .
+        }
+      }
