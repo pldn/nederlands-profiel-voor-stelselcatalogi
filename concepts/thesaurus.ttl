@@ -603,6 +603,7 @@ beg-nps:ConceptScheme
   skos:altLabel
     "controlled vocabulary" ,
     "structured vocabulary" ,
+    "begrippencatalogus" ,
     "knowledge organisation system" ;
   skos:prefLabel
     "begrippenkader"@nl ,

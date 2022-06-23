@@ -464,39 +464,39 @@ skosapnl:Concept-broaderInstantial sh:nodeKind sh:IRI .
 
 ## shapes from WG Metadata
 
-skosapnl:Begrippencatalogus a sh:Nodeshape ;
+skosapnl:ConceptScheme a sh:Nodeshape ;
   sh:targetClass skos:ConceptScheme ;
   rdfs:label "Begrippencatalogus"@nl ;
   sh:property
-    skosapnl:Begrippencatalogus-type ,
-    skosapnl:Begrippencatalogus-VoorkeursnaamBegrippenkader ,
-    skosapnl:Begrippencatalogus-AlternatieveNaamBegrippenkader ,
-    skosapnl:Begrippencatalogus-BeschrijvingBegrippenkader ,
-    skosapnl:Begrippencatalogus-KlareTaalBeschrijvingBegrippenkader ,
-    skosapnl:Begrippencatalogus-Toelichting ,
-    skosapnl:Begrippencatalogus-Ontwerpbeslissingen ,
-    skosapnl:Begrippencatalogus-Voorbeeld ,
-    skosapnl:Begrippencatalogus-Documentatiepagina ,
-    skosapnl:Begrippencatalogus-Wetgeving ,
-    skosapnl:Begrippencatalogus-WetgevingUri ,
-    skosapnl:Begrippencatalogus-Taal ,
-    skosapnl:Begrippencatalogus-Bronhouder ,
-    skosapnl:Begrippencatalogus-Uitgever ,
-    skosapnl:Begrippencatalogus-Contactpunt ,
-    skosapnl:Begrippencatalogus-Toezichthouder ,
-    skosapnl:Begrippencatalogus-Opdrachtgever ,
-    skosapnl:Begrippencatalogus-LaatstBijgewerkt ,
-    skosapnl:Begrippencatalogus-Versie ,
-    skosapnl:Begrippencatalogus-FrequentieUri ,
-    skosapnl:Begrippencatalogus-Publicatiedatum ,
-    skosapnl:Begrippencatalogus-Toegangsrechten ,
-    skosapnl:Begrippencatalogus-Licentie ,
-    skosapnl:Begrippencatalogus-ConformeertAan ,
-    skosapnl:Begrippencatalogus-ThemaCategorie ,
-    skosapnl:Begrippencatalogus-Keywords ;
+    skosapnl:ConceptScheme-type ,
+    skosapnl:ConceptScheme-VoorkeursnaamBegrippenkader ,
+    skosapnl:ConceptScheme-AlternatieveNaamBegrippenkader ,
+    skosapnl:ConceptScheme-BeschrijvingBegrippenkader ,
+    skosapnl:ConceptScheme-KlareTaalBeschrijvingBegrippenkader ,
+    skosapnl:ConceptScheme-Toelichting ,
+    skosapnl:ConceptScheme-Ontwerpbeslissingen ,
+    skosapnl:ConceptScheme-Voorbeeld ,
+    skosapnl:ConceptScheme-Documentatiepagina ,
+    skosapnl:ConceptScheme-Wetgeving ,
+    skosapnl:ConceptScheme-WetgevingUri ,
+    skosapnl:ConceptScheme-Taal ,
+    skosapnl:ConceptScheme-Bronhouder ,
+    skosapnl:ConceptScheme-Uitgever ,
+    skosapnl:ConceptScheme-Contactpunt ,
+    skosapnl:ConceptScheme-Toezichthouder ,
+    skosapnl:ConceptScheme-Opdrachtgever ,
+    skosapnl:ConceptScheme-LaatstBijgewerkt ,
+    skosapnl:ConceptScheme-Versie ,
+    skosapnl:ConceptScheme-FrequentieUri ,
+    skosapnl:ConceptScheme-Publicatiedatum ,
+    skosapnl:ConceptScheme-Toegangsrechten ,
+    skosapnl:ConceptScheme-Licentie ,
+    skosapnl:ConceptScheme-ConformeertAan ,
+    skosapnl:ConceptScheme-ThemaCategorie ,
+    skosapnl:ConceptScheme-Keywords ;
 .
 
-skosapnl:Begrippencatalogus-type a sh:PropertyShape;
+skosapnl:ConceptScheme-type a sh:PropertyShape;
   sh:name "Typering"@nl;
   sh:path rdf:type ;
   sh:and (
@@ -505,7 +505,7 @@ skosapnl:Begrippencatalogus-type a sh:PropertyShape;
   ) ;
 .
 
-skosapnl:Begrippencatalogus-VoorkeursnaamBegrippenkader a sh:PropertyShape;
+skosapnl:ConceptScheme-VoorkeursnaamBegrippenkader a sh:PropertyShape;
   sh:name "Voorkeursnaam begrippenkader"@nl;
   sh:order "1"^^xsd:integer;
   sh:path [
@@ -518,111 +518,111 @@ skosapnl:Begrippencatalogus-VoorkeursnaamBegrippenkader a sh:PropertyShape;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Begrippencatalogus-AlternatieveNaamBegrippenkader a sh:PropertyShape;
+skosapnl:ConceptScheme-AlternatieveNaamBegrippenkader a sh:PropertyShape;
   sh:name "Alternatieve naam begrippenkader"@nl;
   sh:order "2"^^xsd:integer;
   sh:path skos:altLabel .
 
-skosapnl:Begrippencatalogus-BeschrijvingBegrippenkader a sh:PropertyShape;
+skosapnl:ConceptScheme-BeschrijvingBegrippenkader a sh:PropertyShape;
   sh:name "Beschrijving begrippenkader"@nl;
   sh:order "3"^^xsd:integer;
   sh:path skos:definition;
   sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Begrippencatalogus-KlareTaalBeschrijvingBegrippenkader a sh:PropertyShape;
+skosapnl:ConceptScheme-KlareTaalBeschrijvingBegrippenkader a sh:PropertyShape;
   sh:name "Klare taal beschrijving begrippenkader "@nl;
   sh:order "4"^^xsd:integer;
   sh:path rdfs:comment;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Begrippencatalogus-Toelichting a sh:PropertyShape;
+skosapnl:ConceptScheme-Toelichting a sh:PropertyShape;
   sh:name "Toelichting"@nl;
   sh:order "5"^^xsd:integer;
   sh:path skos:scopeNote;
   sh:maxCount "1"^^xsd:integer .
   
-skosapnl:Begrippencatalogus-Ontwerpbeslissingen a sh:PropertyShape;
+skosapnl:ConceptScheme-Ontwerpbeslissingen a sh:PropertyShape;
   sh:name "Ontwerpbeslissingen"@nl;
   sh:order "6"^^xsd:integer;
   sh:path skos:editorialNote .
 
-skosapnl:Begrippencatalogus-Voorbeeld a sh:PropertyShape;
+skosapnl:ConceptScheme-Voorbeeld a sh:PropertyShape;
   sh:name "Voorbeeld"@nl;
   sh:order "7"^^xsd:integer;
   sh:path skos:example;
   sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Begrippencatalogus-Documentatiepagina a sh:PropertyShape;
+skosapnl:ConceptScheme-Documentatiepagina a sh:PropertyShape;
   sh:name "Documentatiepagina"@nl;
   sh:order "8"^^xsd:integer;
   sh:path foaf:page;
   sh:class foaf:Document;
   sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Begrippencatalogus-Wetgeving a sh:PropertyShape;
+skosapnl:ConceptScheme-Wetgeving a sh:PropertyShape;
   sh:name "Wetgeving"@nl;
   sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Begrippencatalogus-WetgevingUri a sh:PropertyShape;
+skosapnl:ConceptScheme-WetgevingUri a sh:PropertyShape;
   sh:name "Wetgeving (URI)"@nl;
   sh:order "9"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Begrippencatalogus-Taal a sh:PropertyShape;
+skosapnl:ConceptScheme-Taal a sh:PropertyShape;
   sh:name "Taal"@nl;
   sh:order "10"^^xsd:integer;
   sh:path dct:language;
   sh:class <http://publications.europa.eu/resource/authority/language>;
   sh:minCount "1"^^xsd:integer .
 
-skosapnl:Begrippencatalogus-Bronhouder a sh:PropertyShape;
+skosapnl:ConceptScheme-Bronhouder a sh:PropertyShape;
   sh:name "Bronhouder"@nl;
   sh:order "11"^^xsd:integer;
   sh:path prov:qualifiedAttribution;
   sh:class prov:Attribution;
   sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Begrippencatalogus-Uitgever a sh:PropertyShape;
+skosapnl:ConceptScheme-Uitgever a sh:PropertyShape;
   sh:name "Uitgever"@nl;
   sh:order "12"^^xsd:integer;
   sh:path dct:publisher;
   sh:class foaf:Organisation;
   sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Begrippencatalogus-Contactpunt a sh:PropertyShape;
+skosapnl:ConceptScheme-Contactpunt a sh:PropertyShape;
   sh:name "Contactpunt"@nl;
   sh:order "13"^^xsd:integer;
   sh:path dcat:contactPoint;
   sh:class vcard:Kind .
 
-skosapnl:Begrippencatalogus-Toezichthouder a sh:PropertyShape;
+skosapnl:ConceptScheme-Toezichthouder a sh:PropertyShape;
   sh:name "Toezichthouder"@nl;
   sh:order "14"^^xsd:integer;
   sh:path prov:qualifiedAttribution;
   sh:class prov:Attribution;
   sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Begrippencatalogus-Opdrachtgever a sh:PropertyShape;
+skosapnl:ConceptScheme-Opdrachtgever a sh:PropertyShape;
   sh:name "Opdrachtgever"@nl;
   sh:order "15"^^xsd:integer;
   sh:path prov:qualifiedAttribution;
   sh:class prov:Attribution;
   sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Begrippencatalogus-LaatstBijgewerkt a sh:PropertyShape;
+skosapnl:ConceptScheme-LaatstBijgewerkt a sh:PropertyShape;
   sh:name "Laatst bijgewerkt"@nl;
   sh:order "16"^^xsd:integer;
   sh:path dct:modified;
   sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Begrippencatalogus-Versie a sh:PropertyShape;
+skosapnl:ConceptScheme-Versie a sh:PropertyShape;
   sh:name "Versie"@nl;
   sh:order "17"^^xsd:integer;
   sh:path dcat:version;
   sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Begrippencatalogus-FrequentieUri a sh:PropertyShape;
+skosapnl:ConceptScheme-FrequentieUri a sh:PropertyShape;
   sh:name "Frequentie (URI)"@nl;
   sh:order "18"^^xsd:integer;
   sh:path [ 
@@ -633,40 +633,40 @@ skosapnl:Begrippencatalogus-FrequentieUri a sh:PropertyShape;
   ] ;
   sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Begrippencatalogus-Publicatiedatum a sh:PropertyShape;
+skosapnl:ConceptScheme-Publicatiedatum a sh:PropertyShape;
   sh:name "Publicatiedatum"@nl;
   sh:order "19"^^xsd:integer;
   sh:path dct:issued;
   sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Begrippencatalogus-Toegangsrechten a sh:PropertyShape;
+skosapnl:ConceptScheme-Toegangsrechten a sh:PropertyShape;
   sh:name "Toegangsrechten"@nl;
   sh:order "20"^^xsd:integer;
   sh:path dct:accessRights;
   sh:class dct:RightsStatement;
   sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Begrippencatalogus-Licentie a sh:PropertyShape;
+skosapnl:ConceptScheme-Licentie a sh:PropertyShape;
   sh:name "Licentie"@nl;
   sh:order "21"^^xsd:integer;
   sh:path dct:license;
   sh:class dct:IicenseDocument;
   sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Begrippencatalogus-ConformeertAan a sh:PropertyShape;
+skosapnl:ConceptScheme-ConformeertAan a sh:PropertyShape;
   sh:name "Conformeert aan"@nl;
   sh:order "22"^^xsd:integer;
   sh:path dct:conformsTo;
   sh:class dct:Standard;
   sh:maxCount "1"^^xsd:integer .
 
-skosapnl:Begrippencatalogus-ThemaCategorie a sh:PropertyShape;
+skosapnl:ConceptScheme-ThemaCategorie a sh:PropertyShape;
   sh:name "Thema/categorie"@nl;
   sh:order "23"^^xsd:integer;
   sh:path dcat:theme;
   sh:class skos:Concept .
 
-skosapnl:Begrippencatalogus-Keywords a sh:PropertyShape;
+skosapnl:ConceptScheme-Keywords a sh:PropertyShape;
   sh:name "Keywords"@nl;
   sh:order "24"^^xsd:integer;
   sh:path dcat:keyword .
