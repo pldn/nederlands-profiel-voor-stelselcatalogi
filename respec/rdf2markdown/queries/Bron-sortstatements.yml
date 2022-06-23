@@ -61,18 +61,14 @@ queries:
         }
       }
       WHERE {
-            GRAPH <urn:output> {
-              ?ps a sh:PropertyShape . 
-            }
-            bind(STRAFTER(STR(?ps), "http://pldn.nl/") as ?code)
-
+        GRAPH <urn:output> {
+          ?ps a sh:PropertyShape . 
+        }
         GRAPH <urn:input> {
           ?s a skos:Concept ;
             ?p ?o .
-          filter exists {
-            ?s ?lp ?literal . FILTER (isLiteral(?literal))
-            FILTER(sameTerm(LCASE(STR(?literal)), lcase(?code)))
-          }
+          BIND(IRI(CONCAT("http://pldn.nl/", LCASE(STRAFTER(STR(?s), "concept/")))) as ?c)
+          FILTER (SAMETERM(?ps,?c))
         }
       }
   - title: set root
