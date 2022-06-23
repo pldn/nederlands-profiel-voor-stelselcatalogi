@@ -46,6 +46,9 @@
   <xsl:template match="sh:class" mode="properties">
     <xsl:text>|Verwijst naar|[</xsl:text>
     <xsl:value-of select="substring-after(@rdf:resource,'#')"/>
+    <xsl:value-of select="substring-after(@rdf:resource,'/terms/')"/>
+    <xsl:value-of select="substring-after(@rdf:resource,'foaf/0.1/')"/>
+    <xsl:value-of select="substring-after(@rdf:resource,'/resource/authority/')"/>
     <xsl:text>](</xsl:text>
     <xsl:value-of select="./@rdf:resource"/>
     <xsl:text>)&#10;</xsl:text>
@@ -58,10 +61,12 @@
     <xsl:value-of select="./@rdf:resource"/>
     <xsl:text>)&#10;</xsl:text>
   </xsl:template>
-
   <xsl:template match="sh:path" mode="properties">
     <xsl:text>|Gebruikte term|[</xsl:text>
     <xsl:value-of select="substring-after(@rdf:resource,'#')"/>
+    <xsl:value-of select="substring-after(@rdf:resource,'/terms/')"/>
+    <xsl:value-of select="substring-after(@rdf:resource,'foaf/0.1/')"/>
+    <xsl:value-of select="substring-after(@rdf:resource,'/resource/authority/')"/>
     <xsl:text>](</xsl:text>
     <xsl:value-of select="./@rdf:resource"/>
     <xsl:text>)&#10;</xsl:text>

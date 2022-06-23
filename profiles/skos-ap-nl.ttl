@@ -468,7 +468,7 @@ skosapnl:ConceptScheme a sh:Nodeshape ;
   sh:targetClass skos:ConceptScheme ;
   rdfs:label "Begrippencatalogus"@nl ;
   sh:property
-    skosapnl:ConceptScheme-type ,
+    skosapnl:ConceptScheme-Type ,
     skosapnl:ConceptScheme-VoorkeursnaamBegrippenkader ,
     skosapnl:ConceptScheme-AlternatieveNaamBegrippenkader ,
     skosapnl:ConceptScheme-BeschrijvingBegrippenkader ,
@@ -496,7 +496,7 @@ skosapnl:ConceptScheme a sh:Nodeshape ;
     skosapnl:ConceptScheme-Keywords ;
 .
 
-skosapnl:ConceptScheme-type a sh:PropertyShape;
+skosapnl:ConceptScheme-Type a sh:PropertyShape;
   sh:name "Typering"@nl;
   sh:path rdf:type ;
   sh:and (
