@@ -260,8 +260,9 @@ skosapnl:Collection-member
   a sh:PropertyShape ;
   rdfs:label "bevat"@nl ;
   sh:class skos:Concept ;
-  sh:description "Relates a collection to one of its members."@en ;
-  sh:description "Relateert een collectie aan een begrip dat onderdeel is van deze collectie."@nl ;
+  sh:description 
+    "Relates a collection to one of its members."@en ,
+    "Relateert een collectie aan een begrip dat onderdeel is van deze collectie."@nl ;
   sh:name "bevat"@nl ;
   sh:path skos:member .
 
@@ -277,7 +278,6 @@ skosapnl:Concept-narrowerGeneric
 
 skosapnl:Concept-historyNote
   a sh:PropertyShape ;
-  sh:description "A note about the past state/use/meaning of a concept."@en ;
   sh:description "Notitie over de voormalige status/gebruik/betekenis van het concept"@nl, "A note about the past state/use/meaning of a concept."@en ;
   sh:group skos:NotesPropertyGroup ;
   sh:name "history note"@en, "historische notitie"@nl ;
