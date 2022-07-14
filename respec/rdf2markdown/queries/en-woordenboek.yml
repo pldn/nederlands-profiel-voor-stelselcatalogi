@@ -1,0 +1,21 @@
+title: select statements
+version: 0.1
+queries:
+  - title: select shapes
+    query: >
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX skosapnl: <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#>
+      PREFIX sh: <http://www.w3.org/ns/shacl#>
+      PREFIX : <http://pldn.nl/>
+      INSERT {
+        GRAPH <urn:output> {
+          ?s ?p ?o
+        }
+      }
+      WHERE {
+        GRAPH <urn:input> {
+          ?s ?p ?o . 
+          FILTER (isLiteral(?o))
+          FILTER EXISTS { ?s ?pp ?oo FILTER(Lang(?oo) = "en") }
+        }
+      }

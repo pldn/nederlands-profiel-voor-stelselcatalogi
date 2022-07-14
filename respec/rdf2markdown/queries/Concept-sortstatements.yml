@@ -67,8 +67,7 @@ queries:
         GRAPH <urn:input> {
           ?s a skos:Concept ;
             ?p ?o .
-          BIND(IRI(CONCAT("http://pldn.nl/", LCASE(STRAFTER(STR(?s), "concept/")))) as ?c)
-          FILTER (SAMETERM(?ps,?c))
+          BIND(IRI(CONCAT("http://pldn.nl/", lcase(STRAFTER(STR(?s), "id/concept/")))) as ?c)
         }
       }
   - title: set root
@@ -101,5 +100,23 @@ queries:
       WHERE {
         GRAPH <urn:output> {
           ?s :rt ?o . ?s :attributeof ?o .
+        }
+      }
+  - title: remove statements with english tagged literals
+    query: >
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX beg-nps: <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/>
+      PREFIX sh: <http://www.w3.org/ns/shacl#>
+      PREFIX : <http://pldn.nl/>
+
+      delete {
+        GRAPH <urn:output> {
+          ?s ?p ?o 
+        }
+      }
+      WHERE {
+        GRAPH <urn:output> {
+          ?s ?p ?o 
+         FILTER langMatches( lang(?o), "en" )
         }
       }

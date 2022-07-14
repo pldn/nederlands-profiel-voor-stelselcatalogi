@@ -137,8 +137,8 @@
       <!-- header -->
       <xsl:text># Gestructureerde beschrijving</xsl:text>
     <!-- <xsl:choose>
-      <xsl:when test="skos:prefLabel!=''"><xsl:value-of select="skos:prefLabel[@xml:lang='nl']"/></xsl:when>
-      <xsl:when test="sh:name!=''"><xsl:value-of select="sh:name[@xml:lang='nl']"/></xsl:when>
+      <xsl:when test="skos:prefLabel!=''"><xsl:value-of select="skos:prefLabel"/></xsl:when>
+      <xsl:when test="sh:name!=''"><xsl:value-of select="sh:name"/></xsl:when>
       <xsl:otherwise><xsl:value-of select="@rdf:about|@rdf:nodeID"/></xsl:otherwise>
     </xsl:choose> -->
       <xsl:text>&#10;</xsl:text>
@@ -146,18 +146,18 @@
       <!-- start table -->
       <xsl:text>|</xsl:text>
       <xsl:choose>
-        <xsl:when test="skos:prefLabel!=''"><xsl:value-of select="skos:prefLabel[@xml:lang='nl']"/></xsl:when>
-        <xsl:when test="sh:name!=''"><xsl:value-of select="sh:name[@xml:lang='nl']"/></xsl:when>
+        <xsl:when test="skos:prefLabel!=''"><xsl:value-of select="skos:prefLabel"/></xsl:when>
+        <xsl:when test="sh:name!=''"><xsl:value-of select="sh:name"/></xsl:when>
         <xsl:otherwise><xsl:value-of select="@rdf:about|@rdf:nodeID"/></xsl:otherwise>
       </xsl:choose>
       <xsl:text>&lt;div style=&quot;width:325px&quot;>&lt;/div>|</xsl:text>
       <xsl:text>|</xsl:text>
       <xsl:text>&#10;|----------|------&#10;</xsl:text>
       <!--  -->
-      <xsl:apply-templates select="skos:prefLabel[@xml:lang='nl']" mode="properties"/>
-      <xsl:apply-templates select="skos:definition[@xml:lang='nl']" mode="properties"/>
+      <xsl:apply-templates select="skos:prefLabel" mode="properties"/>
+      <xsl:apply-templates select="skos:definition" mode="properties"/>
       <xsl:apply-templates select="dct:source" mode="properties"/>
-      <xsl:apply-templates select="skos:scopeNote[@xml:lang='nl']" mode="properties"/>
+      <xsl:apply-templates select="skos:scopeNote" mode="properties"/>
       <xsl:apply-templates select="skos:example" mode="properties"/>
       <xsl:apply-templates select="skos:hiddenLabel" mode="properties"/>
       <xsl:apply-templates select="skos:notation" mode="properties"/>
@@ -172,8 +172,8 @@
         <!-- header -->
         <!-- <xsl:text>&#10;</xsl:text> -->
         <!-- <xsl:choose>
-  <xsl:when test="skos:prefLabel!=''"><xsl:value-of select="skos:prefLabel[@xml:lang='nl']"/></xsl:when>
-  <xsl:when test="sh:name!=''"><xsl:value-of select="sh:name[@xml:lang='nl']"/></xsl:when>
+  <xsl:when test="skos:prefLabel!=''"><xsl:value-of select="skos:prefLabel"/></xsl:when>
+  <xsl:when test="sh:name!=''"><xsl:value-of select="sh:name"/></xsl:when>
   <xsl:otherwise><xsl:value-of select="@rdf:about|@rdf:nodeID"/></xsl:otherwise>
 </xsl:choose>
 <xsl:text>&#10;</xsl:text> -->
@@ -181,30 +181,30 @@
         <!-- start table -->
         <xsl:text>|</xsl:text>
         <xsl:choose>
-          <xsl:when test="skos:prefLabel!=''"><xsl:value-of select="skos:prefLabel[@xml:lang='nl']"/></xsl:when>
-          <xsl:when test="sh:name!=''"><xsl:value-of select="sh:name[@xml:lang='nl']"/></xsl:when>
+          <xsl:when test="skos:prefLabel!=''"><xsl:value-of select="skos:prefLabel"/></xsl:when>
+          <xsl:when test="sh:name!=''"><xsl:value-of select="sh:name"/></xsl:when>
           <xsl:otherwise><xsl:value-of select="@rdf:about|@rdf:nodeID"/></xsl:otherwise>
         </xsl:choose>
         <xsl:text>&lt;div style=&quot;width:325px&quot;>&lt;/div>|</xsl:text>
         <xsl:text>|</xsl:text>
         <xsl:text>&#10;|----------|------&#10;</xsl:text>
         <!--  -->
-        <xsl:apply-templates select="skos:prefLabel[@xml:lang='nl']" mode="properties"/>
+        <xsl:apply-templates select="skos:prefLabel" mode="properties"/>
         <xsl:apply-templates select="sh:path" mode="properties"/>
         <xsl:apply-templates select="sh:class" mode="properties"/>
         <xsl:apply-templates select="sh:nodeKind" mode="properties"/>
         <xsl:apply-templates select="sh:minCount" mode="properties"/>
         <xsl:apply-templates select="sh:maxCount" mode="properties"/>
-        <xsl:apply-templates select="skos:definition[@xml:lang='nl']" mode="properties"/>
+        <xsl:apply-templates select="skos:definition" mode="properties"/>
         <xsl:apply-templates select="dct:source" mode="properties"/>
-        <xsl:apply-templates select="skos:scopeNote[@xml:lang='nl']" mode="properties"/>
+        <xsl:apply-templates select="skos:scopeNote" mode="properties"/>
         <xsl:apply-templates select="skos:example" mode="properties"/>
         <xsl:apply-templates select="skos:altLabel" mode="properties"/>
         <xsl:apply-templates select="skos:hiddenLabel" mode="properties"/>
         <xsl:apply-templates select="skos:notation" mode="properties"/>
         <xsl:apply-templates select="skos:editorialNote" mode="properties"/>
-        <!-- <xsl:apply-templates select="sh:name[@xml:lang='nl']" mode="properties"/> -->
-        <!-- <xsl:apply-templates select="sh:description[@xml:lang='nl']" mode="properties"/> -->
+        <!-- <xsl:apply-templates select="sh:name" mode="properties"/> -->
+        <!-- <xsl:apply-templates select="sh:description" mode="properties"/> -->
         <xsl:apply-templates select="sh:disjoint" mode="properties"/>
         <xsl:text>&#10;</xsl:text>
       </xsl:for-each>
@@ -217,10 +217,10 @@
         <!-- header -->
         <!-- <xsl:choose>
           <xsl:when test="skos:prefLabel!=''">
-            <xsl:value-of select="skos:prefLabel[@xml:lang='nl']"/>
+            <xsl:value-of select="skos:prefLabel"/>
           </xsl:when>
           <xsl:when test="sh:name!=''">
-            <xsl:value-of select="sh:name[@xml:lang='nl']"/>
+            <xsl:value-of select="sh:name"/>
           </xsl:when>
           <xsl:otherwise>
             <xsl:value-of select="@rdf:about|@rdf:nodeID"/>
@@ -232,18 +232,18 @@
 
         <xsl:text>|</xsl:text>
         <xsl:choose>
-          <xsl:when test="skos:prefLabel!=''"><xsl:value-of select="skos:prefLabel[@xml:lang='nl']"/></xsl:when>
-          <xsl:when test="sh:name!=''"><xsl:value-of select="sh:name[@xml:lang='nl']"/></xsl:when>
+          <xsl:when test="skos:prefLabel!=''"><xsl:value-of select="skos:prefLabel"/></xsl:when>
+          <xsl:when test="sh:name!=''"><xsl:value-of select="sh:name"/></xsl:when>
           <xsl:otherwise><xsl:value-of select="@rdf:about|@rdf:nodeID"/></xsl:otherwise>
         </xsl:choose>
         <xsl:text>&lt;div style=&quot;width:325px&quot;>&lt;/div>|</xsl:text>
         <xsl:text>|</xsl:text>
         <xsl:text>&#10;|----------|------&#10;</xsl:text>
         <!--  -->
-        <xsl:apply-templates select="skos:prefLabel[@xml:lang='nl']" mode="properties"/>
-        <xsl:apply-templates select="skos:definition[@xml:lang='nl']" mode="properties"/>
+        <xsl:apply-templates select="skos:prefLabel" mode="properties"/>
+        <xsl:apply-templates select="skos:definition" mode="properties"/>
         <xsl:apply-templates select="dct:source" mode="properties"/>
-        <xsl:apply-templates select="skos:scopeNote[@xml:lang='nl']" mode="properties"/>
+        <xsl:apply-templates select="skos:scopeNote" mode="properties"/>
         <xsl:apply-templates select="skos:example" mode="properties"/>
         <xsl:apply-templates select="skos:hiddenLabel" mode="properties"/>
         <xsl:apply-templates select="skos:notation" mode="properties"/>
@@ -257,10 +257,10 @@
         <!-- header -->
         <!-- <xsl:choose>
           <xsl:when test="skos:prefLabel!=''">
-            <xsl:value-of select="skos:prefLabel[@xml:lang='nl']"/>
+            <xsl:value-of select="skos:prefLabel"/>
           </xsl:when>
           <xsl:when test="sh:name!=''">
-            <xsl:value-of select="sh:name[@xml:lang='nl']"/>
+            <xsl:value-of select="sh:name"/>
           </xsl:when>
           <xsl:otherwise>
             <xsl:value-of select="@rdf:about|@rdf:nodeID"/>
@@ -271,18 +271,18 @@
         <!-- start table -->
         <xsl:text>|</xsl:text>
         <xsl:choose>
-          <xsl:when test="skos:prefLabel!=''"><xsl:value-of select="skos:prefLabel[@xml:lang='nl']"/></xsl:when>
-          <xsl:when test="sh:name!=''"><xsl:value-of select="sh:name[@xml:lang='nl']"/></xsl:when>
+          <xsl:when test="skos:prefLabel!=''"><xsl:value-of select="skos:prefLabel"/></xsl:when>
+          <xsl:when test="sh:name!=''"><xsl:value-of select="sh:name"/></xsl:when>
           <xsl:otherwise><xsl:value-of select="@rdf:about|@rdf:nodeID"/></xsl:otherwise>
         </xsl:choose>
         <xsl:text>&lt;div style=&quot;width:325px&quot;>&lt;/div>|</xsl:text>
         <xsl:text>|</xsl:text>
         <xsl:text>&#10;|----------|------&#10;</xsl:text>
         <!--  -->
-        <xsl:apply-templates select="skos:prefLabel[@xml:lang='nl']" mode="properties"/>
-        <xsl:apply-templates select="skos:definition[@xml:lang='nl']" mode="properties"/>
+        <xsl:apply-templates select="skos:prefLabel" mode="properties"/>
+        <xsl:apply-templates select="skos:definition" mode="properties"/>
         <xsl:apply-templates select="dct:source" mode="properties"/>
-        <xsl:apply-templates select="skos:scopeNote[@xml:lang='nl']" mode="properties"/>
+        <xsl:apply-templates select="skos:scopeNote" mode="properties"/>
         <xsl:apply-templates select="skos:example" mode="properties"/>
         <xsl:apply-templates select="skos:hiddenLabel" mode="properties"/>
         <xsl:apply-templates select="skos:notation" mode="properties"/>
