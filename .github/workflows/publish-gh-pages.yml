@@ -31,16 +31,16 @@ jobs:
         run: touch respec/rdf2markdown/statements.nt
       - name: concatenate selected rdf-statements
         run: cat *.nt > statements.nt
-      - name: Select rdf-statements
+      - name: Select ConceptScheme rdf-statements
         run: java -jar rdf2rdf.jar statements.nt Begrippenkader-selectedStatements.nt respec/rdf2markdown/queries/Begrippenkader-sortstatements.yml
-      - name: Select rdf-statements
+      - name: Select Concept rdf-statements
         run: java -jar rdf2rdf.jar statements.nt Concept-selectedStatements.nt respec/rdf2markdown/queries/Concept-sortstatements.yml
-      - name: Select rdf-statements
+      - name: Select Collection rdf-statements
         run: java -jar rdf2rdf.jar statements.nt Collection-selectedStatements.nt respec/rdf2markdown/queries/Collectie-sortstatements.yml
-      - name: Select rdf-statements
+      - name: Select Source rdf-statements
         run: java -jar rdf2rdf.jar statements.nt Bron-selectedStatements.nt respec/rdf2markdown/queries/Bron-sortstatements.yml
-      - name: Select rdf-statements
-        run: java -jar rdf2rdf.jar profiles/skos-ap-nl.ttl en-woordenboek-selectedStatements.nt respec/rdf2markdown/queries/en-woordenboek.yml
+      - name: Select Dictionary rdf-statements
+        run: java -jar rdf2rdf.jar concepts/thesaurus.ttl en-woordenboek-selectedStatements.nt respec/rdf2markdown/queries/en-woordenboek.yml
       - name: Archive production artifacts
         uses: actions/upload-artifact@v3
         with:
@@ -225,7 +225,7 @@ jobs:
       - name: Archive production artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: rdf2markdown-en-woordenboek
+          name: rdf2markdown-en-woordenboek-table
           path: respec/rdf2markdown/en-woordenboek-table.md
       - name: Archive production artifacts
         uses: actions/upload-artifact@v3
@@ -257,6 +257,11 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: rdf2markdown-bron-table
+          path: respec/rdf2markdown
+      - name: Download rdf2mardown
+        uses: actions/download-artifact@v3
+        with:
+          name: rdf2markdown-en-woordenboek-table
           path: respec/rdf2markdown
       - uses: w3c/spec-prod@v2
         with:
