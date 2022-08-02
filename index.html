@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="nl"><head>
 <meta charset="utf-8">
-<meta name="generator" content="ReSpec 32.1.10">
+<meta name="generator" content="ReSpec 32.2.1">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <style>
 dfn{cursor:pointer}
@@ -181,19 +181,19 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     "repoURL": "pldn/nederlands-profiel-voor-stelselcatalogi"
   },
   "xref": "web-platform",
-  "publishISODate": "2022-07-14T00:00:00.000Z",
-  "generatedSubtitle": "Unofficial Draft 14 juli 2022"
+  "publishISODate": "2022-08-02T00:00:00.000Z",
+  "generatedSubtitle": "Unofficial Draft 2 augustus 2022"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-UD"></head>
   <body class="h-entry" data-cite="HTML INFRA URL WEBIDL DOM FETCH"><div class="head">
     
     <h1 id="title" class="title">Nederlands Profiel voor Begrippencatalogi</h1> 
-    <p id="w3c-state">Unofficial Draft <time class="dt-published" datetime="2022-07-14">14 juli 2022</time></p>
+    <p id="w3c-state">Unofficial Draft <time class="dt-published" datetime="2022-08-02">2 augustus 2022</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
         <dt>Deze versie:</dt><dd>
-                <a class="u-url" href="https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20220714/">https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20220714/</a>
+                <a class="u-url" href="https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20220802/">https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20220802/</a>
               </dd>
         <dt>Laatst gepubliceerde versie:</dt><dd>
                 <a href="https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi">https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi</a>
@@ -1676,11 +1676,11 @@ narrowMatch: TODO</p>
 </tr>
 <tr>
 <td>Definitie</td>
-<td>De dag waarop deze catalogus voor de eerste keer beschikbaar is gekomen. De dag waarom de eerste versie van de catalogus beschikbaar kwam.</td>
+<td>Een bron voor een begrip is een gerelateerde brondocument waaruit de betekenis van het begrip is afgeleid.</td>
 </tr>
 <tr>
 <td>Definitie</td>
-<td>Een bron voor een begrip is een gerelateerde brondocument waaruit de betekenis van het begrip is afgeleid.</td>
+<td>De dag waarop deze catalogus voor de eerste keer beschikbaar is gekomen. De dag waarom de eerste versie van de catalogus beschikbaar kwam.</td>
 </tr>
 <tr>
 <td>Definitie</td>
@@ -23090,31 +23090,7 @@ narrowMatch: TODO</p>
 
       <section id="begrippenkader"><div class="header-wrapper"><h3 id="x2-2-begrippenkader"><bdi class="secno">2.2 </bdi>Begrippenkader</h3><a class="self-link" href="#begrippenkader" aria-label="Permalink for Section 2.2"></a></div>
         
-        <div data-format="markdown"><p>Uit een inventarisatie binnen de werkgroep kwamen 4 uses cases naar voren, die overeenkomen met verschillende niveaus van diepgang waarop een begrippenkader kan worden beschreven: </p>
-<ul>
-<li>Begrippenlijst. Dit is de meest eenvoudige use case, die voor Geonovum geldt. In het geo domein is het vaak voldoende om de dingen die op de kaart moeten komen als begrip te definiëren, zonder verdere onderlinge relaties tussen de begrippen te definiëren.</li>
-<li>Taxonomie: Hiërarchische relaties zijn soms ook relevant voor Geonovum. Zo kan een kaart wegen, en terrein bevatten, waarbij een weg een autoweg, spoorweg of vaarweg kan zijn, een terrein een bos, stad, weiland etc. kan zijn.</li>
-<li>Thesaurus: Voor veel begrippencatalogi zijn ook de relaties tussen begrippen relevant. Dit geldt voor het Kadaster, DUO en de stelselcatalogus voor de basisregistraties. Zo is een zakelijk recht bij het Kadaster een recht (hiërarchische relatie) op een onroerende zaak (relatie met een ander begrip). De stelselcatalogus voor de basisregistraties wil ook concepten van verschillende registraties met elkaar verbinden, bijvoorbeeld een persoon (in de BRP) die gerelateerd kan zijn aan een organisatie (in het HR).</li>
-<li>Een voorbeeld van extra semantiek is het domein van rechtshandelingen, wat bijvoorbeeld bij het Kadaster relevant is. Een verkoper (actor) levert (rechtshandeling) een onroerende zaak (object) aan een koper (actor), welke overeenkomst bij akte wordt vastgelegd door een notaris (agent). Door dit soort semantiek toe te voegen wordt nog beter zichtbaar hoe begrippen samenhangen in een bepaalde context.</li>
-</ul>
-<p>Het profiel modulair opgebouwd. Met de basale bouwstenen kan laagdrempelig een eenvoudige begrippenlijst worden gepubliceerd. Door nieuwe bouwstenen toe te voegen kan steeds meer semantiek aan een begrippenkader worden toegevoegd zodat een taxonomie, een thesaurus ontstaat of zelfs een thesaurus inclusief annotatie van voor rechtshandelingen relevante begrippen ontstaat.</p>
-<p>Met metadata kan ook de geldigheid en zichtbaarheid (publicatiedatum) van een bepaalde versie van een begrip worden toegevoegd.</p>
-<div class="header-wrapper"><h3 id="usecases">Usecases</h3><a class="self-link" href="#usecases" aria-label="Permalink for this Section"></a></div>
-<p><strong>User story DUO 1</strong>  Transparantie.  Als wettelijk registerhouder wil ik dat ontwikkelaars, ondersteuners en gebruikers met een druk op de knop een passende en blijvende uitleg (de betekenis) van door mij verstrekte gegevens kunnen vinden, zodat zij deze juist kunnen interpreteren, hergebruiken en feedback kunnen geven.</p>
-<p><strong>Usecase Geonovum 1</strong> enkelvoudig beheer meervoudig gebruik (Must Have):
-Als beheerder van informatiemodellen wil ik de begrippen van die informatie modellen eenmalig in linked-data beheren en door meerdere views (stelselcatalogus logius, conceptenbibliotheek geonovum etc…) ontsluiten. Enkelvoudig beheer meervoudig gebruik. Zodat ik met minimale inspanning maximaal profijt heb van de linked-data die ik beheer.
-Daarvoor is het van belang dat het meta-model van mijn linked-data store interoperabel is met de linked data “front-ends” van andere linked-data catalogi.
-<strong>User story DUO 3</strong>  Portabel. Als modellenautoriteit van een uitvoeringsorganisatie wil ik een (inter)nationaal koppelvlak waar ik begrippen inkomend en uitgaand kan ontsluiten zodat ik toekomstvast ben en onafhankelijk ben van tools en methoden [GGR: niet helemaal in lijn met Geonovum 1].</p>
-<p><strong>User story DUO 2</strong>  Interoperabel.  Als uitvoeringsorganisatie wil is dat wettelijke registers die ik nodig heb, hun begrippen volgens nationaal afgesproken naamgevings- en ontwerpregels opstellen zodat ik deze met een minimum aan inspanning kan inpassen in mijn eigen gegevensverwerking.
-<strong>Usecase geonovum 2</strong> federatief zoeken(should have):
-Ik wil graag linked data stores van anderen kunnen doorzoeken zodat ik vanuit de geonovum view op deze linked data (conceptenbibliotheek) vergelijkingen kan maken tussen begrippen uit verschillende catalogi</p>
-<p><strong>Usecase geonovum 3</strong> harmonisatie/disambiguatie(could have):
-Ik wil graag relaties kunnen leggen tussen begrippen in verschillende catalogi. De belangrijkste doelen zijn daarbij harmonisatie (aangeven welke begrippen erg op elkaar lijken en kandidaat zijn voor harmonisatie) Disambigueren (begrippen die in eerste instantie op elkaar lijken maar toch op essentiële punten verschillen expliciet als niet hetzelfde aanmerken).</p>
-<p><strong>Usecase geonovum 4</strong> Begrippen kennen (versie) historie(should have):
-Het is mogelijk naar een specifieke versie van een begrip te verwijzen of om naar de meest recente versie van een begrip te verwijzen. Dit is mogelijk met een eenduidige URI strategie.</p>
-<p><strong>Usecase geonovum 5</strong> Het is mogelijk de status van een begrip uit te drukken(could have):
-Begrippen kunnen in ontwikkeling zijn, ze kunnen vastgesteld en geldig zijn of ze kunnen deprecated zijn, dus tussen bepaalde data waren ze geldig maar na een vastgelegde einddatum niet meer.</p>
-<div class="header-wrapper"><h3 id="opbouw-beschrijvingen">Opbouw beschrijvingen</h3><a class="self-link" href="#opbouw-beschrijvingen" aria-label="Permalink for this Section"></a></div>
+        <div data-format="markdown"><div class="header-wrapper"><h3 id="opbouw-beschrijvingen">Opbouw beschrijvingen</h3><a class="self-link" href="#opbouw-beschrijvingen" aria-label="Permalink for this Section"></a></div>
 <p>De basis voor de beschrijving van een begrippenkader is SKOS. We geven enkele aanvullingen op standaard SKOS. Zo vinden we het belangrijk dat ieder begrip een uitleg in klare taal (B2 niveau) heeft en dat ieder begrip kan worden gerelateerd aan een definitie in een formele (juridische) bron.</p>
 <p>Voor het beschrijven van metadata hebben we gebruik gemaakt van metadatastandaarden zoals Dublin Core (dctemrs), de Provenance Ontologie (Prov-O) en ADMS/DCAT. We zien een begrippenkader niet als een DCAT dataset. DCAT is primair bedoeld om de dataset zelf te beschrijven. We zien een begrippenkader wel als een 'semantic asset' die beschreven kan worden als een ADMS dataset. Dit maakt de herkenbaarheid van de betreffende metadata beter vindbaar via het web. Ook biedt dit handvatten om deze metadatabeschrijving op te nemen in data.overheid.nl omdat ADMS een profiel op DCAT is.</p>
 <p>Iedere relevante klasse voor het voorliggende profiel (begrippenkader, begrip, bronverwijzing, collectie), wordt beschreven in een aparte paragraaf, inclusief de eigenschappen van die klasse. Iedere beschrijving bestaat uit 2 delen:</p>
