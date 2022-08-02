@@ -68,7 +68,7 @@ queries:
           ?s a skos:Concept ;
             ?p ?o .
           BIND(IRI(CONCAT("http://pldn.nl/", LCASE(STRAFTER(STR(?s), "concept/")))) as ?c)
-          FILTER (SAMETERM(?ps,?c))
+          FILTER (?ps = ?c)
         }
       }
   - title: set root

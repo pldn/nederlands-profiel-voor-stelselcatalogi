@@ -67,7 +67,8 @@ queries:
         GRAPH <urn:input> {
           ?s a skos:Concept ;
             ?p ?o .
-          BIND(IRI(CONCAT("http://pldn.nl/", lcase(STRAFTER(STR(?s), "id/concept/")))) as ?c)
+          BIND(IRI(CONCAT("http://pldn.nl/", LCASE(STRAFTER(STR(?s), "concept/")))) as ?c)
+          FILTER (?ps = ?c)
         }
       }
   - title: set root
