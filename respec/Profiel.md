@@ -1,6 +1,4 @@
-Inleidende tekst + samenhang begrippenkader, begrippen en collecties.
-
-Iets over SKOS, ISO 25964.
+Inleidende tekst 
 
 Beschrijving:
 - inhoud - conform onze eigen standaard (practice what you preach), c.q. profiel (skos)
