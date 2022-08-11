@@ -403,7 +403,7 @@ skosapnl:Bronverwijzing
     skosapnl:Bronverwijzing-page ,
     skosapnl:Bronverwijzing-description ,
     skosapnl:Bronverwijzing-bibliographicCitation ,
-    skosapnl:Bronverwijzing-type ;
+    skosapnl:Bronverwijzing-type .
 
 skosapnl:HierarchicalRelationships
   a sh:PropertyGroup ;
@@ -482,6 +482,7 @@ skosapnl:Bronverwijzing-type
   sh:nodeKind sh:IRI ;
   sh:path dct:type ;
   sh:class skos:Concept .
+
 
 skosapnl:Collection-label
   a sh:PropertyShape ;
