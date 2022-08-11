@@ -402,7 +402,8 @@ skosapnl:Bronverwijzing
     skosapnl:Bronverwijzing-label ,
     skosapnl:Bronverwijzing-page ,
     skosapnl:Bronverwijzing-description ,
-    skosapnl:Bronverwijzing-bibliographicCitation .
+    skosapnl:Bronverwijzing-bibliographicCitation ,
+    skosapnl:Bronverwijzing-type ;
 
 skosapnl:HierarchicalRelationships
   a sh:PropertyGroup ;
@@ -471,6 +472,16 @@ skosapnl:Bronverwijzing-bibliographicCitation
   sh:name "citatie"@nl ;
   sh:nodeKind sh:Literal ;
   sh:path dct:bibliographicCitation .
+
+skosapnl:Bronverwijzing-type 
+  a sh:PropertyShape ;
+  rdfs:label "soort"@nl ;
+  sh:description "Aanduiding van het type of genre van het brondocument."@nl ;
+  sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
+  sh:name "soort"@nl ;
+  sh:nodeKind sh:IRI ;
+  sh:path dct:type ;
+  sh:class skos:Concept .
 
 skosapnl:Collection-label
   a sh:PropertyShape ;
