@@ -103,6 +103,20 @@ dd{margin-left:0}
 <title>Nederlands Profiel voor Begrippencatalogi</title>
 <meta name="description" content="Hier komt de samenvatting van het werkdocument">
 <style>
+.hljs{display:block;overflow-x:auto;padding:.5em;color:#383a42;background:#fafafa}
+.hljs-comment,.hljs-quote{color:#717277;font-style:italic}
+.hljs-doctag,.hljs-formula,.hljs-keyword{color:#a626a4}
+.hljs-deletion,.hljs-name,.hljs-section,.hljs-selector-tag,.hljs-subst{color:#ca4706;font-weight:700}
+.hljs-literal{color:#0b76c5}
+.hljs-addition,.hljs-attribute,.hljs-meta-string,.hljs-regexp,.hljs-string{color:#42803c}
+.hljs-built_in,.hljs-class .hljs-title{color:#9a6a01}
+.hljs-attr,.hljs-number,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-pseudo,.hljs-template-variable,.hljs-type,.hljs-variable{color:#986801}
+.hljs-bullet,.hljs-link,.hljs-meta,.hljs-selector-id,.hljs-symbol,.hljs-title{color:#336ae3}
+.hljs-emphasis{font-style:italic}
+.hljs-strong{font-weight:700}
+.hljs-link{text-decoration:underline}
+</style>
+<style>
 var{position:relative;cursor:pointer}
 var[data-type]::after,var[data-type]::before{position:absolute;left:50%;top:-6px;opacity:0;transition:opacity .4s;pointer-events:none}
 var[data-type]::before{content:"";transform:translateX(-50%);border-width:4px 6px 0 6px;border-style:solid;border-color:transparent;border-top-color:#000}
@@ -179,19 +193,19 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     "repoURL": "pldn/nederlands-profiel-voor-stelselcatalogi"
   },
   "xref": "web-platform",
-  "publishISODate": "2022-08-05T00:00:00.000Z",
-  "generatedSubtitle": "Unofficial Draft 5 augustus 2022"
+  "publishISODate": "2022-08-12T00:00:00.000Z",
+  "generatedSubtitle": "Unofficial Draft 12 augustus 2022"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-UD"></head>
   <body class="h-entry" data-cite="HTML INFRA URL WEBIDL DOM FETCH"><div class="head">
     
     <h1 id="title" class="title">Nederlands Profiel voor Begrippencatalogi</h1> 
-    <p id="w3c-state">Unofficial Draft <time class="dt-published" datetime="2022-08-05">5 augustus 2022</time></p>
+    <p id="w3c-state">Unofficial Draft <time class="dt-published" datetime="2022-08-12">12 augustus 2022</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
         <dt>Deze versie:</dt><dd>
-                <a class="u-url" href="https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20220805/">https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20220805/</a>
+                <a class="u-url" href="https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20220812/">https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20220812/</a>
               </dd>
         <dt>Laatst gepubliceerde versie:</dt><dd>
                 <a href="https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi">https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi</a>
@@ -275,7 +289,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       This document is a draft of a potential specification. It has no official
       standing of any kind and does not represent the support or consensus of
       any standards organization.
-    </p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#algemene-overeengekomen-richtlijnen"><bdi class="secno">1.1 </bdi>Algemene overeengekomen richtlijnen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#rationale-en-use-cases"><bdi class="secno">2. </bdi>Rationale en use cases</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#rationale"><bdi class="secno">2.1 </bdi>Rationale</a></li><li class="tocline"><a class="tocxref" href="#use-cases"><bdi class="secno">2.2 </bdi>Use cases</a></li></ol></li><li class="tocline"><a class="tocxref" href="#profiel"><bdi class="secno">3. </bdi>Profiel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#begrip"><bdi class="secno">3.1 </bdi>Begrip</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#gestructureerde-beschrijving"><bdi class="secno">3.1.1 </bdi>Gestructureerde beschrijving</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#eigenschappen-en-relaties"><bdi class="secno">3.1.1.1 </bdi>Eigenschappen en relaties</a></li><li class="tocline"><a class="tocxref" href="#engere-begrippen"><bdi class="secno">3.1.1.2 </bdi>Engere begrippen</a></li><li class="tocline"><a class="tocxref" href="#gerelateerde-begrippen"><bdi class="secno">3.1.1.3 </bdi>Gerelateerde begrippen</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#begrippenkader"><bdi class="secno">3.2 </bdi>Begrippenkader</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#gestructureerde-beschrijving-0"><bdi class="secno">3.2.1 </bdi>Gestructureerde beschrijving</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#eigenschappen-en-relaties-0"><bdi class="secno">3.2.1.1 </bdi>Eigenschappen en relaties</a></li><li class="tocline"><a class="tocxref" href="#engere-begrippen-0"><bdi class="secno">3.2.1.2 </bdi>Engere begrippen</a></li><li class="tocline"><a class="tocxref" href="#gerelateerde-begrippen-0"><bdi class="secno">3.2.1.3 </bdi>Gerelateerde begrippen</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#collectie"><bdi class="secno">3.3 </bdi>Collectie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#gestructureerde-beschrijving-1"><bdi class="secno">3.3.1 </bdi>Gestructureerde beschrijving</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#eigenschappen-en-relaties-1"><bdi class="secno">3.3.1.1 </bdi>Eigenschappen en relaties</a></li><li class="tocline"><a class="tocxref" href="#engere-begrippen-1"><bdi class="secno">3.3.1.2 </bdi>Engere begrippen</a></li><li class="tocline"><a class="tocxref" href="#gerelateerde-begrippen-1"><bdi class="secno">3.3.1.3 </bdi>Gerelateerde begrippen</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#bron"><bdi class="secno">3.4 </bdi>Bron</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#gestructureerde-beschrijving-2"><bdi class="secno">3.4.1 </bdi>Gestructureerde beschrijving</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#eigenschappen-en-relaties-2"><bdi class="secno">3.4.1.1 </bdi>Eigenschappen en relaties</a></li><li class="tocline"><a class="tocxref" href="#engere-begrippen-2"><bdi class="secno">3.4.1.2 </bdi>Engere begrippen</a></li><li class="tocline"><a class="tocxref" href="#gerelateerde-begrippen-2"><bdi class="secno">3.4.1.3 </bdi>Gerelateerde begrippen</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#samenhang-met-andere-profielen"><bdi class="secno">4. </bdi>Samenhang met andere profielen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#waardelijst"><bdi class="secno">4.1 </bdi>Waardelijst</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel"><bdi class="secno">4.2 </bdi>Informatiemodel</a></li><li class="tocline"><a class="tocxref" href="#uitwisselingsstandaard"><bdi class="secno">4.3 </bdi>Uitwisselingsstandaard</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">5. </bdi>Conformance</a></li><li class="tocline"><a class="tocxref" href="#bijlagen"><bdi class="secno">6. </bdi>Bijlagen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#engels-woordenboek"><bdi class="secno">6.1 </bdi>Engels woordenboek</a></li></ol></li></ol></nav>
+    </p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#algemene-overeengekomen-richtlijnen"><bdi class="secno">1.1 </bdi>Algemene overeengekomen richtlijnen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#rationale-en-use-cases"><bdi class="secno">2. </bdi>Rationale en use cases</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#rationale"><bdi class="secno">2.1 </bdi>Rationale</a></li><li class="tocline"><a class="tocxref" href="#use-cases"><bdi class="secno">2.2 </bdi>Use cases</a></li></ol></li><li class="tocline"><a class="tocxref" href="#profiel"><bdi class="secno">3. </bdi>Profiel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#begrip"><bdi class="secno">3.1 </bdi>Begrip</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#gestructureerde-beschrijving"><bdi class="secno">3.1.1 </bdi>Gestructureerde beschrijving</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#eigenschappen-en-relaties"><bdi class="secno">3.1.1.1 </bdi>Eigenschappen en relaties</a></li><li class="tocline"><a class="tocxref" href="#engere-begrippen"><bdi class="secno">3.1.1.2 </bdi>Engere begrippen</a></li><li class="tocline"><a class="tocxref" href="#gerelateerde-begrippen"><bdi class="secno">3.1.1.3 </bdi>Gerelateerde begrippen</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#begrippenkader"><bdi class="secno">3.2 </bdi>Begrippenkader</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#gestructureerde-beschrijving-0"><bdi class="secno">3.2.1 </bdi>Gestructureerde beschrijving</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#eigenschappen-en-relaties-0"><bdi class="secno">3.2.1.1 </bdi>Eigenschappen en relaties</a></li><li class="tocline"><a class="tocxref" href="#engere-begrippen-0"><bdi class="secno">3.2.1.2 </bdi>Engere begrippen</a></li><li class="tocline"><a class="tocxref" href="#gerelateerde-begrippen-0"><bdi class="secno">3.2.1.3 </bdi>Gerelateerde begrippen</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#collectie"><bdi class="secno">3.3 </bdi>Collectie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#gestructureerde-beschrijving-1"><bdi class="secno">3.3.1 </bdi>Gestructureerde beschrijving</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#eigenschappen-en-relaties-1"><bdi class="secno">3.3.1.1 </bdi>Eigenschappen en relaties</a></li><li class="tocline"><a class="tocxref" href="#engere-begrippen-1"><bdi class="secno">3.3.1.2 </bdi>Engere begrippen</a></li><li class="tocline"><a class="tocxref" href="#gerelateerde-begrippen-1"><bdi class="secno">3.3.1.3 </bdi>Gerelateerde begrippen</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#bron"><bdi class="secno">3.4 </bdi>Bron</a></li></ol></li><li class="tocline"><a class="tocxref" href="#samenhang-met-andere-profielen"><bdi class="secno">4. </bdi>Samenhang met andere profielen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#waardelijst"><bdi class="secno">4.1 </bdi>Waardelijst</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel"><bdi class="secno">4.2 </bdi>Informatiemodel</a></li><li class="tocline"><a class="tocxref" href="#uitwisselingsstandaard"><bdi class="secno">4.3 </bdi>Uitwisselingsstandaard</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">5. </bdi>Conformance</a></li><li class="tocline"><a class="tocxref" href="#bijlagen"><bdi class="secno">6. </bdi>Bijlagen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#engels-woordenboek"><bdi class="secno">6.1 </bdi>Engels woordenboek</a></li></ol></li></ol></nav>
     <section data-format="markdown" id="inleiding"><div class="header-wrapper"><h2 id="x1-inleiding"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#inleiding" aria-label="Permalink for Section 1."></a></div>
 <p>De PLDN Werkgroep ‘Nederlands profiel voor stelselcatalogi’ heeft als ambitie een basisprofiel voor stelselcatalogi te beschrijven, waarmee verschillende stelselcatalogi interoperabel ingericht kunnen worden. Het doel is een samenhangend stelsel van stelselcatogi, waarbij ieder stelsel een samenhangend domein representeert. Voorbeelden zijn de stelselcatalogus voor de basisregistraties (de moeder van alle catalogi), de stelselcatalogus voor het DSO en de stelselcatalogus voor het Zorgeloos Vastgoed afsprakenstelsel. Daartoe willen we het uiteindelijke profiel als aanbevolen standaard of wellicht zelfs als pas-toe-leg-uit standaard aan te bieden aan het Forum Standaardisatie.</p>
 <p>Een stelselcatalogus bestaat uit:</p>
@@ -406,7 +420,7 @@ De context wordt in principe gevormd door het begrippenkader waarbinnen het begr
 <ul>
 <li>skos:prefLabel
 Een begip kent één voorkeursterm, deze voorkeursterm hoeft niet persé uniek te zijn. Het is goed mogelijk dat binnen een bepaald domein één term meerdere betekenissen heeft en dus gaat over meerdere begrippen, mogelijk is het doel van een Thesaurus zelfs om dit inzicht te geven.
-We gebruiken geen post of prefix om  voorkeurstermen context te geven of uniek te maken, tenzij deze post/prefix algemeen gebruikt wordt. Denk aan <em>Hengelo (OV)</em> en <em>Hengelo (GLD)</em>.
+We gebruiken geen post of prefix om voorkeurstermen context te geven of uniek te maken, tenzij deze post/prefix algemeen gebruikt wordt. Denk aan <em>Hengelo (OV)</em> en <em>Hengelo (GLD)</em>.
 Een begrip krijgt expliciet één rdfs:Label om compatibiliteit met bestaande tools te bevorderen.</li>
 </ul>
 <div class="header-wrapper"><h4 id="andere-labels">Andere labels</h4><a class="self-link" href="#andere-labels" aria-label="Permalink for this Section"></a></div>
@@ -527,6 +541,10 @@ narrowMatch: TODO</p>
 <td><a href="http://www.w3.org/2004/02/skos/core#hiddenLabel">hiddenLabel</a></td>
 </tr>
 <tr>
+<td>Soort</td>
+<td><a href="http://www.w3.org/ns/shacl#Literal">Literal</a></td>
+</tr>
+<tr>
 <td>Definitie</td>
 <td>Een zoekterm voor een begrip is een term die beoogd is om het begrip te vinden, maar verder verborgen blijft.</td>
 </tr>
@@ -553,6 +571,10 @@ narrowMatch: TODO</p>
 <tr>
 <td>Gebruikte term</td>
 <td><a href="http://www.w3.org/2004/02/skos/core#notation">notation</a></td>
+</tr>
+<tr>
+<td>Soort</td>
+<td><a href="http://www.w3.org/ns/shacl#Literal">Literal</a></td>
 </tr>
 <tr>
 <td>Definitie</td>
@@ -590,6 +612,10 @@ narrowMatch: TODO</p>
 <td>Gebruikte term</td>
 <td><a href="http://www.w3.org/2004/02/skos/core#example">example</a></td>
 </tr>
+<tr>
+<td>Soort</td>
+<td><a href="http://www.w3.org/ns/shacl#IRIOrLiteral">IRIOrLiteral</a></td>
+</tr>
 </tbody></table>
 <table>
 <thead>
@@ -605,6 +631,10 @@ narrowMatch: TODO</p>
 <tr>
 <td>Gebruikte term</td>
 <td><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></td>
+</tr>
+<tr>
+<td>Soort</td>
+<td><a href="http://www.w3.org/ns/shacl#Literal">Literal</a></td>
 </tr>
 <tr>
 <td>Definitie</td>
@@ -1087,6 +1117,10 @@ narrowMatch: TODO</p>
 <td><a href="http://www.w3.org/2004/02/skos/core#scopeNote">scopeNote</a></td>
 </tr>
 <tr>
+<td>Soort</td>
+<td><a href="http://www.w3.org/ns/shacl#Literal">Literal</a></td>
+</tr>
+<tr>
 <td>Definitie</td>
 <td>Een toelichting voor een begrip is een notitie die meer duidelijk geeft over de betekenis of gebruik van een begrip</td>
 </tr>
@@ -1121,6 +1155,10 @@ narrowMatch: TODO</p>
 <tr>
 <td>Gebruikte term</td>
 <td><a href="http://www.w3.org/2004/02/skos/core#altLabel">altLabel</a></td>
+</tr>
+<tr>
+<td>Soort</td>
+<td><a href="http://www.w3.org/ns/shacl#Literal">Literal</a></td>
 </tr>
 <tr>
 <td>Definitie</td>
@@ -1198,6 +1236,10 @@ narrowMatch: TODO</p>
 <td>Gebruikte term</td>
 <td><a href="http://www.w3.org/2004/02/skos/core#historyNote">historyNote</a></td>
 </tr>
+<tr>
+<td>Soort</td>
+<td><a href="http://www.w3.org/ns/shacl#Literal">Literal</a></td>
+</tr>
 </tbody></table>
 <table>
 <thead>
@@ -1263,6 +1305,10 @@ narrowMatch: TODO</p>
 <td><a href="http://www.w3.org/2004/02/skos/core#editorialNote">editorialNote</a></td>
 </tr>
 <tr>
+<td>Soort</td>
+<td><a href="http://www.w3.org/ns/shacl#Literal">Literal</a></td>
+</tr>
+<tr>
 <td>Definitie</td>
 <td>Een redactionele opmerking voor een begrip is een notitie voor de redacteur, vertaler of beheerder van het begrippenkader.</td>
 </tr>
@@ -1300,11 +1346,11 @@ narrowMatch: TODO</p>
 </tr>
 <tr>
 <td>Soort</td>
-<td><a href="http://www.w3.org/ns/shacl#IRI">IRI</a></td>
+<td><a href="http://www.w3.org/ns/shacl#BlankNodeOrIRI">BlankNodeOrIRI</a></td>
 </tr>
 <tr>
 <td>Definitie</td>
-<td>Een bron voor een begrip is een gerelateerde brondocument waaruit de betekenis van het begrip is afgeleid.</td>
+<td>Een bron voor een begrip is een gerelateerd brondocument waaruit de betekenis van het begrip is afgeleid.</td>
 </tr>
 <tr>
 <td>Bron</td>
@@ -1329,6 +1375,10 @@ narrowMatch: TODO</p>
 <tbody><tr>
 <td>Gebruikte term</td>
 <td><a href="http://www.w3.org/2004/02/skos/core#changeNote">changeNote</a></td>
+</tr>
+<tr>
+<td>Soort</td>
+<td><a href="http://www.w3.org/ns/shacl#Literal">Literal</a></td>
 </tr>
 </tbody></table>
 </section><section id="engere-begrippen"><div class="header-wrapper"><h5 id="x3-1-1-2-engere-begrippen"><bdi class="secno">3.1.1.2 </bdi>Engere begrippen</h5><a class="self-link" href="#engere-begrippen" aria-label="Permalink for Section 3.1.1.2"></a></div>
@@ -2163,184 +2213,50 @@ narrowMatch: TODO</p>
 
       <section id="bron"><div class="header-wrapper"><h3 id="x3-4-bron"><bdi class="secno">3.4 </bdi>Bron</h3><a class="self-link" href="#bron" aria-label="Permalink for Section 3.4"></a></div>
         
-        <div data-format="markdown"><p>Specificatie voor bronverwijzingen van concepten.</p>
-<p>Uitgangspunten:</p>
-<ul>
-<li>we nemen alleen functionaliteit op waarvoor we een bestaande business case kennen.</li>
-<li>bestaande business cases die we binnen scope verklaren moeten in het voorgestelde model kunnen worden uitgedrukt.</li>
-<li>we gebruiken boor de definite in RDF enkel bestaande upper ontologies en definiëren dus geen nieuwe klassen of eigenschappen.&nbsp;</li>
-</ul>
-<p>Betekenis van de symbolen:</p>
-<p><img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/check.svg" alt="(tik)"> Deze specificatie voldoet en er zijn geen betere alternatieven voorgesteld</p>
-<p><img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/help_16.svg" alt="(vraag)"> Deze specificatie is nog onder discussie</p>
-<p><img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/error.svg" alt="(fout)"> Deze specificatie kent problematische bezwaren</p>
-<div class="header-wrapper"><h2 id="gewenst-patroon">Gewenst patroon</h2><a class="self-link" href="#gewenst-patroon" aria-label="Permalink for this Section"></a></div>
-<p>We zijn het eens over het gewenste patroon.&nbsp;</p>
-<p>Een <strong>Concept</strong> heeft een eigenschap "<strong>bron</strong>".</p>
-<p>De waarde van "<strong>bron</strong>" is een resource van het type "<strong>Bronverwijzing</strong>".</p>
-<p>Een <strong>Bronverwijzing</strong> heeft een compact, voor de mens leesbaar <strong>label</strong> waarmee de <strong>bron</strong> wordt aangeduid, een <strong>url</strong> als de bron een vindplaats heeft op het web en een uitgebreide <strong>omschrijving</strong> waarin de bron kan worden toegelicht of geciteerd.</p>
-<p>Schematisch:</p>
-<ul>
-<li><strong>Resource Concept</strong> <em><img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/check.svg" alt="(tik)"></em><ul>
-<li><strong>eigenschap bron</strong> <em><img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/check.svg" alt="(tik)"></em><br>Definitie: <em>Authentieke bron van de definitie van het concept.</em> &nbsp;<em><img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/check.svg" alt="(tik)"></em><br>Toelichting: Met "bron" bedoelen we de bron van de definitie. Vaak willen we graag een authentieke bron. Kunnen we authentieke bron ook nog definiëren?<ul>
-<li><strong>Resource Bronverwijzing</strong> <em><img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/check.svg" alt="(tik)"></em><br>Definitie: <em>Vindplaats van een informatiebron.</em> <em><img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/check.svg" alt="(tik)"></em><ul>
-<li><strong>eigenschap label <img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/check.svg" alt="(tik)"></strong><br>Definitie: <em>Compacte, voor de mens leesbare aanduiding van de bron. <img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/check.svg" alt="(tik)"></em> </li>
-<li><strong>eigenschap url <img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/check.svg" alt="(tik)"></strong><br>Definitie: <em>Vindplaats van de bron op internet <img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/check.svg" alt="(tik)"></em> </li>
-<li><strong>eigenschap omschrijving <img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/check.svg" alt="(tik)"></strong><br>Definitie: <em>Uitgebreide, voor de mens leesbare beschrijving van de bron, of citatie uit de bron.</em> <em><img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/check.svg" alt="(tik)"></em><br>Toelichting: Er is soms behoefte aan een veld waarin meer tekst kan worden opgenomen dan in het compacte label, bijvoorbeeld een nadere aanduiding van een plek in de bron of een citaat uit de bron. De vraag is of we voor verschillende doeleinden verschillende velden willen definiëren of dat we het licht willen houden met een veld met een minder strikte definitie.<br>Hebben we genoeg aan dit vrije invulveld, of is er behoefte aan een machine leesbare specificatie van bijvoorbeeld type <img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/help_16.svg" alt="(vraag)"> Een optie kan nog zijn om dit in een extra uitbreiding van het profiel te specificeren door eigenschappen als subPropertyOf <em>omschrijving</em>.<img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/help_16.svg" alt="(vraag)"></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<div class="header-wrapper"><h2 id="uitdrukking-in-rdf">Uitdrukking in RDF</h2><a class="self-link" href="#uitdrukking-in-rdf" aria-label="Permalink for this Section"></a></div>
-<ul>
-<li><strong>Resource Concept</strong><br>RDF: <em>skos:Concept</em> <img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/check.svg" alt="(tik)"><ul>
-<li><strong>eigenschap bron</strong><br>RDF: <em>dcterms:source <img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/check.svg" alt="(tik)"></em> <ul>
-<li><strong>Resource Bronverwijzing</strong><br>RDF: <em>foaf:Document</em> <img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/check.svg" alt="(tik)"> De definitie in foaf, “<em>The</em> <a href="http://xmlns.com/foaf/spec/#term_Document"><code>_Document_</code></a> <em>class represents those things which are, broadly conceived, 'documents'.”</em> heeft de minste beperkingen van de onderzochte alternatieven en sluit aan op het gebruik van foaf:page.<br>Alternatief RDF: <em>dctype:Text <img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/error.svg" alt="(fout)"></em> Dublin Core definieert <a href="http://purl.org/dc/dcmitype/Text">http://purl.org/dc/dcmitype/Text</a> (dus niet in de dcterms namespace <a href="http://purl.org/dc/terms/"><code>http://purl.org/dc/terms/</code></a>, maar in de dctype namespace) De definitie "<em>A resource consisting primarily of words for reading.</em>" lijkt ook bruikbaar voor ons doel.<br>Alternatief: <em>dct:BibliographicResource <img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/error.svg" alt="(fout)"></em> te veel associate met boeken.<ul>
-<li><strong>eigenschap label</strong><br>RDF: <em>rdfs:label</em> <img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/check.svg" alt="(tik)"><br>Alternatief RDF: <em>dcterms:title <img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/error.svg" alt="(fout)"></em> Titel is meer een aanduiding van een heel werk, bijvoorbeeld van een wet. In de meeste business cases verwachten we hier de aanduiding van onderdeel van een werk, bijvoorbeeld een wets-artikel.</li>
-<li><strong>eigenschap url</strong><br>RDF: <em>foaf:page</em> <img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/check.svg" alt="(tik)"> De definitie in foaf: <em>A page or document about this thing.</em><br>Alternatief RDF:&nbsp; <em>rdfs:seeAlso <img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/error.svg" alt="(fout)"></em> Wordt met name gebruikt om naar RDF-documenten te verwijzen. Zie: <a href="https://www.w3.org/wiki/UsingSeeAlso">https://www.w3.org/wiki/UsingSeeAlso</a><br>Alternatief RDF: &nbsp;<a href="https://www.w3.org/TR/powder-dr/#describedby"><code>wdrs:describedby</code></a> <em><img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/error.svg" alt="(fout)"></em> old school, te specifiek voor non-web-resources<br>Alternatief RDF <em>schema:url</em> <img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/error.svg" alt="(fout)"> is niet altijd een url en definitie in <a href="http://schema.org">schema.org</a> is te vaag<br>Alternatief RDF: <em>dcterms:identifier</em> <img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/error.svg" alt="(fout)"> de url is één, van mogelijk meerdere, vindplaatsen van een representatie van de bron. Dat is iets anders dan de unieke identifier van de bron.</li>
-<li><strong>eigenschap omschrijving</strong><br>RDF: <em>dcterms:description</em> <img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/check.svg" alt="(tik)"> De definitie in Dublin Core: <em>An account of the resource.</em><br>Alternatief RDF: <em>rdfs:comment <img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/error.svg" alt="(fout)"></em> is minder specifiek.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>Mogelijke uitbreiding op dit profiel:</p>
-<ul>
-<li><strong>Resource Bronverwijzing</strong><br>RDF: <em>foaf:Document</em> <img src="https://confluence-koop.overheid.nl/s/-yucir9/8703/4mhn8a/_/images/icons/emoticons/check.svg" alt="(tik)">&nbsp;<ul>
-<li><strong>eigenschap soort</strong><br>RDF: <em>dct:type</em><br>Conform DCAT (<a href="https://www.w3.org/TR/vocab-dcat/#Property:resource_type">https://www.w3.org/TR/vocab-dcat/#Property:resource_type</a>), met waardebereik een waarde uit <a href="https://id.loc.gov/vocabulary/marcgt.html">https://id.loc.gov/vocabulary/marcgt.html</a></li>
-</ul>
-</li>
-</ul>
-<div class="header-wrapper"><h2 id="business-cases">Business cases</h2><a class="self-link" href="#business-cases" aria-label="Permalink for this Section"></a></div>
-<div class="header-wrapper"><h3 id="wetsartikelen">Wetsartikelen</h3><a class="self-link" href="#wetsartikelen" aria-label="Permalink for this Section"></a></div>
-<p>Voorbeeld bronverwijzing naar een wetsartikel op wetten.nl. Het label is het opschrift en de url is het webadres uit de <a href="https://linkeddata.overheid.nl/front/portal/linktool-bwb-verfijnen?ext-id=http%3A%2F%2Fwetten.overheid.nl%2Fid%2FBWBR0005416%2F2022-05-01%2F0%2FTiteldeelI%2FArtikel2&amp;geldigheidsdatum=2022-05-01&amp;zichtdatum=2022-05-01">linktool</a>. De omschrijving is bijvoorbeeld een citaat uit het wetsartikel.</p>
-<p><strong>eigenschap label</strong>: <em>Gemeentewet Art. 2</em></p>
-<p><strong>eigenschap url</strong>: <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0005416&amp;titeldeel=I&amp;artikel=2&amp;z=2022-05-01&amp;g=2022-05-01">https://wetten.overheid.nl/jci1.3:c:BWBR0005416&amp;titeldeel=I&amp;artikel=2&amp;z=2022-05-01&amp;g=2022-05-01</a></p>
-<p><strong>eigenschap omschrijving</strong>: <em>In deze wet wordt verstaan onder ingezetenen: zij die hun werkelijke woonplaats in de gemeente hebben.</em></p>
-<p><em><strong>eigenschap soort</strong>:</em> <a href="http://id.loc.gov/vocabulary/marcgt/leg">http://id.loc.gov/vocabulary/marcgt/leg</a>("legislation")</p>
-<div class="header-wrapper"><h3 id="twn">TWN</h3><a class="self-link" href="#twn" aria-label="Permalink for this Section"></a></div>
-<p>Voorbeeld van een bronverwijzing naar TWN. TWN verwijst naar literatuur die geen vindplaats op internet heeft.</p>
-<p><strong>eigenschap label</strong>: <em>TWN Abies P.Miller 1754</em></p>
-<p><strong>eigenschap url:</strong> <a href="https://twnlist.aquadesk.nl/">https://twnlist.aquadesk.nl/</a></p>
-<p><strong>eigenschap omschrijving</strong>: <em>M0001: Van der Meijden, R. (2005): Heukels' Flora van Nederland. Wolters-Noordhoff, Groningen/Houten (23e druk), 685 pp.</em><br>(KOOS, kun jij de hele omschrijving uit TWM hier plakken en de businesscase verder toelichten).</p>
-<p><strong>eigenschap soort</strong>: &nbsp;<a href="http://id.loc.gov/vocabulary/marcgt/boo">http://id.loc.gov/vocabulary/marcgt/boo</a> ("book")</p>
-<div class="header-wrapper"><h2 id="andere-business-cases">Andere business cases</h2><a class="self-link" href="#andere-business-cases" aria-label="Permalink for this Section"></a></div>
-<p>Wie wil kan hier eigen business cases toevoegen om te zien of dat werkbaar is. Bijvoorbeeld definities uit NEN-normen?</p>
+        <div data-format="markdown"><p>Een bron voor een begrip is een gerelateerd document waaruit de betekenis van het begrip is afgeleid. Het is good practice om voor ieder begrip bronverwijzingen op te nemen. Zo is het duidelijk waar een begrip op gebasseerd is. Dit verhoogd de kwaliteit van het begrip en vooral ook de betrouwbaarheid.</p>
+<p>Hiervoor hebben we het volgende patroon:</p>
+<p>Een <strong>begrip</strong> heeft een eigenschap '<strong>bron</strong>'. Het is verplicht om hier dct:source voor te gebruiken.
+De waarde van <strong>bron</strong> is een non-literal resource.
+Het is aangeraden om een bron te beschrijven met een compact, voor de mens leesbaar <strong>label</strong>, een uitgebreide <strong>omschrijving</strong>, een <strong>url</strong> als de bron een vindplaats heeft op het web en anders een <strong>citaat</strong> waarin de citeerinformatie van de bron in een bepaalde citeerstijl is vastgelegd.</p>
+<p>De bron kan een heel document of een fragment daarvan zijn, denk aan een Boek, een hoofdstuk of een paragraaf daarvan.</p>
+<h1>Bron</h1>
+<p>Een begrip kan zijn ontleend aan een op het web vindbare bron. Dit kan een (versie van) een bepaald werk zijn of een ander documentair iets waarin een beschrijving van het begrip is te vinden. Bronnen kunnen wel of niet beschreven zijn in RDF. Ook kan een begrip ontleend zijn aan een niet op het web vindbare bron. De bron kan een heel document of een fragment daarvan zijn, denk aan een Boek, een hoofdstuk of een paragraaf.</p>
+<p>In ieder scenario willen we voldoende informatie hebben over de bron zodat we deze kunnen vinden. Dit doen we op basis van een IRI, url en citaat.</p>
+<p>Wanneer een bron als linked data op het web ontsloten is neem je als waarde van dct:subject de IRI van de bron. Dit kan bijvoorbeeld een instance van foaf:Document of dct:BibliographicResource zijn. Hoe deze precies beschreven is maakt voor de bronverwijzing niet uit.</p>
+<p>Voorbeeld:</p>
+<pre><code aria-busy="false" class="hljs css">...
+graph:pldn-begrippen {
+    pldn:Begrip-<span class="hljs-number">1</span> dct:subject ex:Doc-<span class="hljs-number">42</span> .
+}
+
+graph ex:ex-Documenten {
+    ex:Doc-<span class="hljs-number">42</span> a foaf:Document ;
+      rdfs:label <span class="hljs-string">"Het document met alle antwoorden"</span>@nl .
+}
+</code></pre>
+<p>Het komt voor dat de bron niet als linked data ontsloten is. In dat geval kan de beheerder van het begrip zelf een beschrijving van de bron maken.
+Hiervoor kunnen IRI's of blanknodes gemaakt worden. Wanneer de bron op vindbaar is op het web kan foaf:page (url) gebruikt worden om naar deze vindplaats te verwijzen. Wanneer de bron niet op het web vindbaar is, kan dct:bibliographicCitation gebruikt worden om citeerinformatie vast te leggen. Het kan zijn dat een bron zowel een url als een citaat kent.</p>
+<p>De waarde van foaf:page is een IRI.</p>
+<p>De waarde van dct:bibliographicResource is een literal.</p>
+<p>In deze gevallen is het verplicht om middels rdf:label de naam van de resource aan te geven. Het wordt aangeraden om een omschrijving te geven van de bron.</p>
+<p>Voorbeeld:</p>
+<pre><code aria-busy="false" class="hljs css">...
+graph:pldn-begrippen {
+    pldn:Begrip-<span class="hljs-number">2</span> dct:subject [ rdfs:label <span class="hljs-string">"Gemeentewet Art. 2"</span>@nl ;
+                              foaf:url https://wetten.overheid.nl/jci1.<span class="hljs-number">3</span>:c:BWBR0005416&amp;titeldeel=I&amp;artikel=<span class="hljs-number">2</span>&amp;z=<span class="hljs-number">2022</span>-<span class="hljs-number">05</span>-<span class="hljs-number">01</span>&amp;g=<span class="hljs-number">2022</span>-<span class="hljs-number">05</span>-<span class="hljs-number">01</span> ;
+                              dct:description <span class="hljs-string">"In deze wet wordt verstaan onder ingezetenen: zij die hun werkelijke woonplaats in de gemeente hebben."</span>@nl ] ;
+    .
+    pldn:Begrip-<span class="hljs-number">3</span> dct:subject [ rdfs:label <span class="hljs-string">"Heukels' Flora van Nederland"</span>@nl ;
+                                dct:bibliographicCitation <span class="hljs-string">"Van der Meijden, R. (2005): Heukels' Flora van Nederland. Wolters-Noordhoff, Groningen/Houten (23e druk), 685 pp."</span> ] ;
+    .
+}
+</code></pre>
+<h1>Typering</h1>
+<p>De bron zelf kan op verschillende manieren beschreven worden, dat ligt immers bij de bronhouder. Er bestaan verschillende standaard vocabulaires die een oplossing hebben voor het beschrijven van en verwijzen naar bronnen, ook zonder de term bron te gebruiken. Denk bijvoorbeeld aan <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">dcterms</a>, <a href="http://www.sparontologies.net/ontologies/frbr">FRBR</a> <a href="https://bibliontology.com/">BIBO</a> en <a href="https://lov.linkeddata.es/dataset/lov/vocabs/foaf">FOAF</a>, maar ook nationale of sectorale-standaarden. Er is geen defacto standaard die van toepassing is op wat binnen dit profiel onder bron wordt verstaan. Om die reden leggen we geen restricties op de typering van de resource die we als bron voor een begrip aanmerken.</p>
+<p><em>Het is good practice om bronnen met <em>rdf:type</em> te typeren met foaf:Document.</em> In het profiel leggen we hier echter geen restrictiesop omdat niet alle gepubliceerde bronnen deze goodpractive volgen. Hier toch een restrictie op zetten zou integratie niet bevorderen.</p>
+<p><em>Het is good practice om bronnen met <em>dct:type</em> te classificeren aan de hand van een gecontroleerde vocabulaire, ofwel een classificatie schema</em>. Een voorbeeld van zo'n classificatie schema is <a href="http://id.loc.gov/vocabulary/marcgt">MARC Genre/Terms Scheme</a>. Dit is in aanvulling op een rdf:type.</p>
 </div>
-        <section data-format="markdown" id="gestructureerde-beschrijving-2"><div class="header-wrapper"><h4 id="x3-4-1-gestructureerde-beschrijving"><bdi class="secno">3.4.1 </bdi>Gestructureerde beschrijving</h4><a class="self-link" href="#gestructureerde-beschrijving-2" aria-label="Permalink for Section 3.4.1"></a></div>
-<table>
-<thead>
-<tr>
-<th>brondocument<div style="width:325px"></div></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Voorkeursterm</td>
-<td>brondocument</td>
-</tr>
-<tr>
-<td>Definitie</td>
-<td>Een brondocument is een boek, een artikel of enig ander documentair object</td>
-</tr>
-<tr>
-<td>Bron</td>
-<td><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/BibliographicResource">https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/BibliographicResource</a></td>
-</tr>
-<tr>
-<td>Bron</td>
-<td><a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a></td>
-</tr>
-</tbody></table>
-<section id="eigenschappen-en-relaties-2"><div class="header-wrapper"><h5 id="x3-4-1-1-eigenschappen-en-relaties"><bdi class="secno">3.4.1.1 </bdi>Eigenschappen en relaties</h5><a class="self-link" href="#eigenschappen-en-relaties-2" aria-label="Permalink for Section 3.4.1.1"></a></div>
-<table>
-<thead>
-<tr>
-<th>label<div style="width:325px"></div></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Gebruikte term</td>
-<td><a href="http://www.w3.org/2000/01/rdf-schema#label">label</a></td>
-</tr>
-<tr>
-<td>Soort</td>
-<td><a href="http://www.w3.org/ns/shacl#Literal">Literal</a></td>
-</tr>
-<tr>
-<td>Min kardinaliteit</td>
-<td>1</td>
-</tr>
-</tbody></table>
-</section><section id="engere-begrippen-2"><div class="header-wrapper"><h5 id="x3-4-1-2-engere-begrippen"><bdi class="secno">3.4.1.2 </bdi>Engere begrippen</h5><a class="self-link" href="#engere-begrippen-2" aria-label="Permalink for Section 3.4.1.2"></a></div>
-<table>
-<thead>
-<tr>
-<th>bron<div style="width:325px"></div></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Voorkeursterm</td>
-<td>bron</td>
-</tr>
-<tr>
-<td>Definitie</td>
-<td>Een bron voor een begrip is een gerelateerde brondocument waaruit de betekenis van het begrip is afgeleid.</td>
-</tr>
-<tr>
-<td>Bron</td>
-<td><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source">https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source</a></td>
-</tr>
-<tr>
-<td>Bron</td>
-<td><a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a></td>
-</tr>
-<tr>
-<td>Alternative label</td>
-<td>herkomst</td>
-</tr>
-</tbody></table>
-</section><section id="gerelateerde-begrippen-2"><div class="header-wrapper"><h5 id="x3-4-1-3-gerelateerde-begrippen"><bdi class="secno">3.4.1.3 </bdi>Gerelateerde begrippen</h5><a class="self-link" href="#gerelateerde-begrippen-2" aria-label="Permalink for Section 3.4.1.3"></a></div>
-<table>
-<thead>
-<tr>
-<th>begrip<div style="width:325px"></div></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Voorkeursterm</td>
-<td>begrip</td>
-</tr>
-<tr>
-<td>Definitie</td>
-<td>Concepten zijn de eenheden van denken - ideeën, betekenissen of (categorieën van) objecten en gebeurtenissen - die ten grondslag liggen aan veel kennisorganisatiesystemen.</td>
-</tr>
-<tr>
-<td>Bron</td>
-<td><a href="http://www.w3.org/2004/02/skos/core#">http://www.w3.org/2004/02/skos/core#</a></td>
-</tr>
-<tr>
-<td>Bron</td>
-<td><a href="https://www.w3.org/TR/2009/REC-skos-reference-20090818/#concepts">https://www.w3.org/TR/2009/REC-skos-reference-20090818/#concepts</a></td>
-</tr>
-<tr>
-<td>Bron</td>
-<td><a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12</a></td>
-</tr>
-<tr>
-<td>Toelichting</td>
-<td>De belangrijkste toepassing voor een thesaurus is het ophalen van informatie, waarbij het doel is om naar begrippen te zoeken. Begrippen worden weergegeven door termen. Elke term in een thesaurus moet een enkel begrip (of denkeenheid) vertegenwoordigen. Begrippen kunnen variëren van eenvoudig (bijv. katten) tot zeer complex (bijv. rassendiscriminatie onder etnische minderheden). Samengestelde termen of zinsdelen zijn over het algemeen nodig om de meer complexe begrippen uit te drukken.</td>
-</tr>
-</tbody></table>
-</section></section>
+        <section data-format="markdown" class="respec-offending-element" title="Alle secties moeten beginnen met een `h2-6` element." id="respec-offender-alle-secties-moeten-beginnen-met-een-h2-6-element"></section>
       </section>
     </section>
 
@@ -3014,6 +2930,22 @@ narrowMatch: TODO</p>
 <tr>
 <td>Toelichting</td>
 <td>The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system.</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>citaat<div style="width:325px"></div></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Voorkeursterm</td>
+<td>bibliographic citation</td>
+</tr>
+<tr>
+<td>Definitie</td>
+<td>A bibliographic reference for the resource</td>
 </tr>
 </tbody></table>
 <table>
