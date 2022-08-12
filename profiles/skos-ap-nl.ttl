@@ -303,7 +303,7 @@ skosapnl:Concept-source
   sh:name "bron"@nl ;
   sh:order 6 ;
   sh:nodeKind sh:BlankNodeOrIRI ;
-  sh:node skosapnl:Bronverwijzing ;
+  sh:node skosapnl:BibliographicResource ;
   sh:path dct:source .
 
 skosapnl:LabelsAndDescriptionPropertyGroup
@@ -410,18 +410,18 @@ skosapnl:MatchingRelationshipsPropertyGroup
     "Harmonisatierelaties"@nl ;
   sh:order 5 .
 
-skosapnl:Bronverwijzing
+skosapnl:BibliographicResource
   a sh:NodeShape ;
   rdfs:comment "Een bron is een document, of fragment van een document, die als bron dient voor een bepaald begrip."@nl ;
   rdfs:label "Bronverwijzing"@nl ;
   sh:property
-    skosapnl:Bronverwijzing-label ,
-    skosapnl:Bronverwijzing-page ,
-    skosapnl:Bronverwijzing-description ,
-    skosapnl:Bronverwijzing-bibliographicCitation ,
-    skosapnl:Bronverwijzing-type .
+    skosapnl:BibliographicResource-label ,
+    skosapnl:BibliographicResource-page ,
+    skosapnl:BibliographicResource-description ,
+    skosapnl:BibliographicResource-bibliographicCitation ,
+    skosapnl:BibliographicResource-type .
 
-skosapnl:Bronverwijzing-label
+skosapnl:BibliographicResource-label
   a sh:PropertyShape ;
   rdfs:label "label"@nl ;
   sh:datatype rdf:langString ;
@@ -432,7 +432,7 @@ skosapnl:Bronverwijzing-label
   sh:nodeKind sh:Literal ;
   sh:path rdfs:label .
 
-skosapnl:Bronverwijzing-page
+skosapnl:BibliographicResource-page
   a sh:PropertyShape ;
   rdfs:label "url"@nl ;
   sh:description "Vindplaats van de bron op internet."@nl ;
@@ -441,7 +441,7 @@ skosapnl:Bronverwijzing-page
   sh:nodeKind sh:IRI ;
   sh:path foaf:page .
 
-skosapnl:Bronverwijzing-description
+skosapnl:BibliographicResource-description
   a sh:PropertyShape ;
   rdfs:label "omschrijving"@nl ;
   sh:datatype rdf:langString ;
@@ -451,7 +451,7 @@ skosapnl:Bronverwijzing-description
   sh:nodeKind sh:Literal ;
   sh:path rdfs:label .
 
-skosapnl:Bronverwijzing-bibliographicCitation
+skosapnl:BibliographicResource-bibliographicCitation
   a sh:PropertyShape ;
   rdfs:label "citatie"@nl ;
   sh:description "Een reeks gegevens waarmee een document of fragment daarvan gevonden kan worden. Er bestaan verschillende citeerstijlen zoals IEEE, APA of MLA."@nl ;
@@ -461,7 +461,7 @@ skosapnl:Bronverwijzing-bibliographicCitation
   sh:datatype xsd:string ;
   sh:path dct:bibliographicCitation .
 
-skosapnl:Bronverwijzing-type
+skosapnl:BibliographicResource-type
   a sh:PropertyShape ;
   rdfs:label "soort"@nl ;
   sh:description "Aanduiding van het type of genre van het brondocument."@nl ;
