@@ -45,7 +45,7 @@ beg-nps:BibliographicResource
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
   skos:related 
     beg-nps:Concept ,
-    beg-nps:BibliographicCitation
+    beg-nps:BibliographicCitation ;
   dct:source
     <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/BibliographicResource> ,
     dct: ,
