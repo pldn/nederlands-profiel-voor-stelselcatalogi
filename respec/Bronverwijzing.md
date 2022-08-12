@@ -45,6 +45,9 @@ graph:pldn-begrippen {
                               foaf:url https://wetten.overheid.nl/jci1.3:c:BWBR0005416&titeldeel=I&artikel=2&z=2022-05-01&g=2022-05-01 ;
                               dct:description "In deze wet wordt verstaan onder ingezetenen: zij die hun werkelijke woonplaats in de gemeente hebben."@nl ] ;
     .
+    pldn:Begrip-3 dct:subject [ rdfs:label "Heukels' Flora van Nederland"@nl ;
+                                dct:bibliographicCitation "Van der Meijden, R. (2005): Heukels' Flora van Nederland. Wolters-Noordhoff, Groningen/Houten (23e druk), 685 pp." ] ;
+    .
 }
 ```
 
