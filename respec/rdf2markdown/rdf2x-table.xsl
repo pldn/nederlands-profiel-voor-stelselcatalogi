@@ -57,7 +57,7 @@
   </xsl:template>
   
   <xsl:template match="sh:datatype" mode="properties">
-    <xsl:text>|Soort|[</xsl:text>
+    <xsl:text>|Datatype|[</xsl:text>
     <xsl:value-of select="substring-after(@rdf:resource,'#')"/>
     <xsl:text>](</xsl:text>
     <xsl:value-of select="./@rdf:resource"/>
