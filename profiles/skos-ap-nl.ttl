@@ -7,9 +7,9 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix skosapnl: <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#> .
 @prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix dcat: <http://www.w3.org/ns/dcat#>.
-@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 
@@ -389,14 +389,14 @@ skosapnl:Concept-closeMatch
 
 skosapnl:MatchingRelationshipsPropertyGroup
   a sh:PropertyGroup ;
-  rdfs:label 
+  rdfs:label
     "Matching Relationships"@en ,
     "Harmonisatierelaties"@nl ;
   sh:order 5 .
 
 skosapnl:Bronverwijzing
   a sh:NodeShape ;
-  rdfs:comment "Een bronverwijzing is een document, of fragment van een document, die als bron dient voor een bepaald begrip."@nl ;
+  rdfs:comment "Een bron is een document, of fragment van een document, die als bron dient voor een bepaald begrip."@nl ;
   rdfs:label "Bronverwijzing"@nl ;
   sh:property
     skosapnl:Bronverwijzing-label ,
@@ -405,10 +405,60 @@ skosapnl:Bronverwijzing
     skosapnl:Bronverwijzing-bibliographicCitation ,
     skosapnl:Bronverwijzing-type .
 
+skosapnl:Bronverwijzing-label
+  a sh:PropertyShape ;
+  rdfs:label "label"@nl ;
+  sh:datatype rdf:langString ;
+  sh:description "Compacte, voor de mens leesbare aanduiding van de bron."@nl ;
+  sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
+  sh:minCount 1 ;
+  sh:name "label"@nl ;
+  sh:nodeKind sh:Literal ;
+  sh:path rdfs:label .
+
+skosapnl:Bronverwijzing-page
+  a sh:PropertyShape ;
+  rdfs:label "url"@nl ;
+  sh:description "Vindplaats van de bron op internet."@nl ;
+  sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
+  sh:name "url"@nl ;
+  sh:nodeKind sh:IRI ;
+  sh:path foaf:page .
+
+skosapnl:Bronverwijzing-description
+  a sh:PropertyShape ;
+  rdfs:label "omschrijving"@nl ;
+  sh:datatype rdf:langString ;
+  sh:description "Uitgebreide, voor de mens leesbare beschrijving van de bron"@nl ;
+  sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
+  sh:name "omschrijving"@nl ;
+  sh:nodeKind sh:Literal ;
+  sh:path rdfs:label .
+
+skosapnl:Bronverwijzing-bibliographicCitation
+  a sh:PropertyShape ;
+  rdfs:label "citatie"@nl ;
+  sh:description "Een reeks gegevens waarmee een document of fragment daarvan gevonden kan worden. Er bestaan verschillende citeerstijlen zoals IEEE, APA of MLA."@nl ;
+  sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
+  sh:name "citatie"@nl ;
+  sh:nodeKind sh:Literal ;
+  sh:datatype xsd:string ;
+  sh:path dct:bibliographicCitation .
+
+skosapnl:Bronverwijzing-type
+  a sh:PropertyShape ;
+  rdfs:label "soort"@nl ;
+  sh:description "Aanduiding van het type of genre van het brondocument."@nl ;
+  sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
+  sh:name "soort"@nl ;
+  sh:nodeKind sh:IRI ;
+  sh:path dct:type ;
+  sh:class skos:Concept .
+
 skosapnl:HierarchicalRelationships
   a sh:PropertyGroup ;
-  rdfs:label 
-    "Hierarchical Relationships"@en , 
+  rdfs:label
+    "Hierarchical Relationships"@en ,
     "Hierarchische relaties"@nl ;
   sh:order 2 .
 
@@ -432,58 +482,6 @@ skosapnl:Concept-label
   sh:nodeKind sh:Literal ;
   sh:path rdfs:label .
 
-skosapnl:Bronverwijzing-label
-  a sh:PropertyShape ;
-  rdfs:label "label"@nl ;
-  sh:datatype rdf:langString ;
-  sh:description "Compacte, voor de mens leesbare aanduiding van de bron."@nl ;
-  sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
-  sh:minCount 1 ;
-  sh:name "label"@nl ;
-  sh:nodeKind sh:Literal ;
-  sh:path rdfs:label .
-
-skosapnl:Bronverwijzing-page 
-  a sh:PropertyShape ;
-  rdfs:label "url"@nl ;
-  sh:description 
-    "Vindplaats van de bron op internet."@nl , 
-    "A page or document about this thing."@en ;
-  sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
-  sh:name "url"@nl ;
-  sh:nodeKind sh:IRI ;
-  sh:path foaf:page .
-
-skosapnl:Bronverwijzing-description
-  a sh:PropertyShape ;
-  rdfs:label "omschrijving"@nl ;
-  sh:datatype rdf:langString ;
-  sh:description "Uitgebreide, voor de mens leesbare beschrijving van de bron, of citatie uit de bron."@nl ;
-  sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
-  sh:name "omschrijving"@nl ;
-  sh:nodeKind sh:Literal ;
-  sh:path rdfs:label .
-
-skosapnl:Bronverwijzing-bibliographicCitation
-  a sh:PropertyShape ;
-  rdfs:label "citatie"@nl ;
-  sh:description "Een reeks gegevens waarmee de een document of fragment daarvan gevonden kan worden. Er bestaan verschillende citeerstijlen zoals IEEE, APA of MLA."@nl ;
-  sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
-  sh:name "citatie"@nl ;
-  sh:nodeKind sh:Literal ;
-  sh:path dct:bibliographicCitation .
-
-skosapnl:Bronverwijzing-type 
-  a sh:PropertyShape ;
-  rdfs:label "soort"@nl ;
-  sh:description "Aanduiding van het type of genre van het brondocument."@nl ;
-  sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
-  sh:name "soort"@nl ;
-  sh:nodeKind sh:IRI ;
-  sh:path dct:type ;
-  sh:class skos:Concept .
-
-
 skosapnl:Collection-label
   a sh:PropertyShape ;
   rdfs:label "label"@nl ;
@@ -499,7 +497,7 @@ skosapnl:Collection-member
   a sh:PropertyShape ;
   rdfs:label "bevat"@nl ;
   sh:class skos:Concept ;
-  sh:description 
+  sh:description
     "Relates a collection to one of its members."@en ,
     "Relateert een collectie aan een begrip dat onderdeel is van deze collectie."@nl ;
   sh:name "bevat"@nl ;
@@ -596,7 +594,7 @@ skosapnl:ConceptScheme-Toelichting a sh:PropertyShape;
   sh:order "5"^^xsd:integer;
   sh:path skos:scopeNote;
   sh:maxCount "1"^^xsd:integer .
-  
+
 skosapnl:ConceptScheme-Ontwerpbeslissingen a sh:PropertyShape;
   sh:name "Ontwerpbeslissingen"@nl;
   sh:order "6"^^xsd:integer;
@@ -680,7 +678,7 @@ skosapnl:ConceptScheme-Versie a sh:PropertyShape;
 skosapnl:ConceptScheme-FrequentieUri a sh:PropertyShape;
   sh:name "Frequentie (URI)"@nl;
   sh:order "18"^^xsd:integer;
-  sh:path [ 
+  sh:path [
     sh:alternativePath (
       dct:accrualPeriodicity
       <https://standaarden.overheid.nl/owms/terms/Frequentie>
