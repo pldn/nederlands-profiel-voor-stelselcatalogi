@@ -55,6 +55,15 @@
     <xsl:value-of select="./@rdf:resource"/>
     <xsl:text>)&#10;</xsl:text>
   </xsl:template>
+  
+  <xsl:template match="sh:datatype" mode="properties">
+    <xsl:text>|Soort|[</xsl:text>
+    <xsl:value-of select="substring-after(@rdf:resource,'#')"/>
+    <xsl:text>](</xsl:text>
+    <xsl:value-of select="./@rdf:resource"/>
+    <xsl:text>)&#10;</xsl:text>
+  </xsl:template>
+
   <xsl:template match="sh:path" mode="properties">
     <xsl:text>|Gebruikte term|[</xsl:text>
     <xsl:value-of select="substring-after(@rdf:resource,'#')"/>
@@ -193,6 +202,7 @@
         <xsl:apply-templates select="sh:path" mode="properties"/>
         <xsl:apply-templates select="sh:class" mode="properties"/>
         <xsl:apply-templates select="sh:nodeKind" mode="properties"/>
+        <xsl:apply-templates select="sh:datatype" mode="properties"/>
         <xsl:apply-templates select="sh:minCount" mode="properties"/>
         <xsl:apply-templates select="sh:maxCount" mode="properties"/>
         <xsl:apply-templates select="skos:definition" mode="properties"/>

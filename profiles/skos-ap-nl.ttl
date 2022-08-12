@@ -79,10 +79,7 @@ skosapnl:ConceptScheme-comment
   sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
   sh:name "uitleg"@nl, "comment"@en ;
   sh:order 10 ;
-  sh:or (
-    [ sh:datatype xsd:string ]
-    [ sh:datatype rdf:langString ]
-  ) ;
+  sh:datatype rdf:langString ;
   sh:path rdfs:comment .
 
 skosapnl:DefinitionPropertyGroup

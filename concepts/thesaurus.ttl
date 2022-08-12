@@ -43,9 +43,7 @@ beg-nps:BroaderGeneric
 beg-nps:BibliographicResource
   a skos:Concept ;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:related 
-    beg-nps:Concept ,
-    beg-nps:BibliographicCitation ;
+  skos:related beg-nps:BibliographicCitation ;
   dct:source
     <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/BibliographicResource> ,
     dct: ,
@@ -70,7 +68,7 @@ beg-nps:BibliographicCitation
   skos:prefLabel
     "citaat"@nl ,
     "bibliographic citation"@en ;
-  skos:scopeNote "Een citaat wordt altijd al string vastgelegd. Hier dient voldoende detail in aangebracht te zijn zodat de resource gevonden kan worden. Er bestaat verschillende citeerstijlen die toegepast kunnen worden zoals IEEE, MLA of APA."@nl;
+  skos:scopeNote "Een citaat wordt als string vastgelegd. Hier dient voldoende detail in aangebracht te zijn zodat de resource gevonden kan worden. Er bestaan verschillende citeerstijlen die toegepast kunnen worden zoals IEEE, MLA of APA."@nl;
   skos:example "Scripta Materialia 48(5), 475-481 (2003)", "Martin Greenberger et al., eds., Networks for Research and Education: Sharing of Computer Information Resources Nationwide (Cambridge: MIT Press, 1974)" .
 
 beg-nps:Harmonisatierelatie
