@@ -2253,7 +2253,7 @@ graph:pldn-begrippen {
 </code></pre>
 <h1>Typering</h1>
 <p>De bron zelf kan op verschillende manieren beschreven worden, dat ligt immers bij de bronhouder. Er bestaan verschillende standaard vocabulaires die een oplossing hebben voor het beschrijven van en verwijzen naar bronnen, ook zonder de term bron te gebruiken. Denk bijvoorbeeld aan <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">dcterms</a>, <a href="http://www.sparontologies.net/ontologies/frbr">FRBR</a> <a href="https://bibliontology.com/">BIBO</a> en <a href="https://lov.linkeddata.es/dataset/lov/vocabs/foaf">FOAF</a>, maar ook nationale of sectorale-standaarden. Er is geen defacto standaard die van toepassing is op wat binnen dit profiel onder bron wordt verstaan. Om die reden leggen we geen restricties op de typering van de resource die we als bron voor een begrip aanmerken.</p>
-<p><em>Het is good practice om bronnen met <em>rdf:type</em> te typeren met foaf:Document.</em> In het profiel leggen we hier echter geen restrictiesop omdat niet alle gepubliceerde bronnen deze goodpractive volgen. Hier toch een restrictie op zetten zou integratie niet bevorderen.</p>
+<p><em>Het is good practice om bronnen met <em>rdf:type</em> te typeren met foaf:Document.</em> In het profiel leggen we hier echter geen restrictie op omdat niet alle gepubliceerde bronnen deze goodpractice volgen. Hier toch een restrictie op zetten zou interoperabiliteit niet bevorderen.</p>
 <p><em>Het is good practice om bronnen met <em>dct:type</em> te classificeren aan de hand van een gecontroleerde vocabulaire, ofwel een classificatie schema</em>. Een voorbeeld van zo'n classificatie schema is <a href="http://id.loc.gov/vocabulary/marcgt">MARC Genre/Terms Scheme</a>. Dit is in aanvulling op een rdf:type.</p>
 </div>
         <section data-format="markdown" id="gestructureerde-beschrijving-2"><div class="header-wrapper"><h4 id="x3-4-1-gestructureerde-beschrijving"><bdi class="secno">3.4.1 </bdi>Gestructureerde beschrijving</h4><a class="self-link" href="#gestructureerde-beschrijving-2" aria-label="Permalink for Section 3.4.1"></a></div>
@@ -2289,17 +2289,49 @@ graph:pldn-begrippen {
 <table>
 <thead>
 <tr>
-<th>citatie<div style="width:325px"></div></th>
+<th>citaat<div style="width:325px"></div></th>
 <th></th>
 </tr>
 </thead>
 <tbody><tr>
+<td>Voorkeursterm</td>
+<td>citaat</td>
+</tr>
+<tr>
 <td>Gebruikte term</td>
 <td><a href="http://purl.org/dc/terms/bibliographicCitation">bibliographicCitation</a></td>
 </tr>
 <tr>
 <td>Soort</td>
 <td><a href="http://www.w3.org/ns/shacl#Literal">Literal</a></td>
+</tr>
+<tr>
+<td>Definitie</td>
+<td>Een citaat is een bibliografische referentie naar een document</td>
+</tr>
+<tr>
+<td>Bron</td>
+<td><a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a></td>
+</tr>
+<tr>
+<td>Bron</td>
+<td><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/bibliographicCitation">https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/bibliographicCitation</a></td>
+</tr>
+<tr>
+<td>Bron</td>
+<td><a href="http://xmlns.com/foaf/0.1/">http://xmlns.com/foaf/0.1/</a></td>
+</tr>
+<tr>
+<td>Toelichting</td>
+<td>Een citaat wordt altijd al string vastgelegd. Hier dient voldoende detail in aangebracht te zijn zodat de resource gevonden kan worden. Er bestaat verschillende citeerstijlen die toegepast kunnen worden zoals IEEE, MLA of APA.</td>
+</tr>
+<tr>
+<td>Voorbeeld</td>
+<td>Martin Greenberger et al., eds., Networks for Research and Education: Sharing of Computer Information Resources Nationwide (Cambridge: MIT Press, 1974)</td>
+</tr>
+<tr>
+<td>Voorbeeld</td>
+<td>Scripta Materialia 48(5), 475-481 (2003)</td>
 </tr>
 </tbody></table>
 <table>
