@@ -21,7 +21,7 @@ De context wordt in principe gevormd door het begrippenkader waarbinnen het begr
 #### Voorkeursterm
 - skos:prefLabel
 Een begip kent één voorkeursterm, deze voorkeursterm hoeft niet persé uniek te zijn. Het is goed mogelijk dat binnen een bepaald domein één term meerdere betekenissen heeft en dus gaat over meerdere begrippen, mogelijk is het doel van een Thesaurus zelfs om dit inzicht te geven.
-We gebruiken geen post of prefix om  voorkeurstermen context te geven of uniek te maken, tenzij deze post/prefix algemeen gebruikt wordt. Denk aan _Hengelo (OV)_ en _Hengelo (GLD)_.
+We gebruiken geen post of prefix om voorkeurstermen context te geven of uniek te maken, tenzij deze post/prefix algemeen gebruikt wordt. Denk aan _Hengelo (OV)_ en _Hengelo (GLD)_.
 Een begrip krijgt expliciet één rdfs:Label om compatibiliteit met bestaande tools te bevorderen.
 
 #### Andere labels
