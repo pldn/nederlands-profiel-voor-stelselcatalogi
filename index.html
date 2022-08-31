@@ -193,19 +193,19 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     "repoURL": "pldn/nederlands-profiel-voor-stelselcatalogi"
   },
   "xref": "web-platform",
-  "publishISODate": "2022-08-26T00:00:00.000Z",
-  "generatedSubtitle": "Unofficial Draft 26 augustus 2022"
+  "publishISODate": "2022-08-31T00:00:00.000Z",
+  "generatedSubtitle": "Unofficial Draft 31 augustus 2022"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-UD"></head>
   <body class="h-entry" data-cite="HTML INFRA URL WEBIDL DOM FETCH"><div class="head">
     
     <h1 id="title" class="title">Nederlands Profiel voor Begrippencatalogi</h1> 
-    <p id="w3c-state">Unofficial Draft <time class="dt-published" datetime="2022-08-26">26 augustus 2022</time></p>
+    <p id="w3c-state">Unofficial Draft <time class="dt-published" datetime="2022-08-31">31 augustus 2022</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
         <dt>Deze versie:</dt><dd>
-                <a class="u-url" href="https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20220826/">https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20220826/</a>
+                <a class="u-url" href="https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20220831/">https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20220831/</a>
               </dd>
         <dt>Laatst gepubliceerde versie:</dt><dd>
                 <a href="https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi">https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi</a>
@@ -2266,15 +2266,15 @@ narrowMatch: TODO</p>
 <p>Een <strong>begrip</strong> heeft een eigenschap '<strong>bron</strong>'. Het is verplicht om hier dct:source voor te gebruiken.
 De waarde van <strong>bron</strong> is een non-literal resource.
 Het is aangeraden om een bron te beschrijven met een compact, voor de mens leesbaar <strong>label</strong>, een uitgebreide <strong>omschrijving</strong>, een <strong>url</strong> als de bron een vindplaats heeft op het web en anders een <strong>citaat</strong> waarin de citeerinformatie van de bron in een bepaalde citeerstijl is vastgelegd.</p>
-<p>De bron kan een heel document of een fragment daarvan zijn, denk aan een Boek, een hoofdstuk of een paragraaf daarvan.</p>
+<p>De bron kan een heel document of een fragment daarvan zijn, denk aan een boek, een hoofdstuk of een paragraaf daarvan.</p>
 <h1>Bron</h1>
 <p>Een begrip kan zijn ontleend aan een op het web vindbare bron. Dit kan een (versie van) een bepaald werk zijn of een ander documentair iets waarin een beschrijving van het begrip is te vinden. Bronnen kunnen wel of niet beschreven zijn in RDF. Ook kan een begrip ontleend zijn aan een niet op het web vindbare bron. De bron kan een heel document of een fragment daarvan zijn, denk aan een Boek, een hoofdstuk of een paragraaf.</p>
-<p>In ieder scenario willen we voldoende informatie hebben over de bron zodat we deze kunnen vinden. Dit doen we op basis van een IRI, url en citaat.</p>
-<p>Wanneer een bron als linked data op het web ontsloten is neem je als waarde van dct:subject de IRI van de bron. Dit kan bijvoorbeeld een instance van foaf:Document of dct:BibliographicResource zijn. Hoe deze precies beschreven is maakt voor de bronverwijzing niet uit.</p>
+<p>In ieder scenario willen we voldoende informatie hebben over de bron zodat we deze kunnen vinden. Dit doen we op basis van een IRI, url of citaat.</p>
+<p>Wanneer een bron als linked data op het web ontsloten is neem je als waarde van dct:source de IRI van de bron. Dit kan bijvoorbeeld een instance van foaf:Document of dct:BibliographicResource zijn. Hoe deze precies beschreven is maakt voor de bronverwijzing niet uit.</p>
 <p>Voorbeeld:</p>
 <pre><code aria-busy="false" class="hljs css">...
 graph:pldn-begrippen {
-    pldn:Begrip-<span class="hljs-number">1</span> dct:subject ex:Doc-<span class="hljs-number">42</span> .
+    pldn:Begrip-<span class="hljs-number">1</span> dct:source ex:Doc-<span class="hljs-number">42</span> .
 }
 
 graph ex:ex-Documenten {
@@ -2283,18 +2283,18 @@ graph ex:ex-Documenten {
 }
 </code></pre>
 <p>Het komt voor dat de bron niet als linked data ontsloten is. In dat geval kan de beheerder van het begrip zelf een beschrijving van de bron maken.
-Hiervoor kunnen IRI's of blanknodes gemaakt worden. Wanneer de bron op vindbaar is op het web kan foaf:page (url) gebruikt worden om naar deze vindplaats te verwijzen. Wanneer de bron niet op het web vindbaar is, kan dct:bibliographicCitation gebruikt worden om citeerinformatie vast te leggen. Het kan zijn dat een bron zowel een url als een citaat kent.</p>
+Hiervoor kunnen IRI's of blanknodes gebruikt worden. Wanneer de bron op vindbaar is op het web kan foaf:page (url) gebruikt worden om naar deze vindplaats te verwijzen. Wanneer de bron niet op het web vindbaar is, kan dct:bibliographicCitation gebruikt worden om citeerinformatie vast te leggen. Het kan zijn dat een bron zowel een url als een citaat kent.</p>
 <p>De waarde van foaf:page is een IRI.</p>
 <p>De waarde van dct:bibliographicResource is een literal.</p>
 <p>In deze gevallen is het verplicht om middels rdf:label de naam van de resource aan te geven. Het wordt aangeraden om een omschrijving te geven van de bron.</p>
 <p>Voorbeeld:</p>
 <pre><code aria-busy="false" class="hljs css">...
 graph:pldn-begrippen {
-    pldn:Begrip-<span class="hljs-number">2</span> dct:subject [ rdfs:label <span class="hljs-string">"Gemeentewet Art. 2"</span>@nl ;
+    pldn:Begrip-<span class="hljs-number">2</span> dct:source [ rdfs:label <span class="hljs-string">"Gemeentewet Art. 2"</span>@nl ;
                               foaf:url https://wetten.overheid.nl/jci1.<span class="hljs-number">3</span>:c:BWBR0005416&amp;titeldeel=I&amp;artikel=<span class="hljs-number">2</span>&amp;z=<span class="hljs-number">2022</span>-<span class="hljs-number">05</span>-<span class="hljs-number">01</span>&amp;g=<span class="hljs-number">2022</span>-<span class="hljs-number">05</span>-<span class="hljs-number">01</span> ;
                               dct:description <span class="hljs-string">"In deze wet wordt verstaan onder ingezetenen: zij die hun werkelijke woonplaats in de gemeente hebben."</span>@nl ] ;
     .
-    pldn:Begrip-<span class="hljs-number">3</span> dct:subject [ rdfs:label <span class="hljs-string">"Heukels' Flora van Nederland"</span>@nl ;
+    pldn:Begrip-<span class="hljs-number">3</span> dct:source [ rdfs:label <span class="hljs-string">"Heukels' Flora van Nederland"</span>@nl ;
                                 dct:bibliographicCitation <span class="hljs-string">"Van der Meijden, R. (2005): Heukels' Flora van Nederland. Wolters-Noordhoff, Groningen/Houten (23e druk), 685 pp."</span> ] ;
     .
 }
