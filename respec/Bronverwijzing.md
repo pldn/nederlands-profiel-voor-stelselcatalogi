@@ -7,20 +7,20 @@ Een **begrip** heeft een eigenschap '**bron**'. Het is verplicht om hier dct:sou
 De waarde van **bron** is een non-literal resource.
 Het is aangeraden om een bron te beschrijven met een compact, voor de mens leesbaar **label**, een uitgebreide **omschrijving**, een **url** als de bron een vindplaats heeft op het web en anders een **citaat** waarin de citeerinformatie van de bron in een bepaalde citeerstijl is vastgelegd.
 
-De bron kan een heel document of een fragment daarvan zijn, denk aan een Boek, een hoofdstuk of een paragraaf daarvan.
+De bron kan een heel document of een fragment daarvan zijn, denk aan een boek, een hoofdstuk of een paragraaf daarvan.
 
 # Bron
 Een begrip kan zijn ontleend aan een op het web vindbare bron. Dit kan een (versie van) een bepaald werk zijn of een ander documentair iets waarin een beschrijving van het begrip is te vinden. Bronnen kunnen wel of niet beschreven zijn in RDF. Ook kan een begrip ontleend zijn aan een niet op het web vindbare bron. De bron kan een heel document of een fragment daarvan zijn, denk aan een Boek, een hoofdstuk of een paragraaf.
 
-In ieder scenario willen we voldoende informatie hebben over de bron zodat we deze kunnen vinden. Dit doen we op basis van een IRI, url en citaat.
+In ieder scenario willen we voldoende informatie hebben over de bron zodat we deze kunnen vinden. Dit doen we op basis van een IRI, url of citaat.
 
-Wanneer een bron als linked data op het web ontsloten is neem je als waarde van dct:subject de IRI van de bron. Dit kan bijvoorbeeld een instance van foaf:Document of dct:BibliographicResource zijn. Hoe deze precies beschreven is maakt voor de bronverwijzing niet uit.
+Wanneer een bron als linked data op het web ontsloten is neem je als waarde van dct:source de IRI van de bron. Dit kan bijvoorbeeld een instance van foaf:Document of dct:BibliographicResource zijn. Hoe deze precies beschreven is maakt voor de bronverwijzing niet uit.
 
 Voorbeeld:
 ```
 ...
 graph:pldn-begrippen {
-    pldn:Begrip-1 dct:subject ex:Doc-42 .
+    pldn:Begrip-1 dct:source ex:Doc-42 .
 }
 
 graph ex:ex-Documenten {
@@ -29,7 +29,7 @@ graph ex:ex-Documenten {
 }
 ```
 Het komt voor dat de bron niet als linked data ontsloten is. In dat geval kan de beheerder van het begrip zelf een beschrijving van de bron maken.
-Hiervoor kunnen IRI's of blanknodes gemaakt worden. Wanneer de bron op vindbaar is op het web kan foaf:page (url) gebruikt worden om naar deze vindplaats te verwijzen. Wanneer de bron niet op het web vindbaar is, kan dct:bibliographicCitation gebruikt worden om citeerinformatie vast te leggen. Het kan zijn dat een bron zowel een url als een citaat kent.
+Hiervoor kunnen IRI's of blanknodes gebruikt worden. Wanneer de bron op vindbaar is op het web kan foaf:page (url) gebruikt worden om naar deze vindplaats te verwijzen. Wanneer de bron niet op het web vindbaar is, kan dct:bibliographicCitation gebruikt worden om citeerinformatie vast te leggen. Het kan zijn dat een bron zowel een url als een citaat kent.
 
 De waarde van foaf:page is een IRI.
 
@@ -41,11 +41,11 @@ Voorbeeld:
 ```
 ...
 graph:pldn-begrippen {
-    pldn:Begrip-2 dct:subject [ rdfs:label "Gemeentewet Art. 2"@nl ;
+    pldn:Begrip-2 dct:source [ rdfs:label "Gemeentewet Art. 2"@nl ;
                               foaf:url https://wetten.overheid.nl/jci1.3:c:BWBR0005416&titeldeel=I&artikel=2&z=2022-05-01&g=2022-05-01 ;
                               dct:description "In deze wet wordt verstaan onder ingezetenen: zij die hun werkelijke woonplaats in de gemeente hebben."@nl ] ;
     .
-    pldn:Begrip-3 dct:subject [ rdfs:label "Heukels' Flora van Nederland"@nl ;
+    pldn:Begrip-3 dct:source [ rdfs:label "Heukels' Flora van Nederland"@nl ;
                                 dct:bibliographicCitation "Van der Meijden, R. (2005): Heukels' Flora van Nederland. Wolters-Noordhoff, Groningen/Houten (23e druk), 685 pp." ] ;
     .
 }
