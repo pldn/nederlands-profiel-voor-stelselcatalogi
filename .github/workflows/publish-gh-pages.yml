@@ -274,5 +274,5 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: gh-pages
-      - run: sed '2i <script src=\"https://hypothes.is/embed.js\" async></script>\' index.html
+      - run: sed -i '2i <script src="https://hypothes.is/embed.js" async></script>' index.html
       - uses: stefanzweifel/git-auto-commit-action@v4
