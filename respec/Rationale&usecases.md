@@ -1,6 +1,6 @@
 # Rationale en use cases
 ## Rationale
-Taxonimieën en thesauri zijn oorspronkelijk ontworpen voor informatieprofessionals die zijn opgeleid in indexeren en zoeken. Tegenwoordig is de vraag vooral naar vocabulaires die ongetrainde gebruikers helpen bij het intuïtief vinden van informatie en naar vocabulaires die redeneren door machines mogelijk maken. De ISO 25964 standaard voor thesauri maakt zoals ze zelf in de inleiding aangeeft de transitie die nodig is om compatibel te zijn met de digitale wereld van informatiemanagement. Daarbij gaat het om het zoeken en vinden van informatie in digitale registraties.
+Taxonomieën en thesauri zijn oorspronkelijk ontworpen voor informatieprofessionals die zijn opgeleid in indexeren en zoeken. Tegenwoordig is de vraag vooral naar vocabulaires die ongetrainde gebruikers helpen bij het intuïtief vinden van informatie en naar vocabulaires die redeneren door machines mogelijk maken. De ISO 25964 standaard voor thesauri maakt zoals ze zelf in de inleiding aangeeft de transitie die nodig is om compatibel te zijn met de digitale wereld van informatiemanagement. Daarbij gaat het om het zoeken en vinden van informatie in digitale registraties.
 
 De gedachte achter zo'n index is dat de informatiezoeker via een begrippenkader, bestaande uit 
 - termen,
