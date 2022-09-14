@@ -43,4 +43,4 @@ Het profiel dient tenminste aan de volgende richtlijnen te voldoen:
 - We zien de Nederlanse term "begrip" als synoniem voor de Engelse term "concept".
 - De context is de Nederlandse taal. De labels, termen en de definities zijn in het Nederlands.
 - Het profiel conformeert zich zo veel mogelijk aan implementatiestandaarden die gebruikelijk zijn in de internationale gemeenschap.
-- Voorlopig concentreren we ons tot hiërarchische relaties en eenvoudige niet hiërarchische relaties om te kaderen. We gaan voorlopig geen domein specifieke relaties introduceren.
+- Het profiel beperkt zich tot hiërarchische relaties en eenvoudige niet hiërarchische relaties om te kaderen. Domein-specifieke relaties zijn (vooralsnog) buiten scope.
