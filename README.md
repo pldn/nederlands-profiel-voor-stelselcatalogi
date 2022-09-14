@@ -10,9 +10,9 @@ We richten ons in eerste instantie op een good practice voor het beschrijven van
 
 Naast een begrippenkader kent een stelselcatalogus ook een beschrijving van de gegevens in die registratie en soms ook een overzicht van waardelijsten met referentiegegevens of classificaties. Hier zal ook het [MIM](https://www.geonovum.nl/geo-standaarden/metamodel-informatiemodellering-mim) (Metamodel voor InformatieModellelering) belangrijke input vormen.
  
-De ambitie is om in de 2e helft van april en mei de basis te leggen voor een breed gedeelde standaard voor een begrippenkader en in juni en juli de basis te leggen voor de beschrijving van informatiemodellen en waardelijsten in een stelselcatalogus.
+De ambitie is om in Q4 2022 een breed gedeelde concept standaard voor een begrippenkader als onderdeel van een stelselcatalogus op te leveren.
  
 De volgende personen en organisaties nemen deel aan deze werkgroep:
 
-Trekker: Finn Tiebout (Kadaster)<br>
-Deelnemers: Arjen Santema (Kadaster), Roel Stap (Kadaster), Pano Maria (Skemu), Marco Brattinga (Politie), Hans Overbeek (KOOP), Marc van Opeinen (KOOP), Linda van den Brink (Geonovum), Frank Terpstra (Geonovum), Kees Trautwein (Logius), Mick Baggen (RWS), Koos Boersma (IHW),  Gerald Groot Roesink (DUO), Jan Willem van Veen (ArchiXL), Pieter van Everdingen (PLDN)
+Trekker: Arjen Santema (Kadaster)<br>
+Deelnemers: Jos van der Arend (Kennisnet), Jesse Bakker (Kadaster), Koos Boersma (IHW), Marco Brattinga (NationalePolitie), Linda van den Brink (Geonovum), Pieter van Everdingen (PLDN), Roeland Euwens (KNB), Casper Gras (KOOP), Gerald Groot Roesink (DUO), Pano Maria (Skemu), Hans Overbeek (KOOP), Rik Opgenoort (CROW), Viyanti Ramdhiansing (Kennisnet), Frank Terpstra (Geonovum), Kees Trautwein (Logius), Mick Baggen (RWS), Jan Willem van Veen (ArchiXL). 
