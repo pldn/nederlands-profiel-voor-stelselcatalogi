@@ -42,5 +42,5 @@ Het profiel dient tenminste aan de volgende richtlijnen te voldoen:
 - Doel van het profiel is in eerste instantie om begrippen binnen organisaties kenbaar te maken.
 - We zien de Nederlanse term "begrip" als synoniem voor de Engelse term "concept".
 - De context is de Nederlandse taal. De labels, termen en de definities zijn in het Nederlands.
-- Technisch zijn we voorbereid op de aansluiting met de internationale gemeenschap.
+- Het profiel conformeert zich zo veel mogelijk aan implementatiestandaarden die gebruikelijk zijn in de internationale gemeenschap.
 - Voorlopig concentreren we ons tot hiërarchische relaties en eenvoudige niet hiërarchische relaties om te kaderen. We gaan voorlopig geen domein specifieke relaties introduceren.
