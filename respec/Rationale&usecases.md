@@ -2,7 +2,13 @@
 ## Rationale
 Taxonimieën en thesauri zijn oorspronkelijk ontworpen voor informatieprofessionals die zijn opgeleid in indexeren en zoeken. Tegenwoordig is de vraag vooral naar vocabulaires die ongetrainde gebruikers helpen bij het intuïtief vinden van informatie en naar vocabulaires die redeneren door machines mogelijk maken. De ISO 25964 standaard voor thesauri maakt zoals ze zelf in de inleiding aangeeft de transitie die nodig is om compatibel te zijn met de digitale wereld van informatiemanagement. Daarbij gaat het om het zoeken en vinden van informatie in digitale registraties.
 
-De gedachte achter zo'n index is dat de informatiezoeker via een term, gerelateerde termen, alternatieve termen of meer of minder precieze termen de data vindt bij het begrip dat met die term wordt aangeduid. Begrippen zijn daarbij "gevangen" concepten: Concepten die een "begrip" zijn geworden doordat in een domein bekend is wat er met de term wordt bedoeld, het is niet slechts een "concept" in de hoofden van enkele mensen.
+De gedachte achter zo'n index is dat de informatiezoeker via een begrippenkader, bestaande uit 
+- termen,
+- definities,
+- lexicale relaties tussen begrippen en termen,
+- semantische relaties tussen begrippen
+informatie kan vinden die met een bepaald begrip is geïndexeerd.
+Begrippen krijgen in het begrippenkader betekenis door concepten die enkel bestaan in de hoofden van mensen te "vangen" in de combinatie van de hierboven genoemde elementen.
 * Wikipedia definieert een concept (Latijn concipere - conceptum: bijeen-nemen, be-grijpen, be-vatten) als een cognitieve (mentale) eenheid, waarin meerdere ideeën, op grond van hun cognitief ervaren verwantschap, worden samengevat tot een hogere cognitieve klasse. Een begrip is een synoniem van een concept: het concept waarvan de betekenis is "gevangen" in de beschrijving van het begrip.
   * Dit betekent in de eerste plaats dat een concept iets is dat in de hoofden van mensen zit en verwijst naar iets in de fysieke werkelijkheid. Een concept is dus niet de fysieke werkelijkheid, maar verwijst daarnaar. In de context van documenten en (digitale) registraties gaat het per definitie om een gedeelde werkelijkheid. En in de context van de overheid in een rechtstaat om een gedeelde juridische werkelijkheid.
   * In de tweede plaats is een concept als 'eenheid van denken' iets essentieel anders als een dataklasse of dataobject dat in de informatiekunde wordt gebruikt als verwijzing naar een object ('iets') in de fysieke wereld waarover data worden vastgelegd of naar een eigenschap van zo'n object. Een concept is typisch talig en primair bedoeld voor mensen, hoewel de ISO 25964 ook het redeneren door machines expliciet benoemt en  semantic AI steeds meer mogelijkheden biedt.
