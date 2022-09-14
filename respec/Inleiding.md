@@ -33,14 +33,14 @@ Uitbreidingen van het basisprofiel zijn altijd optioneel.
 Voor het beschrijven van het profiel maken we gebruik van bestaande W3C standaarden. Dit leidt tot een abstracte syntax van het profiel uitgedrukt in de SHACL standaard. Daarnaast geven we een taalbinding van deze abstracte syntax naar andere bestaande W3C standaarden, zoals SKOS en DublinCore. Voor de abstracte syntax gebruiken we URI's die uitgedrukt worden in de Engelse taal, om zo direct een internationale aansluiting te houden. De abstracte syntax zal daarnaast Nederlandse labels kennen die in de deze lopende (Nederlandstalige) tekst zal worden gebruikt. De meerwaarde van het gebruik van SHACL is dat deze praktische handvatten biedt bij het toepassen van deze bestaande standaarden, inclusief een validatiemogelijkheid. Door het geven van de taalbinding naar de andere W3C standaarden bieden we een profiel dat direct kan worden begrepen door de internationale (internet) gemeenschap. Specifiek voor de Nederlandse (overheids)situatie geldt dat we hierbij aansluiten op de standaarden zoals opgenomen op de Pas-Toe-Of-Leg-Uit lijst conform de Nederlandse Overheids Referentie Architectuur (NORA).
 
 ### Algemene overeengekomen richtlijnen
-Om het profiel succesvol te laten zijn dient het breed gedragen te zijn. Om dit te realiseren hebben we een breed scala aan vertegenwoordigers samen gesteld vanuit diverse (semi-overheid)instanties. Vanuit deze werkgroep hebben we een aantal richtlijnen opgesteld voor het profiel. Deze lijst is niet uitputtend en volledig, maar dient als een basis.
+Om het profiel succesvol te laten zijn dient het breed gedragen te zijn. Om dit te realiseren hebben we een breed scala aan vertegenwoordigers samen gesteld vanuit diverse (semi-overheid)instanties. Vanuit deze werkgroep hebben we een aantal richtlijnen opgesteld voor het profiel. Deze richtlijnen vormen een een basis, het fundament dat uitbreidbaar is voor specifieke doeleinden.
 
 Het profiel dient tenminste aan de volgende richtlijnen te voldoen:
 
 - Laagdrempelig door modulaire opbouw en duidelijkheid in vertalingen en uitleg.
 - Het profiel beperkt zich tot specificaties voor begrippencatalogi.
-- Doel van het profiel is in eerste instantie om begrippen binnen organisaties kenbaar te maken.
 - We zien de Nederlanse term "begrip" als synoniem voor de Engelse term "concept".
 - De context is de Nederlandse taal. De labels, termen en de definities zijn in het Nederlands.
 - Het profiel conformeert zich zo veel mogelijk aan implementatiestandaarden die gebruikelijk zijn in de internationale gemeenschap.
 - Het profiel beperkt zich tot hiërarchische relaties en eenvoudige niet hiërarchische relaties om te kaderen. Domein-specifieke relaties zijn (vooralsnog) buiten scope.
+- Het profiel is uitbreidbaar, zodat domeinspecifieke aanvullingen mogelijk zijn, waarbij het mogelijk is om aan te profiel te blijven voldoen.
