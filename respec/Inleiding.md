@@ -37,7 +37,7 @@ Om het profiel succesvol te laten zijn dient het breed gedragen te zijn. Om dit 
 
 Het profiel dient tenminste aan de volgende richtlijnen te voldoen:
 
-- Laagdrempelig door modulair opbouw en duidelijk in vertalingen en uitleg.
+- Laagdrempelig door modulaire opbouw en duidelijkheid in vertalingen en uitleg.
 - We beginnen met begrippen, de overeenkomstige behoefte binnen de diverse deelnemende organisaties ligt voor een groot deel bij begrippen, dit is het laaghangende fruit voor een overeengekomen profiel.
 - Doel van het profiel is in eerste instantie om begrippen binnen organisaties kenbaar te maken.
 - We zien de Nederlanse term "begrip" als synoniem voor de Engelse term "concept".
