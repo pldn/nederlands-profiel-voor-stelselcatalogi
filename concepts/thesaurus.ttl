@@ -509,7 +509,7 @@ beg-nps:InScheme
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> ;
   skos:prefLabel
     "is in scheme"@en ,
-    "behoort tot"@nl ;
+    "behoort tot schema"@nl ;
   skos:related beg-nps:Concept ;
   skos:scopeNote
     "According to the SKOS-standard, concepts can be linked to multipe conceptscheme. Practically, this can only be the case when conceptschemes overlap in terms of scope."@en ,
@@ -591,8 +591,8 @@ beg-nps:SemantischeRelatie
     "Links a concept to a concept related by meaning."@en ,
     "Relateert een begrip aan een ander begrip op basis van de betekenis."@nl ;
   skos:prefLabel
-    "Semantische relatie"@nl ,
-    "is in semantic relation with"@en ;
+    "semantische relatie"@nl ,
+    "semantic relation"@en ;
   dct:source
     <https://www.w3.org/TR/skos-reference/#semantic-relations> ,
     skos: .
@@ -759,8 +759,8 @@ beg-nps:ControlledVocabulary
 beg-nps:OrderedCollection
   a skos:Concept ;
   skos:prefLabel
-    "Geordende collectie"@nl ,
-    "Ordered collection"@en ;
+    "geordende collectie"@nl ,
+    "ordered collection"@en ;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
   skos:broader beg-nps:Collection ;
   skos:altLabel "OrderedCollection"@en ;
@@ -787,65 +787,65 @@ beg-nps:VoorkeursnaamBegrippenkader a skos:Concept;
 
 beg-nps:AlternatieveNaamBegrippenkader a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:prefLabel "Alternatieve naam begrippenkader"@nl;
+  skos:prefLabel "alternatieve naam begrippenkader"@nl;
   skos:definition "namen waaronder de catalogus ook bekend is, denk bijvoorbeeld aan afkortingen of een volledige naam"@nl .
 
 beg-nps:BeschrijvingBegrippenkader a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:prefLabel "Beschrijving begrippenkader"@nl;
+  skos:prefLabel "beschrijving begrippenkader"@nl;
   skos:definition "Een formele beschrijving van het begrippenkader, het doel en de inhoud."@nl;
   skos:editorialNote "officieel met kleine letter"@nl .
 
 beg-nps:KlareTaalBeschrijvingBegrippenkader a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:prefLabel "Klare taal beschrijving begrippenkader "@nl;
+  skos:prefLabel "klare taal beschrijving begrippenkader "@nl;
   skos:definition "Een beschrijving van de catalogus, het doel en de inhoud in klare taal, niveau B2"@nl;
   skos:scopeNote "Verplicht omdat ieder begrippenkader een duidelijke beschrijving moet bevatten. In SHACL een vrij zware warning"@nl;
   skos:editorialNote "een aanduiding van de context waarin de begrippen worden gebruikt. Bij de overheid vaak de uitvoering van een bepaalde wet."@nl .
 
 beg-nps:Toelichting a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:prefLabel "Toelichting"@nl;
+  skos:prefLabel "toelichting"@nl;
   skos:definition "nadere toelichting van de catalogus, Geeft de mogelijkheid tot wat informeler taalgebruik"@nl;
   skos:editorialNote "voor voorbeelden kun je skos:example gebruiken"@nl .
 
 beg-nps:Ontwerpbeslissingen a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:prefLabel "Ontwerpbeslissingen"@nl;
+  skos:prefLabel "ontwerpbeslissingen"@nl;
   skos:definition "Keuzes die zijn gemaakt door de opstellers van het begrippenkader"@nl;
   skos:editorialNote "Ook geschikt als disclaimer/proclaimer"@nl .
 
 beg-nps:Voorbeeld a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:prefLabel "Voorbeeld"@nl;
+  skos:prefLabel "voorbeeld"@nl;
   skos:definition " Voorbeelden van gebruik catalogus"@nl .
 
 beg-nps:Documentatiepagina a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:prefLabel "Documentatiepagina"@nl;
+  skos:prefLabel "documentatiepagina"@nl;
   skos:definition "De URI van de (start)pagina waarop informatie over deze begrippen kader te vinden is.Via deze pagina kunnen andere webpagina's bereikt worden"@nl .
 
 beg-nps:Wetgeving a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:prefLabel "Wetgeving"@nl;
+  skos:prefLabel "wetgeving"@nl;
   skos:definition "De naam van de wetgeving/besluit/... die tot de creatie van deze begrippen kader heeft geleid "@nl;
   skos:scopeNote "Verwijzen naar groepje van Koos hoe omm te gaan met dit soort objecten: URI met label "@nl .
 
 beg-nps:WetgevingUri a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:prefLabel "Wetgeving (URI)"@nl;
+  skos:prefLabel "wetgeving (URI)"@nl;
   skos:scopeNote "Verwijzen naar groepje van Koos hoe omm te gaan met dit soort objecten: URI met label "@nl .
 
 beg-nps:Taal a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:prefLabel "Taal"@nl;
+  skos:prefLabel "taal"@nl;
   skos:definition "De talen gebruikt voor tekstuele informatie in het begrippen kader"@nl;
   skos:scopeNote "We gebruiken als  waardelijst dezelfde lijst als de EU voorschrijft in het DCAT-AP profiel: http://publications.europa.eu/resource/authority/language Deze lijst gebruikt drieletterige codes voor een taal, in tegenstelling tot de tweeletterige postfixes die aan teksten toegevoegd kunnen worden."@nl;
   skos:editorialNote "bekend van open data"@nl .
 
 beg-nps:Bronhouder a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:prefLabel "Bronhouder"@nl;
+  skos:prefLabel "bronhouder"@nl;
   skos:definition "Een bronhouder is verantwoordelijk voor het inwinnen en bijhouden van de  gegevens in de catalogus en voor het borgen van de kwaliteit van die gegevens"@nl;
   skos:scopeNote "Waardelijst toevoegen met bekende (Nederlandse) organisaties? "@nl;
   skos:editorialNote """via dcat:hadRole wordt de dcat:Role vastgelegd (op basis van een waardelijst)
@@ -853,66 +853,66 @@ via prov:agent wordt de prov:Agent vastgelegd, welke op zijn beurt een foaf:Orga
 
 beg-nps:Uitgever a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:prefLabel "Uitgever"@nl;
+  skos:prefLabel "uitgever"@nl;
   skos:definition "De uitgever of verstrekker is verantwoordelijk voor het verstrekken van de gegevens aan afnemers"@nl .
 
 beg-nps:Contactpunt a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:prefLabel "Contactpunt"@nl;
+  skos:prefLabel "contactpunt"@nl;
   skos:definition "Contactinformatie die gebruikt kan worden om opmerkingen over de catalogus door te geven"@nl .
 
 beg-nps:Toezichthouder a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:prefLabel "Toezichthouder"@nl;
+  skos:prefLabel "toezichthouder"@nl;
   skos:definition "De toezichthouder is de partij die  verantwoordelijk is dat wordt toegezien of de catalogus in overeenstemming met eisen, afspraken en wetgeving opereert"@nl;
   skos:scopeNote "Een optie is om hier prov:qualifiedAttribution te gebruiken, met bereik https://www.w3.org/TR/prov-o/#Attribution "@nl;
   skos:editorialNote "foaf:Organization is een class. Wat is de property tussen catalog en organisatie met de betekenis toezichthouder?"@nl .
 
 beg-nps:Opdrachtgever a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:prefLabel "Opdrachtgever"@nl;
+  skos:prefLabel "opdrachtgever"@nl;
   skos:definition "De opdrachtgever is de voor de catalogus verantwoordelijke instantie, i.e., de opdrachtgever van de ‘verstrekker’"@nl;
   skos:editorialNote "Is dat iets anders dan de bronhouder? Ja"@nl .
 
 beg-nps:LaatstBijgewerkt a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:prefLabel "Laatst bijgewerkt"@nl .
+  skos:prefLabel "laatst bijgewerkt"@nl .
 
 beg-nps:Versie a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:prefLabel "Versie"@nl;
+  skos:prefLabel "versie"@nl;
   skos:definition "De versie van deze catalogus. Dit wordt niet gebruikt m.b.t. de inhoud van de catalogus, maar voor wijzigingen in de structuur van de catalogus"@nl;
   skos:scopeNote "Willen we in Linked Datavastleggen wanneer de structuur voor het laatst te gewijzigd en wat die wijziging was? Dit lijkt  beter op zijn plaat in release notes. Dan een URI openemen naar die notes?"@nl;
   skos:editorialNote "dcat:version is toegevoegd in DCAT version 3"@nl .
 
 beg-nps:ThemaCategorie a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:prefLabel "Thema/categorie"@nl;
+  skos:prefLabel "thema/categorie"@nl;
   skos:definition "Deze eigenschap verwijst naar een thema, bijvoorbeeld uit de taxonomie beleidsagenda"@nl;
   skos:scopeNote "Dit veld verwijst naar een waardelijst, maar welke waardelijsten zijn hiervoor geschikt"@nl;
   skos:editorialNote "Voor zover ik weet gaat het hierbij altijd om overheidsthema's Voortgezet Onderwijs bijvoorbeeld. Dit is meer algemeen. Ik ken daargeen voorbeelden van. Misschien moet er een thema Catalogus bijkomen"@nl .
 
 beg-nps:FrequentieUri a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:prefLabel "Frequentie (URI)"@nl;
+  skos:prefLabel "frequentie (URI)"@nl;
   skos:definition "De frequentie waarmee de registratie wordt bijgewerkt. Kies de daarbij passende URI uit de desbetreffende waardelijst."@nl;
   skos:editorialNote "bekend van open data"@nl .
 
 beg-nps:Publicatiedatum a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:prefLabel "Publicatiedatum"@nl;
+  skos:prefLabel "publicatiedatum"@nl;
   skos:definition "De dag waarop deze catalogus voor de eerste keer beschikbaar is gekomen. De dag waarom de eerste versie van de catalogus beschikbaar kwam."@nl .
 
 beg-nps:Toegangsrechten a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:prefLabel "Toegangsrechten"@nl;
+  skos:prefLabel "toegangsrechten"@nl;
   skos:definition "geeft of een registratie moet worden gezien als open data, toegangsbeperkingen heeft of niet openbaar is."@nl;
   skos:scopeNote "Er bestaan manieren om exact aan te geven met Linked Data onder welke rechten de informatie gebruikt kan worden. Probleem is dat deze standaarden moeilijk te maken en moeilijk te lezen zijn. Daarom kiezen we voor een eenvoudige waardelijst."@nl;
   skos:editorialNote "https://waardelijsten.dcat-ap-donl.nl/overheid_openbaarheidsniveau.json gaat vervallen met nieuwe DCAT profiel. Dus gebruiken we een EU waardelijst.. Begrippen kader is niet per definitie openbaar.  http://publications.europa.eu/resource/authority/access-right"@nl .
 
 beg-nps:Licentie a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:prefLabel "Licentie"@nl;
+  skos:prefLabel "licentie"@nl;
   skos:definition "Deze eigenschap verwijst naar het juridische document dat de gebruiksrechten van de catalogus beschrijft"@nl;
   skos:scopeNote "idem, we kiezen voor een eenvoudige waardelijst"@nl;
   skos:editorialNote """Waarom kiezen we niet nationaal voor één licentie?  CC-BY-SA 4!
@@ -920,13 +920,13 @@ https://waardelijsten.dcat-ap-donl.nl/donl_license.json"""@nl .
 
 beg-nps:ConformeertAan a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:prefLabel "Conformeert aan"@nl;
+  skos:prefLabel "conformeert aan"@nl;
   skos:definition "Deze eigenschap verwijst naar de vastgestelde standaard waaraan de data van de beschreven resource voldoet. Hierbij kan worden gedacht aan het model, schema, ontology, view of profiel."@nl;
   skos:scopeNote "goed beschrijven"@nl .
 
 beg-nps:Keywords a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:prefLabel "Keywords"@nl;
+  skos:prefLabel "keywords"@nl;
   skos:definition "Deze eigenschap bevat vrije keywords of termen die de resource beschrijven."@nl;
   skos:scopeNote "Toelichting over het gebruik"@nl .
   
