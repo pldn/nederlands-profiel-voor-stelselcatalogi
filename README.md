@@ -15,4 +15,4 @@ De ambitie is om in Q4 2022 een breed gedeelde concept standaard voor een begrip
 De volgende personen en organisaties nemen deel aan deze werkgroep:
 
 Trekker: Arjen Santema (Kadaster)<br>
-Deelnemers: Jos van der Arend (Kennisnet), Jesse Bakker (Kadaster), Koos Boersma (IHW), Marco Brattinga (NationalePolitie), Linda van den Brink (Geonovum), Pieter van Everdingen (PLDN), Roeland Euwens (KNB), Casper Gras (KOOP), Gerald Groot Roesink (DUO), Pano Maria (Skemu), Hans Overbeek (KOOP), Rik Opgenoort (CROW), Viyanti Ramdhiansing (Kennisnet), Frank Terpstra (Geonovum), Kees Trautwein (Logius), Mick Baggen (RWS), Jan Willem van Veen (ArchiXL). 
+Deelnemers: Jos van der Arend (Kennisnet), Jesse Bakker (Kadaster), Koos Boersma (IHW), Marco Brattinga (NationalePolitie), Linda van den Brink (Geonovum), Pieter van Everdingen (PLDN), Roeland Euwens (KNB), Casper Gras (KOOP), Gerald Groot Roesink (DUO), Pano Maria (Skemu), Hans Overbeek (KOOP), Rik Opgenoort (CROW), Viyanti Ramdhiansing (Kennisnet), Frank Terpstra (Geonovum), Kees Trautwein (Logius), Jan Willem van Veen (ArchiXL). 
