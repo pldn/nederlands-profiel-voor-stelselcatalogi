@@ -1,5 +1,4 @@
 <!DOCTYPE html><html lang="nl"><head>
-<script src="https://hypothes.is/embed.js" async></script>
 <meta charset="utf-8">
 <meta name="generator" content="ReSpec 32.2.4">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -194,19 +193,19 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     "repoURL": "pldn/nederlands-profiel-voor-stelselcatalogi"
   },
   "xref": "web-platform",
-  "publishISODate": "2022-09-15T00:00:00.000Z",
-  "generatedSubtitle": "Unofficial Draft 15 september 2022"
+  "publishISODate": "2022-09-16T00:00:00.000Z",
+  "generatedSubtitle": "Unofficial Draft 16 september 2022"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-UD"></head>
   <body class="h-entry" data-cite="HTML INFRA URL WEBIDL DOM FETCH"><div class="head">
     
     <h1 id="title" class="title">Nederlands Profiel voor Begrippencatalogi</h1> 
-    <p id="w3c-state">Unofficial Draft <time class="dt-published" datetime="2022-09-15">15 september 2022</time></p>
+    <p id="w3c-state">Unofficial Draft <time class="dt-published" datetime="2022-09-16">16 september 2022</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
         <dt>Deze versie:</dt><dd>
-                <a class="u-url" href="https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20220915/">https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20220915/</a>
+                <a class="u-url" href="https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20220916/">https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20220916/</a>
               </dd>
         <dt>Laatst gepubliceerde versie:</dt><dd>
                 <a href="https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi">https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi</a>
@@ -407,13 +406,19 @@ Daarvoor is het van belang dat het meta-model van mijn linked-data store interop
 
     <section id="profiel"><div class="header-wrapper"><h2 id="x3-profiel"><bdi class="secno">3. </bdi>Profiel</h2><a class="self-link" href="#profiel" aria-label="Permalink for Section 3."></a></div>
       
-      <div data-format="markdown"><p>Inleidende tekst </p>
-<p>Beschrijving:</p>
+      <div data-format="markdown"><p>In dit hoofdstuk beschrijven we de profielen voor de beschrijving van een begrip, een begrippenkader en een collectie van begrippen. Daarmee maken we zoveel mogelijk gebruik van bestaande standaarden en bijbehorende definities. Zoals bij de rationale aangegeven leunen we hier sterk op SKOS en op de ISO 25964. </p>
+<p>Ieder profiel bestaat uit 2 delen:</p>
 <ul>
-<li>inhoud - conform onze eigen standaard (practice what you preach), c.q. profiel (skos)</li>
-<li>structuur - in shape met constraints, ook bruikbaar voor validatie (shacl)</li>
+<li>een inhoudelijke beschrijving van de kenmerken waarmee een begrip kan worden beschreven. Dit doen we conform onze eigen standaard (practice what you preach). Dat betekent dat we voor ieder kenmerk van een begrip de volgende kenmerken beschrijven:<ul>
+<li>voorkeursterm. De Engelse term nemen we over uit SKOS, maar soms ook uit een samenhangende standaard als Dublin Core of Prov-O. In het profiel geven we de Nederlandse definitie.</li>
+<li>definitie. De definitie in het Engels nemen we over uit SKOS of een samenhangende standaard. In het profiel geven we de Nederlandse definitie.</li>
+<li>beschrijving (op B2 niveau). Een beschrijving op B2 niveau maakt geen onderdeel uit van bestaande standaarden. Voor het delen van begrippenkaders van bijvoorbeeld de overheid met burgers is dit een essentiële toevoeging. </li>
+<li>toelichting. De toelichting in het Engels nemen we over uit SKOS of een samenhangende standaard. De ISO 25964 geeft vaak ook een waardevolle (Engelse) toelichting. De ISO 25964 geeft zelf aan dat de toelichting misschien nog wel belangrijker is dan de definitie. In het profiel geven we de Nederlandse toelichting.</li>
+<li>bron. Bij ieder kenmerk geven we aan welke bron(nen) we hebben gebruikt voor de beschrijving.</li>
 </ul>
-<p>Metadata, geldigheid, publicatie, releasen</p>
+</li>
+<li>een beschrijving van de structuur van de beschrijvende elementen. Dit leidt tot een shape met constraints. Deze wordt in de vorm van een plaatje getoond, maar is ook als machine-leesbare (SHACL) beschrijving beschikbaar voor validatie.</li>
+</ul>
 </div>
       
 
