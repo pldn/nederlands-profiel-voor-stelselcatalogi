@@ -75,7 +75,7 @@ beg-nps:Harmonisatierelatie
   a skos:Concept ;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
   skos:definition
-    "Relateert een begrip aan een overeenkomstig begrip uit een ander begrippenstelsel, op basis van de betekenis."@nl ,
+    "Relateert een begrip aan een overeenkomstig begrip uit een ander begrippenkader, op basis van de betekenis."@nl ,
     "Relates two concepts coming, by convention, from different schemes, and that have comparable meanings"@en ;
   skos:broader beg-nps:SemantischeRelatie ;
   skos:prefLabel
@@ -296,7 +296,7 @@ beg-nps:Collection
     "collection"@en ,
     "collectie"@nl ;
   skos:scopeNote
-    "Met betekenisvol wordt bedoeld dat de begrippen op een bepaalde manier met elkaar samenhangen. Een collectie betreft vaak een deel van de begrippen uit één begrippenstelsel, maar kan ook begrippen bevatten die afkomstig zijn uit meerdere begrippenstelsels"@nl ,
+    "Met betekenisvol wordt bedoeld dat de begrippen op een bepaalde manier met elkaar samenhangen. Een collectie betreft vaak een deel van de begrippen uit één begrippenkader, maar kan ook begrippen bevatten die afkomstig zijn uit meerdere begrippenkaders"@nl ,
     "Collections can be used where you would like a set of concepts to be displayed under a 'node label'."@en ;
   skos:related beg-nps:Member ;
   dct:source
@@ -544,7 +544,7 @@ beg-nps:Notation
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
   skos:definition
     "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme."@en ,
-    "Een code voor een begrip is een tekenreeks ter aanduiding van precies éénn begrip uit een begrippenstelsel."@nl ;
+    "Een code voor een begrip is een tekenreeks ter aanduiding van precies éénn begrip uit een begrippenkader."@nl ;
   skos:altLabel
     "notatie"@nl ,
     "classificatiecode"@nl ;
@@ -629,7 +629,7 @@ beg-nps:ConceptScheme
     "concept scheme"@en ;
   skos:definition
     "A set of concepts, optionally including statements about semantic relationships between those concepts."@en ,
-    "Een begrippenstelsel is een verzameling van begrippen, inclusief eventuele semantische relaties tussen deze begrippen."@nl ;
+    "Een begrippenkader is een verzameling van begrippen, inclusief eventuele semantische relaties tussen deze begrippen."@nl ;
   skos:related beg-nps:TopConcept ;
   skos:example "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes. Concept schemes are also embedded in glossaries and terminologies."@en ;
   skos:inScheme begkr-nps:BegrippenkaderNPS .
@@ -770,7 +770,7 @@ beg-nps:OrderedCollection
     skos: ,
     <https://www.w3.org/TR/skos-reference/#collections> .
 
-## concepts from WG Metadata 
+## concepts from WG Metadata
 
 beg-nps:Type a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
@@ -929,4 +929,3 @@ beg-nps:Keywords a skos:Concept;
   skos:prefLabel "keywords"@nl;
   skos:definition "Deze eigenschap bevat vrije keywords of termen die de resource beschrijven."@nl;
   skos:scopeNote "Toelichting over het gebruik"@nl .
-  
