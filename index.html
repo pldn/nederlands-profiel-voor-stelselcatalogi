@@ -1,5 +1,4 @@
 <!DOCTYPE html><html lang="nl"><head>
-<script src="https://hypothes.is/embed.js" async></script>
 <meta charset="utf-8">
 <meta name="generator" content="ReSpec 32.2.4">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -194,19 +193,19 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     "repoURL": "pldn/nederlands-profiel-voor-stelselcatalogi"
   },
   "xref": "web-platform",
-  "publishISODate": "2022-09-26T00:00:00.000Z",
-  "generatedSubtitle": "Unofficial Draft 26 september 2022"
+  "publishISODate": "2022-09-27T00:00:00.000Z",
+  "generatedSubtitle": "Unofficial Draft 27 september 2022"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-UD"></head>
   <body class="h-entry" data-cite="HTML INFRA URL WEBIDL DOM FETCH"><div class="head">
     
     <h1 id="title" class="title">Nederlands Profiel voor Begrippencatalogi</h1> 
-    <p id="w3c-state">Unofficial Draft <time class="dt-published" datetime="2022-09-26">26 september 2022</time></p>
+    <p id="w3c-state">Unofficial Draft <time class="dt-published" datetime="2022-09-27">27 september 2022</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
         <dt>Deze versie:</dt><dd>
-                <a class="u-url" href="https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20220926/">https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20220926/</a>
+                <a class="u-url" href="https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20220927/">https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20220927/</a>
               </dd>
         <dt>Laatst gepubliceerde versie:</dt><dd>
                 <a href="https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi">https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi</a>
@@ -2558,11 +2557,6 @@ graph:pldn-begrippen {
     </section>
 
     <section data-format="markdown" id="harmonisatie-en-hergebruik"><div class="header-wrapper"><h2 id="x4-harmonisatie-en-hergebruik"><bdi class="secno">4. </bdi>Harmonisatie en hergebruik</h2><a class="self-link" href="#harmonisatie-en-hergebruik" aria-label="Permalink for Section 4."></a></div>
-<blockquote>
-<blockquote>
-<p>Usecase &amp; requirements verwijzing maakt de volgende paragraaf wellicht wat overbodig.</p>
-</blockquote>
-</blockquote>
 <p>Om data goed te kunnen gebruiken, maar zeker ook om data te combineren met andere data is het belangrijk om het te begrijpen. 
 Begrippenkaders versterken de interoperabiliteit van datasets omdat het duidelijk maakt wat de betekenis is van termen die gebruikt worden.
 Een vooralsnog belangrijk thema in data is silo-vorming en organisaties zijn ook nadrukkelijk bezig om silo's te ontmantelen omdat data in samenhang meer waarde kan leveren. Om data in samenhang te kunnen bevragen is het noodzakelijk dat de terminologie eenduidig is en op elkaar aansluit. We hebben daarom niet alleen afzonderlijke begrippenkaders per registratie nodig maar juist een stelsel van verbonden begrippenkaders. In dit hoofdstuk bespreken we best-practices op dit gebied.</p>
@@ -2575,28 +2569,28 @@ Een vooralsnog belangrijk thema in data is silo-vorming en organisaties zijn ook
 <section id="harmonisatie"><div class="header-wrapper"><h3 id="x4-1-harmonisatie"><bdi class="secno">4.1 </bdi>Harmonisatie</h3><a class="self-link" href="#harmonisatie" aria-label="Permalink for Section 4.1"></a></div>
 <p>Harmonisatie is het vastleggen van hoe begrippen uit verschillende begrippenkaders op basis van betekenis aan elkaar relateren. 
 Hiervoor gebruiken we nadrukkelijk geen owl:sameAs gezien dat impliceert dat de twee resources op alle mogelijke manieren identiek zijn (sterker nog; het zijn dezelfde resources). Alhoewel twee begrippen exact dezelfde betekenis kunnen hebben kunnen ze vooralsnog verschillende lexicale labels; eigenaren en documentatie hebben. Ook zijn de logische gevolgen van owl:sameAs hierdoor veelal ongewenst. Een voorbeeld van een ongewenste implicatie is dat het kan leiden tot meerdere voorkeurstermen per taal voor een begrip en dit is niet toegestaan. Dit zien we bijvoorbeeld bij de volgende set statements:</p>
-<pre><code aria-busy="false" class="hljs css">\&amp;lt;<span class="hljs-selector-id">#B</span>\&gt; <span class="hljs-selector-tag">a</span> skos:Concept ;
+<pre><code aria-busy="false" class="hljs css">ex:B a skos:Concept ;
   skos:prefLabel <span class="hljs-string">"Bouwwerk"</span>@nl ;
-  skos:inScheme \&amp;lt;<span class="hljs-selector-id">#BegrippenkaderA</span>\&gt; .
+  skos:inScheme ex:BegrippenkaderA .
 
-\&amp;lt;<span class="hljs-selector-id">#C</span>\&gt; <span class="hljs-selector-tag">a</span> skos:Concept ;
+ex2:C a skos:Concept ;
   skos:prefLabel <span class="hljs-string">"Constructie"</span>@nl ;
-  skos:inScheme \&amp;lt;<span class="hljs-selector-id">#BegrippenkaderB</span>\&gt; .
+  skos:inScheme ex2:BegrippenkaderB .
 
-\&amp;lt;<span class="hljs-selector-id">#B</span>\&gt; owl:sameAs \&amp;lt;<span class="hljs-selector-id">#C</span>\&gt; .
+ex:B owl:sameAs ex2:C .
 </code></pre>
 <p>wat impliceert:</p>
-<pre><code aria-busy="false" class="hljs css">\&amp;lt;<span class="hljs-selector-id">#B</span>\&gt; <span class="hljs-selector-tag">a</span> skos:Concept ;
+<pre><code aria-busy="false" class="hljs css">ex:B a skos:Concept ;
   skos:prefLabel <span class="hljs-string">"Bouwwerk"</span>@nl ;
   skos:prefLabel <span class="hljs-string">"Constructie"</span>@nl ;
-  skos:inScheme \&amp;lt;<span class="hljs-selector-id">#BegrippenkaderA</span>\&gt; 
-  skos:inScheme \&amp;lt;<span class="hljs-selector-id">#BegrippenkaderB</span>\&gt; .
+  skos:inScheme ex:BegrippenkaderA 
+  skos:inScheme ex2:BegrippenkaderB .
 
-\&amp;lt;<span class="hljs-selector-id">#C</span>\&gt; <span class="hljs-selector-tag">a</span> skos:Concept ;
+ex2:C a skos:Concept ;
   skos:prefLabel <span class="hljs-string">"Constructie"</span>@nl ;
   skos:prefLabel <span class="hljs-string">"Bouwwerk"</span>@nl ;
-  skos:inScheme \&amp;lt;<span class="hljs-selector-id">#BegrippenkaderB</span>\&gt;
-  skos:inScheme \&amp;lt;<span class="hljs-selector-id">#BegrippenkaderA</span>\&gt; .
+  skos:inScheme ex2:BegrippenkaderB
+  skos:inScheme ex:BegrippenkaderA .
 </code></pre>
 <p>Als alternatief op owl:sameAs zijn harmonisatierelaties gedefinineerd in SKOS. Deze relaties worden gebruik om de mapping tussen begrippen in verschillende begrippenkaders vast te leggen wanneer deze een vergelijkbare betekenis hebben. Bijvoorbeeld door te stellen dat het begrip "Woning" uit één begrippenkader een "overeenkomstig generieker" (skos:broadMatch) begrip "Pand" kent uit een ander begrippenkader.
 We nemen zo het begrip "Pand" niet op in het begrippenkader waar "Woning" gedefinieerd is.</p>
@@ -2617,19 +2611,17 @@ ex2:Land a skos:Concept
 <li>externe begrippenkaders kunnen optioneel worden geïmporteerd met owl:imports.</li>
 </ul>
 </section><section id="hergebruik"><div class="header-wrapper"><h3 id="x4-2-hergebruik"><bdi class="secno">4.2 </bdi>Hergebruik</h3><a class="self-link" href="#hergebruik" aria-label="Permalink for Section 4.2"></a></div>
-<p>Het hergebruiken van begrippen is het opnemen van begrippen in verschillende begrippenkaders. In tegenstelling tot bij harmonisatie, waar twee losse sets van begrippen aan elkaar gerelateerd worden door extra relaties te leggen, wordt bij hergebruik één begrip aan verschillende begrippenkaders toegevoegd. Dit is afgebeeld in het volgende diagram.
+<p>Het hergebruiken van begrippen is het opnemen van begrippen in verschillende begrippenkaders. In tegenstelling tot bij harmonisatie, waar twee losse sets van begrippen aan elkaar gerelateerd worden door extra relaties te leggen, wordt bij hergebruik één begrip aan verschillende begrippenkaders toegevoegd. In deze zin commiteer je volledig aan de beschrijving van het begrip uit een ander begrippenkader. Dit is afgebeeld in het volgende diagram.
 
       </p><figure id="fig-hergebruik">
-        <img src="/respec/afbeeldingen/hergebruik.png" alt="" height="561" width="791">
+        <img src="respec/afbeeldingen/hergebruik.png" alt="" height="561" width="791">
         <figcaption>Figuur <bdi class="figno">1</bdi> <span class="fig-title">hergebruik</span></figcaption>
       </figure>
     
 Begrippen komen zo terug in verschillende contexten. Dit is een algemene good practice omdat we hiermee contexten integreren (waarmee we expliciet dezelfde taal spreken) maar ook omdat we hiermee contexten kunnen modularizeren (conform het Don't Repeat Yourself principe (DRY)).<p></p>
-<p>SKOS gaat er van uit dat de betekenis van een begrip niet beïnvloed wordt door de statements die er over vastgelegd zijn. De eigenaar van het begrip bepaald namelijk de betekenis. De statements over een begrip maken we om deze inherente betekenis te kunnen communiceren. Een goede beschrijving zorgt ervoor dat men het begrip juist interpreteert zodat het we begrip op de correcte wijze begrijpen. De betekenis van een begrip is dus niet afhankelijk van de statements die we er over maken, maar de statements verwoorden de betekenis die het begrip al heeft. </p>
-<p>In de praktijk betekent dit dat een begrip in elke context gebruikt kan worden, zonder dat de betekenis zal veranderen. Het toevoegen van eigenschappen is mogelijk, (<a href="https://www.w3.org/TR/rdf-concepts/#section-anyone">anybody can say anything about anything</a>); al moet wel beoordeelt worden wat de impact is op de interpretatie van het begrip door mensen. Een begrip wordt onderdeel van een begrippenkader wanneer het een skos:inScheme relatie heeft naar het begrippenkader. Het is niet noodzakelijk om eigenschappen van het externe begrip, zoals de voorkeursterm, te repliceren wanneer het externe begrip gepubliceert is. Een Semantic Web applicatie zal op basis van de URI de beschrijving kunnen ophalen. </p>
-<p><code>TODO: owl:imports kan een rol spelen bij het werken met meerdere begrippenkaders. omdat je zo eenvoudig de begripsbeschrijvingen kan verzamelen en vervolgens kan integreren. semantisch gezien doet dit niks dus dit kunnen we eventueel negeren.</code>
-Wanneer een begrippenkader in het geheel hergebruikt wordt kan er ook gekozen worden om dit begrippenkader te 'importeren' middels owl:imports. Omdat owl:imports als rdfs:range én rdfs:domain owl:Ontology heeft, impliceert dit dat beide begrippenkaders van het type owl:Ontology zijn. Het is ook een optie om de owl:Ontology (wat we hier eigenlijk als rdf-graph zien) en het begrippenkader als twee aparte resources te zien. </p>
-<p>Vervolgens kunnen relaties tussen externe begrippen en de andere begrippen in het begrippenkader gelegd waardoor een netwerk of stelsel ontstaat. In RDF kan dat er als volgt uit zien.</p>
+<p>SKOS gaat er van uit dat de betekenis van een begrip niet beïnvloed wordt door de statements die er over vastgelegd zijn. De eigenaar van het begrip bepaald namelijk de betekenis. De statements over een begrip maken we om deze inherente betekenis te kunnen communiceren. Eveneens dat een huis niet blauw wordt puur omdat er is vastgelegd dat deze blauw is. Een goede beschrijving zorgt ervoor dat men het begrip juist interpreteert zodat het we begrip op de correcte wijze begrijpen. Wanneer je een blauw huis zoekt die eigenlijk niet blauw is het lastig om het betreffende huis te vinden. De betekenis van een begrip is dus niet afhankelijk van de statements die we er over maken, maar de statements verwoorden de betekenis die het begrip al heeft. </p>
+<p>In de praktijk betekent dit dat een begrip in elke context gebruikt kan worden, zonder dat de betekenis zal veranderen. Het toevoegen van eigenschappen is mogelijk, (<a href="https://www.w3.org/TR/rdf-concepts/#section-anyone">anybody can say anything about anything</a>); al moet wel beoordeelt worden wat de impact is op de interpretatie van het begrip door mensen. Een begrip wordt onderdeel van een begrippenkader wanneer het een skos:inScheme relatie heeft naar het begrippenkader. Het is niet noodzakelijk om eigenschappen van het externe begrip, zoals de voorkeursterm, te repliceren wanneer het externe begrip gepubliceert is. Een Semantic Web applicatie zal op basis van de URI de beschrijving kunnen ophalen, (dereferencen) of het gehele begrippenkader importeren, bijvoorbeeld op basis van een owl:imports statement. </p>
+<p>Vervolgens kunnen relaties tussen de externe begrippen en de andere begrippen in het begrippenkader gelegd waardoor een netwerk of stelsel ontstaat. In RDF kan dat er als volgt uit zien.</p>
 <pre><code aria-busy="false" class="hljs css">ex:Referentiekader a skos:ConceptScheme .
 
 ex:BestuurlijkGebied a skos:Concept ;
@@ -2647,13 +2639,12 @@ ex2:Land a skos:Concept ;
 </code></pre>
 <p>Regels:</p>
 <ul>
-<li>Statements over externe begrippen van de bronhouder kunnen niet veranderd worden. Wanneer een extern begrip wordt toegevoegd aan een begrippenkader kunnen enkel aanvullende statements worden gemaakt.</li>
-<li>Het externe begrip is onderdeel van het lokale begrippenkader en krijgt dus een skos:inScheme relatie naar het lokale begrippenkader.</li>
+<li>Statements over externe begrippen van de bronhouder kunnen niet veranderd worden, je commiteerd je namelijk aan het begrip zoals het beschreven is door de bronhouder. Wanneer een extern begrip wordt toegevoegd aan een begrippenkader kunnen enkel aanvullende statements worden gemaakt, zoals een skos:inscheme of skos:topConceptOf relatie</li>
+<li>Het externe begrip is onderdeel van het lokale begrippenkader en krijgt dus een skos:inScheme relatie naar het lokale begrippenkader en behoudt de skos:inScheme naar het orginele begrippenkader.</li>
 <li>Een extern begrip kan een plek krijgen in de hierarchie van het lokale begrippenkader aan de hand van skos:broader relaties van en naar het externe begrip.</li>
 <li>Een extern begrip kan een startpunt zijn in een hierarchie van begrippen, en zo dus een skos:topConceptOf relatie (of inverse daarvan) kennen.</li>
 <li>Wanneer het externe begrip is gepubliceerd, is het niet noodzakelijk om de beschrijving te repliceren. Dit kan opgehaald worden aan de hand van de uri.</li>
-<li>Het is mogelijk om owl:imports te gebruiken om aan te geven dat een begrippenkader een ander begrippenkader als geheel importeert. Het gebruik van owl:imports tussen begrippenkader &lt;a&gt; en &lt;b&gt; betekent niet dat de begrippen van &lt;b&gt; onderdeel worden van begrippenkader &lt;a&gt;. Alleen dat de RDF-graph die hoort bij &lt;b&gt; 'opgenomen' wordt bij de RDF-graph die hoort bij &lt;a&gt;. Er is geen relatie tussen owl:imports en skos:inScheme.
-&lt;/a&gt;&lt;/b&gt;&lt;/a&gt;&lt;/b&gt;&lt;/b&gt;&lt;/a&gt;</li>
+<li>Het is mogelijk om owl:imports te gebruiken om aan te geven dat een begrippenkader een ander begrippenkader als geheel importeert. Het gebruik van owl:imports tussen begrippenkader A en B betekent niet dat de begrippen van B onderdeel worden van begrippenkader A. Alleen dat de RDF-graph die hoort bij B 'opgenomen' wordt bij de RDF-graph die hoort bij A. Er is geen relatie tussen owl:imports en skos:inScheme. De owl:imports statement kan ook tussen andere resources gelegd worden die expliciet de beheerde set aan statements omvatten. Bijvoorbeeld de named graph waarin alle beheerde statements in zijn opgenomen.</li>
 </ul>
 </section></section>
     <section data-format="markdown" id="samenhang-met-andere-profielen"><div class="header-wrapper"><h2 id="x5-samenhang-met-andere-profielen"><bdi class="secno">5. </bdi>Samenhang met andere profielen</h2><a class="self-link" href="#samenhang-met-andere-profielen" aria-label="Permalink for Section 5."></a></div>
