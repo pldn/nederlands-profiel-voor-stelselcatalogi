@@ -62,7 +62,8 @@ Regels:
 
 # Hergebruik
 Het hergebruiken van begrippen is het opnemen van begrippen in verschillende begrippenkaders. In tegenstelling tot bij harmonisatie, waar twee losse sets van begrippen aan elkaar gerelateerd worden door extra relaties te leggen, wordt bij hergebruik één begrip aan verschillende begrippenkaders toegevoegd. In deze zin commiteer je volledig aan de beschrijving van het begrip uit een ander begrippenkader. Dit is afgebeeld in het volgende diagram.
-![](respec/afbeeldingen/hergebruik.png "hergebruik")
+![](respec/afbeeldingen/hergebruik.png "Datastructuren hergebruik en harmonisatie")
+
 Begrippen komen zo terug in verschillende contexten. Dit is een algemene good practice omdat we hiermee contexten integreren (waarmee we expliciet dezelfde taal spreken) maar ook omdat we hiermee contexten kunnen modularizeren (conform het Don't Repeat Yourself principe (DRY)).
 
 SKOS gaat er van uit dat de betekenis van een begrip niet beïnvloed wordt door de statements die er over vastgelegd zijn. De eigenaar van het begrip bepaald namelijk de betekenis. De statements over een begrip maken we om deze inherente betekenis te kunnen communiceren. Eveneens dat een huis niet blauw wordt puur omdat er is vastgelegd dat deze blauw is. Een goede beschrijving zorgt ervoor dat men het begrip juist interpreteert zodat het we begrip op de correcte wijze begrijpen. Wanneer je een blauw huis zoekt die eigenlijk niet blauw is het lastig om het betreffende huis te vinden. De betekenis van een begrip is dus niet afhankelijk van de statements die we er over maken, maar de statements verwoorden de betekenis die het begrip al heeft. 
@@ -78,7 +79,6 @@ ex:BestuurlijkGebied a skos:Concept ;
   skos:inScheme ex2:GeoPolitiek .
 
 ex2:GeoPolitiek a skos:ConceptScheme ;
-  # owl:imports ex:Referentiekader ;
   skos:hasTopConcept ex:BestuurlijkGebied .
 
 ex2:Land a skos:Concept ;
