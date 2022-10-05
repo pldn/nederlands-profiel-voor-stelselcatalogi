@@ -52,150 +52,151 @@ jobs:
             Collection-selectedStatements.nt
             Bron-selectedStatements.nt
             en-woordenboek-selectedStatements.nt
-  rdf2markdown-begrippenkader-table:
-    needs: [prep-statements]
-    name: rdf2markdown-begrippenkader-table
-    runs-on: ubuntu-20.04
-    steps:
-      - name: checkout
-        uses: actions/checkout@v2
-      - name: Set up JDK 11
-        uses: actions/setup-java@v3
-        with:
-          java-version: '11'
-          distribution: 'adopt'
-      - name: Fetch rdf2xml
-        uses: robinraju/release-downloader@v1.3
-        with:
-          repository: "architolk/rdf2xml"
-          tag: "v1.0.0"
-          fileName: "rdf2xml.jar"
-      - name: Download rdf2markdown-input
-        uses: actions/download-artifact@v3
-        with:
-          name: rdf2markdown-input
-      - name: ttl to xml
-        run: java -jar rdf2xml.jar Begrippenkader-selectedStatements.nt selectedStatements.xml respec/rdf2markdown/rdf2xml.xsl
-      - name: generate tables
-        run: java -jar respec/rdf2markdown/jars/saxon9.jar -s:selectedStatements.xml -o:respec/rdf2markdown/Begrippenkader-table.md -xsl:respec/rdf2markdown/rdf2x-table.xsl
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: rdf2markdown-begrippenkader-table
-          path: respec/rdf2markdown/Begrippenkader-table.md
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: rdf2markdown-begrippenkader-nts
-          path: selectedStatements.xml
-  rdf2markdown-concept-table:
-    needs: [prep-statements]
-    name: rdf2markdown-concept-table
-    runs-on: ubuntu-20.04
-    steps:
-      - name: checkout
-        uses: actions/checkout@v2
-      - name: Set up JDK 11
-        uses: actions/setup-java@v3
-        with:
-          java-version: '11'
-          distribution: 'adopt'
-      - name: Fetch rdf2xml
-        uses: robinraju/release-downloader@v1.3
-        with:
-          repository: "architolk/rdf2xml"
-          tag: "v1.0.0"
-          fileName: "rdf2xml.jar"
-      - name: Download rdf2markdown-input
-        uses: actions/download-artifact@v3
-        with:
-          name: rdf2markdown-input
-      - name: ttl to xml
-        run: java -jar rdf2xml.jar Concept-selectedStatements.nt selectedStatements.xml respec/rdf2markdown/rdf2xml.xsl
-      - name: generate tables
-        run: java -jar respec/rdf2markdown/jars/saxon9.jar -s:selectedStatements.xml -o:respec/rdf2markdown/Concept-table.md -xsl:respec/rdf2markdown/rdf2x-table.xsl
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: rdf2markdown-concept-table
-          path: respec/rdf2markdown/Concept-table.md
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: rdf2markdown-concept-nts
-          path: selectedStatements.xml
-  rdf2markdown-collectie-table:
-    needs: [prep-statements]
-    name: rdf2markdown-collectie-table
-    runs-on: ubuntu-20.04
-    steps:
-      - name: checkout
-        uses: actions/checkout@v2
-      - name: Set up JDK 11
-        uses: actions/setup-java@v3
-        with:
-          java-version: '11'
-          distribution: 'adopt'
-      - name: Fetch rdf2xml
-        uses: robinraju/release-downloader@v1.3
-        with:
-          repository: "architolk/rdf2xml"
-          tag: "v1.0.0"
-          fileName: "rdf2xml.jar"
-      - name: Download rdf2markdown-input
-        uses: actions/download-artifact@v3
-        with:
-          name: rdf2markdown-input
-      - name: ttl to xml
-        run: java -jar rdf2xml.jar Collection-selectedStatements.nt selectedStatements.xml respec/rdf2markdown/rdf2xml.xsl
-      - name: generate tables
-        run: java -jar respec/rdf2markdown/jars/saxon9.jar -s:selectedStatements.xml -o:respec/rdf2markdown/Collection-table.md -xsl:respec/rdf2markdown/rdf2x-table.xsl
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: rdf2markdown-collectie-table
-          path: respec/rdf2markdown/Collection-table.md
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: rdf2markdown-collectie-nts
-          path: selectedStatements.xml
-  rdf2markdown-bron-table:
-    needs: [prep-statements]
-    name: rdf2markdown-bron-table
-    runs-on: ubuntu-20.04
-    steps:
-      - name: checkout
-        uses: actions/checkout@v2
-      - name: Set up JDK 11
-        uses: actions/setup-java@v3
-        with:
-          java-version: '11'
-          distribution: 'adopt'
-      - name: Fetch rdf2xml
-        uses: robinraju/release-downloader@v1.3
-        with:
-          repository: "architolk/rdf2xml"
-          tag: "v1.0.0"
-          fileName: "rdf2xml.jar"
-      - name: Download rdf2markdown-input
-        uses: actions/download-artifact@v3
-        with:
-          name: rdf2markdown-input
-      - name: ttl to xml
-        run: java -jar rdf2xml.jar Bron-selectedStatements.nt selectedStatements.xml respec/rdf2markdown/rdf2xml.xsl
-      - name: generate tables
-        run: java -jar respec/rdf2markdown/jars/saxon9.jar -s:selectedStatements.xml -o:respec/rdf2markdown/Bron-table.md -xsl:respec/rdf2markdown/rdf2x-table.xsl
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: rdf2markdown-bron-table
-          path: respec/rdf2markdown/Bron-table.md
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: rdf2markdown-bron-nts
-          path: selectedStatements.xml
+  # rdf2markdown-begrippenkader-table:
+  #   needs: [prep-statements]
+  #   name: rdf2markdown-begrippenkader-table
+  #   runs-on: ubuntu-20.04
+  #   steps:
+  #     - name: checkout
+  #       uses: actions/checkout@v2
+  #     - name: Set up JDK 11
+  #       uses: actions/setup-java@v3
+  #       with:
+  #         java-version: '11'
+  #         distribution: 'adopt'
+  #     - name: Fetch rdf2xml
+  #       uses: robinraju/release-downloader@v1.3
+  #       with:
+  #         repository: "architolk/rdf2xml"
+  #         tag: "v1.0.0"
+  #         fileName: "rdf2xml.jar"
+  #     - name: Download rdf2markdown-input
+  #       uses: actions/download-artifact@v3
+  #       with:
+  #         name: rdf2markdown-input
+  #     - name: ttl to xml
+  #       run: java -jar rdf2xml.jar Begrippenkader-selectedStatements.nt selectedStatements.xml respec/rdf2markdown/rdf2xml.xsl
+  #     - name: generate tables
+  #       run: java -jar respec/rdf2markdown/jars/saxon9.jar -s:selectedStatements.xml -o:respec/rdf2markdown/Begrippenkader-table.md -xsl:respec/rdf2markdown/rdf2x-table.xsl
+  #     - name: Archive production artifacts
+  #       uses: actions/upload-artifact@v3
+  #       with:
+  #         name: rdf2markdown-begrippenkader-table
+  #         path: respec/rdf2markdown/Begrippenkader-table.md
+  #     - name: Archive production artifacts
+  #       uses: actions/upload-artifact@v3
+  #       with:
+  #         name: rdf2markdown-begrippenkader-nts
+  #         path: selectedStatements.xml
+  # rdf2markdown-concept-table:
+  #   needs: [prep-statements]
+  #   name: rdf2markdown-concept-table
+  #   runs-on: ubuntu-20.04
+  #   steps:
+  #     - name: checkout
+  #       uses: actions/checkout@v2
+  #     - name: Set up JDK 11
+  #       uses: actions/setup-java@v3
+  #       with:
+  #         java-version: '11'
+  #         distribution: 'adopt'
+  #     - name: Fetch rdf2xml
+  #       uses: robinraju/release-downloader@v1.3
+  #       with:
+  #         repository: "architolk/rdf2xml"
+  #         tag: "v1.0.0"
+  #         fileName: "rdf2xml.jar"
+  #     - name: Download rdf2markdown-input
+  #       uses: actions/download-artifact@v3
+  #       with:
+  #         name: rdf2markdown-input
+  #     - name: ttl to xml
+  #       run: java -jar rdf2xml.jar Concept-selectedStatements.nt selectedStatements.xml respec/rdf2markdown/rdf2xml.xsl
+  #     - name: generate tables
+  #       run: java -jar respec/rdf2markdown/jars/saxon9.jar -s:selectedStatements.xml -o:respec/rdf2markdown/Concept-table.md -xsl:respec/rdf2markdown/rdf2x-table.xsl
+  #     - name: Archive production artifacts
+  #       uses: actions/upload-artifact@v3
+  #       with:
+  #         name: rdf2markdown-concept-table
+  #         path: respec/rdf2markdown/Concept-table.md
+  #     - name: Archive production artifacts
+  #       uses: actions/upload-artifact@v3
+  #       with:
+  #         name: rdf2markdown-concept-nts
+  #         path: selectedStatements.xml
+  # rdf2markdown-collectie-table:
+  #   needs: [prep-statements]
+  #   name: rdf2markdown-collectie-table
+  #   runs-on: ubuntu-20.04
+  #   steps:
+  #     - name: checkout
+  #       uses: actions/checkout@v2
+  #     - name: Set up JDK 11
+  #       uses: actions/setup-java@v3
+  #       with:
+  #         java-version: '11'
+  #         distribution: 'adopt'
+  #     - name: Fetch rdf2xml
+  #       uses: robinraju/release-downloader@v1.3
+  #       with:
+  #         repository: "architolk/rdf2xml"
+  #         tag: "v1.0.0"
+  #         fileName: "rdf2xml.jar"
+  #     - name: Download rdf2markdown-input
+  #       uses: actions/download-artifact@v3
+  #       with:
+  #         name: rdf2markdown-input
+  #     - name: ttl to xml
+  #       run: java -jar rdf2xml.jar Collection-selectedStatements.nt selectedStatements.xml respec/rdf2markdown/rdf2xml.xsl
+  #     - name: generate tables
+  #       run: java -jar respec/rdf2markdown/jars/saxon9.jar -s:selectedStatements.xml -o:respec/rdf2markdown/Collection-table.md -xsl:respec/rdf2markdown/rdf2x-table.xsl
+  #     - name: Archive production artifacts
+  #       uses: actions/upload-artifact@v3
+  #       with:
+  #         name: rdf2markdown-collectie-table
+  #         path: respec/rdf2markdown/Collection-table.md
+  #     - name: Archive production artifacts
+  #       uses: actions/upload-artifact@v3
+  #       with:
+  #         name: rdf2markdown-collectie-nts
+  #         path: selectedStatements.xml
+  # rdf2markdown-bron-table:
+  #   needs: [prep-statements]
+  #   name: rdf2markdown-bron-table
+  #   runs-on: ubuntu-20.04
+  #   steps:
+  #     - name: checkout
+  #       uses: actions/checkout@v2
+  #     - name: Set up JDK 11
+  #       uses: actions/setup-java@v3
+  #       with:
+  #         java-version: '11'
+  #         distribution: 'adopt'
+  #     - name: Fetch rdf2xml
+  #       uses: robinraju/release-downloader@v1.3
+  #       with:
+  #         repository: "architolk/rdf2xml"
+  #         tag: "v1.0.0"
+  #         fileName: "rdf2xml.jar"
+  #     - name: Download rdf2markdown-input
+  #       uses: actions/download-artifact@v3
+  #       with:
+  #         name: rdf2markdown-input
+  #     - name: ttl to xml
+  #       run: java -jar rdf2xml.jar Bron-selectedStatements.nt selectedStatements.xml respec/rdf2markdown/rdf2xml.xsl
+  #     - name: generate tables
+  #       run: java -jar respec/rdf2markdown/jars/saxon9.jar -s:selectedStatements.xml -o:respec/rdf2markdown/Bron-table.md -xsl:respec/rdf2markdown/rdf2x-table.xsl
+  #     - name: Archive production artifacts
+  #       uses: actions/upload-artifact@v3
+  #       with:
+  #         name: rdf2markdown-bron-table
+  #         path: respec/rdf2markdown/Bron-table.md
+  #     - name: Archive production artifacts
+  #       uses: actions/upload-artifact@v3
+  #       with:
+  #         name: rdf2markdown-bron-nts
+  #         path: selectedStatements.xml
+  
   rdf2markdown-en-woordenboek:
     needs: [prep-statements]
     name: rdf2markdown-en-woordenboek
@@ -233,31 +234,32 @@ jobs:
           name: rdf2markdown-en-woordenboek-nts
           path: selectedStatements.xml
   main:
-    needs: [rdf2markdown-begrippenkader-table, rdf2markdown-concept-table, rdf2markdown-collectie-table, rdf2markdown-bron-table, rdf2markdown-en-woordenboek]
+    # needs: [rdf2markdown-begrippenkader-table, rdf2markdown-concept-table, rdf2markdown-collectie-table, rdf2markdown-bron-table, rdf2markdown-en-woordenboek]
+    needs: [rdf2markdown-en-woordenboek]
     name: Build, Validate and Deploy
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
-      - name: Download rdf2mardown
-        uses: actions/download-artifact@v3
-        with:
-          name: rdf2markdown-begrippenkader-table
-          path: respec/rdf2markdown
-      - name: Download rdf2mardown
-        uses: actions/download-artifact@v3
-        with:
-          name: rdf2markdown-concept-table
-          path: respec/rdf2markdown
-      - name: Download rdf2mardown
-        uses: actions/download-artifact@v3
-        with:
-          name: rdf2markdown-collectie-table
-          path: respec/rdf2markdown
-      - name: Download rdf2mardown
-        uses: actions/download-artifact@v3
-        with:
-          name: rdf2markdown-bron-table
-          path: respec/rdf2markdown
+      # - name: Download rdf2mardown
+      #   uses: actions/download-artifact@v3
+      #   with:
+      #     name: rdf2markdown-begrippenkader-table
+      #     path: respec/rdf2markdown
+      # - name: Download rdf2mardown
+      #   uses: actions/download-artifact@v3
+      #   with:
+      #     name: rdf2markdown-concept-table
+      #     path: respec/rdf2markdown
+      # - name: Download rdf2mardown
+      #   uses: actions/download-artifact@v3
+      #   with:
+      #     name: rdf2markdown-collectie-table
+      #     path: respec/rdf2markdown
+      # - name: Download rdf2mardown
+      #   uses: actions/download-artifact@v3
+      #   with:
+      #     name: rdf2markdown-bron-table
+      #     path: respec/rdf2markdown
       - name: Download rdf2mardown
         uses: actions/download-artifact@v3
         with:
