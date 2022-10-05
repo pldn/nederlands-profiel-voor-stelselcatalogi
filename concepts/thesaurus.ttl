@@ -48,6 +48,7 @@ beg-nps:BibliographicResource
     <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/BibliographicResource> ,
     dct: ,
     foaf: ;
+    skos:editorialNote "Dit begrip moet vervangen worden door 'Source'; dit heeft op meerdere punten effect op dit begrippenkader. Dit moet nog verwerkt worden."@nl ;
   skos:definition
     "Een brondocument is een boek, een artikel of enig ander documentair object."@nl ,
     "A book, article, or other documentary resource."@en ;
@@ -79,7 +80,7 @@ beg-nps:Harmonisatierelatie
     "Relates two concepts coming, by convention, from different schemes, and that have comparable meanings"@en ;
   skos:broader beg-nps:SemantischeRelatie ;
   skos:prefLabel
-    "Harmonisatierelatie"@nl ,
+    "harmonisatierelatie"@nl ,
     "is in mapping relation with"@en ;
   dct:source <https://www.w3.org/TR/skos-reference/#mapping> ,
     skos: .
@@ -304,8 +305,8 @@ beg-nps:Collection
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.38> ,
     skos: ;
   skos:prefLabel
-    "Collectie"@nl ,
-    "Collection"@en .
+    "collectie"@nl ,
+    "collection"@en .
 
 beg-nps:Taxonomy
   a skos:Concept ;
@@ -749,8 +750,8 @@ beg-nps:ControlledVocabulary
   skos:definition "Een begrippenlijst is een geselecteerde lijst van woorden en frasen, die worden gebruikt om eenheden van informatie (een document of werk) te indexeren zodat deze gemakkelijk kunnen worden gevonden."@nl ;
   skos:scopeNote "Begrippenkaders bieden een manier om kennis te ordenen voor het later kunnen ophalen. Ze worden gebruikt in indexeringsschema's, koppen, thesauri, taxonomieën en andere kennisorganisatiesystemen. Begrippenkader schema's verplichten het gebruik van vooraf gedefinieerde,geautoriseerde termen die vooraf zijn geselecteerd door de ontwerpers van de schema's,in tegenstelling tot natuurlijke taalvocabulaires,die een dergelijke beperking niet hebben."@nl,"Controlled vocabularies provide a way to organize knowledge for subsequent retrieval. They are used in subject indexing schemes,subject headings,thesauri,taxonomies and other knowledge organization systems. Controlled vocabulary schemes mandate the use of predefined,authorised terms that have been preselected by the designers of the schemes,in contrast to natural language vocabularies,which have no such restriction."@en ;
   skos:prefLabel
-    "Begrippenlijst"@nl ,
-    "Controlled vocabulary"@en ;
+    "begrippenlijst"@nl ,
+    "controlled vocabulary"@en ;
   skos:broader beg-nps:ConceptScheme ;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
   skos:definition "A controlled vocabulary is a carefully selected list of words and phrases, which are used to tag units of information (document or work) so that they may be more easily retrieved by a search."@en ;
