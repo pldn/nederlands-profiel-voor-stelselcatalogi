@@ -1,5 +1,4 @@
-# Begrippenboom
-
+<h2>Begrippenboom</h2>
 <details>
   <summary>Begrippenkader Nederlands Profiel voor Stelselcatalogi</summary>
   <ul>

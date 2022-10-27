@@ -1,4 +1,4 @@
-## Inleiding
+# Inleiding
 
 De PLDN Werkgroep ‘Nederlands profiel voor stelselcatalogi’ heeft als ambitie een basisprofiel voor stlelselcatalogi te beschrijven. De eerste stap daarin is een basisprofiel voor begrippencatalogi, waarmee verschillende begrippencatalogi interoperabel ingericht kunnen worden. Het doel is een samenhangend stelsel van begrippencatogi, waarbij elke begrippencatalogus een samenhangend domein representeert. Voorbeelden zijn de begrippencatalogus van de basisregistraties, de begrippencatalogus voor het DSO en de begrippencatalogus voor het Zorgeloos Vastgoed afsprakenstelsel. Daartoe willen we het uiteindelijke profiel als aanbevolen standaard of als pas-toe-leg-uit standaard aanbieden aan het Forum Standaardisatie.
 
