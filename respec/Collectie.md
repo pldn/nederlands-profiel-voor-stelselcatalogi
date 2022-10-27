@@ -1,5 +1,3 @@
-# Collectie
-
 Beschrijving van een collectie van begrippen.
 
 Meaningful Collections of Concepts

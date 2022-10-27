@@ -1,5 +1,3 @@
-# Begrippenkader
-
 Het begrippenkader is het geheel van de begripsbeschrijvingen die als één geheel worden beheerd.
 
 Voor het beschrijven van de metadata van een begrippenkader sluiten we aan op metadatastandaarden zoals Dublin Core (dcterms), de Provenance Ontologie (Prov-O) en ADMS/DCAT. We zien een begrippenkader als een "semantic asset": een waardevolle eenheid van geëxpliciteerde kennis. Dit komt overeen met een adms:Asset. Aangezien adms:Asset een specialisatie is van een dcat:Dataset kunnen we op deze wijze goed aansluiten op catalogi die DCAT als uitgangspunt nemen, zoals data.overheid.nl
