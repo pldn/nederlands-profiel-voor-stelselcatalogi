@@ -1,3 +1,4 @@
+# Begrip
 - Een begrip kent altijd één **_voorkeursterm_**. Het woord (de voorkeursterm) welke binnen het betreffende domein hoofdzakelijk gebruikt wordt om een bepaald begrip kenbaar te maken. De voorkeursterm vindt zijn oorsprong in de natuurlijke taal of vakjargon.
 - Een begrip kent altijd een **_definitie_** (niet persé publieksvriendelijk, wel juridisch geldig waar mogelijk), deze definitie dient compleet en sluitend te zijn en voldoende informatie te bevatten om binnen het domein herkenbaar te zijn.
 - Een begrip kent altijd een **_context_** ter aanvulling van de definitie. Bijvoorbeeld om het onderscheid te maken tussen verschillende domeinen. Denk aan water en bouw _steiger_.

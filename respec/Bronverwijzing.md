@@ -1,3 +1,4 @@
+# Bronverwijzing
 
 Een bron voor een begrip is een gerelateerd document waaruit de betekenis van het begrip is afgeleid. Het is good practice om voor ieder begrip bronverwijzingen op te nemen. Zo is het duidelijk waar een begrip op gebasseerd is. Dit verhoogd de kwaliteit van het begrip en vooral ook de betrouwbaarheid.
 
