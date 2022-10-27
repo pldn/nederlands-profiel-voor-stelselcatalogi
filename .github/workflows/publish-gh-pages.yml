@@ -270,7 +270,6 @@ jobs:
           GH_PAGES_BRANCH: gh-pages
   comments:
     needs: main
-    if: ${{ github.ref == 'refs/heads/gh-pages' }}
     name: add feedback tool
     runs-on: ubuntu-20.04
     steps:
