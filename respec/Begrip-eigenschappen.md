@@ -11,11 +11,12 @@ De context wordt gevormd door het begrippenkader waarbinnen het begrip zich bevi
 
 ### Optionele begrip eigenschappen
 - Een begrip kan één of meerdere [alternatieven termen](#andere-labels) hebben.
-- Een begrip kan één of meerdere [alternatieve schrijfwijzen](#andere-labels) (ook typefouten) hebben.
+- Een begrip kan één of meerdere [alternatieve schrijfwijzen](#andere-labels) (ook typfouten) hebben.
 - Een begrip kan één of meerdere [zoektermen en/of trefwoorden](#andere-labels) hebben.
 - Een begrip kan [hetzelfde zijn als](#semantische-relaties) een ander begrip.
 - Een begrip kan [ongeveer hetzelfde zijn](#semantische-relaties) als een ander begrip.
 - Een begrip kan [een verbijzondering zijn](#semantische-relaties) van een ander begrip.
+- Een begrip kan [gerelateerd zijn](#semantische-relaties) aan een ander begrip.
 
 ### Best practices voor gebruik
 
@@ -29,18 +30,10 @@ Mocht binnen één begrippenkader toch twee begrippen terugkomen die vaak met de
 Het is een goede best-practice om elke resource te voorzien met een rdfs:label waarmee deze resource een voor mensen leesbare vorm kent, ongeacht de context. Elk begrip dient per taal precies één expliciet opgenomen rdfs:label te bevatten. Anders dan de voorkeursterm, is het verstandig om zoveel mogelijk context in het label mee te geven, zodat geen verwarring ontstaat in het kader van homoniemen (zie ook de vorige sectie). Merk op dat het hier gaat om het expliciet opgegeven rdfs:label. Het is denkbaar dat tools andere rdfs:labels afleiden, op basis van de SKOS ontologie (aangezien alle SKOS labels subproperties zijn van rdfs:label).
 
 - Alternatieve termen (alternative labels)
-Alternatieve lexicale termen (labels), bruikbaar voor aanvullende termen (labels) naast de voorkeursterm. Bruikbaar voor bijvoorbeeld synoniemen.
-Het wordt niet aangeraden labels op te nemen van meer gespecializeerde begrippen als alternatieve termen (ookwel upward posting), in plaats van aparte begrippen te definieren voor iedere term.
-e.g.
-```
-ex:Gebied rdf:type skos:Concept ;
-  skos:prefLabel "Gebied"@nl ;
-  skos:altLabel "Land"@nl ;
-  skos:altLabel "Provincie"@nl ;
-  skos:altLabel "Gemeente"@nl .
-```
+Alternatieve termen zijn aanvullende termen (labels) naast de voorkeursterm. Bruikbaar voor bijvoorbeeld synoniemen.
+Het wordt niet aangeraden labels op te nemen van meer gespecializeerde begrippen als alternatieve termen (ookwel upward posting), in plaats van aparte begrippen te definiëren voor iedere term.
 - Verborgen termen (hidden labels)
-Een lexicaal label welke niet bedoeld is om getoond te worden, maar enkel dient als hulpmiddel voor toepassingen die op tekst gebaseerde indexerings- en zoekbewerkingen uitvoeren. Verborgen labels kunnen bijvoorbeeld gebruikt worden voor veel voorkomende type of spellingsfouten.
+Een lexicaal label welke niet bedoeld is om getoond te worden, maar enkel dient als hulpmiddel voor toepassingen die op tekst gebaseerde indexerings- en zoekbewerkingen uitvoeren. Verborgen labels kunnen bijvoorbeeld gebruikt worden voor veel voorkomende typ of spellingsfouten.
 - Een begrip krijgt expliciet één rdfs:label om compatibiliteit met bestaande tools te bevorderen.
 
 #### Definitie en uitleg
@@ -55,14 +48,14 @@ Hiervan kennen we drie relaties.
 - narrower
 - related
 
-skos:broader en skos:narrower stellen hierarchische relaties voor en worden dus gebruikt om structuur in een begrippenkader aan te brengen. Het 'hoogste' begrip (in de hierarchie van skos:broader/skos:narrower) in een begrippenkader wordt verbonden aan het begrippenkader met de relatie skos:hasTopConcept. Het is good-practice om deze relatie van het begrippenkader naar het begrip te leggen.
+skos:broader en skos:narrower stellen hierarchische relaties voor en worden dus gebruikt om structuur in een begrippenkader aan te brengen. Het 'hoogste' begrip (in de hierarchie van skos:broader/skos:narrower) in een begrippenkader wordt verbonden aan het begrippenkader. Het is good-practice om deze relatie van het begrippenkader naar het begrip te leggen. Hiervoor gebruiken we skos:hasTopConcept.
 Hierarchische relaties kunnen drie 'ladingen' hebben. Over het algemeen gaat het om generalisatie - een begrip is breder dan een ander begrip. Ook kan het een deel/geheel lading of een klasse/instantie lading hebben, voor deze laatste twee wordt het aangeraden om de iso-thes relaties te gebruiken.
 
 Het is een good-practice om hierarchische relaties van onder naar boven te leggen. Dat wil zeggen dat we de begrippen-hiërarchie opbouwen door explixiet skos:broader relaties te leggen in plaats van skos:narrower relaties. Semantisch gezien maakt dit geen verschil; skos:broader en skos:narrower zijn namelijk inverse relaties. Het kan voorkomen dat een begrip meerdere bredere begrippen kent. Het is dan ook niet nodig om beide relaties op te nemen: van tools wordt verwacht dat zij, waar nodig, de navigatie "tegen de pijl in" ook ondersteunen. Daarnaast is het een good-practice om die relaties op te nemen, zoals deze ook in de definitie terugkomen. Als in een definitie van een begrip A de begrippen B en C worden gebruikt, dan is de verwachting dat er ook een relatie A->B en A->C opgenomen wordt bij de specificatie van het begrip.
 
 skos:related is een niet-hierarchische associatieve relatie. Dit kan gebruikt worden om aan te geven dat twee begrippen aan elkaar gerelateerd zijn waarbij één begrip niet gezien wordt als breder begrip van het ander. We hebben het eerder over een soort 'participatie'. Dit kan bijvoorbeeld de relatie tussen het begrip "Verkoop van een woning" en een "Verkoopmakelaar" zijn. skos:related kan ook gebruikt worden om deel-geheel relaties te representeren die niet als hierarchische relaties bedoelt zijn, bijvoorbeeld een begrip voor "Document" wat gerelateerd is aan een begrip voor "Titel".
 
-##### Externe semantische
+##### Externe semantische relaties
 Externe semantische relaties worden ook wel harmonisatierelaties genoemd. Dit zijn relaties tussen twee begrippen in verschillende begrippenkaders kunnen gelegd worden middels:
 closeMatch: is ongeveer hetzelfde als
 exactMatch: is exact hetzelfde als
