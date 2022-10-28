@@ -436,13 +436,27 @@ beg-nps:HistoryNote
 beg-nps:ChangeNote
   a skos:Concept ;
   skos:definition
-    "A note about a modification to a concept."@nl ,
-    "Notitie over een wijziging aan het concept."@en ;
+    "A note about a modification to a concept."@en ,
+    "Notitie over een wijziging aan het concept."@nl ;
   skos:broader beg-nps:Note ;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
   skos:prefLabel
     "change note"@en ,
     "wijzigingsnotitie"@nl ;
+  dct:source
+    skos: ,
+    <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes> .
+
+beg-nps:Example
+  a skos:Concept ;
+  skos:definition
+    "Een voorbeeld van het gebruik van een begrip."@nl ,
+    "An example of the use of a concept."@en ;
+  skos:broader beg-nps:Note ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+  skos:prefLabel
+    "example"@en ,
+    "voorbeeld"@nl ;
   dct:source
     skos: ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes> .
@@ -735,8 +749,8 @@ beg-nps:Concept
     "concept"@en ,
     "begrip"@nl ;
   skos:definition
-    "Concepten zijn de eenheden van denken - ideeën, betekenissen of (categorieën van) objecten en gebeurtenissen - die ten grondslag liggen aan veel kennisorganisatiesystemen."@nl ,
-    "Concepts are the units  of thought —ideas, meanings, or (categories of) objects and events— which underlie many knowledge organization systems."@en ;
+    "Begrippen zijn de eenheden van denken - ideeën, betekenissen of (categorieën van) objecten en gebeurtenissen - die ten grondslag liggen aan veel kennisorganisatiesystemen."@nl ,
+    "Concepts are the units of thought —ideas, meanings, or (categories of) objects and events— which underlie many knowledge organization systems."@en ;
   skos:scopeNote
     "The prime application for a thesaurus is in information retrieval, where the aim is to search for concepts. Concepts are represented by terms. Each term included in a thesaurus should represent a single concept (or unit of thought). Concepts can range from the simple (e.g. cats) to the very complex (e.g. racial discrimination among ethnic minorities). Compound terms or phrases are generally needed to express the more complex concepts."@en ,
     "De belangrijkste toepassing voor een thesaurus is het ophalen van informatie, waarbij het doel is om naar begrippen te zoeken. Begrippen worden weergegeven door termen. Elke term in een thesaurus moet een enkel begrip (of denkeenheid) vertegenwoordigen. Begrippen kunnen variëren van eenvoudig (bijv. katten) tot zeer complex (bijv. rassendiscriminatie onder etnische minderheden). Samengestelde termen of zinsdelen zijn over het algemeen nodig om de meer complexe begrippen uit te drukken."@nl ;

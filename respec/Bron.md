@@ -24,7 +24,7 @@ De waarde van foaf:page is een IRI.
 
 De waarde van dct:bibliographicResource is een literal.
 
-In deze gevallen is het verplicht om middels rdf:label de naam van de resource aan te geven. Het wordt aangeraden om een omschrijving te geven van de bron.
+In deze gevallen is het verplicht om middels rdfs:label de naam van de resource aan te geven. Het wordt aangeraden om een omschrijving te geven van de bron.
 
 Voorbeeld:
 ```
