@@ -1,0 +1,25 @@
+/*-- Definite van tabellen ---------------------------------------------------------*/
+table {
+    empty-cells: show;
+    min-width: 90%;
+    padding: 15px;
+  }
+  thead
+  {
+    background-color: grey;
+    color: white;
+    border-bottom: 3px solid #ddd;
+  }
+  tbody
+  {
+    border-color: darkolivegreen;
+    background-color: lightgrey
+  }
+  td {
+    min-width: 100px;
+    border-bottom: 1px solid #ddd;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+/*----------------------------------------------------------------------------------*/
