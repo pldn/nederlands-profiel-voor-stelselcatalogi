@@ -1,7 +1,7 @@
 // All config options at https://respec.org/docs/
 var respecConfig = {
     // hack to skip W3C specStatus validation
-    latestVersion: "https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi",
+    latestVersion: "https://profielstelselcatalogus.pldn.nl/",
     // Working Groups ids at https://respec.org/w3c/groups/
     group: "webapps",
     xref: "web-platform",
@@ -76,7 +76,7 @@ var respecConfig = {
     //  NB: kijk eerst naar de beschikbare www.specref.org voor verwijziging
     localBiblio: {
         NLAPI: {
-            title: "API Strategie Algemeen (Nederlandse API Strategie I)",
+            title: "Nederlandse API strategie",
             href: "https://docs.geostandaarden.nl/api/API-Strategie/",
             status: "Vastgesteld",
             date: "09 maart 2022",
@@ -95,6 +95,11 @@ var respecConfig = {
             title: "pas-toe-of-leg-uit",
             href: "https://www.forumstandaardisatie.nl/node/229",
             publisher: "Forum Standaardisatie",
+        },
+        ISO25964: {
+            title: "ISO 25964",
+            href: "hhttps://www.niso.org/schemas/iso25964",
+            publisher: "NISO",
         },
     },
 };
