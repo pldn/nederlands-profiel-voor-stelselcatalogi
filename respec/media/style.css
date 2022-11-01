@@ -6,20 +6,21 @@ table {
   }
   thead
   {
-    background-color: grey;
+    background-color: gray;
     color: white;
     border-bottom: 3px solid #ddd;
   }
   tbody
   {
-    border-color: darkolivegreen;
-    background-color: lightgrey
+    vertical-align: top;
+    background-color: #dddddd
   }
   td {
-    min-width: 100px;
-    border-bottom: 1px solid #ddd;
+    min-width: 150px;
+    padding: 5px;
   }
   tr:nth-child(even) {
     background-color: #f2f2f2;
   }
+
 /*----------------------------------------------------------------------------------*/
