@@ -41,7 +41,7 @@ graph:pldn-begrippen {
 ```
 
 # Typering
-De bron zelf kan op verschillende manieren beschreven worden, dat ligt immers bij de bronhouder. Er bestaan verschillende standaard vocabulaires die een oplossing hebben voor het beschrijven van en verwijzen naar bronnen, ook zonder de term bron te gebruiken. Denk bijvoorbeeld aan [dcterms](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/), [FRBR](http://www.sparontologies.net/ontologies/frbr) [BIBO](https://bibliontology.com/) en [FOAF](https://lov.linkeddata.es/dataset/lov/vocabs/foaf), maar ook nationale of sectorale-standaarden. Er is geen defacto standaard die van toepassing is op wat binnen dit profiel onder bron wordt verstaan. Om die reden leggen we geen restricties op de typering van de resource die we als bron voor een begrip aanmerken.
+De bron zelf kan op verschillende manieren beschreven worden, dat ligt immers bij de bronhouder. Er bestaan verschillende standaard vocabulaires die een oplossing hebben voor het beschrijven van en verwijzen naar bronnen, ook zonder de term bron te gebruiken. Denk bijvoorbeeld aan [[DCTERMS]], [FRBR](http://www.sparontologies.net/ontologies/frbr) [[?BIBO]] en [[FOAF]], maar ook nationale of sectorale-standaarden. Er is geen defacto standaard die van toepassing is op wat binnen dit profiel onder bron wordt verstaan. Om die reden leggen we geen restricties op de typering van de resource die we als bron voor een begrip aanmerken.
 
 *Het is good practice om bronnen met _rdf:type_ te typeren met foaf:Document.* In het profiel leggen we hier echter geen restrictie op omdat niet alle gepubliceerde bronnen deze goodpractice volgen. Hier toch een restrictie op zetten zou interoperabiliteit niet bevorderen.
 

@@ -855,13 +855,13 @@ beg-nps:Taal a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
   skos:prefLabel "taal"@nl;
   skos:definition "De talen gebruikt voor tekstuele informatie in het begrippen kader"@nl;
-  skos:scopeNote "We gebruiken als  waardelijst dezelfde lijst als de EU voorschrijft in het DCAT-AP profiel: http://publications.europa.eu/resource/authority/language Deze lijst gebruikt drieletterige codes voor een taal, in tegenstelling tot de tweeletterige postfixes die aan teksten toegevoegd kunnen worden."@nl;
+  skos:scopeNote "We gebruiken als waardelijst dezelfde lijst als de EU voorschrijft in het DCAT-AP profiel: http://publications.europa.eu/resource/authority/language Deze lijst gebruikt drieletterige codes voor een taal, in tegenstelling tot de tweeletterige postfixes die aan teksten toegevoegd kunnen worden."@nl;
   skos:editorialNote "bekend van open data"@nl .
 
 beg-nps:Bronhouder a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
   skos:prefLabel "bronhouder"@nl;
-  skos:definition "Een bronhouder is verantwoordelijk voor het inwinnen en bijhouden van de  gegevens in de catalogus en voor het borgen van de kwaliteit van die gegevens"@nl;
+  skos:definition "Een bronhouder is verantwoordelijk voor het inwinnen en bijhouden van de gegevens in de catalogus en voor het borgen van de kwaliteit van die gegevens"@nl;
   skos:scopeNote "Waardelijst toevoegen met bekende (Nederlandse) organisaties? "@nl;
   skos:editorialNote """via dcat:hadRole wordt de dcat:Role vastgelegd (op basis van een waardelijst)
 via prov:agent wordt de prov:Agent vastgelegd, welke op zijn beurt een foaf:Organisation is. (zie https://www.w3.org/TR/vocab-dcat-3/#qualified-forms) """@nl .
@@ -879,7 +879,7 @@ beg-nps:Contactpunt a skos:Concept;
 beg-nps:Toezichthouder a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
   skos:prefLabel "toezichthouder"@nl;
-  skos:definition "De toezichthouder is de partij die  verantwoordelijk is dat wordt toegezien of de catalogus in overeenstemming met eisen, afspraken en wetgeving opereert"@nl;
+  skos:definition "De toezichthouder is de partij die verantwoordelijk is dat wordt toegezien of de catalogus in overeenstemming met eisen, afspraken en wetgeving opereert"@nl;
   skos:scopeNote "Een optie is om hier prov:qualifiedAttribution te gebruiken, met bereik https://www.w3.org/TR/prov-o/#Attribution "@nl;
   skos:editorialNote "foaf:Organization is een class. Wat is de property tussen catalog en organisatie met de betekenis toezichthouder?"@nl .
 
@@ -897,7 +897,7 @@ beg-nps:Versie a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
   skos:prefLabel "versie"@nl;
   skos:definition "De versie van deze catalogus. Dit wordt niet gebruikt m.b.t. de inhoud van de catalogus, maar voor wijzigingen in de structuur van de catalogus"@nl;
-  skos:scopeNote "Willen we in Linked Datavastleggen wanneer de structuur voor het laatst te gewijzigd en wat die wijziging was? Dit lijkt  beter op zijn plaat in release notes. Dan een URI openemen naar die notes?"@nl;
+  skos:scopeNote "Willen we in Linked Datavastleggen wanneer de structuur voor het laatst te gewijzigd en wat die wijziging was? Dit lijkt beter op zijn plaat in release notes. Dan een URI openemen naar die notes?"@nl;
   skos:editorialNote "dcat:version is toegevoegd in DCAT version 3"@nl .
 
 beg-nps:ThemaCategorie a skos:Concept;
