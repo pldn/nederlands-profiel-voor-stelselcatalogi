@@ -7,7 +7,7 @@ INSERT: technisch diagram obv shapes graph
 ## Taalbinding
 
 ### Begrippen
-[=begrip=]
+[=begrip=] kk
 
 BESCHRIJVING
 

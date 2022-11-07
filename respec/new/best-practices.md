@@ -1,4 +1,4 @@
-# Best practives
+# Best practices
 
 ## Harmonisatie en hergebruik
 Om data goed te kunnen gebruiken, maar zeker ook om data te combineren met andere data is het belangrijk om het te begrijpen. 
