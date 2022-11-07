@@ -4,7 +4,7 @@ In dit hoofdstuk beschrijven we de profielen voor de beschrijving van een begrip
 
 Ieder profiel bestaat uit 2 delen:
 
-* een inhoudelijke beschrijving van de kenmerken waarmee een begrip kan worden beschreven. Dit doen we conform onze eigen standaard (practice what you preach). Dat betekent dat we voor ieder kenmerk van een begrip de volgende kenmerken beschrijven:
+* een inhoudelijke beschrijving van de kenmerken waarmee een [=begrip=] kan worden beschreven. Dit doen we conform onze eigen standaard (practice what you preach). Dat betekent dat we voor ieder kenmerk van een begrip de volgende kenmerken beschrijven:
   * voorkeursterm. De Engelse term nemen we over uit SKOS, maar soms ook uit een samenhangende standaard als Dublin Core of Prov-O. In het profiel geven we de Nederlandse definitie.
   * definitie. De definitie in het Engels nemen we over uit SKOS of een samenhangende standaard. In het profiel geven we de Nederlandse definitie.
   * beschrijving. (op B2 niveau). Een beschrijving op B1 niveau maakt geen onderdeel uit van bestaande standaarden. Voor het delen van begrippenkaders van bijvoorbeeld de overheid met burgers is dit een essentiële toevoeging. 
