@@ -6,7 +6,7 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix skosapnl: <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#> .
-@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix isothes: <http://purl.org/iso25964/skos-thes#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix adms: <http://www.w3.org/ns/adms#> .
@@ -56,6 +56,7 @@ skosapnl:Source
   a sh:NodeShape ;
   rdfs:comment "Een bron is een document, of fragment van een document, die als bron dient voor een bepaald begrip."@nl ;
   rdfs:label "Bronverwijzing"@nl ;
+  sh:targetObjectsOf dct:source ;
   sh:property
     skosapnl:Source-label ,
     skosapnl:Source-page ,
@@ -172,7 +173,7 @@ skosapnl:Concept-narrowerInstantial
   sh:name "categorie van"@nl ;
   sh:order 56 ;
   sh:nodeKind sh:IRI ;
-  sh:path skosthes:narrowerInstantial .
+  sh:path isothes:narrowerInstantial .
 
 skosapnl:Concept-changeNote
   a sh:PropertyShape ;
@@ -246,7 +247,7 @@ skosapnl:Concept-narrowerPartitive
   sh:name "omvat"@nl ;
   sh:order 54 ;
   sh:nodeKind sh:IRI ;
-  sh:path skosthes:narrowerPartitive .
+  sh:path isothes:narrowerPartitive .
 
 skosapnl:Concept-hiddenLabel
   a sh:PropertyShape ;
@@ -293,7 +294,7 @@ skosapnl:Concept-broaderPartitive
   sh:name "is onderdeel van"@nl ;
   sh:order 53 ;
   sh:nodeKind sh:IRI ;
-  sh:path skosthes:broaderPartitive .
+  sh:path isothes:broaderPartitive .
 
 skosapnl:Concept-exactMatch
   a sh:PropertyShape ;
@@ -341,7 +342,7 @@ skosapnl:Concept-broaderGeneric
   sh:name "is specialisatie van"@nl ;
   sh:order 51 ;
   sh:nodeKind sh:IRI ;
-  sh:path skosthes:broaderGeneric .
+  sh:path isothes:broaderGeneric .
 
 skosapnl:Concept-narrowerGeneric
   a sh:PropertyShape ;
@@ -352,7 +353,7 @@ skosapnl:Concept-narrowerGeneric
   sh:name "is generalisatie van"@nl ;
   sh:order 52 ;
   sh:nodeKind sh:IRI ;
-  sh:path skosthes:narrowerGeneric .
+  sh:path isothes:narrowerGeneric .
 
 skosapnl:Concept-historyNote
   a sh:PropertyShape ;
@@ -407,7 +408,7 @@ skosapnl:Concept-broaderInstantial
   sh:name "exemplaar van"@nl ;
   sh:order 55 ;
   sh:nodeKind sh:IRI ;
-  sh:path skosthes:broaderInstantial .
+  sh:path isothes:broaderInstantial .
 
 skosapnl:Concept-scopeNote
   a sh:PropertyShape ;

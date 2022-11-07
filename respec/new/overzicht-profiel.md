@@ -18,6 +18,7 @@ Ieder profiel bestaat uit 2 delen:
 Het volgende informele diagram geeft een overzicht van de hoofd-elementen die dit profiel beschrijft. Iedere ovaal representeert een klasse en de lijnen relaties tussen deze klassen. 
   
 ![](respec/media/conceptueelModel.png "")
+<div class="note"> Wellicht in plaats van het model hierboven een mim-diagram?</div>
 
 Het profiel gaat uit van vier verschillende soorten elementen die voorkomen in een begrippencatalogus. De betekenis hiervan is beschreven in het hoofdstuk [Uitleg](#uitleg). In de sectie [Verplichte elementen](#verplichte-elementen) staat beschreven welke eigenschappen, indien het element toegepast wordt, verplicht, aanbevolen of optioneel zijn. Onderstaande tabel geeft aan welke klassen als verplicht, aanbevolen of optioneel worden gezin binnen dit profiel.
  | Type           | Status     | Rationale |
