@@ -1,9 +1,9 @@
 # Bron
 Een begrip kan zijn ontleend aan een op het web vindbare bron. Dit kan een (versie van) een bepaald werk zijn of een ander documentair iets waarin een beschrijving van het begrip is te vinden. Bronnen kunnen wel of niet beschreven zijn in RDF. Ook kan een begrip ontleend zijn aan een niet op het web vindbare bron.
 
-In ieder scenario willen we voldoende informatie hebben over de bron zodat we deze kunnen vinden. Dit doen we op basis van een IRI, url of citaat.
+In ieder scenario willen we voldoende informatie hebben over de bron zodat we deze kunnen vinden. Dit doen we op basis van een *URI*, *url* of *citaat*.
 
-Wanneer een bron als linked data op het web ontsloten is neem je als waarde van dct:source de IRI van de bron. Dit kan bijvoorbeeld een instance van foaf:Document of dct:BibliographicResource zijn. Hoe deze precies beschreven is maakt voor de bronverwijzing niet uit.
+Wanneer een bron als linked data op het web ontsloten is neem je als waarde van dct:source de URI van de bron. Dit kan bijvoorbeeld een instance van foaf:Document of dct:BibliographicResource zijn. Hoe deze precies beschreven is maakt voor de bronverwijzing niet uit.
 
 Voorbeeld:
 ```
@@ -18,9 +18,9 @@ graph ex:ex-Documenten {
 }
 ```
 Het komt voor dat de bron niet als linked data ontsloten is. In dat geval kan de beheerder van het begrip zelf een beschrijving van de bron maken.
-Hiervoor kunnen IRI's of blanknodes gebruikt worden. Wanneer de bron op vindbaar is op het web kan foaf:page (url) gebruikt worden om naar deze vindplaats te verwijzen. Wanneer de bron niet op het web vindbaar is, kan dct:bibliographicCitation gebruikt worden om citeerinformatie vast te leggen. Het kan zijn dat een bron zowel een url als een citaat kent.
+Hiervoor kunnen URI's of blanknodes gebruikt worden. Wanneer de bron op vindbaar is op het web kan foaf:page (url) gebruikt worden om naar deze vindplaats te verwijzen. Wanneer de bron niet op het web vindbaar is, kan dct:bibliographicCitation gebruikt worden om citeerinformatie vast te leggen. Het kan zijn dat een bron zowel een url als een citaat kent.
 
-De waarde van foaf:page is een IRI.
+De waarde van foaf:page is een URI.
 
 De waarde van dct:bibliographicResource is een literal.
 
@@ -41,8 +41,9 @@ graph:pldn-begrippen {
 ```
 
 # Typering
-De bron zelf kan op verschillende manieren beschreven worden, dat ligt immers bij de bronhouder. Er bestaan verschillende standaard vocabulaires die een oplossing hebben voor het beschrijven van en verwijzen naar bronnen, ook zonder de term bron te gebruiken. Denk bijvoorbeeld aan [[DCTERMS]], [FRBR](http://www.sparontologies.net/ontologies/frbr) [[?BIBO]] en [[FOAF]], maar ook nationale of sectorale-standaarden. Er is geen defacto standaard die van toepassing is op wat binnen dit profiel onder bron wordt verstaan. Om die reden leggen we geen restricties op de typering van de resource die we als bron voor een begrip aanmerken.
+De bron zelf kan op verschillende manieren beschreven worden, dat ligt immers bij de bronhouder. Er bestaan verschillende standaard vocabulaires die een oplossing hebben voor het beschrijven van en verwijzen naar bronnen, ook zonder de term bron te gebruiken. Denk bijvoorbeeld aan [[DCTERMS]], [FRBR](http://www.sparontologies.net/ontologies/frbr) [[[WETTENNL]]] en [[FOAF]], maar ook nationale of sectorale-standaarden. Er is geen defacto standaard die van toepassing is op wat binnen dit profiel onder bron wordt verstaan. Om die reden leggen we geen restricties op de typering van de resource die we als bron voor een begrip aanmerken.
 
-*Het is good practice om bronnen met _rdf:type_ te typeren met foaf:Document.* In het profiel leggen we hier echter geen restrictie op omdat niet alle gepubliceerde bronnen deze goodpractice volgen. Hier toch een restrictie op zetten zou interoperabiliteit niet bevorderen.
-
-*Het is good practice om bronnen met _dct:type_ te classificeren aan de hand van een gecontroleerde vocabulaire, ofwel een classificatie schema*. Een voorbeeld van zo'n classificatie schema is [MARC Genre/Terms Scheme](http://id.loc.gov/vocabulary/marcgt). Dit is in aanvulling op een rdf:type.
+Wel biedt dit profiel een aantal aanbevelingen.
+*Het is aanbevolen om bronnen te typeren als foaf:Document* Vooral omdat dit de meest laagdrempelige typering is aan de hand van bestaande vocabulaire. 
+Aanvullend is het aangeraden om de [[DCTERMS]] vocabulaire te gebruiken om bronnen te beschrijven.
+*Het is aanbevolen om bronnen met _dct:type_ te classificeren aan de hand van een gecontroleerde vocabulaire, ofwel een classificatie schema*. Een voorbeeld van zo'n classificatie schema is [MARC Genre/Terms Scheme](http://id.loc.gov/vocabulary/marcgt). Dit is in aanvulling op een rdf:type.

@@ -6,7 +6,7 @@ var respecConfig = {
     group: "webapps",
     xref: "web-platform",
     specStatus: "unofficial",
-    maxTocLevel: 3,
+    maxTocLevel: 4,
     editors: [
         {
             name: "Arjen Santema"
@@ -98,8 +98,13 @@ var respecConfig = {
         },
         ISO25964: {
             title: "ISO 25964",
-            href: "hhttps://www.niso.org/schemas/iso25964",
+            href: "https://www.niso.org/schemas/iso25964",
             publisher: "NISO",
+        },
+        WETTENNL: {
+            title: "Wetten.nl",
+            href: "https://linkeddata.overheid.nl/terms/",
+            publisher: "KOOP",
         },
     },
 };
