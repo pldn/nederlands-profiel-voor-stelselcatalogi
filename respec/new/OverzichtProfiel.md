@@ -9,7 +9,7 @@ Ieder profiel bestaat uit 2 delen:
   * definitie. De definitie in het Engels nemen we over uit SKOS of een samenhangende standaard. In het profiel geven we de Nederlandse definitie.
   * beschrijving. (op B2 niveau). Een beschrijving op B1 niveau maakt geen onderdeel uit van bestaande standaarden. Voor het delen van begrippenkaders van bijvoorbeeld de overheid met burgers is dit een essentiële toevoeging. 
   * toelichting. De toelichting in het Engels nemen we over uit SKOS of een samenhangende standaard. De ISO 25964 geeft vaak ook een waardevolle (Engelse) toelichting. De ISO 25964 geeft zelf aan dat de toelichting misschien nog wel belangrijker is dan de definitie. In het profiel geven we de Nederlandse toelichting.
-  * bron. Bij ieder kenmerk geven we aan welke bron(nen) we hebben gebruikt voor de beschrijving.
+  * [=bron=]. Bij ieder kenmerk geven we aan welke bron(nen) we hebben gebruikt voor de beschrijving.
 * een beschrijving van de structuur van de beschrijvende elementen. Dit leidt tot een shape met constraints. Deze wordt in de vorm van een plaatje getoond, maar is ook als machine-leesbare (SHACL) beschrijving beschikbaar voor validatie. 
 
 

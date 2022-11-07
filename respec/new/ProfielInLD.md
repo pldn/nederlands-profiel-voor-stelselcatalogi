@@ -1,5 +1,5 @@
 # Applicatie profiel in LD
-
+lorem ipsum
 ## Overzicht
 Hier wordt de taalbinding naar SKOS/DCT beschreven
 
