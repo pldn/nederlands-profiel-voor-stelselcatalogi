@@ -4,8 +4,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix beg-nps: <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/> .
-@prefix begkr-nps: <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/> .
+@prefix beg-nps: <http://pldn.nl/skosapnl/id/concept/> .
+@prefix begkr-nps: <http://pldn.nl/skosapnl/id/conceptscheme/> .
 
 begkr-nps:BegrippenkaderNPS
   a skos:ConceptScheme ;
@@ -17,7 +17,6 @@ begkr-nps:BegrippenkaderNPS
     beg-nps:Term ,
     beg-nps:SemantischeRelatie ,
     beg-nps:InScheme ,
-    beg-nps:Notation ,
     beg-nps:Note ,
     beg-nps:BibliographicResource ,
     beg-nps:BibliographicCitation ,
@@ -564,6 +563,7 @@ beg-nps:Notation
     "notatie"@nl ,
     "classificatiecode"@nl ;
   skos:related beg-nps:Concept ;
+  skos:broader beg-nps:Note ;
   skos:prefLabel
     "code"@nl ,
     "notation"@en ;
