@@ -63,8 +63,8 @@ beg-nps:BibliographicCitation
     dct: ,
     foaf: ;
   skos:definition
-    "Een citaat is een bibliografische referentie naar een document"@nl ,
-    "A bibliographic reference for the resource"@en ;
+    "Een citaat is een bibliografische referentie naar een document."@nl ,
+    "A bibliographic reference for the resource."@en ;
   skos:prefLabel
     "citaat"@nl ,
     "bibliographic citation"@en ;

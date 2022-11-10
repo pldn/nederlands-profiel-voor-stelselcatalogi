@@ -122,6 +122,9 @@ Hiervoor hebben we het volgende patroon:
 
 Een **begrip** heeft een eigenschap '**bron**'.
 De waarde van **bron** is een non-literal resource.
-Het is aangeraden om een bron te beschrijven met een compact, voor de mens leesbaar **label**, een uitgebreide **omschrijving**, een **url** als de bron een vindplaats heeft op het web en anders een **citaat** waarin de citeerinformatie van de bron in een bepaalde citeerstijl is vastgelegd.
+Het is aangeraden om een bron te beschrijven met een compact, voor de mens leesbaar **label**, een uitgebreide **omschrijving**, een **[=url=]** als de bron een vindplaats heeft op het web en anders een **[=citaat=]** waarin de citeerinformatie van de bron in een bepaalde citeerstijl is vastgelegd.
 
 De bron kan een heel document of een fragment daarvan zijn, denk aan een boek, een hoofdstuk of een paragraaf.
+
+<div class="definitie">Een <dfn>url</dfn> is de vindplaats van de resource op het internet.</div>
+<div class="definitie">Een <dfn>citaat</dfn> is een bibliografische referentie naar een document</div>

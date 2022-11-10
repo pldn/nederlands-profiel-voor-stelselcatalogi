@@ -467,10 +467,10 @@ skosapnl:Source-description
 
 skosapnl:Source-bibliographicCitation
   a sh:PropertyShape ;
-  rdfs:label "citatie"@nl ;
+  rdfs:label "citaat"@nl ;
   sh:description "Een reeks gegevens waarmee een document of fragment daarvan gevonden kan worden. Er bestaan verschillende citeerstijlen zoals IEEE, APA of MLA."@nl ;
   sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
-  sh:name "citatie"@nl ;
+  sh:name "citaat"@nl ;
   sh:nodeKind sh:Literal ;
   sh:datatype xsd:string ;
   sh:path dct:bibliographicCitation .
