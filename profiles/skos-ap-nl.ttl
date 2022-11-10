@@ -283,6 +283,8 @@ skosapnl:Concept-prefLabel
   sh:order 0 ;
   sh:path skos:prefLabel ;
   sh:nodeKind sh:Literal ;
+  sh:severity sh:Violation ;
+  sh:message "Een begrip heeft altijd 1 voorkeursterm."@nl ;
   sh:uniqueLang true .
 
 skosapnl:Concept-broaderPartitive
