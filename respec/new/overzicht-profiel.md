@@ -11,8 +11,7 @@ In 2.4 beschrijven we de elementen van een bibliografische of op het web vindbar
 Het beschrijven van de  kenmerken van een [=begrip=], *begrippenkader* of *collectie* doen we conform onze eigen standaard (practice what you preach). Dat betekent dat we voor ieder kenmerk van een begrip de volgende kenmerken beschrijven:
   * voorkeursterm. De Engelse term nemen we over uit SKOS, maar soms ook uit een samenhangende standaard als Dublin Core of Prov-O. In het profiel geven we de Nederlandse definitie.
   * definitie. De definitie in het Engels nemen we over uit SKOS of een samenhangende standaard. In het profiel geven we de Nederlandse definitie.
-  * beschrijving. (op B2 niveau). Een beschrijving op B1 niveau maakt geen onderdeel uit van bestaande standaarden. Voor het delen van begrippenkaders van bijvoorbeeld de overheid met burgers is dit een essentiële toevoeging. 
-  * toelichting. De toelichting in het Engels nemen we over uit SKOS of een samenhangende standaard. De ISO 25964 geeft vaak ook een waardevolle (Engelse) toelichting. De ISO 25964 geeft zelf aan dat de toelichting misschien nog wel belangrijker is dan de definitie. In het profiel geven we de Nederlandse toelichting.
+  * toelichting. De toelichting in het Engels nemen we over uit SKOS of een samenhangende standaard. De ISO 25964 geeft vaak ook een waardevolle (Engelse) toelichting. De ISO 25964 geeft zelf aan dat de toelichting misschien nog wel belangrijker is dan de definitie. Zowel de SKOS- als de ISO toelichting zijn naar het Nederlands vertaald.
   * [=bron=]. Bij ieder kenmerk geven we aan welke bron(nen) we hebben gebruikt voor de beschrijving.
   * relaties met andere kenmerken.
 
@@ -54,7 +53,7 @@ Iets over semantische relaties.
 *tabel met de beschrijving van een semantische relatie met prefLabel, definition, scopeNotes, bronnen*
 
 Een taxonomie kent behalve alle elementen van een glossary ook hiërarchische relaties. Deze hiërarchise relaties zijn optioneel in een glossary en zijn bijvoorbeeld relevant als een begrip wordt gedefinieerd in termen van een ander begrip, bijvoorbeeld 'een gemaal *is een* kunstwerk dat ...'. Deze definitie impliceert dat een gemaal een 'enger begrip' is dan een kunstwerk, die ook als semantische relatie kan worden opgenomen.
-*tabel met de beschrijving van een semantische relatie met prefLabel, definition, scopeNotes, bronnen en kenmerken van begrippen in een taxonomie*
+*tabel met de beschrijving van een thesaurus met prefLabel, definition, scopeNotes, bronnen en kenmerken van begrippen in een taxonomie*
 
 In een taxonomie zijn alle begrippen direct of indirect als via een 'heeft breder begrip' gekoppeld aan een top-begrip. Typerend voor een taxonomie is een gebruikersinterface waarbij op het eerste niveau de top-begrippen worden getoond, waarbij per top-begrip begrippen met een engere betekenis worden getoond, die op nu beurt ook weer begrippen met een engere betekenis tonen, enzovoort. Dit betekent dat, als je een taxonomie publiceert, ieder begrip ofwel via een hiërarchische relatie moet worden gekoppeld aan een ander begrip, ofwel een top-begrip moet zijn.
 
@@ -70,7 +69,7 @@ heeft enger transitief begrip
 
 ### Thesaurus
 Een thesaurus kent naast hiërarchische semantische relaties ook associatieve, niet hiërarchische relaties tussen begrippen.
-*tabel met de beschrijving van een semantische relatie met prefLabel, definition, scopeNotes, bronnen en kenmerken van begrippen in een thesaurus*
+*tabel met de beschrijving van een thesaurus met prefLabel, definition, scopeNotes, bronnen en kenmerken van begrippen in een thesaurus*
 
 De de ISO 25964 standaard voor thesauri maakt daarbij ook onderscheid tussen instantiële relaties, partitieve relaties en generalaties/specialisaties. Hoewel een al dan niet transitief enger of breder begrip vaak gebruikt als specialisatie respectievelijk generalisatie kan het zowel om een partitieve relaties als om een generalisatie/specialisatie zijn. 
 
@@ -106,11 +105,53 @@ vastlegging
 Onder andere de Belastingdienst heeft nog weer een uitbreiding op deze extensie gemaakt, waarin rechtshandelingen nader worden getypeerd op basis van de rechtsbetrekking tussen de actoren. *link*
 
 ## Begrippenkader
-Definitie: Lorem ipsum
-Toelichting: Lorem ipsum
+Een samenhangende set van begrippen in een bepaald domein wordt beheerd als 1 samenhangend begrippenkader. Een begrippenkader kan de vorm van een glossary, taxonomie, thesaurus of thesaurus met extra semantiek hebben. Als eenheid van beheer heeft een begrippenkader allerlei eigen metadata.
+In het geval van een taxonomie of thesaurus heeft een begrippenkader altijd 1 of meerdere topconcepten.
+*tabel met de beschrijving van een begrippenkader met prefLabel, definition, scopeNotes, bronnen en metadata elementen in een begrippenkader*
+
+topconcept
+
+### Metadata van een begrippenkader
+Voorkeursnaam begrippenkader
+Alternatieve  naam begrippenkader
+Beschrijving begrippenkader
+Klare taal beschrijving begrippenkader 
+Toelichting
+Ontwerpbeslissingen
+Voorbeeld
+Documentatiepagina
+Wetgeving
+Wetgeving (URI)
+Taal
+Bronhouder
+Uitgever
+Contactpunt
+Toezichthouder
+Opdrachtgever
+Laatst bijgewerkt
+Versie
+Frequentie (URI)
+Publicatiedatum
+Toegangsrechten
+Licentie
+Conformeert aan
+Thema/categorie
+Keywords
+ 
+
 ## Collectie
-Definitie: Lorem ipsum
-Toelichting: Lorem ipsum
+Collecties bieden de mogelijkheid om binnen een begrippenkader begrippen die voor hun betekenis niet direct via semantische relaties met elkaar zijn verbonden, toch bij elkaar te zetten. Zo hebben het begrip 'vervuild' dat in milieuwetgeving wordt gedefinieerd en het begrip 'landgoed' dat in de natuurschoonwet wordt gedefinieerd semantisch geen relatie, maar worden ze beiden beschouwd als 'publiekrechtelijke beperking' in het kader van de Wet Kenbaarheid Publiekrechtelijke Beperkingen (WKPB). Deze begrippen kunnen dan samen met andere begrippen die onder de WKPB vallen worden samengebracht in een collectie.
+*tabel met de beschrijving van een collectie met prefLabel, definition, scopeNotes, bronnen en elementen in een collectie*
+
+hasmember
+
+### Metadata van een collectie
+voorkeursnaam collectie
+alternatieve naam collectie
+beschrijving collectie
+klare taal beschrijving collectie 
+toelichting
+
 ## Bron
 <div class="definitie">Een <dfn>bron</dfn> voor een begrip is een gerelateerd document waaruit de betekenis van het begrip is afgeleid.</div>
 Het is good practice om voor ieder begrip bronverwijzingen op te nemen. Zo is het duidelijk waar een begrip op gebasseerd is. Dit verhoogd de kwaliteit van het begrip en vooral ook de betrouwbaarheid.
