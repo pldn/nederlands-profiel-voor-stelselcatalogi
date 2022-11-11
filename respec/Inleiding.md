@@ -30,7 +30,6 @@ Taxonomieën en thesauri zijn oorspronkelijk ontworpen voor informatieprofession
 De gedachte achter zo'n index is dat de informatiezoeker via een begrippenkader informatie kan vinden die met een bepaald begrip is geïndexeerd. Daarvoor zijn met name de volgende beschrijvende kenmerken van begrippen bruikbaar:
 * termen,
 * definities,
-* lexicale relaties tussen begrippen,
 * semantische relaties tussen begrippen
 
 Begrippen krijgen in het begrippenkader betekenis door de betekenis die enkel bestaat in de hoofden van mensen te "vangen" in een combinatie van de hierboven genoemde elementen.  
