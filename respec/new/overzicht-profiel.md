@@ -1,4 +1,4 @@
-# Conceptueel model
+# Conceptuele beschrijving
 
 In dit hoofdstuk beschrijven we de profielen voor de beschrijving van een begrip, een begrippenkader en een collectie van begrippen. Daarmee maken we zoveel mogelijk gebruik van bestaande standaarden en bijbehorende definities. Zoals bij de rationale aangegeven leunen we hier sterk op SKOS en op de ISO 25964. 
 
@@ -15,82 +15,35 @@ Ieder profiel bestaat uit 2 delen:
 
 ## Overzicht
 
-Het volgende informele diagram geeft een overzicht van de hoofd-elementen die dit profiel beschrijft. Iedere ovaal representeert een klasse en de lijnen relaties tussen deze klassen. 
-  
-![](respec/media/conceptueelModel.png "")
-<div class="note"> Wellicht in plaats van het model hierboven een mim-diagram?</div>
+in alle gevallen zijn begrippen verplicht
 
-Het profiel gaat uit van vier verschillende soorten elementen die voorkomen in een begrippencatalogus. De betekenis hiervan is beschreven in het hoofdstuk [Uitleg](#uitleg). In de sectie [Verplichte elementen](#verplichte-elementen) staat beschreven welke eigenschappen, indien het element toegepast wordt, verplicht, aanbevolen of optioneel zijn. Onderstaande tabel geeft aan welke klassen als verplicht, aanbevolen of optioneel worden gezin binnen dit profiel.
- | Type           | Status     | Rationale |
- | -------------- | ---------- | --------- |
- | Begrip         | Verplicht  |           |
- | Begrippenkader | Verplicht  |           |
- | Bron           | Aanbevolen | Het is aanbevolen om voor alle begrippen de bijbehorende bronnen te beschrijven. Soms is er echter (nog) geen documentaire bron. |
- | Collectie      | Optioneel  | Het gebruik van collecties is toegestaan, maar vaak niet de enige oplossing. |
-  
-### Verplichte elementen
-TODO: volgende genereren obv sh:severity; is alleen nog niet onderdeel van de shapes graph. Huidige tabel ter illustratie en gebaseerd op sh:minCount.
-#### Begrip
+### Glossary
 
-| Eigenschap                                                                  | Type                                                                | Verplicht | Beschrijving |
-| --------------------------------------------------------------------------- | ------------------------------------------------------------------- | --------- | ------------ |
-| [vrijwel overeenkomstig](http://www.w3.org/2004/02/skos/core#closeMatch)    | [Concept](http://www.w3.org/2004/02/skos/core#Concept)              |           | |
-| [wijzigingsnotitie](http://www.w3.org/2004/02/skos/core#changeNote)         | [langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |           | Notitie over een wijziging aan het concept |
-| [behoort tot](http://www.w3.org/2004/02/skos/core#inScheme)                 | [ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme)  | Verplicht | Een begrippenkader waartoe het concept behoort. |
-| [definitie](http://www.w3.org/2004/02/skos/core#definition)                 | [langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) | Verplicht | Een definitie van een begrip is een tekstuele beschrijving van de betekenis van dit begrip waarmee het begrip kan worden onderscheiden van andere begrippen. |
-| [voorkeursterm](http://www.w3.org/2004/02/skos/core#prefLabel)              | [langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) | Verplicht | |
-| [alternative label](http://www.w3.org/2004/02/skos/core#altLabel)           | [langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |           | Een alternatieve term voor een begrip is een term die gebruikt kan worden als alternatief voor de voorkeursterm van dit begrip, maar niet de voorkeur heeft.     |
-| [categorie van](http://purl.org/iso25964/skos-thes#narrowerInstantial)      | [Concept](http://www.w3.org/2004/02/skos/core#Concept)              |           | Relateert een begrip, de categorie, aan een begrip dat exemplarisch is voor eerstgenoemde begrip. |
-| [exact overeenkomstig](http://www.w3.org/2004/02/skos/core#exactMatch)      | [Concept](http://www.w3.org/2004/02/skos/core#Concept)              |           | |
-| [exemplaar van](http://purl.org/iso25964/skos-thes#broaderInstantial)       | [Concept](http://www.w3.org/2004/02/skos/core#Concept)              |           | Relateert een begrip, een exemplaar, aan een ander begrip, de categorie, waartoe eerstgenoemde begrip behoort. |
-| [heeft breder begrip](http://www.w3.org/2004/02/skos/core#broader)          | [Concept](http://www.w3.org/2004/02/skos/core#Concept)              |           | Relateert een begrip aan een bovenliggend begrip in de hierarchie. |
-| [heeft enger begrip](http://www.w3.org/2004/02/skos/core#narrower)          | [Concept](http://www.w3.org/2004/02/skos/core#Concept)              |           | Relateert een concept aan een ander concept die meer specifiek in betekenis is. |
-| [historische notitie](http://www.w3.org/2004/02/skos/core#historyNote)      | [langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |           | Notitie over de voormalige status/gebruik/betekenis van het concept |
-| [is generalisatie van](http://purl.org/iso25964/skos-thes#narrowerGeneric)  | [Concept](http://www.w3.org/2004/02/skos/core#Concept)              |           | Relateert een begrip aan een meer specifieker begrip  |
-| [is gerelateerd aan](http://www.w3.org/2004/02/skos/core#related)           | [Concept](http://www.w3.org/2004/02/skos/core#Concept)              |           | Een concept met een associatieve semantische relatie    |
-| [is onderdeel van](http://purl.org/iso25964/skos-thes#broaderPartitive)     | [Concept](http://www.w3.org/2004/02/skos/core#Concept)              |           | Relateert een begrip aan een meer omvattend begrip. Voorbeelden van eerstgenoemde begrip zullen onderdeel van voorbeelden van het meer omvattende begrip zijn.   |
-| [is specialisatie van](http://purl.org/iso25964/skos-thes#broaderGeneric)   | [Concept](http://www.w3.org/2004/02/skos/core#Concept)              |           | Relateert een begrip aan een meer generieker begrip     |
-| [omvat](http://purl.org/iso25964/skos-thes#narrowerPartitive)               | [Concept](http://www.w3.org/2004/02/skos/core#Concept)              |           | Relateert een begrip aan een minder omvattend begrip. Voorbeelden van eerstgenoemde begrip zullen bestaan uit voorbeelden van het minder omvattende begrip zijn. |
-| [overeenkomstig generieker](http://www.w3.org/2004/02/skos/core#broadMatch) | [Concept](http://www.w3.org/2004/02/skos/core#Concept)              |           | |
-| [overeenkomstig verwant](http://www.w3.org/2004/02/skos/core#relatedMatch)  | [Concept](http://www.w3.org/2004/02/skos/core#Concept)              |           | |
-| [redactionele opmerking](http://www.w3.org/2004/02/skos/core#editorialNote) | [langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |           | |
-| [toelichting](http://www.w3.org/2004/02/skos/core#scopeNote)                | [langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |           | |
-| [uitleg](http://www.w3.org/2000/01/rdf-schema#comment)                      | [langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |           | |
+#### Verplichte elementen
+Voorkeursterm
 
-#### Begrippenkader
-| Eigenschap                                                       | Type                                                                                                                   | Verplicht | Beschrijving |
-| ---------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | --------- | ------------ |
-| [Taal](http://purl.org/dc/terms/language)                        | [http://publications.europa.eu/resource/authority/language](http://publications.europa.eu/resource/authority/language) | Verplicht |              |
-| [Licentie](http://purl.org/dc/terms/license)                     | [http://purl.org/dc/terms/IicenseDocument](http://purl.org/dc/terms/IicenseDocument)                                   |           |              |
-| [Opdrachtgever](http://www.w3.org/ns/prov#qualifiedAttribution)  | [Attribution](http://www.w3.org/ns/prov#Attribution)                                                                   |           |              |
-| [Thema/categorie](http://www.w3.org/ns/dcat#theme)               | [Concept](http://www.w3.org/2004/02/skos/core#Concept)                                                                 |           |              |
-| [Toegangsrechten](http://purl.org/dc/terms/accessRights)         | [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)                                   |           |              |
-| [Toezichthouder](http://www.w3.org/ns/prov#qualifiedAttribution) | [Attribution](http://www.w3.org/ns/prov#Attribution)                                                                   |           |              |
-| [Bronhouder](http://www.w3.org/ns/prov#qualifiedAttribution)     | [Attribution](http://www.w3.org/ns/prov#Attribution)                                                                   |           |              |
-| [Conformeert aan](http://purl.org/dc/terms/conformsTo)           | [http://purl.org/dc/terms/Standard](http://purl.org/dc/terms/Standard)                                                 |           |              |
-| [Contactpunt](http://www.w3.org/ns/dcat#contactPoint)            | [Kind](http://www.w3.org/2006/vcard/ns#Kind)                                                                           |           |              |
-| [Documentatiepagina](http://xmlns.com/foaf/0.1/page)             | [http://xmlns.com/foaf/0.1/Document](http://xmlns.com/foaf/0.1/Document)                                               |           |              |
-| [Uitgever](http://purl.org/dc/terms/publisher)                   | [http://xmlns.com/foaf/0.1/Organisation](http://xmlns.com/foaf/0.1/Organisation)                                       |           |              |
-| [uitleg](http://www.w3.org/2000/01/rdf-schema#comment)           | [langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString)                                                    |           |              |
+definitie
 
-### Aanbevolen elementen
+#### Aanbevolen elementen
+#### Optionele elementen
 
-#### Bronverwijzing
-| Eigenschap                                                 | Type                                                                | Verplicht  | Beschrijving |
-| ---------------------------------------------------------- | ------------------------------------------------------------------- | ---------- | ------------ |
-| [label](http://www.w3.org/2000/01/rdf-schema#label)        | [langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) | Verplicht  | Compacte, voor de mens leesbare aanduiding van de bron. |
-| [citatie](http://purl.org/dc/terms/bibliographicCitation)  | [string](http://www.w3.org/2001/XMLSchema#string)                   | Aanbevolen | Een reeks gegevens waarmee een document of fragment daarvan gevonden kan worden. Er bestaan verschillende citeerstijlen zoals IEEE, APA of MLA. |
-| [url](http://xmlns.com/foaf/0.1/page)                      | [IRI](http://www.w3.org/ns/shacl#IRI)                               | Aanbevolen | Vindplaats van de bron op internet. |
-| [omschrijving](http://www.w3.org/2000/01/rdf-schema#label) | [langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) | Aanbevolen | Uitgebreide, voor de mens leesbare beschrijving van de bron. |
-| [soort](http://purl.org/dc/terms/type)                     | [Concept](http://www.w3.org/2004/02/skos/core#Concept)              | Aanbevolen | Aanduiding van het type of genre van het brondocument. |
+### Taxonomie
 
-### Optionele elementen
+#### Verplichte elementen
+Hierarchische relaties 
 
-#### Collectie
-| Eigenschap                                          | Type                                                                | Verplicht | Beschrijving                                                                              |
-| --------------------------------------------------- | ------------------------------------------------------------------- | --------- | ----------------------------------------------------------------------------------------- |
-| [label](http://www.w3.org/2000/01/rdf-schema#label) | [langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) | Verplicht | Een label voor een object is een voor mensen leesbare naam ter aanduiding van een object. |
-| [bevat](http://www.w3.org/2004/02/skos/core#member) | [Concept](http://www.w3.org/2004/02/skos/core#Concept)              |           | Relateert een collectie aan een begrip dat onderdeel is van deze collectie.               |
+[=polyhierarchy=]?
+<div class="definitie">In taxonomy, a <dfn>polyhierarchy </dfn> refers to any hierarchical structure that allows a term to have multiple parents. (The opposite concept, monohierarchy, is used to describe taxonomies that do not allow polyhierarchy.)</div> 
+
+#### Aanbevolen elementen
+#### Optionele elementen
+
+### Thesaurus
+
+#### Verplichte elementen
+alle semantische relaties
+#### Aanbevolen elementen
+#### Optionele elementen
 
 # Uitleg
 ## Begrippen
@@ -98,6 +51,7 @@ TODO: volgende genereren obv sh:severity; is alleen nog niet onderdeel van de sh
 
 Definitie: Lorem ipsum
 Toelichting: Lorem ipsum
+tabellen obv SKOS
 ## Labels
 
 Definitie: Lorem ipsum
@@ -105,6 +59,14 @@ Toelichting: Lorem ipsum
 ## Relaties
 Definitie: Lorem ipsum
 Toelichting: Lorem ipsum
+
+### Semantische relaties
+
+kkk
+
+#### matchingsrelaties
+Lorem 
+
 ## Documentatie
 Definitie: Lorem ipsum
 Toelichting: Lorem ipsum

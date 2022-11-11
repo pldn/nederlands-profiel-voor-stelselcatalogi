@@ -1,9 +1,15 @@
 ### Applicatie profiel in LD
-lorem ipsum
+
+Zoals beschreven in MIM bestaat een model in LD uit twee delen; 1) een RDF vocabulaire en 2) een RDF Shapesgraph.
+In dit profiel definiëren we alleen een shapesgraph, omdat we volledig aansluiten op bestaande RDF vocabulaires zoals SKOS, DCT en FOAF.
+
+Als prefix wordt voor de shapesgraph gebruik gemaakt van <code>skosapnl:</code>, met als namespace <code>http://bp4mc2.org/def/mim-shapes#</code>.
+
 ## Overzicht
 Hier wordt de taalbinding naar SKOS/DCT beschreven
 
 INSERT: technisch diagram obv shapes graph
+
 ## Taalbinding
 
 ### Types
@@ -12,7 +18,7 @@ INSERT: technisch diagram obv shapes graph
 | ------------------- | ----------------------------------------------------------------------- |
 | bronverwijzing      | [dct:source](http://purl.org/dc/terms/source)                           |
 | collectie           | [skos:Collection](http://www.w3.org/2004/02/skos/core#Collection)       |
-| [=begrip=]             | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
+| [=begrip=]          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
 | begrippenkader      | [skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme) |
 
 ### Eigenschappen en relaties
@@ -76,32 +82,37 @@ INSERT: technisch diagram obv shapes graph
 | soort                                  | [dct:type](http://purl.org/dc/terms/type)                                           |
 
 
-# Specificatie Begrippenkader
+# Specificatie
+
+Met het conceptueel model en de taalbinding die daar aan toegevoegd is kunnen we een dataspecificatie opstellen. De specificatie zoals in de volgende secties beschreven is ook te vinden in de shapesgraph die gepubliceerd is onder <code>http://pldn.nl/def/skosapnl#</code>.
+
+
+## Specificatie Begrippenkader
 | Conceptueel element | Eigenschap                                                   | Kardinaliteit | Type                                                                    |
 | ------------------- | ------------------------------------------------------------ | ------------- | ----------------------------------------------------------------------- |
-| uitleg          | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | 0..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
+| uitleg              | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | 0..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
 
 
-# Specificatie Collectie
+## Specificatie Collectie
 | Conceptueel element | Eigenschap                                                | Kardinaliteit | Type                                                                    |
 | ------------------- | --------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- |
-| label           | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)  | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
-| bevat           | [skos:member](http://www.w3.org/2004/02/skos/core#member) | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
+| label               | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)  | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
+| bevat               | [skos:member](http://www.w3.org/2004/02/skos/core#member) | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
 
 
-# Specificatie Bronverwijzing
+## Specificatie Bronverwijzing
 | Conceptueel element | Eigenschap                                                                  | Kardinaliteit | Type                                                                    |
 | ------------------- | --------------------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- |
-| [=citaat=]         | [dct:bibliographicCitation](http://purl.org/dc/terms/bibliographicCitation) | 0..*          | [xsd:string](http://www.w3.org/2001/XMLSchema#string)                   |
-| soort           | [dct:type](http://purl.org/dc/terms/type)                                   | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
-| label           | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)                    | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
+| [=citaat=]          | [dct:bibliographicCitation](http://purl.org/dc/terms/bibliographicCitation) | 0..*          | [xsd:string](http://www.w3.org/2001/XMLSchema#string)                   |
+| soort               | [dct:type](http://purl.org/dc/terms/type)                                   | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
+| label               | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)                    | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
 | [=url=]             | [foaf:page](http://xmlns.com/foaf/0.1/page)                                 | 0..*          | [sh:IRI](http://www.w3.org/ns/shacl#IRI)                                |
-| omschrijving    | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)                    | 0..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
+| omschrijving        | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)                    | 0..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
 
 
-# Specificatie Begrip
-| Conceptueel element           | Eigenschap                                                                          | Kardinaliteit | Type                                                                    |
-| ----------------------------- | ----------------------------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- |
+## Specificatie Begrip
+| Conceptueel element       | Eigenschap                                                                          | Kardinaliteit | Type                                                                    |
+| ------------------------- | ----------------------------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- |
 | historische notitie       | [skos:historyNote](http://www.w3.org/2004/02/skos/core#historyNote)                 | 0..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
 | toelichting               | [skos:scopeNote](http://www.w3.org/2004/02/skos/core#scopeNote)                     | 0..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
 | voorbeeld                 | [skos:example](http://www.w3.org/2004/02/skos/core#example)                         | 0..*          | [sh:IRIOrLiteral](http://www.w3.org/ns/shacl#IRIOrLiteral)              |

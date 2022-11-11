@@ -6,7 +6,7 @@ var respecConfig = {
     group: "webapps",
     xref: "web-platform",
     specStatus: "unofficial",
-    maxTocLevel: 4,
+    maxTocLevel: 5,
     editors: [
         {
             name: "Arjen Santema"
