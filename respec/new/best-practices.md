@@ -1,4 +1,13 @@
 # Best practices
+## Labels
+
+- Voorkeursterm
+Het is verplicht dat voor iedere taal alle voorkeurtermen die in één taal voorkomen in één begrippenkader uniek zijn. Mocht binnen één begrippenkader toch twee begrippen terugkomen die vaak met dezelfde term worden aangeduid, dan is het noodzakelijk - om spraakverwarring te voorkomen - om een post of prefix toe te voegen als dit algemeen gebruikelijk is. Denk aan _Hengelo (OV)_ en _Hengelo (GLD)_. De voorkeursterm is de daadwerkelijke term zoals deze lexicaal gebruikt wordt (dus met spaties, diacrieten, hoofdlettergebruik). Mocht een post of prefix in de praktijk niet worden gebruikt, dan is dit een sterke aanwijzing dat de twee begrippen feitelijk niet tot hetzelfde begrippenkader behoren, en uit elkaar gehaald moeten worden: de basisregel blijft gelden. Als begrippen in verschillende begrippenkaders zijn geplaatst, dan is een nadere aanduiding van de context ongewenst. Als een lexicale term toch nader gekwalificeert wordt dan is het aangeraden om een meer generiekere of classificerende term te gebruiken en deze tussen haakjes achter de lexicale term te plaatsen in het rdfs:label, conform ISO25964. E.g. `Bank (Zitobject)` en `Bank (Financiele instelling)`.
+- Algemeen label
+Het is een aangeraden om elke resource te voorzien van een rdfs:label waarmee deze resource een voor mensen leesbare vorm kent, ongeacht de context. Elk begrip dient zo per gehanteerde taal precies één expliciet opgenomen rdfs:label te bevatten. Anders dan bij de voorkeursterm, is het verstandig om zoveel mogelijk context in het label mee te geven, zodat geen verwarring ontstaat in het kader van homoniemen. Het algemene label bevordert tevens de compatibiliteit met bestaande tools. Merk op dat het hier gaat om het expliciet opgegeven rdfs:label. Het is denkbaar dat tools andere rdfs:labels afleiden, op basis van de SKOS ontologie (aangezien alle SKOS labels subproperties zijn van rdfs:label).
+- Alternatieve termen
+Alternatieve termen zijn aanvullende termen (labels) naast de voorkeursterm. Bruikbaar voor bijvoorbeeld synoniemen.
+Het wordt niet aangeraden labels op te nemen van meer gespecializeerde begrippen als alternatieve termen (ookwel <dfn>upward posting</dfn>), in plaats van aparte begrippen te definiëren voor iedere term.
 
 ## Bronnen
 Een begrip kan zijn ontleend aan een op het web vindbare bron. Dit kan een (versie van) een bepaald werk zijn of een ander documentair iets waarin een beschrijving van het begrip is te vinden. Bronnen kunnen wel of niet beschreven zijn in RDF. Ook kan een begrip ontleend zijn aan een niet op het web vindbare bron. 
@@ -49,11 +58,6 @@ Wel biedt dit profiel een aantal aanbevelingen.
 <div class="practice"><p class="practicedesc"><span class="practicelab">Het is aanbevolen om bronnen te typeren als foaf:Document</span>Vooral omdat dit de meest laagdrempelige typering is aan de hand van bestaande vocabulaire.</p></div>
 <div class="practice"><p class="practicedesc"><span class="practicelab">Het aangeraden om de [[DCTERMS]] vocabulaire te gebruiken om bronnen te beschrijven.</span></p></div>
 <div class="practice"><p class="practicedesc"><span class="practicelab">Het is aanbevolen om bronnen met _dct:type_ te classificeren</span>Dit doen we aan de hand van een gecontroleerde vocabulaire, ofwel een classificatie schema. Een voorbeeld van zo'n classificatie schema is <a href="http://id.loc.gov/vocabulary/marcgt">MARC Genre/Terms Scheme</a>. Dit is in aanvulling op een rdf:type typering.</p></div>
-
-
-
-
-
 
 ## Harmonisatie en hergebruik
 Om data goed te kunnen gebruiken, maar zeker ook om data te combineren met andere data is het belangrijk om het te begrijpen. 
