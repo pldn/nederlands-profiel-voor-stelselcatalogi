@@ -69,44 +69,49 @@ heeft enger transitief begrip
 <div class="definitie">In taxonomy, a <dfn>polyhierarchy </dfn> refers to any hierarchical structure that allows a term to have multiple parents. (The opposite concept, monohierarchy, is used to describe taxonomies that do not allow polyhierarchy.)</div> 
 
 ### Thesaurus
+Een thesaurus kent naast hiërarchische semantische relaties ook associatieve, niet hiërarchische relaties tussen begrippen.
+*tabel met de beschrijving van een semantische relatie met prefLabel, definition, scopeNotes, bronnen en kenmerken van begrippen in een thesaurus*
 
-#### Verplichte elementen
-alle semantische relaties
-#### Aanbevolen elementen
-#### Optionele elementen
+De de ISO 25964 standaard voor thesauri maakt daarbij ook onderscheid tussen instantiële relaties, partitieve relaties en generalaties/specialisaties. Hoewel een al dan niet transitief enger of breder begrip vaak gebruikt als specialisatie respectievelijk generalisatie kan het zowel om een partitieve relaties als om een generalisatie/specialisatie zijn. 
 
-# Uitleg
-## Begrippen
-<div class="definitie">Een <dfn>begrip</dfn> is een eenheid van denken - een idee, betekenis of (categorie van) objecten en gebeurtenissen - die ten grondslag ligt aan veel kennisorganisatiesystemen.</div>
+Good practices is om als je in een thesaurus deze instantiële, partitieve en generalisatie/specialisatie relaties gebruikt, niet de standaard al dan niet transitieve bredere en engere relaties uit een gewone taxonomie te gebruiken.
+*per element een tabel met prefLabel, definition, scopeNotes, bronnen*
+is gerelateerd aan
+is specialisatie van
+is generalisatie van
+is onderdeel van
+omvat
+is exemplaar van
+is categorie van
 
+### Harmonisatiesrelaties
+Begrippen kunnen ook worden gerelateerd aan begrippen in een ander begrippenkader. 
+*per element een tabel met prefLabel, definition, scopeNotes, bronnen*
+exact overeenkomstig
+vrijwel overeenkomstig
+overeenkomstig verwant
+overeenkomstig specifieker
+overeenkomstig generieker
+
+### Nadere typering van begrippen
+Om in een begrippenkader nog meer semantiek vast te leggen dan in een standaard thesaurus, kunnen extensies op dit profiel worden gemaakt. Een voorbeeld daarvan is skos-lex, waarbij lex staat voor 'legal extension'. In skos-lex worden concepten getypeerd als (rechts)handeling, object (van handeling), actor, agent en vastlegging (record).
+*plaatje uit skoslex*
+*per element een tabel met prefLabel, definition, scopeNotes, bronnen*
+(rechts)handeling
+object
+actor
+agent
+vastlegging
+
+Onder andere de Belastingdienst heeft nog weer een uitbreiding op deze extensie gemaakt, waarin rechtshandelingen nader worden getypeerd op basis van de rechtsbetrekking tussen de actoren. *link*
+
+## Begrippenkader
 Definitie: Lorem ipsum
 Toelichting: Lorem ipsum
-tabellen obv SKOS
-## Labels
-
+## Collectie
 Definitie: Lorem ipsum
 Toelichting: Lorem ipsum
-## Relaties
-Definitie: Lorem ipsum
-Toelichting: Lorem ipsum
-
-### Semantische relaties
-
-kkk
-
-#### matchingsrelaties
-Lorem 
-
-## Documentatie
-Definitie: Lorem ipsum
-Toelichting: Lorem ipsum
-## Begrippenkaders
-Definitie: Lorem ipsum
-Toelichting: Lorem ipsum
-## Collecties
-Definitie: Lorem ipsum
-Toelichting: Lorem ipsum
-## Bronnen
+## Bron
 <div class="definitie">Een <dfn>bron</dfn> voor een begrip is een gerelateerd document waaruit de betekenis van het begrip is afgeleid.</div>
 Het is good practice om voor ieder begrip bronverwijzingen op te nemen. Zo is het duidelijk waar een begrip op gebasseerd is. Dit verhoogd de kwaliteit van het begrip en vooral ook de betrouwbaarheid.
 
