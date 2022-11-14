@@ -9,54 +9,140 @@ In 2.2 beschrijven we wat een begrippenkader is en in 2.3 hoe begrippen los van 
 In 2.4 beschrijven we de elementen van een bibliografische of op het web vindbare bron van de definitie van een begrip.
 
 Het beschrijven van de  kenmerken van een begrip, *begrippenkader* of *collectie* doen we conform onze eigen standaard (practice what you preach). Dat betekent dat we voor ieder kenmerk van een begrip de volgende kenmerken beschrijven:
-  * voorkeursterm. De Engelse term nemen we over uit SKOS, maar soms ook uit een samenhangende standaard als Dublin Core of Prov-O. In het profiel geven we de Nederlandse definitie.
-  * definitie. De definitie in het Engels nemen we over uit SKOS of een samenhangende standaard. In het profiel geven we de Nederlandse definitie.
-  * toelichting. De toelichting in het Engels nemen we over uit SKOS of een samenhangende standaard. De ISO 25964 geeft vaak ook een waardevolle (Engelse) toelichting. De ISO 25964 geeft zelf aan dat de toelichting misschien nog wel belangrijker is dan de definitie. Zowel de SKOS- als de ISO toelichting zijn naar het Nederlands vertaald.
+  * [=voorkeursterm=]. De Engelse term nemen we over uit SKOS, maar soms ook uit een samenhangende standaard als Dublin Core of Prov-O. In het profiel geven we de Nederlandse definitie.
+  * [=definitie=]. De definitie in het Engels nemen we over uit SKOS of een samenhangende standaard. In het profiel geven we de Nederlandse definitie.
+  * [=toelichting=]. De toelichting in het Engels nemen we over uit SKOS of een samenhangende standaard. De ISO 25964 geeft vaak ook een waardevolle (Engelse) toelichting. De ISO 25964 geeft zelf aan dat de toelichting misschien nog wel belangrijker is dan de definitie. Zowel de SKOS- als de ISO toelichting zijn naar het Nederlands vertaald.
   * [=bron=]. Bij ieder kenmerk geven we aan welke bron(nen) we hebben gebruikt voor de beschrijving.
   * relaties met andere kenmerken.
 
 ## Begrip
 Een begrip is het centrale element in deze specificatie. Een begrip is een conceptele resource; het zijn de eenheden van denken - ideeën, betekenissen of (categorieën van) objecten en gebeurtenissen. Zo bestaan of ontstaan begrippen dus in ons hoofd als abstracte entiteiten. In communicatie spelen begrippen een belangrijke rol. In de communicatiewetenschap wordt hier gerefereerd aan de 'Triange of meaning'. Hierin staat een spreker centraal die iets conceptualiseert en daaraan refereert met een bepaalde term (of symbool) met de hoop dat de toehoorder dezelfde conceptualisatie maakt op basis van de gebruikte term zodat hij begrijpt wat de spreker bedoelt. In het onderstaande figuur is deze driehoek afgebeeld en gaat het begrip dus over bedoeling (betekenis); ofwel de gedachte.
 
-![triange of meaning](https://github.com/bp4mc2/bp4mc2/blob/master/site/image-ch3-1.png?raw=true)
+![](https://github.com/bp4mc2/bp4mc2/blob/master/site/image-ch3-1.png?raw=true "Triange of meaning")
 
-*tabel met de beschrijving van een begrip: prefLabel, definition, scopeNotes, bronnen en kenmerken*
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**   | <dfn>begrip</dfn> |
+| **definitie**        | Concepten zijn de eenheden van denken - ideeën, betekenissen of (categorieën van) objecten en gebeurtenissen - die ten grondslag liggen aan veel kennisorganisatiesystemen. |
+| **bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#concepts |
+| **toelichting** | De belangrijkste toepassing voor een thesaurus is het ophalen van informatie, waarbij het doel is om naar begrippen te zoeken. Begrippen worden weergegeven door termen. Elke term in een thesaurus moet een enkel begrip (of denkeenheid) vertegenwoordigen. Begrippen kunnen variëren van eenvoudig (bijv. katten) tot zeer complex (bijv. rassendiscriminatie onder etnische minderheden). Samengestelde termen of zinsdelen zijn over het algemeen nodig om de meer complexe begrippen uit te drukken. |
+
 *in de thesaurus.ttl zijn de kenmerken nu via skos:related aan een begrip gekoppeld. Wellicht moet dit andersom: ieder kermerk relateren aan een begrip*
 
 ### Glossary
 Aan de hand van de begripsdriehoek, zien we dat om een spreker te kunnen begrijpen, een toebehoorder minimaal iets moeten weten over de conceptualisatie en de termen die ter aanduiding gebruikt worden. Door deze basis vast te leggen krijgen we feitelijk een glossary. Dit is de basis voor de beschrijving van begrippen in een bepaald domein. 
 
-Een glossary is een alfabetische termenlijst met definities die gebruikt worden in een bepaald domein. Een glossary kent voor ieder begrip dan ook mimimaal een voorkeursterm en een definitie. Een toelichting in de vorm van een scope afbakening is aanbevolen, evenals een verwijzing naar de bron van de definitie. Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in klare taal, op B1 niveau aanbevolen. De overige kenmerken zijn optioneel.
+Een glossary is een alfabetische termenlijst met definities die gebruikt worden in een bepaald domein. Een glossary kent voor ieder begrip dan ook mimimaal één term en één notitie, repectievelijk een [=voorkeursterm=] en een [=definitie=]. Een toelichting in de vorm van een scope afbakening is aanbevolen, evenals een verwijzing naar de bron van de definitie. Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in klare taal, op B1 niveau aanbevolen. De overige kenmerken zijn optioneel.
 
-++ *tabel met de beschrijving van een glossary (in thesaurus.ttl nu nog controlled vocabulary): prefLabel, definition, scopeNotes, bronnen en kenmerken van begrippen in een glossary.*  
+<p class="note" title="Tabellen moeten opnieuw gegenereert worden wanneer de teksten in thesaurus.ttl naar wens zijn"> In het geval van glossary kunnen de 'requirements' die hierboven genoemd zijn wellicht verplaatst worden naar een scopenote oid.<br>
+Ook kijken naar het verschil tussen deze sectie en sectie 2.4</p>
+
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**   | begrippenlijst |
+| **definitie**        | Een begrippenlijst is een geselecteerde lijst van woorden en frasen, die worden gebruikt om eenheden van informatie (een document of werk) te indexeren zodat deze gemakkelijk kunnen worden gevonden. |
+| **bron** | https://en.wikipedia.org/wiki/Controlled_vocabulary |
+| **toelichting** | Begrippenkaders bieden een manier om kennis te ordenen voor het later kunnen ophalen. Ze worden gebruikt in indexeringsschema&#39;s, koppen, thesauri, taxonomieën en andere kennisorganisatiesystemen. Begrippenkader schema&#39;s verplichten het gebruik van vooraf gedefinieerde,geautoriseerde termen die vooraf zijn geselecteerd door de ontwerpers van de schema&#39;s,in tegenstelling tot natuurlijke taalvocabulaires,die een dergelijke beperking niet hebben. |
+
 
 #### Termen
-Termen zijn karakteristiek van een begrip. We kunnen termen zien als een referentie naar of aanduiding van een begrip. Een begrip kan meerdere termen kennen waarbij sommigen ook een andere rol spelen dan andere. 
 
-*tabel met de beschrijving van een term met prefLabel, definition, scopeNotes, bronnen*
+Termen zijn karakteristieken van een begrip. We kunnen termen zien als een referentie naar of aanduiding van een begrip. Een begrip kan meerdere termen kennen waarbij sommigen ook een andere rol spelen dan andere. 
 
-We onderscheiden daarbij voorkeurstermen, alternatieve termen en zoektermen.
-++ *per element een tabel met prefLabel, definition, scopeNotes, bronnen*
-- voorkeursterm
-- alternatieve term
-- zoekterm
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**   | <dfn>term</dfn> |
+| **definitie**        | Een term is een aaneenschakeling van één of meerdere woorden ter aanduiding van een object. |
+| **bron** | https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.61 |
+| **toelichting** | Een begrip wordt aangeduid met een voor mensen leesbare term (inclusief spaties en diacrieten). Deze is gelijk aan het skos:prefLabel. Uitzondering hierop is de situatie dat binnen 1 conceptschema er vaker dezelfde skos:prefLabel wordt gebruikt. Dit is geen good practice en dient zoveel mogelijk voorkomen te worden. In het geval dat dit toch voorkomt, krijgt het rdfs:label een toevoeging tussen haakjes die het onderscheid aangeeft. Dit label kan meertalig zijn, aangegeven door  of @en, In de definitie moet &#39;woord&#39; breed worden geÃ¯nterpreteerd. Een term mag ook een afkorting zijn, zoals &#39;B.T.W.&#39; (de voorkeursterm voor &#39;Belasting op toegevoegde waarde&#39;), of een code zoals &#39;013&#39; (Een poppodium in Tilburg). |
+
+Hieronder worden de mogelijke soorten termen bij een begrip beschreven.
+
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**   | <dfn>voorkeursterm</dfn> |
+| **definitie**        | Een gepreferreerde term voor een begrip, in een specifieke taal. |
+| **bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/skos-reference/#labels |
+| **toelichting** | De termen die zijn geselecteerd om begrippen weer te geven, kunnen termen van één of meerdere woorden zijn. In het gewone spraakgebruik kan een enkele term meer dan één betekenis hebben. De meest voorkomende betekenis is niet altijd de betekenis die nodig is om het in de thesaurus gezochte concept weer te geven. Indien de context die wordt geboden door de hiërarchie van bredere en smallere concepten gekoppeld aan het betreffende concept onvoldoende is om de beoogde reikwijdte te verduidelijken, dienen aanvullende maatregelen te worden genomen. Hoewel alle thesaurustermen zo ondubbelzinnig mogelijk moeten worden uitgedrukt, is het vooral belangrijk om de voorkeursterm van een bepaald concept zo te formuleren dat het de beoogde reikwijdte aan elke gebruiker overbrengt. De term \&quot;depressie\&quot; met meerdere betekenissen kan bijvoorbeeld worden geherformuleerd als \&quot;economische depressie\&quot; of \&quot;meteorologische depressie\&quot;, al naar gelang het geval. Als alternatief kan een kwalificatie worden gebruikt. In gevallen waarin deze maatregelen niet passend of voldoende zijn, of waar aanvullende informatie zou helpen om de betekenis te verduidelijken en het gebruik consistenter te maken, moet een expliciete scope note worden gebruikt. |
+
+|                   |                                                                                                                                                              |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **voorkeursterm** | alternatieve term                                                                                                                                            |
+| **definitie**     | Een alternatieve term voor een begrip is een term die gebruikt kan worden als alternatief voor de voorkeursterm van dit begrip, maar niet de voorkeur heeft. |
+| **bron**          | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/skos-reference/#labels     |
+| **uri**           | http://pldn.nl/skosapnl/id/concept/AltLabel                                                                                                                  |
+
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**   | zoekterm |
+| **definitie**        | Een zoekterm voor een begrip is een term die beoogd is om het begrip te vinden, maar verder verborgen blijft. |
+| **bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/skos-reference/#labels |
+
 
 #### Notities
 Notities zijn cruciaal bij het beschrijven van een begrip. Dit is de vastlegging van de betekenis in natuurlijke taal.
 
-++ *tabel met de beschrijving van een notitie met prefLabel, definition, scopeNotes, bronnen*
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**   | notitie |
+| **definitie**        | Een algemene notitie zonder specifiek gebruiksdoel. |
+| **bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes |
 
 Hieronder worden de mogelijke soorten notities bij een begrip beschreven.
 
-++ *per element een tabel met prefLabel, definition, scopeNotes, bronnen*
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**   | <dfn>toelichting</dfn> |
+| **definitie**        | Een toelichting voor een begrip is een notitie die meer duidelijk geeft over de betekenis of gebruik van een begrip |
+| **bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes |
+| **toelichting** | De toelichting geeft een aanvulling op de definitie waardoor deze beter begrepen kan worden , zonder dat daarmee de formele beschrijving onnodig of onjuist wordt aangepast. Zie: https://www.w3.org/TR/2009/NOTE-skos-primer-20090818/#secdocumentation  |
 
-- definitie
-- bronverwijzing *de bronbeschrijving zelf in een aparte paragraaf* Dit is alleen geen notitie; maar wel sterk verbonden - aan de definitie.
-- uitleg
-- toelichting
-- redactionele opmerking
-- historie opmerking *heet nu nog historische notitie*
-- wijzigingsnotitie
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**   | historische notitie |
+| **definitie**        | Notitie over de voormalige status/gebruik/betekenis van het concept. |
+| **bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes |
+
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**   | wijzigingsnotitie |
+| **definitie**        | A note about a modification to a concept. |
+| **bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes |
+
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**   | redactionele opmerking |
+| **definitie**        | Een redactionele opmerking voor een begrip is een notitie voor de redacteur, vertaler of beheerder van het begrippenkader. |
+| **bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes |
+| **toelichting** | De redactionele opmerking geeft aan hoe de beschrijving van het begrip tot stand is gekomen, en waarom bepaalde keuzes zijn gemaakt. |
+
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**   | uitleg |
+| **definitie**        | Een uitleg van een begrip is een beschrijving van dit begrip in eenvoudige taal die zonder verdere context begrepen kan worden. |
+| **bron** | http://www.w3.org/2000/01/rdf-schema#, https://www.w3.org/TR/rdf-schema/#ch_comment |
+| **toelichting** | De definitie moet &#39;precies kloppen&#39;. De uitleg is er veel meer op gericht om de lezer te laten snappen wat er wordt bedoeld. Er vanuit gaande dat hij/zij dat nog niet weet.  |
+
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**   | code |
+| **definitie**        | Een code voor een begrip is een tekenreeks ter aanduiding van precies één begrip uit een begrippenstelsel. |
+| **bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notations |
+
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**   | <dfn>definitie</dfn> |
+| **definitie**        | Een definitie van een begrip is een tekstuele beschrijving van de betekenis van dit begrip waarmee het begrip kan worden onderscheiden van andere begrippen. |
+| **bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes |
+| **toelichting** | De definitie dient te voldoen aan specifieke formuleringsregels voor definitie en dient in een voor mensen leesbare taal te begrijpen zijn. In dit laatste onderscheid de definitie zich daarmee van een machine-leesbare formele beschrijving. Aan de hand van een definitie kan iemand bepalen of zijn eigen begrip behorende bij een term overeenkomt met het begrip dat gedefinieerd wordt. De uitleg of de toelichting bij een begrip kan gebruik worden voor iemand die het begrip nog niet kent om te begrijpen waar het over gaat. |
+
+*de bronbeschrijving zelf in een aparte paragraaf* Dit is alleen geen notitie; maar wel sterk verbonden - aan de definitie.
+
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**   | bron |
+| **definitie**        | Een bron voor een begrip is een gerelateerd brondocument waaruit de betekenis van het begrip is afgeleid. |
+| **bron** | http://purl.org/dc/terms/, https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source |
 
 ### Taxonomie
 Iets over semantische relaties.
@@ -168,9 +254,9 @@ Het is good practice om voor ieder begrip bronverwijzingen op te nemen. Zo is he
 
 Hiervoor hebben we het volgende patroon:
 
-Een **begrip** heeft een eigenschap '**bron**'.
+Een **[=begrip=]** heeft een eigenschap '**bron**'.
 De waarde van **bron** is een non-literal resource.
-Het is aangeraden om een bron te beschrijven met een compact, voor de mens leesbaar **label**, een uitgebreide **omschrijving**, een **[=url=]** als de bron een vindplaats heeft op het web en anders een **[=citaat=]** waarin de citeerinformatie van de bron in een bepaalde citeerstijl is vastgelegd.
+Het is aangeraden om een bron te beschrijven met een compact, voor de mens leesbare **[=term=]**, een uitgebreide **omschrijving**, een **[=url=]** als de bron een vindplaats heeft op het web en anders een **[=citaat=]** waarin de citeerinformatie van de bron in een bepaalde citeerstijl is vastgelegd.
 
 De bron kan een heel document of een fragment daarvan zijn, denk aan een boek, een hoofdstuk of een paragraaf.
 

@@ -558,7 +558,7 @@ beg-nps:Notation
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
   skos:definition
     "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme."@en ,
-    "Een code voor een begrip is een tekenreeks ter aanduiding van precies éénn begrip uit een begrippenkader."@nl ;
+    "Een code voor een begrip is een tekenreeks ter aanduiding van precies één begrip uit een begrippenkader."@nl ;
   skos:altLabel
     "notatie"@nl ,
     "classificatiecode"@nl ;

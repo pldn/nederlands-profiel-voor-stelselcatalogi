@@ -1,14 +1,13 @@
-### Applicatie profiel in LD
+# Applicatie profiel in LD
 
 Zoals beschreven in MIM bestaat een model in LD uit twee delen; 1) een RDF vocabulaire en 2) een RDF Shapesgraph.
-In dit profiel definiëren we alleen een shapesgraph, omdat we volledig aansluiten op bestaande RDF vocabulaires zoals SKOS, DCT en FOAF.
-
-Als prefix wordt voor de shapesgraph gebruik gemaakt van <code>skosapnl:</code>, met als namespace <code>http://bp4mc2.org/def/mim-shapes#</code>.
+In dit profiel definiëren we alleen een shapesgraph, omdat we volledig aansluiten op bestaande RDF vocabulaires. De taalbinding naar bestaande RDF vocabulaires is beschreven in sectie [Taalbinding](#taalbinding). De structuur die we daarbij hanteren is beschreven in sectie [Specificatie](#specificatie). Dit is geformaliseert in een shapesgraph.
 
 ## Overzicht
-Hier wordt de taalbinding naar SKOS/DCT beschreven
+In Hoofdstuk 2 is naar voren gekomen dat er verschillende smaken begrippenkaders bestaan waar 
 
-INSERT: technisch diagram obv shapes graph
+![skosapnl](respec/media/skosapnl.png)
+
 
 ## Taalbinding
 
@@ -86,7 +85,7 @@ INSERT: technisch diagram obv shapes graph
 
 Met het conceptueel model en de taalbinding die daar aan toegevoegd is kunnen we een dataspecificatie opstellen. De specificatie zoals in de volgende secties beschreven is ook te vinden in de shapesgraph die gepubliceerd is onder <code>http://pldn.nl/def/skosapnl#</code>.
 
-# Specificatie Begrippenkader
+## Specificatie Begrippenkader
 | Conceptueel element | Eigenschap                                                              | Kardinaliteit | Type                                                                    |
 | ------------------- | ----------------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- |
 | label               | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)                | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
@@ -94,14 +93,14 @@ Met het conceptueel model en de taalbinding die daar aan toegevoegd is kunnen we
 | heeft topbegrip     | [skos:hasTopConcept](http://www.w3.org/2004/02/skos/core#hasTopConcept) | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
 
 
-# Specificatie Collectie
+## Specificatie Collectie
 | Conceptueel element | Eigenschap                                                | Kardinaliteit | Type                                                                    |
 | ------------------- | --------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- |
 | label               | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)  | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
 | bevat               | [skos:member](http://www.w3.org/2004/02/skos/core#member) | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
 
 
-# Specificatie Bronverwijzing
+## Specificatie Bronverwijzing
 | Conceptueel element | Eigenschap                                                                  | Kardinaliteit | Type                                                                    |
 | ------------------- | --------------------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- |
 | label               | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)                    | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
@@ -111,7 +110,7 @@ Met het conceptueel model en de taalbinding die daar aan toegevoegd is kunnen we
 | soort               | [dct:type](http://purl.org/dc/terms/type)                                   | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
 
 
-# Specificatie Begrip
+## Specificatie Begrip
 | Conceptueel element       | Eigenschap                                                                          | Kardinaliteit | Type                                                                    |
 | ------------------------- | ----------------------------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- |
 | voorkeursterm             | [skos:prefLabel](http://www.w3.org/2004/02/skos/core#prefLabel)                     | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
