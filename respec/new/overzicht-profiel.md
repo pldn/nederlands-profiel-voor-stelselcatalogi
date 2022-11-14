@@ -16,37 +16,47 @@ Het beschrijven van de  kenmerken van een begrip, *begrippenkader* of *collectie
   * relaties met andere kenmerken.
 
 ## Begrip
-Een begrip is het centrale element in deze specificatie.
+Een begrip is het centrale element in deze specificatie. Een begrip is een conceptele resource; het zijn de eenheden van denken - ideeën, betekenissen of (categorieën van) objecten en gebeurtenissen. Zo bestaan of ontstaan begrippen dus in ons hoofd als abstracte entiteiten. In communicatie spelen begrippen een belangrijke rol. In de communicatiewetenschap wordt hier gerefereerd aan de 'Triange of meaning'. Hierin staat een spreker centraal die iets conceptualiseert en daaraan refereert met een bepaalde term (of symbool) met de hoop dat de toehoorder dezelfde conceptualisatie maakt op basis van de gebruikte term zodat hij begrijpt wat de spreker bedoelt. In het onderstaande figuur is deze driehoek afgebeeld en gaat het begrip dus over bedoeling (betekenis); ofwel de gedachte.
+
+![triange of meaning](https://github.com/bp4mc2/bp4mc2/blob/master/site/image-ch3-1.png?raw=true)
 
 *tabel met de beschrijving van een begrip: prefLabel, definition, scopeNotes, bronnen en kenmerken*
 *in de thesaurus.ttl zijn de kenmerken nu via skos:related aan een begrip gekoppeld. Wellicht moet dit andersom: ieder kermerk relateren aan een begrip*
 
 ### Glossary
-De basis voor de beschrijving van begrippen in een bepaald domein is een glossary. Een glossary kent voor ieder begrip miminmaal een voorkeursterm en een definitie. Een toelichting in de vorm van een scope afbakening is aanbevolen, evenals een verwijzing naar de bron van de definitie. Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in klare taal, op B1 niveau aanbevolen. De overige kenmerken zijn optioneel.
+Aan de hand van de begripsdriehoek, zien we dat om een spreker te kunnen begrijpen, een toebehoorder minimaal iets moeten weten over de conceptualisatie en de termen die ter aanduiding gebruikt worden. Door deze basis vast te leggen krijgen we feitelijk een glossary. Dit is de basis voor de beschrijving van begrippen in een bepaald domein. 
 
-*tabel met de beschrijving van een glossary (in thesaurus.ttl nu nog controlled vocabulary): prefLabel, definition, scopeNotes, bronnen en kenmerken van begrippen in een glossary.*  
+Een glossary is een alfabetische termenlijst met definities die gebruikt worden in een bepaald domein. Een glossary kent voor ieder begrip dan ook mimimaal een voorkeursterm en een definitie. Een toelichting in de vorm van een scope afbakening is aanbevolen, evenals een verwijzing naar de bron van de definitie. Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in klare taal, op B1 niveau aanbevolen. De overige kenmerken zijn optioneel.
+
+++ *tabel met de beschrijving van een glossary (in thesaurus.ttl nu nog controlled vocabulary): prefLabel, definition, scopeNotes, bronnen en kenmerken van begrippen in een glossary.*  
 
 #### Termen
-Iets over termen/lexicale labels en lexicale relaties daartussen.
+Termen zijn karakteristiek van een begrip. We kunnen termen zien als een referentie naar of aanduiding van een begrip. Een begrip kan meerdere termen kennen waarbij sommigen ook een andere rol spelen dan andere. 
+
 *tabel met de beschrijving van een term met prefLabel, definition, scopeNotes, bronnen*
+
 We onderscheiden daarbij voorkeurstermen, alternatieve termen en zoektermen.
-*per element een tabel met prefLabel, definition, scopeNotes, bronnen*
-voorkeursterm
-alternatieve term
-zoekterm
+++ *per element een tabel met prefLabel, definition, scopeNotes, bronnen*
+- voorkeursterm
+- alternatieve term
+- zoekterm
 
 #### Notities
-Iets over opmerkingen of notities.
-*tabel met de beschrijving van een notitie met prefLabel, definition, scopeNotes, bronnen*
-Hieronder worden de mogelijke notities bij een begrip beschreven.
-*per element een tabel met prefLabel, definition, scopeNotes, bronnen*
-definitie
-bronverwijzing *de bronbeschrijving zelf in een aparte paragraaf*
-uitleg
-toelichting
-redactionele opmerking
-historie opmerking *heet nu nog historische notitie*
-wijzigingsnotitie
+Notities zijn cruciaal bij het beschrijven van een begrip. Dit is de vastlegging van de betekenis in natuurlijke taal.
+
+++ *tabel met de beschrijving van een notitie met prefLabel, definition, scopeNotes, bronnen*
+
+Hieronder worden de mogelijke soorten notities bij een begrip beschreven.
+
+++ *per element een tabel met prefLabel, definition, scopeNotes, bronnen*
+
+- definitie
+- bronverwijzing *de bronbeschrijving zelf in een aparte paragraaf* Dit is alleen geen notitie; maar wel sterk verbonden - aan de definitie.
+- uitleg
+- toelichting
+- redactionele opmerking
+- historie opmerking *heet nu nog historische notitie*
+- wijzigingsnotitie
 
 ### Taxonomie
 Iets over semantische relaties.
@@ -59,10 +69,10 @@ In een taxonomie zijn alle begrippen direct of indirect als via een 'heeft brede
 
 Als een begrip een engere begrip is van een eerste begrip en een derde begrip weer een begrip is dan het tweede begrip, dan betekent dit niet automatisch dat dit derde begrip ook een enger begrip is in relatie tot het eerste begrip. Dit kan voorkomen in 'slordige' taxonomieën. Een voorbeeld is het definiëren van 'auto' als enger begrip als 'voertuig' en 'wiel' als een enger begrip als 'auto'. Maar 'wiel' is niet logischerwijs een enger begrip als 'voertuig'. 'Heeft breder begrip' en 'heeft enger begrip' zijn dus niet per definitie transitief. Dit betekent niet dat deze kenmerken altijd niet-transitief zijn, maar als je expliciet wilt aangeven dat dat wel zo is zijn er de kenmerken 'heeft breder transitief begrip' en 'heeft enger transitief begrip'. 
 *per element een tabel met prefLabel, definition, scopeNotes, bronnen*
-heeft breder begrip
-heeft enger begrip
-heeft breder transitief begrip
-heeft enger transitief begrip
+- heeft breder begrip
+- heeft enger begrip
+- heeft breder transitief begrip
+- heeft enger transitief begrip
 
 [=polyhierarchy=]?
 <div class="definitie">In taxonomy, a <dfn>polyhierarchy </dfn> refers to any hierarchical structure that allows a term to have multiple parents. (The opposite concept, monohierarchy, is used to describe taxonomies that do not allow polyhierarchy.)</div> 
@@ -75,82 +85,82 @@ De de ISO 25964 standaard voor thesauri maakt daarbij ook onderscheid tussen ins
 
 Good practices is om als je in een thesaurus deze instantiële, partitieve en generalisatie/specialisatie relaties gebruikt, niet de standaard al dan niet transitieve bredere en engere relaties uit een gewone taxonomie te gebruiken.
 *per element een tabel met prefLabel, definition, scopeNotes, bronnen*
-is gerelateerd aan
-is specialisatie van
-is generalisatie van
-is onderdeel van
-omvat
-is exemplaar van
-is categorie van
+- is gerelateerd aan
+- is specialisatie van
+- is generalisatie van
+- is onderdeel van
+- omvat
+- is exemplaar van
+- is categorie van
 
 ### Harmonisatiesrelaties
 Begrippen kunnen ook worden gerelateerd aan begrippen in een ander begrippenkader. 
 *per element een tabel met prefLabel, definition, scopeNotes, bronnen*
-exact overeenkomstig
-vrijwel overeenkomstig
-overeenkomstig verwant
-overeenkomstig specifieker
-overeenkomstig generieker
+- exact overeenkomstig
+- vrijwel overeenkomstig
+- overeenkomstig verwant
+- overeenkomstig specifieker
+- overeenkomstig generieker
 
 ### Nadere typering van begrippen
 Om in een begrippenkader nog meer semantiek vast te leggen dan in een standaard thesaurus, kunnen extensies op dit profiel worden gemaakt. Een voorbeeld daarvan is skos-lex, waarbij lex staat voor 'legal extension'. In skos-lex worden concepten getypeerd als (rechts)handeling, object (van handeling), actor, agent en vastlegging (record).
 *plaatje uit skoslex*
 *per element een tabel met prefLabel, definition, scopeNotes, bronnen*
-(rechts)handeling
-object
-actor
-agent
-vastlegging
+- (rechts)handeling
+- object
+- actor
+- agent
+- vastlegging
 
 Onder andere de Belastingdienst heeft nog weer een uitbreiding op deze extensie gemaakt, waarin rechtshandelingen nader worden getypeerd op basis van de rechtsbetrekking tussen de actoren. *link*
 
 ## Begrippenkader
-Een samenhangende set van begrippen in een bepaald domein wordt beheerd als 1 samenhangend begrippenkader. Een begrippenkader kan de vorm van een glossary, taxonomie, thesaurus of thesaurus met extra semantiek hebben. Als eenheid van beheer heeft een begrippenkader allerlei eigen metadata.
+Een samenhangende set van begrippen in een bepaald domein wordt beheerd als 1 samenhangend begrippenkader. Een begrippenkader kan de vorm van een glossary, taxonomie, thesaurus of thesaurus met extra semantiek hebben, waarbij deze vorm de manier waarop begrippen beschreven worden bepaald. Als eenheid van beheer heeft een begrippenkader allerlei eigen metadata.
 In het geval van een taxonomie of thesaurus heeft een begrippenkader altijd 1 of meerdere topconcepten.
 *tabel met de beschrijving van een begrippenkader met prefLabel, definition, scopeNotes, bronnen en metadata elementen in een begrippenkader*
 
 topconcept
 
 ### Metadata van een begrippenkader
-Voorkeursnaam begrippenkader
-Alternatieve  naam begrippenkader
-Beschrijving begrippenkader
-Klare taal beschrijving begrippenkader 
-Toelichting
-Ontwerpbeslissingen
-Voorbeeld
-Documentatiepagina
-Wetgeving
-Wetgeving (URI)
-Taal
-Bronhouder
-Uitgever
-Contactpunt
-Toezichthouder
-Opdrachtgever
-Laatst bijgewerkt
-Versie
-Frequentie (URI)
-Publicatiedatum
-Toegangsrechten
-Licentie
-Conformeert aan
-Thema/categorie
-Keywords
+- Voorkeursnaam begrippenkader
+- Alternatieve  naam begrippenkader
+- Beschrijving begrippenkader
+- Klare taal beschrijving begrippenkader 
+- Toelichting
+- Ontwerpbeslissingen
+- Voorbeeld
+- Documentatiepagina
+- Wetgeving
+- Wetgeving (URI)
+- Taal
+- Bronhouder
+- Uitgever
+- Contactpunt
+- Toezichthouder
+- Opdrachtgever
+- Laatst bijgewerkt
+- Versie
+- Frequentie (URI)
+- Publicatiedatum
+- Toegangsrechten
+- Licentie
+- Conformeert aan
+- Thema/categorie
+- Keywords
  
 
 ## Collectie
 Collecties bieden de mogelijkheid om binnen een begrippenkader begrippen die voor hun betekenis niet direct via semantische relaties met elkaar zijn verbonden, toch bij elkaar te zetten. Zo hebben het begrip 'vervuild' dat in milieuwetgeving wordt gedefinieerd en het begrip 'landgoed' dat in de natuurschoonwet wordt gedefinieerd semantisch geen relatie, maar worden ze beiden beschouwd als 'publiekrechtelijke beperking' in het kader van de Wet Kenbaarheid Publiekrechtelijke Beperkingen (WKPB). Deze begrippen kunnen dan samen met andere begrippen die onder de WKPB vallen worden samengebracht in een collectie.
 *tabel met de beschrijving van een collectie met prefLabel, definition, scopeNotes, bronnen en elementen in een collectie*
 
-hasmember
+- bevat
 
 ### Metadata van een collectie
-voorkeursnaam collectie
-alternatieve naam collectie
-beschrijving collectie
-klare taal beschrijving collectie 
-toelichting
+- voorkeursnaam collectie
+- alternatieve naam collectie
+- beschrijving collectie
+- klare taal beschrijving collectie 
+- toelichting
 
 ## Bron
 <div class="definitie">Een <dfn>bron</dfn> voor een begrip is een gerelateerd document waaruit de betekenis van het begrip is afgeleid.</div>
