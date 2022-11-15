@@ -204,20 +204,7 @@ beg-nps:NarrowerPartitive
   skosthes:broaderGeneric beg-nps:Narrower ;
   skos:scopeNote "A \"bicycle wheel\" for instance belongs uniquely to a \"bicycle\" while a \"wheel\" does not. A narrower partitive relationship should not be established between \"bicycles\" and \"wheels\" because a wheel could be part of a motor car,  a wheelbarrow or one of many other artefacts."@en .
 
-beg-nps:Member
-  a skos:Concept ;
-  skos:definition
-    "Relates a collection to one of its members."@en ,
-    "Relateert een collectie aan een begrip dat onderdeel is van deze collectie"@nl ;
-  dct:source
-    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
-    skos: ,
-    <https://www.w3.org/TR/skos-reference/#collections> ;
-  skos:related beg-nps:Collection ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:editorialNote "Specifiek gebruik van 'begrip' in plaats van het minderzeggende 'lid'"@nl ;
-  skos:prefLabel "has member"@en ,
-    "bevat"@nl .
+
 
 beg-nps:ScopeNote
   a skos:Concept ;
@@ -285,27 +272,6 @@ beg-nps:Definition
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skos: ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes> .
-
-beg-nps:Collection
-  a skos:Concept ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:definition
-    "A meaningful collection of concepts."@en ,
-    "Een collectie is een verzameling van begrippen die voor een bepaalde situatie betekenisvol bij elkaar passen."@nl ;
-  rdfs:label
-    "collection"@en ,
-    "collectie"@nl ;
-  skos:scopeNote
-    "Met betekenisvol wordt bedoeld dat de begrippen op een bepaalde manier met elkaar samenhangen. Een collectie betreft vaak een deel van de begrippen uit één begrippenkader, maar kan ook begrippen bevatten die afkomstig zijn uit meerdere begrippenkaders"@nl ,
-    "Collections can be used where you would like a set of concepts to be displayed under a 'node label'."@en ;
-  skos:related beg-nps:Member ;
-  dct:source
-    <https://www.w3.org/TR/skos-reference/#collections> ,
-    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.38> ,
-    skos: ;
-  skos:prefLabel
-    "collectie"@nl ,
-    "collection"@en .
 
 beg-nps:Taxonomy
   a skos:Concept ;
@@ -771,6 +737,32 @@ beg-nps:ControlledVocabulary
   skos:definition "A controlled vocabulary is a carefully selected list of words and phrases, which are used to tag units of information (document or work) so that they may be more easily retrieved by a search."@en ;
   dct:source <https://en.wikipedia.org/wiki/Controlled_vocabulary> .
 
+
+beg-nps:Collection
+  a skos:Concept ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+  skos:definition
+    "A meaningful collection of concepts."@en ,
+    "Een collectie is een verzameling van begrippen die voor een bepaalde situatie betekenisvol bij elkaar passen."@nl ;
+  rdfs:label
+    "collection"@en ,
+    "collectie"@nl ;
+  skos:scopeNote
+    "Met betekenisvol wordt bedoeld dat de begrippen op een bepaalde manier met elkaar samenhangen. Een collectie betreft vaak een deel van de begrippen uit één begrippenkader, maar kan ook begrippen bevatten die afkomstig zijn uit meerdere begrippenkaders."@nl ,
+    "Collections can be used where you would like a set of concepts to be displayed under a 'node label'."@en ;
+  skos:related beg-nps:Member ;
+  dct:source
+    <https://www.w3.org/TR/skos-reference/#collections> ,
+    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.38> ,
+    skos: ;
+  skos:prefLabel
+    "collectie"@nl ,
+    "collection"@en ;
+  skos:altLabel 
+    "labelled collection"@en ,
+    "gelabelde collectie"@nl ,
+    "verzameling"@nl .
+
 beg-nps:OrderedCollection
   a skos:Concept ;
   skos:prefLabel
@@ -780,10 +772,28 @@ beg-nps:OrderedCollection
   skos:broader beg-nps:Collection ;
   skos:altLabel "OrderedCollection"@en ;
   skos:definition "An ordered collection is a collection of concepts that are placed in a meaningful order."@en ;
-  skos:scopeNote "Labelled collections can be used where you would like a set of concepts to be displayed under a 'node label' in the hierarchy."@en ;
+  skos:definition "Een geordende collectie is een collectie waar de begrippen in een betekenisvolle volgorde zijn geplaatst."@nl ;
   dct:source
     skos: ,
     <https://www.w3.org/TR/skos-reference/#collections> .
+
+beg-nps:Member
+  a skos:Concept ;
+  skos:definition
+    "Relates a collection to one of its members."@en ,
+    "Relateert een collectie aan een begrip of een collectie van begrippen dat onderdeel is van deze collectie"@nl ;
+  dct:source
+    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
+    skos: ,
+    <https://www.w3.org/TR/skos-reference/#collections> ;
+  skos:related beg-nps:Collection ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+  skos:editorialNote "Specifiek gebruik van 'begrip of een collectie van begrippen' in plaats van het minderzeggende 'lid'"@nl ;
+  skos:prefLabel "has member"@en ,
+    "bevat"@nl .
+
+
+
 
 ## concepts from WG Metadata
 

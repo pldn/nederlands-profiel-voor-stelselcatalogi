@@ -14,6 +14,8 @@ Het beschrijven van de  kenmerken van een begrip, *begrippenkader* of *collectie
   * [=toelichting=]. De toelichting in het Engels nemen we over uit SKOS of een samenhangende standaard. De ISO 25964 geeft vaak ook een waardevolle (Engelse) toelichting. De ISO 25964 geeft zelf aan dat de toelichting misschien nog wel belangrijker is dan de definitie. Zowel de SKOS- als de ISO toelichting zijn naar het Nederlands vertaald.
   * [=bron=]. Bij ieder kenmerk geven we aan welke bron(nen) we hebben gebruikt voor de beschrijving.
   * relaties met andere kenmerken.
+  
+<p class="note" title="MIM">Nog toevoegen -> dit model is ook in MIM beschreven... <br>todo transformatie SHACL -> MIM : https://docs.geostandaarden.nl/mim/mim/#transformatie-vanuit-rdfs-owl-shacl</p>
 
 ## Begrip
 Een begrip is het centrale element in deze specificatie. Een begrip is een conceptele resource; het zijn de eenheden van denken - ideeën, betekenissen of (categorieën van) objecten en gebeurtenissen. Zo bestaan of ontstaan begrippen dus in ons hoofd als abstracte entiteiten. In communicatie spelen begrippen een belangrijke rol. In de communicatiewetenschap wordt hier gerefereerd aan de 'Triange of meaning'. Hierin staat een spreker centraal die iets conceptualiseert en daaraan refereert met een bepaalde term (of symbool) met de hoop dat de toehoorder dezelfde conceptualisatie maakt op basis van de gebruikte term zodat hij begrijpt wat de spreker bedoelt. In het onderstaande figuur is deze driehoek afgebeeld en gaat het begrip dus over bedoeling (betekenis); ofwel de gedachte.
@@ -237,6 +239,14 @@ topconcept
 
 ## Collectie
 Collecties bieden de mogelijkheid om binnen een begrippenkader begrippen die voor hun betekenis niet direct via semantische relaties met elkaar zijn verbonden, toch bij elkaar te zetten. Zo hebben het begrip 'vervuild' dat in milieuwetgeving wordt gedefinieerd en het begrip 'landgoed' dat in de natuurschoonwet wordt gedefinieerd semantisch geen relatie, maar worden ze beiden beschouwd als 'publiekrechtelijke beperking' in het kader van de Wet Kenbaarheid Publiekrechtelijke Beperkingen (WKPB). Deze begrippen kunnen dan samen met andere begrippen die onder de WKPB vallen worden samengebracht in een collectie.
+
+Collecties betreffen een betekenisvolle verzamelingen van begrippen. Begrippen kunnen op verschillende manieren 'verzamelt' worden. Je zou kunnen stellen dat begrippen verzamelt kunnen worden aan de hand van een gedeelde bovenliggend begrip of aan de hand van een gedeeld begrippenkader; maar op deze manier is de verzameling zelf niet aangeduid en is het dus moeilijk om het over 'de collectie' te spreken. Wanneer de collectie benoemd dient te worden; of willen kunnen identificeren, spreken we feitelijk over een gelabelde collectie. Dit is ook wat we over het algemeen bedoelen wanneer we het over een collectie hebben. 
+Naast een gelabelde collectie identificeren we twee andere soorten collecties, 1) geordende collecties en 2) geneste collecties.
+Gelabelde collecties zijn verzamelingen van begrippen en hier is niet persé sprake van een bepaalde ordening. Wanneer dit wel het geval is spreken we van een geordende collectie. Dit is bijvoorbeeld relevant om bepaalde begrippen in alfabetische of chronologische volgorde te plaatsen. Collecties kunnen begrippen bevatten maar ook andere (geordende) collecties.
+
+Het is belangrijk om te stellen dat collecties geen begrippen zijn en dus ook geen semantische relaties kennen en dergelijken. Collecties zeggen dus niks over de plek van de bijbehorende begrippen in het begrippenkader. In het bovengenoemde voorbeeld is er met gebruik van de collectie geen semantische relatie tussen de WKPB en het begrip 'landgoed'.
+
+
 *tabel met de beschrijving van een collectie met prefLabel, definition, scopeNotes, bronnen en elementen in een collectie*
 
 - bevat
