@@ -1,1 +1,0 @@
-# Rationale en use cases
