@@ -18,7 +18,7 @@ Het beschrijven van de  kenmerken van een begrip, *begrippenkader* of *collectie
 <p class="note" title="MIM">Nog toevoegen -> dit model is ook in MIM beschreven... <br>todo transformatie SHACL -> MIM : https://docs.geostandaarden.nl/mim/mim/#transformatie-vanuit-rdfs-owl-shacl</p>
 
 ## Begrip
-Een begrip is het centrale element in deze specificatie. Een begrip is een conceptele resource; het zijn de eenheden van denken - ideeën, betekenissen of (categorieën van) objecten en gebeurtenissen. Zo bestaan of ontstaan begrippen dus in ons hoofd als abstracte entiteiten. In communicatie spelen begrippen een belangrijke rol. In de communicatiewetenschap wordt hier gerefereerd aan de 'Triange of meaning'. Hierin staat een spreker centraal die iets conceptualiseert en daaraan refereert met een bepaalde term (of symbool) met de hoop dat de toehoorder dezelfde conceptualisatie maakt op basis van de gebruikte term zodat hij begrijpt wat de spreker bedoelt. In het onderstaande figuur is deze driehoek afgebeeld en gaat het begrip dus over bedoeling (betekenis); ofwel de gedachte.
+Een begrip is het centrale element in deze specificatie. Een begrip is een conceptuele resource; het zijn de eenheden van denken - ideeën, betekenissen of (categorieën van) objecten en gebeurtenissen. Zo bestaan of ontstaan begrippen dus in ons hoofd als abstracte entiteiten. In communicatie spelen begrippen een belangrijke rol. In de communicatiewetenschap wordt hier gerefereerd aan de 'Triange of meaning'. Hierin staat een spreker centraal die iets conceptualiseert en daaraan refereert met een bepaalde term (of symbool) met de hoop dat de toehoorder dezelfde conceptualisatie maakt op basis van de gebruikte term zodat hij begrijpt wat de spreker bedoelt. In het onderstaande figuur is deze driehoek afgebeeld en gaat het begrip dus over de bedoeling (betekenis); ofwel de gedachte.
 
 ![](https://github.com/bp4mc2/bp4mc2/blob/master/site/image-ch3-1.png?raw=true "Triange of meaning")
 
@@ -32,7 +32,9 @@ Een begrip is het centrale element in deze specificatie. Een begrip is een conce
 *in de thesaurus.ttl zijn de kenmerken nu via skos:related aan een begrip gekoppeld. Wellicht moet dit andersom: ieder kermerk relateren aan een begrip*
 
 ### Glossary
-Aan de hand van de begripsdriehoek, zien we dat om een spreker te kunnen begrijpen, een toebehoorder minimaal iets moeten weten over de conceptualisatie en de termen die ter aanduiding gebruikt worden. Door deze basis vast te leggen krijgen we feitelijk een glossary. Dit is de basis voor de beschrijving van begrippen in een bepaald domein. 
+Aan de hand van de begripsdriehoek, zien we dat om een spreker te kunnen begrijpen, een toebehoorder minimaal iets moeten weten over de conceptualisatie en de termen die ter aanduiding gebruikt worden.
+
+Door deze basis voor alle begrippen die binnen een context gebruikt worden vast te leggen onstaat een [=begrippenkader=]. In dit stadium spreken we van een glossary. Dit is de basisniveau voor de beschrijving van begrippen in een bepaald domein. 
 
 Een glossary is een alfabetische termenlijst met definities die gebruikt worden in een bepaald domein. Een glossary kent voor ieder begrip dan ook mimimaal één term en één notitie, repectievelijk een [=voorkeursterm=] en een [=definitie=]. Een toelichting in de vorm van een scope afbakening is aanbevolen, evenals een verwijzing naar de bron van de definitie. Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in klare taal, op B1 niveau aanbevolen. De overige kenmerken zijn optioneel.
 
@@ -182,7 +184,7 @@ Good practices is om als je in een thesaurus deze instantiële, partitieve en ge
 - is categorie van
 
 ### Harmonisatiesrelaties
-Begrippen kunnen ook worden gerelateerd aan begrippen in een ander begrippenkader. 
+Begrippen kunnen ook worden gerelateerd aan begrippen in een ander begrippenkader. Hiervoor gebruiken we mappingrelaties.
 *per element een tabel met prefLabel, definition, scopeNotes, bronnen*
 - exact overeenkomstig
 - vrijwel overeenkomstig
@@ -203,11 +205,15 @@ Om in een begrippenkader nog meer semantiek vast te leggen dan in een standaard 
 Onder andere de Belastingdienst heeft nog weer een uitbreiding op deze extensie gemaakt, waarin rechtshandelingen nader worden getypeerd op basis van de rechtsbetrekking tussen de actoren. *link*
 
 ## Begrippenkader
+Begrippen kunnen als zelfstandige entiteiten gezien maar veelal worden ze opgesteld als onderdeel van een gecureerde vocabulaire, een begrippenkader. Een <dfn>begrippenkader</dfn> is een verzameling van begrippen. De volledige beschrijving van de begrippen wordt  gezien als onderdeel van het begrippenkader. Wanneer een begrip semantische relaties kent naar een ander begrip wordt het andere begrip ook als onderdeel van het vocabulaire, en dus het begrippenkader. Een begrippenkader is vergelijkbaar met een taal die in een bepaald gebied gesproken wordt. En net als een reguliere taal is het een open systeem. Dat wil zeggen dat net als dat een taal naast vertalingen (mappings) ook iets kent als leenwoorden. Zoals "computer" in de nederlandse taal wat afkomstig is uit de Engelse taal. De vertalingen tussen verschillende talen (begrippenkaders) zijn ook belangrijk om vast te leggen. Om vertalingen te beschrijven gebruiken we mappingrelaties. Het gebruik hiervan resulteert niet per definitie in een uitbreiding van het begrippenkader.
+
+Een verzameling van begripsbeschrijvingen is een Asset. Begrippenkader is een (federatief opgebouwde) Dataset -> adms:Asset omdat het mogelijk samengesteld is uit verschillende verzameling begripsbeschrijvingen.
+
 Een samenhangende set van begrippen in een bepaald domein wordt beheerd als 1 samenhangend begrippenkader. Een begrippenkader kan de vorm van een glossary, taxonomie, thesaurus of thesaurus met extra semantiek hebben, waarbij deze vorm de manier waarop begrippen beschreven worden bepaald. Als eenheid van beheer heeft een begrippenkader allerlei eigen metadata.
 In het geval van een taxonomie of thesaurus heeft een begrippenkader altijd 1 of meerdere topconcepten.
 *tabel met de beschrijving van een begrippenkader met prefLabel, definition, scopeNotes, bronnen en metadata elementen in een begrippenkader*
 
-topconcept
+- topconcept
 
 ### Metadata van een begrippenkader
 - Voorkeursnaam begrippenkader

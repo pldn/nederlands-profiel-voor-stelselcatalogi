@@ -273,24 +273,7 @@ beg-nps:Definition
     skos: ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes> .
 
-beg-nps:Taxonomy
-  a skos:Concept ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:broader beg-nps:ConceptScheme ;
-  skos:definition
-    "Een taxonomie (of taxonomische classificatie) is een classificatieschema, met name een hiërarchische classificatie, waarin concepten zijn georganiseerd in groepen of typen."@nl ,
-    "A taxonomy (or taxonomical classification) is a scheme of classification, especially a hierarchical classification, in which concepts are organized into groups or types."@en ;
-  skos:scopeNote
-    "Een taxonomie wordt gebruikt om kennis te ordenen en te indexeren (opgeslagen als documenten, artikelen, video's, enz.), zoals in de vorm van een bibliotheekclassificatiesysteem of een taxonomie van een zoekmachine, zodat gebruikers de informatie die ze zoeken gemakkelijker kunnen vinden. op zoek naar. Taxonomieën zijn hiërarchieën (en hebben dus een intrinsieke boomstructuur)."@nl,
-    "A taxonomy is be used to organize and index knowledge (stored as documents, articles, videos, etc.), such as in the form of a library classification system, or a search engine taxonomy, so that users can more easily find the information they are searching for. Taxonomies are hierarchies (and thus, have an intrinsic tree structure)."@en ;
-  skos:related
-    beg-nps:Narrower ,
-    beg-nps:Broader ;
-  skos:prefLabel
-    "taxonomie"@nl ,
-    "taxonomy"@en ;
-  skos:altLabel "classificatieschema" ;
-  dct:source <https://en.wikipedia.org/wiki/Taxonomy> .
+
 
 beg-nps:isDefinedBy
   a skos:Concept ;
@@ -615,6 +598,88 @@ beg-nps:ConceptScheme
   skos:example "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes. Concept schemes are also embedded in glossaries and terminologies."@en ;
   skos:inScheme begkr-nps:BegrippenkaderNPS .
 
+# Een begrippenkader is een controlled vocabulary. Er zijn verschillende soorten controlled vocabularies zoals Thesaurus en Taxonomie. Een taxonomie is een speciale vorm begrippenkader.
+# Een controlled list is ook een soort controlled vocabulary: dit is bijvoorbeeld een picklist (dropdown menu) dit lijkt echter meer op een skos:Collection. Voorstel om daarom Controlled vocabularu als topbegrip te hanteren, en daar Collection en Conceptscheme onder te zetten.
+# - Controlled vocabulary
+#   - ConceptScheme
+#     - Thesaurus
+#     - Taxonomy
+#     - Glossary
+#   - Collection
+
+# beg-nps:ControlledVocabulary
+#   a skos:Concept ;
+#   skos:prefLabel
+#     "begrippenlijst"@nl ,
+#     "controlled vocabulary"@en ;
+#   skos:broader beg-nps:ConceptScheme ;
+#   skos:inScheme begkr-nps:BegrippenkaderNPS ;
+#   skos:definition "A controlled vocabulary is a carefully selected list of words and phrases, which are used to tag units of information (document or work) so that they may be more easily retrieved by a search."@en ;
+#   skos:definition "Een begrippenlijst is een geselecteerde lijst van woorden en frasen, die worden gebruikt om eenheden van informatie (een document of werk) te indexeren zodat deze gemakkelijk kunnen worden gevonden."@nl ;
+#   skos:scopeNote "Begrippenkaders bieden een manier om kennis te ordenen voor het later kunnen ophalen. Ze worden gebruikt in indexeringsschema's, koppen, thesauri, taxonomieën en andere kennisorganisatiesystemen. Begrippenkader schema's verplichten het gebruik van vooraf gedefinieerde,geautoriseerde termen die vooraf zijn geselecteerd door de ontwerpers van de schema's, in tegenstelling tot natuurlijke taalvocabulaires, die een dergelijke beperking niet hebben."@nl,"Controlled vocabularies provide a way to organize knowledge for subsequent retrieval. They are used in subject indexing schemes, subject headings, thesauri,taxonomies and other knowledge organization systems. Controlled vocabulary schemes mandate the use of predefined, authorised terms that have been preselected by the designers of the schemes, in contrast to natural language vocabularies, which have no such restriction."@en ;
+#   dct:source <https://en.wikipedia.org/wiki/Controlled_vocabulary> .
+  
+# deze definitie lijkt meer op een invulling van skos:Collection.
+# heeft nog aandacht nodig.
+beg-nps:Glossary
+  a skos:Concept ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+  skos:broader beg-nps:ConceptScheme ;
+  skos:definition
+    "Een begrippenlijst is een simpele lijst van termen en definities die gebruikt (moeten) worden in een bepaalde context"@nl ,
+    "A glossary is a simple list of terms and definitions used to control terminology."@en ;
+  skos:scopeNote
+    "Een taxonomie wordt gebruikt om kennis te ordenen en te indexeren (opgeslagen als documenten, artikelen, video's, enz.), zoals in de vorm van een bibliotheekclassificatiesysteem of een taxonomie van een zoekmachine, zodat gebruikers de informatie die ze zoeken gemakkelijker kunnen vinden. op zoek naar. Taxonomieën zijn hiërarchieën (en hebben dus een intrinsieke boomstructuur)."@nl,
+    "A taxonomy is be used to organize and index knowledge (stored as documents, articles, videos, etc.), such as in the form of a library classification system, or a search engine taxonomy, so that users can more easily find the information they are searching for. Taxonomies are hierarchies (and thus, have an intrinsic tree structure)."@en ;
+  skos:related
+    beg-nps:Narrower ,
+    beg-nps:Broader ;
+  skos:prefLabel
+    "begrippenlijst"@nl ,
+    "glossary"@en ;
+  skos:altLabel "controlled list"@en , "flat term lists"@nl, "pick list"@en, "woordenlijst"@nl , "platte termenlijst"@nl, "keuzelijst"@nl ;
+  dct:source <https://en.wikipedia.org/wiki/Taxonomy> .
+
+beg-nps:Taxonomy
+  a skos:Concept ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+  skos:broader beg-nps:ConceptScheme ;
+  skos:definition
+    "Een taxonomie (of taxonomische classificatie) is een classificatieschema, met name een hiërarchische classificatie, waarin concepten zijn georganiseerd in groepen of typen."@nl ,
+    "A taxonomy (or taxonomical classification) is a scheme of classification, especially a hierarchical classification, in which concepts are organized into groups or types."@en ;
+  skos:scopeNote
+    "Een taxonomie wordt gebruikt om kennis te ordenen en te indexeren (opgeslagen als documenten, artikelen, video's, enz.), zoals in de vorm van een bibliotheekclassificatiesysteem of een taxonomie van een zoekmachine, zodat gebruikers de informatie die ze zoeken gemakkelijker kunnen vinden. op zoek naar. Taxonomieën zijn hiërarchieën (en hebben dus een intrinsieke boomstructuur)."@nl,
+    "A taxonomy is be used to organize and index knowledge (stored as documents, articles, videos, etc.), such as in the form of a library classification system, or a search engine taxonomy, so that users can more easily find the information they are searching for. Taxonomies are hierarchies (and thus, have an intrinsic tree structure)."@en ;
+  skos:related
+    beg-nps:Narrower ,
+    beg-nps:Broader ;
+  skos:prefLabel
+    "taxonomie"@nl ,
+    "taxonomy"@en ;
+  skos:altLabel "classificatieschema" ;
+  dct:source <https://en.wikipedia.org/wiki/Taxonomy> .
+
+
+beg-nps:Thesaurus
+  a skos:Concept ;
+  skos:related
+    beg-nps:BroaderGeneric ,
+    beg-nps:Related ,
+    beg-nps:NarrowerPartitive ,
+    beg-nps:BroaderInstantial ,
+    beg-nps:NarrowerGeneric ,
+    beg-nps:BroaderPartitive ,
+    beg-nps:NarrowerInstantial ;
+  skos:prefLabel
+    "thesaurus"@nl ,
+    "thesaurus"@en ;
+  skos:broader beg-nps:ConceptScheme ;
+  dct:source
+    <https://en.wikipedia.org/wiki/Thesaurus> ,
+    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.62> ;
+  skos:definition "Een thesaurus is een gecontroleerde en gestructureerde vocabulaire waarin begrippen semantisch en hierarchisch zijn georganiseerd."@nl ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS .
+
 beg-nps:BroaderPartitive
   a skos:Concept ;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
@@ -648,25 +713,6 @@ beg-nps:Label
     <https://www.w3.org/TR/rdf-schema/#ch_label> ,
     rdfs: .
 
-beg-nps:Thesaurus
-  a skos:Concept ;
-  skos:related
-    beg-nps:BroaderGeneric ,
-    beg-nps:Related ,
-    beg-nps:NarrowerPartitive ,
-    beg-nps:BroaderInstantial ,
-    beg-nps:NarrowerGeneric ,
-    beg-nps:BroaderPartitive ,
-    beg-nps:NarrowerInstantial ;
-  skos:prefLabel
-    "thesaurus"@nl ,
-    "thesaurus"@en ;
-  skos:broader beg-nps:ConceptScheme ;
-  dct:source
-    <https://en.wikipedia.org/wiki/Thesaurus> ,
-    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.62> ;
-  skos:definition "Een thesaurus is een gecontroleerde en gestructureerde vocabulaire waarin begrippen semantisch en hierarchisch zijn georganiseerd."@nl ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
 
 beg-nps:Comment
   a skos:Concept ;
@@ -722,20 +768,7 @@ beg-nps:Concept
     "De belangrijkste toepassing voor een thesaurus is het ophalen van informatie, waarbij het doel is om naar begrippen te zoeken. Begrippen worden weergegeven door termen. Elke term in een thesaurus moet een enkel begrip (of denkeenheid) vertegenwoordigen. Begrippen kunnen variëren van eenvoudig (bijv. katten) tot zeer complex (bijv. rassendiscriminatie onder etnische minderheden). Samengestelde termen of zinsdelen zijn over het algemeen nodig om de meer complexe begrippen uit te drukken."@nl ;
   skos:inScheme begkr-nps:BegrippenkaderNPS .
 
-beg-nps:ControlledVocabulary
-  a skos:Concept ;
-  skos:altLabel
-    "begrippenkader"@nl ,
-    "concept scheme"@en ;
-  skos:definition "Een begrippenlijst is een geselecteerde lijst van woorden en frasen, die worden gebruikt om eenheden van informatie (een document of werk) te indexeren zodat deze gemakkelijk kunnen worden gevonden."@nl ;
-  skos:scopeNote "Begrippenkaders bieden een manier om kennis te ordenen voor het later kunnen ophalen. Ze worden gebruikt in indexeringsschema's, koppen, thesauri, taxonomieën en andere kennisorganisatiesystemen. Begrippenkader schema's verplichten het gebruik van vooraf gedefinieerde,geautoriseerde termen die vooraf zijn geselecteerd door de ontwerpers van de schema's,in tegenstelling tot natuurlijke taalvocabulaires,die een dergelijke beperking niet hebben."@nl,"Controlled vocabularies provide a way to organize knowledge for subsequent retrieval. They are used in subject indexing schemes,subject headings,thesauri,taxonomies and other knowledge organization systems. Controlled vocabulary schemes mandate the use of predefined,authorised terms that have been preselected by the designers of the schemes,in contrast to natural language vocabularies,which have no such restriction."@en ;
-  skos:prefLabel
-    "begrippenlijst"@nl ,
-    "controlled vocabulary"@en ;
-  skos:broader beg-nps:ConceptScheme ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:definition "A controlled vocabulary is a carefully selected list of words and phrases, which are used to tag units of information (document or work) so that they may be more easily retrieved by a search."@en ;
-  dct:source <https://en.wikipedia.org/wiki/Controlled_vocabulary> .
+
 
 
 beg-nps:Collection

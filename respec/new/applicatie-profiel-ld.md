@@ -85,6 +85,8 @@ Met het conceptueel model en de taalbinding die daar aan toegevoegd is kunnen we
 
 ## Specificatie Begrippenkader
 
+Het begrippenkader voor een bepaald domein wordt gerepresenteerd door een skos:ConceptScheme
+
 | Conceptueel element | Eigenschap                                                              | Kardinaliteit | Type                                                                    |
 | ------------------- | ----------------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- |
 | label               | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)                | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
@@ -94,7 +96,12 @@ Met het conceptueel model en de taalbinding die daar aan toegevoegd is kunnen we
 *Iets over **ALS** begrippenkader **EQUALS** verzameling triples die samen de begripsbeschrijvingen van een set van begrippen vormt **EQUALS** dataset, oftwel een information asset, oftwel: een informatieobject **DAN** ADMS Asset -> TOOI*. Dit terug laten komen in hfdt 2.2.
 
 
+
+
 ## Specificatie Begrip
+
+Het begrip wordt gerepresenteerd door een skos:Concept
+
 | Conceptueel element       | Eigenschap                                                                          | Kardinaliteit | Type                                                                    |
 | ------------------------- | ----------------------------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- |
 | voorkeursterm             | [skos:prefLabel](http://www.w3.org/2004/02/skos/core#prefLabel)                     | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
@@ -125,6 +132,9 @@ Met het conceptueel model en de taalbinding die daar aan toegevoegd is kunnen we
 | categorie van             | [isothes:narrowerInstantial](http://purl.org/iso25964/skos-thes#narrowerInstantial) | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
 
 ## Specificatie Bronverwijzing
+
+Het Bronverwijzing voor een bepaald domein wordt gerepresenteerd door een foaf:Document. 
+
 | Conceptueel element | Eigenschap                                                                  | Kardinaliteit | Type                                                                    |
 | ------------------- | --------------------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- |
 | label               | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)                    | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
@@ -134,12 +144,17 @@ Met het conceptueel model en de taalbinding die daar aan toegevoegd is kunnen we
 | soort               | [dct:type](http://purl.org/dc/terms/type)                                   | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
 
 ## Specificatie Collectie
+
+Een collectie wordt gerepresenteerd door een skos:Collection
+
 | Conceptueel element | Eigenschap                                                | Kardinaliteit | Type                                                                    |
 | ------------------- | --------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- |
 | label               | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)  | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
 | bevat               | [skos:member](http://www.w3.org/2004/02/skos/core#member) | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept) OR [skos:Collection](http://www.w3.org/2004/02/skos/core#Collection)                  |
 
 ## Specificatie GeordendeCollectie
+Het geordende collectie wordt gerepresenteerd door een skos:OrderedCollection
+
 | Conceptueel element | Eigenschap                                                        | Kardinaliteit | Type                                                                    |
 | ------------------- | ----------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- |
 | label               | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)          | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
