@@ -214,7 +214,7 @@ Begrippen kunnen als zelfstandige entiteiten worden gezien maar veelal worden ze
 - behoort tot
 
 ### Metadata van een begrippenkader
-Het begrippenkader is niet een concreet iets. Het is een *eenheid van context*. Aan de hand van de definitie stellen we dan ook dat het begrippenkader een verzameling begrippen is. Dit is niet hetzelfde als een verzameling begripsbeschrijvingen, wat wel concreet is. Het begrippenkader is conceptueel ook een dataset (eventueel dan federatief beheerd). Specifiek zien we het begrippenkader als een [[[ASSET]]]; een abstracte resource dat bepaalde kennis representeert.
+Het begrippenkader is niet een concreet iets. Het is een *eenheid van context*. Aan de hand van de definitie stellen we dan ook dat het begrippenkader een verzameling begrippen is. Dit is niet hetzelfde als een verzameling begripsbeschrijvingen, wat wel concreet is. Het begrippenkader is conceptueel ook een dataset (eventueel dan federatief beheerd). Specifiek zien we het begrippenkader als een [[[ASSET]]]; een waardevolle eenheid van geëxpliciteerde kennis.
 Het is dan ook van belang om, net als bij andere soorten assets of producten het begrippenkader voldoende te beschrijven. De volgende set eigenschappen zien we als relevant voor semantische assets; en zo ook begrippenkaders.
 
 *nog tabbelen inclusief rationale voor ieder item maken* 
