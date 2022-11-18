@@ -6,14 +6,13 @@ table {
   }
   thead
   {
-    background-color: gray;
-    color: white;
+    background-color: lightgray;
     border-bottom: 3px solid #ddd;
   }
   tbody
   {
     vertical-align: top;
-    background-color: #dddddd
+    background-color: #fafafa
   }
   td {
     min-width: 150px;
