@@ -205,17 +205,20 @@ Om in een begrippenkader nog meer semantiek vast te leggen dan in een standaard 
 Onder andere de Belastingdienst heeft nog weer een uitbreiding op deze extensie gemaakt, waarin rechtshandelingen nader worden getypeerd op basis van de rechtsbetrekking tussen de actoren. *link*
 
 ## Begrippenkader
-Begrippen kunnen als zelfstandige entiteiten gezien maar veelal worden ze opgesteld als onderdeel van een gecureerde vocabulaire, een begrippenkader. Een <dfn>begrippenkader</dfn> is een verzameling van begrippen. De volledige beschrijving van de begrippen wordt  gezien als onderdeel van het begrippenkader. Wanneer een begrip semantische relaties kent naar een ander begrip wordt het andere begrip ook als onderdeel van het vocabulaire, en dus het begrippenkader. Een begrippenkader is vergelijkbaar met een taal die in een bepaald gebied gesproken wordt. En net als een reguliere taal is het een open systeem. Dat wil zeggen dat net als dat een taal naast vertalingen (mappings) ook iets kent als leenwoorden. Zoals "computer" in de nederlandse taal wat afkomstig is uit de Engelse taal. De vertalingen tussen verschillende talen (begrippenkaders) zijn ook belangrijk om vast te leggen. Om vertalingen te beschrijven gebruiken we mappingrelaties. Het gebruik hiervan resulteert niet per definitie in een uitbreiding van het begrippenkader.
+Begrippen kunnen als zelfstandige entiteiten worden gezien maar veelal worden ze opgesteld als onderdeel van een gecureerde begrippenkader, zoals begrippenlijsten, taxonomieën en thesauri. Een <dfn>begrippenkader</dfn> is een verzameling van begrippen. De volledige beschrijving van de begrippen wordt conceptueel gezien als onderdeel van het begrippenkader. Dat betekent ook dat wanneer een begrip een semantische relatie kent naar een ander begrip, dat het andere begrip dan ook als onderdeel van het vocabulaire, en dus het begrippenkader, gezien wordt. Een begrippenkader is vergelijkbaar met een taal die in een bepaald gebied gesproken wordt. En net als een reguliere taal is een begrippenkader een open systeem. Zo kan een taal ook groeien na introductie van nieuwe woorden vanuit talen uit nabijgelegen gebieden. Dat wil zeggen dat een begrippenkader net als een taal naast vertalingen (mappings) kent ook woorden kunnen overnemen; leenwoorden. Zoals "computer", een van origine engels woord, ook behoort tot de nederlandse taal. Het beschrijven welke begrippen behoren tot een begrippenkader is essentieel; maar hoe deze 'vertaald' kunnen worden naar begrippen uit andere begrippenkaders ook, hier gebruiken we mappingrelaties voor. Het gebruik hiervan resulteert niet per definitie in een uitbreiding van het begrippenkader, zoals dat met andere semantische relaties wel het geval is.
 
-Een verzameling van begripsbeschrijvingen is een Asset. Begrippenkader is een (federatief opgebouwde) Dataset -> adms:Asset omdat het mogelijk samengesteld is uit verschillende verzameling begripsbeschrijvingen.
+*tabel met de beschrijving van de volgende items* 
 
-Een samenhangende set van begrippen in een bepaald domein wordt beheerd als 1 samenhangend begrippenkader. Een begrippenkader kan de vorm van een glossary, taxonomie, thesaurus of thesaurus met extra semantiek hebben, waarbij deze vorm de manier waarop begrippen beschreven worden bepaald. Als eenheid van beheer heeft een begrippenkader allerlei eigen metadata.
-In het geval van een taxonomie of thesaurus heeft een begrippenkader altijd 1 of meerdere topconcepten.
-*tabel met de beschrijving van een begrippenkader met prefLabel, definition, scopeNotes, bronnen en metadata elementen in een begrippenkader*
-
+- Begrippenkader
 - topconcept
+- behoort tot
 
 ### Metadata van een begrippenkader
+Het begrippenkader is niet een concreet iets. Het is een *eenheid van context*. Aan de hand van de definitie stellen we dan ook dat het begrippenkader een verzameling begrippen is. Dit is niet hetzelfde als een verzameling begripsbeschrijvingen, wat wel concreet is. Het begrippenkader is conceptueel ook een dataset (eventueel dan federatief beheerd). Specifiek zien we het begrippenkader als een [[[ASSET]]]; een abstracte resource dat bepaalde kennis representeert.
+Het is dan ook van belang om, net als bij andere soorten assets of producten het begrippenkader voldoende te beschrijven. De volgende set eigenschappen zien we als relevant voor semantische assets; en zo ook begrippenkaders.
+
+*nog tabbelen inclusief rationale voor ieder item maken* 
+
 - Voorkeursnaam begrippenkader
 - Alternatieve  naam begrippenkader
 - Beschrijving begrippenkader
@@ -241,17 +244,16 @@ In het geval van een taxonomie of thesaurus heeft een begrippenkader altijd 1 of
 - Conformeert aan
 - Thema/categorie
 - Keywords
- 
 
 ## Collectie
 Collecties bieden de mogelijkheid om binnen een begrippenkader begrippen die voor hun betekenis niet direct via semantische relaties met elkaar zijn verbonden, toch bij elkaar te zetten. Zo hebben het begrip 'vervuild' dat in milieuwetgeving wordt gedefinieerd en het begrip 'landgoed' dat in de natuurschoonwet wordt gedefinieerd semantisch geen relatie, maar worden ze beiden beschouwd als 'publiekrechtelijke beperking' in het kader van de Wet Kenbaarheid Publiekrechtelijke Beperkingen (WKPB). Deze begrippen kunnen dan samen met andere begrippen die onder de WKPB vallen worden samengebracht in een collectie.
 
-Collecties betreffen een betekenisvolle verzamelingen van begrippen. Begrippen kunnen op verschillende manieren 'verzamelt' worden. Je zou kunnen stellen dat begrippen verzamelt kunnen worden aan de hand van een gedeelde bovenliggend begrip of aan de hand van een gedeeld begrippenkader; maar op deze manier is de verzameling zelf niet aangeduid en is het dus moeilijk om het over 'de collectie' te spreken. Wanneer de collectie benoemd dient te worden; of willen kunnen identificeren, spreken we feitelijk over een gelabelde collectie. Dit is ook wat we over het algemeen bedoelen wanneer we het over een collectie hebben. 
-Naast een gelabelde collectie identificeren we twee andere soorten collecties, 1) geordende collecties en 2) geneste collecties.
+Collecties zijn verzamelingen van begrippen. Begrippen zijn op verschillende manieren te verzamelen. Het begrippenkader is bijvoorbeeld ook een verzameling begrippen. Echter, is de orde van grote hier verschillend. Begrippenkaders zijn bedoelt om gehele vocabulaires te identificeren. Collecties zijn verzamelingen op kleinere schaal; het betreft verwante begrippen binnen een begrippenkader. Een andere manier zou kunnen zijn door een verzamling op basis van een bovenliggend begrip te identificeren; maar het idee bij collecties is juist dat de collectie zelf geen begrip is en dus puur gezien moet worden als een lijst.
+
+Wanneer je iets met een collectie wilt kunnen doen; moet je het benoemen; zo spreken we feitelijk over een gelabelde collectie or een array. Dit is ook wat we over het algemeen bedoelen wanneer we het over een collectie hebben. Naast een gelabelde collectie identificeren we twee andere soorten collecties, 1) geordende collecties en 2) geneste collecties.
 Gelabelde collecties zijn verzamelingen van begrippen en hier is niet persé sprake van een bepaalde ordening. Wanneer dit wel het geval is spreken we van een geordende collectie. Dit is bijvoorbeeld relevant om bepaalde begrippen in alfabetische of chronologische volgorde te plaatsen. Collecties kunnen begrippen bevatten maar ook andere (geordende) collecties.
 
-Het is belangrijk om te stellen dat collecties geen begrippen zijn en dus ook geen semantische relaties kennen en dergelijken. Collecties zeggen dus niks over de plek van de bijbehorende begrippen in het begrippenkader. In het bovengenoemde voorbeeld is er met gebruik van de collectie geen semantische relatie tussen de WKPB en het begrip 'landgoed'.
-
+Het maakt het mogelijk om begrippen te groepen op een manier die haaks staat op de hierarchische structuur van het begrippenkader en zeggen dus niks over de plek van de bijbehorende begrippen in het begrippenkader. In het bovengenoemde voorbeeld is er met gebruik van de collectie geen semantische relatie tussen de WKPB en het begrip 'landgoed'. Een collectie zie je ook vaak terug in de context van een bepaalde toepassing waar het nodig is om bepaalde keuzelijsten en/of dropdown menu's samen te stellen.
 
 *tabel met de beschrijving van een collectie met prefLabel, definition, scopeNotes, bronnen en elementen in een collectie*
 

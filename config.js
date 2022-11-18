@@ -106,5 +106,23 @@ var respecConfig = {
             href: "https://linkeddata.overheid.nl/terms/",
             publisher: "KOOP",
         },
+        ASSET: {
+            authors: [
+                "Phil Archer",
+                "Gofran Shukair"
+            ],
+            href: "https://www.w3.org/TR/vocab-adms/#asset",
+            title: "semantische asset",
+            status: "NOTE",
+            publisher: "W3C",
+            deliveredBy: [
+                {
+                    "url": "https://www.w3.org/2011/gld/",
+                    "shortname": "gld"
+                }
+            ],
+            id: "vocab-adms-asset",
+            date: "1 August 2013"
+        },
     },
 };
