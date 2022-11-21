@@ -36,9 +36,6 @@ Door deze basis voor alle begrippen die binnen een context gebruikt worden vast 
 
 Een begrippenlijst is een alfabetische termenlijst met definities die gebruikt worden in een bepaald domein. Een begrippenlijst kent voor ieder begrip dan ook mimimaal één [=term=] en één [=notitie=], repectievelijk een [=voorkeursterm=] en een [=definitie=]. Een toelichting in de vorm van een scope afbakening is aanbevolen, evenals een verwijzing naar de bron van de definitie. Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in klare taal, op B1 niveau aanbevolen. De overige kenmerken zijn optioneel.
 
-<p class="note" title="Tabellen moeten opnieuw gegenereert worden wanneer de teksten in thesaurus.ttl naar wens zijn"> In het geval van begrippenlijst kunnen de 'requirements' die hierboven genoemd zijn wellicht verplaatst worden naar een scopenote oid.<br>
-Ook kijken naar het verschil tussen deze sectie en sectie 2.4</p>
-
 |                       |                                       |
 |-----------------------|---------------------------------------|
 | **voorkeursterm**   | <dfn>begrippenlijst</dfn> |
