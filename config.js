@@ -50,7 +50,7 @@ var respecConfig = {
             name: "Pano Maria (Skemu)"
         },
         {
-            name: "Rik Opgenoort (CROW)"
+            name: "Rik (CROW)"
         },
         {
             name: "Hans Overbeek (KOOP)"
