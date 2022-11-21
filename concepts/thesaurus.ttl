@@ -72,7 +72,7 @@ beg-nps:Concept
   beg-nps:AltLabel
   a skos:Concept ;
   skos:example
-    "Acroniemen, afkortingen, spellingsvarianten en onregelmatige meervouds-/enkelvoudsvormen kunnen worden opgenomen in de alternatieve labels voor een concept. Verkeerd gespelde termen worden normaal gesproken als verborgen labels opgenomen (zie   skos:hiddenLabel)."@nl ,
+    "Acroniemen, afkortingen, spellingsvarianten en onregelmatige meervouds-/enkelvoudsvormen kunnen worden opgenomen in de alternatieve termen voor een concept. Verkeerd gespelde termen worden normaal gesproken als verborgen labels opgenomen (zie   skos:hiddenLabel)."@nl ,
     "Acronyms, abbreviations, spelling variants, and irregular plural/singular forms may be included among the alternative labels for a concept. Mis-spelled terms are normally included as hidden labels (see skos:hiddenLabel)."@en ;
   skos:prefLabel
     "alternatieve term"@nl ,

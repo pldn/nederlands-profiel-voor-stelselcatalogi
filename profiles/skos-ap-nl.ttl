@@ -322,24 +322,24 @@ skosapnl:Concept-exactMatch
 
 skosapnl:Concept-inScheme
   a sh:PropertyShape ;
-  rdfs:label "behoort tot"@nl ;
+  rdfs:label "behoort tot schema"@nl ;
   sh:class skos:ConceptScheme ;
   sh:description "Relates a resource (for example a concept) to a concept scheme in which it is included."@en ;
   sh:description "Een begrippenkader waartoe het concept behoort."@nl ;
   sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
   sh:minCount 1 ;
-  sh:name "behoort tot"@nl ;
+  sh:name "behoort tot schema"@nl ;
   sh:order 6 ;
   sh:nodeKind sh:IRI ;
   sh:path skos:inScheme .
 
 skosapnl:Concept-altLabel
   a sh:PropertyShape ;
-  rdfs:label "alternative label"@nl ;
+  rdfs:label "alternative term"@nl ;
   sh:description "An alternative lexical label for a resource."@en, "Een alternatieve term voor een begrip is een term die gebruikt kan worden als alternatief voor de voorkeursterm van dit begrip, maar niet de voorkeur heeft."@nl ;
   sh:disjoint skos:hiddenLabel ;
   sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
-  sh:name "alternative label"@nl ;
+  sh:name "alternative term"@nl ;
   sh:datatype rdf:langString ;
   sh:order 1 ;
   sh:nodeKind sh:Literal ;
