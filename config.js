@@ -38,7 +38,7 @@ var respecConfig = {
             name: "Roeland Euwens (KNB)"
         },
         {
-            name: "Casper Gras (KOOP)"
+            name: "Casper le Gras (KOOP)"
         },
         {
             name: "Gerald Groot Roessink (DUO)"
