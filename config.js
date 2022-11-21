@@ -9,6 +9,9 @@ var respecConfig = {
     maxTocLevel: 5,
     editors: [
         {
+            name: "Jesse Bakker"
+        },
+        {
             name: "Arjen Santema"
         },
         {
@@ -47,10 +50,10 @@ var respecConfig = {
             name: "Pano Maria (Skemu)"
         },
         {
-            name: "Hans Overbeek (KOOP)"
+            name: "Rik Opgenoort (CROW)"
         },
         {
-            name: "Rik (CROW)"
+            name: "Hans Overbeek (KOOP)"
         },
         {
             name: "Viyanti Ramdhiansing (Kennisnet)"
