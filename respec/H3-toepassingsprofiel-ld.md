@@ -68,7 +68,6 @@ Het onderstaande diagram is een visualisatie van de shapesgraph. Om het diagram 
 | laatst bijgewerkt                      | [dct:modified](http://purl.org/dc/terms/modified)                                   |
 | label                                  | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)                            |
 | licentie                               | [dct:license](http://purl.org/dc/terms/license)                                     |
-| omschrijving                           | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)                            |
 | omvat                                  | [isothes:narrowerPartitive](http://purl.org/iso25964/skos-thes#narrowerPartitive)   |
 | ontwerpbeslissingen                    | [skos:editorialNote](http://www.w3.org/2004/02/skos/core#editorialNote)             |
 | opdrachtgever                          | [prov:qualifiedAttribution](http://www.w3.org/ns/prov#qualifiedAttribution)         |
@@ -122,6 +121,7 @@ Een begrip wordt gerepresenteerd als een skos:Concept. Deze typering is verplich
 | [=toelichting=]               | [skos:scopeNote](http://www.w3.org/2004/02/skos/core#scopeNote)                     | 0..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
 | [=voorbeeld=]                 | [skos:example](http://www.w3.org/2004/02/skos/core#example)                         | 0..*          | [sh:IRIOrLiteral](http://www.w3.org/ns/shacl#IRIOrLiteral)              |
 | [=overeenkomstig generieker=] | [skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch)                   | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
+| [=overeenkomstig specifieker=] | [skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch)                  | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)|
 | [=vrijwel overeenkomstig=]    | [skos:closeMatch](http://www.w3.org/2004/02/skos/core#closeMatch)                   | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
 | [=exact overeenkomstig=]      | [skos:exactMatch](http://www.w3.org/2004/02/skos/core#exactMatch)                   | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
 | [=overeenkomstig verwant=]    | [skos:relatedMatch](http://www.w3.org/2004/02/skos/core#relatedMatch)               | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
@@ -129,8 +129,8 @@ Een begrip wordt gerepresenteerd als een skos:Concept. Deze typering is verplich
 | [=is generalisatie van=]      | [isothes:narrowerGeneric](http://purl.org/iso25964/skos-thes#narrowerGeneric)       | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
 | [=is onderdeel van=]          | [isothes:broaderPartitive](http://purl.org/iso25964/skos-thes#broaderPartitive)     | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
 | [=omvat=]                     | [isothes:narrowerPartitive](http://purl.org/iso25964/skos-thes#narrowerPartitive)   | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
-| [=exemplaar van=]             | [isothes:broaderInstantial](http://purl.org/iso25964/skos-thes#broaderInstantial)   | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
-| [=categorie van=]             | [isothes:narrowerInstantial](http://purl.org/iso25964/skos-thes#narrowerInstantial) | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
+| [=is exemplaar van=]             | [isothes:broaderInstantial](http://purl.org/iso25964/skos-thes#broaderInstantial)   | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
+| [=is categorie van=]             | [isothes:narrowerInstantial](http://purl.org/iso25964/skos-thes#narrowerInstantial) | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
 | [=label=]                     | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)                            | 0..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
 
 ## Specificatie Bron
@@ -140,7 +140,7 @@ Een Bron wordt gerepresenteerd als een foaf:Document. Deze typering wordt aanger
 | Conceptueel element | Eigenschap                                                                  | Kardinaliteit | Type                                                                    |
 | ------------------- | --------------------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- |
 | [=citaat=]          | [dct:bibliographicCitation](http://purl.org/dc/terms/bibliographicCitation) | 0..*          | [xsd:string](http://www.w3.org/2001/XMLSchema#string)                   |
-| [=omschrijving=]    | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)                    | 0..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
+| [=uitleg=]          | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment)                | 0..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
 | [=url=]             | [foaf:page](http://xmlns.com/foaf/0.1/page)                                 | 0..*          | [sh:IRI](http://www.w3.org/ns/shacl#IRI)                                |
 | [=soort=]           | [dct:type](http://purl.org/dc/terms/type)                                   | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
 | [=label=]           | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)                    | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |

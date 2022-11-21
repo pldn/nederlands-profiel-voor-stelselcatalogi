@@ -127,5 +127,6 @@ var respecConfig = {
             id: "vocab-adms-asset",
             date: "1 August 2013"
         },
+    lint: { "no-unused-dfns": false },
     },
 };

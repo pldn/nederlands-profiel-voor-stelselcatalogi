@@ -24,6 +24,7 @@ skosapnl:Concept
   rdfs:label "Begrip"@nl ;
   sh:property
     skosapnl:Concept-exactMatch ,
+    skosapnl:Concept-narrowMatch ,
     skosapnl:Concept-example ,
     skosapnl:Concept-relatedMatch ,
     skosapnl:Concept-comment ,
@@ -60,7 +61,7 @@ skosapnl:Source
   sh:property
     skosapnl:Source-label ,
     skosapnl:Source-page ,
-    skosapnl:Source-description ,
+    skosapnl:Source-comment ,
     skosapnl:Source-bibliographicCitation ,
     skosapnl:Source-type .
 
@@ -176,11 +177,11 @@ skosapnl:ConceptScheme-comment
 
 skosapnl:Concept-narrowerInstantial
   a sh:PropertyShape ;
-  rdfs:label "categorie van"@nl ;
+  rdfs:label "is categorie van"@nl ;
   sh:class skos:Concept ;
   sh:description "Relateert een begrip, de categorie, aan een begrip dat exemplarisch is voor eerstgenoemde begrip."@nl ;
   sh:group skosapnl:Iso-thesRelationships ;
-  sh:name "categorie van"@nl ;
+  sh:name "is categorie van"@nl ;
   sh:order 56 ;
   sh:nodeKind sh:IRI ;
   sh:path isothes:narrowerInstantial .
@@ -210,6 +211,16 @@ skosapnl:Concept-broadMatch
   sh:nodeKind sh:IRI ;
   sh:path skos:broadMatch .
 
+skosapnl:Concept-narrowMatch
+  a sh:PropertyShape ;
+  rdfs:label "overeenkomstig specifieker"@nl ;
+  sh:class skos:Concept ;
+  sh:disjoint skos:relatedMatch ;
+  sh:group skosapnl:MatchingRelationshipsPropertyGroup ;
+  sh:name "overeenkomstig specifieker"@nl ;
+  sh:order 41 ;
+  sh:nodeKind sh:IRI ;
+  sh:path skos:broadMatch .
 skosapnl:Concept-broader
   a sh:PropertyShape ;
   rdfs:label "heeft breder begrip"@nl ;
@@ -277,7 +288,7 @@ skosapnl:Concept-relatedMatch
   sh:description "Used to state an associative mapping link between two conceptual resources in different concept schemes."@en ;
   sh:group skosapnl:MatchingRelationshipsPropertyGroup ;
   sh:name "overeenkomstig verwant"@nl ;
-  sh:order 43 ;
+  sh:order 44 ;
   sh:nodeKind sh:IRI ;
   sh:path skos:relatedMatch .
 
@@ -316,7 +327,7 @@ skosapnl:Concept-exactMatch
   sh:disjoint skos:broadMatch, skos:relatedMatch ;
   sh:group skosapnl:MatchingRelationshipsPropertyGroup ;
   sh:name "exact overeenkomstig"@nl ;
-  sh:order 42 ;
+  sh:order 43 ;
   sh:nodeKind sh:IRI ;
   sh:path skos:exactMatch .
 
@@ -413,11 +424,11 @@ skosapnl:Concept-editorialNote
 
 skosapnl:Concept-broaderInstantial
   a sh:PropertyShape ;
-  rdfs:label "exemplaar van"@nl ;
+  rdfs:label "is exemplaar van"@nl ;
   sh:class skos:Concept ;
   sh:description "Relateert een begrip, een exemplaar, aan een ander begrip, de categorie, waartoe eerstgenoemde begrip behoort."@nl ;
   sh:group skosapnl:Iso-thesRelationships ;
-  sh:name "exemplaar van"@nl ;
+  sh:name "is exemplaar van"@nl ;
   sh:order 55 ;
   sh:nodeKind sh:IRI ;
   sh:path isothes:broaderInstantial .
@@ -441,7 +452,7 @@ skosapnl:Concept-closeMatch
   sh:description "Used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of \"compound errors\" when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property."@en ;
   sh:group skosapnl:MatchingRelationshipsPropertyGroup ;
   sh:name "vrijwel overeenkomstig"@nl ;
-  sh:order 41 ;
+  sh:order 42 ;
   sh:nodeKind sh:IRI ;
   sh:path skos:closeMatch .
 
@@ -465,15 +476,15 @@ skosapnl:Source-page
   sh:nodeKind sh:IRI ;
   sh:path foaf:page .
 
-skosapnl:Source-description
+skosapnl:Source-comment
   a sh:PropertyShape ;
-  rdfs:label "omschrijving"@nl ;
+  rdfs:label "uitleg"@nl ;
   sh:datatype rdf:langString ;
   sh:description "Uitgebreide, voor de mens leesbare beschrijving van de bron"@nl ;
   sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
-  sh:name "omschrijving"@nl ;
+  sh:name "uitleg"@nl ;
   sh:nodeKind sh:Literal ;
-  sh:path rdfs:label .
+  sh:path rdfs:comment .
 
 skosapnl:Source-bibliographicCitation
   a sh:PropertyShape ;

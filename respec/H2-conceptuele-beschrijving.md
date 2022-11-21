@@ -1,8 +1,8 @@
 # Conceptuele beschrijving
 
-In dit hoofdstuk beschrijven we het abstracte model dat we hanteren in het toepassingsgebied. Dit is onafhankelijk van bepaalde notaties en/of standaarden. Hiermee komen we tot een gedeeld beeld en gedeelde taal waarmee we begrippenkaders beschrijven en uitwisselen. Vervolgens wordt in [hoofdstuk 3](#H3) beschreven hoe dit abstracte model kan worden toegepast in RDF. Dit zelfde abstracte model kan ook toegepast worden in bijvoorbeeld een JSON of XML schema zonder dat de gedeelde taal verloren gaat; waardoor deze standaard breder geadopteerd kan worden. Het abstracte model is gebasseerd op verschillende standaarden en best-practices die in het domein van toepassing zijn. Zoals bij de rationale aangegeven leunen we hier sterk op SKOS en op de ISO 25964.
+In dit hoofdstuk beschrijven we het abstracte model dat we hanteren in het toepassingsgebied. Dit is onafhankelijk van bepaalde notaties en/of standaarden. Hiermee komen we tot een gedeeld beeld en gedeelde taal waarmee we [=begrippenkader=]s beschrijven en uitwisselen. Vervolgens wordt in [hoofdstuk 3](#H3) beschreven hoe dit abstracte model kan worden toegepast in RDF. Dit zelfde abstracte model kan ook toegepast worden in bijvoorbeeld een JSON of XML schema zonder dat de gedeelde taal verloren gaat; waardoor deze standaard breder geadopteerd kan worden. Het abstracte model is gebasseerd op verschillende standaarden en best-practices die in het domein van toepassing zijn. Zoals bij de rationale aangegeven leunen we hier sterk op SKOS en op de ISO 25964.
 
-In [2.1](#begrip) beschrijven we wat een begrip is. Vervolgens beschrijven we in [2.1.1](#begrippenlijst) de kenmerken van ene begrip die relevant zijn voor het basisniveau, een begrippenlijst. In [2.1.2](#taxonomie) voegen we daar de hiërarchische relaties aan toe die een begrippenlijst uitbreiden tot een taxonomie. In [2.1.3](#thesaurus) voegen we meer genuanceerde hiërarchische relaties toe om tot een ISO compatible thesaurus te komen. In [2.1.4](#harmonisatiesrelaties) beschrijven we de harmonisatierelaties waarmee begrippen kunnen worden verbonden met begrippen in een ander begrippenkader. In [2.1.5](#nadere-typering-van-begrippen) beschrijven we skos-lex als voorbeeld van een verdergaande typering van begrippen waarmee nog meer semantiek wordt toegevoegd. 
+In [2.1](#begrip) beschrijven we wat een begrip is. Vervolgens beschrijven we in [2.1.1](#begrippenlijst) de kenmerken van ene begrip die relevant zijn voor het basisniveau, een [=begrippenlijst=]. In [2.1.2](#taxonomie) voegen we daar de hiërarchische relaties aan toe die een begrippenlijst uitbreiden tot een [=taxonomie=]. In [2.1.3](#thesaurus) voegen we meer genuanceerde hiërarchische relaties toe om tot een ISO compatible [=thesaurus=] te komen. In [2.1.4](#harmonisatiesrelaties) beschrijven we de harmonisatierelaties waarmee begrippen kunnen worden verbonden met begrippen in een ander begrippenkader. In [2.1.5](#nadere-typering-van-begrippen) beschrijven we skos-lex als voorbeeld van een verdergaande typering van begrippen waarmee nog meer semantiek wordt toegevoegd. 
 
 In [2.2](#begrippenkader) beschrijven we wat een begrippenkader is en in [2.3](#collectie) hoe begrippen los van hun semantische samenhang binnen een begrippenkader kunnen worden gegroepeerd in collecties.
 
@@ -34,7 +34,7 @@ Aan de hand van de begripsdriehoek, zien we dat om een spreker te kunnen begrijp
 
 Door deze basis voor alle begrippen die binnen een context gebruikt worden vast te leggen onstaat een [=begrippenkader=]. In dit stadium spreken we van een begrippenlijst. Dit is de basisniveau voor de beschrijving van begrippen in een bepaald domein. 
 
-Een begrippenlijst is een alfabetische termenlijst met definities die gebruikt worden in een bepaald domein. Een begrippenlijst kent voor ieder begrip dan ook mimimaal één term en één notitie, repectievelijk een [=voorkeursterm=] en een [=definitie=]. Een toelichting in de vorm van een scope afbakening is aanbevolen, evenals een verwijzing naar de bron van de definitie. Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in klare taal, op B1 niveau aanbevolen. De overige kenmerken zijn optioneel.
+Een begrippenlijst is een alfabetische termenlijst met definities die gebruikt worden in een bepaald domein. Een begrippenlijst kent voor ieder begrip dan ook mimimaal één [=term=] en één [=notitie=], repectievelijk een [=voorkeursterm=] en een [=definitie=]. Een toelichting in de vorm van een scope afbakening is aanbevolen, evenals een verwijzing naar de bron van de definitie. Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in klare taal, op B1 niveau aanbevolen. De overige kenmerken zijn optioneel.
 
 <p class="note" title="Tabellen moeten opnieuw gegenereert worden wanneer de teksten in thesaurus.ttl naar wens zijn"> In het geval van begrippenlijst kunnen de 'requirements' die hierboven genoemd zijn wellicht verplaatst worden naar een scopenote oid.<br>
 Ook kijken naar het verschil tussen deze sectie en sectie 2.4</p>
@@ -123,7 +123,7 @@ Hieronder worden de mogelijke soorten notities bij een begrip beschreven.
 |                       |                                       |
 |-----------------------|---------------------------------------|
 | **voorkeursterm**   | <dfn>uitleg</dfn> |
-| **definitie**        | Een uitleg van een begrip is een beschrijving van dit begrip in eenvoudige taal die zonder verdere context begrepen kan worden. |
+| **definitie**        | Een uitleg is een beschrijving van een object in eenvoudige taal die zonder verdere context begrepen kan worden. |
 | **bron** | http://www.w3.org/2000/01/rdf-schema#, https://www.w3.org/TR/rdf-schema/#ch_comment |
 | **toelichting** | De definitie moet &#39;precies kloppen&#39;. De uitleg is er veel meer op gericht om de lezer te laten snappen wat er wordt bedoeld. Er vanuit gaande dat hij/zij dat nog niet weet.  |
 
@@ -142,10 +142,9 @@ Hieronder worden de mogelijke soorten notities bij een begrip beschreven.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
-| **voorkeursterm**   | <dfn>bron</dfn> |
-| **definitie**        | Een bron is een document waaruit de betekenis van een begrip is afgeleid. |
-| **bron** | http://purl.org/dc/terms/, http://xmlns.com/foaf/0.1/, https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source |
-| **toelichting** | De bron kan een geschreven bron zijn of een resource op het web. Aanbevolen best practice is om de bron te beschrijven door middel van een tekenreeks die voldoet aan een formeel identificatiesysteem. Bij een resource op het web is ook de uri van die bron relevant. Om zowel naar een geschreven bron als naar een bron op het web (vaak zonder gestandaardiseerde beschrijving) te verwijzen wordt hier verwezen naar een eigen resource, die zowel een gestandaardiseerde beschrijving als een verwijzing naar de eigenlijke bron bevat. |
+| **voorkeursterm**   | <dfn>voorbeeld</dfn> |
+| **definitie**        | Een voorbeeld van het gebruik van een begrip. |
+| **bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/skos-reference/#notes |
 
 ### Taxonomie
 
@@ -402,11 +401,39 @@ Het is good practice om voor ieder begrip bronverwijzingen op te nemen. Zo is he
 
 Hiervoor hebben we het volgende patroon:
 
-Een **[=begrip=]** heeft een eigenschap '**bron**' of specifieker **bronverwijzing**.
-De waarde van **bron** is een non-literal resource. Dit is de daadwerkelijke **Bron** of specifieker, het **brondocument**.
-Het is aangeraden om een bron te beschrijven met een compact, voor de mens leesbare **[=term=]**, een uitgebreide **omschrijving**, een **[=url=]** als de bron een vindplaats heeft op het web en anders een **[=citaat=]** waarin de citeerinformatie van de bron in een bepaalde citeerstijl is vastgelegd.
+Een **[=begrip=]** heeft een eigenschap '**bron**' (of specifieker; **bronverwijzing**).
+
+De waarde van **bron** is een non-literal resource. Dit is de daadwerkelijke **Bron** (of specifieker het; **brondocument**).
+
+Het is aangeraden om een bron te beschrijven met een **[=url=]** als de bron een vindplaats heeft op het web en anders een **[=citaat=]** waarin de citeerinformatie van de bron in een bepaalde citeerstijl is vastgelegd. Hiermee kan de bron gevonden worden. Ook kan de bron beschreven worden met een compact, voor de mens leesbare **[=term=]**, een uitgebreide, voor de mens leesbare **[=uitleg=]** en een **[=soort=]** om aan te geven wat de aard van het brondocument is.
 
 De bron kan een heel document of een fragment daarvan zijn, denk aan een boek, een hoofdstuk of een paragraaf.
 
-<div class="definitie">Een <dfn>url</dfn> is de vindplaats van de resource op het internet.</div>
-<div class="definitie">Een <dfn>citaat</dfn> is een bibliografische referentie naar een document.</div>
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**   | <dfn>bron</dfn> |
+| **definitie**        | Een bron is een document waaruit de betekenis van een begrip is afgeleid. |
+| **bron** | http://purl.org/dc/terms/, http://xmlns.com/foaf/0.1/, https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source |
+| **toelichting** | De bron kan een geschreven bron zijn of een resource op het web. Aanbevolen best practice is om de bron te beschrijven door middel van een tekenreeks die voldoet aan een formeel identificatiesysteem. Bij een resource op het web is ook de uri van die bron relevant. Om zowel naar een geschreven bron als naar een bron op het web (vaak zonder gestandaardiseerde beschrijving) te verwijzen wordt hier verwezen naar een eigen resource, die zowel een gestandaardiseerde beschrijving als een verwijzing naar de eigenlijke bron bevat. |
+
+
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**     | <dfn>url</dfn> |
+| **definitie**         | Een url is de vindplaats van een resource op het internet. |
+| **bron**              | http://xmlns.com/foaf/0.1/ |
+
+
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**     | <dfn>citaat</dfn> |
+| **definitie**         | Een citaat is een bibliografische referentie naar een document. |
+| **bron**              | http://purl.org/dc/terms/, http://xmlns.com/foaf/0.1/, https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/bibliographicCitation |
+| **toelichting**       | Een citaat wordt als string vastgelegd. Hier dient voldoende detail in aangebracht te zijn zodat de resource gevonden kan worden. Er bestaan verschillende citeerstijlen die toegepast kunnen worden zoals IEEE, MLA of APA. |
+
+
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**     | <dfn>soort</dfn> |
+| **definitie**         | Een soort is de aard of het genre van een ding. |
+| **bron**              | http://purl.org/dc/terms/ |

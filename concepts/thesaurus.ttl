@@ -23,6 +23,8 @@ begkr-nps:BegrippenkaderNPS
     beg-nps:Notation ,
     beg-nps:Note ,
     beg-nps:Source ,
+    beg-nps:Type ,
+    beg-nps:Page ,
     beg-nps:BibliographicCitation;
   rdfs:label "Begrippenkader Nederlands Profiel voor Stelselcatalogi"@nl .
 
@@ -583,8 +585,9 @@ beg-nps:Comment
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
   skos:scopeNote "De definitie moet 'precies kloppen'. De uitleg is er veel meer op gericht om de lezer te laten snappen wat er wordt bedoeld. Er vanuit gaande dat hij/zij dat nog niet weet. "@nl ;
   skos:definition
-    "Een uitleg van een begrip is een beschrijving van dit begrip in eenvoudige taal die zonder verdere context begrepen kan worden."@nl ,
+    "Een uitleg is een beschrijving van een object in eenvoudige taal die zonder verdere context begrepen kan worden."@nl ,
     "A description of the subject resource."@en ;
+  skos:altLabel "omschrijving"@nl ;
   skos:broader beg-nps:Note ;
   skos:prefLabel
     "uitleg"@nl ,
@@ -659,10 +662,26 @@ beg-nps:HiddenLabel
     "zoekterm"@nl ,
     "hidden label"@en .
 
+#voorbeeld
+beg-nps:Example
+  a skos:Concept ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+  skos:related beg-nps:Concept ;
+  dct:source
+    <https://www.w3.org/TR/skos-reference/#notes> ,
+    skos: ;
+  skos:definition
+    "An example of the use of a concept."@en ,
+    "Een voorbeeld van het gebruik van een begrip."@nl ;
+  skos:broader beg-nps:Note ;
+  skos:prefLabel
+    "voorbeeld"@nl ,
+    "example"@en .
+
 # BESCHRIJVING BRON
 
 #url
-beg-nps:page
+beg-nps:Page
   a skos:Concept ;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
   dct:source
@@ -691,6 +710,18 @@ beg-nps:BibliographicCitation
   skos:scopeNote "Een citaat wordt als string vastgelegd. Hier dient voldoende detail in aangebracht te zijn zodat de resource gevonden kan worden. Er bestaan verschillende citeerstijlen die toegepast kunnen worden zoals IEEE, MLA of APA."@nl;
   skos:example "Scripta Materialia 48(5), 475-481 (2003)", "Martin Greenberger et al., eds., Networks for Research and Education: Sharing of Computer Information Resources Nationwide (Cambridge: MIT Press, 1974)" .
 
+#soort
+beg-nps:Type
+  a skos:Concept ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+  dct:source
+    dct: ;
+  skos:definition
+    "Een soort is de aard of het genre van een ding."@nl ,
+    "A type is the nature or genre of a resource."@en ;
+  skos:prefLabel
+    "soort"@nl ,
+    "type"@en .
 # BESCHRIJVING BEGRIPPENKADER
 
 # BEGRIPPENKADER
