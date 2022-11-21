@@ -85,6 +85,8 @@ Met het conceptueel model en de taalbinding die daar aan toegevoegd is kunnen we
 
 ## Specificatie Begrippenkader
 
+Een begrippenkader wordt gerepresenteerd als een skos:ConceptScheme. Deze typering is verplicht.
+
 Voor het beschrijven van de metadata van een begrippenkader sluiten we aan op metadatastandaarden zoals Dublin Core (dcterms), de Provenance Ontologie (Prov-O) en ADMS/DCAT. We zien een begrippenkader als een "semantic asset". Dit komt overeen met een adms:Asset. Aangezien adms:Asset een specialisatie is van een dcat:Dataset kunnen we op deze wijze goed aansluiten op catalogi die DCAT als uitgangspunt nemen, zoals data.overheid.nl
 
 > In ons profiel gebruiken we term "begrippenkader" met de taalbinding naar zowel skos:ConceptScheme als adms:Asset. We stellen daarmee dat een begrippenkader daadwerkelijk een beheerde asset is, maar ook gezien kan worden als een skos:ConceptScheme. De term "begrippenstelsel" hanteren we alleen in de betekenis van een "stelsel van begrippen", ongeacht of de beschrijvingen van deze begrippen als één geheel worden beheerd. Zo kun je dus spreken over het "stelsel van alle begrippen van alle (10) basisregistraties", die beheerd worden in (10) afzonderlijke begrippenkaders.
@@ -102,7 +104,7 @@ Voor het beschrijven van de metadata van een begrippenkader sluiten we aan op me
 
 ## Specificatie Begrip
 
-Het begrip wordt gerepresenteerd door een skos:Concept.
+Een begrip wordt gerepresenteerd als een skos:Concept. Deze typering is verplicht.
 
 | Conceptueel element       | Eigenschap                                                                          | Kardinaliteit | Type                                                                    |
 | ------------------------- | ----------------------------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- |
@@ -133,9 +135,9 @@ Het begrip wordt gerepresenteerd door een skos:Concept.
 | exemplaar van             | [isothes:broaderInstantial](http://purl.org/iso25964/skos-thes#broaderInstantial)   | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
 | categorie van             | [isothes:narrowerInstantial](http://purl.org/iso25964/skos-thes#narrowerInstantial) | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
 
-## Specificatie Bronverwijzing
+## Specificatie Bron
 
-Het Bronverwijzing voor een bepaald domein wordt gerepresenteerd door een foaf:Document. 
+Een Bron wordt gerepresenteerd als een foaf:Document. Deze typering wordt aangeraden.
 
 | Conceptueel element | Eigenschap                                                                  | Kardinaliteit | Type                                                                    |
 | ------------------- | --------------------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- |
@@ -147,7 +149,7 @@ Het Bronverwijzing voor een bepaald domein wordt gerepresenteerd door een foaf:D
 
 ## Specificatie Collectie
 
-Een collectie wordt gerepresenteerd door een skos:Collection
+Een collectie wordt gerepresenteerd als een skos:Collection. Deze typering is verplicht.
 
 | Conceptueel element | Eigenschap                                                | Kardinaliteit | Type                                                                    |
 | ------------------- | --------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- |
@@ -155,7 +157,7 @@ Een collectie wordt gerepresenteerd door een skos:Collection
 | bevat               | [skos:member](http://www.w3.org/2004/02/skos/core#member) | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept) OR [skos:Collection](http://www.w3.org/2004/02/skos/core#Collection)                  |
 
 ## Specificatie GeordendeCollectie
-Het geordende collectie wordt gerepresenteerd door een skos:OrderedCollection
+Een geordende collectie wordt gerepresenteerd als een skos:OrderedCollection. Deze typering is verplicht.
 
 | Conceptueel element | Eigenschap                                                        | Kardinaliteit | Type                                                                    |
 | ------------------- | ----------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- |
