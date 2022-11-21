@@ -102,7 +102,7 @@ Voor het beschrijven van de metadata van een begrippenkader sluiten we aan op me
 
 ## Specificatie Begrip
 
-Het begrip wordt gerepresenteerd door een skos:Concept
+Het begrip wordt gerepresenteerd door een skos:Concept.
 
 | Conceptueel element       | Eigenschap                                                                          | Kardinaliteit | Type                                                                    |
 | ------------------------- | ----------------------------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- |
