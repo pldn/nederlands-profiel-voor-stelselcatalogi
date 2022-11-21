@@ -1,8 +1,8 @@
 # Conceptuele beschrijving
 
-In dit hoofdstuk beschrijven we het abstracte model dat we hanteren in het toepassingsgebied. Dit is onafhankelijk van bepaalde notaties en/of standaarden. Hiermee komen we tot een gedeeld beeld en gedeelde taal waarmee we begrippenkaders beschrijven en uitwisselen. Vervolgens wordt in [hoofdstuk 3](#toepassingsprofiel-in-ld) beschreven hoe dit abstracte model kan worden toegepast in RDF. Dit zelfde abstracte model kan ook toegepast worden in bijvoorbeeld een JSON of XML schema zonder dat de gedeelde taal verloren gaat; waardoor deze standaard breder geadopteerd kan worden. Het abstracte model is gebasseerd op verschillende standaarden en best-practices die in het domein van toepassing zijn. Zoals bij de rationale aangegeven leunen we hier sterk op SKOS en op de ISO 25964.
+In dit hoofdstuk beschrijven we het abstracte model dat we hanteren in het toepassingsgebied. Dit is onafhankelijk van bepaalde notaties en/of standaarden. Hiermee komen we tot een gedeeld beeld en gedeelde taal waarmee we begrippenkaders beschrijven en uitwisselen. Vervolgens wordt in [hoofdstuk 3](#H3) beschreven hoe dit abstracte model kan worden toegepast in RDF. Dit zelfde abstracte model kan ook toegepast worden in bijvoorbeeld een JSON of XML schema zonder dat de gedeelde taal verloren gaat; waardoor deze standaard breder geadopteerd kan worden. Het abstracte model is gebasseerd op verschillende standaarden en best-practices die in het domein van toepassing zijn. Zoals bij de rationale aangegeven leunen we hier sterk op SKOS en op de ISO 25964.
 
-In 2.1 beschrijven we wat een begrip is. Vervolgens beschrijven we in 2.1.1 de kenmerken van ene begrip die relevant zijn voor het basisniveau, een glossary. In 2.1.2 voegen we daar de hiërarchische relaties aan toe die een glossary uitbreiden tot een taxonomie. In 2.1.3 voegen we meer genuanceerde hiërarchische relaties toe om tot een ISO compatible thesaurus te komen. In 2.1.4 beschrijven we de harmonisatierelaties waarmee begrippen kunnen worden verbonden met begrippen in een ander begrippenkader. In 2.1.5 beschrijven we skos-lex als voorbeeld van een verdergaande typering van begrippen waarmee nog meer semantiek wordt toegevoegd. 
+In 2.1 beschrijven we wat een begrip is. Vervolgens beschrijven we in 2.1.1 de kenmerken van ene begrip die relevant zijn voor het basisniveau, een begrippenlijst. In 2.1.2 voegen we daar de hiërarchische relaties aan toe die een begrippenlijst uitbreiden tot een taxonomie. In 2.1.3 voegen we meer genuanceerde hiërarchische relaties toe om tot een ISO compatible thesaurus te komen. In 2.1.4 beschrijven we de harmonisatierelaties waarmee begrippen kunnen worden verbonden met begrippen in een ander begrippenkader. In 2.1.5 beschrijven we skos-lex als voorbeeld van een verdergaande typering van begrippen waarmee nog meer semantiek wordt toegevoegd. 
 
 In 2.2 beschrijven we wat een begrippenkader is en in 2.3 hoe begrippen los van hun semantische samenhang binnen een begrippenkader kunnen worden gegroepeerd in collecties.
 
@@ -31,14 +31,14 @@ Een begrip is het centrale element in deze specificatie. Een begrip is een conce
 
 *in de thesaurus.ttl zijn de kenmerken nu via skos:related aan een begrip gekoppeld. Wellicht moet dit andersom: ieder kermerk relateren aan een begrip*
 
-### Glossary
+### Begrippenlijst
 Aan de hand van de begripsdriehoek, zien we dat om een spreker te kunnen begrijpen, een toebehoorder minimaal iets moeten weten over de conceptualisatie en de termen die ter aanduiding gebruikt worden.
 
-Door deze basis voor alle begrippen die binnen een context gebruikt worden vast te leggen onstaat een [=begrippenkader=]. In dit stadium spreken we van een glossary. Dit is de basisniveau voor de beschrijving van begrippen in een bepaald domein. 
+Door deze basis voor alle begrippen die binnen een context gebruikt worden vast te leggen onstaat een [=begrippenkader=]. In dit stadium spreken we van een begrippenlijst. Dit is de basisniveau voor de beschrijving van begrippen in een bepaald domein. 
 
-Een glossary is een alfabetische termenlijst met definities die gebruikt worden in een bepaald domein. Een glossary kent voor ieder begrip dan ook mimimaal één term en één notitie, repectievelijk een [=voorkeursterm=] en een [=definitie=]. Een toelichting in de vorm van een scope afbakening is aanbevolen, evenals een verwijzing naar de bron van de definitie. Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in klare taal, op B1 niveau aanbevolen. De overige kenmerken zijn optioneel.
+Een begrippenlijst is een alfabetische termenlijst met definities die gebruikt worden in een bepaald domein. Een begrippenlijst kent voor ieder begrip dan ook mimimaal één term en één notitie, repectievelijk een [=voorkeursterm=] en een [=definitie=]. Een toelichting in de vorm van een scope afbakening is aanbevolen, evenals een verwijzing naar de bron van de definitie. Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in klare taal, op B1 niveau aanbevolen. De overige kenmerken zijn optioneel.
 
-<p class="note" title="Tabellen moeten opnieuw gegenereert worden wanneer de teksten in thesaurus.ttl naar wens zijn"> In het geval van glossary kunnen de 'requirements' die hierboven genoemd zijn wellicht verplaatst worden naar een scopenote oid.<br>
+<p class="note" title="Tabellen moeten opnieuw gegenereert worden wanneer de teksten in thesaurus.ttl naar wens zijn"> In het geval van begrippenlijst kunnen de 'requirements' die hierboven genoemd zijn wellicht verplaatst worden naar een scopenote oid.<br>
 Ook kijken naar het verschil tussen deze sectie en sectie 2.4</p>
 
 |                       |                                       |
@@ -140,8 +140,6 @@ Hieronder worden de mogelijke soorten notities bij een begrip beschreven.
 | **bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes |
 | **toelichting** | De definitie dient te voldoen aan specifieke formuleringsregels voor definitie en dient in een voor mensen leesbare taal te begrijpen zijn. In dit laatste onderscheid de definitie zich daarmee van een machine-leesbare formele beschrijving. Aan de hand van een definitie kan iemand bepalen of zijn eigen begrip behorende bij een term overeenkomt met het begrip dat gedefinieerd wordt. De uitleg of de toelichting bij een begrip kan gebruik worden voor iemand die het begrip nog niet kent om te begrijpen waar het over gaat. |
 
-*de bronbeschrijving zelf in een aparte paragraaf* Dit is alleen geen notitie; maar wel sterk verbonden - aan de definitie.
-
 |                       |                                       |
 |-----------------------|---------------------------------------|
 | **voorkeursterm**   | bron |
@@ -152,7 +150,7 @@ Hieronder worden de mogelijke soorten notities bij een begrip beschreven.
 Iets over semantische relaties.
 *tabel met de beschrijving van een semantische relatie met prefLabel, definition, scopeNotes, bronnen*
 
-Een taxonomie kent behalve alle elementen van een glossary ook hiërarchische relaties. Deze hiërarchise relaties zijn optioneel in een glossary en zijn bijvoorbeeld relevant als een begrip wordt gedefinieerd in termen van een ander begrip, bijvoorbeeld 'een gemaal *is een* kunstwerk dat ...'. Deze definitie impliceert dat een gemaal een 'enger begrip' is dan een kunstwerk, die ook als semantische relatie kan worden opgenomen.
+Een taxonomie kent behalve alle elementen van een begrippenlijst ook hiërarchische relaties. Deze hiërarchise relaties zijn optioneel in een begrippenlijst en zijn bijvoorbeeld relevant als een begrip wordt gedefinieerd in termen van een ander begrip, bijvoorbeeld 'een gemaal *is een* kunstwerk dat ...'. Deze definitie impliceert dat een gemaal een 'enger begrip' is dan een kunstwerk, die ook als semantische relatie kan worden opgenomen.
 *tabel met de beschrijving van een thesaurus met prefLabel, definition, scopeNotes, bronnen en kenmerken van begrippen in een taxonomie*
 
 In een taxonomie zijn alle begrippen direct of indirect als via een 'heeft breder begrip' gekoppeld aan een top-begrip. Typerend voor een taxonomie is een gebruikersinterface waarbij op het eerste niveau de top-begrippen worden getoond, waarbij per top-begrip begrippen met een engere betekenis worden getoond, die op nu beurt ook weer begrippen met een engere betekenis tonen, enzovoort. Dit betekent dat, als je een taxonomie publiceert, ieder begrip ofwel via een hiërarchische relatie moet worden gekoppeld aan een ander begrip, ofwel een top-begrip moet zijn.
@@ -267,16 +265,17 @@ Het maakt het mogelijk om begrippen te groepen op een manier die haaks staat op 
 - toelichting
 
 ## Bron
-<div class="definitie">Een <dfn>bron</dfn> voor een begrip is een gerelateerd document waaruit de betekenis van het begrip is afgeleid.</div>
+
+<div class="definitie">Een <dfn>bron</dfn> is een document waaruit de betekenis van het begrip is afgeleid.</div>
 Het is good practice om voor ieder begrip bronverwijzingen op te nemen. Zo is het duidelijk waar de definitie van een begrip op gebasseerd is. Dit verhoogd de kwaliteit van het begrip en vooral ook de betrouwbaarheid.
 
 Hiervoor hebben we het volgende patroon:
 
-Een **[=begrip=]** heeft een eigenschap '**bronverwijzing**'.
-De waarde van **bronverwijzing** is een non-literal resource. Dit zien we als een **bron**.
+Een **[=begrip=]** heeft een eigenschap '**bron**' of specifieker **bronverwijzing**.
+De waarde van **bron** is een non-literal resource. Dit is de daadwerkelijke **Bron** of specifieker, het **brondocument**.
 Het is aangeraden om een bron te beschrijven met een compact, voor de mens leesbare **[=term=]**, een uitgebreide **omschrijving**, een **[=url=]** als de bron een vindplaats heeft op het web en anders een **[=citaat=]** waarin de citeerinformatie van de bron in een bepaalde citeerstijl is vastgelegd.
 
 De bron kan een heel document of een fragment daarvan zijn, denk aan een boek, een hoofdstuk of een paragraaf.
 
 <div class="definitie">Een <dfn>url</dfn> is de vindplaats van de resource op het internet.</div>
-<div class="definitie">Een <dfn>citaat</dfn> is een bibliografische referentie naar een document</div>
+<div class="definitie">Een <dfn>citaat</dfn> is een bibliografische referentie naar een document.</div>

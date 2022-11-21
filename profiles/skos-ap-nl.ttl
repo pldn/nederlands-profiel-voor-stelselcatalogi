@@ -54,8 +54,8 @@ skosapnl:Concept
 
 skosapnl:Source
   a sh:NodeShape ;
-  rdfs:comment "Een bron is een document, of fragment van een document, die als bron dient voor een bepaald begrip."@nl ;
-  rdfs:label "Bronverwijzing"@nl ;
+  rdfs:comment "Een Bron is een document, of fragment van een document, die als bron dient voor een bepaald begrip."@nl ;
+  rdfs:label "Bron"@nl ;
   sh:targetObjectsOf dct:source ;
   sh:property
     skosapnl:Source-label ,
