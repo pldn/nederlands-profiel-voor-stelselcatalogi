@@ -17,6 +17,35 @@ Het beschrijven van de kenmerken van een begrip, *begrippenkader* of *collectie*
   
 <p class="note" title="MIM">Nog toevoegen -> dit model is ook in MIM beschreven... <br>todo transformatie SHACL -> MIM : https://docs.geostandaarden.nl/mim/mim/#transformatie-vanuit-rdfs-owl-shacl</p>
 
+## Begrippenkader
+Begrippen kunnen als zelfstandige entiteiten worden gezien maar veelal worden ze opgesteld als onderdeel van een gecureerde begrippenkader, zoals begrippenlijsten, taxonomieën en thesauri. Een [=begrippenkader=] is een verzameling van [=begrip=]pen. De volledige beschrijving van de begrippen wordt conceptueel gezien als onderdeel van het begrippenkader. Dat betekent ook dat wanneer een begrip een semantische relatie kent naar een ander begrip, dat het andere begrip dan ook als onderdeel van het vocabulaire, en dus het begrippenkader, gezien wordt. Een begrippenkader is vergelijkbaar met een taal die in een bepaald gebied gesproken wordt. En net als een reguliere taal is een begrippenkader een open systeem. Zo kan een taal ook groeien na introductie van nieuwe woorden vanuit talen uit nabijgelegen gebieden. Dat wil zeggen dat een begrippenkader net als een taal naast vertalingen (mappings) kent ook woorden kunnen overnemen; leenwoorden. Zoals "computer", een van origine engels woord, ook behoort tot de nederlandse taal. Het beschrijven welke begrippen behoren tot een begrippenkader is essentieel; maar hoe deze 'vertaald' kunnen worden naar begrippen uit andere begrippenkaders ook, hier gebruiken we mappingrelaties voor. Het gebruik hiervan resulteert niet per definitie in een uitbreiding van het begrippenkader, zoals dat met andere semantische relaties wel het geval is.
+
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**   | <dfn>begrippenkader</dfn> |
+| **definitie**        | Een begrippenkader is een verzameling van begrippen, inclusief eventuele semantische relaties tussen deze begrippen. |
+| **bron** | http://www.w3.org/2004/02/skos/core#, https://en.wikipedia.org/wiki/Controlled_vocabulary, https://www.w3.org/TR/skos-reference/#schemes |
+| **toelichting** | Een begrippenkader kan worden gedefinieerd om begrippen uit verschillende bronnen op te nemen. Begrippenkaders bieden een manier om kennis te ordenen voor het later kunnen ophalen. Ze worden gebruikt in indexeringsschema&#39;s, koppen, thesauri, taxonomieën en andere kennisorganisatiesystemen. Begrippenkaders verplichten het gebruik van vooraf gedefinieerde, geautoriseerde termen die zijn geselecteerd door de ontwerpers ervan,in tegenstelling tot natuurlijke taalvocabulaires,die een dergelijke beperking niet hebben. |
+
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**     | <dfn>topbegrip</dfn> |
+| **definitie**         | Een topbegrip is een begrip die bovenaan de hierarchie staat in een bepaald begrippenkader. |
+| **bron**              | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes |
+
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**   | <dfn>behoort tot schema</dfn> |
+| **definitie**        | Relateert een begrip tot het begrippenkader waartoe het behoort |
+| **bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes |
+| **toelichting** | Volgens de SKOS-standaard kan een begrip tot meerdere begrippenkaders behoren. Praktisch gezien kan dit slechts als sprake is van begrippenkaders waarvan de contexten overlappen |
+
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**   | <dfn>label</dfn> |
+| **definitie**        | Een label voor een object is een voor mensen leesbare naam ter aanduiding van een object. |
+| **bron** | http://www.w3.org/2000/01/rdf-schema#, https://www.w3.org/TR/rdf-schema/#ch_label |
+
 ## Begrip
 Een begrip is het centrale element in deze specificatie. Een begrip is een conceptuele resource; het zijn de eenheden van denken - ideeën, betekenissen of (categorieën van) objecten en gebeurtenissen. Zo bestaan of ontstaan begrippen dus in ons hoofd als abstracte entiteiten. In communicatie spelen begrippen een belangrijke rol. In de communicatiewetenschap wordt hier gerefereerd aan de 'Triange of meaning'. Hierin staat een spreker centraal die iets conceptualiseert en daaraan refereert met een bepaalde term (of symbool) met de hoop dat de toehoorder dezelfde conceptualisatie maakt op basis van de gebruikte term zodat hij begrijpt wat de spreker bedoelt. In het onderstaande figuur is deze driehoek afgebeeld en gaat het begrip dus over de bedoeling (betekenis); ofwel de gedachte.
 
@@ -296,67 +325,6 @@ Om in een begrippenkader nog meer semantiek vast te leggen dan in een standaard 
 
 Onder andere de Belastingdienst heeft nog weer een uitbreiding op deze extensie gemaakt, waarin rechtshandelingen nader worden getypeerd op basis van de rechtsbetrekking tussen de actoren. *link*
 
-## Begrippenkader
-Begrippen kunnen als zelfstandige entiteiten worden gezien maar veelal worden ze opgesteld als onderdeel van een gecureerde begrippenkader, zoals begrippenlijsten, taxonomieën en thesauri. Een [=begrippenkader=] is een verzameling van [=begrip=]pen. De volledige beschrijving van de begrippen wordt conceptueel gezien als onderdeel van het begrippenkader. Dat betekent ook dat wanneer een begrip een semantische relatie kent naar een ander begrip, dat het andere begrip dan ook als onderdeel van het vocabulaire, en dus het begrippenkader, gezien wordt. Een begrippenkader is vergelijkbaar met een taal die in een bepaald gebied gesproken wordt. En net als een reguliere taal is een begrippenkader een open systeem. Zo kan een taal ook groeien na introductie van nieuwe woorden vanuit talen uit nabijgelegen gebieden. Dat wil zeggen dat een begrippenkader net als een taal naast vertalingen (mappings) kent ook woorden kunnen overnemen; leenwoorden. Zoals "computer", een van origine engels woord, ook behoort tot de nederlandse taal. Het beschrijven welke begrippen behoren tot een begrippenkader is essentieel; maar hoe deze 'vertaald' kunnen worden naar begrippen uit andere begrippenkaders ook, hier gebruiken we mappingrelaties voor. Het gebruik hiervan resulteert niet per definitie in een uitbreiding van het begrippenkader, zoals dat met andere semantische relaties wel het geval is.
-
-|                       |                                       |
-|-----------------------|---------------------------------------|
-| **voorkeursterm**   | <dfn>begrippenkader</dfn> |
-| **definitie**        | Een begrippenkader is een verzameling van begrippen, inclusief eventuele semantische relaties tussen deze begrippen. |
-| **bron** | http://www.w3.org/2004/02/skos/core#, https://en.wikipedia.org/wiki/Controlled_vocabulary, https://www.w3.org/TR/skos-reference/#schemes |
-| **toelichting** | Een begrippenkader kan worden gedefinieerd om begrippen uit verschillende bronnen op te nemen. Begrippenkaders bieden een manier om kennis te ordenen voor het later kunnen ophalen. Ze worden gebruikt in indexeringsschema&#39;s, koppen, thesauri, taxonomieën en andere kennisorganisatiesystemen. Begrippenkaders verplichten het gebruik van vooraf gedefinieerde, geautoriseerde termen die zijn geselecteerd door de ontwerpers ervan,in tegenstelling tot natuurlijke taalvocabulaires,die een dergelijke beperking niet hebben. |
-
-|                       |                                       |
-|-----------------------|---------------------------------------|
-| **voorkeursterm**     | <dfn>topbegrip</dfn> |
-| **definitie**         | Een topbegrip is een begrip die bovenaan de hierarchie staat in een bepaald begrippenkader. |
-| **bron**              | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes |
-
-|                       |                                       |
-|-----------------------|---------------------------------------|
-| **voorkeursterm**   | <dfn>behoort tot schema</dfn> |
-| **definitie**        | Relateert een begrip tot het begrippenkader waartoe het behoort |
-| **bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes |
-| **toelichting** | Volgens de SKOS-standaard kan een begrip tot meerdere begrippenkaders behoren. Praktisch gezien kan dit slechts als sprake is van begrippenkaders waarvan de contexten overlappen |
-
-|                       |                                       |
-|-----------------------|---------------------------------------|
-| **voorkeursterm**   | <dfn>label</dfn> |
-| **definitie**        | Een label voor een object is een voor mensen leesbare naam ter aanduiding van een object. |
-| **bron** | http://www.w3.org/2000/01/rdf-schema#, https://www.w3.org/TR/rdf-schema/#ch_label |
-
-### Metadata van een begrippenkader
-Het begrippenkader is niet een concreet iets. Het is een *eenheid van context*. Aan de hand van de definitie stellen we dan ook dat het begrippenkader een verzameling begrippen is. Dit is niet hetzelfde als een verzameling begripsbeschrijvingen, wat wel concreet is. Het begrippenkader is conceptueel ook een dataset (eventueel dan federatief beheerd). Specifiek zien we het begrippenkader als een [[[ASSET]]]; een waardevolle eenheid van geëxpliciteerde kennis.
-Het is dan ook van belang om, net als bij andere soorten assets of producten het begrippenkader voldoende te beschrijven. De volgende set eigenschappen zien we als relevant voor semantische assets; en zo ook begrippenkaders.
-
-*nog tabbelen inclusief rationale voor ieder item maken* 
-
-- Voorkeursnaam begrippenkader
-- Alternatieve naam begrippenkader
-- Beschrijving begrippenkader
-- Klare taal beschrijving begrippenkader 
-- Toelichting
-- Ontwerpbeslissingen
-- Voorbeeld
-- Documentatiepagina
-- Wetgeving
-- Wetgeving (URI)
-- Taal
-- Bronhouder
-- Uitgever
-- Contactpunt
-- Toezichthouder
-- Opdrachtgever
-- Laatst bijgewerkt
-- Versie
-- Frequentie (URI)
-- Publicatiedatum
-- Toegangsrechten
-- Licentie
-- Conformeert aan
-- Thema/categorie
-- Keywords
-
 ## Collectie
 [=Collectie=]s bieden de mogelijkheid om binnen een begrippenkader begrippen die voor hun betekenis niet direct via semantische relaties met elkaar zijn verbonden, toch bij elkaar te zetten. Zo hebben het begrip 'vervuild' dat in milieuwetgeving wordt gedefinieerd en het begrip 'landgoed' dat in de natuurschoonwet wordt gedefinieerd semantisch geen relatie, maar worden ze beiden beschouwd als 'publiekrechtelijke beperking' in het kader van de Wet Kenbaarheid Publiekrechtelijke Beperkingen (WKPB). Deze begrippen kunnen dan samen met andere begrippen die onder de WKPB vallen worden samengebracht in een collectie.
 
@@ -435,3 +403,37 @@ De bron kan een heel document of een fragment daarvan zijn, denk aan een boek, e
 | **voorkeursterm**     | <dfn>soort</dfn> |
 | **definitie**         | Een soort is de aard of het genre van een ding. |
 | **bron**              | http://purl.org/dc/terms/ |
+
+
+## Metadata 
+### Begrippenkader
+Het begrippenkader is niet een concreet iets. Het is een *eenheid van context*. Aan de hand van de definitie stellen we dan ook dat het begrippenkader een verzameling begrippen is. Dit is niet hetzelfde als een verzameling begripsbeschrijvingen, wat wel concreet is. Het begrippenkader is ook een dataset (eventueel dan federatief beheerd). Specifiek zien we het begrippenkader als een [[[ASSET]]]; een waardevolle eenheid van geëxpliciteerde kennis.
+Het is dan ook van belang om, net als bij andere soorten assets of producten het begrippenkader voldoende te beschrijven. De volgende set eigenschappen zien we als relevant voor semantische assets; en zo ook begrippenkaders.
+
+*nog tabbelen inclusief rationale voor ieder item maken* 
+
+- Voorkeursnaam begrippenkader
+- Alternatieve naam begrippenkader
+- Beschrijving begrippenkader
+- Klare taal beschrijving begrippenkader 
+- Toelichting
+- Ontwerpbeslissingen
+- Voorbeeld
+- Documentatiepagina
+- Wetgeving
+- Wetgeving (URI)
+- Taal
+- Bronhouder
+- Uitgever
+- Contactpunt
+- Toezichthouder
+- Opdrachtgever
+- Laatst bijgewerkt
+- Versie
+- Frequentie (URI)
+- Publicatiedatum
+- Toegangsrechten
+- Licentie
+- Conformeert aan
+- Thema/categorie
+- Keywords
