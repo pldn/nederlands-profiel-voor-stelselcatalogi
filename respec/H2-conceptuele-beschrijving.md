@@ -8,7 +8,7 @@ In [2.2](#begrippenkader) beschrijven we wat een begrippenkader is en in [2.3](#
 
 In [2.4](#bron) beschrijven we de elementen van een bibliografische of op het web vindbare bron waarop de definitie van een begrip is gebaseerd.
 
-Het beschrijven van de  kenmerken van een begrip, *begrippenkader* of *collectie* doen we conform onze eigen standaard (practice what you preach). Dat betekent dat we voor ieder kenmerk van een begrip de volgende kenmerken beschrijven:
+Het beschrijven van de kenmerken van een begrip, *begrippenkader* of *collectie* doen we conform onze eigen standaard (practice what you preach). Dat betekent dat we voor ieder kenmerk van een begrip de volgende kenmerken beschrijven:
   * [=voorkeursterm=]. De Engelse term nemen we over uit SKOS, maar soms ook uit een samenhangende standaard als Dublin Core of Prov-O. In het profiel geven we de Nederlandse definitie.
   * [=definitie=]. De definitie in het Engels nemen we over uit SKOS of een samenhangende standaard. In het profiel geven we de Nederlandse definitie.
   * [=toelichting=]. De toelichting in het Engels nemen we over uit SKOS of een samenhangende standaard. De ISO 25964 geeft vaak ook een waardevolle (Engelse) toelichting. De ISO 25964 geeft zelf aan dat de toelichting misschien nog wel belangrijker is dan de definitie. Zowel de SKOS- als de ISO toelichting zijn naar het Nederlands vertaald.
@@ -53,7 +53,7 @@ Termen zijn karakteristieken van een begrip. We kunnen termen zien als een refer
 | **voorkeursterm**   | <dfn>term</dfn> |
 | **definitie**        | Een term is een aaneenschakeling van één of meerdere woorden ter aanduiding van een object. |
 | **bron** | https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.61 |
-| **toelichting** | Een begrip wordt aangeduid met een voor mensen leesbare term (inclusief spaties en diacrieten). Deze is gelijk aan het skos:prefLabel. Uitzondering hierop is de situatie dat binnen 1 conceptschema er vaker dezelfde skos:prefLabel wordt gebruikt. Dit is geen good practice en dient zoveel mogelijk voorkomen te worden. In het geval dat dit toch voorkomt, krijgt het rdfs:label een toevoeging tussen haakjes die het onderscheid aangeeft. Dit label kan meertalig zijn, aangegeven door  of @en, In de definitie moet &#39;woord&#39; breed worden geÃ¯nterpreteerd. Een term mag ook een afkorting zijn, zoals &#39;B.T.W.&#39; (de voorkeursterm voor &#39;Belasting op toegevoegde waarde&#39;), of een code zoals &#39;013&#39; (Een poppodium in Tilburg). |
+| **toelichting** | Een begrip wordt aangeduid met een voor mensen leesbare term (inclusief spaties en diacrieten). Deze is gelijk aan het skos:prefLabel. Uitzondering hierop is de situatie dat binnen 1 conceptschema er vaker dezelfde skos:prefLabel wordt gebruikt. Dit is geen good practice en dient zoveel mogelijk voorkomen te worden. In het geval dat dit toch voorkomt, krijgt het rdfs:label een toevoeging tussen haakjes die het onderscheid aangeeft. Dit label kan meertalig zijn, aangegeven door of @en, In de definitie moet &#39;woord&#39; breed worden geÃ¯nterpreteerd. Een term mag ook een afkorting zijn, zoals &#39;B.T.W.&#39; (de voorkeursterm voor &#39;Belasting op toegevoegde waarde&#39;), of een code zoals &#39;013&#39; (Een poppodium in Tilburg). |
 
 Hieronder worden de mogelijke soorten termen bij een begrip beschreven.
 
@@ -308,8 +308,9 @@ Begrippen kunnen als zelfstandige entiteiten worden gezien maar veelal worden ze
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
-| **voorkeursterm**   | <dfn>topbegrip</dfn> |
-| **bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes |
+| **voorkeursterm**     | <dfn>topbegrip</dfn> |
+| **definitie**         | Een topbegrip is een begrip die bovenaan de hierarchie staat in een bepaald begrippenkader. |
+| **bron**              | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes |
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -331,7 +332,7 @@ Het is dan ook van belang om, net als bij andere soorten assets of producten het
 *nog tabbelen inclusief rationale voor ieder item maken* 
 
 - Voorkeursnaam begrippenkader
-- Alternatieve  naam begrippenkader
+- Alternatieve naam begrippenkader
 - Beschrijving begrippenkader
 - Klare taal beschrijving begrippenkader 
 - Toelichting
