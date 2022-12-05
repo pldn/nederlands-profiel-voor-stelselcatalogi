@@ -22,7 +22,9 @@ begkr-nps:BegrippenkaderNPS
     beg-nps:InScheme ,
     beg-nps:Notation ,
     beg-nps:Note ,
-    beg-nps:BibliographicResource ,
+    beg-nps:Source ,
+    beg-nps:Type ,
+    beg-nps:Page ,
     beg-nps:BibliographicCitation;
   rdfs:label "Begrippenkader Nederlands Profiel voor Stelselcatalogi"@nl .
 
@@ -62,7 +64,7 @@ beg-nps:Concept
     "begrip"@nl ;
   skos:definition
     "Concepten zijn de eenheden van denken - ideeën, betekenissen of (categorieën van) objecten en gebeurtenissen - die ten grondslag liggen aan veel kennisorganisatiesystemen."@nl ,
-    "Concepts are the units  of thought —ideas, meanings, or (categories of) objects and events— which underlie many knowledge organization systems."@en ;
+    "Concepts are the units of thought —ideas, meanings, or (categories of) objects and events— which underlie many knowledge organization systems."@en ;
   skos:scopeNote
     "The prime application for a thesaurus is in information retrieval, where the aim is to search for concepts. Concepts are represented by terms. Each term included in a thesaurus should represent a single concept (or unit of thought). Concepts can range from the simple (e.g. cats) to the very complex (e.g. racial discrimination among ethnic minorities). Compound terms or phrases are generally needed to express the more complex concepts."@en ,
     "De belangrijkste toepassing voor een thesaurus is het ophalen van informatie, waarbij het doel is om naar begrippen te zoeken. Begrippen worden weergegeven door termen. Elke term in een thesaurus moet een enkel begrip (of denkeenheid) vertegenwoordigen. Begrippen kunnen variëren van eenvoudig (bijv. katten) tot zeer complex (bijv. rassendiscriminatie onder etnische minderheden). Samengestelde termen of zinsdelen zijn over het algemeen nodig om de meer complexe begrippen uit te drukken."@nl ;
@@ -72,7 +74,7 @@ beg-nps:Concept
   beg-nps:AltLabel
   a skos:Concept ;
   skos:example
-    "Acroniemen, afkortingen, spellingsvarianten en onregelmatige meervouds-/enkelvoudsvormen kunnen worden opgenomen in de alternatieve labels voor een concept. Verkeerd gespelde termen worden normaal gesproken als verborgen labels opgenomen (zie   skos:hiddenLabel)."@nl ,
+    "Acroniemen, afkortingen, spellingsvarianten en onregelmatige meervouds-/enkelvoudsvormen kunnen worden opgenomen in de alternatieve termen voor een concept. Verkeerd gespelde termen worden normaal gesproken als verborgen labels opgenomen (zie   skos:hiddenLabel)."@nl ,
     "Acronyms, abbreviations, spelling variants, and irregular plural/singular forms may be included among the alternative labels for a concept. Mis-spelled terms are normally included as hidden labels (see skos:hiddenLabel)."@en ;
   skos:prefLabel
     "alternatieve term"@nl ,
@@ -117,17 +119,21 @@ beg-nps:InScheme
 beg-nps:Source
   a skos:Concept ;
   skos:definition
-    "A related resource from which the described resource is derived."@en ,
-    "Een bron voor een begrip is een gerelateerd brondocument waaruit de betekenis van het begrip is afgeleid."@nl ;
+    "Een bron is een document waaruit de betekenis van een begrip is afgeleid."@nl ,
+    "A source is a document from which a described concept is derived."@en ;
   dct:source
     dct: ,
+    foaf: ,
     <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source> ;
   skos:prefLabel
     "source"@en ,
     "bron"@nl ;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:broader beg-nps:BibliographicResource ;
-  skos:altLabel "herkomst"@nl ;
+  skos:altLabel 
+    "herkomst"@nl ,
+    "bronverwijzing"@nl ,
+    "brondocument"@nl ,
+    "bibliographic resource"@en ;
   skos:scopeNote 
     "De bron kan een geschreven bron zijn of een resource op het web. Aanbevolen best practice is om de bron te beschrijven door middel van een tekenreeks die voldoet aan een formeel identificatiesysteem. Bij een resource op het web is ook de uri van die bron relevant. Om zowel naar een geschreven bron als naar een bron op het web (vaak zonder gestandaardiseerde beschrijving) te verwijzen wordt hier verwezen naar een eigen resource, die zowel een gestandaardiseerde beschrijving als een verwijzing naar de eigenlijke bron bevat."@nl,
     "The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."@en ;
@@ -218,7 +224,7 @@ beg-nps:Harmonisatierelatie
     "is in mapping relation with"@en ;
   dct:source <https://www.w3.org/TR/skos-reference/#mapping> ,
     skos: ;
-  skos:scopeNote "Het gaat niet zozeer om het harmoniseren in de zin dat iedereen dezelfde term voor een concept moet gebruiken, maar om inzichtelijk te maken hoe het concept samenhangt met concepten in andere contexten."@nl;
+  skos:scopeNote "Het gaat niet zozeer om het harmoniseren in de zin dat iedereen dezelfde term voor een concept moet gebruiken, maar om inzichtelijk te maken hoe het concept samenhangt met concepten in andere contexten."@nl .
 
 #heeft breder begrip
 beg-nps:Broader
@@ -263,8 +269,8 @@ beg-nps:Narrower
     "heeft enger begrip"@nl ,
     "has narrower"@en ;
   skos:broader beg-nps:SemantischeRelatie ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS
- skos:notation "NT"@nl, "NT"@en.
+  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+  skos:notation "NT"@nl, "NT"@en.
 
 
 #historische notitie
@@ -285,7 +291,6 @@ beg-nps:HistoryNote
     "A history note may apply to a single preferred or non-preferred term, or to a concept. It should be used when a new preferred term is added to the thesaurus or a change is made to an existing term that affects the concept's scope in different periods of application. While it is possible to include such information in the scope note, a separate history note is preferable. A history note may record the date of introduction, or it may give more complex advice on how to search for the concept in earlier or later times."@en,
     "Een historische notitie wordt gebruikt wanneer een nieuwe voorkeursterm wordt toegevoegd aan het begrippenkader of wanneer er een wijziging wordt aangebracht in een bestaande term die van invloed is op de reikwijdte van het concept in verschillende toepassingsperioden. Hoewel het mogelijk is om dergelijke informatie in de toelichting op te nemen, heeft een aparte hisotirsche notitie de voorkeur. Deze kan kan de datum van introductie vermelden, of het kan meer complexe informatie geven over hoe te zoeken naar het concept op een eerder of later tijdstip."@nl; 
   skos:notation "HN"@nl, "HN"@en.
- .
 
 #is categorie van
 beg-nps:NarrowerInstantial
@@ -580,8 +585,9 @@ beg-nps:Comment
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
   skos:scopeNote "De definitie moet 'precies kloppen'. De uitleg is er veel meer op gericht om de lezer te laten snappen wat er wordt bedoeld. Er vanuit gaande dat hij/zij dat nog niet weet. "@nl ;
   skos:definition
-    "Een uitleg van een begrip is een beschrijving van dit begrip in eenvoudige taal die zonder verdere context begrepen kan worden."@nl ,
+    "Een uitleg is een beschrijving van een object in eenvoudige taal die zonder verdere context begrepen kan worden."@nl ,
     "A description of the subject resource."@en ;
+  skos:altLabel "omschrijving"@nl ;
   skos:broader beg-nps:Note ;
   skos:prefLabel
     "uitleg"@nl ,
@@ -600,7 +606,7 @@ beg-nps:PrefLabel
   skos:scopeNote
     "The terms selected to represent concepts may be single-word terms or multi-word terms. In ordinary discourse, a single term might have more than one meaning, and the most common meaning is not always the one needed to represent the concept wanted in the thesaurus. If the context provided by the hierarchy of broader and narrower concepts linked to the concept in question is insufficient to elucidate the intended scope, additional measures should be applied. While all thesaurus terms should be expressed as unambiguously as possible, it is especially important to formulate the preferred term of a given concept in such a way that it conveys the intended scope to any user. For example, the multi-meaning term \"depression\" could be reformulated as \"economic depression\" or \"meteorological depression\", as appropriate. Alternatively a qualifier may be used. In cases where these measures are not appropriate or sufficient, or where additional information would help to clarify the meaning and make the usage more consistent, an explicit scope note should be used."@en ,
     "De termen die zijn geselecteerd om begrippen weer te geven, kunnen termen van één of meerdere woorden zijn. In het gewone spraakgebruik kan een enkele term meer dan één betekenis hebben. De meest voorkomende betekenis is niet altijd de betekenis die nodig is om het in de thesaurus gezochte concept weer te geven. Indien de context die wordt geboden door de hiërarchie van bredere en smallere concepten gekoppeld aan het betreffende concept onvoldoende is om de beoogde reikwijdte te verduidelijken, dienen aanvullende maatregelen te worden genomen. Hoewel alle thesaurustermen zo ondubbelzinnig mogelijk moeten worden uitgedrukt, is het vooral belangrijk om de voorkeursterm van een bepaald concept zo te formuleren dat het de beoogde reikwijdte aan elke gebruiker overbrengt. De term \"depressie\" met meerdere betekenissen kan bijvoorbeeld worden geherformuleerd als \"economische depressie\" of \"meteorologische depressie\", al naar gelang het geval. Als alternatief kan een kwalificatie worden gebruikt. In gevallen waarin deze maatregelen niet passend of voldoende zijn, of waar aanvullende informatie zou helpen om de betekenis te verduidelijken en het gebruik consistenter te maken, moet een expliciete scope note worden gebruikt."@nl ;
-  rdfs:comment "Een begip kent één voorkeursterm, deze voorkeursterm hoeft niet persé uniek te zijn. Het is goed mogelijk dat binnen een bepaald domein één term meerdere betekenissen heeft en dus gaat over meerdere begrippen, mogelijk is het doel van een Thesaurus zelfs om dit inzicht te geven. We gebruiken geen post of prefix om voorkeurstermen context te geven of uniek te maken, tenzij deze post/prefix algemeen gebruikt wordt. Denk aan Hengelo (OV) en Hengelo (GLD). Een begrip krijgt expliciet één rdfs:Label om compatibiliteit met bestaande tools te bevorderen."@nl ;
+  rdfs:comment "Een begip kent één voorkeursterm, deze voorkeursterm hoeft niet persé uniek te zijn. Het is goed mogelijk dat binnen een bepaald domein één term meerdere betekenissen heeft en dus gaat over meerdere begrippen, mogelijk is het doel van een Thesaurus zelfs om dit inzicht te geven. We gebruiken geen post of prefix om voorkeurstermen context te geven of uniek te maken, tenzij deze post/prefix algemeen gebruikt wordt. Denk aan Hengelo (OV) voor de plaats in Overijssel en Hengelo (GLD) voor de plaats in Gelderland. Een begrip krijgt expliciet één rdfs:Label om compatibiliteit met bestaande tools te bevorderen."@nl ;
   skos:prefLabel
     "voorkeursterm"@nl ,
     "preferred label"@en ;
@@ -656,24 +662,36 @@ beg-nps:HiddenLabel
     "zoekterm"@nl ,
     "hidden label"@en .
 
-# BESCHRIJVING BRON
-
-#brondocument
-beg-nps:BibliographicResource
+#voorbeeld
+beg-nps:Example
   a skos:Concept ;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:related beg-nps:BibliographicCitation ;
+  skos:related beg-nps:Concept ;
   dct:source
-    <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/BibliographicResource> ,
-    dct: ,
-    foaf: ;
-    skos:editorialNote "Dit begrip moet vervangen worden door 'Source'; dit heeft op meerdere punten effect op dit begrippenkader. Dit moet nog verwerkt worden."@nl ;
+    <https://www.w3.org/TR/skos-reference/#notes> ,
+    skos: ;
   skos:definition
-    "Een brondocument is een boek, een artikel of enig ander documentair object."@nl ,
-    "A book, article, or other documentary resource."@en ;
+    "An example of the use of a concept."@en ,
+    "Een voorbeeld van het gebruik van een begrip."@nl ;
+  skos:broader beg-nps:Note ;
   skos:prefLabel
-    "brondocument"@nl ,
-    "bibliographic resource"@en .
+    "voorbeeld"@nl ,
+    "example"@en .
+
+# BESCHRIJVING BRON
+
+#url
+beg-nps:Page
+  a skos:Concept ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+  dct:source
+    foaf: ;
+  skos:definition
+    "Een url is de vindplaats van een resource op het internet."@nl ,
+    "A page is the location of a resource on the internet."@en ;
+  skos:prefLabel
+    "url"@nl ,
+    "page"@en .
 
 #citaat
 beg-nps:BibliographicCitation
@@ -684,14 +702,26 @@ beg-nps:BibliographicCitation
     dct: ,
     foaf: ;
   skos:definition
-    "Een citaat is een bibliografische referentie naar een document"@nl ,
-    "A bibliographic reference for the resource"@en ;
+    "Een citaat is een bibliografische referentie naar een document."@nl ,
+    "A bibliographic reference for the resource."@en ;
   skos:prefLabel
     "citaat"@nl ,
     "bibliographic citation"@en ;
   skos:scopeNote "Een citaat wordt als string vastgelegd. Hier dient voldoende detail in aangebracht te zijn zodat de resource gevonden kan worden. Er bestaan verschillende citeerstijlen die toegepast kunnen worden zoals IEEE, MLA of APA."@nl;
   skos:example "Scripta Materialia 48(5), 475-481 (2003)", "Martin Greenberger et al., eds., Networks for Research and Education: Sharing of Computer Information Resources Nationwide (Cambridge: MIT Press, 1974)" .
 
+#soort
+beg-nps:Type
+  a skos:Concept ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+  dct:source
+    dct: ;
+  skos:definition
+    "Een soort is de aard of het genre van een ding."@nl ,
+    "A type is the nature or genre of a resource."@en ;
+  skos:prefLabel
+    "soort"@nl ,
+    "type"@en .
 # BESCHRIJVING BEGRIPPENKADER
 
 # BEGRIPPENKADER
@@ -705,7 +735,7 @@ beg-nps:ConceptScheme
     <https://en.wikipedia.org/wiki/Controlled_vocabulary>;
   skos:scopeNote 
     "Een begrippenkader kan worden gedefinieerd om begrippen uit verschillende bronnen op te nemen. Begrippenkaders bieden een manier om kennis te ordenen voor het later kunnen ophalen. Ze worden gebruikt in indexeringsschema's, koppen, thesauri, taxonomieën en andere kennisorganisatiesystemen. Begrippenkaders verplichten het gebruik van vooraf gedefinieerde, geautoriseerde termen die zijn geselecteerd door de ontwerpers ervan,in tegenstelling tot natuurlijke taalvocabulaires,die een dergelijke beperking niet hebben."@nl,
-  "A concept scheme may be defined to include concepts from different sources. Controlled vocabularies provide a way to organize knowledge for subsequent retrieval. They are used in subject indexing schemes,subject headings,thesauri,taxonomies and other knowledge organization systems. Controlled vocabulary schemes mandate the use of predefined,authorised terms that have been preselected by the designers of the schemes, in contrast to natural language vocabularies, which have no such restriction."@en ;
+    "A concept scheme may be defined to include concepts from different sources. Controlled vocabularies provide a way to organize knowledge for subsequent retrieval. They are used in subject indexing schemes,subject headings,thesauri,taxonomies and other knowledge organization systems. Controlled vocabulary schemes mandate the use of predefined,authorised terms that have been preselected by the designers of the schemes, in contrast to natural language vocabularies, which have no such restriction."@en ;
   skos:altLabel
     "controlled vocabulary" ,
     "structured vocabulary" ,
@@ -719,14 +749,14 @@ beg-nps:ConceptScheme
     "Een begrippenkader is een verzameling van begrippen, inclusief eventuele semantische relaties tussen deze begrippen."@nl ;
   skos:related beg-nps:TopConcept ;
   skos:example "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes. Concept schemes are also embedded in glossaries and terminologies."@en ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS.
+  skos:inScheme begkr-nps:BegrippenkaderNPS .
 
 #begrippenlijst
-beg-nps:Gossary
+beg-nps:Glossary
   a skos:Concept ;
   skos:altLabel
-    "begrippenkader"@nl ,
-    "concept scheme"@en ;
+    "platte termenlijst"@nl ,
+    "woordenlijst"@nl ;
   skos:definition "Een begrippenlijst is een alfabetische lijst van begrippen in een bepaald kennisdomein met de definities voor die begrippen. "@nl ;
   skos:scopeNote "In de praktijk worden de termen begrippenlijst en woordenlijst vaak door elkaar gebruikt. Traditioneel verschijnt er aan het einde van een boek een verklarende woordenlijst met termen in dat boek die ofwel nieuw geïntroduceerd, ongebruikelijk of gespecialiseerd zijn. Semantisch gezien gaat de definitie over het begrip wat met de term wordt aangeduid en niet over de term zelf."@nl,"In practice, the glossary is uses as well for a list of terms as fora list of concepts. Traditionally, a glossary of terms in that book appears at the end of a book that are either newly introduced, uncommon, or specialized. Semantically, the definition is about the concept the term denotes and not about the term itself."@en ;
   skos:prefLabel
@@ -737,18 +767,17 @@ beg-nps:Gossary
   skos:definition "A controlled vocabulary is a carefully selected list of words and phrases, which are used to tag units of information (document or work) so that they may be more easily retrieved by a search."@en ;
   dct:source <https://en.wikipedia.org/wiki/Controlled_vocabulary>;
   skos:related
-    beg-nps:PrefLabel;
-    beg-nps:Notation;
-    beg-nps:AltLabel;
-    beg-nps:HiddenLabel;
-    beg-nps:Definition;
-    beg-nps:Source;
-    beg-nps:Comment;
-    beg-nps:ScopeNote;
-    beg-nps:EditorialNote;
-    beg-nps:HistoryNote;
-    beg-nps:ChangeNote;
- .
+    beg-nps:PrefLabel ,
+    beg-nps:Notation ,
+    beg-nps:AltLabel ,
+    beg-nps:HiddenLabel ,
+    beg-nps:Definition ,
+    beg-nps:Source ,
+    beg-nps:Comment ,
+    beg-nps:ScopeNote ,
+    beg-nps:EditorialNote ,
+    beg-nps:HistoryNote ,
+    beg-nps:ChangeNote .
 
 #taxonomie
 beg-nps:Taxonomy
@@ -810,7 +839,7 @@ beg-nps:BeschrijvingBegrippenkader a skos:Concept;
 beg-nps:Bronhouder a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
   skos:prefLabel "bronhouder"@nl;
-  skos:definition "Een bronhouder is verantwoordelijk voor het inwinnen en bijhouden van de  gegevens in de catalogus en voor het borgen van de kwaliteit van die gegevens"@nl;
+  skos:definition "Een bronhouder is verantwoordelijk voor het inwinnen en bijhouden van de gegevens in de catalogus en voor het borgen van de kwaliteit van die gegevens"@nl;
   skos:scopeNote "Waardelijst toevoegen met bekende (Nederlandse) organisaties? "@nl;
   skos:editorialNote """via dcat:hadRole wordt de dcat:Role vastgelegd (op basis van een waardelijst)
 via prov:agent wordt de prov:Agent vastgelegd, welke op zijn beurt een foaf:Organisation is. (zie https://www.w3.org/TR/vocab-dcat-3/#qualified-forms) """@nl .
@@ -829,7 +858,7 @@ beg-nps:Contactpunt a skos:Concept;
   skos:definition "Contactinformatie die gebruikt kan worden om opmerkingen over de catalogus door te geven"@nl .
 
 #documentatiepagina
-beg-nps:Documentatiepagina a skos:Concept;
+beg-nps:Brondocumentatiepagina a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
   skos:prefLabel "documentatiepagina"@nl;
   skos:definition "De URI van de (start)pagina waarop informatie over deze begrippen kader te vinden is.Via deze pagina kunnen andere webpagina's bereikt worden"@nl .
@@ -880,7 +909,7 @@ beg-nps:Taal a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
   skos:prefLabel "taal"@nl;
   skos:definition "De talen gebruikt voor tekstuele informatie in het begrippen kader"@nl;
-  skos:scopeNote "We gebruiken als  waardelijst dezelfde lijst als de EU voorschrijft in het DCAT-AP profiel: http://publications.europa.eu/resource/authority/language Deze lijst gebruikt drieletterige codes voor een taal, in tegenstelling tot de tweeletterige postfixes die aan teksten toegevoegd kunnen worden."@nl;
+  skos:scopeNote "We gebruiken als waardelijst dezelfde lijst als de EU voorschrijft in het DCAT-AP profiel: http://publications.europa.eu/resource/authority/language Deze lijst gebruikt drieletterige codes voor een taal, in tegenstelling tot de tweeletterige postfixes die aan teksten toegevoegd kunnen worden."@nl;
   skos:editorialNote "bekend van open data"@nl .
 
 #thema/categorie
@@ -910,7 +939,7 @@ beg-nps:Toelichting a skos:Concept;
 beg-nps:Toezichthouder a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
   skos:prefLabel "toezichthouder"@nl;
-  skos:definition "De toezichthouder is de partij die  verantwoordelijk is dat wordt toegezien of de catalogus in overeenstemming met eisen, afspraken en wetgeving opereert"@nl;
+  skos:definition "De toezichthouder is de partij die verantwoordelijk is dat wordt toegezien of de catalogus in overeenstemming met eisen, afspraken en wetgeving opereert"@nl;
   skos:scopeNote "Een optie is om hier prov:qualifiedAttribution te gebruiken, met bereik https://www.w3.org/TR/prov-o/#Attribution "@nl;
   skos:editorialNote "foaf:Organization is een class. Wat is de property tussen catalog en organisatie met de betekenis toezichthouder?"@nl .
 
@@ -920,7 +949,7 @@ beg-nps:TopConcept
   rdfs:label "hasTopConcept"@en ;
   skos:definition
     "Top concepts are concepts which are topmost in the hierarchical relations for a scheme."@en ,
-    "Topbegrip is een begrip die bovenaan de hierarchie staat in een bepaald begrippenkader"@en ;
+    "Een topbegrip is een begrip die bovenaan de hierarchie staat in een bepaald begrippenkader."@nl ;
   skos:related beg-nps:ConceptScheme ;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
   skos:broader beg-nps:Concept ;
@@ -957,7 +986,7 @@ beg-nps:Versie a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
   skos:prefLabel "versie"@nl;
   skos:definition "De versie van deze catalogus. Dit wordt niet gebruikt m.b.t. de inhoud van de catalogus, maar voor wijzigingen in de structuur van de catalogus"@nl;
-  skos:scopeNote "Willen we in Linked Datavastleggen wanneer de structuur voor het laatst te gewijzigd en wat die wijziging was? Dit lijkt  beter op zijn plaat in release notes. Dan een URI openemen naar die notes?"@nl;
+  skos:scopeNote "Willen we in Linked Datavastleggen wanneer de structuur voor het laatst te gewijzigd en wat die wijziging was? Dit lijkt beter op zijn plaat in release notes. Dan een URI openemen naar die notes?"@nl;
   skos:editorialNote "dcat:version is toegevoegd in DCAT version 3"@nl .
 
 #voorbeeld begrippenkader
@@ -1015,23 +1044,28 @@ beg-nps:Collection
     skos: ;
   skos:prefLabel
     "collectie"@nl ,
-    "collection"@en .
+    "collection"@en ;
+  skos:altLabel 
+    "labelled collection"@en ,
+    "gelabelde collectie"@nl ,
+    "verzameling"@nl .
 
 #bevat
 beg-nps:Member
   a skos:Concept ;
   skos:definition
     "Relates a collection to one of its members."@en ,
-    "Relateert een collectie aan een begrip dat onderdeel is van deze collectie"@nl ;
+    "Relateert een collectie aan een begrip of een collectie van begrippen dat onderdeel is van deze collectie"@nl ;
   dct:source
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skos: ,
     <https://www.w3.org/TR/skos-reference/#collections> ;
   skos:related beg-nps:Collection ;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:editorialNote "Specifiek gebruik van 'begrip' in plaats van het minderzeggende 'lid'"@nl ;
-  skos:prefLabel "has member"@en ,
-    "bevat"@nl .
+  skos:editorialNote "Specifiek gebruik van 'begrip of een collectie van begrippen' in plaats van het minderzeggende 'lid'"@nl ;
+  skos:prefLabel
+    "has member"@en ,
+    "bevat"@nl ;
   skos:inScheme begkr-nps:BegrippenkaderNPS .
 
 #geordende collectie
@@ -1043,9 +1077,10 @@ beg-nps:OrderedCollection
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
   skos:broader beg-nps:Collection ;
   skos:altLabel "OrderedCollection"@en ;
-  skos:definition "An ordered collection is a collection of concepts that are placed in a meaningful order."@en ;
+  skos:definition 
+    "An ordered collection is a collection of concepts that are placed in a meaningful order."@en ,
+    "Een geordende collectie is een collectie waar de begrippen in een betekenisvolle volgorde zijn geplaatst."@nl ;
   skos:scopeNote "Labelled collections can be used where you would like a set of concepts to be displayed under a 'node label' in the hierarchy."@en ;
   dct:source
     skos: ,
     <https://www.w3.org/TR/skos-reference/#collections> .
-

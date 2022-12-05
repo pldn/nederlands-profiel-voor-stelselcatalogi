@@ -3,160 +3,28 @@
 
 <head>
   <meta charset='utf-8'>
-  <style>
-    table {
-      padding: 15px;
-    }
-
-    th {
-      border-bottom: 3px solid #ddd;
-    }
-
-    th,
-    td {
-      border-bottom: 1px solid #ddd;
-    }
-
-    tr:nth-child(even) {
-      background-color: #f2f2f2;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="./respec/media/style.css">
   <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/base.css" class="removeOnSave">
   <script src='https://www.w3.org/Tools/respec/respec-w3c' async class='remove'></script>
-  <script class='remove'>
-    // All config options at https://respec.org/docs/
-    var respecConfig = {
-      // hack to skip W3C specStatus validation
-      latestVersion: "https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi",
-      // Working Groups ids at https://respec.org/w3c/groups/
-      group: "webapps",
-      specStatus: "unofficial",
-      editors: [
-        {
-          name: "Arjen Santema"
-        },
-        {
-          name: "Kees Trautwein"
-        },
-      ],
-      authors: [
-        {
-          name: "Jos van der Arend (Kennisnet)"
-        },
-        {
-          name: "Jesse Bakker (Kadaster)"
-        },
-        {
-          name: "Koos Boersma (IHW)"
-        },
-        {
-          name: "Marco Brattinga (Nationale Politie)"
-        },
-        {
-          name: "Linda van den Brink (Geonovum)"
-        },
-        {
-          name: "Pieter van Everdingen (PLDN)"
-        },
-        {
-          name: "Roeland Euwens (KNB)"
-        },
-        {
-          name: "Casper Gras (KOOP)"
-        },
-        {
-          name: "Gerald Groot Roessink (DUO)"
-        },
-        {
-          name: "Pano Maria (Skemu)"
-        },
-        {
-          name: "Hans Overbeek (KOOP)"
-        },
-        {
-          name: "Rik Opgenoort (CROW)"
-        },
-        {
-          name: "Viyanti Ramdhiansing (Kennisnet)"
-        },
-        {
-          name: "Arjen Santema (Kadaster)"
-        },
-        {
-          name: "Frank Terpstra (Geonovum)"
-        },
-        {
-          name: "Kees Trautwein (Logius)"
-        },
-        {
-          name: "Jan Willem van Veen (ArchiXL)"
-        },
-      ],
-      github: {
-        branch: "main",
-        repoURL: "pldn/nederlands-profiel-voor-stelselcatalogi",
-      },
-      // See https://respec.org/docs/#xref for usage.
-      xref: "web-platform",
-      maxTocLevel: 3,
-    };
-  </script>
+  <script src="config.js" class="remove"></script>
 </head>
 
 <body>
   <h1 id="title">Nederlands Profiel voor Begrippencatalogi</h1>
   <section id='abstract' data-format="markdown" data-include="respec/Samenvatting.md"></section>
   <section id='sotd'></section>
-  <section data-format="markdown" data-include="respec/Inleiding.md"></section>
-  <section data-format="markdown" data-include="respec/Rationale&usecases.md"></section>
-
-  <section><h2>Profiel</h2>
-    <div data-format="markdown" data-include="respec/Profiel.md"></div>
-    <section data-format="markdown" data-include="respec/tables/begrippenboom.md"></section>
-  </section>
-
-    <section><h2>Begrip</h2>
-      <div data-format="markdown" data-include="respec/Begrip.md"></div>
-      <section data-format="markdown" data-include="respec/Begrip-eigenschappen.md"><h2>H2</h2></section>
-      <section data-format="markdown" data-include="respec/HarmonisatieInteroperabiliteit.md"></section>
-      <section data-format="markdown" data-include="respec/tables/Concept-tables.md"></section>
-    </section>
-
-    <section><h2>Begrippenkader</h2>
-      <div data-format="markdown" data-include="respec/Begrippenkader.md"></div>
-      <section data-format="markdown" data-include="respec/tables/ConceptScheme-tables.md"></section>
-    </section>
-
-    <section><h2>Collectie</h2>
-      <div data-format="markdown" data-include="respec/Collectie.md"></div>
-      <section data-format="markdown" data-include="respec/tables/Collection-tables.md"></section>
-    </section>
-
-    <section><h2>Bronverwijzing</h2>
-      <div data-format="markdown" data-include="respec/Bronverwijzing.md"></div>
-      <section data-format="markdown" data-include="respec/Bron.md"></section>
-      <section data-format="markdown" data-include="respec/tables/Source-tables.md"></section>
-    </section>
-
-  
-  <section data-format="markdown" data-include="respec/GerelateerdWerk.md"></section>
-
-  <!-- <section>
-      <h1>Begrippenkader SKOS AP NL</h1>
-      <section data-format="markdown" data-include="respec/rdf2respec/begrippenkader.md"></section>
-    </section>
-    <section>
-      <h1>Profiel SKOS AP NL</h1>
-      <section data-format="markdown" data-include="respec/rdf2respec/profile.md"></section>
-    </section> -->
-
+  <div data-format="markdown" data-include="respec/conventies.md"></div>
+  <section id='H1' data-format="markdown" data-include="respec/H1-inleiding.md"></section>
+  <section id='H2' data-format="markdown" data-include="respec/H2-conceptuele-beschrijving.md"></section>
+  <section id='H3' data-format="markdown" data-include="respec/H3-toepassingsprofiel-ld.md"></section>
+  <section id='H4' data-format="markdown" data-include="respec/H4-best-practices.md" class="informative"></section>
+  <section id='H5' data-format="markdown" data-include="respec/H5-gerelateerd-werk.md"></section>
   <section id='conformance'>
     <!-- This section is filled automatically by ReSpec. -->
   </section>
-  <section>
-    <h2>Bijlagen</h2>
-    <section data-format="markdown" data-include="respec/rdf2markdown/en-woordenboek-table.md"></section>
-  </section>
+  <section id="index" class="appendix"></section>
+  <!-- <section data-format="markdown" data-include="respec/rdf2markdown/en-woordenboek-table.md" class="appendix"></section> -->
+
 </body>
 
 </html>
