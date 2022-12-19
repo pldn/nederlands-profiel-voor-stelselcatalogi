@@ -8,7 +8,6 @@ De voorliggende standaard richt zich op het beschrijven van begrippen in een beg
 
 Door toepassing van deze standaard wordt het mogelijk om informatie beter vindbaar te maken doordat de begripsbeschrijvingen bij zoekopdrachten nieuwe ingangen biedt tot de informatie. Door de interoperabele beschrijvingen is van alle beschreven begrippen altijd een eenduidige beschrijving vanuit de primair verantwoordelijke organisatie beschikbaar. En last but not least is waar relevant altijd de rationale achter de beschrijving beschikbaar door de verwijzing naar de bron in wet- en regelgeving, standaarden, werkinstructies en afspraken. Dit zijn concrete stappen op weg naar een toegankelijke en transparante overheid. Daarom willen we het uiteindelijke profiel als aanbevolen standaard of als [[[PTOLU]]] standaard aanbieden aan het Forum Standaardisatie.
 
-termen, notities en relaties.
 Iedere begripbeschrijving in een begrippenkader probeert de betekenis van een begrip te "vangen" zoals in het betreffende domein wordt beoogd. Hiervoor hebben we enkele middelen:
 - De basis voor een begrip is de voorkeursterm waarmee we dit begrip duiden. Mogelijk is het begrip ook bekend onder andere alternatieve termen, die we hier kunnen verzamelen;
 - Daarnaast kunnen we een verwoording geven van de betekenis van het begrip in natuurlijke taal. Dit kan een (formele) definitie zijn, maar ook een uitleg in klare taal. [[[B1]]] behoort tot de mogelijkheden;

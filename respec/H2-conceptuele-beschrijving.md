@@ -16,7 +16,7 @@ Het beschrijven van de kenmerken van een *begrip*, *begrippenkader* of *collecti
   * relaties met andere kenmerken.
 
 ## Begrippenkader
-Begrippen kunnen als zelfstandige entiteiten worden gezien maar veelal worden ze opgesteld als onderdeel van een gecureerd begrippenkader, zoals begrippenlijsten, taxonomieën en thesauri. Een [=begrippenkader=] is een verzameling van [=begrip=]pen. Een begrippenkader is vergelijkbaar met een taal die in een bepaald gebied gesproken wordt. En net als een reguliere taal is een begrippenkader een open systeem. Zo kan een taal ook groeien na introductie van nieuwe woorden vanuit talen uit nabijgelegen gebieden. Dat wil zeggen dat een begrippenkader net als een taal naast vertalingen (mappings) kent ook woorden kunnen overnemen; leenwoorden. Zoals "computer", een van origine engels woord, ook behoort tot de nederlandse taal. Het beschrijven welke begrippen behoren tot een begrippenkader is essentieel; maar hoe deze 'vertaald' kunnen worden naar begrippen uit andere begrippenkaders ook. Voor dit laatste gebruiken we [=harmonisatierelatie=]s.
+Begrippen kunnen als zelfstandige entiteiten worden gezien maar veelal worden ze opgesteld als onderdeel van een gecureerd begrippenkader, zoals begrippenlijsten, taxonomieën en thesauri. Een [=begrippenkader=] is een verzameling van [=begrip=]pen die in een bepaalde context relevant zijn. Een begrippenkader wordt ookwel gezien als een eenheid van context. Een begrippenkader is vergelijkbaar met een taal die in een bepaald gebied gesproken wordt. En net als een reguliere taal is een begrippenkader een open systeem. Zo kan een taal ook groeien na introductie van nieuwe woorden vanuit talen uit nabijgelegen gebieden. Dat wil zeggen dat een begrippenkader net als een taal naast vertalingen (mappings) kent ook woorden kunnen overnemen; leenwoorden. Zoals "computer", een van origine engels woord, ook behoort tot de nederlandse taal. Het beschrijven welke begrippen behoren tot een begrippenkader is essentieel; maar hoe deze 'vertaald' kunnen worden naar begrippen uit andere begrippenkaders ook. Voor dit laatste gebruiken we [=harmonisatierelatie=]s.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -45,9 +45,11 @@ Begrippen kunnen als zelfstandige entiteiten worden gezien maar veelal worden ze
 | **bron** | http://www.w3.org/2000/01/rdf-schema#, https://www.w3.org/TR/rdf-schema/#ch_label |
 
 ## Begrip
-Een begrip is het centrale element in deze specificatie. Een begrip is een conceptuele resource; het zijn de eenheden van denken - ideeën, betekenissen of (categorieën van) objecten en gebeurtenissen. Zo bestaan of ontstaan begrippen dus in ons hoofd als abstracte entiteiten. In communicatie spelen begrippen een belangrijke rol. In de communicatiewetenschap wordt hier gerefereerd aan de 'Triange of meaning'. Hierin staat een spreker centraal die iets conceptualiseert en daaraan refereert met een bepaalde term (of symbool) met de hoop dat de toehoorder dezelfde conceptualisatie maakt op basis van de gebruikte term zodat hij begrijpt wat de spreker bedoelt. In het onderstaande figuur is deze driehoek afgebeeld en gaat het begrip dus over de bedoeling (betekenis); ofwel de gedachte.
+Begrip is het centrale element in deze specificatie. Begrippen spelen ook een centrale rol in de manier waarop we communiceren en we de wereld om ons heen begrijpen. 
+Een begrip is een conceptuele resource; het zijn de eenheden van denken - ideeën, betekenissen of (categorieën van) objecten en gebeurtenissen. In de communicatiewetenschap wordt hier vaak gerefereerd aan de 'Triange of meaning'. Hier wordt duidelijk dat bij het gebruik van bepaalde termen een spreker en toebehoorder niet noodzakelijk dezelfde gedachte vormen en elkaar dus niet begrijpen. 
 
 ![](https://github.com/bp4mc2/bp4mc2/blob/master/site/image-ch3-1.png?raw=true "Triange of meaning")
+Het hebben van gestandaardiseerde begrippen zorgt ervoor dat iedereen dezelfde taal kan spreken en weet wat de bedoelde betekenis is bij het gebruik van een bepaalde term in een bepaalde context. Bijvoorbeeld in berichtgeving of in data. Dit maakt het eenvoudiger om effectief te communiceren en informatie uit te wisselen.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -57,11 +59,12 @@ Een begrip is het centrale element in deze specificatie. Een begrip is een conce
 | **toelichting** | De belangrijkste toepassing voor een thesaurus is het ophalen van informatie, waarbij het doel is om naar begrippen te zoeken. Begrippen worden weergegeven door termen. Elke term in een thesaurus moet een enkel begrip (of denkeenheid) vertegenwoordigen. Begrippen kunnen variëren van eenvoudig (bijv. katten) tot zeer complex (bijv. rassendiscriminatie onder etnische minderheden). Samengestelde termen of zinsdelen zijn over het algemeen nodig om de meer complexe begrippen uit te drukken. |
 
 ### Begrippenlijst
-Aan de hand van de begripsdriehoek, zien we dat om een spreker te kunnen begrijpen, een toebehoorder minimaal iets moeten weten over de conceptualisatie en de termen die ter aanduiding gebruikt worden.
+Aan de hand van de begripsdriehoek, zien we dat om een spreker te kunnen begrijpen, een toebehoorder minimaal iets moeten weten over de betekenis en de termen die ter aanduiding gebruikt worden.
 
-Door deze basis voor alle begrippen die binnen een context gebruikt worden vast te leggen onstaat een [=begrippenkader=]. In dit stadium spreken we van een begrippenlijst. Dit is de basisniveau voor de beschrijving van begrippen in een bepaald domein. 
+Door deze basis voor alle begrippen die binnen een context gebruikt worden vast te leggen onstaat een [=begrippenkader=]. We spreken hier van een begrippenlijst. Dit is het basisniveau voor het beschrijving van begrippen in een bepaald domein. 
 
-Een begrippenlijst is een alfabetische termenlijst met definities die gebruikt worden in een bepaald domein. Een begrippenlijst kent voor ieder begrip dan ook mimimaal één [=term=] en één [=notitie=], repectievelijk een [=voorkeursterm=] en een [=definitie=]. Een toelichting in de vorm van een scope afbakening is aanbevolen, evenals een verwijzing naar de bron van de definitie. Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in klare taal, op B1 niveau aanbevolen. De overige kenmerken zijn optioneel.
+Een begrippenlijst is een termenlijst met definities die gebruikt worden in een bepaald domein. Een begrippenlijst kent voor ieder begrip dan ook mimimaal één [=voorkeursterm=] en één [=definitie=]. Een toelichting op de definitie is aanbevolen, evenals een verwijzing naar de bron van de betekenis. 
+Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in klare taal, op B1 niveau aanbevolen. De overige kenmerken zijn optioneel.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -104,9 +107,8 @@ Hieronder worden de mogelijke soorten termen bij een begrip beschreven.
 | **definitie**        | Een zoekterm voor een begrip is een term die beoogd is om het begrip te vinden, maar verder verborgen blijft. |
 | **bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/skos-reference/#labels |
 
-
 #### Notities
-Notities zijn cruciaal bij het beschrijven van een begrip. Dit is de vastlegging van de betekenis in natuurlijke taal.
+Notities zijn karakteristieken waarmee een begrip op een mensleesbare manier beschreven kan worden. Notities kunnen heel breed toegepast worden. Om meer specifieke documentaire eigenschappen vast te leggen zijn ook specifiekere notities gedefinieerd. In deze sectie beschrijven we 1) notities die nadrukkelijk een verwoording van de betekenis geven en 2) aanvullende documentaire notities.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -114,7 +116,14 @@ Notities zijn cruciaal bij het beschrijven van een begrip. Dit is de vastlegging
 | **definitie**        | Een algemene notitie zonder specifiek gebruiksdoel. |
 | **bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes |
 
-Hieronder worden de mogelijke soorten notities bij een begrip beschreven.
+De volgende notities zijn verwoordingen van de betekenis van een begrip.
+
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**   | <dfn>definitie</dfn> |
+| **definitie**        | Een definitie van een begrip is een tekstuele beschrijving van de betekenis van dit begrip waarmee het begrip kan worden onderscheiden van andere begrippen. |
+| **bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes |
+| **toelichting** | De definitie dient te voldoen aan specifieke formuleringsregels voor definitie en dient in een voor mensen leesbare taal te begrijpen zijn. In dit laatste onderscheid de definitie zich daarmee van een machine-leesbare formele beschrijving. Aan de hand van een definitie kan iemand bepalen of zijn eigen begrip behorende bij een term overeenkomt met het begrip dat gedefinieerd wordt. De uitleg of de toelichting bij een begrip kan gebruik worden voor iemand die het begrip nog niet kent om te begrijpen waar het over gaat. |
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -122,6 +131,16 @@ Hieronder worden de mogelijke soorten notities bij een begrip beschreven.
 | **definitie**        | Een toelichting voor een begrip is een notitie die meer duidelijk geeft over de betekenis of gebruik van een begrip |
 | **bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes |
 | **toelichting** | De toelichting geeft een aanvulling op de definitie waardoor deze beter begrepen kan worden , zonder dat daarmee de formele beschrijving onnodig of onjuist wordt aangepast. Zie: https://www.w3.org/TR/2009/NOTE-skos-primer-20090818/#secdocumentation  |
+
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**   | <dfn>uitleg</dfn> |
+| **definitie**        | Een uitleg is een beschrijving van een object in eenvoudige taal die zonder verdere context begrepen kan worden. |
+| **bron** | http://www.w3.org/2000/01/rdf-schema#, https://www.w3.org/TR/rdf-schema/#ch_comment |
+| **toelichting** | De definitie moet &#39;precies kloppen&#39;. De uitleg is er veel meer op gericht om de lezer te laten snappen wat er wordt bedoeld. Er vanuit gaande dat hij/zij dat nog niet weet.  |
+
+
+De volgende notities zijn aanvullende documentaire notities.
 
 
 |                       |                                       |
@@ -133,12 +152,6 @@ Hieronder worden de mogelijke soorten notities bij een begrip beschreven.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
-| **voorkeursterm**   | <dfn>wijzigingsnotitie</dfn> |
-| **definitie**        | A note about a modification to a concept. |
-| **bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes |
-
-|                       |                                       |
-|-----------------------|---------------------------------------|
 | **voorkeursterm**   | <dfn>redactionele opmerking</dfn> |
 | **definitie**        | Een redactionele opmerking voor een begrip is een notitie voor de redacteur, vertaler of beheerder van het begrippenkader. |
 | **bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes |
@@ -146,29 +159,21 @@ Hieronder worden de mogelijke soorten notities bij een begrip beschreven.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
-| **voorkeursterm**   | <dfn>uitleg</dfn> |
-| **definitie**        | Een uitleg is een beschrijving van een object in eenvoudige taal die zonder verdere context begrepen kan worden. |
-| **bron** | http://www.w3.org/2000/01/rdf-schema#, https://www.w3.org/TR/rdf-schema/#ch_comment |
-| **toelichting** | De definitie moet &#39;precies kloppen&#39;. De uitleg is er veel meer op gericht om de lezer te laten snappen wat er wordt bedoeld. Er vanuit gaande dat hij/zij dat nog niet weet.  |
+| **voorkeursterm**   | <dfn>voorbeeld</dfn> |
+| **definitie**        | Een voorbeeld van het gebruik van een begrip. |
+| **bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/skos-reference/#notes |
+
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**   | <dfn>wijzigingsnotitie</dfn> |
+| **definitie**        | A note about a modification to a concept. |
+| **bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes |
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
 | **voorkeursterm**   | <dfn>code</dfn> |
 | **definitie**        | Een code voor een begrip is een tekenreeks ter aanduiding van precies éénn begrip uit een begrippenkader. |
 | **bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notations |
-
-|                       |                                       |
-|-----------------------|---------------------------------------|
-| **voorkeursterm**   | <dfn>definitie</dfn> |
-| **definitie**        | Een definitie van een begrip is een tekstuele beschrijving van de betekenis van dit begrip waarmee het begrip kan worden onderscheiden van andere begrippen. |
-| **bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes |
-| **toelichting** | De definitie dient te voldoen aan specifieke formuleringsregels voor definitie en dient in een voor mensen leesbare taal te begrijpen zijn. In dit laatste onderscheid de definitie zich daarmee van een machine-leesbare formele beschrijving. Aan de hand van een definitie kan iemand bepalen of zijn eigen begrip behorende bij een term overeenkomt met het begrip dat gedefinieerd wordt. De uitleg of de toelichting bij een begrip kan gebruik worden voor iemand die het begrip nog niet kent om te begrijpen waar het over gaat. |
-
-|                       |                                       |
-|-----------------------|---------------------------------------|
-| **voorkeursterm**   | <dfn>voorbeeld</dfn> |
-| **definitie**        | Een voorbeeld van het gebruik van een begrip. |
-| **bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/skos-reference/#notes |
 
 ### Taxonomie
 
@@ -180,7 +185,7 @@ Naast documentaire eigenschappen zoals een [=definitie=], waar de betekenis van 
 | **definitie**        | Relateert een begrip aan een ander begrip op basis van de betekenis. |
 | **bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/skos-reference/#semantic-relations |
 
-Een taxonomie kent behalve alle elementen van een begrippenlijst ook hiërarchische relaties (nog definieren). Deze hiërarchische relaties zijn optioneel in een begrippenlijst en zijn bijvoorbeeld relevant als een begrip wordt gedefinieerd in termen van een ander begrip, bijvoorbeeld 'een gemaal *is een* kunstwerk dat ...'. Deze definitie impliceert dat een gemaal een 'enger begrip' is dan een kunstwerk, die ook als semantische relatie kan worden opgenomen.
+Een taxonomie kent behalve alle elementen van een begrippenlijst ook hiërarchische relaties (nog definieren). Deze hiërarchische relaties zijn optioneel in een begrippenlijst en zijn bijvoorbeeld relevant als een begrip wordt gedefinieerd in termen van een ander begrip, bijvoorbeeld `'een gemaal *is een* kunstwerk dat ...'`. Deze definitie impliceert dat een gemaal een 'enger begrip' is dan een kunstwerk, die ook als semantische relatie kan worden opgenomen.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -404,11 +409,16 @@ De bron kan een heel document of een fragment daarvan zijn, denk aan een boek, e
 
 
 ## Metadata 
-### Begrippenkader
-Het begrippenkader is niet een concreet iets. Het is een *eenheid van context*. Aan de hand van de definitie stellen we dan ook dat het begrippenkader een verzameling begrippen is. Dit is niet hetzelfde als een verzameling begripsbeschrijvingen, wat wel concreet is. Het begrippenkader is ook een dataset (eventueel dan federatief beheerd). Specifiek zien we het begrippenkader als een [[[ASSET]]]; een waardevolle eenheid van geëxpliciteerde kennis.
-Het is dan ook van belang om, net als bij andere soorten assets of producten het begrippenkader voldoende te beschrijven. De volgende set eigenschappen zien we als relevant voor semantische assets; en zo ook begrippenkaders.
+### Begrippenkader in bewerking
+Het begrippenkader is niet een concreet iets. Het is een *eenheid van context*. Aan de hand van de definitie stellen we dan ook dat het begrippenkader een verzameling begrippen is. Dit is niet hetzelfde als een verzameling begripsbeschrijvingen, wat wel concreet is. Dit is namelijk data. Een verzameling begripsbeschrijvingen is een *eenheid van beheer*. 
+
+Een begrippenkader komt niet noodzakelijk overeen met precies één verzameling van begripsbeschrijvingen. Zo kan één begrippenkader worden samengesteld uit verschillende eenheden van beheer; en kan één eenheid van beheer meerdere begrippenkaders bevatten. 
+De verzameling begripsbeschrijvingen; die we samenstellen aan de hand van het begrippenkader (de beschrijvingen die horen bij alle begrippen die onderdeel zijn van het begrippenkader), zien we als een [[[ASSET]]]; een waardevolle eenheid van geëxpliciteerde kennis.
+
+Het is dan ook van belang om, net als bij andere soorten assets of producten het begrippenkader voldoende te beschrijven. De volgende set eigenschappen zien we als relevant voor semantische assets.
 
 *nog tabbelen inclusief rationale voor ieder item maken* 
+
 
 - Voorkeursnaam begrippenkader
 - Alternatieve naam begrippenkader
