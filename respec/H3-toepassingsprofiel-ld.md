@@ -13,10 +13,18 @@ Het onderstaande diagram is een visualisatie van de shapesgraph. Om het diagram 
 
 | Conceptueel element | Taalbinding in RDF                                                      |
 | ------------------- | ----------------------------------------------------------------------- |
-| bronverwijzing      | [dct:source](http://purl.org/dc/terms/source)                           |
-| collectie           | [skos:Collection](http://www.w3.org/2004/02/skos/core#Collection)       |
 | begrip              | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
 | begrippenkader      | [skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme) |
+| bron                | [foaf:Document](http://xmlns.com/foaf/0.1/Document)                     |
+| collectie           | [skos:Collection](http://www.w3.org/2004/02/skos/core#Collection)       |
+
+<div class="note">
+Een bron(document) heeft niet één definitieve taalbinding. Dit komt omdat er veel verschillende toepasbare standaarden zijn op dit gebied. In dit profiel is de aanbeveling om minimaal de bron te typeren als `foaf:Document` en eventueel specifiekere standaarden te hanteren als taalbinding zoals:
+<ul>
+<li>DublinCore (<a href="http://purl.org/dc/terms/BibliographicResource">BibliographicResource</a>) of </li>
+<li>FRBR (<a href="http://purl.org/vocab/frbr/core#term-Work">Work</a>, <a href="http://purl.org/vocab/frbr/core#term-Expression">Expression</a>, <a href="http://purl.org/vocab/frbr/core#term-Manifestation">Manifestation</a> of <a href="http://purl.org/vocab/frbr/core#term-Item">Item</a>)</p></li>
+</ul>
+</div>
 
 ### Eigenschappen en relaties
 
@@ -80,7 +88,7 @@ Het onderstaande diagram is een visualisatie van de shapesgraph. Om het diagram 
 
 # Specificatie
 
-Met het conceptueel model en de taalbinding die daar aan toegevoegd is kunnen we een dataspecificatie opstellen. De specificatie zoals in de volgende secties beschreven is ook te vinden in de shapesgraph die gepubliceerd is onder <code>http://pldn.nl/def/skosapnl#</code>.
+Met het conceptueel model en de taalbinding die daar aan toegevoegd is kunnen we een dataspecificatie opstellen. Deze wordt in dit hoofdstuk besproken. De specificatie is ook in SHACL beschreven en beschikbaar in [turtle](https://raw.githubusercontent.com/pldn/nederlands-profiel-voor-stelselcatalogi/feedback-verwerken/profiles/skos-ap-nl.ttl). 
 
 ## Specificatie Begrippenkader
 

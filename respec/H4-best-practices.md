@@ -2,9 +2,9 @@
 ## Labels
 
 - Voorkeursterm
-Het is verplicht dat voor iedere taal alle voorkeurtermen die in één taal voorkomen in één begrippenkader uniek zijn. Mocht binnen één begrippenkader toch twee begrippen terugkomen die vaak met dezelfde term worden aangeduid, dan is het noodzakelijk - om spraakverwarring te voorkomen - om een post of prefix toe te voegen als dit algemeen gebruikelijk is. Denk aan _Hengelo (OV)_ voor de plaats in Overijssel en _Hengelo (GLD)_ voor de plaats in Gelderland. De voorkeursterm is de daadwerkelijke term zoals deze lexicaal gebruikt wordt (dus met spaties, diacrieten, hoofdlettergebruik). Mocht een post of prefix in de praktijk niet worden gebruikt, dan is dit een sterke aanwijzing dat de twee begrippen feitelijk niet tot hetzelfde begrippenkader behoren, en uit elkaar gehaald moeten worden: de basisregel blijft gelden. Als begrippen in verschillende begrippenkaders zijn geplaatst, dan is een nadere aanduiding van de context ongewenst. Als een lexicale term toch nader gekwalificeert wordt dan is het aangeraden om een meer generiekere of classificerende term te gebruiken en deze tussen haakjes achter de lexicale term te plaatsen in het rdfs:label, conform ISO25964. E.g. `Bank (Zitobject)` en `Bank (Financiele instelling)`.
+Het is verplicht dat voor iedere taal alle voorkeurtermen die in één taal voorkomen in één begrippenkader uniek zijn. Mocht binnen één begrippenkader toch twee begrippen terugkomen die vaak met dezelfde term worden aangeduid, dan is het noodzakelijk - om spraakverwarring te voorkomen - om een post of prefix toe te voegen als dit algemeen gebruikelijk is. Denk aan _Hengelo (OV)_ voor de plaats in Overijssel en _Hengelo (GLD)_ voor de plaats in Gelderland. De voorkeursterm is de daadwerkelijke term zoals deze lexicaal gebruikt wordt (dus met spaties, diacrieten, hoofdlettergebruik). Mocht een post of prefix in de praktijk niet worden gebruikt, dan is dit een sterke aanwijzing dat de twee begrippen feitelijk niet tot hetzelfde begrippenkader behoren, en uit elkaar gehaald moeten worden: de basisregel blijft gelden. Als begrippen in verschillende begrippenkaders zijn geplaatst, dan is een nadere aanduiding van de context ongewenst. Als een lexicale term toch nader gekwalificeert wordt dan is het aangeraden om een meer generiekere of classificerende term te gebruiken en deze tussen haakjes achter de lexicale term te plaatsen in het `rdfs:label`, conform ISO25964. E.g. `Bank (Zitobject)` en `Bank (Financiele instelling)`.
 - Algemeen label
-Het is een aangeraden om elke resource te voorzien van een rdfs:label waarmee deze resource een voor mensen leesbare vorm kent, ongeacht de context. Elk begrip dient zo per gehanteerde taal precies één expliciet opgenomen rdfs:label te bevatten. Anders dan bij de voorkeursterm, is het verstandig om zoveel mogelijk context in het label mee te geven, zodat geen verwarring ontstaat in het kader van homoniemen. Het algemene label bevordert tevens de compatibiliteit met bestaande tools. Merk op dat het hier gaat om het expliciet opgegeven rdfs:label. Het is denkbaar dat tools andere rdfs:labels afleiden, op basis van de SKOS ontologie (aangezien alle SKOS labels subproperties zijn van rdfs:label).
+Het is een aangeraden om elke resource te voorzien van een `rdfs:label` waarmee deze resource een voor mensen leesbare vorm kent, ongeacht de context. Elk begrip dient zo per gehanteerde taal precies één expliciet opgenomen `rdfs:label` te bevatten. Anders dan bij de voorkeursterm, is het verstandig om zoveel mogelijk context in het label mee te geven, zodat geen verwarring ontstaat in het kader van homoniemen. Het algemene label bevordert tevens de compatibiliteit met bestaande tools. Merk op dat het hier gaat om het expliciet opgegeven `rdfs:label`. Het is denkbaar dat tools andere `rdfs:label`s afleiden, op basis van de SKOS ontologie (aangezien alle SKOS labels subproperties zijn van `rdfs:label`).
 - Alternatieve termen
 Alternatieve termen zijn aanvullende termen (labels) naast de voorkeursterm. Bruikbaar voor bijvoorbeeld synoniemen.
 Het wordt niet aangeraden labels op te nemen van meer gespecializeerde begrippen als alternatieve termen (ookwel <dfn>upward posting</dfn>), in plaats van aparte begrippen te definiëren voor iedere term.
@@ -42,7 +42,7 @@ ex:ingezetene a skos:Concept ;
   dct:source ex:GemeentewetArt2 .
 
 ex:GemeentewetArt2 a foaf:Document ;
-  rdfs:label "Gemeentewet Art. 2" ;
+  `rdfs:label` "Gemeentewet Art. 2" ;
   foaf:page <https://wetten.overheid.nl/jci1.3:c:BWBR0005416&titeldeel=I&artikel=2&z=2022-05-01&g=2022-05-01>  ;
   rdfs:comment "In deze wet wordt verstaan onder ingezetenen: zij die hun werkelijke woonplaats in de gemeente hebben."@nl ;
   dct:type >http://id.loc.gov/vocabulary/marcgt/leg> .
@@ -51,7 +51,7 @@ ex:GemeentewetArt2 a foaf:Document ;
 De beschrijving van een niet op het web vindbare bron waarbij gekozen is voor het gebruik van een blank node kan er als volgt uit zien;
 <pre class="example">
 ex:Flora a skos:Concept ;
-  dct:source [ rdfs:label "Heukels' Flora van Nederland" ;
+  dct:source [ `rdfs:label` "Heukels' Flora van Nederland" ;
                dct:bibliographicCitation "Van der Meijden, R. (2005): Heukels' Flora van Nederland. Wolters-Noordhoff, Groningen/Houten (23e druk), 685 pp." ;
                dct:type >http://id.loc.gov/vocabulary/marcgt/boo> ] .
 </pre>
