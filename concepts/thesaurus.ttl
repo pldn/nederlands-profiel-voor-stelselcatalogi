@@ -1052,22 +1052,6 @@ beg-nps:Toezichthouder a skos:Concept;
   skos:scopeNote "Een optie is om hier prov:qualifiedAttribution te gebruiken, met bereik https://www.w3.org/TR/prov-o/#Attribution "@nl;
   skos:editorialNote "foaf:Organization is een class. Wat is de property tussen catalog en organisatie met de betekenis toezichthouder?"@nl .
 
-#topbegrip
-beg-nps:TopConcept
-  a skos:Concept ;
-  rdfs:label "hasTopConcept"@en ;
-  skos:definition
-    "Top concepts are concepts which are topmost in the hierarchical relations for a scheme."@en ,
-    "Een topbegrip is een begrip die bovenaan de hierarchie staat in een bepaald begrippenkader."@nl ;
-  skos:related beg-nps:ConceptScheme ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:broader beg-nps:Concept ;
-  skos:prefLabel
-    "topbegrip"@nl ,
-    "top concept"@en ;
-  dct:source skos: ,
-    <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> .
-
 #trefwoorden
 beg-nps:Keywords a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
