@@ -488,10 +488,10 @@ skosapnl:Source-comment
 
 skosapnl:Source-bibliographicCitation
   a sh:PropertyShape ;
-  rdfs:label "citaat"@nl ;
+  rdfs:label "citeertitel"@nl ;
   sh:description "Een reeks gegevens waarmee een document of fragment daarvan gevonden kan worden. Er bestaan verschillende citeerstijlen zoals IEEE, APA of MLA."@nl ;
   sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
-  sh:name "citaat"@nl ;
+  sh:name "citeertitel"@nl ;
   sh:nodeKind sh:Literal ;
   sh:datatype xsd:string ;
   sh:path dct:bibliographicCitation .
@@ -580,15 +580,15 @@ skosapnl:ConceptScheme-label
 
 ## shapes from WG Metadata
 
-skosapnl:ConceptScheme a sh:Nodeshape ;
+skosapnl:SemanticAsset a sh:Nodeshape ;
   sh:targetClass skos:ConceptScheme ;
-  rdfs:label "Begrippencatalogus"@nl ;
+  rdfs:label "Semantische Asset"@nl ;
   sh:property
     skosapnl:ConceptScheme-Type ,
-    skosapnl:ConceptScheme-VoorkeursnaamBegrippenkader ,
-    skosapnl:ConceptScheme-AlternatieveNaamBegrippenkader ,
-    skosapnl:ConceptScheme-BeschrijvingBegrippenkader ,
-    skosapnl:ConceptScheme-KlareTaalBeschrijvingBegrippenkader ,
+    skosapnl:ConceptScheme-prefLabel ,
+    skosapnl:ConceptScheme-altLabel ,
+    skosapnl:ConceptScheme-definition ,
+    skosapnl:ConceptScheme-uitleg ,
     skosapnl:ConceptScheme-Toelichting ,
     skosapnl:ConceptScheme-Ontwerpbeslissingen ,
     skosapnl:ConceptScheme-Voorbeeld ,
@@ -619,8 +619,8 @@ skosapnl:ConceptScheme-Type a sh:PropertyShape;
     [ sh:hasValue adms:Asset ]
   ) .
 
-skosapnl:ConceptScheme-VoorkeursnaamBegrippenkader a sh:PropertyShape;
-  sh:name "Voorkeursnaam begrippenkader"@nl;
+skosapnl:ConceptScheme-prefLabel a sh:PropertyShape;
+  sh:name "Voorkeursnaam"@nl;
   sh:order "1"^^xsd:integer;
   sh:path [
       sh:alternativePath (
@@ -632,19 +632,19 @@ skosapnl:ConceptScheme-VoorkeursnaamBegrippenkader a sh:PropertyShape;
   sh:minCount "1"^^xsd:integer;
   sh:maxCount "1"^^xsd:integer .
 
-skosapnl:ConceptScheme-AlternatieveNaamBegrippenkader a sh:PropertyShape;
-  sh:name "Alternatieve naam begrippenkader"@nl;
+skosapnl:ConceptScheme-altLabel a sh:PropertyShape;
+  sh:name "Alternatieve naam"@nl;
   sh:order "2"^^xsd:integer;
   sh:path skos:altLabel .
 
-skosapnl:ConceptScheme-BeschrijvingBegrippenkader a sh:PropertyShape;
-  sh:name "Beschrijving begrippenkader"@nl;
+skosapnl:ConceptScheme-definition a sh:PropertyShape;
+  sh:name "Definitie"@nl;
   sh:order "3"^^xsd:integer;
   sh:path skos:definition;
   sh:maxCount "1"^^xsd:integer .
 
-skosapnl:ConceptScheme-KlareTaalBeschrijvingBegrippenkader a sh:PropertyShape;
-  sh:name "Klare taal beschrijving begrippenkader "@nl;
+skosapnl:ConceptScheme-uitleg a sh:PropertyShape;
+  sh:name "Uitleg"@nl;
   sh:order "4"^^xsd:integer;
   sh:path rdfs:comment;
   sh:minCount "1"^^xsd:integer;

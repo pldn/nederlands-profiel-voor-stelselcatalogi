@@ -25,7 +25,8 @@ begkr-nps:BegrippenkaderNPS
     beg-nps:Source ,
     beg-nps:Type ,
     beg-nps:Page ,
-    beg-nps:BibliographicCitation;
+    beg-nps:BibliographicCitation ,
+    beg-nps:TopConcept ;
   rdfs:label "Begrippenkader Nederlands Profiel voor Stelselcatalogi"@nl .
 
 # BEGRIPPEN IN DIT BEGRIPPENKADER
@@ -56,7 +57,7 @@ beg-nps:Concept
   skos:prefLabel
     "alternatieve term"@nl ,
     "alternative label"@en ;
-  skos:notation "UF"@nl, "UF"@en ;
+  skos:notation "UF" ;
   skos:definition
     "An alternative lexical label for a resource."@en ,
     "Een alternatieve term voor een begrip is een term die gebruikt kan worden als alternatief voor de voorkeursterm van dit begrip, maar niet de voorkeur heeft."@nl ;
@@ -70,9 +71,7 @@ beg-nps:Concept
     <https://www.w3.org/TR/skos-reference/#labels> ,
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skos: ;
-  skos:related
-    beg-nps:Concept ,
-    beg-nps:PrefLabel ;
+  skos:related beg-nps:Concept ;
   skos:broader beg-nps:Label ;
   skos:inScheme begkr-nps:BegrippenkaderNPS.
 
@@ -128,10 +127,10 @@ beg-nps:Notation
   skos:altLabel
     "notatie"@nl ,
     "classificatiecode"@nl ;
-  skos:notation "CC"@nl, "CC"@en;
+  skos:notation "CC" ;
   skos:definition
     "A notation, also known as classification code, is a string of characters used to uniquely identify a concept within the scope of a given concept scheme."@en ,
-    "Een code voor een begrip is een tekenreeks ter aanduiding van precies éénn begrip uit een begrippenkader."@nl ;
+    "Een code voor een begrip is een tekenreeks ter aanduiding van precies één begrip uit een begrippenkader."@nl ;
   skos:scopeNote
     "Some concept schemes, for example classification systems such as the Universal Decimal Classification (UDC), use notations (or captions) as the primary means of access to the concepts they contain. Notations are symbols which are not normally recognizable as words or sequences of words in any natural language and are thus usable independently of natural-language contexts. They are typically composed of digits, complemented with punctuation signs and other characters."@en,
     "Sommige begrippenkaders, bijvoorbeeld classificatiesystemen zoals de Universal Decimal Classification (UDC), gebruiken codes (of bijschriften) als primair middel om toegang te krijgen tot de concepten die ze bevatten. Codes zijn symbolen die normaal gesproken niet herkenbaar zijn als woorden of woordreeksen in een natuurlijke taal en die dus onafhankelijk van natuurlijke taalcontexten kunnen worden gebruikt. Ze zijn meestal samengesteld uit cijfers, aangevuld met leestekens en andere tekens."@nl;
@@ -143,10 +142,10 @@ beg-nps:Definition
   skos:prefLabel
     "definition"@en ,
     "definitie"@nl ;
- skos:notation "DEF"@nl, "DEF"@en;
+  skos:notation "DEF" ;
   skos:definition
     "A definition is a statement or formal explanation of the meaning of a concept which serves to differentiate it from related concepts."@en ,
-    "Een definitie is een tekstuele beschrijving van de betekenis van een begrip waarmee het begrip kan worden onderscheiden van andere begrippen."@nl ;
+    "Een definitie is een verwoording van de betekenis van een begrip waarmee het begrip kan worden onderscheiden van andere begrippen."@nl ;
    skos:scopeNote 
     "De definitie dient te voldoen aan specifieke formuleringsregels voor definitie en dient in een voor mensen leesbare taal te begrijpen zijn. In dit laatste onderscheid de definitie zich daarmee van een machine-leesbare formele beschrijving. Aan de hand van een definitie kan iemand bepalen of zijn eigen begrip behorende bij een term overeenkomt met het begrip dat gedefinieerd wordt. De uitleg of de toelichting bij een begrip kan gebruik worden voor iemand die het begrip nog niet kent om te begrijpen waar het over gaat."@nl ;
   skos:editorialNote 
@@ -175,7 +174,7 @@ beg-nps:ExactMatch
     <https://www.w3.org/TR/skos-reference/#mapping> ,
     skos: ;
   skos:related beg-nps:Concept ;
-  skos:broader beg-nps:Harmonisatierelatie;
+  skos:broader beg-nps:MatchingRelation;
   skos:inScheme begkr-nps:BegrippenkaderNPS.
 
 #harmonisatierelatie
@@ -201,7 +200,7 @@ beg-nps:Broader
   skos:prefLabel
     "heeft bovenliggend begrip"@nl ,
     "has broader"@en ;
-  skos:notation "BT"@nl, "BT"@en;
+  skos:notation "BT" ;
   skos:definition
     "Has broader relates a concept to a concept that is more general in meaning."@en ,
     "Heeft bovenliggend begrip relateert een begrip aan een bovenliggend begrip in de hierarchie."@nl ;
@@ -222,7 +221,7 @@ beg-nps:Narrower
   skos:prefLabel
     "heeft onderliggend begrip"@nl ,
     "has narrower"@en ;
-  skos:notation "NT"@nl, "NT"@en;
+  skos:notation "NT" ;
   skos:definition
     "Has narrower relates a concept to a concept that is more specific in meaning."@en ,
     "Heeft enger begrip relateert een concept aan onderliggend begrip in de hiërarchie."@nl ;
@@ -243,14 +242,14 @@ beg-nps:HistoryNote
   a skos:Concept ;
   skos:prefLabel
     "history note"@en ,
-    "historische notitie"@nl ;
-  skos:notation "HN"@nl, "HN"@en;
+    "historie notitie"@nl ;
+  skos:notation "HN" ;
   skos:definition
-    "Een historische notitie is een notitie over de voormalige status/gebruik/betekenis van het concept."@nl ,
-    "A history not is a note about the past state/use/meaning of a concept."@en ;
+    "Een historie notitie is een notitie over de voormalige status/gebruik/betekenis van het concept."@nl ,
+    "A history note is a note about the past state/use/meaning of a concept."@en ;
   skos:scopeNote 
     "A history note should be used when a new preferred term is added to the thesaurus or a change is made to an existing term that affects the concept's scope in different periods of application. While it is possible to include such information in the scope note, a separate history note is preferable. A history note may record the date of introduction, or it may give more complex advice on how to search for the concept in earlier or later times."@en,
-    "Een historische notitie wordt gebruikt wanneer een nieuw begrip wordt toegevoegd aan het begrippenkader of wanneer er een wijziging wordt aangebracht in de beschrijving van een bestaand begrip die van invloed is op de reikwijdte van het begrip in verschillende toepassingsperioden. Hoewel het mogelijk is om dergelijke informatie in de toelichting op te nemen, heeft een aparte hisotirsche notitie de voorkeur. Deze kan kan de datum van introductie vermelden, of het kan meer complexe informatie geven over hoe te zoeken naar het begrip op een eerder of later tijdstip."@nl; 
+    "Een historie notitie wordt gebruikt wanneer een nieuw begrip wordt toegevoegd aan het begrippenkader of wanneer er een wijziging wordt aangebracht in de beschrijving van een bestaand begrip die van invloed is op de reikwijdte van het begrip in verschillende toepassingsperioden. Hoewel het mogelijk is om dergelijke informatie in de toelichting op te nemen, heeft een aparte hisotirsche notitie de voorkeur. Deze kan kan de datum van introductie vermelden, of het kan meer complexe informatie geven over hoe te zoeken naar het begrip op een eerder of later tijdstip."@nl; 
   dct:source
     skos: ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes>;
@@ -263,7 +262,7 @@ beg-nps:NarrowerInstantial
   skos:prefLabel
     "narrower term (instantial)"@en ,
     "is categorie van"@nl ;
-  skos:notation "NTI"@nl, "NTI"@en;
+  skos:notation "NTI" ;
   skos:definition
     "Is categorie van relateert een begrip, de categorie, aan een begrip dat exemplarisch is voor eerstgenoemde begrip."@nl ,
     "Narrower term (instantial) is the immediate (direct or one-step) class - instance relationship."@en ;
@@ -284,7 +283,7 @@ beg-nps:BroaderInstantial
   skos:prefLabel
     "is exemplaar van"@nl ,
     "broader term (instantial)"@en ;
-  skos:notation "BTI"@nl, "BTI"@en;
+  skos:notation "BTI" ;
   skos:definition
     "Broader term (instantial) is the immediate (direct or one-step) instance - class relationship."@en ,
     "Is exemplaar van relateert een begrip, een exemplaar, aan een ander begrip, de categorie, waartoe eerstgenoemde begrip behoort."@nl ;
@@ -305,7 +304,7 @@ beg-nps:NarrowerGeneric
   skos:prefLabel
     "is generalisatie van"@nl ,
     "broader term (generic)"@en ;
-  skos:notation "BTG"@nl, "BTG"@en;
+  skos:notation "BTG" ;
   skos:definition
     "Broader term (generic) is the immediate (direct or one-step) class - specialized class relationship."@en ,
     "Is generalisatie van relateert een begrip aan een specifieker begrip."@nl ;
@@ -326,7 +325,7 @@ beg-nps:Related
   skos:prefLabel
     "has related"@en ,
     "is gerelateerd aan"@nl ;
-  skos:notation "RT"@nl, "RT"@en;
+  skos:notation "RT" ;
   skos:definition
     "Relateert een begrip aan een andere begrip waarmee het semantisch samenhangt"@nl ,
     "Relates a concept to a concept with which there is an associative semantic relationship."@en ;
@@ -347,7 +346,7 @@ beg-nps:BroaderPartitive
   skos:prefLabel
     "is onderdeel van"@nl ,
     "broader term (partitive)"@en ;
-  skos:notation "BTP"@nl, "BTP"@en;
+  skos:notation "BTP" ;
   skos:definition
     "Is onderdeel van relateert een begrip aan een meer omvattend begrip."@nl ,
     "Broader term (partitive) relates a concept to a more including concept."@en ;
@@ -370,7 +369,7 @@ beg-nps:BroaderGeneric
   skos:prefLabel
     "broader term (generic)"@en ,
     "is specialisatie van"@nl ;
-  skos:notation "NTG"@nl, "NTG"@en;
+  skos:notation "NTG" ;
   skos:definition
     "Is specialisatie van relateert een begrip aan een meer generiek begrip."@nl ,
     "Broader term (generic)is the immediate (direct or one-step) class - generalized class relationship."@en ;
@@ -406,7 +405,7 @@ beg-nps:NarrowerPartitive
   skos:prefLabel
     "omvat"@nl ,
     "broader term (partitive)"@en ;
-  skos:notation "NTP"@nl, "NTP"@en;
+  skos:notation "NTP" ;
   skos:definition
     "Omvat relateert een begrip aan een minder omvattend begrip."@nl ,
     "Broader term (partitive) relates a concept to a less including concept."@en ;
@@ -480,15 +479,15 @@ beg-nps:RelatedMatch
     skos: ;
   skos:inScheme begkr-nps:BegrippenkaderNPS.
 
-#redactionele opmerking
+#redactionele notitie
 beg-nps:EditorialNote
   a skos:Concept ;
   skos:prefLabel
-    "redactionele opmerking"@nl ,
+    "redactionele notitie"@nl ,
     "editorial note"@en ;
   skos:definition
-    "An editorial not is a note for an editor, translator or maintainer of the vocabulary."@en ,
-    "Een redactionele opmerking voor een begrip is een notitie voor de redacteur, vertaler of beheerder van het begrippenkader."@nl ;
+    "An editorial note is a note for an editor, translator or maintainer of the vocabulary."@en ,
+    "Een redactionele notitie is een notitie voor de redacteur, vertaler of beheerder van het begrippenkader."@nl ;
   skos:scopeNote
     "Editorial notes are useful for entries such as -Review this term after the company merger complete- or -This term is mentioned in the scope note of Concept X- or -Check spelling with expert A-. Notes such as this, and several of the attributes, are more useful for housekeeping than for user consultation. A choice can be made whether or not to allow users to view them."@en,
     "Redactionele notities zijn handig voor vermeldingen als -Controleer deze term nadat de bedrijfsfusie is voltooid- of -Deze term wordt genoemd in de scopenota van Concept X- of -Controleer de spelling met expert A-. Opmerkingen zoals deze, en verschillende attributen, zijn nuttiger voor housekeeping dan voor gebruikers raadpleging. Er kan een keuze worden gemaakt of gebruikers deze al dan niet mogen inzien."@nl;
@@ -538,9 +537,9 @@ beg-nps:ScopeNote
   skos:prefLabel
     "scope note"@en ,
     "toelichting"@nl ;
-  skos:notation "SN"@nl, "SN"@en;
+  skos:notation "SN" ;
   skos:definition
-    "Een toelichting voor een begrip is een notitie die meer duidelijk geeft over de betekenis of gebruik van een begrip"@nl ,
+    "Een toelichting is een notitie die meer duidelijkheid geeft over de betekenis of gebruik van een begrip."@nl ,
     "A scope note is a note that helps to clarify the meaning and/or the use of a concept."@en ;
   skos:scopeNote "Een toelichting wordt gebruikt om de grenzen van een concept te verduidelijken, vooral wanneer de betekenis van de voorkeursterm in het gewone spraakgebruik te breed of te eng kan worden geïnterpreteerd, of om onderscheid te maken tussen voorkeurstermen die overlappende betekenissen hebben. Een toelichting kan ook worden gebruikt om ander advies te geven over het gebruik van termen aan de indexeerder of de zoeker. Een toelichting hoeft geen volledige definitie te zijn, maar verduidelijkt het beoogde gebruik van een term binnen de thesaurus."@nl,
     "A scope note should be used to clarify the boundaries of a concept, especially when the meaning of the preferred term in ordinary discourse can be interpreted too broadly or too narrowly, or to distinguish between preferred terms that have overlapping meanings in natural language. It can also be used to provide other advice on term usage to either the indexer or the searcher. A scope note need not be a full definition but should clarify the intended use of a term within the thesaurus."@en ;
@@ -580,9 +579,9 @@ beg-nps:Example
     "example"@en ;
   skos:definition
     "An example of the use of a concept."@en ,
-    "Een voorbeeld van het gebruik van een begrip."@nl ;
+    "Een voorbeeld is een notitie die meer duidelijkheid geeft over het gebruik van een begrip."@nl ;
   skos:scopeNote
-    "Een voorbeeld is een exemplaar van of een verbeelding van een begripdat voor de het begrip zelf in de plaats treedt om dit abstracte idee toe te lichten met een concrete voorstelling. Het kan tekst zijn, maar ook een plaatje, een geluidsfragment of een videofragment."@nl,
+    "Een voorbeeld is een exemplaar van, of een verbeelding van een begrip dat voor het begrip zelf in de plaats treedt om dit abstracte idee toe te lichten met een concrete voorstelling. Het kan tekst zijn, maar ook een plaatje, een geluidsfragment of een videofragment."@nl,
     "An example is an instance of or a representation of a concept that replaces the concept itself in order to illustrate this abstract idea with a concrete representation. It can be text, but also a picture, a sound fragment or a video fragment."@en;
   dct:source
     <https://www.w3.org/TR/skos-reference/#notes> ,
@@ -598,7 +597,7 @@ beg-nps:PrefLabel
   skos:prefLabel
     "voorkeursterm"@nl ,
     "preferred label"@en ;
-  skos:notation "USE"@nl, "USE"@en;
+  skos:notation "USE" ;
   skos:definition
     "A preferred label is the preferred lexical label for a resource, in a given language."@en ,
     "Een voorkeursterm is de gepreferreerde lexicale term voor een begrip, in een specifieke taal."@nl ;
@@ -639,8 +638,8 @@ beg-nps:ChangeNote
     "change note"@en ,
     "wijzigingsnotitie"@nl ;
   skos:definition
-    "A note about a modification to a concept."@nl ,
-    "Notitie over een wijziging aan het concept."@en ;
+    "A note about a modification to a concept."@en ,
+    "Een wijzigingsnotitie is een notitie over een wijziging aan het concept."@nl ;
   skos:scopeNote 
     "Een wijzigingsnota documenteert fijnmazige wijzigingen aan een concept, ten behoeve van beheer en onderhoud."@nl,
     "A change note documents fine-grained changes to a concept, for the purposes of administration and maintenance."@en ;
@@ -737,7 +736,7 @@ beg-nps:Page
   skos:definition
     "Een url is de vindplaats van een bron op het internet."@nl ,
     "A page is the location of a resource on the internet."@en ;
-  skos:sopeNote
+  skos:scopeNote
     "Een url wordt vastgelegd als de bron een bron is die vindbaar is op het web. Dit is bij voorkeur de iri van de van de bron en eventueel de url van de betreffende pagina op het web."@nl,
     "A URL is captured if the resource is a resource that can be found on the web. This is preferably the iri of the resource and possibly the url of the relevant page on the web."@en;
   dct:source
@@ -867,10 +866,10 @@ beg-nps:TopConcept
   skos:prefLabel
     "heeft topbegrip"@nl ,
     "has top concept"@en ;
-  skos:notation "TT"@nl, "TT"@en;
+  skos:notation "TT" ;
   skos:definition
     "Top concepts are concepts which are topmost in the hierarchical relations for a scheme."@en ,
-    "Een topbegrip is een begrip die bovenaan de hierarchie staat in een bepaald begrippenkader."@nl ;
+    "Een topbegrip is een begrip die bovenaan de hiërarchie staat in een bepaald begrippenkader."@nl ;
   skos:scopeNote
     "Has top concept adresses a concept that is at the top of a hierarchy, i.e. it has no broader concepts. This makes it easier, on importing a thesaurus, to pick out all the top level concepts from which to build a navigational tree."@en,
     "Heeft topconcept adresseert een concept dat bovenaan een hiërarchie staat, d.w.z. het heeft geen bredere concepten. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle concepten op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen."@nl; 
@@ -1038,8 +1037,8 @@ beg-nps:Voorbeeld a skos:Concept;
   skos:prefLabel "voorbeeld begrippenkader"@nl;
   skos:definition " Voorbeelden van gebruik catalogus"@nl .
 
-#voorkeursnaam begrippenkader
-beg-nps:Type a skos:Concept;
+#Type begrippenkader
+beg-nps:TypeBegrippenkader a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
   skos:prefLabel "Typering"@nl;
   skos:altLabel "Type"@nl;
@@ -1047,6 +1046,8 @@ beg-nps:Type a skos:Concept;
   skos:scopeNote "De DCAT standaard en DCAT-AP verschaffen geen duidelijkheid over de toepassing van eigenschap type/genre. DCAT-AP werkt aan een controlled vocabulary met mogelijke typen (de status hiervan is onbekend). W3C heeft hiervoor wel een issue aangemaakt. Zie https://github.com/w3c/dxwg/issues/64. Zie ook de use case Modelling resources different from datasets."@nl;
   skos:editorialNote """Bijvoorbeeld het type begrippenkader: begrippenlijst, taxonomie, thesaurus
 Het begrippenkader is altijd een SKOS concept scheme. Moet dat expliciet gemaakt worden met dit veld? Wordt al gezet bij definieren van het type van het begrippen kader"""@nl .
+
+#Voorkeursnaam begrippenkader
 beg-nps:VoorkeursnaamBegrippenkader a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
   skos:prefLabel "Voorkeursnaam begrippenkader"@nl;
