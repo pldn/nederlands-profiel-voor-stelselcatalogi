@@ -48,38 +48,6 @@ beg-nps:Concept
     skos: ,
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#concepts> ;
-  skos:related
-    beg-nps:AltLabel ,
-    beg-nps:InScheme ,
-    beg-nps:Source ,
-    beg-nps:Notation ,
-    beg-nps:Definition ,
-    beg-nps:ExactMatch ,
-    beg-nps:Broader ,
-    beg-nps:MatchingRelation ,
-    beg-nps:Narrower,
-    beg-nps:HistoryNote,
-    beg-nps:NarrowerInstantial ,
-    beg-nps:BroaderInstantial ,
-    beg-nps:NarrowerGeneric ,
-    beg-nps:Related ,
-    beg-nps:BroaderPartitive ,
-    beg-nps:BroaderGeneric ,
-    beg-nps:Note ,
-    beg-nps:NarrowerPartitive ,
-    beg-nps:BroadMatch ,
-    beg-nps:NarrowMatch ,
-    beg-nps:RelatedMatch ,
-    beg-nps:EditorialNote ,
-    beg-nps:SemanticRelation,
-    beg-nps:Label ,
-    beg-nps:ScopeNote ,
-    beg-nps:Comment ,
-    beg-nps:PrefLabel ,
-    beg-nps:CloseMatch ,
-    beg-nps:ChangeNote ,
-    beg-nps:HiddenLabel ,
-    beg-nps:Example ;
   skos:inScheme begkr-nps:BegrippenkaderNPS .
 
 #alternatieve term
@@ -244,9 +212,7 @@ beg-nps:Broader
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     <https://www.w3.org/TR/skos-reference/#semantic-relations> ,
     skos: ;
-  skos:related
-    beg-nps:Taxonomy ,
-    beg-nps:Concept ;
+  skos:related beg-nps:Concept ;
   skos:broader beg-nps:SemanticRelation ;
   skos:inScheme begkr-nps:BegrippenkaderNPS.
 
@@ -267,9 +233,7 @@ beg-nps:Narrower
     <https://www.w3.org/TR/skos-reference/#semantic-relations> ,
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skos: ;
-  skos:related
-    beg-nps:Concept ,
-    beg-nps:Taxonomy ;
+  skos:related beg-nps:Concept ;
   skos:broader beg-nps:SemanticRelation ;
   skos:inScheme begkr-nps:BegrippenkaderNPS.
 
@@ -310,9 +274,7 @@ beg-nps:NarrowerInstantial
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skosthes: ;
   skos:broader beg-nps:Narrower ;
-  skos:related
-    beg-nps:Thesaurus ,
-    beg-nps:Concept ;
+  skos:related beg-nps:Concept ;
   skosthes:broaderGeneric beg-nps:Narrower;
   skos:inScheme begkr-nps:BegrippenkaderNPS .
 
@@ -332,9 +294,7 @@ beg-nps:BroaderInstantial
   dct:source
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skosthes: ;
-skos:related 
-    beg-nps:Thesaurus ,
-    beg-nps:Concept ;
+skos:related beg-nps:Concept ;
   skos:broader beg-nps:Broader ;
   skosthes:broaderGeneric beg-nps:Broader;
   skos:inScheme begkr-nps:BegrippenkaderNPS .
@@ -355,9 +315,7 @@ beg-nps:NarrowerGeneric
   dct:source
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skosthes: ;
-  skos:related
-    beg-nps:Concept ,
-    beg-nps:Thesaurus ;
+  skos:related beg-nps:Concept ;
   skosthes:broaderGeneric beg-nps:Narrower ;
   skos:broader beg-nps:Narrower ;
   skos:inScheme begkr-nps:BegrippenkaderNPS .
@@ -380,9 +338,7 @@ beg-nps:Related
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     <https://www.w3.org/TR/skos-reference/#semantic-relations> ,
     skos: ;
-  skos:related
-    beg-nps:Concept ,
-    beg-nps:Thesaurus;
+  skos:related beg-nps:Concept ;
   skos:inScheme begkr-nps:BegrippenkaderNPS .
 
 #is onderdeel van
@@ -391,7 +347,7 @@ beg-nps:BroaderPartitive
   skos:prefLabel
     "is onderdeel van"@nl ,
     "broader term (partitive)"@en ;
-  skos:notation "BTI"@nl, "BTI"@en;
+  skos:notation "BTP"@nl, "BTP"@en;
   skos:definition
     "Is onderdeel van relateert een begrip aan een meer omvattend begrip."@nl ,
     "Broader term (partitive) relates a concept to a more including concept."@en ;
@@ -422,10 +378,8 @@ beg-nps:BroaderGeneric
     "The hierarchical relationship should be established between a pair of concepts when the scope of one of them falls completely within the scope of the other. It should be based on degrees or levels of superordination and subordination, where the superordinate concept represents a class or whole, and subordinate concepts refer to its members or species. A generalization is used when it is relevant to distinguish the relation from a partial or instantaneous hierarchical relation."@en,
     "De hiërarchische relatie tussen een paar begrippen wordt gebruikt wanneer de reikwijdte van het ene begrip volledig binnen de reikwijdte van het andere begrip valt. Deze relatie is gebaseerd op op graden of niveaus van bovenliggend en onderliggend, waarbij het bovenliggende concept een klasse of geheel vertegenwoordigt, en onderliggende concepten verwijzen naar haar leden of soorten. Een generalisatie wordt gebruikt wanneer het relevant is om deze relatie te onderscheiden van een partiële of instantiële hiërarchische relatie."@nl;
   dct:source skosthes: ;
-  skos:related
-    beg-nps:Concept ,
-    beg-nps:Thesaurus ;
-skos:broader beg-nps:Broader ;
+  skos:related beg-nps:Concept ;
+  skos:broader beg-nps:Broader ;
   skosthes:broaderGeneric beg-nps:Broader;
   skos:inScheme begkr-nps:BegrippenkaderNPS .
 
@@ -462,9 +416,7 @@ beg-nps:NarrowerPartitive
   dct:source
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skosthes: ;
-  skos:related
-    beg-nps:Thesaurus ,
-    beg-nps:Concept ;
+  skos:related beg-nps:Concept ;
   skos:broader beg-nps:Narrower ;
   skosthes:broaderGeneric beg-nps:Narrower;
   skos:inScheme begkr-nps:BegrippenkaderNPS .
@@ -657,9 +609,7 @@ beg-nps:PrefLabel
   dct:source
     <https://www.w3.org/TR/skos-reference/#labels> ,
     skos: ;
-  skos:related
-    beg-nps:AltLabel ,
-    beg-nps:Concept ;
+  skos:related beg-nps:Concept ;
   skos:broader beg-nps:Label ;
   skos:inScheme begkr-nps:BegrippenkaderNPS .
 
@@ -747,14 +697,14 @@ beg-nps:Resource
 beg-nps:BibliographicCitation
   a skos:Concept ;
   skos:prefLabel
-    "citaat"@nl ,
+    "citeertitel"@nl ,
     "bibliographic citation"@en ;
   skos:definition
-    "Een citaat is een bibliografische referentie naar een document."@nl ,
+    "Een citeertitel is een bibliografische referentie naar een document."@nl ,
     "A bibliographic reference for the resource."@en ;
   skos:scopeNote 
-    "Een citaat wordt als tekst vastgelegd. Hier dient voldoende detail in aangebracht te zijn zodat de resource gevonden kan worden. Er bestaan verschillende citeerstijlen die toegepast kunnen worden zoals IEEE, MLA of APA. Voor Nederlandse wetgeving is dit de citeertitel."@nl,
-    "A quote is captured as text. Sufficient detail must be provided here so that the resource can be found. There are different citation styles that can be used, such as IEEE, MLA or APA. For Dutch legislation this is the citation title."@en;
+    "Een citeertitel wordt als tekst vastgelegd. Hier dient voldoende detail in aangebracht te zijn zodat de resource gevonden kan worden. Er bestaan verschillende citeerstijlen die toegepast kunnen worden zoals IEEE, MLA of APA. Voor Nederlandse wetgeving is dit de citeertitel."@nl,
+    "A bibliographic citation is captured as text. Sufficient detail must be provided here so that the resource can be found. There are different citation styles that can be used, such as IEEE, MLA or APA. For Dutch legislation this is the citation title."@en;
   skos:example "Scripta Materialia 48(5), 475-481 (2003)", "Martin Greenberger et al., eds., Networks for Research and Education: Sharing of Computer Information Resources Nationwide (Cambridge: MIT Press, 1974), artikel 1 Kadasterwet" ;
   dct:source
     <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/bibliographicCitation> ,
