@@ -409,42 +409,11 @@ De bron kan een heel document of een fragment daarvan zijn, denk aan een boek, e
 
 
 ## Metadata 
-### Begrippenkader in bewerking
-Het begrippenkader is niet een concreet iets. Het is een *eenheid van context*. Aan de hand van de definitie stellen we dan ook dat het begrippenkader een verzameling begrippen is. Dit is niet hetzelfde als een verzameling begripsbeschrijvingen, wat wel concreet is. Dit is namelijk data. Een verzameling begripsbeschrijvingen is een *eenheid van beheer*. 
+### Begrippenkader
+Het begrippenkader is niet een concreet iets. Het is een *eenheid van context*. Aan de hand van de definitie stellen we dan ook dat het begrippenkader een verzameling begrippen is. Dit is niet hetzelfde als een verzameling begripsbeschrijvingen, wat wel concreet is. In principe kunnen begrippen die tot één begrippenkader behoren in verschillende databases of named-graphs en door verschillende partijen beheerd worden. Iedere verzameling van begripsbeschrijvingen is een *eenheid van beheer*. 
 
-Een begrippenkader komt niet noodzakelijk overeen met precies één verzameling van begripsbeschrijvingen. Zo kan één begrippenkader worden samengesteld uit verschillende eenheden van beheer; en kan één eenheid van beheer meerdere begrippenkaders bevatten. 
-De verzameling begripsbeschrijvingen; die we samenstellen aan de hand van het begrippenkader (de beschrijvingen die horen bij alle begrippen die onderdeel zijn van het begrippenkader), zien we als een [[[ASSET]]]; een waardevolle eenheid van geëxpliciteerde kennis.
-
-Het is dan ook van belang om, net als bij andere soorten assets of producten het begrippenkader voldoende te beschrijven. De volgende set eigenschappen zien we als relevant voor semantische assets.
-
-*nog tabbelen inclusief rationale voor ieder item maken* 
-
-
-- Voorkeursnaam begrippenkader
-- Alternatieve naam begrippenkader
-- Beschrijving begrippenkader
-- Klare taal beschrijving begrippenkader 
-- Toelichting
-- Ontwerpbeslissingen
-- Voorbeeld
-- Documentatiepagina
-- Wetgeving
-- Wetgeving (URI)
-- Taal
-- Bronhouder
-- Uitgever
-- Contactpunt
-- Toezichthouder
-- Opdrachtgever
-- Laatst bijgewerkt
-- Versie
-- Frequentie (URI)
-- Publicatiedatum
-- Toegangsrechten
-- Licentie
-- Conformeert aan
-- Thema/categorie
-- Keywords
+Een begrippenkader, als verzameling van begrippen, zien we als een [[[ASSET]]]; een waardevolle eenheid van geëxpliciteerde kennis.
+Een eenheid van beheer, een  verzameling van begripsbeschrijvingen, zien we als een Dataset; een verzameling data, beheerd door één partij.
 
 ## Uitbreidingen
 Usecase 4 in [#use-cases] beschrijft de wens om verdiepende elementen toe te voegen aan de elementen die in dit (hoofdstuk)[#conceptuele-beschrijving] zijn beschreven. Het betreft het definiëren van specialisaties van de bijvoorbeeld de elementen [=begrip=] en [=semantische relatie=]. Een voorbeeld hiervan is <dfn>skos-lex</dfn>.
