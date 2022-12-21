@@ -65,7 +65,7 @@ beg-nps:Concept
     "Afkortingen en hun volledige vormen kunnen als synoniemen worden behandeld."@nl,
     "Abbreviations and their full forms can be treated as synonyms."@en;
   skos:example
-    "Acroniemen, afkortingen, spellingsvarianten en onregelmatige meervouds-/enkelvoudsvormen kunnen worden opgenomen in de alternatieve termen voor een concept. Verkeerd gespelde termen worden normaal gesproken als verborgen labels opgenomen (zie   skos:hiddenLabel)."@nl ,
+    "Acroniemen, afkortingen, spellingsvarianten en onregelmatige meervouds-/enkelvoudsvormen kunnen worden opgenomen in de alternatieve termen voor een concept. Verkeerd gespelde termen worden normaal gesproken als verborgen labels opgenomen (zie skos:hiddenLabel)."@nl ,
     "Acronyms, abbreviations, spelling variants, and irregular plural/singular forms may be included among the alternative labels for a concept. Mis-spelled terms are normally included as hidden labels (see skos:hiddenLabel)."@en ;
   dct:source
     <https://www.w3.org/TR/skos-reference/#labels> ,
@@ -200,12 +200,13 @@ beg-nps:Broader
   skos:prefLabel
     "heeft bovenliggend begrip"@nl ,
     "has broader"@en ;
+  skos:altLabel "heeft breder begrip"@nl ;
   skos:notation "BT" ;
   skos:definition
     "Has broader relates a concept to a concept that is more general in meaning."@en ,
-    "Heeft bovenliggend begrip relateert een begrip aan een bovenliggend begrip in de hierarchie."@nl ;
+    "Heeft bovenliggend begrip relateert een begrip aan een bovenliggend begrip in de hiërarchie."@nl ;
   skos:scopeNote 
-    "Conventie is om heeft bovenliggend begrip alleen te gebruiken gebruikt om een ​​directe hiërarchische link tussen twee concepten te beschrijven."@nl, 
+    "Conventie is om heeft bovenliggend begrip alleen te gebruiken om een ​​directe hiërarchische link tussen twee concepten te beschrijven."@nl, 
     "By convention, has broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."@en;
   dct:source
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
@@ -221,12 +222,13 @@ beg-nps:Narrower
   skos:prefLabel
     "heeft onderliggend begrip"@nl ,
     "has narrower"@en ;
+  skos:altLabel "heeft enger begrip"@nl ;
   skos:notation "NT" ;
   skos:definition
     "Has narrower relates a concept to a concept that is more specific in meaning."@en ,
-    "Heeft enger begrip relateert een concept aan onderliggend begrip in de hiërarchie."@nl ;
+    "Heeft onderliggend begrip relateert een begrip aan onderliggend begrip in de hiërarchie."@nl ;
   skos:scopeNote
-    "Conventie is om heeft onderliggend begrip alleen te gebruiken gebruikt om een directe hiërarchische link tussen twee concepten te beschrijven."@nl, 
+    "Conventie is om heeft onderliggend begrip alleen te gebruiken om een directe hiërarchische link tussen twee concepten te beschrijven."@nl, 
     "By convention, has narrower is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."@en ;
   dct:source
     <https://www.w3.org/TR/skos-reference/#semantic-relations> ,
@@ -327,7 +329,7 @@ beg-nps:Related
     "is gerelateerd aan"@nl ;
   skos:notation "RT" ;
   skos:definition
-    "Relateert een begrip aan een andere begrip waarmee het semantisch samenhangt"@nl ,
+    "Is gerelateerd aan is een relatie waarmee een begrip aan een andere begrip verbonden kan worden waarmee het semantisch samenhangt."@nl ,
     "Relates a concept to a concept with which there is an associative semantic relationship."@en ;
   skos:scopeNote 
     "De associatieve relatie omvat associaties tussen paren begrippen die niet hiërarchisch met elkaar verbonden zijn, maar semantisch of conceptueel zodanig geassocieerd zijn dat de link ertussen expliciet gemaakt moet worden, omdat het aanvullende of alternatieve termen kan suggereren die kunnen worden gebruikt bij het indexeren of vinden van een begrip."@nl,
@@ -510,7 +512,7 @@ beg-nps:SemanticRelation
     "Een semantische relatie relateert een begrip aan een ander begrip op basis van de betekenis."@nl ;
   skos:scopeNote
     "This is an umbrella term for the different types of semantic relations (broader, narrower, is related to) that can be used to describe relations between concepts. Good practice is to use those specific semantic relations. In concept schemes semantic relations play a crucial role for defining concepts. The meaning of a concept is defined not just by the natural-language words in its labels but also by its links to other concepts in the vocabulary."@en,
-    "Dit is een overkoepelend begrip voor de verschillende soorten semantische relaties (breder, enger, is gerelateerd aan) waarmee relaties tussen begrippen kunnen worden beschreven. Good practice is om die specifieke semantische relaties te gebruiken.In begrippenkaders spelen semantische relaties een cruciale rol bij het definiëren van concepten. De betekenis van een concept wordt niet alleen bepaald door de woorden in de natuurlijke taal in de termen, maar ook door de links naar andere begrippen in het begrippenkader."@nl;
+    "Dit is een overkoepelend begrip voor de verschillende soorten semantische relaties (bovenliggend, onderliggend, gerelateerd) waarmee relaties tussen begrippen kunnen worden beschreven. Good practice is om die specifieke semantische relaties te gebruiken.In begrippenkaders spelen semantische relaties een cruciale rol bij het definiëren van concepten. De betekenis van een concept wordt niet alleen bepaald door de woorden in de natuurlijke taal in de termen, maar ook door de links naar andere begrippen in het begrippenkader."@nl;
   dct:source
     <https://www.w3.org/TR/skos-reference/#semantic-relations> ,
     skos: ;
@@ -620,7 +622,7 @@ beg-nps:CloseMatch
     "has close match"@en ;
   skos:definition
     "Close match relates two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications."@en ,
-    "Vrijwel overeenkomstig relateert twee begrippen uit verschillende begrippenkaders die zoveel op elkaar lijken dat ze  in sommige toepassingen door elkaar kunnen worden gebruiktvoor het ophalen van informatie. De betekenis van deze begrippen is ongeveer gelijk aan elkaar."@nl ;
+    "Vrijwel overeenkomstig relateert twee begrippen uit verschillende begrippenkaders die zoveel op elkaar lijken dat ze in sommige toepassingen door elkaar kunnen worden gebruiktvoor het ophalen van informatie. De betekenis van deze begrippen is ongeveer gelijk aan elkaar."@nl ;
   skos:scopeNote 
     "Een dergelijke relatie is aanwezig als de betekenis van het betreffende begrip ongeveer gelijk is aan de betekenis van het begrip uit het andere begrippenkader, dus niet precies hetzelfde."@nl,
     "Such a relationship is present if the meaning of the concept in question is about the same as the meaning of the concept from the other concep scheme, so not exactly the same. "@en ;
@@ -699,7 +701,7 @@ beg-nps:BibliographicCitation
     "citeertitel"@nl ,
     "bibliographic citation"@en ;
   skos:definition
-    "Een citeertitel is een bibliografische referentie naar een document."@nl ,
+    "Een citeertitel is een bibliografische referentie naar het document."@nl ,
     "A bibliographic reference for the resource."@en ;
   skos:scopeNote 
     "Een citeertitel wordt als tekst vastgelegd. Hier dient voldoende detail in aangebracht te zijn zodat de resource gevonden kan worden. Er bestaan verschillende citeerstijlen die toegepast kunnen worden zoals IEEE, MLA of APA. Voor Nederlandse wetgeving is dit de citeertitel."@nl,
@@ -721,7 +723,7 @@ beg-nps:Type
     "Een soort is de aard of het genre van een bron."@nl ,
     "A type is the nature or genre of a resource."@en ;
   skos:scopeNote
-    "Met soort wordt aangegeven of het een 'geschreven bron' of een 'web resource' is. "@nl,
+    "Met soort kan bijvoorbeeld aangegeven worden of het een 'geschreven bron' of een 'web resource' is. "@nl,
     "Kind indicates whether it is a 'written resource' or a 'web resource'. "@en;
   dct:source
     dct: ;
