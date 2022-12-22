@@ -221,9 +221,10 @@ skosapnl:Concept-narrowMatch
   sh:order 41 ;
   sh:nodeKind sh:IRI ;
   sh:path skos:broadMatch .
+
 skosapnl:Concept-broader
   a sh:PropertyShape ;
-  rdfs:label "heeft breder begrip"@nl ;
+  rdfs:label "heeft bovenliggend begrip"@nl ;
   sh:class skos:Concept ;
   sh:description
     "Relateert een begrip aan een bovenliggend begrip in de hierarchie."@nl ,
@@ -236,13 +237,13 @@ skosapnl:Concept-broader
   
 skosapnl:Concept-narrower
   a sh:PropertyShape ;
-  rdfs:label "heeft enger begrip"@nl ;
+  rdfs:label "heeft onderliggend begrip"@nl ;
   sh:class skos:Concept ;
   sh:description
-    "Relateert een concept aan een ander concept die meer specifiek in betekenis is."@nl ,
+    "Relateert een begrip aan een onderliggend begrip in de hierarchie."@nl ,
     "Relates a concept to a concept that is more specific in meaning."@en ;
   sh:group skosapnl:SemanticRelationPropertyGroup ;
-  sh:name "heeft enger begrip"@nl ;
+  sh:name "heeft onderliggend begrip"@nl ;
   sh:order 21 ;
   sh:nodeKind sh:IRI ;
   sh:path skos:narrower .
@@ -333,24 +334,24 @@ skosapnl:Concept-exactMatch
 
 skosapnl:Concept-inScheme
   a sh:PropertyShape ;
-  rdfs:label "behoort tot schema"@nl ;
+  rdfs:label "behoort tot"@nl ;
   sh:class skos:ConceptScheme ;
   sh:description "Relates a resource (for example a concept) to a concept scheme in which it is included."@en ;
   sh:description "Een begrippenkader waartoe het concept behoort."@nl ;
   sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
   sh:minCount 1 ;
-  sh:name "behoort tot schema"@nl ;
+  sh:name "behoort tot"@nl ;
   sh:order 6 ;
   sh:nodeKind sh:IRI ;
   sh:path skos:inScheme .
 
 skosapnl:Concept-altLabel
   a sh:PropertyShape ;
-  rdfs:label "alternative term"@nl ;
+  rdfs:label "alternatieve term"@nl ;
   sh:description "An alternative lexical label for a resource."@en, "Een alternatieve term voor een begrip is een term die gebruikt kan worden als alternatief voor de voorkeursterm van dit begrip, maar niet de voorkeur heeft."@nl ;
   sh:disjoint skos:hiddenLabel ;
   sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
-  sh:name "alternative term"@nl ;
+  sh:name "alternatieve term"@nl ;
   sh:datatype rdf:langString ;
   sh:order 1 ;
   sh:nodeKind sh:Literal ;
@@ -382,8 +383,8 @@ skosapnl:Concept-historyNote
   a sh:PropertyShape ;
   sh:description "Notitie over de voormalige status/gebruik/betekenis van het concept"@nl, "A note about the past state/use/meaning of a concept."@en ;
   sh:group skosapnl:NotesPropertyGroup ;
-  sh:name "history note"@en, "historische notitie"@nl ;
-  rdfs:label "historische notitie"@nl;
+  sh:name "history note"@en, "historie notitie"@nl ;
+  rdfs:label "historie notitie"@nl;
   sh:order 33 ;
   sh:datatype rdf:langString ;
   sh:nodeKind sh:Literal ;
@@ -393,8 +394,8 @@ skosapnl:Concept-source
   a sh:PropertyShape ;
   sh:description "Een bron voor een begrip is een gerelateerde brondocument waaruit de betekenis van het begrip is afgeleid."@nl ;
   sh:group skosapnl:DefinitionPropertyGroup ;
-  rdfs:label "bron"@nl ;
-  sh:name "bron"@nl ;
+  rdfs:label "bronverwijzing"@nl ;
+  sh:name "bronverwijzing"@nl ;
   sh:order 11 ;
   sh:nodeKind sh:BlankNodeOrIRI ;
   sh:node skosapnl:Source ;
@@ -415,8 +416,8 @@ skosapnl:Concept-editorialNote
   a sh:PropertyShape ;
   sh:description "A note for an editor, translator or maintainer of the vocabulary."@en ;
   sh:group skosapnl:NotesPropertyGroup ;
-  sh:name "redactionele opmerking"@nl, "editorial note"@en ;
-  rdfs:label "redactionele opmerking"@nl ;
+  sh:name "redactionele notitie"@nl, "editorial note"@en ;
+  rdfs:label "redactionele notitie"@nl ;
   sh:datatype rdf:langString ;
   sh:order 32 ;
   sh:nodeKind sh:Literal ;
