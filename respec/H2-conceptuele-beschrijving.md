@@ -16,7 +16,7 @@ Het beschrijven van de kenmerken van een *begrip*, *begrippenkader* of *collecti
   * relaties met andere kenmerken.
 
 ## Begrippenkader
-Begrippen kunnen als zelfstandige entiteiten worden gezien maar veelal worden ze opgesteld als onderdeel van een gecureerd begrippenkader, zoals begrippenlijsten, taxonomieën en thesauri. Een [=begrippenkader=] is een verzameling van [=begrip=]pen die in een bepaalde context relevant zijn. Een begrippenkader wordt ookwel gezien als een eenheid van context. Een begrippenkader is vergelijkbaar met een taal die in een bepaald gebied gesproken wordt. En net als een reguliere taal is een begrippenkader een open systeem. Zo kan een taal ook groeien na introductie van nieuwe woorden vanuit talen uit nabijgelegen gebieden. Dat wil zeggen dat een begrippenkader net als een taal naast vertalingen (mappings) kent ook woorden kunnen overnemen; leenwoorden. Zoals "computer", een van origine engels woord, ook behoort tot de nederlandse taal. Het beschrijven welke begrippen behoren tot een begrippenkader is essentieel; maar hoe deze 'vertaald' kunnen worden naar begrippen uit andere begrippenkaders ook. Voor dit laatste gebruiken we [=harmonisatierelatie=]s.
+Begrippen kunnen als zelfstandige entiteiten worden gezien maar veelal worden ze opgesteld als onderdeel van een gecureerd begrippenkader, zoals begrippenlijsten, taxonomieën en thesauri. Een [=begrippenkader=] is een verzameling van [=begrip=]pen die in een bepaalde context relevant zijn. Een begrippenkader wordt ookwel gezien als een eenheid van context. Als kenmerk van het [=begrip=] wordt aangegeven of het onderdeel is van een begrippenkader ([=behoort tot=]) Een begrippenkader is vergelijkbaar met een taal die in een bepaald gebied gesproken wordt. En net als een reguliere taal is een begrippenkader een open systeem. Zo kan een taal ook groeien na introductie van nieuwe woorden vanuit talen uit nabijgelegen gebieden. Dat wil zeggen dat een begrippenkader net als een taal naast vertalingen (mappings) kent ook woorden kunnen overnemen; leenwoorden. Zoals "computer", een van origine engels woord, ook behoort tot de nederlandse taal. Het beschrijven welke begrippen behoren tot een begrippenkader is essentieel; maar hoe deze 'vertaald' kunnen worden naar begrippen uit andere begrippenkaders ook. Voor dit laatste gebruiken we [=harmonisatierelatie=]s.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -24,6 +24,14 @@ Begrippen kunnen als zelfstandige entiteiten worden gezien maar veelal worden ze
 | **definitie**        | Een begrippenkader is een verzameling van begrippen, inclusief eventuele semantische relaties tussen deze begrippen. |
 | **bron** | http://www.w3.org/2004/02/skos/core#, https://en.wikipedia.org/wiki/Controlled_vocabulary, https://www.w3.org/TR/skos-reference/#schemes |
 | **toelichting** | Een begrippenkader kan worden gedefinieerd om begrippen uit verschillende bronnen op te nemen. Begrippenkaders bieden een manier om kennis te ordenen voor het later kunnen ophalen. Ze worden gebruikt in indexeringsschema&#39;s, koppen, thesauri, taxonomieën en andere kennisorganisatiesystemen. Begrippenkaders verplichten het gebruik van vooraf gedefinieerde, geautoriseerde termen die zijn geselecteerd door de ontwerpers ervan,in tegenstelling tot natuurlijke taalvocabulaires,die een dergelijke beperking niet hebben. |
+
+Een begrippenkader kan beschreven worden aan de hand van verschillende kenmerken. Deze zijn in de volgende tabel weergegeven.
+
+| Conceptueel element | Kardinaliteit | Type       |
+| ------------------- | ------------- | ---------- |
+| [=heeft topbegrip=] | 0..*          | [=begrip=] |
+| [=uitleg=]          | 0..*          | Tekst      |
+| [=term=]            | 1..*          | Tekst      |
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -40,14 +48,6 @@ Begrippen kunnen als zelfstandige entiteiten worden gezien maar veelal worden ze
 | **bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes |
 | **toelichting** | Volgens de SKOS-standaard kan een begrip tot meerdere begrippenkaders behoren. Praktisch gezien kan dit slechts als sprake is van begrippenkaders waarvan de contexten overlappen |
 
-### Gegevensdefinitie begrippenkader
-Een begrippenkader kan beschreven worden aan de hand van verschillende kenmerken. Deze zijn in de volgende tabel weergegeven.
-
-| Conceptueel element | Kardinaliteit | Type       |
-| ------------------- | ------------- | ---------- |
-| [=heeft topbegrip=] | 0..*          | [=begrip=] |
-| [=uitleg=]          | 0..*          | Tekst      |
-| [=label=]           | 1..*          | Tekst      |
 
 ## Begrip
 Begrip is het centrale element in deze specificatie. Begrippen spelen ook een centrale rol in de manier waarop we communiceren en we de wereld om ons heen begrijpen. 
@@ -63,7 +63,6 @@ Het hebben van gestandaardiseerde begrippen zorgt ervoor dat iedereen dezelfde t
 | **bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#concepts |
 | **toelichting** | De belangrijkste toepassing voor een thesaurus is het ophalen van informatie, waarbij het doel is om naar begrippen te zoeken. Begrippen worden weergegeven door termen. Elke term in een thesaurus moet een enkel begrip (of denkeenheid) vertegenwoordigen. Begrippen kunnen variëren van eenvoudig (bijv. katten) tot zeer complex (bijv. rassendiscriminatie onder etnische minderheden). Samengestelde termen of zinsdelen zijn over het algemeen nodig om de meer complexe begrippen uit te drukken. |
 
-### Gegevensdefinitie begrip
 Een begrip kan beschreven worden aan de hand van verschillende kenmerken. Deze zijn in de volgende tabel weergegeven. In de volgende hoofdstukken worden deze per usecase verder beschreven.
 
 | Conceptueel element             | Kardinaliteit | Type               |
@@ -111,7 +110,6 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 | **bron** | https://en.wikipedia.org/wiki/Controlled_vocabulary |
 | **toelichting** | In de praktijk worden de termen begrippenlijst en woordenlijst vaak door elkaar gebruikt. In dit geval gaat het nadrukkelijk om een lijst van begrippen, dus inclusief de uitleg van de betekenis. Traditioneel verschijnt er aan het einde van een boek een verklarende woordenlijst met termen in dat boek die ofwel nieuw geïntroduceerd, ongebruikelijk of gespecialiseerd zijn. Semantisch gezien gaat de definitie over het begrip wat met de term wordt aangeduid en niet over de term zelf. |
 | **alternatieve term** | platte termenlijst, woordenlijst |
-
 
 #### Termen
 
@@ -417,6 +415,13 @@ Begrippen zijn op verschillende manieren te verzamelen. Collecties zijn verzamel
 | **toelichting** | Met betekenisvol wordt bedoeld dat de begrippen op een bepaalde manier met elkaar samenhangen. Een collectie betreft vaak een deel van de begrippen uit één begrippenkader, maar kan ook begrippen bevatten die afkomstig zijn uit meerdere begrippenkaders |
 | **alternatieve term** | gelabelde collectie, verzameling |
 
+Een collectie kan beschreven worden aan de hand van verschillende kenmerken. Deze zijn in de volgende tabel weergegeven.
+
+| Conceptueel element | Kardinaliteit | Type                        |
+| ------------------- | ------------- | --------------------------- |
+| [=term=]          | 1..*          | Tekst                       |
+| [=bevat=]           | 0..*          | [=begrip=] of [=collectie=] |
+
 Wanneer je iets met een collectie wilt kunnen doen; moet je het benoemen; zo spreken we feitelijk over een gelabelde collectie. Dit is ook wat we over het algemeen bedoelen wanneer we het over een collectie hebben. Een collectie kan genest zijn en er is geen sprake van een bepaalde ordening. Wanneer er wel een bepaalde ordening is spreken we van een geordende collectie. Dit is bijvoorbeeld relevant om bepaalde begrippen in alfabetische of chronologische volgorde te plaatsen. Collecties kunnen begrippen bevatten maar ook andere (geordende) collecties.
 
 |                       |                                       |
@@ -433,28 +438,10 @@ Het maakt het mogelijk om begrippen te groepen op een manier die haaks staat op 
 | **definitie**        | Relateert een collectie aan een begrip of een collectie van begrippen dat onderdeel is van deze collectie |
 | **bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/skos-reference/#collections |
 
-### Gegevensdefinitie Collectie
-Een collectie kan beschreven worden aan de hand van verschillende kenmerken. Deze zijn in de volgende tabel weergegeven.
-
-| Conceptueel element | Kardinaliteit | Type                        |
-| ------------------- | ------------- | --------------------------- |
-| [=label=]           | 1..*          | Tekst                       |
-| [=bevat=]           | 0..*          | [=begrip=] of [=collectie=] |
-
 ## Bron
 
 Een [=bron=] is een document waaruit de betekenis van het begrip is afgeleid.
 Het is good practice om voor ieder begrip bronverwijzingen op te nemen. Zo is het duidelijk waar de definitie van een begrip op gebasseerd is. Dit verhoogd de kwaliteit van het begrip en vooral ook de betrouwbaarheid.
-
-Hiervoor hebben we het volgende patroon:
-
-Een **[=begrip=]** heeft een eigenschap '**bron**' (of specifieker; **bronverwijzing**).
-
-De waarde van **bron** is een non-literal resource. Dit is de daadwerkelijke **Bron** (of specifieker het; **brondocument**).
-
-Het is aangeraden om een bron te beschrijven met een **[=url=]** als de bron een vindplaats heeft op het web en anders een **[=citeertitel=]** waarin de citeerinformatie van de bron in een bepaalde citeerstijl is vastgelegd. Hiermee kan de bron gevonden worden. Ook kan de bron beschreven worden met een compact, voor de mens leesbare **[=term=]**, een uitgebreide, voor de mens leesbare **[=uitleg=]** en een **[=soort=]** om aan te geven wat de aard van het brondocument is.
-
-De bron kan een heel document of een fragment daarvan zijn, denk aan een boek, een hoofdstuk of een paragraaf.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -464,7 +451,23 @@ De bron kan een heel document of een fragment daarvan zijn, denk aan een boek, e
 | **toelichting** | De bron kan een geschreven bron zijn of een resource op het web. Aanbevolen best practice is om de bron te beschrijven door middel van een tekenreeks die voldoet aan een formeel identificatiesysteem. Bij een resource op het web is ook de uri van die bron relevant. Om zowel naar een geschreven bron als naar een bron op het web (vaak zonder gestandaardiseerde beschrijving) te verwijzen wordt hier verwezen naar een eigen resource, die zowel een gestandaardiseerde beschrijving als een verwijzing naar de eigenlijke bron bevat. |
 | **alternatieve term** | brondocument, bronverwijzing, herkomst |
 
+Hiervoor hebben we het volgende patroon:
 
+Een **[=begrip=]** heeft een eigenschap '**bron**' (of specifieker; **bronverwijzing**).
+
+De waarde van **bron** is een non-literal resource. Dit is de daadwerkelijke **Bron** (of specifieker het; **brondocument**).
+
+| Conceptueel element | Kardinaliteit | Type         |
+| ------------------- | ------------- | ------------ |
+| [=uitleg=]          | 0..*          | Tekst        |
+| [=url=]             | 0..*          | Url          |
+| [=soort=]           | 0..*          | [=begrip=]   |
+| [=term=]          | 1..*          | Tekst        |
+| [=citeertitel=]     | 0..*          | Tekst        |
+
+Het is aangeraden om een bron te beschrijven met een **[=url=]** als de bron een vindplaats heeft op het web en anders een **[=citeertitel=]** waarin de citeerinformatie van de bron in een bepaalde citeerstijl is vastgelegd. Hiermee kan de bron gevonden worden. Ook kan de bron beschreven worden met een compact, voor de mens leesbare **[=term=]**, een uitgebreide, voor de mens leesbare **[=uitleg=]** en een **[=soort=]** om aan te geven wat de aard van het brondocument is.
+
+De bron kan een heel document of een fragment daarvan zijn, denk aan een boek, een hoofdstuk of een paragraaf.
 |                       |                                       |
 |-----------------------|---------------------------------------|
 | **voorkeursterm**   | <dfn>url</dfn> |
@@ -486,17 +489,6 @@ De bron kan een heel document of een fragment daarvan zijn, denk aan een boek, e
 | **definitie**        | Een soort is de aard of het genre van een bron. |
 | **bron** | http://purl.org/dc/terms/ |
 | **toelichting** | Met soort kan bijvoorbeeld aangegeven worden of het een &#39;geschreven bron&#39; of een &#39;web resource&#39; is.  |
-
-### Gegevensdefinitie Bron
-Een bron kan beschreven worden aan de hand van verschillende kenmerken. Deze zijn in de volgende tabel weergegeven.
-
-| Conceptueel element | Kardinaliteit | Type         |
-| ------------------- | ------------- | ------------ |
-| [=uitleg=]          | 0..*          | Tekst        |
-| [=url=]             | 0..*          | Url          |
-| [=soort=]           | 0..*          | [=begrip=]   |
-| [=label=]           | 1..*          | Tekst        |
-| [=citeertitel=]     | 0..*          | Tekst        |
 
 ## Metadata 
 ### Begrippenkader
