@@ -220,7 +220,7 @@ skosapnl:Concept-narrowMatch
   sh:name "overeenkomstig onderliggend"@nl ;
   sh:order 41 ;
   sh:nodeKind sh:IRI ;
-  sh:path skos:broadMatch .
+  sh:path skos:narrowMatch .
 
 skosapnl:Concept-broader
   a sh:PropertyShape ;
