@@ -9,7 +9,7 @@ In [2.3](#collectie) beschrijven we hoe begrippen los van hun semantische samenh
 In [2.4](#bron) beschrijven we de elementen van een bibliografische of op het web vindbare bron waarop de definitie van een begrip is gebaseerd.
 
 Het beschrijven van de kenmerken van een *begrip*, *begrippenkader* of *collectie* doen we conform onze eigen standaard (practice what you preach). Dat betekent dat we voor ieder kenmerk van een begrip de volgende kenmerken beschrijven:
-  * [=voorkeursterm=]. De Engelse term nemen we over uit SKOS, maar soms ook uit een samenhangende standaard als Dublin Core of Prov-O. In het profiel geven we de Nederlandse definitie.
+  * [=voorkeursterm=]. De Engelse term nemen we over uit SKOS, maar soms ook uit een daarmee samenhangende standaard als Dublin Core of Prov-O. In het profiel geven we de Nederlandse definitie.
   * [=definitie=]. De definitie in het Engels nemen we over uit SKOS of een samenhangende standaard. In het profiel geven we de Nederlandse definitie.
   * [=toelichting=]. De toelichting in het Engels nemen we over uit SKOS of een samenhangende standaard. De ISO 25964 geeft vaak ook een waardevolle (Engelse) toelichting. De ISO 25964 geeft zelf aan dat de toelichting misschien nog wel belangrijker is dan de definitie. Zowel de SKOS- als de ISO toelichting zijn naar het Nederlands vertaald.
   * [=bron=]. Bij ieder kenmerk geven we aan welke bron(nen) we hebben gebruikt voor de beschrijving.
@@ -365,7 +365,7 @@ Specifiek onderscheiden we de volgende verschillende harmonisatierelaties.
 |                       |                                       |
 |-----------------------|---------------------------------------|
 | **voorkeursterm**   | <dfn>vrijwel overeenkomstig</dfn> |
-| **definitie**        | Vrijwel overeenkomstig relateert twee begrippen uit verschillende begrippenkaders die zoveel op elkaar lijken dat zin sommige toepassingen door elkaar kunnen worden gebruiktvoor het ophalen van informatie. De betekenis van deze begrippen is ongeveer gelijk aan elkaar. |
+| **definitie**        | Vrijwel overeenkomstig relateert twee begrippen uit verschillende begrippenkaders die zoveel op elkaar lijken dat zin sommige toepassingen door elkaar kunnen worden gebruikt voor het ophalen van informatie. De betekenis van deze begrippen is ongeveer gelijk aan elkaar. |
 | **bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/skos-reference/#mapping |
 | **toelichting** | Een dergelijke relatie is aanwezig als de betekenis van het betreffende begrip ongeveer gelijk is aan de betekenis van het begrip uit het andere begrippenkader, dus niet precies hetzelfde. |
 

@@ -623,7 +623,7 @@ beg-nps:CloseMatch
     "has close match"@en ;
   skos:definition
     "Close match relates two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications."@en ,
-    "Vrijwel overeenkomstig relateert twee begrippen uit verschillende begrippenkaders die zoveel op elkaar lijken dat ze in sommige toepassingen door elkaar kunnen worden gebruiktvoor het ophalen van informatie. De betekenis van deze begrippen is ongeveer gelijk aan elkaar."@nl ;
+    "Vrijwel overeenkomstig relateert twee begrippen uit verschillende begrippenkaders die zoveel op elkaar lijken dat ze in sommige toepassingen door elkaar kunnen worden gebruikt voor het ophalen van informatie. De betekenis van deze begrippen is ongeveer gelijk aan elkaar."@nl ;
   skos:scopeNote 
     "Een dergelijke relatie is aanwezig als de betekenis van het betreffende begrip ongeveer gelijk is aan de betekenis van het begrip uit het andere begrippenkader, dus niet precies hetzelfde."@nl,
     "Such a relationship is present if the meaning of the concept in question is about the same as the meaning of the concept from the other concep scheme, so not exactly the same. "@en ;
