@@ -63,8 +63,8 @@ Een bron(document) heeft niet één definitieve taalbinding. Dit komt omdat er v
 | bronhouder                             | [prov:qualifiedAttribution](http://www.w3.org/ns/prov#qualifiedAttribution)         |
 | exemplaar van                          | [isothes:broaderInstantial](http://purl.org/iso25964/skos-thes#broaderInstantial)   |
 | frequentie (uri)                       | [9e7a0595bb35983caae62df27c6f8927](9e7a0595bb35983caae62df27c6f8927)                |
-| heeft breder begrip                    | [skos:broader](http://www.w3.org/2004/02/skos/core#broader)                         |
-| heeft enger begrip                     | [skos:narrower](http://www.w3.org/2004/02/skos/core#narrower)                       |
+| heeft bovenliggend begri               | [skos:broader](http://www.w3.org/2004/02/skos/core#broader)                         |
+| heeft onderliggend begri               | [skos:narrower](http://www.w3.org/2004/02/skos/core#narrower)                       |
 | heeft topbegrip                        | [skos:hasTopConcept](http://www.w3.org/2004/02/skos/core#hasTopConcept)             |
 | historische notitie                    | [skos:historyNote](http://www.w3.org/2004/02/skos/core#historyNote)                 |
 | is generalisatie van                   | [isothes:narrowerGeneric](http://purl.org/iso25964/skos-thes#narrowerGeneric)       |

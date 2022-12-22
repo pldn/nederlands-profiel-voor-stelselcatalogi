@@ -199,25 +199,25 @@ skosapnl:Concept-changeNote
 
 skosapnl:Concept-broadMatch
   a sh:PropertyShape ;
-  rdfs:label "overeenkomstig generieker"@nl ;
+  rdfs:label "overeenkomstig bovenliggend"@nl ;
   sh:class skos:Concept ;
   sh:description
     "skos:broadMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en ,
     "Used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en ;
   sh:disjoint skos:relatedMatch ;
   sh:group skosapnl:MatchingRelationshipsPropertyGroup ;
-  sh:name "overeenkomstig generieker"@nl ;
+  sh:name "overeenkomstig bovenliggend"@nl ;
   sh:order 40 ;
   sh:nodeKind sh:IRI ;
   sh:path skos:broadMatch .
 
 skosapnl:Concept-narrowMatch
   a sh:PropertyShape ;
-  rdfs:label "overeenkomstig specifieker"@nl ;
+  rdfs:label "overeenkomstig onderliggend"@nl ;
   sh:class skos:Concept ;
   sh:disjoint skos:relatedMatch ;
   sh:group skosapnl:MatchingRelationshipsPropertyGroup ;
-  sh:name "overeenkomstig specifieker"@nl ;
+  sh:name "overeenkomstig onderliggend"@nl ;
   sh:order 41 ;
   sh:nodeKind sh:IRI ;
   sh:path skos:broadMatch .
@@ -230,7 +230,7 @@ skosapnl:Concept-broader
     "Relateert een begrip aan een bovenliggend begrip in de hierarchie."@nl ,
     "Relates a concept to a concept that is more general in meaning."@en ;
   sh:group skosapnl:SemanticRelationPropertyGroup ;
-  sh:name "heeft breder begrip"@nl ;
+  sh:name "heeft bovenliggend begrip"@nl ;
   sh:order 20 ;
   sh:nodeKind sh:IRI ;
   sh:path skos:broader .

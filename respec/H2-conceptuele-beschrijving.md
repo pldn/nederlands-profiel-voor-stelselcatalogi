@@ -40,6 +40,15 @@ Begrippen kunnen als zelfstandige entiteiten worden gezien maar veelal worden ze
 | **bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes |
 | **toelichting** | Volgens de SKOS-standaard kan een begrip tot meerdere begrippenkaders behoren. Praktisch gezien kan dit slechts als sprake is van begrippenkaders waarvan de contexten overlappen |
 
+### Gegevensdefinitie begrippenkader
+Een begrippenkader kan beschreven worden aan de hand van verschillende kenmerken. Deze zijn in de volgende tabel weergegeven.
+
+| Conceptueel element | Kardinaliteit | Type       |
+| ------------------- | ------------- | ---------- |
+| [=heeft topbegrip=] | 0..*          | [=begrip=] |
+| [=uitleg=]          | 0..*          | Tekst      |
+| [=label=]           | 1..*          | Tekst      |
+
 ## Begrip
 Begrip is het centrale element in deze specificatie. Begrippen spelen ook een centrale rol in de manier waarop we communiceren en we de wereld om ons heen begrijpen. 
 Een begrip is een conceptuele resource; het zijn de eenheden van denken - ideeën, betekenissen of (categorieën van) objecten en gebeurtenissen. In de communicatiewetenschap wordt hier vaak gerefereerd aan de 'Triange of meaning'. Hier wordt duidelijk dat bij het gebruik van bepaalde termen een spreker en toebehoorder niet noodzakelijk dezelfde gedachte vormen en elkaar dus niet begrijpen. 
@@ -54,6 +63,38 @@ Het hebben van gestandaardiseerde begrippen zorgt ervoor dat iedereen dezelfde t
 | **bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#concepts |
 | **toelichting** | De belangrijkste toepassing voor een thesaurus is het ophalen van informatie, waarbij het doel is om naar begrippen te zoeken. Begrippen worden weergegeven door termen. Elke term in een thesaurus moet een enkel begrip (of denkeenheid) vertegenwoordigen. Begrippen kunnen variëren van eenvoudig (bijv. katten) tot zeer complex (bijv. rassendiscriminatie onder etnische minderheden). Samengestelde termen of zinsdelen zijn over het algemeen nodig om de meer complexe begrippen uit te drukken. |
 
+### Gegevensdefinitie begrip
+Een begrip kan beschreven worden aan de hand van verschillende kenmerken. Deze zijn in de volgende tabel weergegeven. In de volgende hoofdstukken worden deze per usecase verder beschreven.
+
+| Conceptueel element             | Kardinaliteit | Type               |
+| ------------------------------- | ------------- | ------------------ |
+| [=voorkeursterm=]               | 1..*          | Tekst              |
+| [=alternatieve term=]           | 0..*          | Tekst              |
+| [=zoekterm=]                    | 0..*          | Tekst              |
+| [=code=]                        | 0..*          | Tekst              |
+| [=behoort tot=]                 | 1..*          | [=begrippenkader=] |
+| [=definitie=]                   | 1..*          | Tesst              |
+| [=uitleg=]                      | 0..*          | Tesst              |
+| [=bron=]                        | 0..*          | Resource           |
+| [=heeft bovenliggend begrip=]   | 0..*          | [=begrip=]         |
+| [=heeft onderliggend begrip=]   | 0..*          | [=begrip=]         |
+| [=is gerelateerd aan=]          | 0..*          | [=begrip=]         |
+| [=wijzigingsnotitie=]           | 0..*          | Text               |
+| [=redactionele notitie=]        | 0..*          | Text               |
+| [=historie notitie=]            | 0..*          | Text               |
+| [=toelichting=]                 | 0..*          | Text               |
+| [=voorbeeld=]                   | 0..*          | Text               |
+| [=overeenkomstig bovenliggend=] | 0..*          | [=begrip=]         |
+| [=overeenkomstig onderliggend=] | 0..*          | [=begrip=]         |
+| [=vrijwel overeenkomstig=]      | 0..*          | [=begrip=]         |
+| [=exact overeenkomstig=]        | 0..*          | [=begrip=]         |
+| [=overeenkomstig verwant=]      | 0..*          | [=begrip=]         |
+| [=is specialisatie van=]        | 0..*          | [=begrip=]         |
+| [=is generalisatie van=]        | 0..*          | [=begrip=]         |
+| [=is onderdeel van=]            | 0..*          | [=begrip=]         |
+| [=omvat=]                       | 0..*          | [=begrip=]         |
+| [=is exemplaar van=]            | 0..*          | [=begrip=]         |
+| [=is categorie van=]            | 0..*          | [=begrip=]         |
 
 ### Begrippenlijst
 Aan de hand van de begripsdriehoek, zien we dat om een spreker te kunnen begrijpen, een toebehoorder minimaal iets moeten weten over de betekenis en de termen die ter aanduiding gebruikt worden.
@@ -392,6 +433,14 @@ Het maakt het mogelijk om begrippen te groepen op een manier die haaks staat op 
 | **definitie**        | Relateert een collectie aan een begrip of een collectie van begrippen dat onderdeel is van deze collectie |
 | **bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/skos-reference/#collections |
 
+### Gegevensdefinitie Collectie
+Een collectie kan beschreven worden aan de hand van verschillende kenmerken. Deze zijn in de volgende tabel weergegeven.
+
+| Conceptueel element | Kardinaliteit | Type                        |
+| ------------------- | ------------- | --------------------------- |
+| [=label=]           | 1..*          | Tekst                       |
+| [=bevat=]           | 0..*          | [=begrip=] of [=collectie=] |
+
 ## Bron
 
 Een [=bron=] is een document waaruit de betekenis van het begrip is afgeleid.
@@ -438,8 +487,16 @@ De bron kan een heel document of een fragment daarvan zijn, denk aan een boek, e
 | **bron** | http://purl.org/dc/terms/ |
 | **toelichting** | Met soort kan bijvoorbeeld aangegeven worden of het een &#39;geschreven bron&#39; of een &#39;web resource&#39; is.  |
 
+### Gegevensdefinitie Bron
+Een bron kan beschreven worden aan de hand van verschillende kenmerken. Deze zijn in de volgende tabel weergegeven.
 
-
+| Conceptueel element | Kardinaliteit | Type         |
+| ------------------- | ------------- | ------------ |
+| [=uitleg=]          | 0..*          | Tekst        |
+| [=url=]             | 0..*          | Url          |
+| [=soort=]           | 0..*          | [=begrip=]   |
+| [=label=]           | 1..*          | Tekst        |
+| [=citeertitel=]     | 0..*          | Tekst        |
 
 ## Metadata 
 ### Begrippenkader
