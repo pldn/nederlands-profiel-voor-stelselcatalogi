@@ -17,15 +17,17 @@ begkr-nps:BegrippenkaderNPS
     beg-nps:Concept ,
     beg-nps:Collection ,
     beg-nps:Member ,
-    beg-nps:Term ,
-    beg-nps:SemantischeRelatie ,
+    beg-nps:Label ,
+    beg-nps:SemanticRelation ,
     beg-nps:InScheme ,
     beg-nps:Notation ,
     beg-nps:Note ,
     beg-nps:Source ,
+    beg-nps:Resource ,
     beg-nps:Type ,
     beg-nps:Page ,
-    beg-nps:BibliographicCitation;
+    beg-nps:BibliographicCitation ,
+    beg-nps:TopConcept ;
   rdfs:label "Begrippenkader Nederlands Profiel voor Stelselcatalogi"@nl .
 
 # BEGRIPPEN IN DIT BEGRIPPENKADER
@@ -35,128 +37,105 @@ begkr-nps:BegrippenkaderNPS
 #begrip
 beg-nps:Concept
   a skos:Concept ;
-  skos:related
-    beg-nps:HiddenLabel ,
-    beg-nps:Broader ,
-    beg-nps:Notation ,
-    beg-nps:ScopeNote ,
-    beg-nps:Source ,
-    beg-nps:InScheme ,
-    beg-nps:RelatedMatch ,
-    beg-nps:Comment ,
-    beg-nps:Definition ,
-    beg-nps:BroaderPartitive ,
-    beg-nps:Related ,
-    beg-nps:BroadMatch ,
-    beg-nps:PrefLabel ,
-    beg-nps:EditorialNote ,
-    beg-nps:BroaderInstantial ,
-    beg-nps:ExactMatch ,
-    beg-nps:BroaderGeneric ,
-    beg-nps:CloseMatch ,
-    beg-nps:AltLabel ;
-  dct:source
-    skos: ,
-    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
-    <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#concepts> ;
   skos:prefLabel
     "concept"@en ,
     "begrip"@nl ;
   skos:definition
-    "Concepten zijn de eenheden van denken - ideeën, betekenissen of (categorieën van) objecten en gebeurtenissen - die ten grondslag liggen aan veel kennisorganisatiesystemen."@nl ,
-    "Concepts are the units of thought —ideas, meanings, or (categories of) objects and events— which underlie many knowledge organization systems."@en ;
+    "Een begrip is een eenheid van denken - idee, betekenis of (categorie van) objecten en gebeurtenissen - die ten grondslag ligt aan veel kennisorganisatiesystemen."@nl ,
+    "A concept is a unit of thought —idea, meaning, or (categorys of) objects and events— that underlies many knowledge organization systems."@en ;
   skos:scopeNote
     "The prime application for a thesaurus is in information retrieval, where the aim is to search for concepts. Concepts are represented by terms. Each term included in a thesaurus should represent a single concept (or unit of thought). Concepts can range from the simple (e.g. cats) to the very complex (e.g. racial discrimination among ethnic minorities). Compound terms or phrases are generally needed to express the more complex concepts."@en ,
     "De belangrijkste toepassing voor een thesaurus is het ophalen van informatie, waarbij het doel is om naar begrippen te zoeken. Begrippen worden weergegeven door termen. Elke term in een thesaurus moet een enkel begrip (of denkeenheid) vertegenwoordigen. Begrippen kunnen variëren van eenvoudig (bijv. katten) tot zeer complex (bijv. rassendiscriminatie onder etnische minderheden). Samengestelde termen of zinsdelen zijn over het algemeen nodig om de meer complexe begrippen uit te drukken."@nl ;
+  dct:source
+    skos: ,
+    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
+    <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#concepts> ;
   skos:inScheme begkr-nps:BegrippenkaderNPS .
 
 #alternatieve term
   beg-nps:AltLabel
   a skos:Concept ;
-  skos:example
-    "Acroniemen, afkortingen, spellingsvarianten en onregelmatige meervouds-/enkelvoudsvormen kunnen worden opgenomen in de alternatieve termen voor een concept. Verkeerd gespelde termen worden normaal gesproken als verborgen labels opgenomen (zie   skos:hiddenLabel)."@nl ,
-    "Acronyms, abbreviations, spelling variants, and irregular plural/singular forms may be included among the alternative labels for a concept. Mis-spelled terms are normally included as hidden labels (see skos:hiddenLabel)."@en ;
   skos:prefLabel
     "alternatieve term"@nl ,
     "alternative label"@en ;
+  skos:notation "UF" ;
+  skos:definition
+    "An alternative lexical label for a resource."@en ,
+    "Een alternatieve term voor een begrip is een term die gebruikt kan worden als alternatief voor de voorkeursterm van dit begrip, maar niet de voorkeur heeft."@nl ;
+  skos:scopeNote 
+    "Afkortingen en hun volledige vormen kunnen als synoniemen worden behandeld."@nl,
+    "Abbreviations and their full forms can be treated as synonyms."@en;
+  skos:example
+    "Acroniemen, afkortingen, spellingsvarianten en onregelmatige meervouds-/enkelvoudsvormen kunnen worden opgenomen in de alternatieve termen voor een concept. Verkeerd gespelde termen worden normaal gesproken als verborgen labels opgenomen (zie skos:hiddenLabel)."@nl ,
+    "Acronyms, abbreviations, spelling variants, and irregular plural/singular forms may be included among the alternative labels for a concept. Mis-spelled terms are normally included as hidden labels (see skos:hiddenLabel)."@en ;
   dct:source
     <https://www.w3.org/TR/skos-reference/#labels> ,
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skos: ;
-  skos:related
-    beg-nps:Concept ,
-    beg-nps:PrefLabel ;
-  skos:definition
-    "An alternative lexical label for a resource."@en ,
-    "Een alternatieve term voor een begrip is een term die gebruikt kan worden als alternatief voor de voorkeursterm van dit begrip, maar niet de voorkeur heeft."@nl ;
-  skos:broader beg-nps:Term ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:scopeNote 
-    "Afkortingen en hun volledige vormen kunnen als synoniemen worden behandeld."@nl,
-    "Abbreviations and their full forms can be treated as synonyms."@en;
-  skos:notation "UF"@nl, "UF"@en .
+  skos:related beg-nps:Concept ;
+  skos:broader beg-nps:Label ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS.
 
-#behoort tot schema
+#behoort tot
 beg-nps:InScheme
   a skos:Concept ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+  skos:prefLabel
+    "is in scheme"@en ,
+    "behoort tot"@nl ;
   skos:definition
-    "Relateert een begrip tot het begrippenkader waartoe het behoort"@nl ,
-    "Relates a resource (for example a concept) to a concept scheme in which it is included."@en ;
-  dct:source
+    "Behoort tot relateert een begrip tot het begrippenkader waartoe het behoort"@nl ,
+    "Is in scheme relates a resource (for example a concept) to a concept scheme in which it is included."@en ;
+   skos:scopeNote
+    "According to the SKOS-standard, concepts can be linked to multipe conceptscheme. Practically, this can only be the case when conceptschemes overlap in terms of scope."@en ,
+    "Volgens de SKOS-standaard kan een begrip tot meerdere begrippenkaders behoren. Praktisch gezien kan dit slechts als sprake is van begrippenkaders waarvan de contexten overlappen"@nl;
+   dct:source
     skos: ,
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> ;
-  skos:prefLabel
-    "is in scheme"@en ,
-    "behoort tot schema"@nl ;
   skos:related beg-nps:Concept ;
-  skos:scopeNote
-    "According to the SKOS-standard, concepts can be linked to multipe conceptscheme. Practically, this can only be the case when conceptschemes overlap in terms of scope."@en ,
-    "Volgens de SKOS-standaard kan een begrip tot meerdere begrippenkaders behoren. Praktisch gezien kan dit slechts als sprake is van begrippenkaders waarvan de contexten overlappen"@nl .
+  skos:inScheme begkr-nps:BegrippenkaderNPS.
 
 #bron
 beg-nps:Source
   a skos:Concept ;
-  skos:definition
-    "Een bron is een document waaruit de betekenis van een begrip is afgeleid."@nl ,
-    "A source is a document from which a described concept is derived."@en ;
-  dct:source
-    dct: ,
-    foaf: ,
-    <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source> ;
   skos:prefLabel
     "source"@en ,
     "bron"@nl ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
   skos:altLabel 
     "herkomst"@nl ,
     "bronverwijzing"@nl ,
     "brondocument"@nl ,
     "bibliographic resource"@en ;
+  skos:definition
+    "Een bron is een document of resource op het web waaruit de betekenis van een begrip is afgeleid."@nl ,
+    "A source is a document or web resource from which a described concept is derived."@en ;
   skos:scopeNote 
     "De bron kan een geschreven bron zijn of een resource op het web. Aanbevolen best practice is om de bron te beschrijven door middel van een tekenreeks die voldoet aan een formeel identificatiesysteem. Bij een resource op het web is ook de uri van die bron relevant. Om zowel naar een geschreven bron als naar een bron op het web (vaak zonder gestandaardiseerde beschrijving) te verwijzen wordt hier verwezen naar een eigen resource, die zowel een gestandaardiseerde beschrijving als een verwijzing naar de eigenlijke bron bevat."@nl,
     "The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."@en ;
-  skos:related beg-nps:Concept .
+  dct:source
+    dct: ,
+    foaf: ,
+    <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source> ;
+  skos:related beg-nps:Concept;
+  skos:inScheme begkr-nps:BegrippenkaderNPS.
 
 #code
 beg-nps:Notation
   a skos:Concept ;
-  dct:source
-    skos: ,
-    <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notations> ,
-    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
-  skos:definition
-    "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme."@en ,
-    "Een code voor een begrip is een tekenreeks ter aanduiding van precies éénn begrip uit een begrippenkader."@nl ;
-  skos:altLabel
-    "notatie"@nl ,
-    "classificatiecode"@nl ;
-  skos:related beg-nps:Concept ;
   skos:prefLabel
     "code"@nl ,
     "notation"@en;
-  skos:notation "CC"@nl, "CC"@en.
+  skos:altLabel
+    "notatie"@nl ,
+    "classificatiecode"@nl ;
+  skos:notation "CC" ;
+  skos:definition
+    "A notation, also known as classification code, is a string of characters used to uniquely identify a concept within the scope of a given concept scheme."@en ,
+    "Een code voor een begrip is een tekenreeks ter aanduiding van precies één begrip uit een begrippenkader."@nl ;
+  skos:scopeNote
+    "Some concept schemes, for example classification systems such as the Universal Decimal Classification (UDC), use notations (or captions) as the primary means of access to the concepts they contain. Notations are symbols which are not normally recognizable as words or sequences of words in any natural language and are thus usable independently of natural-language contexts. They are typically composed of digits, complemented with punctuation signs and other characters."@en,
+    "Sommige begrippenkaders, bijvoorbeeld classificatiesystemen zoals de Universal Decimal Classification (UDC), gebruiken codes (of bijschriften) als primair middel om toegang te krijgen tot de concepten die ze bevatten. Codes zijn symbolen die normaal gesproken niet herkenbaar zijn als woorden of woordreeksen in een natuurlijke taal en die dus onafhankelijk van natuurlijke taalcontexten kunnen worden gebruikt. Ze zijn meestal samengesteld uit cijfers, aangevuld met leestekens en andere tekens."@nl;
+  skos:inScheme begkr-nps:BegrippenkaderNPS.
 
 #definitie
 beg-nps:Definition
@@ -164,190 +143,184 @@ beg-nps:Definition
   skos:prefLabel
     "definition"@en ,
     "definitie"@nl ;
-  skos:editorialNote "De ISO11179 is gevolgd bij het opstellen van de Nederlandse definitie en niet de SKOS definitie vanwege de verwarring die kan optreden m.b.t. 'formele uitleg': dit laatste zou je eerder bij een ontologie verwachten."@nl ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+  skos:notation "DEF" ;
   skos:definition
-    "SKOS: A statement or formal explanation of the meaning of a concept. ISO11179: Representation of a concept by a descriptive statement which serves to differentiate it from related concepts."@en ,
-    "Een definitie van een begrip is een tekstuele beschrijving van de betekenis van dit begrip waarmee het begrip kan worden onderscheiden van andere begrippen."@nl ;
-  skos:broader beg-nps:Note ;
-  skos:related beg-nps:Concept ;
-  skos:scopeNote "De definitie dient te voldoen aan specifieke formuleringsregels voor definitie en dient in een voor mensen leesbare taal te begrijpen zijn. In dit laatste onderscheid de definitie zich daarmee van een machine-leesbare formele beschrijving. Aan de hand van een definitie kan iemand bepalen of zijn eigen begrip behorende bij een term overeenkomt met het begrip dat gedefinieerd wordt. De uitleg of de toelichting bij een begrip kan gebruik worden voor iemand die het begrip nog niet kent om te begrijpen waar het over gaat."@nl ;
+    "A definition is a statement or formal explanation of the meaning of a concept which serves to differentiate it from related concepts."@en ,
+    "Een definitie is een verwoording van de betekenis van een begrip waarmee het begrip kan worden onderscheiden van andere begrippen."@nl ;
+   skos:scopeNote 
+    "De definitie dient te voldoen aan specifieke formuleringsregels voor definitie en dient in een voor mensen leesbare taal te begrijpen zijn. In dit laatste onderscheid de definitie zich daarmee van een machine-leesbare formele beschrijving. Aan de hand van een definitie kan iemand bepalen of zijn eigen begrip behorende bij een term overeenkomt met het begrip dat gedefinieerd wordt. De uitleg of de toelichting bij een begrip kan gebruik worden voor iemand die het begrip nog niet kent om te begrijpen waar het over gaat."@nl ;
+  skos:editorialNote 
+    "De ISO11179 is gevolgd bij het opstellen van de Nederlandse definitie en niet de SKOS definitie vanwege de verwarring die kan optreden m.b.t. 'formele uitleg': dit laatste zou je eerder bij een ontologie verwachten."@nl ;
   dct:source
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skos: ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes>; 
- skos:notation "DEF"@nl, "DEF"@en.
+  skos:broader beg-nps:Note ;
+  skos:related beg-nps:Concept ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS.
 
 #exact overeenkomstig
 beg-nps:ExactMatch
   a skos:Concept ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:related beg-nps:Concept ;
   skos:prefLabel
     "has exact match"@en ,
     "exact overeenkomstig"@nl ;
   skos:definition
-    "Relateert een begrip aan een overeenkomstig begrip uit een ander begrippenkader, waarbij de betekenis van deze begrippen bij uiteenlopende toepassingen gelijk aan elkaar kan worden verondersteld"@nl ,
-    "skos:exactMatch is used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. skos:exactMatch is a transitive property, and is a sub-property of skos:closeMatch."@en ;
-  skos:scopeNote "Een dergelijke relatie is aanwezig als de betekenis van het betreffende begrip gelijk wordt verondersteld aan het begrip uit het andere begrippenkader. Het is een 'leenwoord': het begrip is overgenomen uit het andere begrippenkader."@nl ;
+    "Exact overeenkokmstig relateert een begrip aan een overeenkomstig begrip uit een ander begrippenkader, waarbij de betekenis van deze begrippen bij uiteenlopende toepassingen gelijk aan elkaar kan worden verondersteld"@nl ,
+    "Exact match is used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. Exact match is a transitive property."@en ;
+  skos:scopeNote 
+    "Een dergelijke relatie is aanwezig als de betekenis van het betreffende begrip gelijk is aan de betekenis van het begrip uit het andere begrippenkader. Het begrip kan ook een 'leenwoord' zijn, dat wil zeggen dat het begrip is overgenomen uit het andere begrippenkader."@nl,
+    "Such a relationship is present if the meaning of the term in question is the same as the meaning of the term from the other concep scheme. The concept can also be a 'loan word', i.e. it has been taken over from the other concept scheme."@en ;
   dct:source
     <https://www.w3.org/TR/skos-reference/#mapping> ,
     skos: ;
-  skos:broader beg-nps:Harmonisatierelatie .
-
-#gedefinieerd in - deze vind ik (Arjen) dubieus. We hebben hier nog niet goed over gesproken. Ik zie ook good practices waarbij dit wordt gebruikt om te verwijzen naar de originele definitie, zoals wij hier bron gebruiken.
-#beg-nps:isDefinedBy
-#  a skos:Concept ;
-#  skos:definition
-#    "The defininition of the subject resource."@en ,
-#    "Geeft aan welke resource het onderwerp definieert."@nl ;
-#  skos:prefLabel
-#    "is defined by"@en ,
-#    "gedefinieerd in"@nl ;
-#  rdfs:label "isDefinedBy"@en ;
-#  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-#  skos:related beg-nps:Concept ;
-#  dct:source
-#    <https://www.w3.org/TR/rdf-schema/#ch_isdefinedby> ,
-#    rdfs: .
+  skos:related beg-nps:Concept ;
+  skos:broader beg-nps:MatchingRelation;
+  skos:inScheme begkr-nps:BegrippenkaderNPS.
 
 #harmonisatierelatie
-beg-nps:Harmonisatierelatie
+beg-nps:MatchingRelation
   a skos:Concept ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:definition
-    "Relateert een begrip aan een overeenkomstig begrip uit een ander begrippenkader, op basis van de betekenis."@nl ,
-    "Relates two concepts coming, by convention, from different schemes, and that have comparable meanings"@en ;
-  skos:broader beg-nps:SemantischeRelatie ;
   skos:prefLabel
     "harmonisatierelatie"@nl ,
     "is in mapping relation with"@en ;
-  dct:source <https://www.w3.org/TR/skos-reference/#mapping> ,
+  skos:definition
+    "Een harmonisatierelatie relateert een begrip aan een overeenkomstig begrip uit een ander begrippenkader, op basis van de betekenis."@nl ,
+    "Is in mapping relation with relates two concepts coming, by convention, from different schemes, and that have comparable meanings"@en ;
+  skos:scopeNote "Dit is een hulpbegrip om de 5 harmonisatierelaties met begrippen in externe begrippenkaders samen te kunnen nemen. De bedoeling is om een van deze 5 relaties te gebruiken bij het relateren van een begrip aan een begrip uit een aander begrippenkader. Het gaat niet zozeer om het harmoniseren in de zin dat iedereen dezelfde term voor een concept moet gebruiken, maar om inzichtelijk te maken hoe het concept samenhangt met concepten in andere contexten."@nl,
+    "This is an auxiliary concept for combining the 5 harmonization relations with concepts in external concept schemes. The intention is to use one of these 5 relations when relating a concept to a concept from another concept schemek. It is not so much about harmonizing in the sense that everyone has to use the same term for a concept, but to provide insight into how the concept relates to concepts in other contexts."@en;
+  dct:source 
+    <https://www.w3.org/TR/skos-reference/#mapping> ,
     skos: ;
-  skos:scopeNote "Het gaat niet zozeer om het harmoniseren in de zin dat iedereen dezelfde term voor een concept moet gebruiken, maar om inzichtelijk te maken hoe het concept samenhangt met concepten in andere contexten."@nl .
+  skos:broader beg-nps:SemanticRelation ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS.
 
-#heeft breder begrip
+#heeft bovenliggend begrip
 beg-nps:Broader
   a skos:Concept ;
-  skos:broader beg-nps:SemantischeRelatie ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:related
-    beg-nps:Taxonomy ,
-    beg-nps:Concept ;
-  skos:definition
-    "Relates a concept to a concept that is more general in meaning."@en ,
-    "Relateert een begrip aan een bovenliggend begrip in de hierarchie."@nl ;
   skos:prefLabel
-    "heeft breder begrip"@nl ,
+    "heeft bovenliggend begrip"@nl ,
     "has broader"@en ;
+  skos:altLabel "heeft breder begrip"@nl ;
+  skos:notation "BT" ;
+  skos:definition
+    "Has broader relates a concept to a concept that is more general in meaning."@en ,
+    "Heeft bovenliggend begrip relateert een begrip aan een bovenliggend begrip in de hiërarchie."@nl ;
+  skos:scopeNote 
+    "Conventie is om heeft bovenliggend begrip alleen te gebruiken om een ​​directe hiërarchische link tussen twee concepten te beschrijven."@nl, 
+    "By convention, has broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."@en;
   dct:source
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     <https://www.w3.org/TR/skos-reference/#semantic-relations> ,
     skos: ;
-  skos:scopeNote 
-    "Conventie is om heeft breder begrip alleen te gebruiken gebruikt om een ​​onmiddellijke (d.w.z. directe) hiërarchische link tussen twee concepten te beschrijven."@nl, 
-    "By convention, has broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."@en;
- skos:notation "BT"@nl, "BT"@en.
+  skos:related beg-nps:Concept ;
+  skos:broader beg-nps:SemanticRelation ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS.
 
-#heeft enger begrip
+#heeft onderliggend begrip
 beg-nps:Narrower
   a skos:Concept ;
+  skos:prefLabel
+    "heeft onderliggend begrip"@nl ,
+    "has narrower"@en ;
+  skos:altLabel "heeft enger begrip"@nl ;
+  skos:notation "NT" ;
   skos:definition
-    "Relates a concept to a concept that is more specific in meaning."@en ,
-    "Relateert een concept aan een ander concept die meer specifiek in betekenis is."@nl ;
+    "Has narrower relates a concept to a concept that is more specific in meaning."@en ,
+    "Heeft onderliggend begrip relateert een begrip aan onderliggend begrip in de hiërarchie."@nl ;
+  skos:scopeNote
+    "Conventie is om heeft onderliggend begrip alleen te gebruiken om een directe hiërarchische link tussen twee concepten te beschrijven."@nl, 
+    "By convention, has narrower is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."@en ;
   dct:source
     <https://www.w3.org/TR/skos-reference/#semantic-relations> ,
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skos: ;
-  skos:related
-    beg-nps:Concept ,
-    beg-nps:Taxonomy ;
-  skos:scopeNote
-    "Conventie is om heeft enger begrip alleen te gebruiken gebruikt om een ​​onmiddellijke (d.w.z. directe) hiërarchische link tussen twee concepten te beschrijven."@nl, 
-    "By convention, has narrower is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."@en ;
-  skos:prefLabel
-    "heeft enger begrip"@nl ,
-    "has narrower"@en ;
-  skos:broader beg-nps:SemantischeRelatie ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:notation "NT"@nl, "NT"@en.
+  skos:related beg-nps:Concept ;
+  skos:broader beg-nps:SemanticRelation ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS.
 
 
 #historische notitie
 beg-nps:HistoryNote
   a skos:Concept ;
-  skos:definition
-    "Notitie over de voormalige status/gebruik/betekenis van het concept."@nl ,
-    "A note about the past state/use/meaning of a concept."@en ;
-  skos:broader beg-nps:Note ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
   skos:prefLabel
     "history note"@en ,
-    "historische notitie"@nl ;
+    "historie notitie"@nl ;
+  skos:notation "HN" ;
+  skos:definition
+    "Een historie notitie is een notitie over de voormalige status/gebruik/betekenis van het concept."@nl ,
+    "A history note is a note about the past state/use/meaning of a concept."@en ;
+  skos:scopeNote 
+    "A history note should be used when a new preferred term is added to the thesaurus or a change is made to an existing term that affects the concept's scope in different periods of application. While it is possible to include such information in the scope note, a separate history note is preferable. A history note may record the date of introduction, or it may give more complex advice on how to search for the concept in earlier or later times."@en,
+    "Een historie notitie wordt gebruikt wanneer een nieuw begrip wordt toegevoegd aan het begrippenkader of wanneer er een wijziging wordt aangebracht in de beschrijving van een bestaand begrip die van invloed is op de reikwijdte van het begrip in verschillende toepassingsperioden. Hoewel het mogelijk is om dergelijke informatie in de toelichting op te nemen, heeft een aparte hisotirsche notitie de voorkeur. Deze kan kan de datum van introductie vermelden, of het kan meer complexe informatie geven over hoe te zoeken naar het begrip op een eerder of later tijdstip."@nl; 
   dct:source
     skos: ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes>;
-  skos:scopeNote 
-    "A history note may apply to a single preferred or non-preferred term, or to a concept. It should be used when a new preferred term is added to the thesaurus or a change is made to an existing term that affects the concept's scope in different periods of application. While it is possible to include such information in the scope note, a separate history note is preferable. A history note may record the date of introduction, or it may give more complex advice on how to search for the concept in earlier or later times."@en,
-    "Een historische notitie wordt gebruikt wanneer een nieuwe voorkeursterm wordt toegevoegd aan het begrippenkader of wanneer er een wijziging wordt aangebracht in een bestaande term die van invloed is op de reikwijdte van het concept in verschillende toepassingsperioden. Hoewel het mogelijk is om dergelijke informatie in de toelichting op te nemen, heeft een aparte hisotirsche notitie de voorkeur. Deze kan kan de datum van introductie vermelden, of het kan meer complexe informatie geven over hoe te zoeken naar het concept op een eerder of later tijdstip."@nl; 
-  skos:notation "HN"@nl, "HN"@en.
+  skos:broader beg-nps:Note ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS.
 
 #is categorie van
 beg-nps:NarrowerInstantial
   a skos:Concept ;
-  skos:broader beg-nps:Narrower ;
-  skos:related
-    beg-nps:Thesaurus ,
-    beg-nps:Concept ;
-  skos:definition
-    "Relateert een begrip, de categorie, aan een begrip dat exemplarisch is voor eerstgenoemde begrip."@nl ,
-    "The immediate (direct or one-step) class - instance relationship."@en ;
   skos:prefLabel
     "narrower term (instantial)"@en ,
     "is categorie van"@nl ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+  skos:notation "NTI" ;
+  skos:definition
+    "Is categorie van relateert een begrip, de categorie, aan een begrip dat exemplarisch is voor eerstgenoemde begrip."@nl ,
+    "Narrower term (instantial) is the immediate (direct or one-step) class - instance relationship."@en ;
+  skos:scopeNote
+    "De hiërarchische geheel-deel-relatie omvat een beperkt aantal situaties waarin een deel van een entiteit of systeem uniek behoort tot een bepaald bezittend geheel. Dit geldt voor vier hoofdklassen van termen: systemen en organen van het lichaam, geografische locaties, disciplines of onderzoeksgebieden en hiërarchische sociale structuren. De meeste andere gevallen van de geheel-deelrelatie komen niet in aanmerking voor een hiërarchische koppeling omdat het deel tot meer dan één geheel kan behoren."@nl,
+    "The hierarchical whole-part relationship covers a limited range of situations in which a part of an entity or system belongs uniquely to a particular possessing whole. This applies to four main classes of terms: systems and organs of the body, geographical locations, disciplines or fields of discourse and hierarchical social structures. Most other cases of the whole-part relationship are not eligible for a hierarchical linkage because the part could belong to more than one whole."@en;
   dct:source
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skosthes: ;
+  skos:broader beg-nps:Narrower ;
+  skos:related beg-nps:Concept ;
   skosthes:broaderGeneric beg-nps:Narrower;
-  skos:notation "NTI"@nl, "NTI"@e .
+  skos:inScheme begkr-nps:BegrippenkaderNPS .
 
 #is exemplaar van
 beg-nps:BroaderInstantial
   a skos:Concept ;
-  dct:source
-    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
-    skosthes: ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:definition
-    "The immediate (direct or one-step) instance - class relationship."@en ,
-    "Relateert een begrip, een exemplaar, aan een ander begrip, de categorie, waartoe eerstgenoemde begrip behoort."@nl ;
-  skos:related beg-nps:Thesaurus ,
-    beg-nps:Concept ;
   skos:prefLabel
     "is exemplaar van"@nl ,
     "broader term (instantial)"@en ;
+  skos:notation "BTI" ;
+  skos:definition
+    "Broader term (instantial) is the immediate (direct or one-step) instance - class relationship."@en ,
+    "Is exemplaar van relateert een begrip, een exemplaar, aan een ander begrip, de categorie, waartoe eerstgenoemde begrip behoort."@nl ;
+    skos:scopeNote
+    "De hiërarchische geheel-deel-relatie omvat een beperkt aantal situaties waarin een deel van een entiteit of systeem uniek behoort tot een bepaald bezittend geheel. Dit geldt voor vier hoofdklassen van termen: systemen en organen van het lichaam, geografische locaties, disciplines onderzoeksgebieden ofhiërarchische sociale structuren. De meeste andere gevallen van de geheel-deelrelatie komen niet in aanmerking voor een hiërarchische koppeling omdat het deel tot meer dan één geheel kan behoren."@nl,
+    "The hierarchical whole-part relationship covers a limited range of situations in which a part of an entity or system belongs uniquely to a particular possessing whole. This applies to four main classes of terms: systems and organs of the body, geographical locations, disciplines or fields of discourse and hierarchical social structures. Most other cases of the whole-part relationship are not eligible for a hierarchical linkage because the part could belong to more than one whole."@en;
+  dct:source
+    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
+    skosthes: ;
+skos:related beg-nps:Concept ;
   skos:broader beg-nps:Broader ;
-  skosthes:broaderGeneric beg-nps:Broader .
+  skosthes:broaderGeneric beg-nps:Broader;
+  skos:inScheme begkr-nps:BegrippenkaderNPS .
 
 #is generalisatie van
 beg-nps:NarrowerGeneric
   a skos:Concept ;
-  skos:definition
-    "The immediate (direct or one-step) class - specialized class relationship."@en ,
-    "Relateert een begrip aan een meer specifieker begrip."@nl ;
-  skos:related
-    beg-nps:Concept ,
-    beg-nps:Thesaurus ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
   skos:prefLabel
     "is generalisatie van"@nl ,
     "broader term (generic)"@en ;
-  skosthes:broaderGeneric beg-nps:Narrower ;
-  skos:broader beg-nps:Narrower ;
+  skos:notation "BTG" ;
+  skos:definition
+    "Broader term (generic) is the immediate (direct or one-step) class - specialized class relationship."@en ,
+    "Is generalisatie van relateert een begrip aan een specifieker begrip."@nl ;
+  skos:scopeNote
+    "The hierarchical relationship should be established between a pair of concepts when the scope of one of them falls completely within the scope of the other. It should be based on degrees or levels of superordination and subordination, where the superordinate concept represents a class or whole, and subordinate concepts refer to its members or species. A generalization is used when it is relevant to distinguish the relation from a partial or instantaneous hierarchical relation."@en,
+    "De hiërarchische relatie tussen een paar begrippen wordt gebruikt wanneer de reikwijdte van het ene begrip volledig binnen de reikwijdte van het andere begrip valt. Deze relatie is gebaseerd op op graden of niveaus van bovenliggend en onderliggend, waarbij het bovenliggende concept een klasse of geheel vertegenwoordigt, en onderliggende concepten verwijzen naar haar leden of soorten. Een generalisatie wordt gebruikt wanneer het relevant is om deze relatie te onderscheiden van een partiële of instantiële hiërarchische relatie."@nl;
   dct:source
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
-    skosthes: .
+    skosthes: ;
+  skos:related beg-nps:Concept ;
+  skosthes:broaderGeneric beg-nps:Narrower ;
+  skos:broader beg-nps:Narrower ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS .
 
 #is gerelateerd aan
 beg-nps:Related
@@ -355,373 +328,424 @@ beg-nps:Related
   skos:prefLabel
     "has related"@en ,
     "is gerelateerd aan"@nl ;
-  skos:broader beg-nps:SemantischeRelatie ;
+  skos:notation "RT" ;
+  skos:definition
+    "Is gerelateerd aan is een relatie waarmee een begrip aan een andere begrip verbonden kan worden waarmee het semantisch samenhangt."@nl ,
+    "Relates a concept to a concept with which there is an associative semantic relationship."@en ;
+  skos:scopeNote 
+    "De associatieve relatie omvat associaties tussen paren begrippen die niet hiërarchisch met elkaar verbonden zijn, maar semantisch of conceptueel zodanig geassocieerd zijn dat de link ertussen expliciet gemaakt moet worden, omdat het aanvullende of alternatieve termen kan suggereren die kunnen worden gebruikt bij het indexeren of vinden van een begrip."@nl,
+    "The associative relationship covers associations between pairs of concepts that are not related hierarchically, but are semantically or conceptually associated to such an extent that the link between them needs to be made explicit, on the grounds that it may suggest additional or alternative terms for use in indexing or retrieval."@en;
+  skos:broader beg-nps:SemanticRelation ;
   dct:source
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     <https://www.w3.org/TR/skos-reference/#semantic-relations> ,
     skos: ;
-  skos:definition
-    "Relateert een begrip aan een andere begrip waarmee het semantisch samenhangt"@nl ,
-    "Relates a concept to a concept with which there is an associative semantic relationship."@en ;
-  skos:scopeNote "Het begrip is voor zijn betekenis afhankelijk van de betekenis van het andere begrip. Dit betekent dat in de definitie van eerstgenoemde begrip het andere begrip wordt gebruikt."@nl ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:related
-    beg-nps:Concept ,
-    beg-nps:Thesaurus .
+  skos:related beg-nps:Concept ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS .
 
 #is onderdeel van
 beg-nps:BroaderPartitive
   a skos:Concept ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:scopeNote "A \"bicycle wheel\" for instance belongs uniquely to a \"bicycle\" while a \"wheel\" does not. A broader partitive relationship should not be established between \"bicycles\" and \"wheels\" because a wheel could be part of a motor car, a wheelbarrow or one of many other artefacts."@en ;
   skos:prefLabel
     "is onderdeel van"@nl ,
     "broader term (partitive)"@en ;
-  skos:broader beg-nps:Broader ;
+  skos:notation "BTP" ;
   skos:definition
-    "Relateert een begrip aan een meer omvattend begrip. Voorbeelden van eerstgenoemde begrip zullen onderdeel van voorbeelden van het meer omvattende begrip zijn."@nl ,
-    "When the ISO 25964 standard is followed, the broader partitive relationship should qualify for a transitive closure."@en ;
+    "Is onderdeel van relateert een begrip aan een meer omvattend begrip."@nl ,
+    "Broader term (partitive) relates a concept to a more including concept."@en ;
+  skos:scopeNote
+    "De hiërarchische geheel-deel-relatie omvat een beperkt aantal situaties waarin een deel van een entiteit of systeem uniek behoort tot een bepaald bezittend geheel. Dit geldt voor vier hoofdklassen van termen: systemen en organen van het lichaam, geografische locaties, disciplines onderzoeksgebieden ofhiërarchische sociale structuren. De meeste andere gevallen van de geheel-deelrelatie komen niet in aanmerking voor een hiërarchische koppeling omdat het deel tot meer dan één geheel kan behoren."@nl,
+    "The hierarchical whole-part relationship covers a limited range of situations in which a part of an entity or system belongs uniquely to a particular possessing whole. This applies to four main classes of terms: systems and organs of the body, geographical locations, disciplines or fields of discourse and hierarchical social structures. Most other cases of the whole-part relationship are not eligible for a hierarchical linkage because the part could belong to more than one whole."@en;
   dct:source
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skosthes: ;
   skos:related
     beg-nps:Concept ,
     beg-nps:Thesaurus ;
-  skosthes:broaderGeneric beg-nps:Broader .
+  skos:broader beg-nps:Broader ;
+  skosthes:broaderGeneric beg-nps:Broader ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS .
 
 #is specialisatie van
 beg-nps:BroaderGeneric
   a skos:Concept ;
-  dct:source skosthes: ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:related
-    beg-nps:Concept ,
-    beg-nps:Thesaurus ;
-  skos:definition
-    "Relateert een begrip aan een meer generiek begrip."@nl ,
-    "The immediate (direct or one-step) class - generalized class relationship."@en ;
-  skos:broader beg-nps:Broader ;
   skos:prefLabel
     "broader term (generic)"@en ,
     "is specialisatie van"@nl ;
-  skosthes:broaderGeneric beg-nps:Broader .
+  skos:notation "NTG" ;
+  skos:definition
+    "Is specialisatie van relateert een begrip aan een meer generiek begrip."@nl ,
+    "Broader term (generic)is the immediate (direct or one-step) class - generalized class relationship."@en ;
+  skos:scopeNote
+    "The hierarchical relationship should be established between a pair of concepts when the scope of one of them falls completely within the scope of the other. It should be based on degrees or levels of superordination and subordination, where the superordinate concept represents a class or whole, and subordinate concepts refer to its members or species. A generalization is used when it is relevant to distinguish the relation from a partial or instantaneous hierarchical relation."@en,
+    "De hiërarchische relatie tussen een paar begrippen wordt gebruikt wanneer de reikwijdte van het ene begrip volledig binnen de reikwijdte van het andere begrip valt. Deze relatie is gebaseerd op op graden of niveaus van bovenliggend en onderliggend, waarbij het bovenliggende concept een klasse of geheel vertegenwoordigt, en onderliggende concepten verwijzen naar haar leden of soorten. Een generalisatie wordt gebruikt wanneer het relevant is om deze relatie te onderscheiden van een partiële of instantiële hiërarchische relatie."@nl;
+  dct:source skosthes: ;
+  skos:related beg-nps:Concept ;
+  skos:broader beg-nps:Broader ;
+  skosthes:broaderGeneric beg-nps:Broader;
+  skos:inScheme begkr-nps:BegrippenkaderNPS .
 
 #notitie
 beg-nps:Note
   a skos:Concept ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:definition
-    "Een algemene notitie zonder specifiek gebruiksdoel."@nl ,
-    "A general note, for any purpose."@en ;
-  skos:scopeNote
-    "Notes are used to provide information relating to SKOS concepts. There is no restriction on the nature of this information, e.g., it could be plain text, hypertext, or an image; it could be a definition, information about the scope of a concept, editorial information, or any other type of information."@en ,
-    "This property may be used directly, or as a super-property for more specific note types."@en ;
   skos:prefLabel
     "note"@en ,
     "notitie"@nl ;
+  skos:definition
+    "Een notitie is een algemene notitie zonder specifiek gebruiksdoel."@nl ,
+    "A note is a general note, for any purpose."@en ;
+  skos:scopeNote
+    "his is an umbrella term for the different types of notes (definition, scope note, editorial note) with which a concept can be described. Good practice is to use those specific notes. Notes are used to provide information relating to concepts. There is no restriction on the nature of this information, e.g., it could be plain text, hypertext, or an image; it could be a definition, information about the scope of a concept, editorial information, or any other type of information. This property may be used directly, or as a super-property for more specific note types."@en ,
+    "Dit is een overkoepelend begrip voor de verschillende soorten notites (definitie, toelichting, redactionele notitie) waarmee een begrip kan worden beschreven. Good practice is om die specifieke notites te gebruiken. Notities worden gebruikt om informatie te geven over begrippen. Er is geen beperking op de aard van deze informatie, het kan bijvoorbeeld platte tekst, hypertekst of een afbeelding zijn; het kan een definitie zijn, informatie over de reikwijdte van een concept, redactionele informatie of elk ander type informatie. Deze eigenschap kan direct worden gebruikt, of als een supereigenschap voor meer specifieke notitietypes."@nl ;
   dct:source
     skos: ,
-    <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes> .
+    <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes> ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS.
 
 #omvat
 beg-nps:NarrowerPartitive
   a skos:Concept ;
-  dct:source
-    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
-    skosthes: ;
-  skos:definition
-    "Relateert een begrip aan een minder omvattend begrip. Voorbeelden van eerstgenoemde begrip zullen bestaan uit voorbeelden van het minder omvattende begrip zijn."@nl ,
-    "When the ISO 25964 standard is followed, the narrower partitive relationship should qualify for a transitive closure."@en ;
-  skos:related
-    beg-nps:Thesaurus ,
-    beg-nps:Concept ;
   skos:prefLabel
     "omvat"@nl ,
     "broader term (partitive)"@en ;
+  skos:notation "NTP" ;
+  skos:definition
+    "Omvat relateert een begrip aan een minder omvattend begrip."@nl ,
+    "Broader term (partitive) relates a concept to a less including concept."@en ;
+  skos:scopeNote
+    "De hiërarchische geheel-deel-relatie omvat een beperkt aantal situaties waarin een deel van een entiteit of systeem uniek behoort tot een bepaald bezittend geheel. Dit geldt voor vier hoofdklassen van termen: systemen en organen van het lichaam, geografische locaties, disciplines onderzoeksgebieden ofhiërarchische sociale structuren. De meeste andere gevallen van de geheel-deelrelatie komen niet in aanmerking voor een hiërarchische koppeling omdat het deel tot meer dan één geheel kan behoren."@nl,
+    "The hierarchical whole-part relationship covers a limited range of situations in which a part of an entity or system belongs uniquely to a particular possessing whole. This applies to four main classes of terms: systems and organs of the body, geographical locations, disciplines or fields of discourse and hierarchical social structures. Most other cases of the whole-part relationship are not eligible for a hierarchical linkage because the part could belong to more than one whole."@en;
+  dct:source
+    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
+    skosthes: ;
+  skos:related beg-nps:Concept ;
   skos:broader beg-nps:Narrower ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skosthes:broaderGeneric beg-nps:Narrower ;
-  skos:scopeNote "A \"bicycle wheel\" for instance belongs uniquely to a \"bicycle\" while a \"wheel\" does not. A narrower partitive relationship should not be established between \"bicycles\" and \"wheels\" because a wheel could be part of a motor car,  a wheelbarrow or one of many other artefacts."@en .
+  skosthes:broaderGeneric beg-nps:Narrower;
+  skos:inScheme begkr-nps:BegrippenkaderNPS .
 
-#overeenkomstig generieker
+#overeenkomstig bovenliggend
 beg-nps:BroadMatch
   a skos:Concept ;
+  skos:prefLabel
+    "overeenkomstig bovenliggend"@nl ,
+    "has broader match"@en ;
+  skos:definition
+    "Has broader match is used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en ,
+    "Overeenkomstig bovenliggend relateert een begrip aan een bovenliggend begrip uit een ander begrippenkader"@nl ;
+  skos:scopeNote 
+    "Conventie is om overeenkomstig bovenliggend te gebruiken om een ​​link weer te geven naar een semantisch verwant begrip dat dezelfde bedoelde betekenis heeft als de standaard heeft bovenliggend begrip relatie, maar met een ander toepassingsbereik. Je zou kunnen zeggen dat het in kaart brengen van relaties minder inherent is aan de betekenis van de betreffende begrippen. Vanuit het standpunt van de oorspronkelijke ontwerper van een begrippenkader kunnen ze soms zelfs verkeer zijn.  Harmonisatie eigenschappen zijn nuttig in specifieke toepassingen die meerdere, conceptueel overlappende begrippenkaders gebruiken. Conventie is bovendien dat harmonisatie relaties worden gelegd tussen concepten die tot verschillende conceptschema's behoren."@nl ,
+    "By convention, has broader match is used to represent a link to a semantically related term in another term frame that has the same intended meaning as the standard broader relation, but with a different application scope. One might say that mapping relationships are less inherent to the meaning of the concepts they involve. From the point of view of the original designer of a mapped concept scheme, they might even sometimes be wrong. Mapping properties are expected to be useful in specific applications that use multiple, conceptually overlapping KOSs. By convention, mapping relationships are expected to be asserted between concepts that belong to different concept schemes."@en;
   dct:source
     <https://www.w3.org/TR/skos-reference/#mapping> ,
-    skos: ;
-  skos:broader beg-nps:Harmonisatierelatie ;
-  skos:definition
-    "skos:broadMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en ,
-    "Relateert een begrip aan een generieker begrip uit een ander begrippenkader"@nl ;
-  skos:scopeNote "Een dergelijke relatie is aanwezig als de betekenis van het betreffende begrip tot stand is gekomen op basis van kennis over het begrip uit het andere begrippenkader"@nl ;
+    skos: ,
+    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
+  skos:broader beg-nps:MatchingRelation ;
   skos:related beg-nps:Broader ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:prefLabel
-    "overeenkomstig generieker"@nl ,
-    "has broader match"@en .
+  skos:inScheme begkr-nps:BegrippenkaderNPS .
 
-#overeenkomstig specifieker
+#overeenkomstig onderliggend
 beg-nps:NarrowMatch
   a skos:Concept ;
   skos:prefLabel
     "has narrower match"@en ,
-    "overeenkomstig specifieker"@nl ;
+    "overeenkomstig onderliggend"@nl ;
   skos:definition
-    "skos:narrowMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en ,
-    "Relateert een begrip aan een specifieker begrip uit een ander begrippenkader"@nl ;
+    "Has narrower match is used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en ,
+    "Overeenkomstig onderliggend relateert een begrip aan een specifieker begrip uit een ander begrippenkader"@nl ;
+  skos:scopeNote 
+    "Conventie is om overeenkomstig onderliggend te gebruiken om een ​​link weer te geven naar een begrip dat dezelfde bedoelde betekenis heeft als de standaard heeft onderliggend begrip relatie, maar met een ander toepassingsbereik. Je zou kunnen zeggen dat het in kaart brengen van relaties minder inherent is aan de betekenis van de betreffende begrippen. Vanuit het standpunt van de oorspronkelijke ontwerper van een begrippenkader kunnen ze soms zelfs verkeer zijn. Harmonisatie eigenschappen zijn nuttig in specifieke toepassingen die meerdere, conceptueel overlappende begrippenkaders gebruiken. Conventie is bovendien dat harmonisatie relaties worden gelegd tussen concepten die tot verschillende conceptschema's behoren."@nl ,
+    "By convention, has narrower match is used to represent a link that has the same intended meaning as the standard narrower relation, but with a different application scope. One might say that mapping relationships are less inherent to the meaning of the concepts they involve. From the point of view of the original designer of a mapped concept scheme, they might even sometimes be wrong. Mapping properties are expected to be useful in specific applications that use multiple, conceptually overlapping KOSs. By convention, mapping relationships are expected to be asserted between concepts that belong to different concept schemes."@en;
   dct:source
     <https://www.w3.org/TR/skos-reference/#mapping> ,
-    skos: ;
-  skos:broader beg-nps:Harmonisatierelatie ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:related beg-nps:Narrower .
+    skos: ,
+    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
+  skos:broader beg-nps:MatchingRelation ;
+  skos:related beg-nps:Narrower ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS .
 
 #overeenkomstig verwant
 beg-nps:RelatedMatch
   a skos:Concept ;
-  skos:definition
-    "skos:relatedMatch is used to state an associative mapping link between two conceptual resources in different concept schemes."@en ,
-    "Relateert een begrip aan een verwant begrip uit een ander begrippenkader"@nl ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:broader beg-nps:Harmonisatierelatie ;
-  skos:related beg-nps:Concept ;
   skos:prefLabel
     "has related match"@en ,
     "overeenkomstig verwant"@nl ;
+  skos:definition
+    "Has related match is used to state an associative mapping link between two conceptual resources in different concept schemes."@en ,
+    "Overeenkomstig verwant relateert een begrip aan een verwant begrip uit een ander begrippenkader"@nl ;
+  skos:scopeNote 
+    "Conventie is om overeenkomstig verwant te gebruiken om een ​​link weer te geven naar een begrip dat dezelfde bedoelde betekenis heeft als de standaard is gerelateerd aan relatie, maar met een ander toepassingsbereik. Je zou kunnen zeggen dat het in kaart brengen van relaties minder inherent is aan de betekenis van de betreffende begrippen. Vanuit het standpunt van de oorspronkelijke ontwerper van een begrippenkader kunnen ze soms zelfs verkeer zijn. Harmonisatie eigenschappen zijn nuttig in specifieke toepassingen die meerdere, conceptueel overlappende begrippenkaders gebruiken. Conventie is bovendien dat harmonisatie relaties worden gelegd tussen concepten die tot verschillende conceptschema's behoren."@nl ,
+    "By convention, has related match is used to represent a link that has the same intended meaning as the standard related relation, but with a different application scope. One might say that mapping relationships are less inherent to the meaning of the concepts they involve. From the point of view of the original designer of a mapped concept scheme, they might even sometimes be wrong. Mapping properties are expected to be useful in specific applications that use multiple, conceptually overlapping KOSs. By convention, mapping relationships are expected to be asserted between concepts that belong to different concept schemes."@en;
+  skos:broader beg-nps:MatchingRelation ;
+  skos:related beg-nps:Concept ;
   dct:source
     <https://www.w3.org/TR/skos-reference/#mapping> ,
     skos: ;
-  skos:scopeNote "Een dergelijke relatie is aanwezig als de betekenis van het betreffende begrip tot stand is gekomen op basis van kennis over het begrip uit het andere begrippenkader"@nl .
+  skos:inScheme begkr-nps:BegrippenkaderNPS.
 
-#redactionele opmerking
+#redactionele notitie
 beg-nps:EditorialNote
   a skos:Concept ;
+  skos:prefLabel
+    "redactionele notitie"@nl ,
+    "editorial note"@en ;
+  skos:definition
+    "An editorial note is a note for an editor, translator or maintainer of the vocabulary."@en ,
+    "Een redactionele notitie is een notitie voor de redacteur, vertaler of beheerder van het begrippenkader."@nl ;
+  skos:scopeNote
+    "Editorial notes are useful for entries such as -Review this term after the company merger complete- or -This term is mentioned in the scope note of Concept X- or -Check spelling with expert A-. Notes such as this, and several of the attributes, are more useful for housekeeping than for user consultation. A choice can be made whether or not to allow users to view them."@en,
+    "Redactionele notities zijn handig voor vermeldingen als -Controleer deze term nadat de bedrijfsfusie is voltooid- of -Deze term wordt genoemd in de scopenota van Concept X- of -Controleer de spelling met expert A-. Opmerkingen zoals deze, en verschillende attributen, zijn nuttiger voor housekeeping dan voor gebruikers raadpleging. Er kan een keuze worden gemaakt of gebruikers deze al dan niet mogen inzien."@nl;
   dct:source
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes> ,
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skos: ;
   skos:broader beg-nps:Note ;
-  skos:definition
-    "A note for an editor, translator or maintainer of the vocabulary."@en ,
-    "Een redactionele opmerking voor een begrip is een notitie voor de redacteur, vertaler of beheerder van het begrippenkader."@nl ;
-  skos:scopeNote "De redactionele opmerking geeft aan hoe de beschrijving van het begrip tot stand is gekomen, en waarom bepaalde keuzes zijn gemaakt."@nl ;
-  skos:prefLabel
-    "redactionele opmerking"@nl ,
-    "editorial note"@en ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:related beg-nps:Concept .
+  skos:related beg-nps:Concept ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS .
 
 #semantische relatie
-beg-nps:SemantischeRelatie
+beg-nps:SemanticRelation
   a skos:Concept ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:definition
-    "Links a concept to a concept related by meaning."@en ,
-    "Relateert een begrip aan een ander begrip op basis van de betekenis."@nl ;
   skos:prefLabel
     "semantische relatie"@nl ,
     "semantic relation"@en ;
+  skos:definition
+    "A semantic relations links a concept to a concept related by meaning."@en ,
+    "Een semantische relatie relateert een begrip aan een ander begrip op basis van de betekenis."@nl ;
+  skos:scopeNote
+    "This is an umbrella term for the different types of semantic relations (broader, narrower, is related to) that can be used to describe relations between concepts. Good practice is to use those specific semantic relations. In concept schemes semantic relations play a crucial role for defining concepts. The meaning of a concept is defined not just by the natural-language words in its labels but also by its links to other concepts in the vocabulary."@en,
+    "Dit is een overkoepelend begrip voor de verschillende soorten semantische relaties (bovenliggend, onderliggend, gerelateerd) waarmee relaties tussen begrippen kunnen worden beschreven. Good practice is om die specifieke semantische relaties te gebruiken.In begrippenkaders spelen semantische relaties een cruciale rol bij het definiëren van concepten. De betekenis van een concept wordt niet alleen bepaald door de woorden in de natuurlijke taal in de termen, maar ook door de links naar andere begrippen in het begrippenkader."@nl;
   dct:source
     <https://www.w3.org/TR/skos-reference/#semantic-relations> ,
-    skos: .
-
-#term
-beg-nps:Term
-  a skos:Concept ;
-  rdfs:label "label"@en ;
-  skos:definition
-    "Een term is een aaneenschakeling van één of meerdere woorden ter aanduiding van een object."@nl ,
-    "Word or phrase used to label a concept."@en ;
-  dct:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.61> ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:related beg-nps:Concept ;
-  skos:scopeNote
-    "In de definitie moet 'woord' breed worden geÃ¯nterpreteerd. Een term mag ook een afkorting zijn, zoals 'B.T.W.' (de voorkeursterm voor 'Belasting op toegevoegde waarde'), of een code zoals '013' (Een poppodium in Tilburg)."@nl ,
-    "Een begrip wordt aangeduid met een voor mensen leesbare term (inclusief spaties en diacrieten). Deze is gelijk aan het skos:prefLabel. Uitzondering hierop is de situatie dat binnen 1 conceptschema er vaker dezelfde skos:prefLabel wordt gebruikt. Dit is geen good practice en dient zoveel mogelijk voorkomen te worden. In het geval dat dit toch voorkomt, krijgt het rdfs:label een toevoeging tussen haakjes die het onderscheid aangeeft. Dit label kan meertalig zijn, aangegeven door @nl of @en"@nl ,
-    "A concept has a human-readable label (including spaces and diacritics). This is equal to the skos: prefLabel. An exception to this is the situation that within one concept scheme the same skos:prefLabel is used more than once. This is not a good practice and should be avoided as much as possible. In case this occurs nonetheless, the rdfs: label gets an addition between brackets that indicates the distinction. This label can be multilingual, indicated by @nl or @en"@en ;
-  skos:prefLabel "term"@en ,
-    "term"@nl .
+    skos: ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS .
 
 #term
 beg-nps:Label
   a skos:Concept ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+  skos:prefLabel "label"@en ,
+    "term"@nl ;
   skos:definition
-    "A human-readable name for the subject."@en ,
-    "Een label voor een object is een voor mensen leesbare naam ter aanduiding van een object."@nl ;
-  skos:broader beg-nps:Term ;
-  skos:prefLabel
-    "label"@nl ,
-    "label"@en ;
-  dct:source
-    <https://www.w3.org/TR/rdf-schema/#ch_label> ,
-    rdfs: .
+    "Een term is een aaneenschakeling van één of meerdere woorden ter aanduiding van een object."@nl ,
+    "A label is a word or phrase used to label a concept."@en ;
+  skos:scopeNote
+    "Dit is een overkoepelend begrip voor de verschillende soorten termen (voorkeursterm, alternatieve term, zoekterm) waarmee begrippen kunnen worden aangeduid. Good practice is om die specifieke termen te gebruiken. In de definitie moet 'woord' breed worden geïnterpreteerd. Een term mag ook een afkorting zijn, zoals 'B.T.W. (de voorkeursterm voor 'Belasting op toegevoegde waarde'), of een code zoals '013' (Een poppodium in Tilburg)."@nl ,
+    "This is an umbrella term for the different types of labels (preferred label, alternative label, hidden label) with which concepts can be indicated. Good practice is to use those specific terms. In the definition, word should be interpreted broadly. A term can also be an abbreviation, such as 'VAT.' (the preferred term for 'Value Added Tax'), or a code such as '013' (A music venue in Tilburg)."@en ;
+  dct:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.61> ;
+  skos:related beg-nps:Concept ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS .
 
 #toelichting
 beg-nps:ScopeNote
   a skos:Concept ;
+  skos:prefLabel
+    "scope note"@en ,
+    "toelichting"@nl ;
+  skos:notation "SN" ;
   skos:definition
-    "Een toelichting voor een begrip is een notitie die meer duidelijk geeft over de betekenis of gebruik van een begrip"@nl ,
-    "A note that helps to clarify the meaning and/or the use of a concept."@en ;
-  skos:broader beg-nps:Note ;
+    "Een toelichting is een notitie die meer duidelijkheid geeft over de betekenis of gebruik van een begrip."@nl ,
+    "A scope note is a note that helps to clarify the meaning and/or the use of a concept."@en ;
+  skos:scopeNote "Een toelichting wordt gebruikt om de grenzen van een concept te verduidelijken, vooral wanneer de betekenis van de voorkeursterm in het gewone spraakgebruik te breed of te eng kan worden geïnterpreteerd, of om onderscheid te maken tussen voorkeurstermen die overlappende betekenissen hebben. Een toelichting kan ook worden gebruikt om ander advies te geven over het gebruik van termen aan de indexeerder of de zoeker. Een toelichting hoeft geen volledige definitie te zijn, maar verduidelijkt het beoogde gebruik van een term binnen de thesaurus."@nl,
+    "A scope note should be used to clarify the boundaries of a concept, especially when the meaning of the preferred term in ordinary discourse can be interpreted too broadly or too narrowly, or to distinguish between preferred terms that have overlapping meanings in natural language. It can also be used to provide other advice on term usage to either the indexer or the searcher. A scope note need not be a full definition but should clarify the intended use of a term within the thesaurus."@en ;
   dct:source
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes> ,
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skos: ;
+  skos:broader beg-nps:Note ;
   skos:related beg-nps:Concept ;
-  skos:scopeNote "De toelichting geeft een aanvulling op de definitie waardoor deze beter begrepen kan worden , zonder dat daarmee de formele beschrijving onnodig of onjuist wordt aangepast. Zie: https://www.w3.org/TR/2009/NOTE-skos-primer-20090818/#secdocumentation "@nl ;
-  skos:prefLabel
-    "scope note"@en ,
-    "toelichting"@nl ;
   skos:inScheme begkr-nps:BegrippenkaderNPS .
 
 #uitleg
 beg-nps:Comment
   a skos:Concept ;
-  skos:related beg-nps:Concept ;
+  skos:prefLabel
+    "uitleg"@nl ,
+    "comment"@en ;
+  skos:altLabel "omschrijving"@nl ;
   dct:source
     <https://www.w3.org/TR/rdf-schema/#ch_comment> ,
     rdfs: ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:scopeNote "De definitie moet 'precies kloppen'. De uitleg is er veel meer op gericht om de lezer te laten snappen wat er wordt bedoeld. Er vanuit gaande dat hij/zij dat nog niet weet. "@nl ;
   skos:definition
-    "Een uitleg is een beschrijving van een object in eenvoudige taal die zonder verdere context begrepen kan worden."@nl ,
-    "A description of the subject resource."@en ;
-  skos:altLabel "omschrijving"@nl ;
-  skos:broader beg-nps:Note ;
-  skos:prefLabel
-    "uitleg"@nl ,
-    "comment"@en .
-
-#voorkeursterm
-beg-nps:PrefLabel
-  a skos:Concept ;
-  skos:related
-    beg-nps:AltLabel ,
-    beg-nps:Concept ;
-  skos:definition
-    "The preferred lexical label for a resource, in a given language."@en ,
-    "Een gepreferreerde term voor een begrip, in een specifieke taal."@nl ;
-  skos:broader beg-nps:Term ;
-  skos:scopeNote
-    "The terms selected to represent concepts may be single-word terms or multi-word terms. In ordinary discourse, a single term might have more than one meaning, and the most common meaning is not always the one needed to represent the concept wanted in the thesaurus. If the context provided by the hierarchy of broader and narrower concepts linked to the concept in question is insufficient to elucidate the intended scope, additional measures should be applied. While all thesaurus terms should be expressed as unambiguously as possible, it is especially important to formulate the preferred term of a given concept in such a way that it conveys the intended scope to any user. For example, the multi-meaning term \"depression\" could be reformulated as \"economic depression\" or \"meteorological depression\", as appropriate. Alternatively a qualifier may be used. In cases where these measures are not appropriate or sufficient, or where additional information would help to clarify the meaning and make the usage more consistent, an explicit scope note should be used."@en ,
-    "De termen die zijn geselecteerd om begrippen weer te geven, kunnen termen van één of meerdere woorden zijn. In het gewone spraakgebruik kan een enkele term meer dan één betekenis hebben. De meest voorkomende betekenis is niet altijd de betekenis die nodig is om het in de thesaurus gezochte concept weer te geven. Indien de context die wordt geboden door de hiërarchie van bredere en smallere concepten gekoppeld aan het betreffende concept onvoldoende is om de beoogde reikwijdte te verduidelijken, dienen aanvullende maatregelen te worden genomen. Hoewel alle thesaurustermen zo ondubbelzinnig mogelijk moeten worden uitgedrukt, is het vooral belangrijk om de voorkeursterm van een bepaald concept zo te formuleren dat het de beoogde reikwijdte aan elke gebruiker overbrengt. De term \"depressie\" met meerdere betekenissen kan bijvoorbeeld worden geherformuleerd als \"economische depressie\" of \"meteorologische depressie\", al naar gelang het geval. Als alternatief kan een kwalificatie worden gebruikt. In gevallen waarin deze maatregelen niet passend of voldoende zijn, of waar aanvullende informatie zou helpen om de betekenis te verduidelijken en het gebruik consistenter te maken, moet een expliciete scope note worden gebruikt."@nl ;
-  rdfs:comment "Een begip kent één voorkeursterm, deze voorkeursterm hoeft niet persé uniek te zijn. Het is goed mogelijk dat binnen een bepaald domein één term meerdere betekenissen heeft en dus gaat over meerdere begrippen, mogelijk is het doel van een Thesaurus zelfs om dit inzicht te geven. We gebruiken geen post of prefix om voorkeurstermen context te geven of uniek te maken, tenzij deze post/prefix algemeen gebruikt wordt. Denk aan Hengelo (OV) voor de plaats in Overijssel en Hengelo (GLD) voor de plaats in Gelderland. Een begrip krijgt expliciet één rdfs:Label om compatibiliteit met bestaande tools te bevorderen."@nl ;
-  skos:prefLabel
-    "voorkeursterm"@nl ,
-    "preferred label"@en ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  dct:source
-    <https://www.w3.org/TR/skos-reference/#labels> ,
-    skos: .
-
-#vrijwel overeenkomstig
-beg-nps:CloseMatch
-  a skos:Concept ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+    "Een uitleg is een beschrijving van een object in eenvoudige taal, op taalniveau B1, die zonder verdere context begrepen kan worden."@nl ,
+    "A comment is a description of the subject resourcein simple language, at language level B1, which can be understood without further context."@en ;
+  skos:scopeNote 
+    "De definitie moet precies kloppen. De uitleg is er veel meer op gericht om de lezer te laten begrijpen wat er wordt bedoeld. "@nl,
+    "The definition must be exactly correct. The comment is much more focused on making the reader understand what is meant."@en ;
   skos:related beg-nps:Concept ;
-  dct:source
-    skos: ,
-    <https://www.w3.org/TR/skos-reference/#mapping> ;
-  skos:definition
-    "skos:closeMatch is used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of \"compound errors\" when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property."@en ,
-    "Relateert een begrip aan een overeenkomstig begrip uit een ander begrippenkader, waarbij de betekenis van deze begrippen bij enkele toepassingen gelijk aan elkaar kan worden verondersteld."@nl ;
-  skos:broader beg-nps:Harmonisatierelatie ;
-  skos:prefLabel
-    "vrijwel overeenkomstig"@nl ,
-    "has close match"@en .
-
-#wijzigingsnotitie
-beg-nps:ChangeNote
-  a skos:Concept ;
-  skos:definition
-    "A note about a modification to a concept."@nl ,
-    "Notitie over een wijziging aan het concept."@en ;
-  skos:broader beg-nps:Note ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:prefLabel
-    "change note"@en ,
-    "wijzigingsnotitie"@nl ;
-  dct:source
-    skos: ,
-    <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes> .
-
-#zoekterm
-beg-nps:HiddenLabel
-  a skos:Concept ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:related beg-nps:Concept ;
-  dct:source
-    <https://www.w3.org/TR/skos-reference/#labels> ,
-    skos: ;
-  skos:definition
-    "A lexical label for a resource that should be hidden when generating visual displays of the resource, but should still be accessible to free text search operations."@en ,
-    "Een zoekterm voor een begrip is een term die beoogd is om het begrip te vinden, maar verder verborgen blijft."@nl ;
-  skos:broader beg-nps:Term ;
-  skos:prefLabel
-    "zoekterm"@nl ,
-    "hidden label"@en .
+  skos:broader beg-nps:Note ; 
+  skos:inScheme begkr-nps:BegrippenkaderNPS .
 
 #voorbeeld
 beg-nps:Example
   a skos:Concept ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:related beg-nps:Concept ;
-  dct:source
-    <https://www.w3.org/TR/skos-reference/#notes> ,
-    skos: ;
-  skos:definition
-    "An example of the use of a concept."@en ,
-    "Een voorbeeld van het gebruik van een begrip."@nl ;
-  skos:broader beg-nps:Note ;
   skos:prefLabel
     "voorbeeld"@nl ,
-    "example"@en .
+    "example"@en ;
+  skos:definition
+    "An example of the use of a concept."@en ,
+    "Een voorbeeld is een notitie die meer duidelijkheid geeft over het gebruik van een begrip."@nl ;
+  skos:scopeNote
+    "Een voorbeeld is een exemplaar van, of een verbeelding van een begrip dat voor het begrip zelf in de plaats treedt om dit abstracte idee toe te lichten met een concrete voorstelling. Het kan tekst zijn, maar ook een plaatje, een geluidsfragment of een videofragment."@nl,
+    "An example is an instance of or a representation of a concept that replaces the concept itself in order to illustrate this abstract idea with a concrete representation. It can be text, but also a picture, a sound fragment or a video fragment."@en;
+  dct:source
+    <https://www.w3.org/TR/skos-reference/#notes> ,
+    skos: , 
+    <https://nl.wikipedia.org/wiki/Voorbeeld>;
+  skos:broader beg-nps:Note ;
+  skos:related beg-nps:Concept ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS .
+
+#voorkeursterm
+beg-nps:PrefLabel
+  a skos:Concept ;
+  skos:prefLabel
+    "voorkeursterm"@nl ,
+    "preferred label"@en ;
+  skos:notation "USE" ;
+  skos:definition
+    "A preferred label is the preferred lexical label for a resource, in a given language."@en ,
+    "Een voorkeursterm is de gepreferreerde lexicale term voor een begrip, in een specifieke taal."@nl ;
+  skos:scopeNote
+    "The terms selected to represent concepts may be single-word terms or multi-word terms. In ordinary discourse, a single term might have more than one meaning, and the most common meaning is not always the one needed to represent the concept wanted in the thesaurus. If the context provided by the hierarchy of broader and narrower concepts linked to the concept in question is insufficient to elucidate the intended scope, additional measures should be applied. While all thesaurus terms should be expressed as unambiguously as possible, it is especially important to formulate the preferred term of a given concept in such a way that it conveys the intended scope to any user. For example, the multi-meaning term \"depression\" could be reformulated as \"economic depression\" or \"meteorological depression\", as appropriate. Alternatively a qualifier may be used. In cases where these measures are not appropriate or sufficient, or where additional information would help to clarify the meaning and make the usage more consistent, an explicit scope note should be used."@en ,
+    "De term om een begrip weer te geven, kan bestaan uit één of meerdere woorden. In het gewone spraakgebruik kan een enkele term meer dan één betekenis hebben. De meest voorkomende betekenis is niet altijd de betekenis die nodig is om het in het begrippenkader gezochte begrip weer te geven. Indien de context die wordt geboden door de hiërarchie van bovenliggende en onderliggende begrippen gekoppeld aan het betreffende begrip onvoldoende is om de beoogde reikwijdte te verduidelijken, dienen aanvullende maatregelen te worden genomen. Hoewel alle termen in een begrippenkader zo ondubbelzinnig mogelijk moeten worden uitgedrukt, is het vooral belangrijk om de voorkeursterm van een bepaald concept zo te formuleren dat het de beoogde reikwijdte aan elke gebruiker overbrengt. De term \"depressie\" met meerdere betekenissen kan bijvoorbeeld worden geherformuleerd als \"economische depressie\" of \"meteorologische depressie\", al naar gelang het geval. Als alternatief kan een kwalificatie worden gebruikt. In gevallen waarin deze maatregelen niet passend of voldoende zijn, of waar aanvullende informatie zou helpen om de betekenis te verduidelijken en het gebruik consistenter te maken, moet een expliciete toelichting worden gebruikt."@nl ;
+  rdfs:comment "Een begip kent één voorkeursterm, deze voorkeursterm hoeft niet persé uniek te zijn. Het is goed mogelijk dat binnen een bepaald domein één term meerdere betekenissen heeft en dus gaat over meerdere begrippen, mogelijk is het doel van een Thesaurus zelfs om dit inzicht te geven. We gebruiken geen post of prefix om voorkeurstermen context te geven of uniek te maken, tenzij deze post/prefix algemeen gebruikt wordt. Denk aan Hengelo (OV) voor de plaats in Overijssel en Hengelo (GLD) voor de plaats in Gelderland. Een begrip krijgt expliciet één rdfs:Label om compatibiliteit met bestaande tools te bevorderen."@nl ;
+  dct:source
+    <https://www.w3.org/TR/skos-reference/#labels> ,
+    skos: ;
+  skos:related beg-nps:Concept ;
+  skos:broader beg-nps:Label ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS .
+
+#vrijwel overeenkomstig
+beg-nps:CloseMatch
+  a skos:Concept ;
+  skos:prefLabel
+    "vrijwel overeenkomstig"@nl ,
+    "has close match"@en ;
+  skos:definition
+    "Close match relates two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications."@en ,
+    "Vrijwel overeenkomstig relateert twee begrippen uit verschillende begrippenkaders die zoveel op elkaar lijken dat ze in sommige toepassingen door elkaar kunnen worden gebruikt voor het ophalen van informatie. De betekenis van deze begrippen is ongeveer gelijk aan elkaar."@nl ;
+  skos:scopeNote 
+    "Een dergelijke relatie is aanwezig als de betekenis van het betreffende begrip ongeveer gelijk is aan de betekenis van het begrip uit het andere begrippenkader, dus niet precies hetzelfde."@nl,
+    "Such a relationship is present if the meaning of the concept in question is about the same as the meaning of the concept from the other concep scheme, so not exactly the same. "@en ;
+  dct:source
+    skos: ,
+    <https://www.w3.org/TR/skos-reference/#mapping> ;
+  skos:related beg-nps:Concept ;
+  skos:broader beg-nps:MatchingRelation ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS .
+
+#wijzigingsnotitie
+beg-nps:ChangeNote
+  a skos:Concept ;
+  skos:prefLabel
+    "change note"@en ,
+    "wijzigingsnotitie"@nl ;
+  skos:definition
+    "A note about a modification to a concept."@en ,
+    "Een wijzigingsnotitie is een notitie over een wijziging aan het concept."@nl ;
+  skos:scopeNote 
+    "Een wijzigingsnota documenteert fijnmazige wijzigingen aan een concept, ten behoeve van beheer en onderhoud."@nl,
+    "A change note documents fine-grained changes to a concept, for the purposes of administration and maintenance."@en ;
+  dct:source
+    skos: ,
+    <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes> ;
+  skos:broader beg-nps:Note ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS .
+
+#zoekterm
+beg-nps:HiddenLabel
+  a skos:Concept ;
+  skos:prefLabel
+    "zoekterm"@nl ,
+    "hidden label"@en ;
+  skos:definition
+    "A hidden label is lexical label for a resource that should be hidden when generating visual displays of the resource, but should still be accessible to free text search operations."@en ,
+    "Een zoekterm voor een begrip is een term die beoogd is om het begrip te vinden, maar verder verborgen blijft."@nl ;
+  skos:scopeNote
+    "A hidden label is used when a KOS designer would like that character string to be accessible to applications performing text-based indexing and search operations, but would not like that label to be visible otherwise. Hidden labels may for instance be used to include misspelled variants of other lexical labels."@en,
+    "Een zoekterm wordt gebruikt wanneer een ontwerper van een begrippenkader wil dat die tekenreeks toegankelijk is voor op tekst gebaseerde indexering en zoekbewerkingen, maar niet wil dat die term zichtbaar is. Zoektermen kunnen bijvoorbeeld worden gebruikt om verkeerd gespelde varianten van andere lexicale labels op te nemen."@nl;
+  dct:source
+    <https://www.w3.org/TR/skos-reference/#labels> ,
+    skos: ;
+  skos:broader beg-nps:Label ;
+  skos:related beg-nps:Concept ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS .
 
 # BESCHRIJVING BRON
 
-#url
-beg-nps:Page
+beg-nps:Resource
   a skos:Concept ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  dct:source
-    foaf: ;
-  skos:definition
-    "Een url is de vindplaats van een resource op het internet."@nl ,
-    "A page is the location of a resource on the internet."@en ;
   skos:prefLabel
-    "url"@nl ,
-    "page"@en .
+    "resource"@en ,
+    "bron(beschrijving)"@nl ;
+  skos:definition
+    "Een bron is een document of resource op het web waaruit de betekenis van een begrip is afgeleid."@nl ,
+    "A source is a document or web resource from which a described concept is derived."@en ;
+  skos:scopeNote 
+    "De bron kan een geschreven bron zijn of een resource op het web. Aanbevolen best practice is om de bron te beschrijven door middel van een tekenreeks die voldoet aan een formeel identificatiesysteem. Bij een resource op het web is ook de uri van die bron relevant. Om zowel naar een geschreven bron als naar een bron op het web (vaak zonder gestandaardiseerde beschrijving) te verwijzen wordt een hulp-resource gedefinieerd, die zowel een gestandaardiseerde beschrijving als een verwijzing naar de eigenlijke bron bevat."@nl,
+    "The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."@en ;
+  dct:source
+    dct: ,
+    foaf: ,
+    <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source> ;
+  skos:related 
+    beg-nps:BibliographicCitation ,
+    beg-nps:Type ,
+    beg-nps:Page ,
+    beg-nps:Concept;
+ skos:inScheme begkr-nps:BegrippenkaderNPS.
 
-#citaat
+#citeertitel
 beg-nps:BibliographicCitation
   a skos:Concept ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+  skos:prefLabel
+    "citeertitel"@nl ,
+    "bibliographic citation"@en ;
+  skos:definition
+    "Een citeertitel is een bibliografische referentie naar het document."@nl ,
+    "A bibliographic reference for the resource."@en ;
+  skos:scopeNote 
+    "Een citeertitel wordt als tekst vastgelegd. Hier dient voldoende detail in aangebracht te zijn zodat de resource gevonden kan worden. Er bestaan verschillende citeerstijlen die toegepast kunnen worden zoals IEEE, MLA of APA. Voor Nederlandse wetgeving is dit de citeertitel."@nl,
+    "A bibliographic citation is captured as text. Sufficient detail must be provided here so that the resource can be found. There are different citation styles that can be used, such as IEEE, MLA or APA. For Dutch legislation this is the citation title."@en;
+  skos:example "Scripta Materialia 48(5), 475-481 (2003)", "Martin Greenberger et al., eds., Networks for Research and Education: Sharing of Computer Information Resources Nationwide (Cambridge: MIT Press, 1974), artikel 1 Kadasterwet" ;
   dct:source
     <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/bibliographicCitation> ,
     dct: ,
     foaf: ;
-  skos:definition
-    "Een citaat is een bibliografische referentie naar een document."@nl ,
-    "A bibliographic reference for the resource."@en ;
-  skos:prefLabel
-    "citaat"@nl ,
-    "bibliographic citation"@en ;
-  skos:scopeNote "Een citaat wordt als string vastgelegd. Hier dient voldoende detail in aangebracht te zijn zodat de resource gevonden kan worden. Er bestaan verschillende citeerstijlen die toegepast kunnen worden zoals IEEE, MLA of APA."@nl;
-  skos:example "Scripta Materialia 48(5), 475-481 (2003)", "Martin Greenberger et al., eds., Networks for Research and Education: Sharing of Computer Information Resources Nationwide (Cambridge: MIT Press, 1974)" .
+  skos:inScheme begkr-nps:BegrippenkaderNPS .
 
 #soort
 beg-nps:Type
   a skos:Concept ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  dct:source
-    dct: ;
-  skos:definition
-    "Een soort is de aard of het genre van een ding."@nl ,
-    "A type is the nature or genre of a resource."@en ;
   skos:prefLabel
     "soort"@nl ,
-    "type"@en .
+    "type"@en ;
+  skos:definition
+    "Een soort is de aard of het genre van een bron."@nl ,
+    "A type is the nature or genre of a resource."@en ;
+  skos:scopeNote
+    "Met soort kan bijvoorbeeld aangegeven worden of het een 'geschreven bron' of een 'web resource' is. "@nl,
+    "Kind indicates whether it is a 'written resource' or a 'web resource'. "@en;
+  dct:source
+    dct: ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS .
+
+#url
+beg-nps:Page
+  a skos:Concept ;
+  skos:prefLabel
+    "url"@nl ,
+    "page"@en ;
+  skos:definition
+    "Een url is de vindplaats van een bron op het internet."@nl ,
+    "A page is the location of a resource on the internet."@en ;
+  skos:scopeNote
+    "Een url wordt vastgelegd als de bron een bron is die vindbaar is op het web. Dit is bij voorkeur de iri van de van de bron en eventueel de url van de betreffende pagina op het web."@nl,
+    "A URL is captured if the resource is a resource that can be found on the web. This is preferably the iri of the resource and possibly the url of the relevant page on the web."@en;
+  dct:source
+    foaf: ;
+skos:inScheme begkr-nps:BegrippenkaderNPS .
+
 # BESCHRIJVING BEGRIPPENKADER
 
 # BEGRIPPENKADER
@@ -729,24 +753,24 @@ beg-nps:Type
 #begrippenkader
 beg-nps:ConceptScheme
   a skos:Concept ;
-  dct:source
-    <https://www.w3.org/TR/skos-reference/#schemes> ,
-    skos:,
-    <https://en.wikipedia.org/wiki/Controlled_vocabulary>;
-  skos:scopeNote 
-    "Een begrippenkader kan worden gedefinieerd om begrippen uit verschillende bronnen op te nemen. Begrippenkaders bieden een manier om kennis te ordenen voor het later kunnen ophalen. Ze worden gebruikt in indexeringsschema's, koppen, thesauri, taxonomieën en andere kennisorganisatiesystemen. Begrippenkaders verplichten het gebruik van vooraf gedefinieerde, geautoriseerde termen die zijn geselecteerd door de ontwerpers ervan,in tegenstelling tot natuurlijke taalvocabulaires,die een dergelijke beperking niet hebben."@nl,
-    "A concept scheme may be defined to include concepts from different sources. Controlled vocabularies provide a way to organize knowledge for subsequent retrieval. They are used in subject indexing schemes,subject headings,thesauri,taxonomies and other knowledge organization systems. Controlled vocabulary schemes mandate the use of predefined,authorised terms that have been preselected by the designers of the schemes, in contrast to natural language vocabularies, which have no such restriction."@en ;
+  skos:prefLabel
+    "begrippenkader"@nl ,
+    "concept scheme"@en ;
   skos:altLabel
     "controlled vocabulary" ,
     "structured vocabulary" ,
     "begrippencatalogus" ,
     "knowledge organisation system" ;
-  skos:prefLabel
-    "begrippenkader"@nl ,
-    "concept scheme"@en ;
   skos:definition
     "A set of concepts, optionally including statements about semantic relationships between those concepts."@en ,
     "Een begrippenkader is een verzameling van begrippen, inclusief eventuele semantische relaties tussen deze begrippen."@nl ;
+  skos:scopeNote 
+    "Een begrippenkader kan worden gedefinieerd om begrippen uit verschillende bronnen op te nemen. Begrippenkaders bieden een manier om kennis te ordenen voor het later kunnen ophalen. Ze worden gebruikt in indexeringsschema's, koppen, thesauri, taxonomieën en andere kennisorganisatiesystemen. Begrippenkaders verplichten het gebruik van vooraf gedefinieerde, geautoriseerde termen die zijn geselecteerd door de ontwerpers ervan,in tegenstelling tot natuurlijke taalvocabulaires,die een dergelijke beperking niet hebben."@nl,
+    "A concept scheme may be defined to include concepts from different sources. Controlled vocabularies provide a way to organize knowledge for subsequent retrieval. They are used in subject indexing schemes,subject headings,thesauri,taxonomies and other knowledge organization systems. Controlled vocabulary schemes mandate the use of predefined,authorised terms that have been preselected by the designers of the schemes, in contrast to natural language vocabularies, which have no such restriction."@en ;
+  dct:source
+    <https://www.w3.org/TR/skos-reference/#schemes> ,
+    skos:,
+    <https://en.wikipedia.org/wiki/Controlled_vocabulary>;
   skos:related beg-nps:TopConcept ;
   skos:example "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes. Concept schemes are also embedded in glossaries and terminologies."@en ;
   skos:inScheme begkr-nps:BegrippenkaderNPS .
@@ -754,70 +778,107 @@ beg-nps:ConceptScheme
 #begrippenlijst
 beg-nps:Glossary
   a skos:Concept ;
-  skos:altLabel
-    "platte termenlijst"@nl ,
-    "woordenlijst"@nl ;
-  skos:definition "Een begrippenlijst is een alfabetische lijst van begrippen in een bepaald kennisdomein met de definities voor die begrippen. "@nl ;
-  skos:scopeNote "In de praktijk worden de termen begrippenlijst en woordenlijst vaak door elkaar gebruikt. Traditioneel verschijnt er aan het einde van een boek een verklarende woordenlijst met termen in dat boek die ofwel nieuw geïntroduceerd, ongebruikelijk of gespecialiseerd zijn. Semantisch gezien gaat de definitie over het begrip wat met de term wordt aangeduid en niet over de term zelf."@nl,"In practice, the glossary is uses as well for a list of terms as fora list of concepts. Traditionally, a glossary of terms in that book appears at the end of a book that are either newly introduced, uncommon, or specialized. Semantically, the definition is about the concept the term denotes and not about the term itself."@en ;
   skos:prefLabel
     "begrippenlijst"@nl ,
     "glossary"@en ;
-  skos:broader beg-nps:ConceptScheme ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:definition "A controlled vocabulary is a carefully selected list of words and phrases, which are used to tag units of information (document or work) so that they may be more easily retrieved by a search."@en ;
+  skos:altLabel
+    "platte termenlijst"@nl ,
+    "woordenlijst"@nl ;
+  skos:definition 
+    "Een begrippenlijst is een zorgvuldig samengestelde lijst van begrippen, die worden gebruikt om informatie-eenheden (document of werk) te taggen, zodat ze gemakkelijker kunnen worden teruggevonden door een zoekopdracht. "@nl,
+    "A controlled vocabulary is a carefully selected list of concepts, which are used to tag units of information (document or work) so that they may be more easily retrieved by a search."@en ;
+  skos:scopeNote 
+    "In de praktijk worden de termen begrippenlijst en woordenlijst vaak door elkaar gebruikt. In dit geval gaat het nadrukkelijk om een lijst van begrippen, dus inclusief de uitleg van de betekenis. Traditioneel verschijnt er aan het einde van een boek een verklarende woordenlijst met termen in dat boek die ofwel nieuw geïntroduceerd, ongebruikelijk of gespecialiseerd zijn. Semantisch gezien gaat de definitie over het begrip wat met de term wordt aangeduid en niet over de term zelf."@nl,
+    "In practice, the glossary is uses as well for a list of terms as fora list of concepts. In this case it is emphatically a list of concepts, including an explanation of the meaning. Traditionally, a glossary of terms in that book appears at the end of a book that are either newly introduced, uncommon, or specialized. Semantically, the definition is about the concept the term denotes and not about the term itself."@en ;
   dct:source <https://en.wikipedia.org/wiki/Controlled_vocabulary>;
   skos:related
-    beg-nps:PrefLabel ,
-    beg-nps:Notation ,
     beg-nps:AltLabel ,
-    beg-nps:HiddenLabel ,
-    beg-nps:Definition ,
+    beg-nps:InScheme ,
     beg-nps:Source ,
-    beg-nps:Comment ,
-    beg-nps:ScopeNote ,
+    beg-nps:Notation ,
+    beg-nps:Definition ,
+    beg-nps:HistoryNote,
+    beg-nps:Note ,
     beg-nps:EditorialNote ,
-    beg-nps:HistoryNote ,
-    beg-nps:ChangeNote .
+    beg-nps:Label ,
+    beg-nps:ScopeNote ,
+    beg-nps:Comment ,
+    beg-nps:PrefLabel ,
+    beg-nps:ChangeNote ,
+    beg-nps:HiddenLabel ,
+    beg-nps:Example ;
+  skos:broader beg-nps:ConceptScheme ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS .
 
 #taxonomie
 beg-nps:Taxonomy
   a skos:Concept ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+  skos:prefLabel
+    "taxonomie"@nl ,
+    "taxonomy"@en ;
+  skos:altLabel "classificatieschema" ;
   skos:broader beg-nps:ConceptScheme ;
   skos:definition
     "Een taxonomie (of taxonomische classificatie) is een classificatieschema, met name een hiërarchische classificatie, waarin concepten zijn georganiseerd in groepen of typen."@nl ,
     "A taxonomy (or taxonomical classification) is a scheme of classification, especially a hierarchical classification, in which concepts are organized into groups or types."@en ;
   skos:scopeNote
-    "Een taxonomie wordt gebruikt om kennis te ordenen en te indexeren (opgeslagen als documenten, artikelen, video's, enz.), zoals in de vorm van een bibliotheekclassificatiesysteem of een taxonomie van een zoekmachine, zodat gebruikers de informatie die ze zoeken gemakkelijker kunnen vinden. op zoek naar. Taxonomieën zijn hiërarchieën (en hebben dus een intrinsieke boomstructuur)."@nl,
+    "Een taxonomie wordt gebruikt om kennis te ordenen en te indexeren (opgeslagen als documenten, artikelen, video's, enz.), zoals in de vorm van een bibliotheekclassificatiesysteem of een taxonomie van een zoekmachine, zodat gebruikers de informatie die ze zoeken gemakkelijker kunnen vinden. Taxonomieën zijn hiërarchieën (en hebben dus een intrinsieke boomstructuur)."@nl,
     "A taxonomy is be used to organize and index knowledge (stored as documents, articles, videos, etc.), such as in the form of a library classification system, or a search engine taxonomy, so that users can more easily find the information they are searching for. Taxonomies are hierarchies (and thus, have an intrinsic tree structure)."@en ;
   skos:related
     beg-nps:Narrower ,
-    beg-nps:Broader ;
-  skos:prefLabel
-    "taxonomie"@nl ,
-    "taxonomy"@en ;
-  skos:altLabel "classificatieschema" ;
-  dct:source <https://en.wikipedia.org/wiki/Taxonomy> .
+    beg-nps:Broader ,
+    beg-nps:TopConcept;
+  dct:source <https://en.wikipedia.org/wiki/Taxonomy> ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS .
 
 #thesaurus
 beg-nps:Thesaurus
   a skos:Concept ;
-  skos:related
-    beg-nps:BroaderGeneric ,
-    beg-nps:Related ,
-    beg-nps:NarrowerPartitive ,
-    beg-nps:BroaderInstantial ,
-    beg-nps:NarrowerGeneric ,
-    beg-nps:BroaderPartitive ,
-    beg-nps:NarrowerInstantial ;
   skos:prefLabel
     "thesaurus"@nl ,
     "thesaurus"@en ;
-  skos:broader beg-nps:ConceptScheme ;
+  skos:definition 
+    "Een thesaurus is een gecontroleerde en gestructureerde vocabulaire waarin begrippen semantisch en hierarchisch zijn georganiseerd."@nl ,
+    "A thesaurus is a controlled and structured vocabulary in which concepts are organized semantically and hierarchically."@en;
+  skos:scopeNote
+    "Het doel van een thesaurus is traditioneel om de indexeerder en de zoeker te helpen bij het kiezen van dezelfde term voor hetzelfde begrip. Om dit te bereiken, bevat een thesaurus in de eerste plaats alle begrippen die nuttig kunnen zijn voor zoekdoeleinden in een bepaald domein. Ten tweede moet een thesaurus de begrippen zo presenteren dat mensen ze gemakkelijk kunnen vinden. Dit wordt bereikt door relaties tussen begrippen tot stand te leggen en de relaties te gebruiken om de begrippen in een gestructureerde weergave te presenteren."@nl ,
+    "The traditional aim of a thesaurus of a thesaurus is to help the indexer and searcher choose the same term for the same concept. To achieve this, a thesaurus primarily contains all concepts that can be useful for search purposes in a particular domain. Second, a thesaurus should present the concepts in such a way that people can find them easily. This is achieved by establishing relationships between concepts and using the relationships to present the concepts in a structured representation."@en ;
   dct:source
     <https://en.wikipedia.org/wiki/Thesaurus> ,
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.62> ;
-  skos:definition "Een thesaurus is een gecontroleerde en gestructureerde vocabulaire waarin begrippen semantisch en hierarchisch zijn georganiseerd."@nl ;
+  skos:related
+    beg-nps:ExactMatch ,
+    beg-nps:MatchingRelation ,
+    beg-nps:NarrowerInstantial ,
+    beg-nps:BroaderInstantial ,
+    beg-nps:NarrowerGeneric ,
+    beg-nps:Related ,
+    beg-nps:BroaderPartitive ,
+    beg-nps:BroaderGeneric ,
+    beg-nps:NarrowerPartitive ,
+    beg-nps:BroadMatch ,
+    beg-nps:NarrowMatch ,
+    beg-nps:RelatedMatch ,
+    beg-nps:CloseMatch ;
+  skos:broader beg-nps:ConceptScheme ;
+  skos:inScheme begkr-nps:BegrippenkaderNPS .
+
+#topbegrip
+beg-nps:TopConcept
+  a skos:Concept ;
+  skos:prefLabel
+    "heeft topbegrip"@nl ,
+    "has top concept"@en ;
+  skos:notation "TT" ;
+  skos:definition
+    "Top concepts are concepts which are topmost in the hierarchical relations for a scheme."@en ,
+    "Een topbegrip is een begrip die bovenaan de hiërarchie staat in een bepaald begrippenkader."@nl ;
+  skos:scopeNote
+    "Has top concept adresses a concept that is at the top of a hierarchy, i.e. it has no broader concepts. This makes it easier, on importing a thesaurus, to pick out all the top level concepts from which to build a navigational tree."@en,
+    "Heeft topconcept adresseert een concept dat bovenaan een hiërarchie staat, d.w.z. het heeft geen bredere concepten. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle concepten op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen."@nl; 
+  dct:source skos: ,
+    <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> ;
+  skos:related beg-nps:Taxonomy ;
   skos:inScheme begkr-nps:BegrippenkaderNPS .
 
 # EIGENSCHAPPEN EN METADATA
@@ -943,22 +1004,6 @@ beg-nps:Toezichthouder a skos:Concept;
   skos:scopeNote "Een optie is om hier prov:qualifiedAttribution te gebruiken, met bereik https://www.w3.org/TR/prov-o/#Attribution "@nl;
   skos:editorialNote "foaf:Organization is een class. Wat is de property tussen catalog en organisatie met de betekenis toezichthouder?"@nl .
 
-#topbegrip
-beg-nps:TopConcept
-  a skos:Concept ;
-  rdfs:label "hasTopConcept"@en ;
-  skos:definition
-    "Top concepts are concepts which are topmost in the hierarchical relations for a scheme."@en ,
-    "Een topbegrip is een begrip die bovenaan de hierarchie staat in een bepaald begrippenkader."@nl ;
-  skos:related beg-nps:ConceptScheme ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:broader beg-nps:Concept ;
-  skos:prefLabel
-    "topbegrip"@nl ,
-    "top concept"@en ;
-  dct:source skos: ,
-    <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> .
-
 #trefwoorden
 beg-nps:Keywords a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
@@ -995,8 +1040,8 @@ beg-nps:Voorbeeld a skos:Concept;
   skos:prefLabel "voorbeeld begrippenkader"@nl;
   skos:definition " Voorbeelden van gebruik catalogus"@nl .
 
-#voorkeursnaam begrippenkader
-beg-nps:Type a skos:Concept;
+#Type begrippenkader
+beg-nps:TypeBegrippenkader a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
   skos:prefLabel "Typering"@nl;
   skos:altLabel "Type"@nl;
@@ -1004,6 +1049,8 @@ beg-nps:Type a skos:Concept;
   skos:scopeNote "De DCAT standaard en DCAT-AP verschaffen geen duidelijkheid over de toepassing van eigenschap type/genre. DCAT-AP werkt aan een controlled vocabulary met mogelijke typen (de status hiervan is onbekend). W3C heeft hiervoor wel een issue aangemaakt. Zie https://github.com/w3c/dxwg/issues/64. Zie ook de use case Modelling resources different from datasets."@nl;
   skos:editorialNote """Bijvoorbeeld het type begrippenkader: begrippenlijst, taxonomie, thesaurus
 Het begrippenkader is altijd een SKOS concept scheme. Moet dat expliciet gemaakt worden met dit veld? Wordt al gezet bij definieren van het type van het begrippen kader"""@nl .
+
+#Voorkeursnaam begrippenkader
 beg-nps:VoorkeursnaamBegrippenkader a skos:Concept;
   skos:inScheme begkr-nps:BegrippenkaderNPS ;
   skos:prefLabel "Voorkeursnaam begrippenkader"@nl;
