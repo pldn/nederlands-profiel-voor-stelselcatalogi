@@ -1114,20 +1114,3 @@ beg-nps:Member
     "has member"@en ,
     "bevat"@nl ;
   skos:inScheme begkr-nps:BegrippenkaderNPS .
-
-#geordende collectie
-beg-nps:OrderedCollection
-  a skos:Concept ;
-  skos:prefLabel
-    "geordende collectie"@nl ,
-    "ordered collection"@en ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
-  skos:broader beg-nps:Collection ;
-  skos:altLabel "OrderedCollection"@en ;
-  skos:definition 
-    "An ordered collection is a collection of concepts that are placed in a meaningful order."@en ,
-    "Een geordende collectie is een collectie waar de begrippen in een betekenisvolle volgorde zijn geplaatst."@nl ;
-  skos:scopeNote "Labelled collections can be used where you would like a set of concepts to be displayed under a 'node label' in the hierarchy."@en ;
-  dct:source
-    skos: ,
-    <https://www.w3.org/TR/skos-reference/#collections> .

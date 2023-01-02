@@ -405,7 +405,7 @@ Onder andere de Belastingdienst heeft nog weer een uitbreiding op deze extensie 
 ## Collectie
 [=Collectie=]s bieden de mogelijkheid om binnen een begrippenkader begrippen die voor hun betekenis niet direct via semantische relaties met elkaar zijn verbonden, toch bij elkaar te zetten. Zo hebben het begrip 'vervuild' dat in milieuwetgeving wordt gedefinieerd en het begrip 'landgoed' dat in de natuurschoonwet wordt gedefinieerd semantisch geen relatie, maar worden ze beiden beschouwd als 'publiekrechtelijke beperking' in het kader van de Wet Kenbaarheid Publiekrechtelijke Beperkingen (WKPB). Deze begrippen kunnen dan samen met andere begrippen die onder de WKPB vallen worden samengebracht in een collectie.
 
-Begrippen zijn op verschillende manieren te verzamelen. Collecties zijn verzamelingen van begrippen, maar het begrippenkader is bijvoorbeeld ook een verzameling begrippen. Deze zijn echter verschillend in de zin dat een begrippenkader een context geeft en een collectie dat niet doet. Een begrip behoort tot een begrippenkader als het "binnen" die context valt. Bij een collectie is het juist andersom: een collectie bestaat uit begrippen. Dus of een begrip bij een collectie hoort, wordt niet bepaald door de betekenis van het begrip zelf, maar door wat de collectie-eigenaar vindt dat in "zijn" collectie hoort. Anders gezegd: een begrippenkader is een "open" verzameling: de verzameling bestaat uit de begrippen die bij dit begrippenkader horen (obv de context), een collectie is een "gesloten" verzameling: de verzameling bestaat uit de begrippen die als lid zijn toegevoegd aan de verzameling.
+Begrippen zijn op verschillende manieren te verzamelen. Collecties zijn verzamelingen van begrippen, maar het begrippenkader is bijvoorbeeld ook een verzameling begrippen. Deze zijn echter verschillend in de zin dat een begrippenkader een context geeft en een collectie dat niet doet. Een begrip behoort tot een begrippenkader als het "binnen" die context valt. Bij een collectie is het juist andersom: een collectie bestaat uit begrippen. Dus of een begrip bij een collectie hoort, wordt niet bepaald door de betekenis van het begrip zelf, maar door wat de collectie-eigenaar vindt dat in "zijn" collectie hoort. Anders gezegd: een begrippenkader is een "open" verzameling: de verzameling bestaat uit de begrippen die bij dit begrippenkader horen (obv de context), een collectie is een "gesloten" verzameling; de verzameling bestaat uit de begrippen die als lid zijn toegevoegd aan de verzameling.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -419,18 +419,10 @@ Een collectie kan beschreven worden aan de hand van verschillende kenmerken. Dez
 
 | Conceptueel element | Kardinaliteit | Type                        |
 | ------------------- | ------------- | --------------------------- |
-| [=term=]          | 1..*          | Tekst                       |
+| [=term=]            | 1..*          | Tekst                       |
 | [=bevat=]           | 0..*          | [=begrip=] of [=collectie=] |
 
-Wanneer je iets met een collectie wilt kunnen doen; moet je het benoemen; zo spreken we feitelijk over een gelabelde collectie. Dit is ook wat we over het algemeen bedoelen wanneer we het over een collectie hebben. Een collectie kan genest zijn en er is geen sprake van een bepaalde ordening. Wanneer er wel een bepaalde ordening is spreken we van een geordende collectie. Dit is bijvoorbeeld relevant om bepaalde begrippen in alfabetische of chronologische volgorde te plaatsen. Collecties kunnen begrippen bevatten maar ook andere (geordende) collecties.
-
-|                       |                                       |
-|-----------------------|---------------------------------------|
-| **voorkeursterm**   | <dfn>geordende collectie</dfn> |
-| **definitie**        | Een geordende collectie is een collectie waar de begrippen in een betekenisvolle volgorde zijn geplaatst. |
-| **bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/skos-reference/#collections |
-
-Het maakt het mogelijk om begrippen te groepen op een manier die haaks staat op de hierarchische structuur van het begrippenkader en zeggen dus niks over de plek van de bijbehorende begrippen in het begrippenkader. In het bovengenoemde voorbeeld is er met gebruik van de collectie geen semantische relatie tussen de WKPB en het begrip 'landgoed'. Een collectie zie je ook vaak terug in de context van een bepaalde toepassing waar het nodig is om bepaalde keuzelijsten en/of dropdown menu's samen te stellen.
+Collecties maken het mogelijk om begrippen te groepen op een manier die haaks staat op de hierarchische structuur van het begrippenkader en zeggen dus niks over de plek van de bijbehorende begrippen in het begrippenkader. In het bovengenoemde voorbeeld is er met gebruik van de collectie geen semantische relatie tussen het begrip 'publiekrechtelijke beperking' en het begrip 'landgoed'. Een collectie zie je ook vaak terug in de context van een bepaalde toepassing waar het nodig is om bepaalde keuzelijsten en/of dropdown menu's samen te stellen. 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|

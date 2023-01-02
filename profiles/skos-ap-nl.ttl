@@ -78,15 +78,6 @@ skosapnl:Collection
     skosapnl:Collection-label ;
   sh:targetClass skos:Collection .
 
-skosapnl:OrderedCollection
-  a sh:NodeShape ;
-  rdfs:label
-    "Geordende collectie"@nl ,
-    "Ordered collection"@en ;
-  sh:property
-    skosapnl:OrderedCollection-memberList ,
-    skosapnl:OrderedCollection-label ;
-  sh:targetClass skos:OrderedCollection .
 
 skosapnl:ConceptScheme
   a sh:NodeShape ;
@@ -548,25 +539,6 @@ skosapnl:Collection-member
   sh:name "bevat"@nl ;
   sh:nodeKind sh:IRI ;
   sh:path skos:member .
-
-skosapnl:OrderedCollection-label
-  a sh:PropertyShape ;
-  rdfs:label "label"@nl ;
-  sh:datatype rdf:langString ;
-  sh:description "Een label voor een object is een voor mensen leesbare naam ter aanduiding van een object."@nl ;
-  sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
-  sh:minCount 1 ;
-  sh:name "label"@nl ;
-  sh:nodeKind sh:Literal ;
-  sh:path rdfs:label .
-
-skosapnl:OrderedCollection-memberList
-  a sh:PropertyShape ;
-  rdfs:label "bevat"@nl ;
-  sh:or ( [ sh:class skos:Concept ] [ sh:class skos:Collection ] );
-  sh:name "bevat"@nl ;
-  sh:nodeKind sh:IRI ;
-  sh:path skos:memberList .
 
 skosapnl:ConceptScheme-label
   a sh:PropertyShape ;
