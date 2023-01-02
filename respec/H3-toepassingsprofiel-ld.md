@@ -32,7 +32,7 @@ Een bron(document) heeft niet één definitieve taalbinding. Dit komt omdat er v
 
 | Conceptueel element                    | Taalbinding in RDF                                                                  |
 | -------------------------------------- | ----------------------------------------------------------------------------------- |
-| [=term=]                             | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)                            |
+| [=term=]                               | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)                            |
 | [=heeft topbegrip=]                    | [skos:hasTopConcept](http://www.w3.org/2004/02/skos/core#hasTopConcept)             |
 | [=voorkeursterm=]                      | [skos:prefLabel](http://www.w3.org/2004/02/skos/core#prefLabel)                     |
 | [=alternatieve term=]                  | [skos:altLabel](http://www.w3.org/2004/02/skos/core#altLabel)                       |
@@ -135,7 +135,8 @@ Een Bron wordt gerepresenteerd als een foaf:Document. Deze typering wordt aanger
 
 Een collectie wordt gerepresenteerd als een skos:Collection. Deze typering is verplicht.
 
-| Conceptueel element | Eigenschap                                                | Kardinaliteit | Type                                                                    |
-| ------------------- | --------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- |
-| [=term=]            | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)  | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
-| [=bevat=]           | [skos:member](http://www.w3.org/2004/02/skos/core#member) | 0..*          | [sh:IRI](http://www.w3.org/ns/shacl#IRI)                                |
+| Conceptueel element | Eigenschap                                                   | Kardinaliteit | Type                                                                    |
+| ------------------- | ------------------------------------------------------------ | ------------- | ----------------------------------------------------------------------- |
+| [=term=]            | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)     | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
+| [=uitleg=]          | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | 0..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
+| [=bevat=]           | [skos:member](http://www.w3.org/2004/02/skos/core#member)    | 0..*          | [sh:IRI](http://www.w3.org/ns/shacl#IRI)                                |

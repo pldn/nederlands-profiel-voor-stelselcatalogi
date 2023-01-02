@@ -231,16 +231,7 @@ Naast termen en notitities kunnen begrippen ook codes als kenmerken hebben. Een 
 
 ### Taxonomie
 
-Naast documentaire eigenschappen zoals een [=definitie=], waar de betekenis van een begrip in tekstuele vorm beschreven wordt; kan de betekenis van een begrip ook beschreven worden aan de hand van een ander begrip. Om deze begrippen aan elkaar te kunnen relateren gebruiken we [=semantische relatie=]s. 
-
-|                       |                                       |
-|-----------------------|---------------------------------------|
-| **voorkeursterm**   | <dfn>semantische relatie</dfn> |
-| **definitie**        | Een semantische relatie relateert een begrip aan een ander begrip op basis van de betekenis. |
-| **bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/skos-reference/#semantic-relations |
-| **toelichting** | Dit is een overkoepelend begrip voor de verschillende soorten semantische relaties (bovenliggend, onderliggend, gerelateerd) waarmee relaties tussen begrippen kunnen worden beschreven. Good practice is om die specifieke semantische relaties te gebruiken.In begrippenkaders spelen semantische relaties een cruciale rol bij het definiëren van concepten. De betekenis van een concept wordt niet alleen bepaald door de woorden in de natuurlijke taal in de termen, maar ook door de links naar andere begrippen in het begrippenkader. |
-
-Een taxonomie kent behalve alle elementen van een begrippenlijst ook hiërarchische relaties (nog definieren). Deze hiërarchische relaties zijn optioneel in een begrippenlijst en zijn bijvoorbeeld relevant als een begrip wordt gedefinieerd in termen van een ander begrip, bijvoorbeeld `'een gemaal *is een* kunstwerk dat ...'`. Deze definitie impliceert dat een gemaal een 'enger begrip' is dan een kunstwerk, die ook als semantische relatie kan worden opgenomen.
+Naast documentaire eigenschappen zoals een [=definitie=], waar de betekenis van een begrip in tekstuele vorm beschreven wordt; kan de betekenis van een begrip ook beschreven worden aan de hand van een ander begrip. Een taxonomie kent behalve alle elementen van een begrippenlijst ook hiërarchische relaties. Deze hiërarchische relaties zijn optioneel in een begrippenlijst en zijn bijvoorbeeld relevant als een begrip wordt gedefinieerd in termen van een ander begrip, bijvoorbeeld `'een gemaal *is een* kunstwerk dat ...'`. Deze definitie impliceert dat een gemaal een 'enger begrip' is dan een kunstwerk, die ook als semantische relatie kan worden opgenomen.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -249,7 +240,7 @@ Een taxonomie kent behalve alle elementen van een begrippenlijst ook hiërarchis
 | **bron** | https://en.wikipedia.org/wiki/Taxonomy |
 | **toelichting** | Een taxonomie wordt gebruikt om kennis te ordenen en te indexeren (opgeslagen als documenten, artikelen, video&#39;s, enz.), zoals in de vorm van een bibliotheekclassificatiesysteem of een taxonomie van een zoekmachine, zodat gebruikers de informatie die ze zoeken gemakkelijker kunnen vinden. Taxonomieën zijn hiërarchieën (en hebben dus een intrinsieke boomstructuur). |
 
-In een taxonomie zijn alle begrippen direct of indirect als via een 'heeft bovenliggend begrip' gekoppeld aan een top-begrip. Typerend voor een taxonomie is een gebruikersinterface waarbij op het eerste niveau de top-begrippen worden getoond, waarbij per top-begrip begrippen met een engere betekenis worden getoond, die op hun beurt ook weer begrippen met een engere betekenis tonen, enzovoort. Dit betekent dat, als je een taxonomie publiceert, ieder begrip ofwel via een hiërarchische relatie moet worden gekoppeld aan een ander begrip, ofwel een top-begrip moet zijn. Zonder hiërarchische relaties is er in een begrippenkader geen sprake van een top-begrip.
+In een taxonomie zijn alle begrippen direct of indirect als via een [=heeft bovenliggend begrip=] gekoppeld aan een top-begrip. Typerend voor een taxonomie is een gebruikersinterface waarbij op het eerste niveau de top-begrippen worden getoond, waarbij per top-begrip begrippen met een engere betekenis worden getoond, die op hun beurt ook weer begrippen met een engere betekenis tonen, enzovoort. Dit betekent dat, als je een taxonomie publiceert, ieder begrip ofwel via een hiërarchische relatie moet worden gekoppeld aan een ander begrip, ofwel een top-begrip moet zijn. Zonder hiërarchische relaties is er in een begrippenkader geen sprake van een top-begrip.
 
 Als een eerste begrip een bovenliggend begrip is van een tweede begrip en het tweede begrip weer een bovenliggend begrip is van een derde begrip, dan betekent dit niet automatisch dat dit eerste begrip semantisch gezien óók een bovenliggend begrip is in relatie tot het derde begrip. Dit kan voorkomen in 'slordige' taxonomieën. Een voorbeeld is het definiëren van 'auto' als onderliggend begrip van 'voertuig' en 'wiel' als een onderliggend begrip van 'auto'. Maar 'wiel' is niet logischerwijs een onderliggend begrip van 'voertuig'. 'Heeft bovenliggend begrip' en 'heeft onderliggend begrip' zijn dus niet per definitie transitief.
 
@@ -280,7 +271,7 @@ Als een eerste begrip een bovenliggend begrip is van een tweede begrip en het tw
 | **bron** | https://en.wikipedia.org/wiki/Thesaurus, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.62 |
 | **toelichting** | Het doel van een thesaurus is traditioneel om de indexeerder en de zoeker te helpen bij het kiezen van dezelfde term voor hetzelfde begrip. Om dit te bereiken, bevat een thesaurus in de eerste plaats alle begrippen die nuttig kunnen zijn voor zoekdoeleinden in een bepaald domein. Ten tweede moet een thesaurus de begrippen zo presenteren dat mensen ze gemakkelijk kunnen vinden. Dit wordt bereikt door relaties tussen begrippen tot stand te leggen en de relaties te gebruiken om de begrippen in een gestructureerde weergave te presenteren. |
 
-Naast de kenmerken die voor begrippen in een begrippenlijst of taxonomie zijn geintroduceert, an een begrip in een thesaurus ook associatieve, niet hiërarchische relaties tussen begrippen. Hiervoor kennen we de relatie 'is gerelateerd aan'.
+Naast de kenmerken die voor begrippen in een begrippenlijst of taxonomie zijn geintroduceert, kan een begrip in een thesaurus ook associatieve, niet-hiërarchische relaties tussen begrippen kennen. Hiervoor kennen we de relatie [=is gerelateerd aan=].
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -292,7 +283,7 @@ Naast de kenmerken die voor begrippen in een begrippenlijst of taxonomie zijn ge
 
 <section class="informative"> 
 <h4>ISO 25964 hiërarchische relaties</h4>
-De ISO 25964 standaard voor thesauri maakt voor de standaard hiërarchische relaties [=heeft bovenliggend begrip=] en [=heeft onderliggend begrip=] ook expliciet onderscheid tussen instantiële relaties, partitieve relaties en generalaties/specialisaties. Deze relaties kunnen in plaatst van of aanvullend op de standaard hiërarchische relaties gebruikt worden. Een kanttekening daarop is wel dat de meeste tools alleen de standaard hierarchische relaties herkennen.
+De ISO 25964 standaard voor thesauri maakt voor de standaard hiërarchische relaties [=heeft bovenliggend begrip=] en [=heeft onderliggend begrip=] ook expliciet onderscheid tussen instantiële relaties, partitieve relaties en generalaties/specialisaties. Deze relaties kunnen in plaatst van of aanvullend op de standaard hiërarchische relaties gebruikt worden. Een kanttekening daarop is wel dat de meeste tools alleen de standaard hiërarchische relaties herkennen.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -420,6 +411,7 @@ Een collectie kan beschreven worden aan de hand van verschillende kenmerken. Dez
 | Conceptueel element | Kardinaliteit | Type                        |
 | ------------------- | ------------- | --------------------------- |
 | [=term=]            | 1..*          | Tekst                       |
+| [=uitleg=]          | 0..*          | Tekst                       |
 | [=bevat=]           | 0..*          | [=begrip=] of [=collectie=] |
 
 Collecties maken het mogelijk om begrippen te groepen op een manier die haaks staat op de hierarchische structuur van het begrippenkader en zeggen dus niks over de plek van de bijbehorende begrippen in het begrippenkader. In het bovengenoemde voorbeeld is er met gebruik van de collectie geen semantische relatie tussen het begrip 'publiekrechtelijke beperking' en het begrip 'landgoed'. Een collectie zie je ook vaak terug in de context van een bepaalde toepassing waar het nodig is om bepaalde keuzelijsten en/of dropdown menu's samen te stellen. 
@@ -466,7 +458,6 @@ De bron kan een heel document of een fragment daarvan zijn, denk aan een boek, e
 | **definitie**        | Een url is de vindplaats van een bron op het internet. |
 | **bron** | http://xmlns.com/foaf/0.1/ |
 | **toelichting** | Een url wordt vastgelegd als de bron een bron is die vindbaar is op het web. Dit is bij voorkeur de iri van de van de bron en eventueel de url van de betreffende pagina op het web. |
-
 
 |                       |                                       |
 |-----------------------|---------------------------------------|

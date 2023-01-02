@@ -84,10 +84,10 @@ beg-sbb:InScheme
     "is in scheme"@en ,
     "behoort tot"@nl ;
   skos:definition
-    "Behoort tot relateert een begrip tot het begrippenkader waartoe het behoort"@nl ,
+    "Behoort tot relateert een begrip tot een begrippenkader waartoe het behoort"@nl ,
     "Is in scheme relates a resource (for example a concept) to a concept scheme in which it is included."@en ;
    skos:scopeNote
-    "According to the SKOS-standard, concepts can be linked to multipe conceptscheme. Practically, this can only be the case when conceptschemes overlap in terms of scope."@en ,
+    "According to the SKOS-standard, concepts can be linked to multiple conceptschemes. Practically, this can only be the case when conceptschemes overlap in terms of scope."@en ,
     "Volgens de SKOS-standaard kan een begrip tot meerdere begrippenkaders behoren. Praktisch gezien kan dit slechts als sprake is van begrippenkaders waarvan de contexten overlappen"@nl;
    dct:source
     skos: ,
@@ -514,7 +514,7 @@ beg-sbb:SemanticRelation
     "Een semantische relatie relateert een begrip aan een ander begrip op basis van de betekenis."@nl ;
   skos:scopeNote
     "This is an umbrella term for the different types of semantic relations (broader, narrower, is related to) that can be used to describe relations between concepts. Good practice is to use those specific semantic relations. In concept schemes semantic relations play a crucial role for defining concepts. The meaning of a concept is defined not just by the natural-language words in its labels but also by its links to other concepts in the vocabulary."@en,
-    "Dit is een overkoepelend begrip voor de verschillende soorten semantische relaties (bovenliggend, onderliggend, gerelateerd) waarmee relaties tussen begrippen kunnen worden beschreven. Good practice is om die specifieke semantische relaties te gebruiken.In begrippenkaders spelen semantische relaties een cruciale rol bij het definiëren van concepten. De betekenis van een concept wordt niet alleen bepaald door de woorden in de natuurlijke taal in de termen, maar ook door de links naar andere begrippen in het begrippenkader."@nl;
+    "Dit is een overkoepelend begrip voor de verschillende soorten semantische relaties (bovenliggend, onderliggend, gerelateerd) waarmee relaties tussen begrippen kunnen worden beschreven. Het is een goed gebruik om de specifieke soorten semantische relaties te gebruiken. In begrippenkaders spelen semantische relaties een cruciale rol bij het definiëren van een begrip. De betekenis van een begrip wordt niet alleen bepaald door de woorden in natuurlijke taal in de termen en notities, maar ook door de links naar andere begrippen in het begrippenkader."@nl;
   dct:source
     <https://www.w3.org/TR/skos-reference/#semantic-relations> ,
     skos: ;
