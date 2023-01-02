@@ -1,5 +1,4 @@
 <!DOCTYPE html><html lang="nl"><head>
-<script src="https://hypothes.is/embed.js" async></script>
 <meta charset="utf-8">
 <meta name="generator" content="ReSpec 32.6.0">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -2437,7 +2436,7 @@ Het wordt niet aangeraden labels op te nemen van meer gespecializeerde begrippen
 <div class="note" role="note" id="issue-container-generatedID-0"><div role="heading" class="note-title marker" id="h-note-0" aria-level="3"><span>Noot</span></div><p class="">Veelal gaat 'ontleend' hier over de betekenis van het begrip. Niet direct de definitie. Er ontbreekt namelijk vaak een bron waar de definitie letterlijk in voorkomt, en anders  is het zelfs zo dat de bron daarvoor een net iets andere verwoording gebruikt. We hebben het daarom over de bron van de betekenis; en niet over bijvoorbeeld de bron van de definitie. Ook kunnen andere kenmerken kunnen ontleend zijn aan een bron; zoals een <a data-link-type="dfn" href="#dfn-alternatieve-term" class="internalDFN" id="ref-for-dfn-alternatieve-term-4">alternatieve term</a> of <a data-link-type="dfn" href="#dfn-code" class="internalDFN" id="ref-for-dfn-code-4">code</a>.
 </p></div>
 
-<p>In ieder scenario willen we voldoende informatie hebben over de bron zodat we deze kunnen vinden. Dit kan op basis van een <em>url</em> of een <em>citaat</em>. 
+<p>In ieder scenario willen we voldoende informatie hebben over de bron zodat we deze kunnen vinden. Dit kan op basis van een <em><a data-link-type="dfn" href="#dfn-url" class="internalDFN" id="ref-for-dfn-url-5">url</a></em> of een <em><a data-link-type="dfn" href="#dfn-citeertitel" class="internalDFN" id="ref-for-dfn-citeertitel-5">citeertitel</a></em>. 
 In het eenvoudigste geval is de bron vindbaar op het web en is het voldoende om als bronverwijzing de bijbehorende url op te nemen. De verwachting is dat middels deze url een mensleesbare representatie van het document gevonden kan worden. Dit kan er als volgt uit zien.</p>
 <div class="example" id="example-1">
         <div class="marker">
@@ -2449,8 +2448,8 @@ In het eenvoudigste geval is de bron vindbaar op het web en is het voldoende om 
 
 <p>Op deze manier is goed aangeven waar de betekenis van het begrip (gedocumenteerd als definitie) op gebasseerd is. Verder is er geen informatie over de bron. Wanneer de bron is beschreven in RDF is deze informatie er wel en kan dit meegenomen worden in de interpretatie van het begrip. </p>
 <p>Wanneer een bron als linked data op het web ontsloten is neem je als waarde van bronverwijzing de URI van de bron. Dit kan bijvoorbeeld een instantie van <code>foaf:Document</code> of <code>dct:BibliographicResource</code> zijn. Hoe deze precies is beschreven is maakt voor de bronverwijzing niet uit, maar binnen dit profiel wordt de <a href="#specificatie-bron">specificatie voor bronnen</a> aangeraden.</p>
-<p>Het komt ook voor dat de bron niet vindbaar is op het web en/of niet als linked data ontsloten is. In dat geval kan de beheerder van het begrip zelf een beschrijving van de bron maken.
-Hiervoor kunnen URI's of blanknodes gebruikt worden die de bron direct identificeren. Dit is conform een van de basisprincipes van Linked Data, <em>Anybody can say anything about anything</em> (referentie). Deze identifier kan alleen niet direct gebruikt worden om een mensleesbaar document te vinden. Wanneer de bron vindbaar is op het web kan foaf:page (url) gebruikt worden om naar deze vindplaats te verwijzen. Wanneer de bron niet op het web vindbaar is, kan dct:bibliographicCitation gebruikt worden om citeerinformatie vast te leggen. Het kan zijn dat een bron zowel een url als een citaat kent.</p>
+<p>Het komt ook voor dat de bron niet vindbaar is op het web en/of niet als linked data ontsloten is. In dat geval kan de beheerder van het begrip zelf een beschrijving van de bron maken. Indien gewenst is om bijvoorbeeld informatie over de bron bij het begrip te kunnen tonen.
+Hiervoor kunnen URI's of blanknodes gebruikt worden die de bron direct identificeren (zie ook <a href="https://bp4mc2.org/modeling/">Fundamentals of Linked Data Modeling</a>). Dit is tevens conform een van de basisprincipes van Linked Data, <em>Anybody can say anything about anything</em>. Deze identifier kan alleen niet direct gebruikt worden om een mensleesbaar document te vinden. Wanneer de bron vindbaar is op het web kan foaf:page (<a data-link-type="dfn" href="#dfn-url" class="internalDFN" id="ref-for-dfn-url-6">url</a>) gebruikt worden om naar deze vindplaats te verwijzen. Wanneer de bron niet op het web vindbaar is, kan dct:bibliographicCitation (<a data-link-type="dfn" href="#dfn-citeertitel" class="internalDFN" id="ref-for-dfn-citeertitel-6">citeertitel</a> gebruikt worden om citeerinformatie vast te leggen. Het kan zijn dat een bron zowel een url als een citeertitel kent.</p>
 <p>In het volgende voorbeeld zien we een beschrijving van een op het web vindbare bron die door de beheerder van begrippen is opgesteld. De beheerder is eigenaar van de beschrijving; maar niet van de bron zelf.</p>
 <div class="example" id="example-2">
         <div class="marker">
@@ -2460,10 +2459,10 @@ Hiervoor kunnen URI's of blanknodes gebruikt worden die de bron direct identific
   dct:source ex:GemeentewetArt2 .
 
 ex:GemeentewetArt2 a foaf:Document ;
-  `rdfs:label` <span class="hljs-string">"Gemeentewet Art. 2"</span> ;
+  rdfs:label <span class="hljs-string">"Gemeentewet Art. 2"</span> ;
   foaf:page   ;
   rdfs:comment <span class="hljs-string">"In deze wet wordt verstaan onder ingezetenen: zij die hun werkelijke woonplaats in de gemeente hebben."</span>@nl ;
-  dct:type &gt;http://id.loc.gov/vocabulary/marcgt/leg&gt; .
+  dct:type  .
 </code></pre>
       </div>
 
@@ -2472,12 +2471,11 @@ ex:GemeentewetArt2 a foaf:Document ;
         <div class="marker">
     <a class="self-link" href="#example-3">Voorbeeld<bdi> 3</bdi></a>
   </div> <pre aria-busy="false"><code class="hljs css">ex:Flora a skos:Concept ;
-  dct:source [ `rdfs:label` <span class="hljs-string">"Heukels' Flora van Nederland"</span> ;
+  dct:source [ rdfs:label <span class="hljs-string">"Heukels' Flora van Nederland"</span> ;
                dct:bibliographicCitation <span class="hljs-string">"Van der Meijden, R. (2005): Heukels' Flora van Nederland. Wolters-Noordhoff, Groningen/Houten (23e druk), 685 pp."</span> ;
                dct:type &gt;http://id.loc.gov/vocabulary/marcgt/boo&gt; ] .</code></pre>
       </div>
-<p>Het nadeel van blank nodes is dat de bronbeschrijving niet hergebruikt kan worden, voor iedere bronverwijzing moet de beschrijving opnieuw gemaakt worden.</p>
-<p>Wanneer een bron reeds als linked data op het web ontsloten is neem je als waarde van bronverwijzing de URI van de bron. Dit kan bijvoorbeeld een instantie van <code>foaf:Document</code> of <code>dct:BibliographicResource</code> zijn. Hoe deze precies zijn beschreven is maakt voor de bronverwijzing niet uit, maar binnen dit profiel wordt de <a href="#specificatie-bron">specificatie voor bronnen</a> aangeraden. De URI identificeert de bron en biedt idealieter aanknopingspunten om het daadwerkelijke document te vinden, bijvoorbeeld op basis van content-negotiation (om bijvoorbeeld een html representatie te retouneren) of omdat de vindplaats als eigenschap van de bron is opgenomen.</p>
+<p>Het nadeel van blank nodes is dat de bronbeschrijving niet hergebruikt kan worden, voor iedere bronverwijzing naar een bepaalde bron moet de beschrijving opnieuw gemaakt worden.</p>
 <section id="typering"><div class="header-wrapper"><h4 id="x4-3-1-typering"><bdi class="secno">4.3.1 </bdi>Typering</h4><a class="self-link" href="#typering" aria-label="Permalink for Section 4.3.1"></a></div>
 <p>De bron zelf kan op verschillende manieren beschreven worden, dat ligt immers bij de bronhouder. Er bestaan verschillende standaard vocabulaires die een oplossing hebben voor het beschrijven van en verwijzen naar bronnen, ook zonder de term bron te gebruiken. Denk bijvoorbeeld aan [<cite><a class="bibref" data-link-type="biblio" href="#bib-dcterms" title="DCMI Metadata Terms">DCTERMS</a></cite>], <a href="http://www.sparontologies.net/ontologies/frbr">FRBR</a> <cite><a data-matched-text="[[[WETTENNL]]]" href="https://linkeddata.overheid.nl/terms/" id="ref-for-index-term-wetten-nl-1">Wetten.nl</a></cite> en [<cite><a class="bibref" data-link-type="biblio" href="#bib-foaf" title="FOAF Vocabulary Specification 0.99 (Paddington Edition)">FOAF</a></cite>], maar ook nationale of sectorale-standaarden. Er is geen defacto standaard die van toepassing is op wat binnen dit profiel onder bron wordt verstaan. Om die reden leggen we geen restricties op de typering van de resource die we als bron voor een begrip aanmerken.</p>
 <p>Wel biedt dit profiel een aantal aanbevelingen.</p>
@@ -3466,6 +3464,8 @@ ex2:Land a skos:Concept ;
     <a href="#ref-for-dfn-url-3" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
     <a href="#ref-for-dfn-url-4" title="§ 3.3.3 Specificatie Bron">§ 3.3.3 Specificatie Bron</a> 
+  </li><li>
+    <a href="#ref-for-dfn-url-5" title="§ 4.3 Bronnen">§ 4.3 Bronnen</a> <a href="#ref-for-dfn-url-6" title="Reference 2">(2)</a> 
   </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-citeertitel" aria-label="Links in this document to definition: citeertitel">
@@ -3482,6 +3482,8 @@ ex2:Land a skos:Concept ;
     <a href="#ref-for-dfn-citeertitel-3" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
     <a href="#ref-for-dfn-citeertitel-4" title="§ 3.3.3 Specificatie Bron">§ 3.3.3 Specificatie Bron</a> 
+  </li><li>
+    <a href="#ref-for-dfn-citeertitel-5" title="§ 4.3 Bronnen">§ 4.3 Bronnen</a> <a href="#ref-for-dfn-citeertitel-6" title="Reference 2">(2)</a> 
   </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-soort" aria-label="Links in this document to definition: soort">
