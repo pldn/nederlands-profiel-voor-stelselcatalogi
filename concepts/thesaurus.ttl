@@ -23,7 +23,7 @@ begkr-sbb:nlbegrip
     beg-sbb:Notation ,
     beg-sbb:Note ,
     beg-sbb:Source ,
-    beg-sbb:Resource ,
+    beg-sbb:SourceDocument ,
     beg-sbb:Type ,
     beg-sbb:Page ,
     beg-sbb:BibliographicCitation ,
@@ -104,20 +104,16 @@ beg-sbb:Source
     "bron"@nl ;
   skos:altLabel 
     "herkomst"@nl ,
-    "bronverwijzing"@nl ,
-    "brondocument"@nl ,
-    "bibliographic resource"@en ;
+    "bronverwijzing"@nl ;
   skos:definition
-    "Een bron is een document of resource op het web waaruit de betekenis van een begrip is afgeleid."@nl ,
-    "A source is a document or web resource from which a described concept is derived."@en ;
-  skos:scopeNote 
-    "De bron kan een geschreven bron zijn of een resource op het web. Aanbevolen best practice is om de bron te beschrijven door middel van een tekenreeks die voldoet aan een formeel identificatiesysteem. Bij een resource op het web is ook de uri van die bron relevant. Om zowel naar een geschreven bron als naar een bron op het web (vaak zonder gestandaardiseerde beschrijving) te verwijzen wordt hier verwezen naar een eigen resource, die zowel een gestandaardiseerde beschrijving als een verwijzing naar de eigenlijke bron bevat."@nl,
-    "The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."@en ;
+    "Bron relateert een begrip aan een brondocument waarvan het is afgeleid"@nl ,
+    "Source relates a concept to a document from which it is derived."@en ;
   dct:source
     dct: ,
-    foaf: ,
     <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source> ;
-  skos:related beg-sbb:Concept;
+  skos:related 
+    beg-sbb:Concept ,
+    beg-sbb:Source ;
   skos:inScheme begkr-sbb:BegrippenkaderNPS.
 
 #code
@@ -672,16 +668,16 @@ beg-sbb:HiddenLabel
   skos:related beg-sbb:Concept ;
   skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
-# BESCHRIJVING BRON
+# BRONDOCUMENT
 
-beg-sbb:Resource
+beg-sbb:SourceDocument
   a skos:Concept ;
   skos:prefLabel
-    "resource"@en ,
-    "bron(beschrijving)"@nl ;
+    "source document"@en ,
+    "brondocument"@nl ;
   skos:definition
-    "Een bron is een document of resource op het web waaruit de betekenis van een begrip is afgeleid."@nl ,
-    "A source is a document or web resource from which a described concept is derived."@en ;
+    "Een brondocument is een document of resource op het web waaruit de betekenis van een begrip is afgeleid."@nl ,
+    "A source document is a document or web resource from which a described concept is derived."@en ;
   skos:scopeNote 
     "De bron kan een geschreven bron zijn of een resource op het web. Aanbevolen best practice is om de bron te beschrijven door middel van een tekenreeks die voldoet aan een formeel identificatiesysteem. Bij een resource op het web is ook de uri van die bron relevant. Om zowel naar een geschreven bron als naar een bron op het web (vaak zonder gestandaardiseerde beschrijving) te verwijzen wordt een hulp-resource gedefinieerd, die zowel een gestandaardiseerde beschrijving als een verwijzing naar de eigenlijke bron bevat."@nl,
     "The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."@en ;

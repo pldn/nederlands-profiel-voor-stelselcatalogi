@@ -53,17 +53,17 @@ skosapnl:Concept
     skosapnl:Concept-broadMatch ;
   sh:targetClass skos:Concept .
 
-skosapnl:Source
+skosapnl:SourceDocument
   a sh:NodeShape ;
   rdfs:comment "Een Bron is een document, of fragment van een document, die als bron dient voor een bepaald begrip."@nl ;
-  rdfs:label "Bron"@nl ;
+  rdfs:label "Brondocument"@nl ;
   sh:targetObjectsOf dct:source ;
   sh:property
-    skosapnl:Source-label ,
-    skosapnl:Source-page ,
-    skosapnl:Source-comment ,
-    skosapnl:Source-bibliographicCitation ,
-    skosapnl:Source-type .
+    skosapnl:SourceDocument-label ,
+    skosapnl:SourceDocument-page ,
+    skosapnl:SourceDocument-comment ,
+    skosapnl:SourceDocument-bibliographicCitation ,
+    skosapnl:SourceDocument-type .
 
 skosapnl:Collection
   a sh:NodeShape ;
@@ -365,11 +365,11 @@ skosapnl:Concept-source
   a sh:PropertyShape ;
   sh:description "Een bron voor een begrip is een gerelateerde brondocument waaruit de betekenis van het begrip is afgeleid."@nl ;
   sh:group skosapnl:DefinitionPropertyGroup ;
-  rdfs:label "bronverwijzing"@nl ;
-  sh:name "bronverwijzing"@nl ;
+  rdfs:label "bron"@nl ;
+  sh:name "bron"@nl ;
   sh:order 11 ;
   sh:nodeKind sh:BlankNodeOrIRI ;
-  sh:node skosapnl:Source ;
+  sh:node skosapnl:SourceDocument ;
   sh:path dct:source .
 
 skosapnl:Concept-comment
@@ -448,7 +448,7 @@ skosapnl:Concept-label
   sh:nodeKind sh:Literal ;
   sh:path rdfs:label .
 
-skosapnl:Source-label
+skosapnl:SourceDocument-label
   a sh:PropertyShape ;
   rdfs:label "label"@nl ;
   sh:datatype rdf:langString ;
@@ -459,7 +459,7 @@ skosapnl:Source-label
   sh:nodeKind sh:Literal ;
   sh:path rdfs:label .
 
-skosapnl:Source-page
+skosapnl:SourceDocument-page
   a sh:PropertyShape ;
   rdfs:label "url"@nl ;
   sh:description "Vindplaats van de bron op internet."@nl ;
@@ -468,7 +468,7 @@ skosapnl:Source-page
   sh:nodeKind sh:IRI ;
   sh:path foaf:page .
 
-skosapnl:Source-comment
+skosapnl:SourceDocument-comment
   a sh:PropertyShape ;
   rdfs:label "uitleg"@nl ;
   sh:datatype rdf:langString ;
@@ -478,7 +478,7 @@ skosapnl:Source-comment
   sh:nodeKind sh:Literal ;
   sh:path rdfs:comment .
 
-skosapnl:Source-bibliographicCitation
+skosapnl:SourceDocument-bibliographicCitation
   a sh:PropertyShape ;
   rdfs:label "citeertitel"@nl ;
   sh:description "Een reeks gegevens waarmee een document of fragment daarvan gevonden kan worden. Er bestaan verschillende citeerstijlen zoals IEEE, APA of MLA."@nl ;
@@ -488,7 +488,7 @@ skosapnl:Source-bibliographicCitation
   sh:datatype xsd:string ;
   sh:path dct:bibliographicCitation .
 
-skosapnl:Source-type
+skosapnl:SourceDocument-type
   a sh:PropertyShape ;
   rdfs:label "soort"@nl ;
   sh:description "Aanduiding van het type of genre van het brondocument."@nl ;

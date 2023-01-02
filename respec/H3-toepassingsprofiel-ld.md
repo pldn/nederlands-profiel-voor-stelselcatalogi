@@ -17,11 +17,11 @@ Voor het representeren van de conceptuele elementen in RDF maken we gebruik van 
 | ------------------- | ----------------------------------------------------------------------- |
 | [=begrip=]          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
 | [=begrippenkader=]  | [skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme) |
-| [=bron=]            | [foaf:Document](http://xmlns.com/foaf/0.1/Document)                     |
+| [=brondocument=]    | [foaf:Document](http://xmlns.com/foaf/0.1/Document)                     |
 | [=collectie=]       | [skos:Collection](http://www.w3.org/2004/02/skos/core#Collection)       |
 
 <div class="note">
-Een bron(document) heeft niet één definitieve taalbinding. Dit komt omdat er veel verschillende toepasbare standaarden zijn op dit gebied. In dit profiel is de aanbeveling om minimaal de bron te typeren als `foaf:Document` en eventueel specifiekere standaarden te hanteren als taalbinding zoals:
+Een brondocument heeft niet één definitieve taalbinding. Dit komt omdat er veel verschillende toepasbare standaarden zijn op dit gebied. In dit profiel is de aanbeveling om minimaal de bron te typeren als `foaf:Document` en eventueel specifiekere standaarden te hanteren als taalbinding zoals:
 <ul>
 <li>DublinCore (<a href="http://purl.org/dc/terms/BibliographicResource">BibliographicResource</a>) of </li>
 <li>FRBR (<a href="http://purl.org/vocab/frbr/core#term-Work">Work</a>, <a href="http://purl.org/vocab/frbr/core#term-Expression">Expression</a>, <a href="http://purl.org/vocab/frbr/core#term-Manifestation">Manifestation</a> of <a href="http://purl.org/vocab/frbr/core#term-Item">Item</a>)</p></li>
@@ -64,15 +64,15 @@ Een bron(document) heeft niet één definitieve taalbinding. Dit komt omdat er v
 | [=citeertitel=]                        | [dct:bibliographicCitation](http://purl.org/dc/terms/bibliographicCitation)         |
 | [=url=]                                | [foaf:page](http://xmlns.com/foaf/0.1/page)                                         |
 | [=soort=]                              | [dct:type](http://purl.org/dc/terms/type)                                           |
-| [=bevat=]                              | [skos:member](http://www.w3.org/2004/02/skos/core#member) OF [skos:memberList](http://www.w3.org/2004/02/skos/core#memberList) |
+| [=bevat=]                              | [skos:member](http://www.w3.org/2004/02/skos/core#member)                           |
 
 # Specificatie
 
-Met het conceptueel model en de taalbinding die daar aan toegevoegd is kunnen we een dataspecificatie opstellen. Deze wordt in dit hoofdstuk besproken. De specificatie is ook in SHACL beschreven en beschikbaar in [turtle](https://raw.githubusercontent.com/pldn/nederlands-profiel-voor-stelselcatalogi/feedback-verwerken/profiles/skos-ap-nl.ttl). 
+Met het conceptueel model en de taalbinding die daar aan toegevoegd is kunnen we een dataspecificatie opstellen. Deze wordt in dit hoofdstuk besproken. De specificatie is ook in SHACL beschreven en beschikbaar in [turtle](https://raw.githubusercontent.com/pldn/nederlands-profiel-voor-stelselcatalogi/profiles/skos-ap-nl.ttl). 
 
 ## Specificatie Begrippenkader
 
-Een begrippenkader wordt gerepresenteerd als een skos:ConceptScheme. Deze typering is verplicht.
+Een begrippenkader wordt gerepresenteerd als een `skos:ConceptScheme`. Deze typering is verplicht.
 
 <!-- Voor het beschrijven van de metadata van een begrippenkader sluiten we aan op metadatastandaarden zoals Dublin Core (dcterms), de Provenance Ontologie (Prov-O) en ADMS/DCAT. We zien een begrippenkader als een "semantic asset". Dit komt overeen met een adms:Asset. Aangezien adms:Asset een specialisatie is van een dcat:Dataset kunnen we op deze wijze goed aansluiten op catalogi die DCAT als uitgangspunt nemen, zoals [data.overheid.nl](data.overheid.nl) -->
 
@@ -86,7 +86,7 @@ Een begrippenkader wordt gerepresenteerd als een skos:ConceptScheme. Deze typeri
 
 ## Specificatie Begrip
 
-Een begrip wordt gerepresenteerd als een skos:Concept. Deze typering is verplicht.
+Een begrip wordt gerepresenteerd als een `skos:Concept`. Deze typering is verplicht.
 
 | Conceptueel element             | Eigenschap                                                                          | Kardinaliteit | Type                                                                    |
 | ------------------------------- | ----------------------------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- |
@@ -121,7 +121,7 @@ Een begrip wordt gerepresenteerd als een skos:Concept. Deze typering is verplich
 
 ## Specificatie Bron
 
-Een Bron wordt gerepresenteerd als een foaf:Document. Deze typering wordt aangeraden.
+Een Bron wordt gerepresenteerd als een `foaf:Document`. Deze typering wordt aangeraden.
 
 | Conceptueel element | Eigenschap                                                                  | Kardinaliteit | Type                                                                    |
 | ------------------- | --------------------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- |
@@ -133,7 +133,7 @@ Een Bron wordt gerepresenteerd als een foaf:Document. Deze typering wordt aanger
 
 ## Specificatie Collectie
 
-Een collectie wordt gerepresenteerd als een skos:Collection. Deze typering is verplicht.
+Een collectie wordt gerepresenteerd als een `skos:Collection`. Deze typering is verplicht.
 
 | Conceptueel element | Eigenschap                                                   | Kardinaliteit | Type                                                                    |
 | ------------------- | ------------------------------------------------------------ | ------------- | ----------------------------------------------------------------------- |
