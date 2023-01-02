@@ -4,38 +4,39 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix beg-nps: <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/concept/> .
-@prefix begkr-nps: <http://pldn.nl/nederlands-profiel-voor-stelselcatalogi/id/conceptscheme/> .
+@prefix beg-sbb: <http://nlbegrip.nl/sbb/id/begrip/> .
+@prefix begkr-sbb: <http://nlbegrip.nl/sbb/id/begrippenkader/> .
 
 # DIT BEGRIPPENKADER 
 
 #begrippenkader
-begkr-nps:BegrippenkaderNPS
+begkr-sbb:nlbegrip
   a skos:ConceptScheme ;
   skos:hasTopConcept
-    beg-nps:ConceptScheme ,
-    beg-nps:Concept ,
-    beg-nps:Collection ,
-    beg-nps:Member ,
-    beg-nps:Label ,
-    beg-nps:SemanticRelation ,
-    beg-nps:InScheme ,
-    beg-nps:Notation ,
-    beg-nps:Note ,
-    beg-nps:Source ,
-    beg-nps:Resource ,
-    beg-nps:Type ,
-    beg-nps:Page ,
-    beg-nps:BibliographicCitation ,
-    beg-nps:TopConcept ;
-  rdfs:label "Begrippenkader Nederlands Profiel voor Stelselcatalogi"@nl .
+    beg-sbb:ConceptScheme ,
+    beg-sbb:Concept ,
+    beg-sbb:Collection ,
+    beg-sbb:Member ,
+    beg-sbb:Label ,
+    beg-sbb:SemanticRelation ,
+    beg-sbb:InScheme ,
+    beg-sbb:Notation ,
+    beg-sbb:Note ,
+    beg-sbb:Source ,
+    beg-sbb:Resource ,
+    beg-sbb:Type ,
+    beg-sbb:Page ,
+    beg-sbb:BibliographicCitation ,
+    beg-sbb:TopConcept ;
+  skos:prefLabel "Begrippenkader Nederlandse standaard voor het beschrijven van begrippen"@nl ;
+  skos:altLabel "sbb" .
 
 # BEGRIPPEN IN DIT BEGRIPPENKADER
 
 # BESCHRIJVING BEGRIP
 
 #begrip
-beg-nps:Concept
+beg-sbb:Concept
   a skos:Concept ;
   skos:prefLabel
     "concept"@en ,
@@ -50,10 +51,10 @@ beg-nps:Concept
     skos: ,
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#concepts> ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 #alternatieve term
-  beg-nps:AltLabel
+  beg-sbb:AltLabel
   a skos:Concept ;
   skos:prefLabel
     "alternatieve term"@nl ,
@@ -72,12 +73,12 @@ beg-nps:Concept
     <https://www.w3.org/TR/skos-reference/#labels> ,
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skos: ;
-  skos:related beg-nps:Concept ;
-  skos:broader beg-nps:Label ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS.
+  skos:related beg-sbb:Concept ;
+  skos:broader beg-sbb:Label ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS.
 
 #behoort tot
-beg-nps:InScheme
+beg-sbb:InScheme
   a skos:Concept ;
   skos:prefLabel
     "is in scheme"@en ,
@@ -92,11 +93,11 @@ beg-nps:InScheme
     skos: ,
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> ;
-  skos:related beg-nps:Concept ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS.
+  skos:related beg-sbb:Concept ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS.
 
 #bron
-beg-nps:Source
+beg-sbb:Source
   a skos:Concept ;
   skos:prefLabel
     "source"@en ,
@@ -116,11 +117,11 @@ beg-nps:Source
     dct: ,
     foaf: ,
     <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source> ;
-  skos:related beg-nps:Concept;
-  skos:inScheme begkr-nps:BegrippenkaderNPS.
+  skos:related beg-sbb:Concept;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS.
 
 #code
-beg-nps:Notation
+beg-sbb:Notation
   a skos:Concept ;
   skos:prefLabel
     "code"@nl ,
@@ -135,10 +136,10 @@ beg-nps:Notation
   skos:scopeNote
     "Some concept schemes, for example classification systems such as the Universal Decimal Classification (UDC), use notations (or captions) as the primary means of access to the concepts they contain. Notations are symbols which are not normally recognizable as words or sequences of words in any natural language and are thus usable independently of natural-language contexts. They are typically composed of digits, complemented with punctuation signs and other characters."@en,
     "Sommige begrippenkaders, bijvoorbeeld classificatiesystemen zoals de Universal Decimal Classification (UDC), gebruiken codes (of bijschriften) als primair middel om toegang te krijgen tot de concepten die ze bevatten. Codes zijn symbolen die normaal gesproken niet herkenbaar zijn als woorden of woordreeksen in een natuurlijke taal en die dus onafhankelijk van natuurlijke taalcontexten kunnen worden gebruikt. Ze zijn meestal samengesteld uit cijfers, aangevuld met leestekens en andere tekens."@nl;
-  skos:inScheme begkr-nps:BegrippenkaderNPS.
+  skos:inScheme begkr-sbb:BegrippenkaderNPS.
 
 #definitie
-beg-nps:Definition
+beg-sbb:Definition
   a skos:Concept ;
   skos:prefLabel
     "definition"@en ,
@@ -155,12 +156,12 @@ beg-nps:Definition
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skos: ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes>; 
-  skos:broader beg-nps:Note ;
-  skos:related beg-nps:Concept ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS.
+  skos:broader beg-sbb:Note ;
+  skos:related beg-sbb:Concept ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS.
 
 #exact overeenkomstig
-beg-nps:ExactMatch
+beg-sbb:ExactMatch
   a skos:Concept ;
   skos:prefLabel
     "has exact match"@en ,
@@ -174,12 +175,12 @@ beg-nps:ExactMatch
   dct:source
     <https://www.w3.org/TR/skos-reference/#mapping> ,
     skos: ;
-  skos:related beg-nps:Concept ;
-  skos:broader beg-nps:MatchingRelation;
-  skos:inScheme begkr-nps:BegrippenkaderNPS.
+  skos:related beg-sbb:Concept ;
+  skos:broader beg-sbb:MatchingRelation;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS.
 
 #harmonisatierelatie
-beg-nps:MatchingRelation
+beg-sbb:MatchingRelation
   a skos:Concept ;
   skos:prefLabel
     "harmonisatierelatie"@nl ,
@@ -192,11 +193,11 @@ beg-nps:MatchingRelation
   dct:source 
     <https://www.w3.org/TR/skos-reference/#mapping> ,
     skos: ;
-  skos:broader beg-nps:SemanticRelation ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS.
+  skos:broader beg-sbb:SemanticRelation ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS.
 
 #heeft bovenliggend begrip
-beg-nps:Broader
+beg-sbb:Broader
   a skos:Concept ;
   skos:prefLabel
     "heeft bovenliggend begrip"@nl ,
@@ -213,12 +214,12 @@ beg-nps:Broader
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     <https://www.w3.org/TR/skos-reference/#semantic-relations> ,
     skos: ;
-  skos:related beg-nps:Concept ;
-  skos:broader beg-nps:SemanticRelation ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS.
+  skos:related beg-sbb:Concept ;
+  skos:broader beg-sbb:SemanticRelation ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS.
 
 #heeft onderliggend begrip
-beg-nps:Narrower
+beg-sbb:Narrower
   a skos:Concept ;
   skos:prefLabel
     "heeft onderliggend begrip"@nl ,
@@ -235,13 +236,13 @@ beg-nps:Narrower
     <https://www.w3.org/TR/skos-reference/#semantic-relations> ,
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skos: ;
-  skos:related beg-nps:Concept ;
-  skos:broader beg-nps:SemanticRelation ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS.
+  skos:related beg-sbb:Concept ;
+  skos:broader beg-sbb:SemanticRelation ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS.
 
 
 #historische notitie
-beg-nps:HistoryNote
+beg-sbb:HistoryNote
   a skos:Concept ;
   skos:prefLabel
     "history note"@en ,
@@ -256,11 +257,11 @@ beg-nps:HistoryNote
   dct:source
     skos: ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes>;
-  skos:broader beg-nps:Note ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS.
+  skos:broader beg-sbb:Note ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS.
 
 #is categorie van
-beg-nps:NarrowerInstantial
+beg-sbb:NarrowerInstantial
   a skos:Concept ;
   skos:prefLabel
     "narrower term (instantial)"@en ,
@@ -275,13 +276,13 @@ beg-nps:NarrowerInstantial
   dct:source
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skosthes: ;
-  skos:broader beg-nps:Narrower ;
-  skos:related beg-nps:Concept ;
-  skosthes:broaderGeneric beg-nps:Narrower;
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
+  skos:broader beg-sbb:Narrower ;
+  skos:related beg-sbb:Concept ;
+  skosthes:broaderGeneric beg-sbb:Narrower;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 #is exemplaar van
-beg-nps:BroaderInstantial
+beg-sbb:BroaderInstantial
   a skos:Concept ;
   skos:prefLabel
     "is exemplaar van"@nl ,
@@ -296,13 +297,13 @@ beg-nps:BroaderInstantial
   dct:source
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skosthes: ;
-skos:related beg-nps:Concept ;
-  skos:broader beg-nps:Broader ;
-  skosthes:broaderGeneric beg-nps:Broader;
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
+skos:related beg-sbb:Concept ;
+  skos:broader beg-sbb:Broader ;
+  skosthes:broaderGeneric beg-sbb:Broader;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 #is generalisatie van
-beg-nps:NarrowerGeneric
+beg-sbb:NarrowerGeneric
   a skos:Concept ;
   skos:prefLabel
     "is generalisatie van"@nl ,
@@ -317,13 +318,13 @@ beg-nps:NarrowerGeneric
   dct:source
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skosthes: ;
-  skos:related beg-nps:Concept ;
-  skosthes:broaderGeneric beg-nps:Narrower ;
-  skos:broader beg-nps:Narrower ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
+  skos:related beg-sbb:Concept ;
+  skosthes:broaderGeneric beg-sbb:Narrower ;
+  skos:broader beg-sbb:Narrower ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 #is gerelateerd aan
-beg-nps:Related
+beg-sbb:Related
   a skos:Concept ;
   skos:prefLabel
     "has related"@en ,
@@ -335,16 +336,16 @@ beg-nps:Related
   skos:scopeNote 
     "De associatieve relatie omvat associaties tussen paren begrippen die niet hiërarchisch met elkaar verbonden zijn, maar semantisch of conceptueel zodanig geassocieerd zijn dat de link ertussen expliciet gemaakt moet worden, omdat het aanvullende of alternatieve termen kan suggereren die kunnen worden gebruikt bij het indexeren of vinden van een begrip."@nl,
     "The associative relationship covers associations between pairs of concepts that are not related hierarchically, but are semantically or conceptually associated to such an extent that the link between them needs to be made explicit, on the grounds that it may suggest additional or alternative terms for use in indexing or retrieval."@en;
-  skos:broader beg-nps:SemanticRelation ;
+  skos:broader beg-sbb:SemanticRelation ;
   dct:source
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     <https://www.w3.org/TR/skos-reference/#semantic-relations> ,
     skos: ;
-  skos:related beg-nps:Concept ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
+  skos:related beg-sbb:Concept ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 #is onderdeel van
-beg-nps:BroaderPartitive
+beg-sbb:BroaderPartitive
   a skos:Concept ;
   skos:prefLabel
     "is onderdeel van"@nl ,
@@ -360,14 +361,14 @@ beg-nps:BroaderPartitive
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skosthes: ;
   skos:related
-    beg-nps:Concept ,
-    beg-nps:Thesaurus ;
-  skos:broader beg-nps:Broader ;
-  skosthes:broaderGeneric beg-nps:Broader ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
+    beg-sbb:Concept ,
+    beg-sbb:Thesaurus ;
+  skos:broader beg-sbb:Broader ;
+  skosthes:broaderGeneric beg-sbb:Broader ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 #is specialisatie van
-beg-nps:BroaderGeneric
+beg-sbb:BroaderGeneric
   a skos:Concept ;
   skos:prefLabel
     "broader term (generic)"@en ,
@@ -380,13 +381,13 @@ beg-nps:BroaderGeneric
     "The hierarchical relationship should be established between a pair of concepts when the scope of one of them falls completely within the scope of the other. It should be based on degrees or levels of superordination and subordination, where the superordinate concept represents a class or whole, and subordinate concepts refer to its members or species. A generalization is used when it is relevant to distinguish the relation from a partial or instantaneous hierarchical relation."@en,
     "De hiërarchische relatie tussen een paar begrippen wordt gebruikt wanneer de reikwijdte van het ene begrip volledig binnen de reikwijdte van het andere begrip valt. Deze relatie is gebaseerd op op graden of niveaus van bovenliggend en onderliggend, waarbij het bovenliggende concept een klasse of geheel vertegenwoordigt, en onderliggende concepten verwijzen naar haar leden of soorten. Een generalisatie wordt gebruikt wanneer het relevant is om deze relatie te onderscheiden van een partiële of instantiële hiërarchische relatie."@nl;
   dct:source skosthes: ;
-  skos:related beg-nps:Concept ;
-  skos:broader beg-nps:Broader ;
-  skosthes:broaderGeneric beg-nps:Broader;
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
+  skos:related beg-sbb:Concept ;
+  skos:broader beg-sbb:Broader ;
+  skosthes:broaderGeneric beg-sbb:Broader;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 #notitie
-beg-nps:Note
+beg-sbb:Note
   a skos:Concept ;
   skos:prefLabel
     "note"@en ,
@@ -400,10 +401,10 @@ beg-nps:Note
   dct:source
     skos: ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes> ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS.
+  skos:inScheme begkr-sbb:BegrippenkaderNPS.
 
 #omvat
-beg-nps:NarrowerPartitive
+beg-sbb:NarrowerPartitive
   a skos:Concept ;
   skos:prefLabel
     "omvat"@nl ,
@@ -418,13 +419,13 @@ beg-nps:NarrowerPartitive
   dct:source
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skosthes: ;
-  skos:related beg-nps:Concept ;
-  skos:broader beg-nps:Narrower ;
-  skosthes:broaderGeneric beg-nps:Narrower;
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
+  skos:related beg-sbb:Concept ;
+  skos:broader beg-sbb:Narrower ;
+  skosthes:broaderGeneric beg-sbb:Narrower;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 #overeenkomstig bovenliggend
-beg-nps:BroadMatch
+beg-sbb:BroadMatch
   a skos:Concept ;
   skos:prefLabel
     "overeenkomstig bovenliggend"@nl ,
@@ -439,12 +440,12 @@ beg-nps:BroadMatch
     <https://www.w3.org/TR/skos-reference/#mapping> ,
     skos: ,
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
-  skos:broader beg-nps:MatchingRelation ;
-  skos:related beg-nps:Broader ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
+  skos:broader beg-sbb:MatchingRelation ;
+  skos:related beg-sbb:Broader ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 #overeenkomstig onderliggend
-beg-nps:NarrowMatch
+beg-sbb:NarrowMatch
   a skos:Concept ;
   skos:prefLabel
     "has narrower match"@en ,
@@ -459,12 +460,12 @@ beg-nps:NarrowMatch
     <https://www.w3.org/TR/skos-reference/#mapping> ,
     skos: ,
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
-  skos:broader beg-nps:MatchingRelation ;
-  skos:related beg-nps:Narrower ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
+  skos:broader beg-sbb:MatchingRelation ;
+  skos:related beg-sbb:Narrower ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 #overeenkomstig verwant
-beg-nps:RelatedMatch
+beg-sbb:RelatedMatch
   a skos:Concept ;
   skos:prefLabel
     "has related match"@en ,
@@ -475,15 +476,15 @@ beg-nps:RelatedMatch
   skos:scopeNote 
     "Conventie is om overeenkomstig verwant te gebruiken om een ​​link weer te geven naar een begrip dat dezelfde bedoelde betekenis heeft als de standaard is gerelateerd aan relatie, maar met een ander toepassingsbereik. Je zou kunnen zeggen dat het in kaart brengen van relaties minder inherent is aan de betekenis van de betreffende begrippen. Vanuit het standpunt van de oorspronkelijke ontwerper van een begrippenkader kunnen ze soms zelfs verkeer zijn. Harmonisatie eigenschappen zijn nuttig in specifieke toepassingen die meerdere, conceptueel overlappende begrippenkaders gebruiken. Conventie is bovendien dat harmonisatie relaties worden gelegd tussen concepten die tot verschillende conceptschema's behoren."@nl ,
     "By convention, has related match is used to represent a link that has the same intended meaning as the standard related relation, but with a different application scope. One might say that mapping relationships are less inherent to the meaning of the concepts they involve. From the point of view of the original designer of a mapped concept scheme, they might even sometimes be wrong. Mapping properties are expected to be useful in specific applications that use multiple, conceptually overlapping KOSs. By convention, mapping relationships are expected to be asserted between concepts that belong to different concept schemes."@en;
-  skos:broader beg-nps:MatchingRelation ;
-  skos:related beg-nps:Concept ;
+  skos:broader beg-sbb:MatchingRelation ;
+  skos:related beg-sbb:Concept ;
   dct:source
     <https://www.w3.org/TR/skos-reference/#mapping> ,
     skos: ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS.
+  skos:inScheme begkr-sbb:BegrippenkaderNPS.
 
 #redactionele notitie
-beg-nps:EditorialNote
+beg-sbb:EditorialNote
   a skos:Concept ;
   skos:prefLabel
     "redactionele notitie"@nl ,
@@ -498,12 +499,12 @@ beg-nps:EditorialNote
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes> ,
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skos: ;
-  skos:broader beg-nps:Note ;
-  skos:related beg-nps:Concept ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
+  skos:broader beg-sbb:Note ;
+  skos:related beg-sbb:Concept ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 #semantische relatie
-beg-nps:SemanticRelation
+beg-sbb:SemanticRelation
   a skos:Concept ;
   skos:prefLabel
     "semantische relatie"@nl ,
@@ -517,10 +518,10 @@ beg-nps:SemanticRelation
   dct:source
     <https://www.w3.org/TR/skos-reference/#semantic-relations> ,
     skos: ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 #term
-beg-nps:Label
+beg-sbb:Label
   a skos:Concept ;
   skos:prefLabel "label"@en ,
     "term"@nl ;
@@ -531,11 +532,11 @@ beg-nps:Label
     "Dit is een overkoepelend begrip voor de verschillende soorten termen (voorkeursterm, alternatieve term, zoekterm) waarmee begrippen kunnen worden aangeduid. Good practice is om die specifieke termen te gebruiken. In de definitie moet 'woord' breed worden geïnterpreteerd. Een term mag ook een afkorting zijn, zoals 'B.T.W. (de voorkeursterm voor 'Belasting op toegevoegde waarde'), of een code zoals '013' (Een poppodium in Tilburg)."@nl ,
     "This is an umbrella term for the different types of labels (preferred label, alternative label, hidden label) with which concepts can be indicated. Good practice is to use those specific terms. In the definition, word should be interpreted broadly. A term can also be an abbreviation, such as 'VAT.' (the preferred term for 'Value Added Tax'), or a code such as '013' (A music venue in Tilburg)."@en ;
   dct:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.61> ;
-  skos:related beg-nps:Concept ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
+  skos:related beg-sbb:Concept ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 #toelichting
-beg-nps:ScopeNote
+beg-sbb:ScopeNote
   a skos:Concept ;
   skos:prefLabel
     "scope note"@en ,
@@ -550,12 +551,12 @@ beg-nps:ScopeNote
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes> ,
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skos: ;
-  skos:broader beg-nps:Note ;
-  skos:related beg-nps:Concept ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
+  skos:broader beg-sbb:Note ;
+  skos:related beg-sbb:Concept ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 #uitleg
-beg-nps:Comment
+beg-sbb:Comment
   a skos:Concept ;
   skos:prefLabel
     "uitleg"@nl ,
@@ -570,12 +571,12 @@ beg-nps:Comment
   skos:scopeNote 
     "De definitie moet precies kloppen. De uitleg is er veel meer op gericht om de lezer te laten begrijpen wat er wordt bedoeld. "@nl,
     "The definition must be exactly correct. The comment is much more focused on making the reader understand what is meant."@en ;
-  skos:related beg-nps:Concept ;
-  skos:broader beg-nps:Note ; 
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
+  skos:related beg-sbb:Concept ;
+  skos:broader beg-sbb:Note ; 
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 #voorbeeld
-beg-nps:Example
+beg-sbb:Example
   a skos:Concept ;
   skos:prefLabel
     "voorbeeld"@nl ,
@@ -590,12 +591,12 @@ beg-nps:Example
     <https://www.w3.org/TR/skos-reference/#notes> ,
     skos: , 
     <https://nl.wikipedia.org/wiki/Voorbeeld>;
-  skos:broader beg-nps:Note ;
-  skos:related beg-nps:Concept ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
+  skos:broader beg-sbb:Note ;
+  skos:related beg-sbb:Concept ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 #voorkeursterm
-beg-nps:PrefLabel
+beg-sbb:PrefLabel
   a skos:Concept ;
   skos:prefLabel
     "voorkeursterm"@nl ,
@@ -611,12 +612,12 @@ beg-nps:PrefLabel
   dct:source
     <https://www.w3.org/TR/skos-reference/#labels> ,
     skos: ;
-  skos:related beg-nps:Concept ;
-  skos:broader beg-nps:Label ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
+  skos:related beg-sbb:Concept ;
+  skos:broader beg-sbb:Label ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 #vrijwel overeenkomstig
-beg-nps:CloseMatch
+beg-sbb:CloseMatch
   a skos:Concept ;
   skos:prefLabel
     "vrijwel overeenkomstig"@nl ,
@@ -630,12 +631,12 @@ beg-nps:CloseMatch
   dct:source
     skos: ,
     <https://www.w3.org/TR/skos-reference/#mapping> ;
-  skos:related beg-nps:Concept ;
-  skos:broader beg-nps:MatchingRelation ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
+  skos:related beg-sbb:Concept ;
+  skos:broader beg-sbb:MatchingRelation ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 #wijzigingsnotitie
-beg-nps:ChangeNote
+beg-sbb:ChangeNote
   a skos:Concept ;
   skos:prefLabel
     "change note"@en ,
@@ -649,11 +650,11 @@ beg-nps:ChangeNote
   dct:source
     skos: ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes> ;
-  skos:broader beg-nps:Note ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
+  skos:broader beg-sbb:Note ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 #zoekterm
-beg-nps:HiddenLabel
+beg-sbb:HiddenLabel
   a skos:Concept ;
   skos:prefLabel
     "zoekterm"@nl ,
@@ -667,13 +668,13 @@ beg-nps:HiddenLabel
   dct:source
     <https://www.w3.org/TR/skos-reference/#labels> ,
     skos: ;
-  skos:broader beg-nps:Label ;
-  skos:related beg-nps:Concept ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
+  skos:broader beg-sbb:Label ;
+  skos:related beg-sbb:Concept ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 # BESCHRIJVING BRON
 
-beg-nps:Resource
+beg-sbb:Resource
   a skos:Concept ;
   skos:prefLabel
     "resource"@en ,
@@ -689,14 +690,14 @@ beg-nps:Resource
     foaf: ,
     <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source> ;
   skos:related 
-    beg-nps:BibliographicCitation ,
-    beg-nps:Type ,
-    beg-nps:Page ,
-    beg-nps:Concept;
- skos:inScheme begkr-nps:BegrippenkaderNPS.
+    beg-sbb:BibliographicCitation ,
+    beg-sbb:Type ,
+    beg-sbb:Page ,
+    beg-sbb:Concept;
+ skos:inScheme begkr-sbb:BegrippenkaderNPS.
 
 #citeertitel
-beg-nps:BibliographicCitation
+beg-sbb:BibliographicCitation
   a skos:Concept ;
   skos:prefLabel
     "citeertitel"@nl ,
@@ -712,10 +713,10 @@ beg-nps:BibliographicCitation
     <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/bibliographicCitation> ,
     dct: ,
     foaf: ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 #soort
-beg-nps:Type
+beg-sbb:Type
   a skos:Concept ;
   skos:prefLabel
     "soort"@nl ,
@@ -728,10 +729,10 @@ beg-nps:Type
     "Kind indicates whether it is a 'written resource' or a 'web resource'. "@en;
   dct:source
     dct: ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 #url
-beg-nps:Page
+beg-sbb:Page
   a skos:Concept ;
   skos:prefLabel
     "url"@nl ,
@@ -744,14 +745,14 @@ beg-nps:Page
     "A URL is captured if the resource is a resource that can be found on the web. This is preferably the iri of the resource and possibly the url of the relevant page on the web."@en;
   dct:source
     foaf: ;
-skos:inScheme begkr-nps:BegrippenkaderNPS .
+skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 # BESCHRIJVING BEGRIPPENKADER
 
 # BEGRIPPENKADER
 
 #begrippenkader
-beg-nps:ConceptScheme
+beg-sbb:ConceptScheme
   a skos:Concept ;
   skos:prefLabel
     "begrippenkader"@nl ,
@@ -771,12 +772,12 @@ beg-nps:ConceptScheme
     <https://www.w3.org/TR/skos-reference/#schemes> ,
     skos:,
     <https://en.wikipedia.org/wiki/Controlled_vocabulary>;
-  skos:related beg-nps:TopConcept ;
+  skos:related beg-sbb:TopConcept ;
   skos:example "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes. Concept schemes are also embedded in glossaries and terminologies."@en ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 #begrippenlijst
-beg-nps:Glossary
+beg-sbb:Glossary
   a skos:Concept ;
   skos:prefLabel
     "begrippenlijst"@nl ,
@@ -792,32 +793,32 @@ beg-nps:Glossary
     "In practice, the glossary is uses as well for a list of terms as fora list of concepts. In this case it is emphatically a list of concepts, including an explanation of the meaning. Traditionally, a glossary of terms in that book appears at the end of a book that are either newly introduced, uncommon, or specialized. Semantically, the definition is about the concept the term denotes and not about the term itself."@en ;
   dct:source <https://en.wikipedia.org/wiki/Controlled_vocabulary>;
   skos:related
-    beg-nps:AltLabel ,
-    beg-nps:InScheme ,
-    beg-nps:Source ,
-    beg-nps:Notation ,
-    beg-nps:Definition ,
-    beg-nps:HistoryNote,
-    beg-nps:Note ,
-    beg-nps:EditorialNote ,
-    beg-nps:Label ,
-    beg-nps:ScopeNote ,
-    beg-nps:Comment ,
-    beg-nps:PrefLabel ,
-    beg-nps:ChangeNote ,
-    beg-nps:HiddenLabel ,
-    beg-nps:Example ;
-  skos:broader beg-nps:ConceptScheme ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
+    beg-sbb:AltLabel ,
+    beg-sbb:InScheme ,
+    beg-sbb:Source ,
+    beg-sbb:Notation ,
+    beg-sbb:Definition ,
+    beg-sbb:HistoryNote,
+    beg-sbb:Note ,
+    beg-sbb:EditorialNote ,
+    beg-sbb:Label ,
+    beg-sbb:ScopeNote ,
+    beg-sbb:Comment ,
+    beg-sbb:PrefLabel ,
+    beg-sbb:ChangeNote ,
+    beg-sbb:HiddenLabel ,
+    beg-sbb:Example ;
+  skos:broader beg-sbb:ConceptScheme ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 #taxonomie
-beg-nps:Taxonomy
+beg-sbb:Taxonomy
   a skos:Concept ;
   skos:prefLabel
     "taxonomie"@nl ,
     "taxonomy"@en ;
   skos:altLabel "classificatieschema" ;
-  skos:broader beg-nps:ConceptScheme ;
+  skos:broader beg-sbb:ConceptScheme ;
   skos:definition
     "Een taxonomie (of taxonomische classificatie) is een classificatieschema, met name een hiërarchische classificatie, waarin concepten zijn georganiseerd in groepen of typen."@nl ,
     "A taxonomy (or taxonomical classification) is a scheme of classification, especially a hierarchical classification, in which concepts are organized into groups or types."@en ;
@@ -825,14 +826,14 @@ beg-nps:Taxonomy
     "Een taxonomie wordt gebruikt om kennis te ordenen en te indexeren (opgeslagen als documenten, artikelen, video's, enz.), zoals in de vorm van een bibliotheekclassificatiesysteem of een taxonomie van een zoekmachine, zodat gebruikers de informatie die ze zoeken gemakkelijker kunnen vinden. Taxonomieën zijn hiërarchieën (en hebben dus een intrinsieke boomstructuur)."@nl,
     "A taxonomy is be used to organize and index knowledge (stored as documents, articles, videos, etc.), such as in the form of a library classification system, or a search engine taxonomy, so that users can more easily find the information they are searching for. Taxonomies are hierarchies (and thus, have an intrinsic tree structure)."@en ;
   skos:related
-    beg-nps:Narrower ,
-    beg-nps:Broader ,
-    beg-nps:TopConcept;
+    beg-sbb:Narrower ,
+    beg-sbb:Broader ,
+    beg-sbb:TopConcept;
   dct:source <https://en.wikipedia.org/wiki/Taxonomy> ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 #thesaurus
-beg-nps:Thesaurus
+beg-sbb:Thesaurus
   a skos:Concept ;
   skos:prefLabel
     "thesaurus"@nl ,
@@ -847,24 +848,24 @@ beg-nps:Thesaurus
     <https://en.wikipedia.org/wiki/Thesaurus> ,
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.62> ;
   skos:related
-    beg-nps:ExactMatch ,
-    beg-nps:MatchingRelation ,
-    beg-nps:NarrowerInstantial ,
-    beg-nps:BroaderInstantial ,
-    beg-nps:NarrowerGeneric ,
-    beg-nps:Related ,
-    beg-nps:BroaderPartitive ,
-    beg-nps:BroaderGeneric ,
-    beg-nps:NarrowerPartitive ,
-    beg-nps:BroadMatch ,
-    beg-nps:NarrowMatch ,
-    beg-nps:RelatedMatch ,
-    beg-nps:CloseMatch ;
-  skos:broader beg-nps:ConceptScheme ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
+    beg-sbb:ExactMatch ,
+    beg-sbb:MatchingRelation ,
+    beg-sbb:NarrowerInstantial ,
+    beg-sbb:BroaderInstantial ,
+    beg-sbb:NarrowerGeneric ,
+    beg-sbb:Related ,
+    beg-sbb:BroaderPartitive ,
+    beg-sbb:BroaderGeneric ,
+    beg-sbb:NarrowerPartitive ,
+    beg-sbb:BroadMatch ,
+    beg-sbb:NarrowMatch ,
+    beg-sbb:RelatedMatch ,
+    beg-sbb:CloseMatch ;
+  skos:broader beg-sbb:ConceptScheme ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 #topbegrip
-beg-nps:TopConcept
+beg-sbb:TopConcept
   a skos:Concept ;
   skos:prefLabel
     "heeft topbegrip"@nl ,
@@ -878,27 +879,27 @@ beg-nps:TopConcept
     "Heeft topconcept adresseert een concept dat bovenaan een hiërarchie staat, d.w.z. het heeft geen bredere concepten. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle concepten op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen."@nl; 
   dct:source skos: ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> ;
-  skos:related beg-nps:Taxonomy ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
+  skos:related beg-sbb:Taxonomy ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 # EIGENSCHAPPEN EN METADATA
 
 #alternatieve naam begrippenkader
-beg-nps:AlternatieveNaamBegrippenkader a skos:Concept;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+beg-sbb:AlternatieveNaamBegrippenkader a skos:Concept;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS ;
   skos:prefLabel "alternatieve naam begrippenkader"@nl;
   skos:definition "namen waaronder de catalogus ook bekend is, denk bijvoorbeeld aan afkortingen of een volledige naam"@nl .
 
 #beschrijving begrippenkader
-beg-nps:BeschrijvingBegrippenkader a skos:Concept;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+beg-sbb:BeschrijvingBegrippenkader a skos:Concept;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS ;
   skos:prefLabel "beschrijving begrippenkader"@nl;
   skos:definition "Een formele beschrijving van het begrippenkader, het doel en de inhoud."@nl;
   skos:editorialNote "officieel met kleine letter"@nl .
 
 #bronhouder
-beg-nps:Bronhouder a skos:Concept;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+beg-sbb:Bronhouder a skos:Concept;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS ;
   skos:prefLabel "bronhouder"@nl;
   skos:definition "Een bronhouder is verantwoordelijk voor het inwinnen en bijhouden van de gegevens in de catalogus en voor het borgen van de kwaliteit van die gegevens"@nl;
   skos:scopeNote "Waardelijst toevoegen met bekende (Nederlandse) organisaties? "@nl;
@@ -906,39 +907,39 @@ beg-nps:Bronhouder a skos:Concept;
 via prov:agent wordt de prov:Agent vastgelegd, welke op zijn beurt een foaf:Organisation is. (zie https://www.w3.org/TR/vocab-dcat-3/#qualified-forms) """@nl .
 
 #conformeert aan
-beg-nps:ConformeertAan a skos:Concept;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+beg-sbb:ConformeertAan a skos:Concept;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS ;
   skos:prefLabel "conformeert aan"@nl;
   skos:definition "Deze eigenschap verwijst naar de vastgestelde standaard waaraan de data van de beschreven resource voldoet. Hierbij kan worden gedacht aan het model, schema, ontology, view of profiel."@nl;
   skos:scopeNote "goed beschrijven"@nl .
 
 #contactpunt
-beg-nps:Contactpunt a skos:Concept;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+beg-sbb:Contactpunt a skos:Concept;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS ;
   skos:prefLabel "contactpunt"@nl;
   skos:definition "Contactinformatie die gebruikt kan worden om opmerkingen over de catalogus door te geven"@nl .
 
 #documentatiepagina
-beg-nps:Brondocumentatiepagina a skos:Concept;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+beg-sbb:Brondocumentatiepagina a skos:Concept;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS ;
   skos:prefLabel "documentatiepagina"@nl;
   skos:definition "De URI van de (start)pagina waarop informatie over deze begrippen kader te vinden is.Via deze pagina kunnen andere webpagina's bereikt worden"@nl .
 
 #frequentie
-beg-nps:FrequentieUri a skos:Concept;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+beg-sbb:FrequentieUri a skos:Concept;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS ;
   skos:prefLabel "frequentie (URI)"@nl;
   skos:definition "De frequentie waarmee de registratie wordt bijgewerkt. Kies de daarbij passende URI uit de desbetreffende waardelijst."@nl;
   skos:editorialNote "bekend van open data"@nl .
 
 #laatst bijgewerkt
-beg-nps:LaatstBijgewerkt a skos:Concept;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+beg-sbb:LaatstBijgewerkt a skos:Concept;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS ;
   skos:prefLabel "laatst bijgewerkt"@nl .
 
 #licentie
-beg-nps:Licentie a skos:Concept;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+beg-sbb:Licentie a skos:Concept;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS ;
   skos:prefLabel "licentie"@nl;
   skos:definition "Deze eigenschap verwijst naar het juridische document dat de gebruiksrechten van de catalogus beschrijft"@nl;
   skos:scopeNote "idem, we kiezen voor een eenvoudige waardelijst"@nl;
@@ -946,103 +947,103 @@ beg-nps:Licentie a skos:Concept;
 https://waardelijsten.dcat-ap-donl.nl/donl_license.json"""@nl .
 
 #ontwerpbeslissingen
-beg-nps:Ontwerpbeslissingen a skos:Concept;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+beg-sbb:Ontwerpbeslissingen a skos:Concept;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS ;
   skos:prefLabel "ontwerpbeslissingen"@nl;
   skos:definition "Keuzes die zijn gemaakt door de opstellers van het begrippenkader"@nl;
   skos:editorialNote "Ook geschikt als disclaimer/proclaimer"@nl .
 
 #opdrachtgever
-beg-nps:Opdrachtgever a skos:Concept;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+beg-sbb:Opdrachtgever a skos:Concept;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS ;
   skos:prefLabel "opdrachtgever"@nl;
   skos:definition "De opdrachtgever is de voor de catalogus verantwoordelijke instantie, i.e., de opdrachtgever van de ‘verstrekker’"@nl;
   skos:editorialNote "Is dat iets anders dan de bronhouder? Ja"@nl .
 
 #publicatiedatum
-beg-nps:Publicatiedatum a skos:Concept;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+beg-sbb:Publicatiedatum a skos:Concept;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS ;
   skos:prefLabel "publicatiedatum"@nl;
   skos:definition "De dag waarop deze catalogus voor de eerste keer beschikbaar is gekomen. De dag waarom de eerste versie van de catalogus beschikbaar kwam."@nl .
 
 #taal
-beg-nps:Taal a skos:Concept;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+beg-sbb:Taal a skos:Concept;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS ;
   skos:prefLabel "taal"@nl;
   skos:definition "De talen gebruikt voor tekstuele informatie in het begrippen kader"@nl;
   skos:scopeNote "We gebruiken als waardelijst dezelfde lijst als de EU voorschrijft in het DCAT-AP profiel: http://publications.europa.eu/resource/authority/language Deze lijst gebruikt drieletterige codes voor een taal, in tegenstelling tot de tweeletterige postfixes die aan teksten toegevoegd kunnen worden."@nl;
   skos:editorialNote "bekend van open data"@nl .
 
 #thema/categorie
-beg-nps:ThemaCategorie a skos:Concept;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+beg-sbb:ThemaCategorie a skos:Concept;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS ;
   skos:prefLabel "thema/categorie"@nl;
   skos:definition "Deze eigenschap verwijst naar een thema, bijvoorbeeld uit de taxonomie beleidsagenda"@nl;
   skos:scopeNote "Dit veld verwijst naar een waardelijst, maar welke waardelijsten zijn hiervoor geschikt"@nl;
   skos:editorialNote "Voor zover ik weet gaat het hierbij altijd om overheidsthema's Voortgezet Onderwijs bijvoorbeeld. Dit is meer algemeen. Ik ken daargeen voorbeelden van. Misschien moet er een thema Catalogus bijkomen"@nl .
 
 #toegangsrechten
-beg-nps:Toegangsrechten a skos:Concept;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+beg-sbb:Toegangsrechten a skos:Concept;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS ;
   skos:prefLabel "toegangsrechten"@nl;
   skos:definition "geeft of een registratie moet worden gezien als open data, toegangsbeperkingen heeft of niet openbaar is."@nl;
   skos:scopeNote "Er bestaan manieren om exact aan te geven met Linked Data onder welke rechten de informatie gebruikt kan worden. Probleem is dat deze standaarden moeilijk te maken en moeilijk te lezen zijn. Daarom kiezen we voor een eenvoudige waardelijst."@nl;
   skos:editorialNote "https://waardelijsten.dcat-ap-donl.nl/overheid_openbaarheidsniveau.json gaat vervallen met nieuwe DCAT profiel. Dus gebruiken we een EU waardelijst.. Begrippen kader is niet per definitie openbaar.  http://publications.europa.eu/resource/authority/access-right"@nl .
 
 #toelichting Begrippenkader
-beg-nps:Toelichting a skos:Concept;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+beg-sbb:Toelichting a skos:Concept;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS ;
   skos:prefLabel "toelichting begrippenkader"@nl;
   skos:definition "nadere toelichting van de catalogus, Geeft de mogelijkheid tot wat informeler taalgebruik"@nl;
   skos:editorialNote "voor voorbeelden kun je skos:example gebruiken"@nl .
 
 #toezichthouder
-beg-nps:Toezichthouder a skos:Concept;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+beg-sbb:Toezichthouder a skos:Concept;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS ;
   skos:prefLabel "toezichthouder"@nl;
   skos:definition "De toezichthouder is de partij die verantwoordelijk is dat wordt toegezien of de catalogus in overeenstemming met eisen, afspraken en wetgeving opereert"@nl;
   skos:scopeNote "Een optie is om hier prov:qualifiedAttribution te gebruiken, met bereik https://www.w3.org/TR/prov-o/#Attribution "@nl;
   skos:editorialNote "foaf:Organization is een class. Wat is de property tussen catalog en organisatie met de betekenis toezichthouder?"@nl .
 
 #trefwoorden
-beg-nps:Keywords a skos:Concept;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+beg-sbb:Keywords a skos:Concept;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS ;
   skos:prefLabel "trefwoorden"@nl;
   skos:prefLabel "keywords"@en;
   skos:definition "Deze eigenschap bevat vrije keywords of termen die de resource beschrijven."@nl;
   skos:scopeNote "Toelichting over het gebruik"@nl .
 
 #uitgever
-beg-nps:Uitgever a skos:Concept;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+beg-sbb:Uitgever a skos:Concept;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS ;
   skos:prefLabel "uitgever"@nl;
   skos:definition "De uitgever of verstrekker is verantwoordelijk voor het verstrekken van de gegevens aan afnemers"@nl .
 
 #uitleg begrippenkader
-beg-nps:UitlegBegrippenkader a skos:Concept;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+beg-sbb:UitlegBegrippenkader a skos:Concept;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS ;
   skos:prefLabel "uitleg begrippenkader "@nl;
   skos:definition "Een beschrijving van de catalogus, het doel en de inhoud in klare taal, niveau B2"@nl;
   skos:scopeNote "Verplicht omdat ieder begrippenkader een duidelijke beschrijving moet bevatten. In SHACL een vrij zware warning"@nl;
   skos:editorialNote "een aanduiding van de context waarin de begrippen worden gebruikt. Bij de overheid vaak de uitvoering van een bepaalde wet."@nl .
 
 #versie
-beg-nps:Versie a skos:Concept;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+beg-sbb:Versie a skos:Concept;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS ;
   skos:prefLabel "versie"@nl;
   skos:definition "De versie van deze catalogus. Dit wordt niet gebruikt m.b.t. de inhoud van de catalogus, maar voor wijzigingen in de structuur van de catalogus"@nl;
   skos:scopeNote "Willen we in Linked Datavastleggen wanneer de structuur voor het laatst te gewijzigd en wat die wijziging was? Dit lijkt beter op zijn plaat in release notes. Dan een URI openemen naar die notes?"@nl;
   skos:editorialNote "dcat:version is toegevoegd in DCAT version 3"@nl .
 
 #voorbeeld begrippenkader
-beg-nps:Voorbeeld a skos:Concept;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+beg-sbb:Voorbeeld a skos:Concept;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS ;
   skos:prefLabel "voorbeeld begrippenkader"@nl;
   skos:definition " Voorbeelden van gebruik catalogus"@nl .
 
 #Type begrippenkader
-beg-nps:TypeBegrippenkader a skos:Concept;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+beg-sbb:TypeBegrippenkader a skos:Concept;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS ;
   skos:prefLabel "Typering"@nl;
   skos:altLabel "Type"@nl;
   skos:definition "Deze eigenschap beschrijft het type van de resource"@nl;
@@ -1051,30 +1052,30 @@ beg-nps:TypeBegrippenkader a skos:Concept;
 Het begrippenkader is altijd een SKOS concept scheme. Moet dat expliciet gemaakt worden met dit veld? Wordt al gezet bij definieren van het type van het begrippen kader"""@nl .
 
 #Voorkeursnaam begrippenkader
-beg-nps:VoorkeursnaamBegrippenkader a skos:Concept;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+beg-sbb:VoorkeursnaamBegrippenkader a skos:Concept;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS ;
   skos:prefLabel "Voorkeursnaam begrippenkader"@nl;
   skos:definition "De naam waarmee de catalogus in UI wordt aangeduid"@nl .
 
 #wetgeving
-beg-nps:Wetgeving a skos:Concept;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+beg-sbb:Wetgeving a skos:Concept;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS ;
   skos:prefLabel "wetgeving"@nl;
   skos:definition "De naam van de wetgeving/besluit/... die tot de creatie van deze begrippen kader heeft geleid "@nl;
   skos:scopeNote "Verwijzen naar paragraaf over bron."@nl .
 
 # bron wetgeving begrippenkader- Kan waarschijnlijk voor begrippenkader op dezelfde manier als bij begrip: de verwijzing als eigenschap en de bron gewoon als bron
-#beg-nps:WetgevingUri a skos:Concept;
-#  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+#beg-sbb:WetgevingUri a skos:Concept;
+#  skos:inScheme begkr-sbb:BegrippenkaderNPS ;
 #  skos:prefLabel "wetgeving (URI)"@nl;
 #  skos:scopeNote "Verwijzen naar groepje van Koos hoe omm te gaan met dit soort objecten: URI met label "@nl .
 
 # BESCHRIJVING COLLECTIE
 
 #collectie
-beg-nps:Collection
+beg-sbb:Collection
   a skos:Concept ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS ;
   skos:definition
     "A meaningful collection of concepts."@en ,
     "Een collectie is een verzameling van begrippen die voor een bepaalde situatie betekenisvol bij elkaar passen."@nl ;
@@ -1084,7 +1085,7 @@ beg-nps:Collection
   skos:scopeNote
     "Met betekenisvol wordt bedoeld dat de begrippen op een bepaalde manier met elkaar samenhangen. Een collectie betreft vaak een deel van de begrippen uit één begrippenkader, maar kan ook begrippen bevatten die afkomstig zijn uit meerdere begrippenkaders"@nl ,
     "Collections can be used where you would like a set of concepts to be displayed under a 'node label'."@en ;
-  skos:related beg-nps:Member ;
+  skos:related beg-sbb:Member ;
   dct:source
     <https://www.w3.org/TR/skos-reference/#collections> ,
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.38> ,
@@ -1098,7 +1099,7 @@ beg-nps:Collection
     "verzameling"@nl .
 
 #bevat
-beg-nps:Member
+beg-sbb:Member
   a skos:Concept ;
   skos:definition
     "Relates a collection to one of its members."@en ,
@@ -1107,10 +1108,10 @@ beg-nps:Member
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skos: ,
     <https://www.w3.org/TR/skos-reference/#collections> ;
-  skos:related beg-nps:Collection ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS ;
+  skos:related beg-sbb:Collection ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS ;
   skos:editorialNote "Specifiek gebruik van 'begrip of een collectie van begrippen' in plaats van het minderzeggende 'lid'"@nl ;
   skos:prefLabel
     "has member"@en ,
     "bevat"@nl ;
-  skos:inScheme begkr-nps:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .

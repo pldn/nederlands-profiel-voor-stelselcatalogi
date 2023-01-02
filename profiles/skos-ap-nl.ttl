@@ -5,7 +5,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix skosapnl: <http://pldn.nl/def/skosapnl#> .
+@prefix skosapnl: <http://nlbegrip.nl/def/skosapnl#> .
 @prefix isothes: <http://purl.org/iso25964/skos-thes#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
@@ -15,7 +15,7 @@
 
 skosapnl:
   a owl:Ontology ;
-  rdfs:label "Nederlands profiel voor stelselcatalogi"@nl ;
+  rdfs:label "Toepassingsprofiel Nederlandse standaard voor het beschrijven van begrippen in LD"@nl ;
   owl:versionInfo "0.0.1" .
 
 skosapnl:Concept
