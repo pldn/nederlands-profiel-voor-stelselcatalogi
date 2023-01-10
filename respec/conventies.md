@@ -1,13 +1,13 @@
-## Conventies
+## Namespace verklaringen
 
 Binnen dit document worden de volgende prefixes gehanteerd.
 
 | Prefix     | Namespace                                   |
 | ---------- | ------------------------------------------- |
 | skos:      | http://www.w3.org/2004/02/skos/core#        |
-| beg-nps:   | http://pldn.nl/skosapnl/id/concept/         |
-| begkr-nps: | http://pldn.nl/skosapnl/id/conceptscheme/   |
-| skosapnl:  | http://pldn.nl/def/skosapnl#                |
+| beg-sbb:   | http://nlbegrip.nl/sbb/id/begrip/           |
+| begkr-sbb: | http://nlbegrip.nl/sbb/id/begrippenkader/   |
+| skosapnl:  | http://nlbegrip.nl/def/skosapnl#            |
 | isothes:   | http://purl.org/iso25964/skos-thes#         |
 | dct:       | http://www.w3.org/2000/01/rdf-schema#       |
 | foaf:      | http://xmlns.com/foaf/0.1/                  |
@@ -19,4 +19,4 @@ Binnen dit document worden de volgende prefixes gehanteerd.
 | rdfs:      | http://www.w3.org/2000/01/rdf-schema#       |
 | sh:        | http://www.w3.org/ns/shacl#                 |
 | xsd:       | http://www.w3.org/2001/XMLSchema#           |
-| ex:        | http://example.com/ns#                      |
+| ex:        | http://example.org/                         |

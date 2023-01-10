@@ -46,9 +46,9 @@ ex:ingezetene a skos:Concept ;
 
 ex:GemeentewetArt2 a foaf:Document ;
   rdfs:label "Gemeentewet Art. 2" ;
-  foaf:page <https://wetten.overheid.nl/jci1.3:c:BWBR0005416&titeldeel=I&artikel=2&z=2022-05-01&g=2022-05-01>  ;
+  foaf:page &lt;https://wetten.overheid.nl/jci1.3:c:BWBR0005416&titeldeel=I&artikel=2&z=2022-05-01&g=2022-05-01&gt  ;
   rdfs:comment "In deze wet wordt verstaan onder ingezetenen: zij die hun werkelijke woonplaats in de gemeente hebben."@nl ;
-  dct:type <http://id.loc.gov/vocabulary/marcgt/leg> .
+  dct:type &lt;http://id.loc.gov/vocabulary/marcgt/leg&gt .
 </pre>
 
 De beschrijving van een niet op het web vindbare bron waarbij gekozen is voor het gebruik van een blank node kan er als volgt uit zien;
@@ -56,7 +56,7 @@ De beschrijving van een niet op het web vindbare bron waarbij gekozen is voor he
 ex:Flora a skos:Concept ;
   dct:source [ rdfs:label "Heukels' Flora van Nederland" ;
                dct:bibliographicCitation "Van der Meijden, R. (2005): Heukels' Flora van Nederland. Wolters-Noordhoff, Groningen/Houten (23e druk), 685 pp." ;
-               dct:type >http://id.loc.gov/vocabulary/marcgt/boo> ] .
+               dct:type &lt;http://id.loc.gov/vocabulary/marcgt/boo&gt ] .
 </pre>
 Het nadeel van blank nodes is dat de bronbeschrijving niet hergebruikt kan worden, voor iedere bronverwijzing naar een bepaalde bron moet de beschrijving opnieuw gemaakt worden.
 
