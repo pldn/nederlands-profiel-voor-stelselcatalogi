@@ -1,0 +1,211 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skosapnl: <http://nlbegrip.nl/def/skosapnl#> .
+@prefix isothes: <http://purl.org/iso25964/skos-thes#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+## shapes from WG Metadata
+
+skosapnl:SemanticAsset a sh:Nodeshape ;
+  rdfs:label "Semantische Asset"@nl ;
+  sh:property
+    skosapnl:SemanticAsset-prefLabel ,
+    skosapnl:SemanticAsset-altLabel ,
+    skosapnl:SemanticAsset-definition ,
+    skosapnl:SemanticAsset-uitleg ,
+    skosapnl:SemanticAsset-Toelichting ,
+    skosapnl:SemanticAsset-Ontwerpbeslissingen ,
+    skosapnl:SemanticAsset-Voorbeeld ,
+    skosapnl:SemanticAsset-Documentatiepagina ,
+    skosapnl:SemanticAsset-Wetgeving ,
+    skosapnl:SemanticAsset-WetgevingUri ,
+    skosapnl:SemanticAsset-Taal ,
+    skosapnl:SemanticAsset-Bronhouder ,
+    skosapnl:SemanticAsset-Uitgever ,
+    skosapnl:SemanticAsset-Contactpunt ,
+    skosapnl:SemanticAsset-Toezichthouder ,
+    skosapnl:SemanticAsset-Opdrachtgever ,
+    skosapnl:SemanticAsset-LaatstBijgewerkt ,
+    skosapnl:SemanticAsset-Versie ,
+    skosapnl:SemanticAsset-FrequentieUri ,
+    skosapnl:SemanticAsset-Publicatiedatum ,
+    skosapnl:SemanticAsset-Toegangsrechten ,
+    skosapnl:SemanticAsset-Licentie ,
+    skosapnl:SemanticAsset-ConformeertAan ,
+    skosapnl:SemanticAsset-ThemaCategorie ,
+    skosapnl:SemanticAsset-Keywords .
+
+skosapnl:SemanticAsset-prefLabel a sh:PropertyShape;
+  sh:name "Voorkeursnaam"@nl;
+  sh:order "1"^^xsd:integer;
+  sh:path [
+      sh:alternativePath (
+        skos:prefLabel
+        rdfs:label
+        dct:title
+      ) ;
+  ] ;
+  sh:minCount "1"^^xsd:integer;
+  sh:maxCount "1"^^xsd:integer .
+
+skosapnl:SemanticAsset-altLabel a sh:PropertyShape;
+  sh:name "Alternatieve naam"@nl;
+  sh:order "2"^^xsd:integer;
+  sh:path skos:altLabel .
+
+skosapnl:SemanticAsset-definition a sh:PropertyShape;
+  sh:name "Definitie"@nl;
+  sh:order "3"^^xsd:integer;
+  sh:path skos:definition;
+  sh:maxCount "1"^^xsd:integer .
+
+skosapnl:SemanticAsset-uitleg a sh:PropertyShape;
+  sh:name "Uitleg"@nl;
+  sh:order "4"^^xsd:integer;
+  sh:path rdfs:comment;
+  sh:minCount "1"^^xsd:integer;
+  sh:maxCount "1"^^xsd:integer .
+
+skosapnl:SemanticAsset-Toelichting a sh:PropertyShape;
+  sh:name "Toelichting"@nl;
+  sh:order "5"^^xsd:integer;
+  sh:path skos:scopeNote;
+  sh:maxCount "1"^^xsd:integer .
+
+skosapnl:SemanticAsset-Ontwerpbeslissingen a sh:PropertyShape;
+  sh:name "Ontwerpbeslissingen"@nl;
+  sh:order "6"^^xsd:integer;
+  sh:path skos:editorialNote .
+
+skosapnl:SemanticAsset-Voorbeeld a sh:PropertyShape;
+  sh:name "Voorbeeld"@nl;
+  sh:order "7"^^xsd:integer;
+  sh:path skos:example;
+  sh:maxCount "1"^^xsd:integer .
+
+skosapnl:SemanticAsset-Documentatiepagina a sh:PropertyShape;
+  sh:name "Documentatiepagina"@nl;
+  sh:order "8"^^xsd:integer;
+  sh:path foaf:page;
+  sh:class foaf:Document;
+  sh:maxCount "1"^^xsd:integer .
+
+skosapnl:SemanticAsset-Wetgeving a sh:PropertyShape;
+  sh:name "Wetgeving"@nl;
+  sh:maxCount "1"^^xsd:integer .
+
+skosapnl:SemanticAsset-WetgevingUri a sh:PropertyShape;
+  sh:name "Wetgeving (URI)"@nl;
+  sh:order "9"^^xsd:integer;
+  sh:maxCount "1"^^xsd:integer .
+
+skosapnl:SemanticAsset-Taal a sh:PropertyShape;
+  sh:name "Taal"@nl;
+  sh:order "10"^^xsd:integer;
+  sh:path dct:language;
+  sh:class <http://publications.europa.eu/resource/authority/language>;
+  sh:minCount "1"^^xsd:integer .
+
+skosapnl:SemanticAsset-Bronhouder a sh:PropertyShape;
+  sh:name "Bronhouder"@nl;
+  sh:order "11"^^xsd:integer;
+  sh:path prov:qualifiedAttribution;
+  sh:class prov:Attribution;
+  sh:maxCount "1"^^xsd:integer .
+
+skosapnl:SemanticAsset-Uitgever a sh:PropertyShape;
+  sh:name "Uitgever"@nl;
+  sh:order "12"^^xsd:integer;
+  sh:path dct:publisher;
+  sh:class foaf:Organisation;
+  sh:maxCount "1"^^xsd:integer .
+
+skosapnl:SemanticAsset-Contactpunt a sh:PropertyShape;
+  sh:name "Contactpunt"@nl;
+  sh:order "13"^^xsd:integer;
+  sh:path dcat:contactPoint;
+  sh:class vcard:Kind .
+
+skosapnl:SemanticAsset-Toezichthouder a sh:PropertyShape;
+  sh:name "Toezichthouder"@nl;
+  sh:order "14"^^xsd:integer;
+  sh:path prov:qualifiedAttribution;
+  sh:class prov:Attribution;
+  sh:maxCount "1"^^xsd:integer .
+
+skosapnl:SemanticAsset-Opdrachtgever a sh:PropertyShape;
+  sh:name "Opdrachtgever"@nl;
+  sh:order "15"^^xsd:integer;
+  sh:path prov:qualifiedAttribution;
+  sh:class prov:Attribution;
+  sh:maxCount "1"^^xsd:integer .
+
+skosapnl:SemanticAsset-LaatstBijgewerkt a sh:PropertyShape;
+  sh:name "Laatst bijgewerkt"@nl;
+  sh:order "16"^^xsd:integer;
+  sh:path dct:modified;
+  sh:maxCount "1"^^xsd:integer .
+
+skosapnl:SemanticAsset-Versie a sh:PropertyShape;
+  sh:name "Versie"@nl;
+  sh:order "17"^^xsd:integer;
+  sh:path dcat:version;
+  sh:maxCount "1"^^xsd:integer .
+
+skosapnl:SemanticAsset-FrequentieUri a sh:PropertyShape;
+  sh:name "Frequentie (URI)"@nl;
+  sh:order "18"^^xsd:integer;
+  sh:path [
+    sh:alternativePath (
+      dct:accrualPeriodicity
+      <https://standaarden.overheid.nl/owms/terms/Frequentie>
+    ) ;
+  ] ;
+  sh:maxCount "1"^^xsd:integer .
+
+skosapnl:SemanticAsset-Publicatiedatum a sh:PropertyShape;
+  sh:name "Publicatiedatum"@nl;
+  sh:order "19"^^xsd:integer;
+  sh:path dct:issued;
+  sh:maxCount "1"^^xsd:integer .
+
+skosapnl:SemanticAsset-Toegangsrechten a sh:PropertyShape;
+  sh:name "Toegangsrechten"@nl;
+  sh:order "20"^^xsd:integer;
+  sh:path dct:accessRights;
+  sh:class dct:RightsStatement;
+  sh:maxCount "1"^^xsd:integer .
+
+skosapnl:SemanticAsset-Licentie a sh:PropertyShape;
+  sh:name "Licentie"@nl;
+  sh:order "21"^^xsd:integer;
+  sh:path dct:license;
+  sh:class dct:IicenseDocument;
+  sh:maxCount "1"^^xsd:integer .
+
+skosapnl:SemanticAsset-ConformeertAan a sh:PropertyShape;
+  sh:name "Conformeert aan"@nl;
+  sh:order "22"^^xsd:integer;
+  sh:path dct:conformsTo;
+  sh:class dct:Standard;
+  sh:maxCount "1"^^xsd:integer .
+
+skosapnl:SemanticAsset-ThemaCategorie a sh:PropertyShape;
+  sh:name "Thema/categorie"@nl;
+  sh:order "23"^^xsd:integer;
+  sh:path dcat:theme;
+  sh:class skos:Concept .
+
+skosapnl:SemanticAsset-Keywords a sh:PropertyShape;
+  sh:name "Keywords"@nl;
+  sh:order "24"^^xsd:integer;
+  sh:path dcat:keyword .
