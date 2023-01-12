@@ -64,6 +64,7 @@ beg-sbb:Concept
     "An alternative lexical label for a resource."@en ,
     "Een alternatieve term voor een begrip is een term die gebruikt kan worden als alternatief voor de voorkeursterm van dit begrip, maar niet de voorkeur heeft."@nl ;
   skos:scopeNote 
+    "Het is niet gebruikelijk om termen die bij een specifieker begrip geplaatst zouden kunnen worden als alternatieve term op te nemen (ookwel upward-posting). Bijvoorbeeld door 'rechtshandeling' als alternatieve term bij een begrip met de voorkeursterm 'handeling' op te nemen."@nl ,
     "Afkortingen en hun volledige vormen kunnen als synoniemen worden behandeld."@nl,
     "Abbreviations and their full forms can be treated as synonyms."@en;
   skos:example

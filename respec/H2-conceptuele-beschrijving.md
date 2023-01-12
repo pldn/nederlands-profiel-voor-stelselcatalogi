@@ -138,7 +138,7 @@ Hieronder worden de mogelijke soorten termen bij een begrip beschreven.
 | **voorkeursterm**   | <dfn>alternatieve term</dfn> |
 | **definitie**        | Een alternatieve term voor een begrip is een term die gebruikt kan worden als alternatief voor de voorkeursterm van dit begrip, maar niet de voorkeur heeft. |
 | **bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/skos-reference/#labels |
-| **toelichting** | Afkortingen en hun volledige vormen kunnen als synoniemen worden behandeld. |
+| **toelichting** | Afkortingen en hun volledige vormen kunnen als synoniemen worden behandeld. Het is niet gebruikelijk om termen die bij een specifieker begrip geplaatst zouden kunnen worden als alternatieve term op te nemen (ookwel upward-posting). Bijvoorbeeld door 'rechtshandeling' als alternatieve term bij een begrip met de voorkeursterm 'handeling' op te nemen. |
 | **code** | UF |
 
 |                       |                                       |
