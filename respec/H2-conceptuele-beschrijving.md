@@ -21,9 +21,9 @@ Begrippen kunnen als zelfstandige entiteiten worden gezien maar veelal worden ze
 |                       |                                       |
 |-----------------------|---------------------------------------|
 | **voorkeursterm**   | <dfn>begrippenkader</dfn> |
-| **definitie**        | Een begrippenkader is een verzameling van begrippen die in een bepaalde context relevant zijn. |
+| **definitie**        | Een begrippenkader is een verzameling van begrippen, inclusief eventuele semantische relaties tussen deze begrippen. |
 | **bron** | http://www.w3.org/2004/02/skos/core#, https://en.wikipedia.org/wiki/Controlled_vocabulary, https://www.w3.org/TR/skos-reference/#schemes |
-| **toelichting** | Een begrippenkader kan worden gedefinieerd om begrippen uit verschillende bronnen op te nemen. Begrippenkaders bieden een manier om kennis te ordenen voor het later kunnen ophalen. Ze worden gebruikt in indexeringsschema&#39;s, koppen, thesauri, taxonomieën en andere kennisorganisatiesystemen. Begrippenkaders verplichten het gebruik van vooraf gedefinieerde, geautoriseerde termen die zijn geselecteerd door de ontwerpers ervan, in tegenstelling tot natuurlijke taalvocabulaires,die een dergelijke beperking niet hebben. |
+| **toelichting** | Een begrippenkader kan worden gedefinieerd om begrippen uit verschillende bronnen op te nemen. Begrippenkaders bieden een manier om kennis te ordenen voor het later kunnen ophalen. Ze worden gebruikt in indexeringsschema&#39;s, koppen, thesauri, taxonomieën en andere kennisorganisatiesystemen. Begrippenkaders verplichten het gebruik van vooraf gedefinieerde, geautoriseerde termen die zijn geselecteerd door de ontwerpers ervan,in tegenstelling tot natuurlijke taalvocabulaires,die een dergelijke beperking niet hebben. |
 
 Een begrippenkader kan beschreven worden aan de hand van verschillende kenmerken. Deze zijn in de volgende tabel weergegeven.
 
@@ -218,8 +218,7 @@ De volgende notities zijn aanvullende documentaire notities.
 | **bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes |
 | **toelichting** | Een wijzigingsnota documenteert fijnmazige wijzigingen aan een concept, ten behoeve van beheer en onderhoud. |
 
-#### Codes
-Naast termen en notitities kunnen begrippen ook codes als kenmerken hebben. Een code is anders dan een term omdat het niet bedoelt is als aanduiding in natuurlijke taal. Codes zijn veelal ook niet leesbaar en bestaan vaak uit cijfers.
+Naast termen en notitities kunnen begrippen ook codes als kenmerken hebben. Een code is anders dan een term omdat het niet bedoelt is als aanduiding in natuurlijke taal. Codes zijn vaak ook niet leesbaar en bestaan vaak uit cijfers.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -382,18 +381,6 @@ Specifiek onderscheiden we de volgende verschillende harmonisatierelaties.
 | **bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/skos-reference/#mapping |
 | **toelichting** | Conventie is om overeenkomstig bovenliggend te gebruiken om een ​​link weer te geven naar een semantisch verwant begrip dat dezelfde bedoelde betekenis heeft als de standaard heeft bovenliggend begrip relatie, maar met een ander toepassingsbereik. Je zou kunnen zeggen dat het in kaart brengen van relaties minder inherent is aan de betekenis van de betreffende begrippen. Vanuit het standpunt van de oorspronkelijke ontwerper van een begrippenkader kunnen ze soms zelfs verkeer zijn.  Harmonisatie eigenschappen zijn nuttig in specifieke toepassingen die meerdere, conceptueel overlappende begrippenkaders gebruiken. Conventie is bovendien dat harmonisatie relaties worden gelegd tussen concepten die tot verschillende conceptschema&#39;s behoren. |
 
-### Nadere typering van begrippen
-Om in een begrippenkader nog meer semantiek vast te leggen dan in een standaard thesaurus, kunnen extensies op dit profiel worden gemaakt. Een voorbeeld daarvan is skos-lex, waarbij lex staat voor 'legal extension'. In skos-lex worden concepten getypeerd als (rechts)handeling, object (van handeling), actor, agent en vastlegging (record).
-*plaatje uit skoslex*
-*per element een tabel met prefLabel, definition, scopeNotes, bronnen*
-- (rechts)handeling
-- object
-- actor
-- agent
-- vastlegging
-
-Onder andere de Belastingdienst heeft nog weer een uitbreiding op deze extensie gemaakt, waarin rechtshandelingen nader worden getypeerd op basis van de rechtsbetrekking tussen de actoren. *link*
-
 ## Collectie
 [=Collectie=]s bieden de mogelijkheid om binnen een begrippenkader begrippen die voor hun betekenis niet direct via semantische relaties met elkaar zijn verbonden, toch bij elkaar te zetten. Zo hebben het begrip 'vervuild' dat in milieuwetgeving wordt gedefinieerd en het begrip 'landgoed' dat in de natuurschoonwet wordt gedefinieerd semantisch geen relatie, maar worden ze beiden beschouwd als 'publiekrechtelijke beperking' in het kader van de Wet Kenbaarheid Publiekrechtelijke Beperkingen (WKPB). Deze begrippen kunnen dan samen met andere begrippen die onder de WKPB vallen worden samengebracht in een collectie.
 
@@ -481,6 +468,27 @@ De bron kan een heel document of een fragment daarvan zijn, denk aan een boek, e
 | **bron** | http://purl.org/dc/terms/ |
 | **toelichting** | Met soort kan bijvoorbeeld aangegeven worden of het een &#39;geschreven bron&#39; of een &#39;web resource&#39; is.  |
 
+## Uitbreidingen
+Soms is het nuttig om de samenhang van begrippen gedetailleerder te beschrijven dan in standaard thesauri mogelijk is. Dat kan door begrippen nader te typeren. 
+### Skos-lex use case  
+Skos-lex is opgezet om begrippen juridisch te kunnen typeren. Skos-lex valt buiten de scope van standaard glossaries, taxonomieën en thesauri. De beschrijving van skos-lex is hier opgenomen als voorbeeld van een uitbreiding op een standaard thesaurus. Skos-lex wordt onder andere toegepast bij de Nationale Politie, Belastingdienst, Notariaat en Kadaster en bij het Digitaal Stelsel Omgevingswet en het Afsprakenstelsel Zorgeloos Vastgoed. 
+Door begrippen te typeren als act (rechtshandeling), actor (uitvoerder van die handeling), agent (formele vastlegger van die handeling) en object (van handeling) wordt de (juridische) samenhang duidelijk. Zo kan in een beschrijving van de verkoop van een huis worden aangegeven welke begrippen de rechtshandeling beschrijven (koop/verkoop), welke begrippen de actoren beschrijven (koper, verkoper), welke begrippen de agent (notaris) beschrijven en welke begrippen het object van handeling (onroerende zaak) beschrijven. Dit patroon is relevant voor vrijwel alle overheidsorganisaties die voorvallen of overeenkomsten met rechtsgevolgen vastleggen, van de politie die feiten met daders en slachtoffers vastlegt tot een ambtenaar van de burgerlijke stand die een geboorteakte opmaakt en een notaris die een stichtingsakte opstelt. 
+   * **juridische duiding** *(could have)*.  ***Als*** Uitvoeringsorganisatie/uitvoerder van wetgeving ***wil ik*** begrippen kunnen onderscheiden die gaan over rechtshandelingen, actoren, objecten van handeling en organisaties die dit soort rechtshandelingen ondersteunen ***zodat ik*** inzicht heb in hoe de juridische context voor mijn organisatie zoals die in wetgeving is beschreven werkt.
+
+Onder andere de Belastingdienst heeft nog weer een uitbreiding op deze extensie gemaakt, waarin rechtshandelingen nader worden getypeerd op basis van de rechtsbetrekking tussen de actoren. *link*
+
+Naast skos-lex zijn er ook andere standaarden die nadere typeringen van begrip introduceren zoals [[vocab-dcat]] en [[vocab-org]] waar specialisaties van wat we in LD als [=begrip=] zien worden gedefinieerd.
+
+### Skos-lex begrippenlijst
+Om in een begrippenkader nog meer semantiek vast te leggen dan in een standaard thesaurus, kunnen extensies op dit profiel worden gemaakt. Een voorbeeld daarvan is skos-lex, waarbij lex staat voor 'legal extension'. In skos-lex worden concepten getypeerd als (rechts)handeling, object (van handeling), actor, agent en vastlegging (record).
+*plaatje uit skoslex*
+*per element een tabel met prefLabel, definition, scopeNotes, bronnen*
+- (rechts)handeling
+- object
+- actor
+- agent
+- vastlegging
+
 ## Metadata 
 ### Begrippenkader
 Het begrippenkader is niet een concreet iets. Het is een *eenheid van context*. Aan de hand van de definitie stellen we dan ook dat het begrippenkader een verzameling begrippen is. Dit is niet hetzelfde als een verzameling begripsbeschrijvingen, wat wel concreet is. In principe kunnen begrippen die tot één begrippenkader behoren in verschillende databases of named-graphs en door verschillende partijen beheerd worden. Iedere verzameling van begripsbeschrijvingen is een *eenheid van beheer*. 
@@ -488,6 +496,3 @@ Het begrippenkader is niet een concreet iets. Het is een *eenheid van context*. 
 Een begrippenkader, als verzameling van begrippen, zien we als een [[[ASSET]]]; een waardevolle eenheid van geëxpliciteerde kennis.
 Een eenheid van beheer, een verzameling van begripsbeschrijvingen, zien we als een Dataset; een verzameling data, beheerd door één partij.
 
-## Uitbreidingen
-Usecase 4 in [#use-cases] beschrijft de wens om verdiepende elementen toe te voegen aan de elementen die in dit (hoofdstuk)[#conceptuele-beschrijving] zijn beschreven. Het betreft het definiëren van specialisaties van de bijvoorbeeld de elementen [=begrip=] en semantische relatie. Een voorbeeld hiervan is <dfn>skos-lex</dfn>.
-[=skos-lex=] is opgezet om deze nadere typeringen van begrippen en semantische relaties te ondersteunen. Skos-lex valt buiten de scope van standaard begrippenlijsten, taxonomieën en thesauri. De beschrijving van skos-lex is in de bijlage opgenomen om dit breed toepasbare patroon bij een aantal organisaties (Nationale Politie, Belastingdienst, Notariaat en Kadaster) en digitale stelsels (Digitaal Stelsel Omgevingswet en Afsprakenstelsel Zorgeloos Vastgoed) een good practice is gebleken. Daarnaast is een bijlage opgenomen die een rechtshandeling nader typeert in soorten rechtsbetrekkingen (recht-verplichting, etc.), wat bijvoorbeeld voor de Belastingdienst relevant is. Naast skos-lex zijn er ook andere standaarden die nadere typeringen van begrip introduceren zoals [[vocab-dcat]] en [[vocab-org]] waar specialisaties van wat we in LD als [=begrip=] zien worden gedefinieerd.
