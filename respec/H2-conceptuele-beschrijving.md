@@ -471,7 +471,7 @@ De bron kan een heel document of een fragment daarvan zijn, denk aan een boek, e
 
 ## Uitbreidingen
 Soms is het nuttig om de samenhang van begrippen gedetailleerder te beschrijven dan in standaard thesauri mogelijk is. Dat kan door begrippen nader te typeren. 
-### Skos-lex use case  
+### Skos-lex  
 Skos-lex is opgezet om begrippen juridisch te kunnen typeren. Skos-lex valt buiten de scope van standaard glossaries, taxonomieën en thesauri. De beschrijving van skos-lex is hier opgenomen als voorbeeld van een uitbreiding op een standaard thesaurus. Skos-lex wordt onder andere toegepast bij de Nationale Politie, Belastingdienst, Notariaat en Kadaster en bij het Digitaal Stelsel Omgevingswet en het Afsprakenstelsel Zorgeloos Vastgoed. 
 Door begrippen te typeren als act (rechtshandeling), actor (uitvoerder van die handeling), agent (formele vastlegger van die handeling) en object (van handeling) wordt de (juridische) samenhang duidelijk. Zo kan in een beschrijving van de verkoop van een huis worden aangegeven welke begrippen de rechtshandeling beschrijven (koop/verkoop), welke begrippen de actoren beschrijven (koper, verkoper), welke begrippen de agent (notaris) beschrijven en welke begrippen het object van handeling (onroerende zaak) beschrijven. Dit patroon is relevant voor vrijwel alle overheidsorganisaties die voorvallen of overeenkomsten met rechtsgevolgen vastleggen, van de politie die feiten met daders en slachtoffers vastlegt tot een ambtenaar van de burgerlijke stand die een geboorteakte opmaakt en een notaris die een stichtingsakte opstelt. 
    * **juridische duiding** *(could have)*.  ***Als*** Uitvoeringsorganisatie/uitvoerder van wetgeving ***wil ik*** begrippen kunnen onderscheiden die gaan over rechtshandelingen, actoren, objecten van handeling en organisaties die dit soort rechtshandelingen ondersteunen ***zodat ik*** inzicht heb in hoe de juridische context voor mijn organisatie zoals die in wetgeving is beschreven werkt.
@@ -479,21 +479,3 @@ Door begrippen te typeren als act (rechtshandeling), actor (uitvoerder van die h
 Onder andere de Belastingdienst heeft nog weer een uitbreiding op deze extensie gemaakt, waarin rechtshandelingen nader worden getypeerd op basis van de rechtsbetrekking tussen de actoren. *link*
 
 Naast skos-lex zijn er ook andere standaarden die nadere typeringen van begrip introduceren zoals [[vocab-dcat]] en [[vocab-org]] waar specialisaties van wat we in LD als [=begrip=] zien worden gedefinieerd.
-
-### Skos-lex begrippenlijst
-Om in een begrippenkader nog meer semantiek vast te leggen dan in een standaard thesaurus, kunnen extensies op dit profiel worden gemaakt. Een voorbeeld daarvan is skos-lex, waarbij lex staat voor 'legal extension'. In skos-lex worden concepten getypeerd als (rechts)handeling, object (van handeling), actor, agent en vastlegging (record).
-*plaatje uit skoslex*
-*per element een tabel met prefLabel, definition, scopeNotes, bronnen*
-- (rechts)handeling
-- object
-- actor
-- agent
-- vastlegging
-
-## Metadata 
-### Begrippenkader
-Het begrippenkader is niet een concreet iets. Het is een *eenheid van context*. Aan de hand van de definitie stellen we dan ook dat het begrippenkader een verzameling begrippen is. Dit is niet hetzelfde als een verzameling begripsbeschrijvingen, wat wel concreet is. In principe kunnen begrippen die tot één begrippenkader behoren in verschillende databases of named-graphs en door verschillende partijen beheerd worden. Iedere verzameling van begripsbeschrijvingen is een *eenheid van beheer*. 
-
-Een begrippenkader, als verzameling van begrippen, zien we als een [[[ASSET]]]; een waardevolle eenheid van geëxpliciteerde kennis.
-Een eenheid van beheer, een verzameling van begripsbeschrijvingen, zien we als een Dataset; een verzameling data, beheerd door één partij.
-
