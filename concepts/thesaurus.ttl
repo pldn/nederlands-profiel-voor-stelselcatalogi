@@ -760,10 +760,10 @@ beg-sbb:ConceptScheme
     "begrippencatalogus" ,
     "knowledge organisation system" ;
   skos:definition
-    "A set of concepts, optionally including statements about semantic relationships between those concepts."@en ,
-    "Een begrippenkader is een verzameling van begrippen, inclusief eventuele semantische relaties tussen deze begrippen."@nl ;
+    "A set of concepts that are relevant in a given context."@en ,
+    "Een begrippenkader is een verzameling van begrippen die in een bepaalde context relevant zijn."@nl ;
   skos:scopeNote 
-    "Een begrippenkader kan worden gedefinieerd om begrippen uit verschillende bronnen op te nemen. Begrippenkaders bieden een manier om kennis te ordenen voor het later kunnen ophalen. Ze worden gebruikt in indexeringsschema's, koppen, thesauri, taxonomieën en andere kennisorganisatiesystemen. Begrippenkaders verplichten het gebruik van vooraf gedefinieerde, geautoriseerde termen die zijn geselecteerd door de ontwerpers ervan,in tegenstelling tot natuurlijke taalvocabulaires,die een dergelijke beperking niet hebben."@nl,
+    "Een begrippenkader kan worden gedefinieerd om begrippen uit verschillende bronnen op te nemen. Begrippenkaders bieden een manier om kennis te ordenen voor het later kunnen ophalen. Ze worden gebruikt in indexeringsschema's, koppen, thesauri, taxonomieën en andere kennisorganisatiesystemen. Begrippenkaders verplichten het gebruik van vooraf gedefinieerde, geautoriseerde termen die zijn geselecteerd door de ontwerpers ervan, in tegenstelling tot natuurlijke taalvocabulaires,die een dergelijke beperking niet hebben."@nl,
     "A concept scheme may be defined to include concepts from different sources. Controlled vocabularies provide a way to organize knowledge for subsequent retrieval. They are used in subject indexing schemes,subject headings,thesauri,taxonomies and other knowledge organization systems. Controlled vocabulary schemes mandate the use of predefined,authorised terms that have been preselected by the designers of the schemes, in contrast to natural language vocabularies, which have no such restriction."@en ;
   dct:source
     <https://www.w3.org/TR/skos-reference/#schemes> ,
