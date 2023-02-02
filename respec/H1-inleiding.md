@@ -74,7 +74,7 @@ De 4 uses cases zijn:
 
    * **juridische duiding** *(could have)*.  ***Als*** Uitvoeringsorganisatie/uitvoerder van wetgeving ***wil ik*** concepten kunnen onderscheiden die gaan over rechtshandelingen, actoren, objecten van handeling en organisaties die dit soort rechtshandelingen ondersteunen ***zodat ik*** inzicht heb in hoe de juridische context voor mijn organisatie zoals die in wetgeving is beschreven werkt.
 
-***Skos-lex*** is opgezet om deze nadere typeringen van begrippen te ondersteunen. Skos-lex valt buiten de scope van standaard glossaries, taxonomieën en thesauri. De beschrijving van skos-lex is in de bijlage opgenomen omdat dit breed toepasbare patroon bij een aantal organisaties (Nationale Politie, Belastingdienst, Notariaat en Kadaster) en digitale stelsels (Digitaal Stelsel Omgevingswet en Afsprakenstelsel Zorgeloos Vastgoed) een good practice is gebleken. Daarnaast is een bijlage opgenomen die een rechtshandeling nader typeert in soorten rechtsbetrekkingen (recht-verplichting, etc.), wat bijvoorbeeld voor de Belastingdienst relevant is.
+   ***Skos-lex*** is opgezet om deze nadere typeringen van begrippen te ondersteunen. Skos-lex valt buiten de scope van standaard glossaries, taxonomieën en thesauri. De beschrijving van skos-lex is in de bijlage opgenomen omdat dit breed toepasbare patroon bij een aantal organisaties (Nationale Politie, Belastingdienst, Notariaat en Kadaster) en digitale stelsels (Digitaal Stelsel Omgevingswet en Afsprakenstelsel Zorgeloos Vastgoed) een good practice is gebleken. Daarnaast is een bijlage opgenomen die een rechtshandeling nader typeert in soorten rechtsbetrekkingen (recht-verplichting, etc.), wat bijvoorbeeld voor de Belastingdienst relevant is.
 
 
 ## Leeswijzer
