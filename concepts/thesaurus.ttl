@@ -4,7 +4,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix beg-sbb: <http://nlbegrip.nl/sbb/id/begrip/> .
+@prefix beg-sbb: <http://nlbegrip.nl/sbb/id/concept/> .
 @prefix begkr-sbb: <http://nlbegrip.nl/sbb/id/begrippenkader/> .
 
 # DIT BEGRIPPENKADER 
@@ -76,25 +76,6 @@ beg-sbb:Concept
     skos: ;
   skos:related beg-sbb:Concept ;
   skos:broader beg-sbb:Label ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS.
-
-#behoort tot
-beg-sbb:InScheme
-  a skos:Concept ;
-  skos:prefLabel
-    "is in scheme"@en ,
-    "behoort tot"@nl ;
-  skos:definition
-    "Behoort tot relateert een begrip tot een begrippenkader waartoe het behoort"@nl ,
-    "Is in scheme relates a resource (for example a concept) to a concept scheme in which it is included."@en ;
-   skos:scopeNote
-    "According to the SKOS-standard, concepts can be linked to multiple conceptschemes. Practically, this can only be the case when conceptschemes overlap in terms of scope."@en ,
-    "Volgens de SKOS-standaard kan een begrip tot meerdere begrippenkaders behoren. Praktisch gezien kan dit slechts als sprake is van begrippenkaders waarvan de contexten overlappen"@nl;
-   dct:source
-    skos: ,
-    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
-    <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> ;
-  skos:related beg-sbb:Concept ;
   skos:inScheme begkr-sbb:BegrippenkaderNPS.
 
 #bron
@@ -255,6 +236,25 @@ beg-sbb:HistoryNote
     skos: ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes>;
   skos:broader beg-sbb:Note ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS.
+
+#in kader
+beg-sbb:InScheme
+  a skos:Concept ;
+  skos:prefLabel
+    "in kader"@en ,
+    "behoort tot"@nl ;
+  skos:definition
+    "In kader relateert een begrip tot een begrippenkader waartoe het behoort"@nl ,
+    "Is in scheme relates a resource (for example a concept) to a concept scheme in which it is included."@en ;
+   skos:scopeNote
+    "According to the SKOS-standard, concepts can be linked to multiple conceptschemes. Practically, this can only be the case when conceptschemes overlap in terms of scope."@en ,
+    "Volgens de SKOS-standaard kan een begrip tot meerdere begrippenkaders behoren. Praktisch gezien kan dit slechts als sprake is van begrippenkaders waarvan de contexten overlappen"@nl;
+   dct:source
+    skos: ,
+    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
+    <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> ;
+  skos:related beg-sbb:Concept ;
   skos:inScheme begkr-sbb:BegrippenkaderNPS.
 
 #is categorie van
