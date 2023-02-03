@@ -242,8 +242,8 @@ beg-sbb:HistoryNote
 beg-sbb:InScheme
   a skos:Concept ;
   skos:prefLabel
-    "in kader"@en ,
-    "behoort tot"@nl ;
+    "in kader"@nl ,
+    "in scheme"@en ;
   skos:definition
     "In kader relateert een begrip tot een begrippenkader waartoe het behoort"@nl ,
     "Is in scheme relates a resource (for example a concept) to a concept scheme in which it is included."@en ;
