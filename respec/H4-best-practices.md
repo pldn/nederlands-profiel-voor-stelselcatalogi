@@ -1,4 +1,14 @@
 # Best practices
+## Begrippen
+Gangbare conventies voor het beschrijven van termen (voorkeurstermen, alternatieve termen) zijn:
+* Gebruik een zelfstandig naam, eventueel gekwalificeerd met een adjectief (bijvoeglijk naamwoord). Gebruik geen bijwoorden, lidwoorden en voorzetsels.
+* Vermijdt dubbele adjectieven.
+* Gebruik geen werkwoorden.
+* Gebruik geen afkortingen.
+* Schrijf een term in kleine letters, zoals in een zin, behalve bij eingennamen.
+* Gebruik Latijnse alfabetische karakters (UTF8). Gebruik geen leestekens (streepjes, punten, komma's en dergelijke).
+* Gebruik enkelvoud. Dit geldt specifiek voor Duits, Frans, Nederlands, niet voor het Engels.
+* Gebruik standaard spelling, conform het groene boekje.
 
 ## Bronnen
 Een begrip kan zijn ontleend aan een op het web vindbare bron. Dit kan een (versie van) een bepaald werk zijn of een ander documentair iets waarin een beschrijving van het begrip is te vinden. Bronnen kunnen wel of niet beschreven zijn in RDF. Ook kan een begrip ontleend zijn aan een niet op het web vindbare bron. 
