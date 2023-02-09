@@ -416,15 +416,7 @@ Collecties maken het mogelijk om begrippen te groepen op een manier die haaks st
 ## Bron
 
 Een [=brondocument=] is een document waaruit de betekenis van het begrip is afgeleid.
-Het is good practice om voor ieder begrip bronverwijzingen op te nemen. Zo is het duidelijk waar de definitie van een begrip op gebasseerd is. Dit verhoogd de kwaliteit van het begrip en vooral ook de betrouwbaarheid.
-
-|                       |                                       |
-|-----------------------|---------------------------------------|
-| **voorkeursterm**   | <dfn>brondocument</dfn> |
-| **definitie**        | Een brondocument is een document of resource op het web waaruit de betekenis van een begrip is afgeleid. |
-| **bron** | http://purl.org/dc/terms/, http://xmlns.com/foaf/0.1/, https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source |
-| **toelichting** | De bron kan een geschreven bron zijn of een resource op het web. Aanbevolen best practice is om de bron te beschrijven door middel van een tekenreeks die voldoet aan een formeel identificatiesysteem. Bij een resource op het web is ook de uri van die bron relevant. Om zowel naar een geschreven bron als naar een bron op het web (vaak zonder gestandaardiseerde beschrijving) te verwijzen wordt hier verwezen naar een eigen resource, die zowel een gestandaardiseerde beschrijving als een verwijzing naar de eigenlijke bron bevat. |
-| **alternatieve term** | bron |
+Het is good practice om voor ieder begrip bronverwijzingen op te nemen. Zo is het duidelijk waar de definitie van een begrip op gebasseerd is. Dit verhoogt de kwaliteit van het begrip en vooral ook de betrouwbaarheid. Het gebruiken van de hieronder beschreven structuur wordt ten zeerste aanbevolen voor het beschrijven van bronnen en het relateren van begrippen aan bronnen.
 
 Een bronverwijzing leggen we vast bij een begrip. Hiervoor hebben we het volgende patroon:
 Een **[=begrip=]** heeft een eigenschap '**[=bron=]**'. De waarde hiervan is een non-literal resource, het **[=brondocument=]**.
@@ -436,6 +428,15 @@ Een **[=begrip=]** heeft een eigenschap '**[=bron=]**'. De waarde hiervan is een
 | **bron** | http://purl.org/dc/terms/, https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source |
 | **alternatieve term** | herkomst, bronverwijzing |
 
+
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**   | <dfn>brondocument</dfn> |
+| **definitie**        | Een brondocument is een document of resource op het web waaruit de betekenis van een begrip is afgeleid. |
+| **bron** | http://purl.org/dc/terms/, http://xmlns.com/foaf/0.1/, https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source |
+| **toelichting** | De bron kan een geschreven bron zijn of een resource op het web. Aanbevolen best practice is om de bron te beschrijven door middel van een tekenreeks die voldoet aan een formeel identificatiesysteem. Bij een resource op het web is ook de uri van die bron relevant. Om zowel naar een geschreven bron als naar een bron op het web (vaak zonder gestandaardiseerde beschrijving) te verwijzen wordt hier verwezen naar een eigen resource, die zowel een gestandaardiseerde beschrijving als een verwijzing naar de eigenlijke bron bevat. |
+| **alternatieve term** | bron |
+
 Een brondocument kan beschreven worden aan de hand van verschillende kenmerken. Deze zijn in de volgende tabel weergegeven.
 
 | Conceptueel element | Kardinaliteit | Type         |
@@ -446,7 +447,7 @@ Een brondocument kan beschreven worden aan de hand van verschillende kenmerken. 
 | [=term=]            | 1..*          | Tekst        |
 | [=citeertitel=]     | 0..*          | Tekst        |
 
-Het is aangeraden om een bron te beschrijven met een **[=url=]** als de bron een vindplaats heeft op het web en anders een **[=citeertitel=]** waarin de citeerinformatie van de bron in een bepaalde citeerstijl is vastgelegd. Hiermee kan de bron gevonden worden. Ook kan de bron beschreven worden met een compact, voor de mens leesbare **[=term=]**, een uitgebreide, voor de mens leesbare **[=uitleg=]** en een **[=soort=]** om aan te geven wat de aard van het brondocument is.
+Het wordt aangeraden om een bron te beschrijven met een **[=url=]** als de bron een vindplaats heeft op het web en anders een **[=citeertitel=]** waarin de citeerinformatie van de bron in een bepaalde citeerstijl is vastgelegd. Hiermee kan de bron gevonden worden. Ook kan de bron beschreven worden met een compact, voor de mens leesbare **[=term=]**, een uitgebreide, voor de mens leesbare **[=uitleg=]** en een **[=soort=]** om aan te geven wat de aard van het brondocument is.
 
 De bron kan een heel document of een fragment daarvan zijn, denk aan een boek, een hoofdstuk of een paragraaf.
 
