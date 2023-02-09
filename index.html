@@ -1,5 +1,4 @@
 <!DOCTYPE html><html lang="nl"><head>
-<script src="https://hypothes.is/embed.js" async></script>
 <meta charset="utf-8">
 <meta name="generator" content="ReSpec 32.7.0">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -1678,7 +1677,33 @@ Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebru
 </tbody></table>
 </section><section id="bron"><div class="header-wrapper"><h3 id="x2-4-bron"><bdi class="secno">2.4 </bdi>Bron</h3><a class="self-link" href="#bron" aria-label="Permalink for Section 2.4"></a></div>
 <p>Een <a data-link-type="dfn" href="#dfn-brondocument" class="internalDFN" id="ref-for-dfn-brondocument-2">brondocument</a> is een document waaruit de betekenis van het begrip is afgeleid.
-Het is good practice om voor ieder begrip bronverwijzingen op te nemen. Zo is het duidelijk waar de definitie van een begrip op gebasseerd is. Dit verhoogd de kwaliteit van het begrip en vooral ook de betrouwbaarheid.</p>
+Het is good practice om voor ieder begrip bronverwijzingen op te nemen. Zo is het duidelijk waar de definitie van een begrip op gebasseerd is. Dit verhoogt de kwaliteit van het begrip en vooral ook de betrouwbaarheid. Het gebruiken van de hieronder beschreven structuur wordt ten zeerste aanbevolen voor het beschrijven van bronnen en het relateren van begrippen aan bronnen.</p>
+<p>Een bronverwijzing leggen we vast bij een begrip. Hiervoor hebben we het volgende patroon:
+Een <strong><a data-link-type="dfn" href="#dfn-begrip" class="internalDFN" id="ref-for-dfn-begrip-19">begrip</a></strong> heeft een eigenschap '<strong><a data-link-type="dfn" href="#dfn-bron" class="internalDFN" id="ref-for-dfn-bron-3">bron</a></strong>'. De waarde hiervan is een non-literal resource, het <strong><a data-link-type="dfn" href="#dfn-brondocument" class="internalDFN" id="ref-for-dfn-brondocument-3">brondocument</a></strong>.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-bron" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">bron</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Bron relateert een begrip aan een brondocument.</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>, <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source">https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source</a></td>
+</tr>
+<tr>
+<td><strong>alternatieve term</strong></td>
+<td>herkomst, bronverwijzing</td>
+</tr>
+</tbody></table>
 <table>
 <thead>
 <tr>
@@ -1705,32 +1730,6 @@ Het is good practice om voor ieder begrip bronverwijzingen op te nemen. Zo is he
 <tr>
 <td><strong>alternatieve term</strong></td>
 <td>bron</td>
-</tr>
-</tbody></table>
-<p>Een bronverwijzing leggen we vast bij een begrip. Hiervoor hebben we het volgende patroon:
-Een <strong><a data-link-type="dfn" href="#dfn-begrip" class="internalDFN" id="ref-for-dfn-begrip-19">begrip</a></strong> heeft een eigenschap '<strong><a data-link-type="dfn" href="#dfn-bron" class="internalDFN" id="ref-for-dfn-bron-3">bron</a></strong>'. De waarde hiervan is een non-literal resource, het <strong><a data-link-type="dfn" href="#dfn-brondocument" class="internalDFN" id="ref-for-dfn-brondocument-3">brondocument</a></strong>.</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>voorkeursterm</strong></td>
-<td><dfn id="dfn-bron" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">bron</dfn></td>
-</tr>
-<tr>
-<td><strong>definitie</strong></td>
-<td>Bron relateert een begrip aan een brondocument.</td>
-</tr>
-<tr>
-<td><strong>bron</strong></td>
-<td><a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>, <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source">https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source</a></td>
-</tr>
-<tr>
-<td><strong>alternatieve term</strong></td>
-<td>herkomst, bronverwijzing</td>
 </tr>
 </tbody></table>
 <p>Een brondocument kan beschreven worden aan de hand van verschillende kenmerken. Deze zijn in de volgende tabel weergegeven.</p>
@@ -1768,7 +1767,7 @@ Een <strong><a data-link-type="dfn" href="#dfn-begrip" class="internalDFN" id="r
 <td>Tekst</td>
 </tr>
 </tbody></table>
-<p>Het is aangeraden om een bron te beschrijven met een <strong><a data-link-type="dfn" href="#dfn-url" class="internalDFN" id="ref-for-dfn-url-2">url</a></strong> als de bron een vindplaats heeft op het web en anders een <strong><a data-link-type="dfn" href="#dfn-citeertitel" class="internalDFN" id="ref-for-dfn-citeertitel-2">citeertitel</a></strong> waarin de citeerinformatie van de bron in een bepaalde citeerstijl is vastgelegd. Hiermee kan de bron gevonden worden. Ook kan de bron beschreven worden met een compact, voor de mens leesbare <strong><a data-link-type="dfn" href="#dfn-term" class="internalDFN" id="ref-for-dfn-term-4">term</a></strong>, een uitgebreide, voor de mens leesbare <strong><a data-link-type="dfn" href="#dfn-uitleg" class="internalDFN" id="ref-for-dfn-uitleg-5">uitleg</a></strong> en een <strong><a data-link-type="dfn" href="#dfn-soort" class="internalDFN" id="ref-for-dfn-soort-2">soort</a></strong> om aan te geven wat de aard van het brondocument is.</p>
+<p>Het wordt aangeraden om een bron te beschrijven met een <strong><a data-link-type="dfn" href="#dfn-url" class="internalDFN" id="ref-for-dfn-url-2">url</a></strong> als de bron een vindplaats heeft op het web en anders een <strong><a data-link-type="dfn" href="#dfn-citeertitel" class="internalDFN" id="ref-for-dfn-citeertitel-2">citeertitel</a></strong> waarin de citeerinformatie van de bron in een bepaalde citeerstijl is vastgelegd. Hiermee kan de bron gevonden worden. Ook kan de bron beschreven worden met een compact, voor de mens leesbare <strong><a data-link-type="dfn" href="#dfn-term" class="internalDFN" id="ref-for-dfn-term-4">term</a></strong>, een uitgebreide, voor de mens leesbare <strong><a data-link-type="dfn" href="#dfn-uitleg" class="internalDFN" id="ref-for-dfn-uitleg-5">uitleg</a></strong> en een <strong><a data-link-type="dfn" href="#dfn-soort" class="internalDFN" id="ref-for-dfn-soort-2">soort</a></strong> om aan te geven wat de aard van het brondocument is.</p>
 <p>De bron kan een heel document of een fragment daarvan zijn, denk aan een boek, een hoofdstuk of een paragraaf.</p>
 <table>
 <thead>
@@ -3384,22 +3383,6 @@ ex2:Land a skos:Concept ;
     <a href="#ref-for-dfn-bevat-3" title="§ 3.3.4 Specificatie Collectie">§ 3.3.4 Specificatie Collectie</a> 
   </li>
   </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-brondocument" aria-label="Links in this document to definition: brondocument">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="#dfn-brondocument" aria-label="Permalink for definition: brondocument. Activate to close this dialog.">Permalink</a>
-         
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-    <a href="#ref-for-dfn-brondocument-1" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
-  </li><li>
-    <a href="#ref-for-dfn-brondocument-2" title="§ 2.4 Bron">§ 2.4 Bron</a> <a href="#ref-for-dfn-brondocument-3" title="Reference 2">(2)</a> 
-  </li><li>
-    <a href="#ref-for-dfn-brondocument-4" title="§ 3.2.1 Types">§ 3.2.1 Types</a> 
-  </li>
-  </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-bron" aria-label="Links in this document to definition: bron">
       <span class="caret"></span>
       <div>
@@ -3418,6 +3401,22 @@ ex2:Land a skos:Concept ;
     <a href="#ref-for-dfn-bron-4" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
     <a href="#ref-for-dfn-bron-5" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-brondocument" aria-label="Links in this document to definition: brondocument">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-brondocument" aria-label="Permalink for definition: brondocument. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-brondocument-1" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+  </li><li>
+    <a href="#ref-for-dfn-brondocument-2" title="§ 2.4 Bron">§ 2.4 Bron</a> <a href="#ref-for-dfn-brondocument-3" title="Reference 2">(2)</a> 
+  </li><li>
+    <a href="#ref-for-dfn-brondocument-4" title="§ 3.2.1 Types">§ 3.2.1 Types</a> 
   </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-url" aria-label="Links in this document to definition: url">
