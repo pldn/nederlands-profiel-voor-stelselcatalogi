@@ -138,25 +138,6 @@ beg-sbb:Definition
   skos:related beg-sbb:Concept ;
   skos:inScheme begkr-sbb:BegrippenkaderNPS.
 
-#exact overeenkomstig
-beg-sbb:ExactMatch
-  a skos:Concept ;
-  skos:prefLabel
-    "has exact match"@en ,
-    "exact overeenkomstig"@nl ;
-  skos:definition
-    "Exact overeenkokmstig relateert een begrip aan een overeenkomstig begrip uit een ander begrippenkader, waarbij de betekenis van deze begrippen bij uiteenlopende toepassingen gelijk aan elkaar kan worden verondersteld"@nl ,
-    "Exact match is used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. Exact match is a transitive property."@en ;
-  skos:scopeNote 
-    "Een dergelijke relatie is aanwezig als de betekenis van het betreffende begrip gelijk is aan de betekenis van het begrip uit het andere begrippenkader. Het begrip kan ook een 'leenwoord' zijn, dat wil zeggen dat het begrip is overgenomen uit het andere begrippenkader."@nl,
-    "Such a relationship is present if the meaning of the term in question is the same as the meaning of the term from the other concep scheme. The concept can also be a 'loan word', i.e. it has been taken over from the other concept scheme."@en ;
-  dct:source
-    <https://www.w3.org/TR/skos-reference/#mapping> ,
-    skos: ;
-  skos:related beg-sbb:Concept ;
-  skos:broader beg-sbb:MatchingRelation;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS.
-
 #harmonisatierelatie
 beg-sbb:MatchingRelation
   a skos:Concept ;
@@ -184,7 +165,7 @@ beg-sbb:Broader
   skos:notation "BT" ;
   skos:definition
     "Has broader relates a concept to a concept that is more general in meaning."@en ,
-    "Heeft bovenliggend begrip relateert een begrip aan een bovenliggend begrip in de hiërarchie."@nl ;
+    "Heeft bovenliggend begrip relateert een begrip aan een begrip met een meer algemene betekenis."@nl ;
   skos:scopeNote 
     "Conventie is om heeft bovenliggend begrip alleen te gebruiken om een ​​directe hiërarchische link tussen twee concepten te beschrijven."@nl, 
     "By convention, has broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."@en;
@@ -202,11 +183,13 @@ beg-sbb:Narrower
   skos:prefLabel
     "heeft onderliggend begrip"@nl ,
     "has narrower"@en ;
-  skos:altLabel "heeft enger begrip"@nl ;
+  skos:altLabel 
+    "heeft enger begrip"@nl,
+    "heeft smaller begrip"@nl;
   skos:notation "NT" ;
   skos:definition
     "Has narrower relates a concept to a concept that is more specific in meaning."@en ,
-    "Heeft onderliggend begrip relateert een begrip aan onderliggend begrip in de hiërarchie."@nl ;
+    "Heeft onderliggend begrip relateert een begrip aan een begrip met een specifiekere betekenis."@nl ;
   skos:scopeNote
     "Conventie is om heeft onderliggend begrip alleen te gebruiken om een directe hiërarchische link tussen twee concepten te beschrijven."@nl, 
     "By convention, has narrower is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."@en ;
@@ -278,6 +261,25 @@ beg-sbb:NarrowerInstantial
   skosthes:broaderGeneric beg-sbb:Narrower;
   skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
+#is exact overeenkomstig
+beg-sbb:ExactMatch
+  a skos:Concept ;
+  skos:prefLabel
+    "has exact match"@en ,
+    "is exact overeenkomstig"@nl ;
+  skos:definition
+    "Is exact overeenkokmstig relateert een begrip aan een overeenkomstig begrip uit een ander begrippenkader, waarbij de betekenis van deze begrippen bij uiteenlopende toepassingen gelijk aan elkaar kan worden verondersteld."@nl ,
+    "Exact match is used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. Exact match is a transitive property."@en ;
+  skos:scopeNote 
+    "Een dergelijke relatie is aanwezig als de betekenis van het betreffende begrip gelijk is aan de betekenis van het begrip uit het andere begrippenkader. Het begrip kan ook een 'leenwoord' zijn, dat wil zeggen dat het begrip is overgenomen uit het andere begrippenkader."@nl,
+    "Such a relationship is present if the meaning of the term in question is the same as the meaning of the term from the other concep scheme. The concept can also be a 'loan word', i.e. it has been taken over from the other concept scheme."@en ;
+  dct:source
+    <https://www.w3.org/TR/skos-reference/#mapping> ,
+    skos: ;
+  skos:related beg-sbb:Concept ;
+  skos:broader beg-sbb:MatchingRelation;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS.
+
 #is exemplaar van
 beg-sbb:BroaderInstantial
   a skos:Concept ;
@@ -328,7 +330,7 @@ beg-sbb:Related
     "is gerelateerd aan"@nl ;
   skos:notation "RT" ;
   skos:definition
-    "Is gerelateerd aan is een relatie waarmee een begrip aan een andere begrip verbonden kan worden waarmee het semantisch samenhangt."@nl ,
+    "Is gerelateerd aan verbindt een begrip met een andere begrip waarmee het semantisch samenhangt."@nl ,
     "Relates a concept to a concept with which there is an associative semantic relationship."@en ;
   skos:scopeNote 
     "De associatieve relatie omvat associaties tussen paren begrippen die niet hiërarchisch met elkaar verbonden zijn, maar semantisch of conceptueel zodanig geassocieerd zijn dat de link ertussen expliciet gemaakt moet worden, omdat het aanvullende of alternatieve termen kan suggereren die kunnen worden gebruikt bij het indexeren of vinden van een begrip."@nl,
@@ -364,6 +366,65 @@ beg-sbb:BroaderPartitive
   skosthes:broaderGeneric beg-sbb:Broader ;
   skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
+#is overeenkomstig bovenliggend
+beg-sbb:BroadMatch
+  a skos:Concept ;
+  skos:prefLabel
+    "is overeenkomstig bovenliggend"@nl ,
+    "has broader match"@en ;
+  skos:definition
+    "Has broader match is used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en ,
+    "Overeenkomstig bovenliggend relateert een begrip aan een bovenliggend begrip uit een ander begrippenkader"@nl ;
+  skos:scopeNote 
+    "Conventie is om overeenkomstig verwant op de zelfde manier als heeft bovenliggend te gebruiken, maar dan om een begrip te verbinden met een begrip in een ander begrippenkader, dus ook in een andere context. Je zou kunnen zeggen dat het in kaart brengen van dit soort relaties minder inherent is aan de betekenis van de betreffende begrippen. Vanuit het standpunt van de oorspronkelijke ontwerper van een begrippenkader kunnen ze soms zelfs verkeerd zijn. Harmonisatie eigenschappen zijn nuttig in toepassingen die meerdere, conceptueel overlappende begrippenkaders gebruiken."@nl ,
+    "By convention, has broader match is used to represent a link to a semantically related term in another term frame that has the same intended meaning as the standard broader relation, but with a different application scope. One might say that mapping relationships are less inherent to the meaning of the concepts they involve. From the point of view of the original designer of a mapped concept scheme, they might even sometimes be wrong. Mapping properties are expected to be useful in specific applications that use multiple, conceptually overlapping KOSs. By convention, mapping relationships are expected to be asserted between concepts that belong to different concept schemes."@en;
+  dct:source
+    <https://www.w3.org/TR/skos-reference/#mapping> ,
+    skos: ,
+    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
+  skos:broader beg-sbb:MatchingRelation ;
+  skos:related beg-sbb:Broader ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+
+#is overeenkomstig onderliggend
+beg-sbb:NarrowMatch
+  a skos:Concept ;
+  skos:prefLabel
+    "has narrower match"@en ,
+    "is overeenkomstig onderliggend"@nl ;
+  skos:definition
+    "Has narrower match is used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en ,
+    "Overeenkomstig onderliggend relateert een begrip aan een specifieker begrip uit een ander begrippenkader"@nl ;
+  skos:scopeNote 
+    "Conventie is om overeenkomstig onderliggend op zelfde manier als heeft onderliggend te gebruiken, maar dan om een begrip te verbinden met een begrip in een ander begrippenkader, dus ook in een andere context. Je zou kunnen zeggen dat het in kaart brengen van dit soort relaties minder inherent is aan de betekenis van de betreffende begrippen. Vanuit het standpunt van de oorspronkelijke ontwerper van een begrippenkader kunnen ze soms zelfs verkeerd zijn. Harmonisatie eigenschappen zijn nuttig in toepassingen die meerdere, conceptueel overlappende begrippenkaders gebruiken."@nl ,
+    "By convention, has narrower match is used to represent a link that has the same intended meaning as the standard narrower relation, but with a different application scope. One might say that mapping relationships are less inherent to the meaning of the concepts they involve. From the point of view of the original designer of a mapped concept scheme, they might even sometimes be wrong. Mapping properties are expected to be useful in specific applications that use multiple, conceptually overlapping KOSs. By convention, mapping relationships are expected to be asserted between concepts that belong to different concept schemes."@en;
+  dct:source
+    <https://www.w3.org/TR/skos-reference/#mapping> ,
+    skos: ,
+    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
+  skos:broader beg-sbb:MatchingRelation ;
+  skos:related beg-sbb:Narrower ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+
+#is overeenkomstig verwant
+beg-sbb:RelatedMatch
+  a skos:Concept ;
+  skos:prefLabel
+    "has related match"@en ,
+    "is overeenkomstig verwant"@nl ;
+  skos:definition
+    "Has related match is used to state an associative mapping link between two conceptual resources in different concept schemes."@en ,
+    "Overeenkomstig verwant relateert een begrip aan een verwant begrip uit een ander begrippenkader"@nl ;
+  skos:scopeNote 
+    "Conventie is om overeenkomstig verwant op de zelfde manier als gerelateerd te gebruiken, maar dan om een begrip te verbinden met een begrip in een ander begrippenkader, dus ook in een andere context. Je zou kunnen zeggen dat het in kaart brengen van dit soort relaties minder inherent is aan de betekenis van de betreffende begrippen. Vanuit het standpunt van de oorspronkelijke ontwerper van een begrippenkader kunnen ze soms zelfs verkeerd zijn. Harmonisatie eigenschappen zijn nuttig in toepassingen die meerdere, conceptueel overlappende begrippenkaders gebruiken."@nl ,
+    "By convention, has related match is used to represent a link that has the same intended meaning as the standard related relation, but with a different application scope. One might say that mapping relationships are less inherent to the meaning of the concepts they involve. From the point of view of the original designer of a mapped concept scheme, they might even sometimes be wrong. Mapping properties are expected to be useful in specific applications that use multiple, conceptually overlapping KOSs. By convention, mapping relationships are expected to be asserted between concepts that belong to different concept schemes."@en;
+  skos:broader beg-sbb:MatchingRelation ;
+  skos:related beg-sbb:Concept ;
+  dct:source
+    <https://www.w3.org/TR/skos-reference/#mapping> ,
+    skos: ;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS.
+
 #is specialisatie van
 beg-sbb:BroaderGeneric
   a skos:Concept ;
@@ -381,6 +442,25 @@ beg-sbb:BroaderGeneric
   skos:related beg-sbb:Concept ;
   skos:broader beg-sbb:Broader ;
   skosthes:broaderGeneric beg-sbb:Broader;
+  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+
+#is vrijwel overeenkomstig
+beg-sbb:CloseMatch
+  a skos:Concept ;
+  skos:prefLabel
+    "is vrijwel overeenkomstig"@nl ,
+    "has close match"@en ;
+  skos:definition
+    "Has close match relates two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications."@en ,
+    "Is vrijwel overeenkomstig relateert twee begrippen uit verschillende begrippenkaders die zoveel op elkaar lijken dat ze in sommige toepassingen door elkaar kunnen worden gebruikt voor het ophalen van informatie. De betekenis van deze begrippen is ongeveer gelijk aan elkaar."@nl ;
+  skos:scopeNote 
+    "Een dergelijke relatie is aanwezig als de betekenis van het betreffende begrip ongeveer gelijk is aan de betekenis van het begrip uit het andere begrippenkader, dus niet precies hetzelfde."@nl,
+    "Such a relationship is present if the meaning of the concept in question is about the same as the meaning of the concept from the other concep scheme, so not exactly the same. "@en ;
+  dct:source
+    skos: ,
+    <https://www.w3.org/TR/skos-reference/#mapping> ;
+  skos:related beg-sbb:Concept ;
+  skos:broader beg-sbb:MatchingRelation ;
   skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 #notitie
@@ -420,65 +500,6 @@ beg-sbb:NarrowerPartitive
   skos:broader beg-sbb:Narrower ;
   skosthes:broaderGeneric beg-sbb:Narrower;
   skos:inScheme begkr-sbb:BegrippenkaderNPS .
-
-#overeenkomstig bovenliggend
-beg-sbb:BroadMatch
-  a skos:Concept ;
-  skos:prefLabel
-    "overeenkomstig bovenliggend"@nl ,
-    "has broader match"@en ;
-  skos:definition
-    "Has broader match is used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en ,
-    "Overeenkomstig bovenliggend relateert een begrip aan een bovenliggend begrip uit een ander begrippenkader"@nl ;
-  skos:scopeNote 
-    "Conventie is om overeenkomstig bovenliggend te gebruiken om een ​​link weer te geven naar een semantisch verwant begrip dat dezelfde bedoelde betekenis heeft als de standaard heeft bovenliggend begrip relatie, maar met een ander toepassingsbereik. Je zou kunnen zeggen dat het in kaart brengen van relaties minder inherent is aan de betekenis van de betreffende begrippen. Vanuit het standpunt van de oorspronkelijke ontwerper van een begrippenkader kunnen ze soms zelfs verkeer zijn.  Harmonisatie eigenschappen zijn nuttig in specifieke toepassingen die meerdere, conceptueel overlappende begrippenkaders gebruiken. Conventie is bovendien dat harmonisatie relaties worden gelegd tussen concepten die tot verschillende conceptschema's behoren."@nl ,
-    "By convention, has broader match is used to represent a link to a semantically related term in another term frame that has the same intended meaning as the standard broader relation, but with a different application scope. One might say that mapping relationships are less inherent to the meaning of the concepts they involve. From the point of view of the original designer of a mapped concept scheme, they might even sometimes be wrong. Mapping properties are expected to be useful in specific applications that use multiple, conceptually overlapping KOSs. By convention, mapping relationships are expected to be asserted between concepts that belong to different concept schemes."@en;
-  dct:source
-    <https://www.w3.org/TR/skos-reference/#mapping> ,
-    skos: ,
-    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
-  skos:broader beg-sbb:MatchingRelation ;
-  skos:related beg-sbb:Broader ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
-
-#overeenkomstig onderliggend
-beg-sbb:NarrowMatch
-  a skos:Concept ;
-  skos:prefLabel
-    "has narrower match"@en ,
-    "overeenkomstig onderliggend"@nl ;
-  skos:definition
-    "Has narrower match is used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en ,
-    "Overeenkomstig onderliggend relateert een begrip aan een specifieker begrip uit een ander begrippenkader"@nl ;
-  skos:scopeNote 
-    "Conventie is om overeenkomstig onderliggend te gebruiken om een ​​link weer te geven naar een begrip dat dezelfde bedoelde betekenis heeft als de standaard heeft onderliggend begrip relatie, maar met een ander toepassingsbereik. Je zou kunnen zeggen dat het in kaart brengen van relaties minder inherent is aan de betekenis van de betreffende begrippen. Vanuit het standpunt van de oorspronkelijke ontwerper van een begrippenkader kunnen ze soms zelfs verkeer zijn. Harmonisatie eigenschappen zijn nuttig in specifieke toepassingen die meerdere, conceptueel overlappende begrippenkaders gebruiken. Conventie is bovendien dat harmonisatie relaties worden gelegd tussen concepten die tot verschillende conceptschema's behoren."@nl ,
-    "By convention, has narrower match is used to represent a link that has the same intended meaning as the standard narrower relation, but with a different application scope. One might say that mapping relationships are less inherent to the meaning of the concepts they involve. From the point of view of the original designer of a mapped concept scheme, they might even sometimes be wrong. Mapping properties are expected to be useful in specific applications that use multiple, conceptually overlapping KOSs. By convention, mapping relationships are expected to be asserted between concepts that belong to different concept schemes."@en;
-  dct:source
-    <https://www.w3.org/TR/skos-reference/#mapping> ,
-    skos: ,
-    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
-  skos:broader beg-sbb:MatchingRelation ;
-  skos:related beg-sbb:Narrower ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
-
-#overeenkomstig verwant
-beg-sbb:RelatedMatch
-  a skos:Concept ;
-  skos:prefLabel
-    "has related match"@en ,
-    "overeenkomstig verwant"@nl ;
-  skos:definition
-    "Has related match is used to state an associative mapping link between two conceptual resources in different concept schemes."@en ,
-    "Overeenkomstig verwant relateert een begrip aan een verwant begrip uit een ander begrippenkader"@nl ;
-  skos:scopeNote 
-    "Conventie is om overeenkomstig verwant te gebruiken om een ​​link weer te geven naar een begrip dat dezelfde bedoelde betekenis heeft als de standaard is gerelateerd aan relatie, maar met een ander toepassingsbereik. Je zou kunnen zeggen dat het in kaart brengen van relaties minder inherent is aan de betekenis van de betreffende begrippen. Vanuit het standpunt van de oorspronkelijke ontwerper van een begrippenkader kunnen ze soms zelfs verkeer zijn. Harmonisatie eigenschappen zijn nuttig in specifieke toepassingen die meerdere, conceptueel overlappende begrippenkaders gebruiken. Conventie is bovendien dat harmonisatie relaties worden gelegd tussen concepten die tot verschillende conceptschema's behoren."@nl ,
-    "By convention, has related match is used to represent a link that has the same intended meaning as the standard related relation, but with a different application scope. One might say that mapping relationships are less inherent to the meaning of the concepts they involve. From the point of view of the original designer of a mapped concept scheme, they might even sometimes be wrong. Mapping properties are expected to be useful in specific applications that use multiple, conceptually overlapping KOSs. By convention, mapping relationships are expected to be asserted between concepts that belong to different concept schemes."@en;
-  skos:broader beg-sbb:MatchingRelation ;
-  skos:related beg-sbb:Concept ;
-  dct:source
-    <https://www.w3.org/TR/skos-reference/#mapping> ,
-    skos: ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS.
 
 #redactionele notitie
 beg-sbb:EditorialNote
@@ -611,25 +632,6 @@ beg-sbb:PrefLabel
     skos: ;
   skos:related beg-sbb:Concept ;
   skos:broader beg-sbb:Label ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
-
-#vrijwel overeenkomstig
-beg-sbb:CloseMatch
-  a skos:Concept ;
-  skos:prefLabel
-    "vrijwel overeenkomstig"@nl ,
-    "has close match"@en ;
-  skos:definition
-    "Close match relates two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications."@en ,
-    "Vrijwel overeenkomstig relateert twee begrippen uit verschillende begrippenkaders die zoveel op elkaar lijken dat ze in sommige toepassingen door elkaar kunnen worden gebruikt voor het ophalen van informatie. De betekenis van deze begrippen is ongeveer gelijk aan elkaar."@nl ;
-  skos:scopeNote 
-    "Een dergelijke relatie is aanwezig als de betekenis van het betreffende begrip ongeveer gelijk is aan de betekenis van het begrip uit het andere begrippenkader, dus niet precies hetzelfde."@nl,
-    "Such a relationship is present if the meaning of the concept in question is about the same as the meaning of the concept from the other concep scheme, so not exactly the same. "@en ;
-  dct:source
-    skos: ,
-    <https://www.w3.org/TR/skos-reference/#mapping> ;
-  skos:related beg-sbb:Concept ;
-  skos:broader beg-sbb:MatchingRelation ;
   skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 #wijzigingsnotitie
@@ -817,11 +819,11 @@ beg-sbb:Taxonomy
   skos:altLabel "classificatieschema" ;
   skos:broader beg-sbb:ConceptScheme ;
   skos:definition
-    "Een taxonomie (of taxonomische classificatie) is een classificatieschema, met name een hiërarchische classificatie, waarin concepten zijn georganiseerd in groepen of typen."@nl ,
+    "Een taxonomie (of taxonomische classificatie) is een classificatieschema, met name een hiërarchische classificatie, waarin begrippen zijn georganiseerd in groepen of typen."@nl ,
     "A taxonomy (or taxonomical classification) is a scheme of classification, especially a hierarchical classification, in which concepts are organized into groups or types."@en ;
   skos:scopeNote
-    "Een taxonomie wordt gebruikt om kennis te ordenen en te indexeren (opgeslagen als documenten, artikelen, video's, enz.), zoals in de vorm van een bibliotheekclassificatiesysteem of een taxonomie van een zoekmachine, zodat gebruikers de informatie die ze zoeken gemakkelijker kunnen vinden. Taxonomieën zijn hiërarchieën (en hebben dus een intrinsieke boomstructuur)."@nl,
-    "A taxonomy is be used to organize and index knowledge (stored as documents, articles, videos, etc.), such as in the form of a library classification system, or a search engine taxonomy, so that users can more easily find the information they are searching for. Taxonomies are hierarchies (and thus, have an intrinsic tree structure)."@en ;
+    "Een taxonomie wordt gebruikt om kennis te ordenen en te indexeren (opgeslagen als documenten, artikelen, video's, enz.), zoals in de vorm van een bibliotheekclassificatiesysteem of een taxonomie van een zoekmachine, zodat gebruikers de informatie die ze zoeken gemakkelijker kunnen vinden. Taxonomieën zijn hiërarchieën (en hebben dus een intrinsieke structuur en betekenis)."@nl,
+    "A taxonomy is be used to organize and index knowledge (stored as documents, articles, videos, etc.), such as in the form of a library classification system, or a search engine taxonomy, so that users can more easily find the information they are searching for. Taxonomies are hierarchies (and thus, have an intrinsic structureand meaning)."@en ;
   skos:related
     beg-sbb:Narrower ,
     beg-sbb:Broader ,
