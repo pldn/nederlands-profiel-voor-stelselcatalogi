@@ -64,9 +64,13 @@ Wel biedt dit profiel een aantal aanbevelingen.
 <div class="practice"><p class="practicedesc"><span class="practicelab">Het is aanbevolen om bronnen met _dct:type_ te classificeren</span>Dit doen we aan de hand van een gecontroleerde vocabulaire, ofwel een classificatie schema. Een voorbeeld van zo'n classificatie schema is <a href="http://id.loc.gov/vocabulary/marcgt">MARC Genre/Terms Scheme</a>. Dit is in aanvulling op een rdf:type typering.</p></div>
 
 ## Harmonisatie en hergebruik
-Om data goed te kunnen gebruiken, maar zeker ook om data te combineren met andere data is het belangrijk om het te begrijpen. 
+Om data goed te kunnen gebruiken, maar zeker ook om data te combineren met andere data is het belangrijk om deze te begrijpen. 
 Begrippenkaders versterken de interoperabiliteit van datasets omdat het duidelijk maakt wat de betekenis is van termen die gebruikt worden.
-Een vooralsnog belangrijk thema in data is silo-vorming en organisaties zijn ook nadrukkelijk bezig om silo's te ontmantelen omdat data in samenhang meer waarde kan leveren. Om data in samenhang te kunnen bevragen is het noodzakelijk dat de terminologie eenduidig is en op elkaar aansluit. We hebben daarom niet alleen afzonderlijke begrippenkaders per registratie nodig maar juist een stelsel van verbonden begrippenkaders per domein. In dit hoofdstuk bespreken we best-practices op dit gebied.
+Een vooralsnog belangrijk thema in data is silo-vorming en organisaties zijn ook nadrukkelijk bezig om silo's te ontmantelen omdat data in samenhang meer waarde kan leveren. Om data in samenhang te kunnen bevragen is het noodzakelijk dat de terminologie eenduidig is en op elkaar aansluit. We hebben daarom niet alleen afzonderlijke begrippenkaders per registratie (bijvoorbeeld het begrippenkader van de BRK) nodig maar juist een stelsel van verbonden begrippenkaders per domein (bijvoorbeeld het vastgoed domein). 
+
+Daarnaast hebben we hier het begrippenkader vooral beschreven vanuit het aanbod van gegevens. Maar je wilt dat natuurlijk ook gebruiken. En dan wordt niet altijd hetzelfde begrippenkader gehanteerd. Dat is niet altijd begrippenkader die je bij een registratie mag verwachten, maar vaak juist een begrippenkader van een gebruiksorganisatie, bijvoorbeeld een uitvoeringsorganisatie die gegevens nodig heeft uit een basisregistratie, maar eigen wet- en regelgeving kent en bijbehorend begrippenkader. Juist dan wil je een verbinding leggen tussen de twee begrippenkaders.
+
+In dit hoofdstuk bespreken we best-practices op dit gebied.
 
 Het verbinden van begrippenkaders kan op twee manieren; 
 1) door begrippen te harmoniseren, en
@@ -75,8 +79,8 @@ Het verbinden van begrippenkaders kan op twee manieren;
 Wanneer we het hebben over een begrip die gedefinieerd is in een 'andere context' dan noemen we dat voor het gemak een <dfn>extern begrip</dfn>. 
 
 ### Harmonisatie
-Harmonisatie is het vastleggen van hoe begrippen uit verschillende begrippenkaders op basis van betekenis aan elkaar relateren. 
-Hiervoor gebruiken we nadrukkelijk geen owl:sameAs gezien dat impliceert dat de twee resources op alle mogelijke manieren identiek zijn (sterker nog; het zijn dezelfde resources). Alhoewel twee begrippen exact dezelfde betekenis kunnen hebben kunnen ze vooralsnog verschillende lexicale labels; eigenaren en documentatie hebben. Ook zijn de logische gevolgen van owl:sameAs hierdoor veelal ongewenst. Een voorbeeld van een ongewenste implicatie is dat het kan leiden tot meerdere voorkeurstermen per taal voor een begrip en dit is niet toegestaan. Dit zien we bijvoorbeeld bij de volgende set statements:
+Onder de noemer harmonisatie beschrijven we hoe begrippen uit verschillende begrippenkaders op basis van betekenis aan elkaar kunnen worden gerelateerd. De letterlijke betekenis van harmoniseren is 'op elkaar afstemmen'. Verbinden is een eerste stap op weg naar afstemmen, maar het is strikt genomen geen afstemming en dus ook geen harmonisatie.
+Daarom gebruiken we nadrukkelijk geen owl:sameAs gezien dat impliceert dat de twee resources op alle mogelijke manieren identiek zijn (sterker nog; het zijn dezelfde resources). Ook als twee begrippen exact dezelfde betekenis hebben kunnen ze  verschillende lexicale labels, eigenaren en documentatie hebben. Ook zijn de logische gevolgen van owl:sameAs hierdoor veelal ongewenst. Een voorbeeld van een ongewenste implicatie is dat het kan leiden tot meerdere voorkeurstermen per taal voor een begrip en dit is niet toegestaan. Dit zien we bijvoorbeeld bij de volgende set statements:
 
 <pre class="example">
 ex:B a skos:Concept ;
@@ -105,6 +109,8 @@ ex2:C a skos:Concept ;
   skos:inScheme ex2:BegrippenkaderB
   skos:inScheme ex:BegrippenkaderA .
 </pre>
+
+N.B. Voorbeeld 4 en 5 zijn eigenlijk geen voorbeelden, maar contra-voorbeelden. Ze laten zien hoe het niet moet en wat er dan mis kan gaan.
 
 Als alternatief op owl:sameAs zijn harmonisatierelaties gedefinineerd in SKOS. Deze relaties worden gebruik om de mapping tussen begrippen in verschillende begrippenkaders vast te leggen wanneer deze een vergelijkbare betekenis hebben. Bijvoorbeeld door te stellen dat het begrip "Woning" uit één begrippenkader een [=overeenkomstig bovenliggend=] begrip "Pand" kent uit een ander begrippenkader.
 We nemen zo het begrip "Pand" niet op in het begrippenkader waar "Woning" gedefinieerd is. Op dezelfde wijze kunnen twee begrippen uit verschillende begrippenkaders gerelateerd zijn aan elkaar. 
@@ -158,9 +164,9 @@ ex2:Land a skos:Concept ;
 
 Aanbevelingen:
 <div class="practice"><p class="practicedesc"><span class="practicelab">Statements over externe begrippen van de bronhouder kunnen niet veranderd worden, je commiteert je namelijk aan het begrip zoals het beschreven is door de bronhouder.</span>Wanneer een extern begrip wordt toegevoegd aan een begrippenkader kunnen enkel aanvullende statements worden gemaakt. Van deze aanvullende statements moet het eigenaarschap duidelijk zijn.</p></div>
-<div class="practice"><p class="practicedesc"><span class="practicelab">Het externe begrip is onderdeel van het lokale begrippenkader en krijgt dus een skos:inScheme relatie naar het lokale begrippenkader en behoudt de skos:inScheme naar het orginele begrippenkader.</span></p></div>
-<div class="practice"><p class="practicedesc"><span class="practicelab">Een extern begrip kan een plek krijgen in de hierarchie van het lokale begrippenkader aan de hand van skos:broader relaties van en naar het externe begrip.</span></p></div>
-<div class="practice"><p class="practicedesc"><span class="practicelab">Een extern begrip kan een startpunt zijn in een hierarchie van begrippen, en zo dus een skos:topConceptOf relatie (of inverse daarvan) kennen.</span></p></div>
+<div class="practice"><p class="practicedesc"><span class="practicelab">Het externe begrip is onderdeel van het lokale begrippenkader en krijgt dus een 'in kader' relatie naar het lokale begrippenkader en behoudt de 'in kader' relatie naar het orginele begrippenkader.</span></p></div>
+<div class="practice"><p class="practicedesc"><span class="practicelab">Een extern begrip kan een plek krijgen in de hierarchie van het lokale begrippenkader aan de hand van 'heeft bovenliggend begrip' relaties van en naar het externe begrip.</span></p></div>
+<div class="practice"><p class="practicedesc"><span class="practicelab">Een extern begrip kan een startpunt zijn in een hierarchie van begrippen, en zo dus een 'heeft topbegrip' relatie (of inverse daarvan) kennen.</span></p></div>
 <div class="practice"><p class="practicedesc"><span class="practicelab">Wanneer het externe begrip is gepubliceerd, is het niet noodzakelijk om de beschrijving te repliceren. Dit kan opgehaald worden aan de hand van de URI van het begrip.</span></p></div>
 
 
