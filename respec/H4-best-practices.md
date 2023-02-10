@@ -178,17 +178,6 @@ Ergens ligt een knip tussen een samenhangende beschrijving van concepten in een 
 * Good practice is om het begrippenkader en de ontologie te scheiden. 
 
 ## Termen
-<div class="practice"><p class="practicedesc"><span class="practicelab">Naamgevingsconventies voor termen. <p> 
-  * Een term is een zelfstandig naamwoord, eventueel gekwalificeerd met een adjectief (bijvoeglijk naamwoord). Gebruik geen lidwoorden, voorzetsels of bijwoorden.
-  * Vermijd dubbele adjectieven. 
-  * Gebruik geen werkwoord.
-  * Gebruik geen afkortingen in een term.
-  * Nederlands, tenzij een ingeburgerde term.
-  * Gebruik kleine letters, net als in een woordenboek. Hoofdletters worden alleen gebruikt voor namen. Applicaties kunnen immers zelf bepalen of ze labels met hoofdletter willen laten beginnen, en dus kleine letters naar hoofdletters omzetten, maar kunnen niet automatisch bepalen of een hoofdletter naar een kleine letter mag.
-  * Gebruik alfabetische letters (UTF8) en spaties. Gebruik geen leestekens (streepjes, punten, komma's en dergelijke.
-  * Gebruik enkelvoud. Dit geldt specifiek voor Nederlands, Frans en Duits, niet voor het Enels.
-  * Gebruik de standaard spelling volgens het groene boekje.  </p></span></div>
-  
 <div class="practice"><p class="practicedesc"><span class="practicelab">De voorkeursterm sluit aan op de daadwerkelijke term zoals deze lexicaal gebruikt wordt. <p>Het is verplicht dat voor iedere taal alle voorkeurtermen die in één taal voorkomen in één begrippenkader uniek zijn. Mocht binnen één begrippenkader toch twee begrippen terugkomen die vaak met dezelfde term worden aangeduid, dan is het noodzakelijk - om spraakverwarring te voorkomen - om een post of prefix toe te voegen als dit algemeen gebruikelijk is. Denk aan _Hengelo (OV)_ voor de plaats in Overijssel en _Hengelo (GLD)_ voor de plaats in Gelderland. De voorkeursterm is de daadwerkelijke term zoals deze lexicaal gebruikt wordt, dus met spaties, diacrieten en waar nodig hoofdletters. Mocht een post of prefix in de praktijk niet worden gebruikt, dan is dit een sterke aanwijzing dat de twee begrippen feitelijk niet tot hetzelfde begrippenkader behoren, en uit elkaar gehaald moeten worden: de basisregel blijft gelden. Als begrippen in verschillende begrippenkaders zijn geplaatst, dan is een nadere aanduiding van de context ongewenst. Als een lexicale term toch nader gekwalificeerd wordt dan is het aangeraden om een meer generiekere of classificerende term te gebruiken en deze tussen haakjes achter de lexicale term te plaatsen in het `rdfs:label`, conform ISO25964. E.g. `Bank (Zitobject)` en `Bank (Financiele instelling)`.</p></span></div>
 
 <div class="practice"><p class="practicedesc"><span class="practicelab">Het wordt aangeraden om elke web-resource te voorzien van een `rdfs:label` waarmee deze resource een voor mensen leesbare vorm kent, ongeacht de context <p>Elk begrip dient zo per gehanteerde taal precies één expliciet opgenomen `rdfs:label` te bevatten. Anders dan bij de voorkeursterm, is het verstandig om zoveel mogelijk context in het label mee te geven, zodat geen verwarring ontstaat in het kader van homoniemen. Het algemene label bevordert tevens de compatibiliteit met bestaande tools. Merk op dat het hier gaat om het expliciet opgegeven `rdfs:label`. Het is denkbaar dat tools andere `rdfs:label`s afleiden, op basis van de SKOS ontologie (aangezien alle SKOS labels subproperties zijn van `rdfs:label`).</p></span></div>
