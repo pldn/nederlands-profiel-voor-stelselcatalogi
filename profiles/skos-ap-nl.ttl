@@ -170,25 +170,25 @@ skosapnl:Concept-changeNote
 
 skosapnl:Concept-broadMatch
   a sh:PropertyShape ;
-  rdfs:label "overeenkomstig bovenliggend"@nl ;
+  rdfs:label "is overeenkomstig bovenliggend"@nl ;
   sh:class skos:Concept ;
   sh:description
     "skos:broadMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en ,
     "Used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en ;
   sh:disjoint skos:relatedMatch ;
   sh:group skosapnl:MatchingRelationshipsPropertyGroup ;
-  sh:name "overeenkomstig bovenliggend"@nl ;
+  sh:name "is overeenkomstig bovenliggend"@nl ;
   sh:order 40 ;
   sh:nodeKind sh:IRI ;
   sh:path skos:broadMatch .
 
 skosapnl:Concept-narrowMatch
   a sh:PropertyShape ;
-  rdfs:label "overeenkomstig onderliggend"@nl ;
+  rdfs:label "is overeenkomstig onderliggend"@nl ;
   sh:class skos:Concept ;
   sh:disjoint skos:relatedMatch ;
   sh:group skosapnl:MatchingRelationshipsPropertyGroup ;
-  sh:name "overeenkomstig onderliggend"@nl ;
+  sh:name "is overeenkomstig onderliggend"@nl ;
   sh:order 41 ;
   sh:nodeKind sh:IRI ;
   sh:path skos:narrowMatch .
@@ -254,12 +254,12 @@ skosapnl:Concept-hiddenLabel
 
 skosapnl:Concept-relatedMatch
   a sh:PropertyShape ;
-  rdfs:label "Overeenkomstig verwant"@nl ;
+  rdfs:label "is overeenkomstig verwant"@nl ;
   sh:class skos:Concept ;
   sh:description "skos:relatedMatch is used to state an associative mapping link between two conceptual resources in different concept schemes."@en ;
   sh:description "Used to state an associative mapping link between two conceptual resources in different concept schemes."@en ;
   sh:group skosapnl:MatchingRelationshipsPropertyGroup ;
-  sh:name "overeenkomstig verwant"@nl ;
+  sh:name "is overeenkomstig verwant"@nl ;
   sh:order 44 ;
   sh:nodeKind sh:IRI ;
   sh:path skos:relatedMatch .
@@ -293,25 +293,25 @@ skosapnl:Concept-broaderPartitive
 
 skosapnl:Concept-exactMatch
   a sh:PropertyShape ;
-  rdfs:label "exact overeenkomstig"@nl ;
+  rdfs:label "is exact overeenkomstig"@nl ;
   sh:class skos:Concept ;
   sh:description "Used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. skos:exactMatch is a transitive property, and is a sub-property of skos:closeMatch."@en ;
   sh:disjoint skos:broadMatch, skos:relatedMatch ;
   sh:group skosapnl:MatchingRelationshipsPropertyGroup ;
-  sh:name "exact overeenkomstig"@nl ;
+  sh:name "is exact overeenkomstig"@nl ;
   sh:order 43 ;
   sh:nodeKind sh:IRI ;
   sh:path skos:exactMatch .
 
 skosapnl:Concept-inScheme
   a sh:PropertyShape ;
-  rdfs:label "behoort tot"@nl ;
+  rdfs:label "in kader"@nl ;
   sh:class skos:ConceptScheme ;
   sh:description "Relates a resource (for example a concept) to a concept scheme in which it is included."@en ;
   sh:description "Een begrippenkader waartoe het concept behoort."@nl ;
   sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
   sh:minCount 1 ;
-  sh:name "behoort tot"@nl ;
+  sh:name "in kader"@nl ;
   sh:order 6 ;
   sh:nodeKind sh:IRI ;
   sh:path skos:inScheme .
@@ -418,12 +418,12 @@ skosapnl:Concept-scopeNote
 
 skosapnl:Concept-closeMatch
   a sh:PropertyShape ;
-  rdfs:label "vrijwel overeenkomstig"@nl ;
+  rdfs:label "is vrijwel overeenkomstig"@nl ;
   sh:class skos:Concept ;
   sh:description "skos:closeMatch is used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of \"compound errors\" when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property."@en ;
   sh:description "Used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of \"compound errors\" when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property."@en ;
   sh:group skosapnl:MatchingRelationshipsPropertyGroup ;
-  sh:name "vrijwel overeenkomstig"@nl ;
+  sh:name "is vrijwel overeenkomstig"@nl ;
   sh:order 42 ;
   sh:nodeKind sh:IRI ;
   sh:path skos:closeMatch .
