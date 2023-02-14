@@ -2,14 +2,17 @@
 ## Begrippen
 ### Termen
 <div class="practice"><p class="practicedesc"><span class="practicelab">Gangbare conventies voor het beschrijven van termen (voorkeurstermen, alternatieve termen) zijn:
-* Gebruik een zelfstandig naam, eventueel gekwalificeerd met een adjectief (bijvoeglijk naamwoord). Gebruik geen bijwoorden, lidwoorden en voorzetsels.
-* Vermijdt dubbele adjectieven.
-* Gebruik geen werkwoorden.
-* Gebruik geen afkortingen.
-* Schrijf een term in kleine letters, zoals in een zin, behalve bij eingennamen.
-* Gebruik Latijnse alfabetische karakters (UTF8). Gebruik geen leestekens (streepjes, punten, komma's en dergelijke).
-* Gebruik enkelvoud. Dit geldt specifiek voor Duits, Frans, Nederlands, niet voor het Engels.
-* Gebruik standaard spelling, conform het groene boekje.</p></span></div>
+<ul>
+<li>Gebruik een zelfstandig naam, eventueel gekwalificeerd met een adjectief (bijvoeglijk naamwoord). Gebruik geen bijwoorden, lidwoorden en voorzetsels.</li>
+<li>Vermijdt dubbele adjectieven.</li>
+<li>Gebruik geen werkwoorden.</li>
+<li>Gebruik geen afkortingen.</li>
+<li>Schrijf een term in kleine letters, zoals in een zin, behalve bij eingennamen.</li>
+<li>Gebruik Latijnse alfabetische karakters (UTF8). Gebruik geen leestekens (streepjes, punten, komma's en dergelijke).</li>
+<li>Gebruik enkelvoud. Dit geldt specifiek voor Duits, Frans, Nederlands, niet voor het Engels.</li>
+<li>Gebruik standaard spelling, conform het groene boekje.</li>
+</ul>
+</p></span></div>
 
 <div class="practice"><p class="practicedesc"><span class="practicelab">De voorkeursterm sluit aan op de daadwerkelijke term zoals deze lexicaal gebruikt wordt. <p>Het is verplicht dat voor iedere taal alle voorkeurtermen die in één taal voorkomen in één begrippenkader uniek zijn. Mocht binnen één begrippenkader toch twee begrippen terugkomen die vaak met dezelfde term worden aangeduid, dan is het noodzakelijk - om spraakverwarring te voorkomen - om een post of prefix toe te voegen als dit algemeen gebruikelijk is. Denk aan _Hengelo (OV)_ voor de plaats in Overijssel en _Hengelo (GLD)_ voor de plaats in Gelderland. De voorkeursterm is de daadwerkelijke term zoals deze lexicaal gebruikt wordt, dus met spaties, diacrieten en waar nodig hoofdletters. Mocht een post of prefix in de praktijk niet worden gebruikt, dan is dit een sterke aanwijzing dat de twee begrippen feitelijk niet tot hetzelfde begrippenkader behoren, en uit elkaar gehaald moeten worden: de basisregel blijft gelden. Als begrippen in verschillende begrippenkaders zijn geplaatst, dan is een nadere aanduiding van de context ongewenst. Als een lexicale term toch nader gekwalificeerd wordt dan is het aangeraden om een meer generiekere of classificerende term te gebruiken en deze tussen haakjes achter de lexicale term te plaatsen in het `rdfs:label`, conform ISO25964. E.g. `Bank (Zitobject)` en `Bank (Financiele instelling)`.</p></span></div>
 
