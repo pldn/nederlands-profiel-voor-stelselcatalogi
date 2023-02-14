@@ -96,7 +96,7 @@ Een begrip kan beschreven worden aan de hand van verschillende kenmerken. Deze z
 | [=is categorie van=]            | 0..*          | [=begrip=]         |
 
 ### Begrippenlijst
-Aan de hand van de begripsdriehoek, zien we dat om een spreker te kunnen begrijpen, een toebehoorder minimaal iets moeten weten over de betekenis en de termen die ter aanduiding gebruikt worden.
+Aan de hand van de begripsdriehoek, zien we dat om een spreker te kunnen begrijpen, een toehoorder minimaal iets moeten weten over de betekenis en de termen die ter aanduiding gebruikt worden.
 
 Door deze basis voor alle begrippen die binnen een context gebruikt worden vast te leggen onstaat een [=begrippenkader=]. We spreken hier van een begrippenlijst. Dit is het basisniveau voor het beschrijving van begrippen in een bepaald domein. 
 
