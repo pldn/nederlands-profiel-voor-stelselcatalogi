@@ -12,6 +12,7 @@
 #begrippenkader
 begkr-sbb:nlbegrip
   a skos:ConceptScheme ;
+  rdfs:label "nlbegrip";
   skos:hasTopConcept
     beg-sbb:ConceptScheme ,
     beg-sbb:Concept ,
@@ -38,6 +39,7 @@ begkr-sbb:nlbegrip
 #begrip
 beg-sbb:Concept
   a skos:Concept ;
+  rdfs:label "concept";
   skos:prefLabel
     "concept"@en ,
     "begrip"@nl ;
@@ -56,6 +58,7 @@ beg-sbb:Concept
 #alternatieve term
   beg-sbb:AltLabel
   a skos:Concept ;
+  rdfs:label "alternative label";
   skos:prefLabel
     "alternatieve term"@nl ,
     "alternative label"@en ;
@@ -81,6 +84,7 @@ beg-sbb:Concept
 #bron
 beg-sbb:Source
   a skos:Concept ;
+  rdfs:label "source";
   skos:prefLabel
     "source"@en ,
     "bron"@nl ;
@@ -101,6 +105,7 @@ beg-sbb:Source
 #code
 beg-sbb:Notation
   a skos:Concept ;
+  rdfs:label "notation";
   skos:prefLabel
     "code"@nl ,
     "notation"@en;
@@ -119,6 +124,7 @@ beg-sbb:Notation
 #definitie
 beg-sbb:Definition
   a skos:Concept ;
+  rdfs:label "definition";
   skos:prefLabel
     "definition"@en ,
     "definitie"@nl ;
@@ -141,13 +147,14 @@ beg-sbb:Definition
 #harmonisatierelatie
 beg-sbb:MatchingRelation
   a skos:Concept ;
+  rdfs:label "matching relation";
   skos:prefLabel
     "harmonisatierelatie"@nl ,
     "is in mapping relation with"@en ;
   skos:definition
     "Een harmonisatierelatie relateert een begrip aan een overeenkomstig begrip uit een ander begrippenkader, op basis van de betekenis."@nl ,
     "Is in mapping relation with relates two concepts coming, by convention, from different schemes, and that have comparable meanings"@en ;
-  skos:scopeNote "Dit is een hulpbegrip om de 5 harmonisatierelaties met begrippen in externe begrippenkaders samen te kunnen nemen. De bedoeling is om een van deze 5 relaties te gebruiken bij het relateren van een begrip aan een begrip uit een aander begrippenkader. Het gaat niet zozeer om het harmoniseren in de zin dat iedereen dezelfde term voor een concept moet gebruiken, maar om inzichtelijk te maken hoe het concept samenhangt met concepten in andere contexten."@nl,
+  skos:scopeNote "Dit is een hulpbegrip om de 5 harmonisatierelaties met begrippen in externe begrippenkaders samen te kunnen nemen. De bedoeling is om een van deze 5 relaties te gebruiken bij het relateren van een begrip aan een begrip uit een aander begrippenkader. Het gaat niet zozeer om het harmoniseren in de zin dat iedereen dezelfde term voor een concept moet gebruiken, maar om inzichtelijk te maken hoe het begrip samenhangt met concepten in andere contexten."@nl,
     "This is an auxiliary concept for combining the 5 harmonization relations with concepts in external concept schemes. The intention is to use one of these 5 relations when relating a concept to a concept from another concept schemek. It is not so much about harmonizing in the sense that everyone has to use the same term for a concept, but to provide insight into how the concept relates to concepts in other contexts."@en;
   dct:source 
     <https://www.w3.org/TR/skos-reference/#mapping> ,
@@ -158,6 +165,7 @@ beg-sbb:MatchingRelation
 #heeft bovenliggend begrip
 beg-sbb:Broader
   a skos:Concept ;
+  rdfs:label "has broader";
   skos:prefLabel
     "heeft bovenliggend begrip"@nl ,
     "has broader"@en ;
@@ -167,7 +175,7 @@ beg-sbb:Broader
     "Has broader relates a concept to a concept that is more general in meaning."@en ,
     "Heeft bovenliggend begrip relateert een begrip aan een begrip met een meer algemene betekenis."@nl ;
   skos:scopeNote 
-    "Conventie is om heeft bovenliggend begrip alleen te gebruiken om een ​​directe hiërarchische link tussen twee concepten te beschrijven."@nl, 
+    "Conventie is om heeft bovenliggend begrip alleen te gebruiken om een ​​directe hiërarchische link tussen twee begripen te beschrijven."@nl, 
     "By convention, has broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."@en;
   dct:source
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
@@ -180,6 +188,7 @@ beg-sbb:Broader
 #heeft onderliggend begrip
 beg-sbb:Narrower
   a skos:Concept ;
+  rdfs:label "has narrower";
   skos:prefLabel
     "heeft onderliggend begrip"@nl ,
     "has narrower"@en ;
@@ -191,7 +200,7 @@ beg-sbb:Narrower
     "Has narrower relates a concept to a concept that is more specific in meaning."@en ,
     "Heeft onderliggend begrip relateert een begrip aan een begrip met een specifiekere betekenis."@nl ;
   skos:scopeNote
-    "Conventie is om heeft onderliggend begrip alleen te gebruiken om een directe hiërarchische link tussen twee concepten te beschrijven."@nl, 
+    "Conventie is om heeft onderliggend begrip alleen te gebruiken om een directe hiërarchische link tussen twee begrippen te beschrijven."@nl, 
     "By convention, has narrower is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."@en ;
   dct:source
     <https://www.w3.org/TR/skos-reference/#semantic-relations> ,
@@ -205,12 +214,13 @@ beg-sbb:Narrower
 #historische notitie
 beg-sbb:HistoryNote
   a skos:Concept ;
+  rdfs:label "history note";
   skos:prefLabel
     "history note"@en ,
     "historie notitie"@nl ;
   skos:notation "HN" ;
   skos:definition
-    "Een historie notitie is een notitie van de voormalige status/gebruik/betekenis van het concept."@nl ,
+    "Een historie notitie is een notitie van de voormalige status/gebruik/betekenis van het begrip."@nl ,
     "A history note is a note about the past state/use/meaning of a concept."@en ;
   skos:scopeNote 
     "A history note should be used when a new preferred term is added to the thesaurus or a change is made to an existing term that affects the concept's scope in different periods of application. While it is possible to include such information in the scope note, a separate history note is preferable. A history note may record the date of introduction, or it may give more complex advice on how to search for the concept in earlier or later times."@en,
@@ -224,6 +234,7 @@ beg-sbb:HistoryNote
 #in kader
 beg-sbb:InScheme
   a skos:Concept ;
+  rdfs:label "in scheme";
   skos:prefLabel
     "in kader"@nl ,
     "in scheme"@en ;
@@ -243,6 +254,7 @@ beg-sbb:InScheme
 #is categorie van
 beg-sbb:NarrowerInstantial
   a skos:Concept ;
+  rdfs:label "narrower instantial";
   skos:prefLabel
     "narrower term (instantial)"@en ,
     "is categorie van"@nl ;
@@ -313,7 +325,7 @@ beg-sbb:NarrowerGeneric
     "Is generalisatie van relateert een begrip aan een specifieker begrip."@nl ;
   skos:scopeNote
     "The hierarchical relationship should be established between a pair of concepts when the scope of one of them falls completely within the scope of the other. It should be based on degrees or levels of superordination and subordination, where the superordinate concept represents a class or whole, and subordinate concepts refer to its members or species. A generalization is used when it is relevant to distinguish the relation from a partial or instantaneous hierarchical relation."@en,
-    "De hiërarchische relatie tussen een paar begrippen wordt gebruikt wanneer de reikwijdte van het ene begrip volledig binnen de reikwijdte van het andere begrip valt. Deze relatie is gebaseerd op op graden of niveaus van bovenliggend en onderliggend, waarbij het bovenliggende concept een klasse of geheel vertegenwoordigt, en onderliggende concepten verwijzen naar haar leden of soorten. Een generalisatie wordt gebruikt wanneer het relevant is om deze relatie te onderscheiden van een partiële of instantiële hiërarchische relatie."@nl;
+    "De hiërarchische relatie tussen een paar begrippen wordt gebruikt wanneer de reikwijdte van het ene begrip volledig binnen de reikwijdte van het andere begrip valt. Deze relatie is gebaseerd op op graden of niveaus van bovenliggend en onderliggend, waarbij het bovenliggende concept een klasse of geheel vertegenwoordigt, en onderliggende begrippen verwijzen naar haar leden of soorten. Een generalisatie wordt gebruikt wanneer het relevant is om deze relatie te onderscheiden van een partiële of instantiële hiërarchische relatie."@nl;
   dct:source
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skosthes: ;
@@ -642,7 +654,7 @@ beg-sbb:ChangeNote
     "wijzigingsnotitie"@nl ;
   skos:definition
     "A note about a modification to a concept."@en ,
-    "Een wijzigingsnotitie is een notitie over een wijziging aan het concept."@nl ;
+    "Een wijzigingsnotitie is een notitie over een wijziging aan het begrip."@nl ;
   skos:scopeNote 
     "Een wijzigingsnota documenteert fijnmazige wijzigingen aan een concept, ten behoeve van beheer en onderhoud."@nl,
     "A change note documents fine-grained changes to a concept, for the purposes of administration and maintenance."@en ;
