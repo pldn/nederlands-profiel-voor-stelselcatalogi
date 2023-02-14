@@ -254,7 +254,7 @@ beg-sbb:InScheme
 #is categorie van
 beg-sbb:NarrowerInstantial
   a skos:Concept ;
-  rdfs:label "narrower instantial";
+  rdfs:label "narrower term (instantial)";
   skos:prefLabel
     "narrower term (instantial)"@en ,
     "is categorie van"@nl ;
@@ -276,6 +276,7 @@ beg-sbb:NarrowerInstantial
 #is exact overeenkomstig
 beg-sbb:ExactMatch
   a skos:Concept ;
+  rdfs:label "has exact match";
   skos:prefLabel
     "has exact match"@en ,
     "is exact overeenkomstig"@nl ;
@@ -295,6 +296,7 @@ beg-sbb:ExactMatch
 #is exemplaar van
 beg-sbb:BroaderInstantial
   a skos:Concept ;
+  rdfs:label "broader term (instantial)";
   skos:prefLabel
     "is exemplaar van"@nl ,
     "broader term (instantial)"@en ;
@@ -316,9 +318,10 @@ skos:related beg-sbb:Concept ;
 #is generalisatie van
 beg-sbb:NarrowerGeneric
   a skos:Concept ;
+  rdfs:label "narrower term (generic)";
   skos:prefLabel
     "is generalisatie van"@nl ,
-    "broader term (generic)"@en ;
+    "narrower term (generic)"@en ;
   skos:notation "BTG" ;
   skos:definition
     "Broader term (generic) is the immediate (direct or one-step) class - specialized class relationship."@en ,
@@ -337,6 +340,7 @@ beg-sbb:NarrowerGeneric
 #is gerelateerd aan
 beg-sbb:Related
   a skos:Concept ;
+  rdfs:label "has related";
   skos:prefLabel
     "has related"@en ,
     "is gerelateerd aan"@nl ;
@@ -358,6 +362,7 @@ beg-sbb:Related
 #is onderdeel van
 beg-sbb:BroaderPartitive
   a skos:Concept ;
+  rdfs:label "broader term (partitive)";
   skos:prefLabel
     "is onderdeel van"@nl ,
     "broader term (partitive)"@en ;
@@ -381,6 +386,7 @@ beg-sbb:BroaderPartitive
 #is overeenkomstig bovenliggend
 beg-sbb:BroadMatch
   a skos:Concept ;
+  rdfs:label "has broader match";
   skos:prefLabel
     "is overeenkomstig bovenliggend"@nl ,
     "has broader match"@en ;
@@ -401,6 +407,7 @@ beg-sbb:BroadMatch
 #is overeenkomstig onderliggend
 beg-sbb:NarrowMatch
   a skos:Concept ;
+  rdfs:label "has narrower match";
   skos:prefLabel
     "has narrower match"@en ,
     "is overeenkomstig onderliggend"@nl ;
@@ -421,6 +428,7 @@ beg-sbb:NarrowMatch
 #is overeenkomstig verwant
 beg-sbb:RelatedMatch
   a skos:Concept ;
+  rdfs:label "has related match";
   skos:prefLabel
     "has related match"@en ,
     "is overeenkomstig verwant"@nl ;
@@ -440,6 +448,7 @@ beg-sbb:RelatedMatch
 #is specialisatie van
 beg-sbb:BroaderGeneric
   a skos:Concept ;
+  rdfs:label "broader term (generic)";
   skos:prefLabel
     "broader term (generic)"@en ,
     "is specialisatie van"@nl ;
@@ -459,6 +468,7 @@ beg-sbb:BroaderGeneric
 #is vrijwel overeenkomstig
 beg-sbb:CloseMatch
   a skos:Concept ;
+  rdfs:label "has close match";
   skos:prefLabel
     "is vrijwel overeenkomstig"@nl ,
     "has close match"@en ;
@@ -478,6 +488,7 @@ beg-sbb:CloseMatch
 #notitie
 beg-sbb:Note
   a skos:Concept ;
+  rdfs:label "note";
   skos:prefLabel
     "note"@en ,
     "notitie"@nl ;
@@ -495,6 +506,7 @@ beg-sbb:Note
 #omvat
 beg-sbb:NarrowerPartitive
   a skos:Concept ;
+  rdfs:label "broader term (partitive)";
   skos:prefLabel
     "omvat"@nl ,
     "broader term (partitive)"@en ;
@@ -516,6 +528,7 @@ beg-sbb:NarrowerPartitive
 #redactionele notitie
 beg-sbb:EditorialNote
   a skos:Concept ;
+  rdfs:label "editorial note";
   skos:prefLabel
     "redactionele notitie"@nl ,
     "editorial note"@en ;
@@ -536,6 +549,7 @@ beg-sbb:EditorialNote
 #semantische relatie
 beg-sbb:SemanticRelation
   a skos:Concept ;
+  rdfs:label "semantic relation";
   skos:prefLabel
     "semantische relatie"@nl ,
     "semantic relation"@en ;
@@ -553,6 +567,7 @@ beg-sbb:SemanticRelation
 #term
 beg-sbb:Label
   a skos:Concept ;
+  rdfs:label "label";
   skos:prefLabel "label"@en ,
     "term"@nl ;
   skos:definition
@@ -568,6 +583,7 @@ beg-sbb:Label
 #toelichting
 beg-sbb:ScopeNote
   a skos:Concept ;
+  rdfs:label "scope note";
   skos:prefLabel
     "scope note"@en ,
     "toelichting"@nl ;
@@ -588,6 +604,7 @@ beg-sbb:ScopeNote
 #uitleg
 beg-sbb:Comment
   a skos:Concept ;
+  rdfs:label "comment";
   skos:prefLabel
     "uitleg"@nl ,
     "comment"@en ;
@@ -608,6 +625,7 @@ beg-sbb:Comment
 #voorbeeld
 beg-sbb:Example
   a skos:Concept ;
+  rdfs:label "example";
   skos:prefLabel
     "voorbeeld"@nl ,
     "example"@en ;
@@ -628,6 +646,7 @@ beg-sbb:Example
 #voorkeursterm
 beg-sbb:PrefLabel
   a skos:Concept ;
+  rdfs:label "preferred label";
   skos:prefLabel
     "voorkeursterm"@nl ,
     "preferred label"@en ;
@@ -649,6 +668,7 @@ beg-sbb:PrefLabel
 #wijzigingsnotitie
 beg-sbb:ChangeNote
   a skos:Concept ;
+  rdfs:label "change note";
   skos:prefLabel
     "change note"@en ,
     "wijzigingsnotitie"@nl ;
@@ -667,6 +687,7 @@ beg-sbb:ChangeNote
 #zoekterm
 beg-sbb:HiddenLabel
   a skos:Concept ;
+  rdfs:label "hidden label";
   skos:prefLabel
     "zoekterm"@nl ,
     "hidden label"@en ;
@@ -687,6 +708,7 @@ beg-sbb:HiddenLabel
 
 beg-sbb:SourceDocument
   a skos:Concept ;
+  rdfs:label "source document";
   skos:prefLabel
     "source document"@en ,
     "brondocument"@nl ;
@@ -710,6 +732,7 @@ beg-sbb:SourceDocument
 #citeertitel
 beg-sbb:BibliographicCitation
   a skos:Concept ;
+  rdfs:label "bibliographic citation";
   skos:prefLabel
     "citeertitel"@nl ,
     "bibliographic citation"@en ;
@@ -729,6 +752,7 @@ beg-sbb:BibliographicCitation
 #soort
 beg-sbb:Type
   a skos:Concept ;
+  rdfs:label "type";
   skos:prefLabel
     "soort"@nl ,
     "type"@en ;
@@ -745,6 +769,7 @@ beg-sbb:Type
 #url
 beg-sbb:Page
   a skos:Concept ;
+  rdfs:label "page";
   skos:prefLabel
     "url"@nl ,
     "page"@en ;
@@ -765,6 +790,7 @@ skos:inScheme begkr-sbb:BegrippenkaderNPS .
 #begrippenkader
 beg-sbb:ConceptScheme
   a skos:Concept ;
+  rdfs:label "concept scheme";
   skos:prefLabel
     "begrippenkader"@nl ,
     "concept scheme"@en ;
@@ -788,14 +814,16 @@ beg-sbb:ConceptScheme
   skos:inScheme begkr-sbb:BegrippenkaderNPS .
 
 #begrippenlijst
-beg-sbb:Glossary
+beg-sbb:ControlledVocabulary
   a skos:Concept ;
+  rdfs:label "controlled vocabulary";
   skos:prefLabel
     "begrippenlijst"@nl ,
-    "glossary"@en ;
+    "controlled vocabulary"@en ;
   skos:altLabel
     "platte termenlijst"@nl ,
-    "woordenlijst"@nl ;
+    "woordenlijst"@nl,
+    "glossary"@en ;
   skos:definition 
     "Een begrippenlijst is een zorgvuldig samengestelde lijst van begrippen, die worden gebruikt om informatie-eenheden (document of werk) te taggen, zodat ze gemakkelijker kunnen worden teruggevonden door een zoekopdracht. "@nl,
     "A controlled vocabulary is a carefully selected list of concepts, which are used to tag units of information (document or work) so that they may be more easily retrieved by a search."@en ;
@@ -825,6 +853,7 @@ beg-sbb:Glossary
 #taxonomie
 beg-sbb:Taxonomy
   a skos:Concept ;
+  rdfs:label "taxonomy";
   skos:prefLabel
     "taxonomie"@nl ,
     "taxonomy"@en ;
@@ -848,6 +877,7 @@ beg-sbb:Taxonomy
 #thesaurus
 beg-sbb:Thesaurus
   a skos:Concept ;
+  rdfs:label "thesaurus";
   skos:prefLabel
     "thesaurus"@nl ,
     "thesaurus"@en ;
@@ -880,6 +910,7 @@ beg-sbb:Thesaurus
 #topbegrip
 beg-sbb:TopConcept
   a skos:Concept ;
+  rdfs:label "has top concept";
   skos:prefLabel
     "heeft topbegrip"@nl ,
     "has top concept"@en ;
