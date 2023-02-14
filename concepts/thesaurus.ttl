@@ -816,10 +816,12 @@ beg-sbb:Taxonomy
   skos:prefLabel
     "taxonomie"@nl ,
     "taxonomy"@en ;
-  skos:altLabel "classificatieschema" ;
+  skos:altLabel 
+    "classificatieschema",
+    "taxonomische classificatie" ;
   skos:broader beg-sbb:ConceptScheme ;
-  skos:definition
-    "Een taxonomie (of taxonomische classificatie) is een classificatieschema, met name een hiërarchische classificatie, waarin begrippen zijn georganiseerd in groepen of typen."@nl ,
+  skos:definition 
+    "Een taxonomie is een begrippenkader, waarin begrippen hiërarchisch op basis van een classificatiecriterium zijn geordend in groepen of types."@nl ,
     "A taxonomy (or taxonomical classification) is a scheme of classification, especially a hierarchical classification, in which concepts are organized into groups or types."@en ;
   skos:scopeNote
     "Een taxonomie wordt gebruikt om kennis te ordenen en te indexeren (opgeslagen als documenten, artikelen, video's, enz.), zoals in de vorm van een bibliotheekclassificatiesysteem of een taxonomie van een zoekmachine, zodat gebruikers de informatie die ze zoeken gemakkelijker kunnen vinden. Taxonomieën zijn hiërarchieën (en hebben dus een intrinsieke structuur en betekenis)."@nl,
@@ -838,7 +840,7 @@ beg-sbb:Thesaurus
     "thesaurus"@nl ,
     "thesaurus"@en ;
   skos:definition 
-    "Een thesaurus is een gecontroleerde en gestructureerde vocabulaire waarin begrippen semantisch en hierarchisch zijn georganiseerd."@nl ,
+    "Een thesaurus is een begrippenkader waarin begrippen semantisch en hierarchisch zijn geordend."@nl ,
     "A thesaurus is a controlled and structured vocabulary in which concepts are organized semantically and hierarchically."@en;
   skos:scopeNote
     "Het doel van een thesaurus is traditioneel om de indexeerder en de zoeker te helpen bij het kiezen van dezelfde term voor hetzelfde begrip. Om dit te bereiken, bevat een thesaurus in de eerste plaats alle begrippen die nuttig kunnen zijn voor zoekdoeleinden in een bepaald domein. Ten tweede moet een thesaurus de begrippen zo presenteren dat mensen ze gemakkelijk kunnen vinden. Dit wordt bereikt door relaties tussen begrippen tot stand te leggen en de relaties te gebruiken om de begrippen in een gestructureerde weergave te presenteren."@nl ,
