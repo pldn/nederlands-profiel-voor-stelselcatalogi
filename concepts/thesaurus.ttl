@@ -71,7 +71,7 @@ beg-sbb:Concept
     "Afkortingen en hun volledige vormen kunnen als synoniemen worden behandeld."@nl,
     "Abbreviations and their full forms can be treated as synonyms."@en;
   skos:example
-    "Acroniemen, afkortingen, spellingsvarianten en onregelmatige meervouds-/enkelvoudsvormen kunnen worden opgenomen in de alternatieve termen voor een concept. Verkeerd gespelde termen worden normaal gesproken als verborgen labels opgenomen (zie skos:hiddenLabel)."@nl ,
+    "Acroniemen, afkortingen, spellingsvarianten en onregelmatige meervouds-/enkelvoudsvormen kunnen worden opgenomen in de alternatieve termen voor een begrip. Verkeerd gespelde termen worden normaal gesproken als verborgen labels opgenomen (zie skos:hiddenLabel)."@nl ,
     "Acronyms, abbreviations, spelling variants, and irregular plural/singular forms may be included among the alternative labels for a concept. Mis-spelled terms are normally included as hidden labels (see skos:hiddenLabel)."@en ;
   dct:source
     <https://www.w3.org/TR/skos-reference/#labels> ,
@@ -118,7 +118,7 @@ beg-sbb:Notation
     "Een code voor een begrip is een tekenreeks ter aanduiding van precies één begrip uit een begrippenkader."@nl ;
   skos:scopeNote
     "Some concept schemes, for example classification systems such as the Universal Decimal Classification (UDC), use notations (or captions) as the primary means of access to the concepts they contain. Notations are symbols which are not normally recognizable as words or sequences of words in any natural language and are thus usable independently of natural-language contexts. They are typically composed of digits, complemented with punctuation signs and other characters."@en,
-    "Sommige begrippenkaders, bijvoorbeeld classificatiesystemen zoals de Universal Decimal Classification (UDC), gebruiken codes (of bijschriften) als primair middel om toegang te krijgen tot de concepten die ze bevatten. Codes zijn symbolen die normaal gesproken niet herkenbaar zijn als woorden of woordreeksen in een natuurlijke taal en die dus onafhankelijk van natuurlijke taalcontexten kunnen worden gebruikt. Ze zijn meestal samengesteld uit cijfers, aangevuld met leestekens en andere tekens."@nl;
+    "Sommige begrippenkaders, bijvoorbeeld classificatiesystemen zoals de Universal Decimal Classification (UDC), gebruiken codes (of bijschriften) als primair middel om toegang te krijgen tot de begrippen die ze bevatten. Codes zijn symbolen die normaal gesproken niet herkenbaar zijn als woorden of woordreeksen in een natuurlijke taal en die dus onafhankelijk van natuurlijke taalcontexten kunnen worden gebruikt. Ze zijn meestal samengesteld uit cijfers, aangevuld met leestekens en andere tekens."@nl;
   skos:inScheme begkr-sbb:BegrippenkaderNPS.
 
 #definitie
@@ -154,7 +154,7 @@ beg-sbb:MatchingRelation
   skos:definition
     "Een harmonisatierelatie relateert een begrip aan een overeenkomstig begrip uit een ander begrippenkader, op basis van de betekenis."@nl ,
     "Is in mapping relation with relates two concepts coming, by convention, from different schemes, and that have comparable meanings"@en ;
-  skos:scopeNote "Dit is een hulpbegrip om de 5 harmonisatierelaties met begrippen in externe begrippenkaders samen te kunnen nemen. De bedoeling is om een van deze 5 relaties te gebruiken bij het relateren van een begrip aan een begrip uit een aander begrippenkader. Het gaat niet zozeer om het harmoniseren in de zin dat iedereen dezelfde term voor een concept moet gebruiken, maar om inzichtelijk te maken hoe het begrip samenhangt met concepten in andere contexten."@nl,
+  skos:scopeNote "Dit is een hulpbegrip om de 5 harmonisatierelaties met begrippen in externe begrippenkaders samen te kunnen nemen. De bedoeling is om een van deze 5 relaties te gebruiken bij het relateren van een begrip aan een begrip uit een aander begrippenkader. Het gaat niet zozeer om het harmoniseren in de zin dat iedereen dezelfde term voor een begrip moet gebruiken, maar om inzichtelijk te maken hoe het begrip samenhangt met begrippen in andere contexten."@nl,
     "This is an auxiliary concept for combining the 5 harmonization relations with concepts in external concept schemes. The intention is to use one of these 5 relations when relating a concept to a concept from another concept schemek. It is not so much about harmonizing in the sense that everyone has to use the same term for a concept, but to provide insight into how the concept relates to concepts in other contexts."@en;
   dct:source 
     <https://www.w3.org/TR/skos-reference/#mapping> ,
@@ -458,7 +458,7 @@ beg-sbb:BroaderGeneric
     "Broader term (generic)is the immediate (direct or one-step) class - generalized class relationship."@en ;
   skos:scopeNote
     "The hierarchical relationship should be established between a pair of concepts when the scope of one of them falls completely within the scope of the other. It should be based on degrees or levels of superordination and subordination, where the superordinate concept represents a class or whole, and subordinate concepts refer to its members or species. A generalization is used when it is relevant to distinguish the relation from a partial or instantaneous hierarchical relation."@en,
-    "De hiërarchische relatie tussen een paar begrippen wordt gebruikt wanneer de reikwijdte van het ene begrip volledig binnen de reikwijdte van het andere begrip valt. Deze relatie is gebaseerd op op graden of niveaus van bovenliggend en onderliggend, waarbij het bovenliggende concept een klasse of geheel vertegenwoordigt, en onderliggende concepten verwijzen naar haar leden of soorten. Een generalisatie wordt gebruikt wanneer het relevant is om deze relatie te onderscheiden van een partiële of instantiële hiërarchische relatie."@nl;
+    "De hiërarchische relatie tussen een paar begrippen wordt gebruikt wanneer de reikwijdte van het ene begrip volledig binnen de reikwijdte van het andere begrip valt. Deze relatie is gebaseerd op op graden of niveaus van bovenliggend en onderliggend, waarbij het bovenliggende concept een klasse of geheel vertegenwoordigt, en onderliggende begrippen verwijzen naar haar leden of soorten. Een generalisatie wordt gebruikt wanneer het relevant is om deze relatie te onderscheiden van een partiële of instantiële hiërarchische relatie."@nl;
   dct:source skosthes: ;
   skos:related beg-sbb:Concept ;
   skos:broader beg-sbb:Broader ;
@@ -497,7 +497,7 @@ beg-sbb:Note
     "A note is a general note, for any purpose."@en ;
   skos:scopeNote
     "his is an umbrella term for the different types of notes (definition, scope note, editorial note) with which a concept can be described. Good practice is to use those specific notes. Notes are used to provide information relating to concepts. There is no restriction on the nature of this information, e.g., it could be plain text, hypertext, or an image; it could be a definition, information about the scope of a concept, editorial information, or any other type of information. This property may be used directly, or as a super-property for more specific note types."@en ,
-    "Dit is een overkoepelend begrip voor de verschillende soorten notities (definitie, toelichting, redactionele notitie) waarmee een begrip kan worden beschreven. Good practice is om die specifieke notites te gebruiken. Notities worden gebruikt om informatie te geven over begrippen. Er is geen beperking op de aard van deze informatie, het kan bijvoorbeeld platte tekst, hypertekst of een afbeelding zijn; het kan een definitie zijn, informatie over de reikwijdte van een concept, redactionele informatie of elk ander type informatie. Deze eigenschap kan direct worden gebruikt, of als een supereigenschap voor meer specifieke notitietypes."@nl ;
+    "Dit is een overkoepelend begrip voor de verschillende soorten notities (definitie, toelichting, redactionele notitie) waarmee een begrip kan worden beschreven. Good practice is om die specifieke notites te gebruiken. Notities worden gebruikt om informatie te geven over begrippen. Er is geen beperking op de aard van deze informatie, het kan bijvoorbeeld platte tekst, hypertekst of een afbeelding zijn; het kan een definitie zijn, informatie over de reikwijdte van een begrip, redactionele informatie of elk ander type informatie. Deze eigenschap kan direct worden gebruikt, of als een supereigenschap voor meer specifieke notitietypes."@nl ;
   dct:source
     skos: ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes> ;
@@ -591,7 +591,7 @@ beg-sbb:ScopeNote
   skos:definition
     "Een toelichting is een notitie die meer duidelijkheid geeft over de betekenis of gebruik van een begrip."@nl ,
     "A scope note is a note that helps to clarify the meaning and/or the use of a concept."@en ;
-  skos:scopeNote "Een toelichting wordt gebruikt om de grenzen van een concept te verduidelijken, vooral wanneer de betekenis van de voorkeursterm in het gewone spraakgebruik te breed of te eng kan worden geïnterpreteerd, of om onderscheid te maken tussen voorkeurstermen die overlappende betekenissen hebben. Een toelichting kan ook worden gebruikt om ander advies te geven over het gebruik van termen aan de indexeerder of de zoeker. Een toelichting hoeft geen volledige definitie te zijn, maar verduidelijkt het beoogde gebruik van een term binnen de thesaurus."@nl,
+  skos:scopeNote "Een toelichting wordt gebruikt om de grenzen van een begrip te verduidelijken, vooral wanneer de betekenis van de voorkeursterm in het gewone spraakgebruik te breed of te eng kan worden geïnterpreteerd, of om onderscheid te maken tussen voorkeurstermen die overlappende betekenissen hebben. Een toelichting kan ook worden gebruikt om ander advies te geven over het gebruik van termen aan de indexeerder of de zoeker. Een toelichting hoeft geen volledige definitie te zijn, maar verduidelijkt het beoogde gebruik van een term binnen de thesaurus."@nl,
     "A scope note should be used to clarify the boundaries of a concept, especially when the meaning of the preferred term in ordinary discourse can be interpreted too broadly or too narrowly, or to distinguish between preferred terms that have overlapping meanings in natural language. It can also be used to provide other advice on term usage to either the indexer or the searcher. A scope note need not be a full definition but should clarify the intended use of a term within the thesaurus."@en ;
   dct:source
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes> ,
@@ -676,7 +676,7 @@ beg-sbb:ChangeNote
     "A note about a modification to a concept."@en ,
     "Een wijzigingsnotitie is een notitie over een wijziging aan het begrip."@nl ;
   skos:scopeNote 
-    "Een wijzigingsnota documenteert fijnmazige wijzigingen aan een concept, ten behoeve van beheer en onderhoud."@nl,
+    "Een wijzigingsnota documenteert fijnmazige wijzigingen aan een begrip, ten behoeve van beheer en onderhoud."@nl,
     "A change note documents fine-grained changes to a concept, for the purposes of administration and maintenance."@en ;
   dct:source
     skos: ,
@@ -920,7 +920,7 @@ beg-sbb:TopConcept
     "Een topbegrip is een begrip die bovenaan de hiërarchie staat in een bepaald begrippenkader."@nl ;
   skos:scopeNote
     "Has top concept adresses a concept that is at the top of a hierarchy, i.e. it has no broader concepts. This makes it easier, on importing a thesaurus, to pick out all the top level concepts from which to build a navigational tree."@en,
-    "Heeft topconcept adresseert een concept dat bovenaan een hiërarchie staat, d.w.z. het heeft geen bredere concepten. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle concepten op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen."@nl; 
+    "Heeft topbegrip adresseert een begrip dat bovenaan een hiërarchie staat, d.w.z. het heeft geen bredere begrippen. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle begrippen op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen."@nl; 
   dct:source skos: ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> ;
   skos:related beg-sbb:Taxonomy ;
