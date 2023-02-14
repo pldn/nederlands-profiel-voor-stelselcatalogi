@@ -1,6 +1,7 @@
 # Best practices
 ## Begrippen
-Gangbare conventies voor het beschrijven van termen (voorkeurstermen, alternatieve termen) zijn:
+### Termen
+<div class="practice"><p class="practicedesc"><span class="practicelab">Gangbare conventies voor het beschrijven van termen (voorkeurstermen, alternatieve termen) zijn:
 * Gebruik een zelfstandig naam, eventueel gekwalificeerd met een adjectief (bijvoeglijk naamwoord). Gebruik geen bijwoorden, lidwoorden en voorzetsels.
 * Vermijdt dubbele adjectieven.
 * Gebruik geen werkwoorden.
@@ -8,7 +9,17 @@ Gangbare conventies voor het beschrijven van termen (voorkeurstermen, alternatie
 * Schrijf een term in kleine letters, zoals in een zin, behalve bij eingennamen.
 * Gebruik Latijnse alfabetische karakters (UTF8). Gebruik geen leestekens (streepjes, punten, komma's en dergelijke).
 * Gebruik enkelvoud. Dit geldt specifiek voor Duits, Frans, Nederlands, niet voor het Engels.
-* Gebruik standaard spelling, conform het groene boekje.
+* Gebruik standaard spelling, conform het groene boekje.</p></span></div>
+
+<div class="practice"><p class="practicedesc"><span class="practicelab">De voorkeursterm sluit aan op de daadwerkelijke term zoals deze lexicaal gebruikt wordt. <p>Het is verplicht dat voor iedere taal alle voorkeurtermen die in één taal voorkomen in één begrippenkader uniek zijn. Mocht binnen één begrippenkader toch twee begrippen terugkomen die vaak met dezelfde term worden aangeduid, dan is het noodzakelijk - om spraakverwarring te voorkomen - om een post of prefix toe te voegen als dit algemeen gebruikelijk is. Denk aan _Hengelo (OV)_ voor de plaats in Overijssel en _Hengelo (GLD)_ voor de plaats in Gelderland. De voorkeursterm is de daadwerkelijke term zoals deze lexicaal gebruikt wordt, dus met spaties, diacrieten en waar nodig hoofdletters. Mocht een post of prefix in de praktijk niet worden gebruikt, dan is dit een sterke aanwijzing dat de twee begrippen feitelijk niet tot hetzelfde begrippenkader behoren, en uit elkaar gehaald moeten worden: de basisregel blijft gelden. Als begrippen in verschillende begrippenkaders zijn geplaatst, dan is een nadere aanduiding van de context ongewenst. Als een lexicale term toch nader gekwalificeerd wordt dan is het aangeraden om een meer generiekere of classificerende term te gebruiken en deze tussen haakjes achter de lexicale term te plaatsen in het `rdfs:label`, conform ISO25964. E.g. `Bank (Zitobject)` en `Bank (Financiele instelling)`.</p></span></div>
+
+<div class="practice"><p class="practicedesc"><span class="practicelab">Het wordt aangeraden om elke web-resource te voorzien van een `rdfs:label` waarmee deze resource een voor mensen leesbare vorm kent, ongeacht de context <p>Elk begrip dient zo per gehanteerde taal precies één expliciet opgenomen `rdfs:label` te bevatten. Anders dan bij de voorkeursterm, is het verstandig om zoveel mogelijk context in het label mee te geven, zodat geen verwarring ontstaat in het kader van homoniemen. Het algemene label bevordert tevens de compatibiliteit met bestaande tools. Merk op dat het hier gaat om het expliciet opgegeven `rdfs:label`. Het is denkbaar dat tools andere `rdfs:label`s afleiden, op basis van de SKOS ontologie (aangezien alle SKOS labels subproperties zijn van `rdfs:label`).</p></span></div>
+
+### Hierarchische relaties
+
+Het is toegestaan dat één begrip meerdere bovenliggende begrippen kent. Er is zo sprake van een [=polyhierarchy=]. Een polyhierarchie kan nuttig zijn omdat het een intuitieve manier biedt om een begrip in meerdere categorieën te plaatsen. Veelal zie je dit dan ook toegepast in e-commerce. Hierdoor kunnen gebruikers via verschillende paden een bepaald product vinden. Toch wordt geadviseert om hier terughoudend mee te zijn en bij het maken rekening te blijven houden met best-practices en standaarden op dit gebied.
+
+<div class="definitie">Een <dfn>polyhierarchy</dfn> refereert naar aan hierarchische structuur waar het is toegestaan dat een begrip meerdere bovenliggende begrippen heeft. Tegenovergesteld is een monohierarchy, waar ieder begrip niet meer dan één bovenliggend begrip kent.</div>
 
 ## Bronnen
 Een begrip kan zijn ontleend aan een op het web vindbare bron. Dit kan een (versie van) een bepaald werk zijn of een ander documentair iets waarin een beschrijving van het begrip is te vinden. Bronnen kunnen wel of niet beschreven zijn in RDF. Ook kan een begrip ontleend zijn aan een niet op het web vindbare bron. 
@@ -177,13 +188,3 @@ Ergens ligt een knip tussen een samenhangende beschrijving van concepten in een 
   * Soms wordt een ontologie ook gezien als een nog wat gedetailleerdere conceptualisering dan een thesaurus. Dit gebeurt bijvoorbeeld in de NEN 2660. Soms ook wordt een ontologie gezien als een soort informatiemodel of datamodel. In dit profiel doen we geen uitspraak over wat een ontologie is en waar exact de knip tussen een samenhangende beschrijving van begrippen en een ontologie ligt.
 * Good practice is om het begrippenkader en de ontologie te scheiden. 
 
-## Termen
-<div class="practice"><p class="practicedesc"><span class="practicelab">De voorkeursterm sluit aan op de daadwerkelijke term zoals deze lexicaal gebruikt wordt. <p>Het is verplicht dat voor iedere taal alle voorkeurtermen die in één taal voorkomen in één begrippenkader uniek zijn. Mocht binnen één begrippenkader toch twee begrippen terugkomen die vaak met dezelfde term worden aangeduid, dan is het noodzakelijk - om spraakverwarring te voorkomen - om een post of prefix toe te voegen als dit algemeen gebruikelijk is. Denk aan _Hengelo (OV)_ voor de plaats in Overijssel en _Hengelo (GLD)_ voor de plaats in Gelderland. De voorkeursterm is de daadwerkelijke term zoals deze lexicaal gebruikt wordt, dus met spaties, diacrieten en waar nodig hoofdletters. Mocht een post of prefix in de praktijk niet worden gebruikt, dan is dit een sterke aanwijzing dat de twee begrippen feitelijk niet tot hetzelfde begrippenkader behoren, en uit elkaar gehaald moeten worden: de basisregel blijft gelden. Als begrippen in verschillende begrippenkaders zijn geplaatst, dan is een nadere aanduiding van de context ongewenst. Als een lexicale term toch nader gekwalificeerd wordt dan is het aangeraden om een meer generiekere of classificerende term te gebruiken en deze tussen haakjes achter de lexicale term te plaatsen in het `rdfs:label`, conform ISO25964. E.g. `Bank (Zitobject)` en `Bank (Financiele instelling)`.</p></span></div>
-
-<div class="practice"><p class="practicedesc"><span class="practicelab">Het wordt aangeraden om elke web-resource te voorzien van een `rdfs:label` waarmee deze resource een voor mensen leesbare vorm kent, ongeacht de context <p>Elk begrip dient zo per gehanteerde taal precies één expliciet opgenomen `rdfs:label` te bevatten. Anders dan bij de voorkeursterm, is het verstandig om zoveel mogelijk context in het label mee te geven, zodat geen verwarring ontstaat in het kader van homoniemen. Het algemene label bevordert tevens de compatibiliteit met bestaande tools. Merk op dat het hier gaat om het expliciet opgegeven `rdfs:label`. Het is denkbaar dat tools andere `rdfs:label`s afleiden, op basis van de SKOS ontologie (aangezien alle SKOS labels subproperties zijn van `rdfs:label`).</p></span></div>
-
-## Hierarchische relaties
-
-Het is toegestaan dat één begrip meerdere bovenliggende begrippen kent. Er is zo sprake van een [=polyhierarchy=]. Een polyhierarchie kan nuttig zijn omdat het een intuitieve manier biedt om een begrip in meerdere categorieën te plaatsen. Veelal zie je dit dan ook toegepast in e-commerce. Hierdoor kunnen gebruikers via verschillende paden een bepaald product vinden. Toch wordt geadviseert om hier terughoudend mee te zijn en bij het maken rekening te blijven houden met best-practices en standaarden op dit gebied.
-
-<div class="definitie">Een <dfn>polyhierarchy</dfn> refereert naar aan hierarchische structuur waar het is toegestaan dat een begrip meerdere bovenliggende begrippen heeft. Tegenovergesteld is een monohierarchy, waar ieder begrip niet meer dan één bovenliggend begrip kent.</div>
