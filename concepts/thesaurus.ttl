@@ -210,7 +210,7 @@ beg-sbb:HistoryNote
     "historie notitie"@nl ;
   skos:notation "HN" ;
   skos:definition
-    "Een historie notitie is een notitie over de voormalige status/gebruik/betekenis van het concept."@nl ,
+    "Een historie notitie is een notitie van de voormalige status/gebruik/betekenis van het concept."@nl ,
     "A history note is a note about the past state/use/meaning of a concept."@en ;
   skos:scopeNote 
     "A history note should be used when a new preferred term is added to the thesaurus or a change is made to an existing term that affects the concept's scope in different periods of application. While it is possible to include such information in the scope note, a separate history note is preferable. A history note may record the date of introduction, or it may give more complex advice on how to search for the concept in earlier or later times."@en,
@@ -228,7 +228,7 @@ beg-sbb:InScheme
     "in kader"@nl ,
     "in scheme"@en ;
   skos:definition
-    "In kader relateert een begrip tot een begrippenkader waartoe het behoort"@nl ,
+    "In kader relateert een begrip tot een begrippenkader."@nl ,
     "Is in scheme relates a resource (for example a concept) to a concept scheme in which it is included."@en ;
    skos:scopeNote
     "According to the SKOS-standard, concepts can be linked to multiple conceptschemes. Practically, this can only be the case when conceptschemes overlap in terms of scope."@en ,
@@ -470,11 +470,11 @@ beg-sbb:Note
     "note"@en ,
     "notitie"@nl ;
   skos:definition
-    "Een notitie is een algemene notitie zonder specifiek gebruiksdoel."@nl ,
+    "Een notitie is een algemene opmerking zonder specifiek gebruiksdoel."@nl ,
     "A note is a general note, for any purpose."@en ;
   skos:scopeNote
     "his is an umbrella term for the different types of notes (definition, scope note, editorial note) with which a concept can be described. Good practice is to use those specific notes. Notes are used to provide information relating to concepts. There is no restriction on the nature of this information, e.g., it could be plain text, hypertext, or an image; it could be a definition, information about the scope of a concept, editorial information, or any other type of information. This property may be used directly, or as a super-property for more specific note types."@en ,
-    "Dit is een overkoepelend begrip voor de verschillende soorten notites (definitie, toelichting, redactionele notitie) waarmee een begrip kan worden beschreven. Good practice is om die specifieke notites te gebruiken. Notities worden gebruikt om informatie te geven over begrippen. Er is geen beperking op de aard van deze informatie, het kan bijvoorbeeld platte tekst, hypertekst of een afbeelding zijn; het kan een definitie zijn, informatie over de reikwijdte van een concept, redactionele informatie of elk ander type informatie. Deze eigenschap kan direct worden gebruikt, of als een supereigenschap voor meer specifieke notitietypes."@nl ;
+    "Dit is een overkoepelend begrip voor de verschillende soorten notities (definitie, toelichting, redactionele notitie) waarmee een begrip kan worden beschreven. Good practice is om die specifieke notites te gebruiken. Notities worden gebruikt om informatie te geven over begrippen. Er is geen beperking op de aard van deze informatie, het kan bijvoorbeeld platte tekst, hypertekst of een afbeelding zijn; het kan een definitie zijn, informatie over de reikwijdte van een concept, redactionele informatie of elk ander type informatie. Deze eigenschap kan direct worden gebruikt, of als een supereigenschap voor meer specifieke notitietypes."@nl ;
   dct:source
     skos: ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes> ;
@@ -622,7 +622,7 @@ beg-sbb:PrefLabel
   skos:notation "USE" ;
   skos:definition
     "A preferred label is the preferred lexical label for a resource, in a given language."@en ,
-    "Een voorkeursterm is de gepreferreerde lexicale term voor een begrip, in een specifieke taal."@nl ;
+    "Een voorkeursterm is een gepreferreerde lexicale term voor een begrip, in een specifieke taal."@nl ;
   skos:scopeNote
     "The terms selected to represent concepts may be single-word terms or multi-word terms. In ordinary discourse, a single term might have more than one meaning, and the most common meaning is not always the one needed to represent the concept wanted in the thesaurus. If the context provided by the hierarchy of broader and narrower concepts linked to the concept in question is insufficient to elucidate the intended scope, additional measures should be applied. While all thesaurus terms should be expressed as unambiguously as possible, it is especially important to formulate the preferred term of a given concept in such a way that it conveys the intended scope to any user. For example, the multi-meaning term \"depression\" could be reformulated as \"economic depression\" or \"meteorological depression\", as appropriate. Alternatively a qualifier may be used. In cases where these measures are not appropriate or sufficient, or where additional information would help to clarify the meaning and make the usage more consistent, an explicit scope note should be used."@en ,
     "De term om een begrip weer te geven, kan bestaan uit één of meerdere woorden. In het gewone spraakgebruik kan een enkele term meer dan één betekenis hebben. De meest voorkomende betekenis is niet altijd de betekenis die nodig is om het in het begrippenkader gezochte begrip weer te geven. Indien de context die wordt geboden door de hiërarchie van bovenliggende en onderliggende begrippen gekoppeld aan het betreffende begrip onvoldoende is om de beoogde reikwijdte te verduidelijken, dienen aanvullende maatregelen te worden genomen. Hoewel alle termen in een begrippenkader zo ondubbelzinnig mogelijk moeten worden uitgedrukt, is het vooral belangrijk om de voorkeursterm van een bepaald concept zo te formuleren dat het de beoogde reikwijdte aan elke gebruiker overbrengt. De term \"depressie\" met meerdere betekenissen kan bijvoorbeeld worden geherformuleerd als \"economische depressie\" of \"meteorologische depressie\", al naar gelang het geval. Als alternatief kan een kwalificatie worden gebruikt. In gevallen waarin deze maatregelen niet passend of voldoende zijn, of waar aanvullende informatie zou helpen om de betekenis te verduidelijken en het gebruik consistenter te maken, moet een expliciete toelichting worden gebruikt."@nl ;
@@ -659,8 +659,8 @@ beg-sbb:HiddenLabel
     "zoekterm"@nl ,
     "hidden label"@en ;
   skos:definition
-    "A hidden label is lexical label for a resource that should be hidden when generating visual displays of the resource, but should still be accessible to free text search operations."@en ,
-    "Een zoekterm voor een begrip is een term die beoogd is om het begrip te vinden, maar verder verborgen blijft."@nl ;
+    "A hidden label is a lexical label for a resource that should be hidden when generating visual displays of the resource, but should still be accessible to free text search operations."@en ,
+    "Een zoekterm is een term die beoogd is om het begrip te vinden, maar verder verborgen blijft."@nl ;
   skos:scopeNote
     "A hidden label is used when a KOS designer would like that character string to be accessible to applications performing text-based indexing and search operations, but would not like that label to be visible otherwise. Hidden labels may for instance be used to include misspelled variants of other lexical labels."@en,
     "Een zoekterm wordt gebruikt wanneer een ontwerper van een begrippenkader wil dat die tekenreeks toegankelijk is voor op tekst gebaseerde indexering en zoekbewerkingen, maar niet wil dat die term zichtbaar is. Zoektermen kunnen bijvoorbeeld worden gebruikt om verkeerd gespelde varianten van andere lexicale labels op te nemen."@nl;
