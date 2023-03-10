@@ -96,8 +96,13 @@ var respecConfig = {
         },
         PTOLU: {
             title: "pas-toe-of-leg-uit",
-            href: "https://www.forumstandaardisatie.nl/node/229",
+            href: "https://www.forumstandaardisatie.nl/open-standaarden/verplicht",
             publisher: "Forum Standaardisatie",
+        },
+        SKOSLEX: {
+            title: "Skos-lex",
+            href: "http://bp4mc2.org/def/skos-lex",
+            publisher: "bp4mc2",
         },
         ISO25964: {
             title: "ISO 25964",
