@@ -2,7 +2,7 @@
 
 ## Toepassingsgebied
 De voorliggende standaard richt zich op het beschrijven van begrippen in een begrippenkader. Dit maakt het mogelijk om:
-- binnen een organisatie alle begrippen op één plek te beheren door de verantwoordelijke voor een bepaald domein. Zoals begrippenkaders voor een bepaalde registratie of voor een (overheids)organisatie of sector zoals Begrippenkader Kadaster voor de Basisregistratie Kadaster of Aquo-lex voor de watersector.
+- binnen een organisatie alle begrippen op één plek te beheren door de verantwoordelijke voor een bepaald domein. Zoals begrippenkaders voor een bepaalde registratie of voor een (overheids)organisatie of sector zoals Begrippenkader Kadaster voor de Basisregistratie Kadaster of Aquo begrippenkader voor de watersector.
 - interoperabele begrippencatalogi te maken, die naar elkaars begrippen kunnen verwijzen en/of elkaars beschrijvingen van begrippen kunnen hergebruiken. Hiermee ontstaat een samenhangend stelsel van begrippencatalogi, waarbij elke begrippencatalogus een samenhangend domein representeert. Door de interoperabele beschrijvingen is van alle beschreven begrippen altijd een eenduidige beschrijving vanuit de primair verantwoordelijke organisatie beschikbaar. Voorbeelden zijn de begrippencatalogus van de basisregistraties begrippencatalogus voor het DSO en de begrippencatalogus voor het Zorgeloos Vastgoed afsprakenstelsel.
 - eenvoudige, herbruikbare catalogi te maken voor toepassingen zoals een termenlijst of index van gebruikte begrippen op webpagina's of in documenten.
 
