@@ -426,7 +426,7 @@ Specifiek onderscheiden we de volgende verschillende harmonisatierelaties.
 ## Bron
 
 Een [=brondocument=] is een document waaruit de betekenis van het begrip is afgeleid.
-Het is good practice om voor ieder begrip bronverwijzingen op te nemen. Zo is het duidelijk waar de definitie van een begrip op gebasseerd is. Dit verhoogd de kwaliteit van het begrip en vooral ook de betrouwbaarheid. Het gebruiken van de hieronder beschreven structuur wordt ten zeerste aanbevolen voor het beschrijven van bronnen en het relateren van begrippen aan bronnen.
+Het is good practice om voor ieder begrip bronverwijzingen op te nemen. Zo is het duidelijk waar de definitie van een begrip op gebasseerd is. Dit verhoogt de kwaliteit van het begrip en vooral ook de betrouwbaarheid. Het gebruiken van de hieronder beschreven structuur wordt ten zeerste aanbevolen voor het beschrijven van bronnen en het relateren van begrippen aan bronnen.
 
 Een bronverwijzing leggen we vast bij een begrip. Hiervoor hebben we het volgende patroon:
 Een **[=begrip=]** heeft een eigenschap '**[=bron=]**'. De waarde hiervan is een non-literal resource, het **[=brondocument=]**.
