@@ -28,7 +28,8 @@ begkr-sbb:nlbegrip
     beg-sbb:Type ,
     beg-sbb:Page ,
     beg-sbb:BibliographicCitation ,
-    beg-sbb:TopConcept ;
+    beg-sbb:isTopConceptOf ,
+    beg-sbb:hasTopConcept ;
   skos:prefLabel "Begrippenkader Nederlandse standaard voor het beschrijven van begrippen"@nl ;
   skos:altLabel "sbb" .
 
@@ -250,6 +251,26 @@ beg-sbb:InScheme
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> ;
   skos:related beg-sbb:Concept ;
   skos:inScheme begkr-sbb:nlbegrip.
+
+#isTopConceptOf
+beg-sbb:isTopConceptOf
+  a skos:Concept ;
+  rdfs:label "is concept of";
+  skos:prefLabel
+    "is topbegrip van"@nl ,
+    "is top concept of"@en ;
+  skos:definition
+    "Top concepts are concepts which are topmost in the hierarchical relations for a scheme."@en ,
+    "Een topbegrip is een begrip die bovenaan de hiërarchie staat in een bepaald begrippenkader."@nl ;
+  skos:scopeNote
+    "Has top concept adresses a concept that is at the top of a hierarchy, i.e. it has no broader concepts. This makes it easier, on importing a thesaurus, to pick out all the top level concepts from which to build a navigational tree."@en,
+    "Heeft topbegrip adresseert een begrip dat bovenaan een hiërarchie staat, d.w.z. het heeft geen bredere begrippen. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle begrippen op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen."@nl; 
+  dct:source skos: ,
+    <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> ;
+  skos:related 
+    beg-sbb:Taxonomy ,
+    beg-sbb:hasTopconcept ;
+  skos:inScheme begkr-sbb:nlbegrip .
 
 #is categorie van
 beg-sbb:NarrowerInstantial
@@ -809,7 +830,9 @@ beg-sbb:ConceptScheme
     <https://www.w3.org/TR/skos-reference/#schemes> ,
     skos:,
     <https://en.wikipedia.org/wiki/Controlled_vocabulary>;
-  skos:related beg-sbb:TopConcept ;
+  skos:related
+    beg-sbb:hasTopConcept ,
+    beg-sbb:isTopConceptOf ;
   skos:example "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes. Concept schemes are also embedded in glossaries and terminologies."@en ;
   skos:inScheme begkr-sbb:nlbegrip .
 
@@ -870,7 +893,8 @@ beg-sbb:Taxonomy
   skos:related
     beg-sbb:Narrower ,
     beg-sbb:Broader ,
-    beg-sbb:TopConcept;
+    beg-sbb:hasTopConcept ,
+    beg-sbb:isTopConceptOf ;
   dct:source <https://en.wikipedia.org/wiki/Taxonomy> ;
   skos:inScheme begkr-sbb:nlbegrip .
 
@@ -891,6 +915,8 @@ beg-sbb:Thesaurus
     <https://en.wikipedia.org/wiki/Thesaurus> ,
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.62> ;
   skos:related
+    beg-sbb:hasTopConcept ,
+    beg-sbb:isTopConceptOf ,
     beg-sbb:ExactMatch ,
     beg-sbb:MatchingRelation ,
     beg-sbb:NarrowerInstantial ,
@@ -908,7 +934,7 @@ beg-sbb:Thesaurus
   skos:inScheme begkr-sbb:nlbegrip .
 
 #topbegrip
-beg-sbb:TopConcept
+beg-sbb:hasTopConcept
   a skos:Concept ;
   rdfs:label "has top concept";
   skos:prefLabel
@@ -923,7 +949,9 @@ beg-sbb:TopConcept
     "Heeft topbegrip adresseert een begrip dat bovenaan een hiërarchie staat, d.w.z. het heeft geen bredere begrippen. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle begrippen op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen."@nl; 
   dct:source skos: ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> ;
-  skos:related beg-sbb:Taxonomy ;
+  skos:related 
+    beg-sbb:Taxonomy ,
+    beg-sbb:isTopConceptOf ;
   skos:inScheme begkr-sbb:nlbegrip .
 
 # BESCHRIJVING COLLECTIE

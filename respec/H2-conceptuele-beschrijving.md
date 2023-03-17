@@ -1,6 +1,6 @@
 # Conceptuele beschrijving
 
-In dit hoofdstuk beschrijven we het abstracte model dat we hanteren in het toepassingsgebied. Dit is onafhankelijk van bepaalde notaties en/of standaarden. Hiermee komen we tot een gedeeld beeld en gedeelde taal waarmee we [=begrippenkader=]s beschrijven en uitwisselen. Vervolgens wordt in [hoofdstuk 3](#H3) beschreven hoe dit abstracte model kan worden toegepast in RDF. Dit zelfde abstracte model kan ook toegepast worden in bijvoorbeeld een JSON of XML schema zonder dat de gedeelde taal verloren gaat; waardoor deze standaard breder geadopteerd kan worden. Linked data is dus niet de enige mogelijke serialisatie. Het abstracte model is gebasseerd op verschillende standaarden en best-practices die in het domein van toepassing zijn. Zoals bij de rationale aangegeven leunen we hier voor de betekenis sterk op SKOS en op de ISO 25964.
+In dit hoofdstuk beschrijven we het abstracte model dat we hanteren in het toepassingsgebied. Dit is onafhankelijk van bepaalde notaties en/of standaarden. Hiermee komen we tot een gedeeld beeld en gedeelde taal waarmee we [=begrippenkader=]s beschrijven en uitwisselen. Vervolgens wordt in [hoofdstuk 3](#H3) beschreven hoe dit abstracte model kan worden toegepast in RDF. Dit zelfde abstracte model kan ook toegepast worden in bijvoorbeeld een JSON of XML schema zonder dat de gedeelde taal verloren gaat; waardoor deze standaard breder geadopteerd kan worden. Linked data is dus niet de enige mogelijke serialisatie. Het abstracte model is gebasseerd op verschillende standaarden en best-practices die in het domein van toepassing zijn. Zoals bij de rationale aangegeven leunen we hier voor de betekenis sterk op SKOS en op ISO 25964.
 
 In [2.1](#begrippenkader) beschrijven we wat een [=begrippenkader=] is. In [2.2](#begrip) beschrijven we wat een begrip is. Vervolgens beschrijven we in [2.2.1](#begrippenlijst) de kenmerken van een begrip die relevant zijn voor het basisniveau, een [=begrippenlijst=]. In [2.2.2](#taxonomie) voegen we daar de hiërarchische relaties aan toe die een begrippenlijst uitbreiden tot een [=taxonomie=]. In [2.2.3](#thesaurus) voegen we meer genuanceerde hiërarchische relaties toe om tot een ISO compatible [=thesaurus=] te komen. In [2.2.4](#harmonisatiesrelaties) beschrijven we de harmonisatierelaties waarmee begrippen kunnen worden verbonden met begrippen in een ander begrippenkader.
 
@@ -16,6 +16,10 @@ Het beschrijven van de kenmerken van een *begrip*, *begrippenkader* of *collecti
   * [=toelichting=]. De toelichting in het Engels nemen we over uit SKOS of een daarmee samenhangende standaard. De ISO 25964 geeft vaak ook een waardevolle (Engelse) toelichting. De ISO 25964 geeft zelf aan dat de toelichting misschien nog wel belangrijker is dan de definitie. Zowel de SKOS- als de ISO toelichting zijn naar het Nederlands vertaald.
   * [=bron=]. Bij ieder kenmerk geven we aan welke bron(nen) we hebben gebruikt voor de beschrijving.
   * relaties met andere kenmerken.
+
+## Overzicht
+Het onderstaande diagram geeft een overzicht van het conceptuele model die met deze standaard is geformuleerd.
+![](/respec/media/model-conceptueel.png)
 
 ## Begrippenkader
 Begrippen kunnen als zelfstandige entiteiten worden gezien maar veelal worden ze opgesteld als onderdeel van een gecureerd begrippenkader, zoals begrippenlijsten, taxonomieën en thesauri. Een [=begrippenkader=] is een verzameling van [=begrip=]pen die in een bepaalde context relevant zijn. Een begrippenkader wordt ookwel gezien als een eenheid van context. Als kenmerk van het [=begrip=] wordt aangegeven of het onderdeel is van een begrippenkader ([=in kader=]) Een begrippenkader is vergelijkbaar met een taal die in een bepaald gebied gesproken wordt. En net als een reguliere taal is een begrippenkader een open systeem. Zo kan een taal ook groeien na introductie van nieuwe woorden vanuit talen uit nabijgelegen gebieden. Dat wil zeggen dat een begrippenkader net als een taal naast vertalingen (mappings) kent ook woorden kunnen overnemen; leenwoorden. Zoals "computer", een van origine engels woord, ook behoort tot de nederlandse taal. Het beschrijven welke begrippen behoren tot een begrippenkader is essentieel; maar hoe deze 'vertaald' kunnen worden naar begrippen uit andere begrippenkaders ook. Voor dit laatste gebruiken we [=harmonisatierelatie=]s.
@@ -71,6 +75,7 @@ Een begrip kan beschreven worden aan de hand van verschillende kenmerken. Deze z
 | [=zoekterm=]                    | 0..*          | Tekst              |
 | [=code=]                        | 0..*          | Tekst              |
 | [=in kader=]                    | 1..*          | [=begrippenkader=] |
+| [=is topbegrip van=]             | 0..*          | [=begrippenkader=] |
 | [=definitie=]                   | 1..*          | Tekst              |
 | [=uitleg=]                      | 0..*          | Tekst              |
 | [=bron=]                        | 0..*          | [=brondocument=]   |
@@ -101,6 +106,13 @@ Een begrip kan beschreven worden aan de hand van verschillende kenmerken. Deze z
 | **bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes |
 | **toelichting** | Volgens de SKOS-standaard kan een begrip tot meerdere begrippenkaders behoren. Praktisch gezien kan dit slechts als sprake is van begrippenkaders waarvan de contexten overlappen. |
 | **uri** | http://nlbegrip.nl/sbb/id/concept/InScheme |
+
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**     | <dfn>is topbegrip van</dfn>            |
+| **definitie**         |                                       |
+| **toelichting**       | 'is topbegrip van' heeft nagenoeg dezelfde betekenis als het element 'heeft topbegrip', met als distinctie dat 'is topbegrip van' vanuit het perspectief van het begrip gedefinieerd is en 'heeft topbegrip' vanuit het perspectief van het begrippenkader. |
+| **uri**               |                                       |
 
 ### Begrippenlijst
 Aan de hand van de begripsdriehoek, zien we dat om een spreker te kunnen begrijpen, een toehoorder minimaal iets moeten weten over de betekenis en de termen die ter aanduiding gebruikt worden.

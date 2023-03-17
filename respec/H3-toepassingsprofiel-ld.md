@@ -4,7 +4,7 @@ Een RDF model bestaat uit twee delen; 1) een RDF vocabulaire en 2) een RDF Shape
 
 ## Overzicht
 
-Het onderstaande diagram is een visualisatie van de shapesgraph. Om het diagram overzichtelijk te houden zijn een aantal relaties weggelaten of verkort weergegeven. Zo zien we bijvoorbeeld alleen de abstracte relatie 'semantische relatie' terug en niet de verschillende specialisaties daarvan zoals [=heeft bovenliggend begrip=] of [=is exact overeenkomstig=].
+Het onderstaande diagram geeft een overzicht van de taalbinding in RDF die bij het conceptuele model gedefinieerd is.
 ![skosapnl](respec/media/skosapnl.png)
 
 ## Taalbinding
@@ -38,7 +38,8 @@ Een brondocument heeft niet één definitieve taalbinding. Dit komt omdat er vee
 | [=alternatieve term=]                  | [skos:altLabel](http://www.w3.org/2004/02/skos/core#altLabel)                       |
 | [=zoekterm=]                           | [skos:hiddenLabel](http://www.w3.org/2004/02/skos/core#hiddenLabel)                 |
 | [=code=]                               | [skos:notation](http://www.w3.org/2004/02/skos/core#notation)                       |
-| [=in kader=]                        | [skos:inScheme](http://www.w3.org/2004/02/skos/core#inScheme)                       |
+| [=in kader=]                           | [skos:inScheme](http://www.w3.org/2004/02/skos/core#inScheme)                       |
+| [=is topbegrip van=]                    | [skos:isTopConceptOf](http://www.w3.org/2004/02/skos/core#isTopConceptOf)           |
 | [=uitleg=]                             | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment)                        |
 | [=definitie=]                          | [skos:definition](http://www.w3.org/2004/02/skos/core#definition)                   |
 | [=bron=]                               | [dct:source](http://purl.org/dc/terms/source)                                       |
@@ -94,7 +95,8 @@ Een begrip wordt gerepresenteerd als een `skos:Concept`. Deze typering is verpli
 | [=alternatieve term=]           | [skos:altLabel](http://www.w3.org/2004/02/skos/core#altLabel)                       | 0..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
 | [=zoekterm=]                    | [skos:hiddenLabel](http://www.w3.org/2004/02/skos/core#hiddenLabel)                 | 0..*          | [sh:Literal](http://www.w3.org/ns/shacl#Literal)                        |
 | [=code=]                        | [skos:notation](http://www.w3.org/2004/02/skos/core#notation)                       | 0..*          | [sh:Literal](http://www.w3.org/ns/shacl#Literal)                        |
-| [=in kader=]                 | [skos:inScheme](http://www.w3.org/2004/02/skos/core#inScheme)                       | 1..*          | [skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme) |
+| [=in kader=]                    | [skos:inScheme](http://www.w3.org/2004/02/skos/core#inScheme)                       | 1..*          | [skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme) |
+| [=is topbegrip van=]             | [skos:isTopConceptOf](http://www.w3.org/2004/02/skos/core#isTopConceptOf)           | 0..*          | [skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme) |
 | [=uitleg=]                      | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment)                        | 0..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
 | [=definitie=]                   | [skos:definition](http://www.w3.org/2004/02/skos/core#definition)                   | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
 | [=bron=]                        | [dct:source](http://purl.org/dc/terms/source)                                       | 0..*          | [sh:BlankNodeOrIRI](http://www.w3.org/ns/shacl#BlankNodeOrIRI)          |
