@@ -6,7 +6,7 @@ Binnen dit document worden de volgende prefixes gehanteerd.
 | ---------- | ------------------------------------------- |
 | skos:      | http://www.w3.org/2004/02/skos/core#        |
 | beg-sbb:   | http://nlbegrip.nl/sbb/id/begrip/           |
-| begkr-sbb: | http://nlbegrip.nl/sbb/id/begrippenkader/   |
+| begkr-sbb: | http://nlbegrip.nl/id/begrippenkader/   |
 | skosapnl:  | http://nlbegrip.nl/def/skosapnl#            |
 | isothes:   | http://purl.org/iso25964/skos-thes#         |
 | dct:       | http://purl.org/dc/terms/                   |
