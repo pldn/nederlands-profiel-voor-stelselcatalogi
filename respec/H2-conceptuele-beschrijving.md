@@ -38,7 +38,7 @@ Een begrippenkader kan beschreven worden aan de hand van verschillende kenmerken
 | ------------------- | ------------- | ---------- |
 | [=heeft topbegrip=] | 0..*          | [=begrip=] |
 | [=uitleg=]          | 0..*          | Tekst      |
-| [=term=]            | 1..*          | Tekst      |
+| [=label=]           | 1..*          | Tekst      |
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -56,7 +56,7 @@ Een begrip is een conceptuele resource; het zijn de eenheden van denken - ideeë
 
 ![](https://github.com/bp4mc2/bp4mc2/blob/master/site/image-ch3-1.png?raw=true "Triange of meaning")
 
-Het hebben van gestandaardiseerde begrippen zorgt ervoor dat iedereen dezelfde taal kan spreken en weet wat de bedoelde betekenis is bij het gebruik van een bepaalde term in een bepaalde context. Bijvoorbeeld in berichtgeving of in data. Dit maakt het eenvoudiger om effectief te communiceren en informatie uit te wisselen.
+Het hebben van gestandaardiseerde begrippen zorgt ervoor dat iedereen dezelfde taal kan spreken en weet wat de bedoelde betekenis is bij het gebruik van een bepaalde [=term=] in een bepaalde context. Bijvoorbeeld in berichtgeving of in data. Dit maakt het eenvoudiger om effectief te communiceren en informatie uit te wisselen.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -75,7 +75,7 @@ Een begrip kan beschreven worden aan de hand van verschillende kenmerken. Deze z
 | [=zoekterm=]                    | 0..*          | Tekst              |
 | [=code=]                        | 0..*          | Tekst              |
 | [=in kader=]                    | 1..*          | [=begrippenkader=] |
-| [=is topbegrip van=]             | 0..*          | [=begrippenkader=] |
+| [=is topbegrip van=]            | 0..*          | [=begrippenkader=] |
 | [=definitie=]                   | 1..*          | Tekst              |
 | [=uitleg=]                      | 0..*          | Tekst              |
 | [=bron=]                        | 0..*          | [=brondocument=]   |
@@ -109,10 +109,12 @@ Een begrip kan beschreven worden aan de hand van verschillende kenmerken. Deze z
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
-| **voorkeursterm**     | <dfn>is topbegrip van</dfn>            |
-| **definitie**         |                                       |
-| **toelichting**       | 'is topbegrip van' heeft nagenoeg dezelfde betekenis als het element 'heeft topbegrip', met als distinctie dat 'is topbegrip van' vanuit het perspectief van het begrip gedefinieerd is en 'heeft topbegrip' vanuit het perspectief van het begrippenkader. |
-| **uri**               |                                       |
+| **voorkeursterm** | <dfn>is topbegrip van</dfn>            |
+| **definitie** | Een topbegrip is een begrip die bovenaan de hiërarchie staat in een bepaald begrippenkader. |
+| **bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes |
+| **toelichting** | Heeft topbegrip adresseert een begrip dat bovenaan een hiërarchie staat, d.w.z. het heeft geen bredere begrippen. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle begrippen op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen. 
+'is topbegrip van' heeft nagenoeg dezelfde betekenis als het element 'heeft topbegrip', met als distinctie dat 'is topbegrip van' vanuit het perspectief van het begrip gedefinieerd is en 'heeft topbegrip' vanuit het perspectief van het begrippenkader. |
+| **uri** | http://nlbegrip.nl/sbb/id/concept/isTopConceptOf |
 
 ### Begrippenlijst
 Aan de hand van de begripsdriehoek, zien we dat om een spreker te kunnen begrijpen, een toehoorder minimaal iets moeten weten over de betekenis en de termen die ter aanduiding gebruikt worden.
@@ -133,22 +135,31 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 
 #### Termen
 
-Termen zijn karakteristieken van een begrip. We kunnen termen zien als een referentie naar of aanduiding van een begrip. Een begrip kan meerdere termen kennen waarbij sommigen ook een andere rol spelen dan andere. 
+Termen vallen onder de karakteristieken van begrippen. We kunnen termen zien als een referentie naar of aanduiding van een begrip, we spreken dan van een label. Een begrip kan meerdere labels kennen waarbij sommigen ook een andere rol spelen dan andere. 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
 | **voorkeursterm**   | <dfn>term</dfn> |
-| **definitie**        | Een term is een aaneenschakeling van één of meerdere woorden ter aanduiding van een object. |
-| **bron** | https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.61 |
-| **toelichting** | Dit is een overkoepelend begrip voor de verschillende soorten termen (voorkeursterm, alternatieve term, zoekterm) waarmee begrippen kunnen worden aangeduid. Good practice is om die specifieke termen te gebruiken. In de definitie moet &#39;woord&#39; breed worden geïnterpreteerd. Een term mag ook een afkorting zijn, zoals &#39;B.T.W. (de voorkeursterm voor &#39;Belasting op toegevoegde waarde&#39;), of een code zoals &#39;013&#39; (Een poppodium in Tilburg). |
-| **uri** | http://nlbegrip.nl/sbb/id/concept/Label |
+| **definitie**        | Een term is een aaneenschakeling van één of meerdere woorden die samen een conceptuele eenheid vormen. |
+| **toelichting** | In de definitie moet 'woord' breed worden geïnterpreteerd. Een term mag ook een afkorting zijn, zoals 'B.T.W. (de voorkeursterm voor 'Belasting op toegevoegde waarde'), of een code zoals '013' (Een poppodium in Tilburg). |
+| **uri** | http://nlbegrip.nl/sbb/id/concept/Phrase |
 
 Hieronder worden de mogelijke soorten termen bij een begrip beschreven.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
+| **voorkeursterm**   | <dfn>label</dfn> |
+| **definitie** | Een label is een mensleesbare term ter aanduiding van een object. |
+| **bron** | https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.61 |
+| **uitleg** | Een object kan ieder onderwerp van gesprek zijn; zoals een begrip of een specifiek gebouw. |
+| **toelichting** | Dit is een overkoepelend begrip voor de verschillende soorten termen (voorkeursterm, alternatieve term, zoekterm) waarmee begrippen kunnen worden aangeduid. Good practice is om die specifieke termen te gebruiken. 
+In de definitie moet 'object' breed worden geïnterpreteerd. Het kan ieder onderwerp van gesprek zijn; zoals een specifiek begrip of een specifiek gebouw. |
+| **uri** | http://nlbegrip.nl/sbb/id/concept/Label |
+
+|                       |                                       |
+|-----------------------|---------------------------------------|
 | **voorkeursterm**   | <dfn>voorkeursterm</dfn> |
-| **definitie**        | Een voorkeursterm is een gepreferreerde lexicale term voor een begrip, in een specifieke taal. |
+| **definitie**        | Een voorkeursterm is een label die in een specifieke taal het geprefereerde lexicale label is. |
 | **bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/skos-reference/#labels |
 | **toelichting** | De term om een begrip weer te geven, kan bestaan uit één of meerdere woorden. In het gewone spraakgebruik kan een enkele term meer dan één betekenis hebben. De meest voorkomende betekenis is niet altijd de betekenis die nodig is om het in het begrippenkader gezochte begrip weer te geven. Indien de context die wordt geboden door de hiërarchie van bovenliggende en onderliggende begrippen gekoppeld aan het betreffende begrip onvoldoende is om de beoogde reikwijdte te verduidelijken, dienen aanvullende maatregelen te worden genomen. Hoewel alle termen in een begrippenkader zo ondubbelzinnig mogelijk moeten worden uitgedrukt, is het vooral belangrijk om de voorkeursterm van een bepaald begrip zo te formuleren dat het de beoogde reikwijdte aan elke gebruiker overbrengt. De term \&quot;depressie\&quot; met meerdere betekenissen kan bijvoorbeeld worden geherformuleerd als \&quot;economische depressie\&quot; of \&quot;meteorologische depressie\&quot;, al naar gelang het geval. Als alternatief kan een kwalificatie worden gebruikt. In gevallen waarin deze maatregelen niet passend of voldoende zijn, of waar aanvullende informatie zou helpen om de betekenis te verduidelijken en het gebruik consistenter te maken, moet een expliciete toelichting worden gebruikt. |
 | **uitleg** | Een begip heeft één voorkeursterm per taal. Deze voorkeursterm hoeft niet persé uniek te zijn. Het is goed mogelijk dat binnen een bepaald domein één term meerdere betekenissen heeft en dus gaat over meerdere begrippen, mogelijk is het doel van een Thesaurus zelfs om dit inzicht te geven. We gebruiken geen post of prefix om voorkeurstermen context te geven of uniek te maken, tenzij deze post/prefix algemeen gebruikt wordt. Denk aan Hengelo (OV) voor de plaats in Overijssel en Hengelo (GLD) voor de plaats in Gelderland. |
@@ -158,7 +169,7 @@ Hieronder worden de mogelijke soorten termen bij een begrip beschreven.
 |                       |                                       |
 |-----------------------|---------------------------------------|
 | **voorkeursterm**   | <dfn>alternatieve term</dfn> |
-| **definitie**        | Een alternatieve term voor een begrip is een term die gebruikt kan worden als alternatief voor de voorkeursterm van dit begrip, maar niet de voorkeur heeft. |
+| **definitie**        | Een alternatieve term is een label die gebruikt kan worden als alternatief voor de voorkeursterm van een object, maar niet de voorkeur heeft. |
 | **bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/skos-reference/#labels |
 | **toelichting** | Afkortingen en hun volledige vormen kunnen als synoniemen worden behandeld. Het is niet gebruikelijk om termen die bij een specifieker begrip geplaatst zouden kunnen worden als alternatieve term op te nemen (ookwel upward-posting). Bijvoorbeeld door 'rechtshandeling' als alternatieve term bij een begrip met de voorkeursterm 'handeling' op te nemen. |
 | **code** | UF |
@@ -167,7 +178,7 @@ Hieronder worden de mogelijke soorten termen bij een begrip beschreven.
 |                       |                                       |
 |-----------------------|---------------------------------------|
 | **voorkeursterm**   | <dfn>zoekterm</dfn> |
-| **definitie**        | Een zoekterm is een term die beoogd is om het begrip te vinden, maar verder verborgen blijft. |
+| **definitie**        | Een zoekterm is een label waarmee de vindbaarheid van een resource wordt vergroot, maar verder verborgen blijft. |
 | **bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/skos-reference/#labels |
 | **toelichting** | Een zoekterm wordt gebruikt wanneer een ontwerper van een begrippenkader wil dat die tekenreeks toegankelijk is voor op tekst gebaseerde indexering en zoekbewerkingen, maar niet wil dat die term zichtbaar is. Zoektermen kunnen bijvoorbeeld worden gebruikt om verkeerd gespelde varianten van andere lexicale labels op te nemen. |
 | **uri** | http://nlbegrip.nl/sbb/id/concept/HiddenLabel |
@@ -433,8 +444,6 @@ Specifiek onderscheiden we de volgende verschillende harmonisatierelaties.
 | **toelichting** | Conventie is om overeenkomstig onderliggend op zelfde manier als heeft onderliggend te gebruiken, maar dan om een begrip te verbinden met een begrip in een ander begrippenkader, dus ook in een andere context. Je zou kunnen zeggen dat het in kaart brengen van dit soort relaties minder inherent is aan de betekenis van de betreffende begrippen. Vanuit het standpunt van de oorspronkelijke ontwerper van een begrippenkader kunnen ze soms zelfs verkeerd zijn. Harmonisatie eigenschappen zijn nuttig in toepassingen die meerdere, conceptueel overlappende begrippenkaders gebruiken. |
 | **uri** | http://nlbegrip.nl/sbb/id/concept/NarrowMatch |
 
-
-
 ## Bron
 
 Een [=brondocument=] is een document waaruit de betekenis van het begrip is afgeleid.
@@ -465,13 +474,13 @@ Een brondocument kan beschreven worden aan de hand van verschillende kenmerken. 
 
 | Conceptueel element | Kardinaliteit | Type         |
 | ------------------- | ------------- | ------------ |
+| [=label=]           | 1..*          | Tekst        |
 | [=uitleg=]          | 0..*          | Tekst        |
 | [=url=]             | 0..*          | Url          |
 | [=soort=]           | 0..*          | [=begrip=]   |
-| [=term=]            | 1..*          | Tekst        |
 | [=citeertitel=]     | 0..*          | Tekst        |
 
-Het wordt aangeraden om een bron te beschrijven met een **[=url=]** als de bron een vindplaats heeft op het web en anders een **[=citeertitel=]** waarin de citeerinformatie van de bron in een bepaalde citeerstijl is vastgelegd. Hiermee kan de bron gevonden worden. Ook kan de bron beschreven worden met een compact, voor de mens leesbare **[=term=]**, een uitgebreide, voor de mens leesbare **[=uitleg=]** en een **[=soort=]** om aan te geven wat de aard van het brondocument is.
+Het wordt aangeraden om een bron te beschrijven met een **[=url=]** als de bron een vindplaats heeft op het web en anders een **[=citeertitel=]** waarin de citeerinformatie van de bron in een bepaalde citeerstijl is vastgelegd. Hiermee kan de bron gevonden worden. Ook kan de bron beschreven worden met een compact, voor de mens leesbare **[=label=]**, een uitgebreide, voor de mens leesbare **[=uitleg=]** en een **[=soort=]** om aan te geven wat de aard van het brondocument is.
 
 De bron kan een heel document of een fragment daarvan zijn, denk aan een boek, een hoofdstuk of een paragraaf.
 
@@ -519,7 +528,7 @@ Een collectie kan beschreven worden aan de hand van verschillende kenmerken. Dez
 
 | Conceptueel element | Kardinaliteit | Type                        |
 | ------------------- | ------------- | --------------------------- |
-| [=term=]            | 1..*          | Tekst                       |
+| [=label=]           | 1..*          | Tekst                       |
 | [=uitleg=]          | 0..*          | Tekst                       |
 | [=bevat=]           | 0..*          | [=begrip=] of [=collectie=] |
 
@@ -538,7 +547,5 @@ Soms is het nuttig om de samenhang van begrippen gedetailleerder te beschrijven 
 [[[SKOSLEX]]] is opgezet om begrippen juridisch te kunnen typeren. Skos-lex valt buiten de scope van standaard glossaries, taxonomieën en thesauri. De beschrijving van skos-lex is hier opgenomen als voorbeeld van een uitbreiding op een standaard thesaurus. Skos-lex wordt onder andere toegepast bij de Nationale Politie, Belastingdienst, Notariaat en Kadaster en bij het Digitaal Stelsel Omgevingswet en het Afsprakenstelsel Zorgeloos Vastgoed. 
 Door begrippen te typeren als act (rechtshandeling), actor (uitvoerder van die handeling), agent (formele vastlegger van die handeling) en object (van handeling) wordt de (juridische) samenhang duidelijk. Zo kan in een beschrijving van de verkoop van een huis worden aangegeven welke begrippen de rechtshandeling beschrijven (koop/verkoop), welke begrippen de actoren beschrijven (koper, verkoper), welke begrippen de agent (notaris) beschrijven en welke begrippen het object van handeling (onroerende zaak) beschrijven. Dit patroon is relevant voor vrijwel alle overheidsorganisaties die voorvallen of overeenkomsten met rechtsgevolgen vastleggen, van de politie die feiten met daders en slachtoffers vastlegt tot een ambtenaar van de burgerlijke stand die een geboorteakte opmaakt en een notaris die een stichtingsakte opstelt. 
    * **juridische duiding** *(could have)*.  ***Als*** Uitvoeringsorganisatie/uitvoerder van wetgeving ***wil ik*** begrippen kunnen onderscheiden die gaan over rechtshandelingen, actoren, objecten van handeling en organisaties die dit soort rechtshandelingen ondersteunen ***zodat ik*** inzicht heb in hoe de juridische context voor mijn organisatie zoals die in wetgeving is beschreven werkt.
-
-
 
 Naast skos-lex zijn er ook andere standaarden die nadere typeringen van begrip introduceren zoals [[vocab-dcat]] en [[vocab-org]] waar specialisaties van wat we in LD als [=begrip=] zien worden gedefinieerd.
