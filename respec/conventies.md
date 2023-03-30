@@ -5,9 +5,9 @@ Binnen dit document worden de volgende prefixes gehanteerd.
 | Prefix     | Namespace                                   |
 | ---------- | ------------------------------------------- |
 | skos:      | http://www.w3.org/2004/02/skos/core#        |
-| beg-sbb:   | http://nlbegrip.nl/sbb/id/begrip/           |
-| begkr-sbb: | http://nlbegrip.nl/id/begrippenkader/   |
-| skosapnl:  | http://nlbegrip.nl/def/skosapnl#            |
+| beg-sbb:   | http://begrippen.nlbegrip.nl/sbb/id/begrip/           |
+| begkr-sbb: | http://begrippen.nlbegrip.nl/id/begrippenkader/   |
+| skosapnl:  | http://begrippen.nlbegrip.nl/def/skosapnl#            |
 | isothes:   | http://purl.org/iso25964/skos-thes#         |
 | dct:       | http://purl.org/dc/terms/                   |
 | foaf:      | http://xmlns.com/foaf/0.1/                  |
