@@ -1,5 +1,4 @@
 <!DOCTYPE html><html lang="nl"><head>
-<script src="https://hypothes.is/embed.js" async></script>
 <meta charset="utf-8">
 <meta name="generator" content="ReSpec 32.8.1">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -380,7 +379,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       This document is a draft of a potential specification. It has no official
       standing of any kind and does not represent the support or consensus of
       any standards organization.
-    </p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#H1"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#toepassingsgebied"><bdi class="secno">1.1 </bdi>Toepassingsgebied</a></li><li class="tocline"><a class="tocxref" href="#doelgroep"><bdi class="secno">1.2 </bdi>Doelgroep</a></li><li class="tocline"><a class="tocxref" href="#rationale"><bdi class="secno">1.3 </bdi>Rationale</a></li><li class="tocline"><a class="tocxref" href="#use-cases"><bdi class="secno">1.4 </bdi>Use cases</a></li><li class="tocline"><a class="tocxref" href="#leeswijzer"><bdi class="secno">1.5 </bdi>Leeswijzer</a></li></ol></li><li class="tocline"><a class="tocxref" href="#H2"><bdi class="secno">2. </bdi>Conceptuele beschrijving</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#begrippenkader"><bdi class="secno">2.1 </bdi>Begrippenkader</a></li><li class="tocline"><a class="tocxref" href="#begrip"><bdi class="secno">2.2 </bdi>Begrip</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#begrippenlijst"><bdi class="secno">2.2.1 </bdi>Begrippenlijst</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#termen"><bdi class="secno">2.2.1.1 </bdi>Termen</a></li><li class="tocline"><a class="tocxref" href="#notities"><bdi class="secno">2.2.1.2 </bdi>Notities</a></li><li class="tocline"><a class="tocxref" href="#codes"><bdi class="secno">2.2.1.3 </bdi>Codes</a></li></ol></li><li class="tocline"><a class="tocxref" href="#taxonomie"><bdi class="secno">2.2.2 </bdi>Taxonomie</a></li><li class="tocline"><a class="tocxref" href="#thesaurus"><bdi class="secno">2.2.3 </bdi>Thesaurus</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#iso-25964-hierarchische-relaties"><bdi class="secno">2.2.3.1 </bdi>ISO 25964 hiërarchische relaties</a></li></ol></li><li class="tocline"><a class="tocxref" href="#harmonisatiesrelaties"><bdi class="secno">2.2.4 </bdi>Harmonisatiesrelaties</a></li></ol></li><li class="tocline"><a class="tocxref" href="#bron"><bdi class="secno">2.3 </bdi>Bron</a></li><li class="tocline"><a class="tocxref" href="#collectie"><bdi class="secno">2.4 </bdi>Collectie</a></li><li class="tocline"><a class="tocxref" href="#uitbreidingen"><bdi class="secno">2.5 </bdi>Uitbreidingen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#skos-lex"><bdi class="secno">2.5.1 </bdi>Skos-lex</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#H3"><bdi class="secno">3. </bdi>Toepassingsprofiel in LD</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#overzicht"><bdi class="secno">3.1 </bdi>Overzicht</a></li><li class="tocline"><a class="tocxref" href="#taalbinding"><bdi class="secno">3.2 </bdi>Taalbinding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#types"><bdi class="secno">3.2.1 </bdi>Types</a></li><li class="tocline"><a class="tocxref" href="#eigenschappen"><bdi class="secno">3.2.2 </bdi>Eigenschappen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#specificatie"><bdi class="secno">3.3 </bdi>Specificatie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#specificatie-begrippenkader"><bdi class="secno">3.3.1 </bdi>Specificatie Begrippenkader</a></li><li class="tocline"><a class="tocxref" href="#specificatie-begrip"><bdi class="secno">3.3.2 </bdi>Specificatie Begrip</a></li><li class="tocline"><a class="tocxref" href="#specificatie-bron"><bdi class="secno">3.3.3 </bdi>Specificatie Bron</a></li><li class="tocline"><a class="tocxref" href="#specificatie-collectie"><bdi class="secno">3.3.4 </bdi>Specificatie Collectie</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#H4"><bdi class="secno">4. </bdi>Best practices</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#begrippen"><bdi class="secno">4.1 </bdi>Begrippen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#termen-0"><bdi class="secno">4.1.1 </bdi>Termen</a></li><li class="tocline"><a class="tocxref" href="#hierarchische-relaties"><bdi class="secno">4.1.2 </bdi>Hierarchische relaties</a></li></ol></li><li class="tocline"><a class="tocxref" href="#bronnen"><bdi class="secno">4.2 </bdi>Bronnen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#typering"><bdi class="secno">4.2.1 </bdi>Typering</a></li></ol></li><li class="tocline"><a class="tocxref" href="#harmonisatie-en-hergebruik"><bdi class="secno">4.3 </bdi>Harmonisatie en hergebruik</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#harmonisatie"><bdi class="secno">4.3.1 </bdi>Harmonisatie</a></li><li class="tocline"><a class="tocxref" href="#hergebruik"><bdi class="secno">4.3.2 </bdi>Hergebruik</a></li></ol></li><li class="tocline"><a class="tocxref" href="#samenwerking-informatiemodel-en-begrippenkader"><bdi class="secno">4.4 </bdi>Samenwerking Informatiemodel en Begrippenkader</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">5. </bdi>Conformance</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Terms defined by this specification</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Terms defined by reference</a></li></ol></li><li class="tocline"><a class="tocxref" href="#namespace-verklaringen"><bdi class="secno">B. </bdi>Namespace verklaringen</a></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">C. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">C.1 </bdi>Normatieve referenties</a></li><li class="tocline"><a class="tocxref" href="#informatieve-referenties"><bdi class="secno">C.2 </bdi>Informatieve referenties</a></li></ol></li></ol></nav>
+    </p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#H1"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#toepassingsgebied"><bdi class="secno">1.1 </bdi>Toepassingsgebied</a></li><li class="tocline"><a class="tocxref" href="#doelgroep"><bdi class="secno">1.2 </bdi>Doelgroep</a></li><li class="tocline"><a class="tocxref" href="#rationale"><bdi class="secno">1.3 </bdi>Rationale</a></li><li class="tocline"><a class="tocxref" href="#use-cases"><bdi class="secno">1.4 </bdi>Use cases</a></li><li class="tocline"><a class="tocxref" href="#leeswijzer"><bdi class="secno">1.5 </bdi>Leeswijzer</a></li></ol></li><li class="tocline"><a class="tocxref" href="#H2"><bdi class="secno">2. </bdi>Conceptuele beschrijving</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#overzicht"><bdi class="secno">2.1 </bdi>Overzicht</a></li><li class="tocline"><a class="tocxref" href="#begrippenkader"><bdi class="secno">2.2 </bdi>Begrippenkader</a></li><li class="tocline"><a class="tocxref" href="#begrip"><bdi class="secno">2.3 </bdi>Begrip</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#begrippenlijst"><bdi class="secno">2.3.1 </bdi>Begrippenlijst</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#termen"><bdi class="secno">2.3.1.1 </bdi>Termen</a></li><li class="tocline"><a class="tocxref" href="#notities"><bdi class="secno">2.3.1.2 </bdi>Notities</a></li><li class="tocline"><a class="tocxref" href="#codes"><bdi class="secno">2.3.1.3 </bdi>Codes</a></li></ol></li><li class="tocline"><a class="tocxref" href="#taxonomie"><bdi class="secno">2.3.2 </bdi>Taxonomie</a></li><li class="tocline"><a class="tocxref" href="#thesaurus"><bdi class="secno">2.3.3 </bdi>Thesaurus</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#iso-25964-hierarchische-relaties"><bdi class="secno">2.3.3.1 </bdi>ISO 25964 hiërarchische relaties</a></li></ol></li><li class="tocline"><a class="tocxref" href="#harmonisatiesrelaties"><bdi class="secno">2.3.4 </bdi>Harmonisatiesrelaties</a></li></ol></li><li class="tocline"><a class="tocxref" href="#bron"><bdi class="secno">2.4 </bdi>Bron</a></li><li class="tocline"><a class="tocxref" href="#collectie"><bdi class="secno">2.5 </bdi>Collectie</a></li><li class="tocline"><a class="tocxref" href="#uitbreidingen"><bdi class="secno">2.6 </bdi>Uitbreidingen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#skos-lex"><bdi class="secno">2.6.1 </bdi>Skos-lex</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#H3"><bdi class="secno">3. </bdi>Toepassingsprofiel in LD</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#overzicht-0"><bdi class="secno">3.1 </bdi>Overzicht</a></li><li class="tocline"><a class="tocxref" href="#taalbinding"><bdi class="secno">3.2 </bdi>Taalbinding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#types"><bdi class="secno">3.2.1 </bdi>Types</a></li><li class="tocline"><a class="tocxref" href="#eigenschappen"><bdi class="secno">3.2.2 </bdi>Eigenschappen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#specificatie"><bdi class="secno">3.3 </bdi>Specificatie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#specificatie-begrippenkader"><bdi class="secno">3.3.1 </bdi>Specificatie Begrippenkader</a></li><li class="tocline"><a class="tocxref" href="#specificatie-begrip"><bdi class="secno">3.3.2 </bdi>Specificatie Begrip</a></li><li class="tocline"><a class="tocxref" href="#specificatie-bron"><bdi class="secno">3.3.3 </bdi>Specificatie Bron</a></li><li class="tocline"><a class="tocxref" href="#specificatie-collectie"><bdi class="secno">3.3.4 </bdi>Specificatie Collectie</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#H4"><bdi class="secno">4. </bdi>Best practices</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#begrippen"><bdi class="secno">4.1 </bdi>Begrippen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#termen-0"><bdi class="secno">4.1.1 </bdi>Termen</a></li><li class="tocline"><a class="tocxref" href="#hierarchische-relaties"><bdi class="secno">4.1.2 </bdi>Hierarchische relaties</a></li></ol></li><li class="tocline"><a class="tocxref" href="#bronnen"><bdi class="secno">4.2 </bdi>Bronnen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#typering"><bdi class="secno">4.2.1 </bdi>Typering</a></li></ol></li><li class="tocline"><a class="tocxref" href="#harmonisatie-en-hergebruik"><bdi class="secno">4.3 </bdi>Harmonisatie en hergebruik</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#harmonisatie"><bdi class="secno">4.3.1 </bdi>Harmonisatie</a></li><li class="tocline"><a class="tocxref" href="#hergebruik"><bdi class="secno">4.3.2 </bdi>Hergebruik</a></li></ol></li><li class="tocline"><a class="tocxref" href="#samenwerking-informatiemodel-en-begrippenkader"><bdi class="secno">4.4 </bdi>Samenwerking Informatiemodel en Begrippenkader</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">5. </bdi>Conformance</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Terms defined by this specification</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Terms defined by reference</a></li></ol></li><li class="tocline"><a class="tocxref" href="#namespace-verklaringen"><bdi class="secno">B. </bdi>Namespace verklaringen</a></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">C. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">C.1 </bdi>Normatieve referenties</a></li><li class="tocline"><a class="tocxref" href="#informatieve-referenties"><bdi class="secno">C.2 </bdi>Informatieve referenties</a></li></ol></li></ol></nav>
   <section id="H1" data-format="markdown"><div class="header-wrapper"><h2 id="x1-inleiding"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#H1" aria-label="Permalink for Section 1."></a></div>
 <section id="toepassingsgebied"><div class="header-wrapper"><h3 id="x1-1-toepassingsgebied"><bdi class="secno">1.1 </bdi>Toepassingsgebied</h3><a class="self-link" href="#toepassingsgebied" aria-label="Permalink for Section 1.1"></a></div>
 <p>De voorliggende standaard richt zich op het beschrijven van begrippen in een begrippenkader. Dit maakt het mogelijk om:</p>
@@ -457,7 +456,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 <p>Hoofdstuk 4 - <strong>Best practices</strong> heeft een aantal handvatten op een aantal onderdelen van deze standaard. Dit deel is bedoeld voor specialisten zoals analisten, informatiemodelleurs en -architecten en voor ontwikkelaars van ondersteunende tooling.</p>
 </section></section>
   <section id="H2" data-format="markdown"><div class="header-wrapper"><h2 id="x2-conceptuele-beschrijving"><bdi class="secno">2. </bdi>Conceptuele beschrijving</h2><a class="self-link" href="#H2" aria-label="Permalink for Section 2."></a></div>
-<p>In dit hoofdstuk beschrijven we het abstracte model dat we hanteren in het toepassingsgebied. Dit is onafhankelijk van bepaalde notaties en/of standaarden. Hiermee komen we tot een gedeeld beeld en gedeelde taal waarmee we <a data-link-type="dfn" href="#dfn-begrippenkader" class="internalDFN" id="ref-for-dfn-begrippenkader-1">begrippenkader</a>s beschrijven en uitwisselen. Vervolgens wordt in <a href="#H3">hoofdstuk 3</a> beschreven hoe dit abstracte model kan worden toegepast in RDF. Dit zelfde abstracte model kan ook toegepast worden in bijvoorbeeld een JSON of XML schema zonder dat de gedeelde taal verloren gaat; waardoor deze standaard breder geadopteerd kan worden. Linked data is dus niet de enige mogelijke serialisatie. Het abstracte model is gebasseerd op verschillende standaarden en best-practices die in het domein van toepassing zijn. Zoals bij de rationale aangegeven leunen we hier voor de betekenis sterk op SKOS en op de ISO 25964.</p>
+<p>In dit hoofdstuk beschrijven we het abstracte model dat we hanteren in het toepassingsgebied. Dit is onafhankelijk van bepaalde notaties en/of standaarden. Hiermee komen we tot een gedeeld beeld en gedeelde taal waarmee we <a data-link-type="dfn" href="#dfn-begrippenkader" class="internalDFN" id="ref-for-dfn-begrippenkader-1">begrippenkader</a>s beschrijven en uitwisselen. Vervolgens wordt in <a href="#H3">hoofdstuk 3</a> beschreven hoe dit abstracte model kan worden toegepast in RDF. Dit zelfde abstracte model kan ook toegepast worden in bijvoorbeeld een JSON of XML schema zonder dat de gedeelde taal verloren gaat; waardoor deze standaard breder geadopteerd kan worden. Linked data is dus niet de enige mogelijke serialisatie. Het abstracte model is gebasseerd op verschillende standaarden en best-practices die in het domein van toepassing zijn. Zoals bij de rationale aangegeven leunen we hier voor de betekenis sterk op SKOS en op ISO 25964.</p>
 <p>In <a href="#begrippenkader">2.1</a> beschrijven we wat een <a data-link-type="dfn" href="#dfn-begrippenkader" class="internalDFN" id="ref-for-dfn-begrippenkader-2">begrippenkader</a> is. In <a href="#begrip">2.2</a> beschrijven we wat een begrip is. Vervolgens beschrijven we in <a href="#begrippenlijst">2.2.1</a> de kenmerken van een begrip die relevant zijn voor het basisniveau, een <a data-link-type="dfn" href="#dfn-begrippenlijst" class="internalDFN" id="ref-for-dfn-begrippenlijst-1">begrippenlijst</a>. In <a href="#taxonomie">2.2.2</a> voegen we daar de hiërarchische relaties aan toe die een begrippenlijst uitbreiden tot een <a data-link-type="dfn" href="#dfn-taxonomie" class="internalDFN" id="ref-for-dfn-taxonomie-1">taxonomie</a>. In <a href="#thesaurus">2.2.3</a> voegen we meer genuanceerde hiërarchische relaties toe om tot een ISO compatible <a data-link-type="dfn" href="#dfn-thesaurus" class="internalDFN" id="ref-for-dfn-thesaurus-1">thesaurus</a> te komen. In <a href="#harmonisatiesrelaties">2.2.4</a> beschrijven we de harmonisatierelaties waarmee begrippen kunnen worden verbonden met begrippen in een ander begrippenkader.</p>
 <p>In <a href="#bron">2.3</a> beschrijven we de elementen van een bibliografische of op het web vindbare bron waarop de definitie van een begrip is gebaseerd.</p>
 <p>In <a href="#collectie">2.4</a> beschrijven we hoe begrippen los van hun semantische samenhang binnen een begrippenkader kunnen worden gegroepeerd in <a data-link-type="dfn" href="#dfn-collectie" class="internalDFN" id="ref-for-dfn-collectie-1">collectie</a>s.</p>
@@ -470,7 +469,10 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 <li><a data-link-type="dfn" href="#dfn-bron" class="internalDFN" id="ref-for-dfn-bron-1">bron</a>. Bij ieder kenmerk geven we aan welke bron(nen) we hebben gebruikt voor de beschrijving.</li>
 <li>relaties met andere kenmerken.</li>
 </ul>
-<section id="begrippenkader"><div class="header-wrapper"><h3 id="x2-1-begrippenkader"><bdi class="secno">2.1 </bdi>Begrippenkader</h3><a class="self-link" href="#begrippenkader" aria-label="Permalink for Section 2.1"></a></div>
+<section id="overzicht"><div class="header-wrapper"><h3 id="x2-1-overzicht"><bdi class="secno">2.1 </bdi>Overzicht</h3><a class="self-link" href="#overzicht" aria-label="Permalink for Section 2.1"></a></div>
+<p>Het onderstaande diagram geeft een overzicht van het conceptuele model die met deze standaard is geformuleerd.
+<img src="/respec/media/model-conceptueel.png" alt="" height="621" width="1142"></p>
+</section><section id="begrippenkader"><div class="header-wrapper"><h3 id="x2-2-begrippenkader"><bdi class="secno">2.2 </bdi>Begrippenkader</h3><a class="self-link" href="#begrippenkader" aria-label="Permalink for Section 2.2"></a></div>
 <p>Begrippen kunnen als zelfstandige entiteiten worden gezien maar veelal worden ze opgesteld als onderdeel van een gecureerd begrippenkader, zoals begrippenlijsten, taxonomieën en thesauri. Een <a data-link-type="dfn" href="#dfn-begrippenkader" class="internalDFN" id="ref-for-dfn-begrippenkader-3">begrippenkader</a> is een verzameling van <a data-link-type="dfn" href="#dfn-begrip" class="internalDFN" id="ref-for-dfn-begrip-1">begrip</a>pen die in een bepaalde context relevant zijn. Een begrippenkader wordt ookwel gezien als een eenheid van context. Als kenmerk van het <a data-link-type="dfn" href="#dfn-begrip" class="internalDFN" id="ref-for-dfn-begrip-2">begrip</a> wordt aangegeven of het onderdeel is van een begrippenkader (<a data-link-type="dfn" href="#dfn-in-kader" class="internalDFN" id="ref-for-dfn-in-kader-1">in kader</a>) Een begrippenkader is vergelijkbaar met een taal die in een bepaald gebied gesproken wordt. En net als een reguliere taal is een begrippenkader een open systeem. Zo kan een taal ook groeien na introductie van nieuwe woorden vanuit talen uit nabijgelegen gebieden. Dat wil zeggen dat een begrippenkader net als een taal naast vertalingen (mappings) kent ook woorden kunnen overnemen; leenwoorden. Zoals "computer", een van origine engels woord, ook behoort tot de nederlandse taal. Het beschrijven welke begrippen behoren tot een begrippenkader is essentieel; maar hoe deze 'vertaald' kunnen worden naar begrippen uit andere begrippenkaders ook. Voor dit laatste gebruiken we <a data-link-type="dfn" href="#dfn-harmonisatierelatie" class="internalDFN" id="ref-for-dfn-harmonisatierelatie-1">harmonisatierelatie</a>s.</p>
 <table>
 <thead>
@@ -497,7 +499,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/ConceptScheme">http://nlbegrip.nl/sbb/id/concept/ConceptScheme</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/ConceptScheme">http://begrippen.nlbegrip.nl/sbb/id/concept/ConceptScheme</a></td>
 </tr>
 </tbody></table>
 <p>Een begrippenkader kan beschreven worden aan de hand van verschillende kenmerken. Deze zijn in de volgende tabel weergegeven.</p>
@@ -520,7 +522,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 <td>Tekst</td>
 </tr>
 <tr>
-<td><a data-link-type="dfn" href="#dfn-term" class="internalDFN" id="ref-for-dfn-term-1">term</a></td>
+<td><a data-link-type="dfn" href="#dfn-label" class="internalDFN" id="ref-for-dfn-label-1">label</a></td>
 <td>1..*</td>
 <td>Tekst</td>
 </tr>
@@ -554,10 +556,10 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/hasTopConcept">http://nlbegrip.nl/sbb/id/concept/hasTopConcept</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/hasTopConcept">http://begrippen.nlbegrip.nl/sbb/id/concept/hasTopConcept</a></td>
 </tr>
 </tbody></table>
-</section><section id="begrip"><div class="header-wrapper"><h3 id="x2-2-begrip"><bdi class="secno">2.2 </bdi>Begrip</h3><a class="self-link" href="#begrip" aria-label="Permalink for Section 2.2"></a></div>
+</section><section id="begrip"><div class="header-wrapper"><h3 id="x2-3-begrip"><bdi class="secno">2.3 </bdi>Begrip</h3><a class="self-link" href="#begrip" aria-label="Permalink for Section 2.3"></a></div>
 <p>Begrip is het centrale element in deze specificatie. Begrippen spelen ook een centrale rol in de manier waarop we communiceren en we de wereld om ons heen begrijpen. 
 Een begrip is een conceptuele resource; het zijn de eenheden van denken - ideeën, betekenissen of (categorieën van) objecten en gebeurtenissen. In de communicatiewetenschap wordt hier vaak gerefereerd aan de 'Triange of meaning'. Hier wordt duidelijk dat bij het gebruik van bepaalde termen een spreker en toehoorder niet noodzakelijk dezelfde gedachte vormen en elkaar dus niet begrijpen. </p>
 <p>
@@ -566,7 +568,7 @@ Een begrip is een conceptuele resource; het zijn de eenheden van denken - ideeë
         <figcaption><a class="self-link" href="#fig-triange-of-meaning">Figuur <bdi class="figno">1</bdi></a> <span class="fig-title">Triange of meaning</span></figcaption>
       </figure>
     <p></p>
-<p>Het hebben van gestandaardiseerde begrippen zorgt ervoor dat iedereen dezelfde taal kan spreken en weet wat de bedoelde betekenis is bij het gebruik van een bepaalde term in een bepaalde context. Bijvoorbeeld in berichtgeving of in data. Dit maakt het eenvoudiger om effectief te communiceren en informatie uit te wisselen.</p>
+<p>Het hebben van gestandaardiseerde begrippen zorgt ervoor dat iedereen dezelfde taal kan spreken en weet wat de bedoelde betekenis is bij het gebruik van een bepaalde <a data-link-type="dfn" href="#dfn-term" class="internalDFN" id="ref-for-dfn-term-1">term</a> in een bepaalde context. Bijvoorbeeld in berichtgeving of in data. Dit maakt het eenvoudiger om effectief te communiceren en informatie uit te wisselen.</p>
 <table>
 <thead>
 <tr>
@@ -592,7 +594,7 @@ Een begrip is een conceptuele resource; het zijn de eenheden van denken - ideeë
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/Concept">http://nlbegrip.nl/sbb/id/concept/Concept</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/Concept">http://begrippen.nlbegrip.nl/sbb/id/concept/Concept</a></td>
 </tr>
 </tbody></table>
 <p>Een begrip kan beschreven worden aan de hand van verschillende kenmerken. Deze zijn in de volgende tabel weergegeven. In de volgende hoofdstukken worden deze per usecase verder beschreven.</p>
@@ -628,6 +630,11 @@ Een begrip is een conceptuele resource; het zijn de eenheden van denken - ideeë
 <td><a data-link-type="dfn" href="#dfn-in-kader" class="internalDFN" id="ref-for-dfn-in-kader-2">in kader</a></td>
 <td>1..*</td>
 <td><a data-link-type="dfn" href="#dfn-begrippenkader" class="internalDFN" id="ref-for-dfn-begrippenkader-4">begrippenkader</a></td>
+</tr>
+<tr>
+<td><a data-link-type="dfn" href="#dfn-is-topbegrip-van" class="internalDFN" id="ref-for-dfn-is-topbegrip-van-1">is topbegrip van</a></td>
+<td>0..*</td>
+<td><a data-link-type="dfn" href="#dfn-begrippenkader" class="internalDFN" id="ref-for-dfn-begrippenkader-5">begrippenkader</a></td>
 </tr>
 <tr>
 <td><a data-link-type="dfn" href="#dfn-definitie" class="internalDFN" id="ref-for-dfn-definitie-2">definitie</a></td>
@@ -765,12 +772,44 @@ Een begrip is een conceptuele resource; het zijn de eenheden van denken - ideeë
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/InScheme">http://nlbegrip.nl/sbb/id/concept/InScheme</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/InScheme">http://begrippen.nlbegrip.nl/sbb/id/concept/InScheme</a></td>
 </tr>
 </tbody></table>
-<section id="begrippenlijst"><div class="header-wrapper"><h4 id="x2-2-1-begrippenlijst"><bdi class="secno">2.2.1 </bdi>Begrippenlijst</h4><a class="self-link" href="#begrippenlijst" aria-label="Permalink for Section 2.2.1"></a></div>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-is-topbegrip-van" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">is topbegrip van</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Een topbegrip is een begrip die bovenaan de hiërarchie staat in een bepaald begrippenkader.</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://www.w3.org/2004/02/skos/core#">http://www.w3.org/2004/02/skos/core#</a>, <a href="https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes">https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes</a></td>
+</tr>
+<tr>
+<td><strong>toelichting</strong></td>
+<td>Heeft topbegrip adresseert een begrip dat bovenaan een hiërarchie staat, d.w.z. het heeft geen bredere begrippen. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle begrippen op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen.</td>
+</tr>
+<tr>
+<td>'is topbegrip van' heeft nagenoeg dezelfde betekenis als het element 'heeft topbegrip', met als distinctie dat 'is topbegrip van' vanuit het perspectief van het begrip gedefinieerd is en 'heeft topbegrip' vanuit het perspectief van het begrippenkader.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>uri</strong></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/isTopConceptOf">http://begrippen.nlbegrip.nl/sbb/id/concept/isTopConceptOf</a></td>
+</tr>
+</tbody></table>
+<section id="begrippenlijst"><div class="header-wrapper"><h4 id="x2-3-1-begrippenlijst"><bdi class="secno">2.3.1 </bdi>Begrippenlijst</h4><a class="self-link" href="#begrippenlijst" aria-label="Permalink for Section 2.3.1"></a></div>
 <p>Aan de hand van de begripsdriehoek, zien we dat om een spreker te kunnen begrijpen, een toehoorder minimaal iets moeten weten over de betekenis en de termen die ter aanduiding gebruikt worden.</p>
-<p>Door deze basis voor alle begrippen die binnen een context gebruikt worden vast te leggen onstaat een <a data-link-type="dfn" href="#dfn-begrippenkader" class="internalDFN" id="ref-for-dfn-begrippenkader-5">begrippenkader</a>. We spreken hier van een begrippenlijst. Dit is het basisniveau voor het beschrijving van begrippen in een bepaald domein. </p>
+<p>Door deze basis voor alle begrippen die binnen een context gebruikt worden vast te leggen onstaat een <a data-link-type="dfn" href="#dfn-begrippenkader" class="internalDFN" id="ref-for-dfn-begrippenkader-6">begrippenkader</a>. We spreken hier van een begrippenlijst. Dit is het basisniveau voor het beschrijving van begrippen in een bepaald domein. </p>
 <p>Een begrippenlijst is een termenlijst met definities die gebruikt worden in een bepaald domein. Een begrippenlijst kent voor ieder begrip dan ook mimimaal één <a data-link-type="dfn" href="#dfn-voorkeursterm" class="internalDFN" id="ref-for-dfn-voorkeursterm-3">voorkeursterm</a> en één <a data-link-type="dfn" href="#dfn-definitie" class="internalDFN" id="ref-for-dfn-definitie-3">definitie</a>. Een toelichting op de definitie is aanbevolen, evenals een verwijzing naar de bron van de betekenis. 
 Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in klare taal, op B1 niveau aanbevolen. De overige kenmerken zijn optioneel.</p>
 <table>
@@ -802,11 +841,11 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/ControlledVocabulary">http://nlbegrip.nl/sbb/id/concept/ControlledVocabulary</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/ControlledVocabulary">http://begrippen.nlbegrip.nl/sbb/id/concept/ControlledVocabulary</a></td>
 </tr>
 </tbody></table>
-<section id="termen"><div class="header-wrapper"><h5 id="x2-2-1-1-termen"><bdi class="secno">2.2.1.1 </bdi>Termen</h5><a class="self-link" href="#termen" aria-label="Permalink for Section 2.2.1.1"></a></div>
-<p>Termen zijn karakteristieken van een begrip. We kunnen termen zien als een referentie naar of aanduiding van een begrip. Een begrip kan meerdere termen kennen waarbij sommigen ook een andere rol spelen dan andere. </p>
+<section id="termen"><div class="header-wrapper"><h5 id="x2-3-1-1-termen"><bdi class="secno">2.3.1.1 </bdi>Termen</h5><a class="self-link" href="#termen" aria-label="Permalink for Section 2.3.1.1"></a></div>
+<p>Termen vallen onder de karakteristieken van begrippen. We kunnen termen zien als een referentie naar of aanduiding van een begrip, we spreken dan van een label. Een begrip kan meerdere labels kennen waarbij sommigen ook een andere rol spelen dan andere. </p>
 <table>
 <thead>
 <tr>
@@ -820,22 +859,54 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 </tr>
 <tr>
 <td><strong>definitie</strong></td>
-<td>Een term is een aaneenschakeling van één of meerdere woorden ter aanduiding van een object.</td>
+<td>Een term is een aaneenschakeling van één of meerdere woorden die samen een conceptuele eenheid vormen.</td>
+</tr>
+<tr>
+<td><strong>toelichting</strong></td>
+<td>In de definitie moet 'woord' breed worden geïnterpreteerd. Een term mag ook een afkorting zijn, zoals 'B.T.W. (de voorkeursterm voor 'Belasting op toegevoegde waarde'), of een code zoals '013' (Een poppodium in Tilburg).</td>
+</tr>
+<tr>
+<td><strong>uri</strong></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/Phrase">http://begrippen.nlbegrip.nl/sbb/id/concept/Phrase</a></td>
+</tr>
+</tbody></table>
+<p>Hieronder worden de mogelijke soorten termen bij een begrip beschreven.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-label" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">label</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Een label is een mensleesbare term ter aanduiding van een object.</td>
 </tr>
 <tr>
 <td><strong>bron</strong></td>
 <td><a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.61">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.61</a></td>
 </tr>
 <tr>
+<td><strong>uitleg</strong></td>
+<td>Een object kan ieder onderwerp van gesprek zijn; zoals een begrip of een specifiek gebouw.</td>
+</tr>
+<tr>
 <td><strong>toelichting</strong></td>
-<td>Dit is een overkoepelend begrip voor de verschillende soorten termen (voorkeursterm, alternatieve term, zoekterm) waarmee begrippen kunnen worden aangeduid. Good practice is om die specifieke termen te gebruiken. In de definitie moet 'woord' breed worden geïnterpreteerd. Een term mag ook een afkorting zijn, zoals 'B.T.W. (de voorkeursterm voor 'Belasting op toegevoegde waarde'), of een code zoals '013' (Een poppodium in Tilburg).</td>
+<td>Dit is een overkoepelend begrip voor de verschillende soorten termen (voorkeursterm, alternatieve term, zoekterm) waarmee begrippen kunnen worden aangeduid. Good practice is om die specifieke termen te gebruiken.</td>
+</tr>
+<tr>
+<td>In de definitie moet 'object' breed worden geïnterpreteerd. Het kan ieder onderwerp van gesprek zijn; zoals een specifiek begrip of een specifiek gebouw.</td>
+<td></td>
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/Label">http://nlbegrip.nl/sbb/id/concept/Label</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/Label">http://begrippen.nlbegrip.nl/sbb/id/concept/Label</a></td>
 </tr>
 </tbody></table>
-<p>Hieronder worden de mogelijke soorten termen bij een begrip beschreven.</p>
 <table>
 <thead>
 <tr>
@@ -849,7 +920,7 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 </tr>
 <tr>
 <td><strong>definitie</strong></td>
-<td>Een voorkeursterm is een gepreferreerde lexicale term voor een begrip, in een specifieke taal.</td>
+<td>Een voorkeursterm is een label die in een specifieke taal het geprefereerde lexicale label is.</td>
 </tr>
 <tr>
 <td><strong>bron</strong></td>
@@ -869,7 +940,7 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/PrefLabel">http://nlbegrip.nl/sbb/id/concept/PrefLabel</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/PrefLabel">http://begrippen.nlbegrip.nl/sbb/id/concept/PrefLabel</a></td>
 </tr>
 </tbody></table>
 <table>
@@ -885,7 +956,7 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 </tr>
 <tr>
 <td><strong>definitie</strong></td>
-<td>Een alternatieve term voor een begrip is een term die gebruikt kan worden als alternatief voor de voorkeursterm van dit begrip, maar niet de voorkeur heeft.</td>
+<td>Een alternatieve term is een label die gebruikt kan worden als alternatief voor de voorkeursterm van een object, maar niet de voorkeur heeft.</td>
 </tr>
 <tr>
 <td><strong>bron</strong></td>
@@ -901,7 +972,7 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/AltLabel">http://nlbegrip.nl/sbb/id/concept/AltLabel</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/AltLabel">http://begrippen.nlbegrip.nl/sbb/id/concept/AltLabel</a></td>
 </tr>
 </tbody></table>
 <table>
@@ -917,7 +988,7 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 </tr>
 <tr>
 <td><strong>definitie</strong></td>
-<td>Een zoekterm is een term die beoogd is om het begrip te vinden, maar verder verborgen blijft.</td>
+<td>Een zoekterm is een label waarmee de vindbaarheid van een resource wordt vergroot, maar verder verborgen blijft.</td>
 </tr>
 <tr>
 <td><strong>bron</strong></td>
@@ -929,10 +1000,10 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/HiddenLabel">http://nlbegrip.nl/sbb/id/concept/HiddenLabel</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/HiddenLabel">http://begrippen.nlbegrip.nl/sbb/id/concept/HiddenLabel</a></td>
 </tr>
 </tbody></table>
-</section><section id="notities"><div class="header-wrapper"><h5 id="x2-2-1-2-notities"><bdi class="secno">2.2.1.2 </bdi>Notities</h5><a class="self-link" href="#notities" aria-label="Permalink for Section 2.2.1.2"></a></div>
+</section><section id="notities"><div class="header-wrapper"><h5 id="x2-3-1-2-notities"><bdi class="secno">2.3.1.2 </bdi>Notities</h5><a class="self-link" href="#notities" aria-label="Permalink for Section 2.3.1.2"></a></div>
 <p><a data-link-type="dfn" href="#dfn-notitie" class="internalDFN" id="ref-for-dfn-notitie-1">Notitie</a>s zijn karakteristieken waarmee een begrip op een mensleesbare manier beschreven kan worden. Notities kunnen heel breed toegepast worden. Om meer specifieke documentaire eigenschappen vast te leggen zijn ook specifiekere notities gedefinieerd. In deze sectie beschrijven we 1) notities die nadrukkelijk een verwoording van de betekenis geven en 2) aanvullende documentaire notities.</p>
 <table>
 <thead>
@@ -959,7 +1030,7 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/Note">http://nlbegrip.nl/sbb/id/concept/Note</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/Note">http://begrippen.nlbegrip.nl/sbb/id/concept/Note</a></td>
 </tr>
 </tbody></table>
 <p>De volgende notities zijn verwoordingen van de betekenis van een begrip.</p>
@@ -992,7 +1063,7 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/Definition">http://nlbegrip.nl/sbb/id/concept/Definition</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/Definition">http://begrippen.nlbegrip.nl/sbb/id/concept/Definition</a></td>
 </tr>
 </tbody></table>
 <table>
@@ -1024,7 +1095,7 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/ScopeNote">http://nlbegrip.nl/sbb/id/concept/ScopeNote</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/ScopeNote">http://begrippen.nlbegrip.nl/sbb/id/concept/ScopeNote</a></td>
 </tr>
 </tbody></table>
 <table>
@@ -1056,7 +1127,7 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/Comment">http://nlbegrip.nl/sbb/id/concept/Comment</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/Comment">http://begrippen.nlbegrip.nl/sbb/id/concept/Comment</a></td>
 </tr>
 </tbody></table>
 <p>De volgende notities zijn aanvullende documentaire notities.</p>
@@ -1089,7 +1160,7 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/HistoryNote">http://nlbegrip.nl/sbb/id/concept/HistoryNote</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/HistoryNote">http://begrippen.nlbegrip.nl/sbb/id/concept/HistoryNote</a></td>
 </tr>
 </tbody></table>
 <table>
@@ -1117,7 +1188,7 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/EditorialNote">http://nlbegrip.nl/sbb/id/concept/EditorialNote</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/EditorialNote">http://begrippen.nlbegrip.nl/sbb/id/concept/EditorialNote</a></td>
 </tr>
 </tbody></table>
 <table>
@@ -1145,7 +1216,7 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/Example">http://nlbegrip.nl/sbb/id/concept/Example</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/Example">http://begrippen.nlbegrip.nl/sbb/id/concept/Example</a></td>
 </tr>
 </tbody></table>
 <table>
@@ -1173,10 +1244,10 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/ChangeNote">http://nlbegrip.nl/sbb/id/concept/ChangeNote</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/ChangeNote">http://begrippen.nlbegrip.nl/sbb/id/concept/ChangeNote</a></td>
 </tr>
 </tbody></table>
-</section><section id="codes"><div class="header-wrapper"><h5 id="x2-2-1-3-codes"><bdi class="secno">2.2.1.3 </bdi>Codes</h5><a class="self-link" href="#codes" aria-label="Permalink for Section 2.2.1.3"></a></div>
+</section><section id="codes"><div class="header-wrapper"><h5 id="x2-3-1-3-codes"><bdi class="secno">2.3.1.3 </bdi>Codes</h5><a class="self-link" href="#codes" aria-label="Permalink for Section 2.3.1.3"></a></div>
 <p>Naast termen en notitities kunnen begrippen ook codes als kenmerken hebben. Een code is anders dan een term omdat het niet bedoelt is als aanduiding in natuurlijke taal. Codes zijn veelal ook niet leesbaar en bestaan vaak uit cijfers.</p>
 <table>
 <thead>
@@ -1207,10 +1278,10 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/Notation">http://nlbegrip.nl/sbb/id/concept/Notation</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/Notation">http://begrippen.nlbegrip.nl/sbb/id/concept/Notation</a></td>
 </tr>
 </tbody></table>
-</section></section><section id="taxonomie"><div class="header-wrapper"><h4 id="x2-2-2-taxonomie"><bdi class="secno">2.2.2 </bdi>Taxonomie</h4><a class="self-link" href="#taxonomie" aria-label="Permalink for Section 2.2.2"></a></div>
+</section></section><section id="taxonomie"><div class="header-wrapper"><h4 id="x2-3-2-taxonomie"><bdi class="secno">2.3.2 </bdi>Taxonomie</h4><a class="self-link" href="#taxonomie" aria-label="Permalink for Section 2.3.2"></a></div>
 <p>Naast documentaire eigenschappen zoals een <a data-link-type="dfn" href="#dfn-definitie" class="internalDFN" id="ref-for-dfn-definitie-4">definitie</a>, waar de betekenis van een begrip in tekstuele vorm beschreven wordt; kan de betekenis van een begrip ook beschreven worden aan de hand van een ander begrip. Een taxonomie kent behalve alle elementen van een begrippenlijst ook hiërarchische relaties. Deze hiërarchische relaties zijn optioneel in een begrippenlijst en zijn bijvoorbeeld relevant als een begrip wordt gedefinieerd in termen van een ander begrip, bijvoorbeeld <code>'een gemaal *is een* kunstwerk dat ...'</code>. Deze definitie impliceert dat een gemaal een 'enger begrip' is dan een kunstwerk, die ook als semantische relatie kan worden opgenomen.</p>
 <table>
 <thead>
@@ -1241,7 +1312,7 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/Taxonomy">http://nlbegrip.nl/sbb/id/concept/Taxonomy</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/Taxonomy">http://begrippen.nlbegrip.nl/sbb/id/concept/Taxonomy</a></td>
 </tr>
 </tbody></table>
 <p>In een taxonomie zijn alle begrippen direct of indirect als via '<a data-link-type="dfn" href="#dfn-heeft-bovenliggend-begrip" class="internalDFN" id="ref-for-dfn-heeft-bovenliggend-begrip-2">heeft bovenliggend begrip</a>' gekoppeld aan een top-begrip. Typerend voor een taxonomie is een interface waarbij op het eerste niveau de top-begrippen worden getoond, waarbij per top-begrip begrippen met een engere betekenis worden getoond, die op hun beurt ook weer begrippen met een engere betekenis tonen, enzovoort. Dit betekent dat, als je een taxonomie publiceert, ieder begrip ofwel via een hiërarchische relatie moet worden gekoppeld aan een ander begrip, ofwel een top-begrip moet zijn. Zonder hiërarchische relaties is er in een begrippenkader geen sprake van een top-begrip.</p>
@@ -1279,7 +1350,7 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/Broader">http://nlbegrip.nl/sbb/id/concept/Broader</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/Broader">http://begrippen.nlbegrip.nl/sbb/id/concept/Broader</a></td>
 </tr>
 </tbody></table>
 <table>
@@ -1315,10 +1386,10 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/Narrower">http://nlbegrip.nl/sbb/id/concept/Narrower</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/Narrower">http://begrippen.nlbegrip.nl/sbb/id/concept/Narrower</a></td>
 </tr>
 </tbody></table>
-</section><section id="thesaurus"><div class="header-wrapper"><h4 id="x2-2-3-thesaurus"><bdi class="secno">2.2.3 </bdi>Thesaurus</h4><a class="self-link" href="#thesaurus" aria-label="Permalink for Section 2.2.3"></a></div>
+</section><section id="thesaurus"><div class="header-wrapper"><h4 id="x2-3-3-thesaurus"><bdi class="secno">2.3.3 </bdi>Thesaurus</h4><a class="self-link" href="#thesaurus" aria-label="Permalink for Section 2.3.3"></a></div>
 <table>
 <thead>
 <tr>
@@ -1344,7 +1415,7 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/Thesaurus">http://nlbegrip.nl/sbb/id/concept/Thesaurus</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/Thesaurus">http://begrippen.nlbegrip.nl/sbb/id/concept/Thesaurus</a></td>
 </tr>
 </tbody></table>
 <p>Naast de kenmerken die voor begrippen in een begrippenlijst of taxonomie zijn geintroduceert, kan een begrip in een thesaurus ook associatieve, niet-hiërarchische relaties tussen begrippen kennen. Hiervoor kennen we de relatie <a data-link-type="dfn" href="#dfn-is-gerelateerd-aan" class="internalDFN" id="ref-for-dfn-is-gerelateerd-aan-2">is gerelateerd aan</a>.</p>
@@ -1377,10 +1448,10 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/Related">http://nlbegrip.nl/sbb/id/concept/Related</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/Related">http://begrippen.nlbegrip.nl/sbb/id/concept/Related</a></td>
 </tr>
 </tbody></table>
-<section class="informative" id="iso-25964-hierarchische-relaties"><div class="header-wrapper"><h5 id="x2-2-3-1-iso-25964-hierarchische-relaties"><bdi class="secno">2.2.3.1 </bdi>ISO 25964 hiërarchische relaties</h5><a class="self-link" href="#iso-25964-hierarchische-relaties" aria-label="Permalink for Section 2.2.3.1"></a></div><p><em>Dit onderdeel is niet normatief.</em></p> 
+<section class="informative" id="iso-25964-hierarchische-relaties"><div class="header-wrapper"><h5 id="x2-3-3-1-iso-25964-hierarchische-relaties"><bdi class="secno">2.3.3.1 </bdi>ISO 25964 hiërarchische relaties</h5><a class="self-link" href="#iso-25964-hierarchische-relaties" aria-label="Permalink for Section 2.3.3.1"></a></div><p><em>Dit onderdeel is niet normatief.</em></p> 
 
 Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebruikt als specialisatie respectievelijk generalisatie, kan het ook een partitieve, deel-geheel relatie zijn. De ISO 25964 standaard voor thesauri maakt in plaats van de ongespecificeerde hiërarchische relaties <a data-link-type="dfn" href="#dfn-heeft-bovenliggend-begrip" class="internalDFN" id="ref-for-dfn-heeft-bovenliggend-begrip-3">heeft bovenliggend begrip</a> en <a data-link-type="dfn" href="#dfn-heeft-onderliggend-begrip" class="internalDFN" id="ref-for-dfn-heeft-onderliggend-begrip-2">heeft onderliggend begrip</a> expliciet onderscheid tussen generalaties/specialisaties, partitieve relaties en instantiële relaties. Een kanttekening daarbij is wel dat de meeste tools alleen de standaard hiërarchische relaties herkennen.
 
@@ -1413,7 +1484,7 @@ Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebru
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/BroaderGeneric">http://nlbegrip.nl/sbb/id/concept/BroaderGeneric</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/BroaderGeneric">http://begrippen.nlbegrip.nl/sbb/id/concept/BroaderGeneric</a></td>
 </tr>
 </tbody></table>
 <table>
@@ -1445,7 +1516,7 @@ Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebru
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/NarrowerGeneric">http://nlbegrip.nl/sbb/id/concept/NarrowerGeneric</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/NarrowerGeneric">http://begrippen.nlbegrip.nl/sbb/id/concept/NarrowerGeneric</a></td>
 </tr>
 </tbody></table>
 <table>
@@ -1477,7 +1548,7 @@ Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebru
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/BroaderPartitive">http://nlbegrip.nl/sbb/id/concept/BroaderPartitive</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/BroaderPartitive">http://begrippen.nlbegrip.nl/sbb/id/concept/BroaderPartitive</a></td>
 </tr>
 </tbody></table>
 <table>
@@ -1509,7 +1580,7 @@ Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebru
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/NarrowerPartitive">http://nlbegrip.nl/sbb/id/concept/NarrowerPartitive</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/NarrowerPartitive">http://begrippen.nlbegrip.nl/sbb/id/concept/NarrowerPartitive</a></td>
 </tr>
 </tbody></table>
 <table>
@@ -1541,7 +1612,7 @@ Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebru
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/BroaderInstantial">http://nlbegrip.nl/sbb/id/concept/BroaderInstantial</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/BroaderInstantial">http://begrippen.nlbegrip.nl/sbb/id/concept/BroaderInstantial</a></td>
 </tr>
 </tbody></table>
 <table>
@@ -1573,12 +1644,12 @@ Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebru
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/NarrowerInstantial">http://nlbegrip.nl/sbb/id/concept/NarrowerInstantial</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/NarrowerInstantial">http://begrippen.nlbegrip.nl/sbb/id/concept/NarrowerInstantial</a></td>
 </tr>
 </tbody></table>
 </section>
 
-</section><section id="harmonisatiesrelaties"><div class="header-wrapper"><h4 id="x2-2-4-harmonisatiesrelaties"><bdi class="secno">2.2.4 </bdi>Harmonisatiesrelaties</h4><a class="self-link" href="#harmonisatiesrelaties" aria-label="Permalink for Section 2.2.4"></a></div>
+</section><section id="harmonisatiesrelaties"><div class="header-wrapper"><h4 id="x2-3-4-harmonisatiesrelaties"><bdi class="secno">2.3.4 </bdi>Harmonisatiesrelaties</h4><a class="self-link" href="#harmonisatiesrelaties" aria-label="Permalink for Section 2.3.4"></a></div>
 <p>Begrippen kunnen ook worden gerelateerd aan begrippen in een ander begrippenkader. Hiervoor gebruiken we <a data-link-type="dfn" href="#dfn-harmonisatierelatie" class="internalDFN" id="ref-for-dfn-harmonisatierelatie-2">harmonisatierelatie</a>.</p>
 <table>
 <thead>
@@ -1605,7 +1676,7 @@ Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebru
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/MatchingRelation">http://nlbegrip.nl/sbb/id/concept/MatchingRelation</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/MatchingRelation">http://begrippen.nlbegrip.nl/sbb/id/concept/MatchingRelation</a></td>
 </tr>
 </tbody></table>
 <p>Specifiek onderscheiden we de volgende verschillende harmonisatierelaties.</p>
@@ -1634,7 +1705,7 @@ Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebru
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/ExactMatch">http://nlbegrip.nl/sbb/id/concept/ExactMatch</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/ExactMatch">http://begrippen.nlbegrip.nl/sbb/id/concept/ExactMatch</a></td>
 </tr>
 </tbody></table>
 <table>
@@ -1662,7 +1733,7 @@ Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebru
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/CloseMatch">http://nlbegrip.nl/sbb/id/concept/CloseMatch</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/CloseMatch">http://begrippen.nlbegrip.nl/sbb/id/concept/CloseMatch</a></td>
 </tr>
 </tbody></table>
 <table>
@@ -1690,7 +1761,7 @@ Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebru
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/RelatedMatch">http://nlbegrip.nl/sbb/id/concept/RelatedMatch</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/RelatedMatch">http://begrippen.nlbegrip.nl/sbb/id/concept/RelatedMatch</a></td>
 </tr>
 </tbody></table>
 <table>
@@ -1718,7 +1789,7 @@ Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebru
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/BroadMatch">http://nlbegrip.nl/sbb/id/concept/BroadMatch</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/BroadMatch">http://begrippen.nlbegrip.nl/sbb/id/concept/BroadMatch</a></td>
 </tr>
 </tbody></table>
 <table>
@@ -1746,10 +1817,10 @@ Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebru
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/NarrowMatch">http://nlbegrip.nl/sbb/id/concept/NarrowMatch</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/NarrowMatch">http://begrippen.nlbegrip.nl/sbb/id/concept/NarrowMatch</a></td>
 </tr>
 </tbody></table>
-</section></section><section id="bron"><div class="header-wrapper"><h3 id="x2-3-bron"><bdi class="secno">2.3 </bdi>Bron</h3><a class="self-link" href="#bron" aria-label="Permalink for Section 2.3"></a></div>
+</section></section><section id="bron"><div class="header-wrapper"><h3 id="x2-4-bron"><bdi class="secno">2.4 </bdi>Bron</h3><a class="self-link" href="#bron" aria-label="Permalink for Section 2.4"></a></div>
 <p>Een <a data-link-type="dfn" href="#dfn-brondocument" class="internalDFN" id="ref-for-dfn-brondocument-2">brondocument</a> is een document waaruit de betekenis van het begrip is afgeleid.
 Het is good practice om voor ieder begrip bronverwijzingen op te nemen. Zo is het duidelijk waar de definitie van een begrip op gebasseerd is. Dit verhoogt de kwaliteit van het begrip en vooral ook de betrouwbaarheid. Het gebruiken van de hieronder beschreven structuur wordt ten zeerste aanbevolen voor het beschrijven van bronnen en het relateren van begrippen aan bronnen.</p>
 <p>Een bronverwijzing leggen we vast bij een begrip. Hiervoor hebben we het volgende patroon:
@@ -1779,7 +1850,7 @@ Een <strong><a data-link-type="dfn" href="#dfn-begrip" class="internalDFN" id="r
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/Source">http://nlbegrip.nl/sbb/id/concept/Source</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/Source">http://begrippen.nlbegrip.nl/sbb/id/concept/Source</a></td>
 </tr>
 </tbody></table>
 <table>
@@ -1811,7 +1882,7 @@ Een <strong><a data-link-type="dfn" href="#dfn-begrip" class="internalDFN" id="r
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/SourceDocument">http://nlbegrip.nl/sbb/id/concept/SourceDocument</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/SourceDocument">http://begrippen.nlbegrip.nl/sbb/id/concept/SourceDocument</a></td>
 </tr>
 </tbody></table>
 <p>Een brondocument kan beschreven worden aan de hand van verschillende kenmerken. Deze zijn in de volgende tabel weergegeven.</p>
@@ -1824,6 +1895,11 @@ Een <strong><a data-link-type="dfn" href="#dfn-begrip" class="internalDFN" id="r
 </tr>
 </thead>
 <tbody><tr>
+<td><a data-link-type="dfn" href="#dfn-label" class="internalDFN" id="ref-for-dfn-label-2">label</a></td>
+<td>1..*</td>
+<td>Tekst</td>
+</tr>
+<tr>
 <td><a data-link-type="dfn" href="#dfn-uitleg" class="internalDFN" id="ref-for-dfn-uitleg-3">uitleg</a></td>
 <td>0..*</td>
 <td>Tekst</td>
@@ -1839,17 +1915,12 @@ Een <strong><a data-link-type="dfn" href="#dfn-begrip" class="internalDFN" id="r
 <td><a data-link-type="dfn" href="#dfn-begrip" class="internalDFN" id="ref-for-dfn-begrip-19">begrip</a></td>
 </tr>
 <tr>
-<td><a data-link-type="dfn" href="#dfn-term" class="internalDFN" id="ref-for-dfn-term-2">term</a></td>
-<td>1..*</td>
-<td>Tekst</td>
-</tr>
-<tr>
 <td><a data-link-type="dfn" href="#dfn-citeertitel" class="internalDFN" id="ref-for-dfn-citeertitel-1">citeertitel</a></td>
 <td>0..*</td>
 <td>Tekst</td>
 </tr>
 </tbody></table>
-<p>Het wordt aangeraden om een bron te beschrijven met een <strong><a data-link-type="dfn" href="#dfn-url" class="internalDFN" id="ref-for-dfn-url-2">url</a></strong> als de bron een vindplaats heeft op het web en anders een <strong><a data-link-type="dfn" href="#dfn-citeertitel" class="internalDFN" id="ref-for-dfn-citeertitel-2">citeertitel</a></strong> waarin de citeerinformatie van de bron in een bepaalde citeerstijl is vastgelegd. Hiermee kan de bron gevonden worden. Ook kan de bron beschreven worden met een compact, voor de mens leesbare <strong><a data-link-type="dfn" href="#dfn-term" class="internalDFN" id="ref-for-dfn-term-3">term</a></strong>, een uitgebreide, voor de mens leesbare <strong><a data-link-type="dfn" href="#dfn-uitleg" class="internalDFN" id="ref-for-dfn-uitleg-4">uitleg</a></strong> en een <strong><a data-link-type="dfn" href="#dfn-soort" class="internalDFN" id="ref-for-dfn-soort-2">soort</a></strong> om aan te geven wat de aard van het brondocument is.</p>
+<p>Het wordt aangeraden om een bron te beschrijven met een <strong><a data-link-type="dfn" href="#dfn-url" class="internalDFN" id="ref-for-dfn-url-2">url</a></strong> als de bron een vindplaats heeft op het web en anders een <strong><a data-link-type="dfn" href="#dfn-citeertitel" class="internalDFN" id="ref-for-dfn-citeertitel-2">citeertitel</a></strong> waarin de citeerinformatie van de bron in een bepaalde citeerstijl is vastgelegd. Hiermee kan de bron gevonden worden. Ook kan de bron beschreven worden met een compact, voor de mens leesbare <strong><a data-link-type="dfn" href="#dfn-label" class="internalDFN" id="ref-for-dfn-label-3">label</a></strong>, een uitgebreide, voor de mens leesbare <strong><a data-link-type="dfn" href="#dfn-uitleg" class="internalDFN" id="ref-for-dfn-uitleg-4">uitleg</a></strong> en een <strong><a data-link-type="dfn" href="#dfn-soort" class="internalDFN" id="ref-for-dfn-soort-2">soort</a></strong> om aan te geven wat de aard van het brondocument is.</p>
 <p>De bron kan een heel document of een fragment daarvan zijn, denk aan een boek, een hoofdstuk of een paragraaf.</p>
 <table>
 <thead>
@@ -1876,7 +1947,7 @@ Een <strong><a data-link-type="dfn" href="#dfn-begrip" class="internalDFN" id="r
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/Page">http://nlbegrip.nl/sbb/id/concept/Page</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/Page">http://begrippen.nlbegrip.nl/sbb/id/concept/Page</a></td>
 </tr>
 </tbody></table>
 <table>
@@ -1904,7 +1975,7 @@ Een <strong><a data-link-type="dfn" href="#dfn-begrip" class="internalDFN" id="r
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/BibliographicCitation">http://nlbegrip.nl/sbb/id/concept/BibliographicCitation</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/BibliographicCitation">http://begrippen.nlbegrip.nl/sbb/id/concept/BibliographicCitation</a></td>
 </tr>
 </tbody></table>
 <table>
@@ -1932,10 +2003,10 @@ Een <strong><a data-link-type="dfn" href="#dfn-begrip" class="internalDFN" id="r
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/Type">http://nlbegrip.nl/sbb/id/concept/Type</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/Type">http://begrippen.nlbegrip.nl/sbb/id/concept/Type</a></td>
 </tr>
 </tbody></table>
-</section><section id="collectie"><div class="header-wrapper"><h3 id="x2-4-collectie"><bdi class="secno">2.4 </bdi>Collectie</h3><a class="self-link" href="#collectie" aria-label="Permalink for Section 2.4"></a></div>
+</section><section id="collectie"><div class="header-wrapper"><h3 id="x2-5-collectie"><bdi class="secno">2.5 </bdi>Collectie</h3><a class="self-link" href="#collectie" aria-label="Permalink for Section 2.5"></a></div>
 <p>Het gebruik van <a data-link-type="dfn" href="#dfn-collectie" class="internalDFN" id="ref-for-dfn-collectie-2">Collectie</a>s is altijd optioneel binnen deze standaard. Collecties zijn geen onderdeel van een begrippenlijst, taxonomie of thesaurus. </p>
 <p>Collecties bieden de mogelijkheid om binnen een begrippenkader begrippen die voor hun betekenis niet direct via semantische relaties met elkaar zijn verbonden, toch bij elkaar te zetten. Zo hebben het begrip 'vervuild' dat in milieuwetgeving wordt gedefinieerd en het begrip 'landgoed' dat in de natuurschoonwet wordt gedefinieerd semantisch geen relatie, maar worden ze beiden beschouwd als 'publiekrechtelijke beperking' in het kader van de Wet Kenbaarheid Publiekrechtelijke Beperkingen (WKPB). Deze begrippen kunnen dan samen met andere begrippen die onder de WKPB vallen worden samengebracht in een collectie.</p>
 <p>Begrippen zijn op verschillende manieren te verzamelen. Collecties zijn verzamelingen van begrippen, maar het begrippenkader is bijvoorbeeld ook een verzameling begrippen. Deze zijn echter verschillend in de zin dat een begrippenkader een context geeft en een collectie dat niet doet. Een begrip behoort tot een begrippenkader als het "binnen" die context valt. Bij een collectie is het juist andersom: een collectie bestaat uit begrippen. Dus of een begrip bij een collectie hoort, wordt niet bepaald door de betekenis van het begrip zelf, maar door wat de collectie-eigenaar vindt dat in "zijn" collectie hoort. Anders gezegd: een begrippenkader is een "open" verzameling: de verzameling bestaat uit de begrippen die bij dit begrippenkader horen (obv de context), een collectie is een "gesloten" verzameling; de verzameling bestaat uit de begrippen die als lid zijn toegevoegd aan de verzameling.</p>
@@ -1968,7 +2039,7 @@ Een <strong><a data-link-type="dfn" href="#dfn-begrip" class="internalDFN" id="r
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/Collection">http://nlbegrip.nl/sbb/id/concept/Collection</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/Collection">http://begrippen.nlbegrip.nl/sbb/id/concept/Collection</a></td>
 </tr>
 </tbody></table>
 <p>Een collectie kan beschreven worden aan de hand van verschillende kenmerken. Deze zijn in de volgende tabel weergegeven.</p>
@@ -1981,7 +2052,7 @@ Een <strong><a data-link-type="dfn" href="#dfn-begrip" class="internalDFN" id="r
 </tr>
 </thead>
 <tbody><tr>
-<td><a data-link-type="dfn" href="#dfn-term" class="internalDFN" id="ref-for-dfn-term-4">term</a></td>
+<td><a data-link-type="dfn" href="#dfn-label" class="internalDFN" id="ref-for-dfn-label-4">label</a></td>
 <td>1..*</td>
 <td>Tekst</td>
 </tr>
@@ -2018,12 +2089,12 @@ Een <strong><a data-link-type="dfn" href="#dfn-begrip" class="internalDFN" id="r
 </tr>
 <tr>
 <td><strong>uri</strong></td>
-<td><a href="http://nlbegrip.nl/sbb/id/concept/Member">http://nlbegrip.nl/sbb/id/concept/Member</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/Member">http://begrippen.nlbegrip.nl/sbb/id/concept/Member</a></td>
 </tr>
 </tbody></table>
-</section><section id="uitbreidingen"><div class="header-wrapper"><h3 id="x2-5-uitbreidingen"><bdi class="secno">2.5 </bdi>Uitbreidingen</h3><a class="self-link" href="#uitbreidingen" aria-label="Permalink for Section 2.5"></a></div>
+</section><section id="uitbreidingen"><div class="header-wrapper"><h3 id="x2-6-uitbreidingen"><bdi class="secno">2.6 </bdi>Uitbreidingen</h3><a class="self-link" href="#uitbreidingen" aria-label="Permalink for Section 2.6"></a></div>
 <p>Soms is het nuttig om de samenhang van begrippen gedetailleerder te beschrijven dan in standaard thesauri mogelijk is. Dat kan door begrippen nader te typeren. </p>
-<section id="skos-lex"><div class="header-wrapper"><h4 id="x2-5-1-skos-lex"><bdi class="secno">2.5.1 </bdi>Skos-lex</h4><a class="self-link" href="#skos-lex" aria-label="Permalink for Section 2.5.1"></a></div>
+<section id="skos-lex"><div class="header-wrapper"><h4 id="x2-6-1-skos-lex"><bdi class="secno">2.6.1 </bdi>Skos-lex</h4><a class="self-link" href="#skos-lex" aria-label="Permalink for Section 2.6.1"></a></div>
 <p><cite><a data-matched-text="[[[SKOSLEX]]]" href="http://bp4mc2.org/def/skos-lex" id="ref-for-index-term-skos-lex-1">Skos-lex</a></cite> is opgezet om begrippen juridisch te kunnen typeren. Skos-lex valt buiten de scope van standaard glossaries, taxonomieën en thesauri. De beschrijving van skos-lex is hier opgenomen als voorbeeld van een uitbreiding op een standaard thesaurus. Skos-lex wordt onder andere toegepast bij de Nationale Politie, Belastingdienst, Notariaat en Kadaster en bij het Digitaal Stelsel Omgevingswet en het Afsprakenstelsel Zorgeloos Vastgoed. 
 Door begrippen te typeren als act (rechtshandeling), actor (uitvoerder van die handeling), agent (formele vastlegger van die handeling) en object (van handeling) wordt de (juridische) samenhang duidelijk. Zo kan in een beschrijving van de verkoop van een huis worden aangegeven welke begrippen de rechtshandeling beschrijven (koop/verkoop), welke begrippen de actoren beschrijven (koper, verkoper), welke begrippen de agent (notaris) beschrijven en welke begrippen het object van handeling (onroerende zaak) beschrijven. Dit patroon is relevant voor vrijwel alle overheidsorganisaties die voorvallen of overeenkomsten met rechtsgevolgen vastleggen, van de politie die feiten met daders en slachtoffers vastlegt tot een ambtenaar van de burgerlijke stand die een geboorteakte opmaakt en een notaris die een stichtingsakte opstelt. </p>
 <ul>
@@ -2034,9 +2105,9 @@ Door begrippen te typeren als act (rechtshandeling), actor (uitvoerder van die h
   <section id="H3" data-format="markdown"><div class="header-wrapper"><h2 id="x3-toepassingsprofiel-in-ld"><bdi class="secno">3. </bdi>Toepassingsprofiel in LD</h2><a class="self-link" href="#H3" aria-label="Permalink for Section 3."></a></div>
 <p>Dit hoofdstuk beschrijft de set aan afspraken voor het toepassen van het het conceptuele model (zoals beschreven in hoofdstuk 2) in Linked Data. Deze afspraken zijn vastgelegd in een RDF model.
 Een RDF model bestaat uit twee delen; 1) een RDF vocabulaire en 2) een RDF Shapesgraph. Als RDF vocabulaire hanteren we bestaande W3C standaarden. Welke dit zijn en hoe deze zich verhouden tot het conceptueel model wordt beschreven in sectie <a href="#taalbinding">Taalbinding</a>. Hoe deze vocabulaires toegepast moeten worden, conform het conceptuele model, is beschreven in sectie <a href="#specificatie">Specificatie</a>.</p>
-<section id="overzicht"><div class="header-wrapper"><h3 id="x3-1-overzicht"><bdi class="secno">3.1 </bdi>Overzicht</h3><a class="self-link" href="#overzicht" aria-label="Permalink for Section 3.1"></a></div>
-<p>Het onderstaande diagram is een visualisatie van de shapesgraph. Om het diagram overzichtelijk te houden zijn een aantal relaties weggelaten of verkort weergegeven. Zo zien we bijvoorbeeld alleen de abstracte relatie 'semantische relatie' terug en niet de verschillende specialisaties daarvan zoals <a data-link-type="dfn" href="#dfn-heeft-bovenliggend-begrip" class="internalDFN" id="ref-for-dfn-heeft-bovenliggend-begrip-4">heeft bovenliggend begrip</a> of <a data-link-type="dfn" href="#dfn-is-exact-overeenkomstig" class="internalDFN" id="ref-for-dfn-is-exact-overeenkomstig-2">is exact overeenkomstig</a>.
-<img src="respec/media/skosapnl.png" alt="skosapnl" height="458" width="1219"></p>
+<section id="overzicht-0"><div class="header-wrapper"><h3 id="x3-1-overzicht"><bdi class="secno">3.1 </bdi>Overzicht</h3><a class="self-link" href="#overzicht-0" aria-label="Permalink for Section 3.1"></a></div>
+<p>Het onderstaande diagram geeft een overzicht van de taalbinding in RDF die bij het conceptuele model gedefinieerd is.
+<img src="respec/media/skosapnl.png" alt="skosapnl" height="626" width="1142"></p>
 </section><section id="taalbinding"><div class="header-wrapper"><h3 id="x3-2-taalbinding"><bdi class="secno">3.2 </bdi>Taalbinding</h3><a class="self-link" href="#taalbinding" aria-label="Permalink for Section 3.2"></a></div>
 <p>Voor het representeren van de conceptuele elementen in RDF maken we gebruik van de volgende vocabulaires 1) RDF(s), 2) SKOS, 3) DCTERMS, 4) FOAF en 5) ISOTHES. We geven de taalbinding  voor types en kenmerken apart in [#types] en [#eigenschappen] </p>
 <section id="types"><div class="header-wrapper"><h4 id="x3-2-1-types"><bdi class="secno">3.2.1 </bdi>Types</h4><a class="self-link" href="#types" aria-label="Permalink for Section 3.2.1"></a></div>
@@ -2052,7 +2123,7 @@ Een RDF model bestaat uit twee delen; 1) een RDF vocabulaire en 2) een RDF Shape
 <td><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></td>
 </tr>
 <tr>
-<td><a data-link-type="dfn" href="#dfn-begrippenkader" class="internalDFN" id="ref-for-dfn-begrippenkader-6">begrippenkader</a></td>
+<td><a data-link-type="dfn" href="#dfn-begrippenkader" class="internalDFN" id="ref-for-dfn-begrippenkader-7">begrippenkader</a></td>
 <td><a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">skos:ConceptScheme</a></td>
 </tr>
 <tr>
@@ -2081,7 +2152,7 @@ Een brondocument heeft niet één definitieve taalbinding. Dit komt omdat er vee
 </tr>
 </thead>
 <tbody><tr>
-<td><a data-link-type="dfn" href="#dfn-term" class="internalDFN" id="ref-for-dfn-term-5">term</a></td>
+<td><a data-link-type="dfn" href="#dfn-label" class="internalDFN" id="ref-for-dfn-label-5">label</a></td>
 <td><a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
 </tr>
 <tr>
@@ -2109,6 +2180,10 @@ Een brondocument heeft niet één definitieve taalbinding. Dit komt omdat er vee
 <td><a href="http://www.w3.org/2004/02/skos/core#inScheme">skos:inScheme</a></td>
 </tr>
 <tr>
+<td><a data-link-type="dfn" href="#dfn-is-topbegrip-van" class="internalDFN" id="ref-for-dfn-is-topbegrip-van-2">is topbegrip van</a></td>
+<td><a href="http://www.w3.org/2004/02/skos/core#isTopConceptOf">skos:isTopConceptOf</a></td>
+</tr>
+<tr>
 <td><a data-link-type="dfn" href="#dfn-uitleg" class="internalDFN" id="ref-for-dfn-uitleg-6">uitleg</a></td>
 <td><a href="http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a></td>
 </tr>
@@ -2121,7 +2196,7 @@ Een brondocument heeft niet één definitieve taalbinding. Dit komt omdat er vee
 <td><a href="http://purl.org/dc/terms/source">dct:source</a></td>
 </tr>
 <tr>
-<td><a data-link-type="dfn" href="#dfn-heeft-bovenliggend-begrip" class="internalDFN" id="ref-for-dfn-heeft-bovenliggend-begrip-5">heeft bovenliggend begrip</a></td>
+<td><a data-link-type="dfn" href="#dfn-heeft-bovenliggend-begrip" class="internalDFN" id="ref-for-dfn-heeft-bovenliggend-begrip-4">heeft bovenliggend begrip</a></td>
 <td><a href="http://www.w3.org/2004/02/skos/core#broader">skos:broader</a></td>
 </tr>
 <tr>
@@ -2165,7 +2240,7 @@ Een brondocument heeft niet één definitieve taalbinding. Dit komt omdat er vee
 <td><a href="http://www.w3.org/2004/02/skos/core#closeMatch">skos:closeMatch</a></td>
 </tr>
 <tr>
-<td><a data-link-type="dfn" href="#dfn-is-exact-overeenkomstig" class="internalDFN" id="ref-for-dfn-is-exact-overeenkomstig-3">is exact overeenkomstig</a></td>
+<td><a data-link-type="dfn" href="#dfn-is-exact-overeenkomstig" class="internalDFN" id="ref-for-dfn-is-exact-overeenkomstig-2">is exact overeenkomstig</a></td>
 <td><a href="http://www.w3.org/2004/02/skos/core#exactMatch">skos:exactMatch</a></td>
 </tr>
 <tr>
@@ -2231,7 +2306,7 @@ Een brondocument heeft niet één definitieve taalbinding. Dit komt omdat er vee
 </tr>
 </thead>
 <tbody><tr>
-<td><a data-link-type="dfn" href="#dfn-term" class="internalDFN" id="ref-for-dfn-term-6">term</a></td>
+<td><a data-link-type="dfn" href="#dfn-label" class="internalDFN" id="ref-for-dfn-label-6">label</a></td>
 <td><a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
 <td>1..*</td>
 <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a></td>
@@ -2291,6 +2366,12 @@ Een brondocument heeft niet één definitieve taalbinding. Dit komt omdat er vee
 <td><a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">skos:ConceptScheme</a></td>
 </tr>
 <tr>
+<td><a data-link-type="dfn" href="#dfn-is-topbegrip-van" class="internalDFN" id="ref-for-dfn-is-topbegrip-van-3">is topbegrip van</a></td>
+<td><a href="http://www.w3.org/2004/02/skos/core#isTopConceptOf">skos:isTopConceptOf</a></td>
+<td>0..*</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">skos:ConceptScheme</a></td>
+</tr>
+<tr>
 <td><a data-link-type="dfn" href="#dfn-uitleg" class="internalDFN" id="ref-for-dfn-uitleg-8">uitleg</a></td>
 <td><a href="http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a></td>
 <td>0..*</td>
@@ -2309,7 +2390,7 @@ Een brondocument heeft niet één definitieve taalbinding. Dit komt omdat er vee
 <td><a href="http://www.w3.org/ns/shacl#BlankNodeOrIRI">sh:BlankNodeOrIRI</a></td>
 </tr>
 <tr>
-<td><a data-link-type="dfn" href="#dfn-heeft-bovenliggend-begrip" class="internalDFN" id="ref-for-dfn-heeft-bovenliggend-begrip-6">heeft bovenliggend begrip</a></td>
+<td><a data-link-type="dfn" href="#dfn-heeft-bovenliggend-begrip" class="internalDFN" id="ref-for-dfn-heeft-bovenliggend-begrip-5">heeft bovenliggend begrip</a></td>
 <td><a href="http://www.w3.org/2004/02/skos/core#broader">skos:broader</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></td>
@@ -2375,7 +2456,7 @@ Een brondocument heeft niet één definitieve taalbinding. Dit komt omdat er vee
 <td><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></td>
 </tr>
 <tr>
-<td><a data-link-type="dfn" href="#dfn-is-exact-overeenkomstig" class="internalDFN" id="ref-for-dfn-is-exact-overeenkomstig-4">is exact overeenkomstig</a></td>
+<td><a data-link-type="dfn" href="#dfn-is-exact-overeenkomstig" class="internalDFN" id="ref-for-dfn-is-exact-overeenkomstig-3">is exact overeenkomstig</a></td>
 <td><a href="http://www.w3.org/2004/02/skos/core#exactMatch">skos:exactMatch</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></td>
@@ -2423,7 +2504,7 @@ Een brondocument heeft niet één definitieve taalbinding. Dit komt omdat er vee
 <td><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></td>
 </tr>
 <tr>
-<td><a data-link-type="dfn" href="#dfn-term" class="internalDFN" id="ref-for-dfn-term-7">term</a></td>
+<td><a data-link-type="dfn" href="#dfn-label" class="internalDFN" id="ref-for-dfn-label-7">label</a></td>
 <td><a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a></td>
@@ -2441,10 +2522,10 @@ Een brondocument heeft niet één definitieve taalbinding. Dit komt omdat er vee
 </tr>
 </thead>
 <tbody><tr>
-<td><a data-link-type="dfn" href="#dfn-citeertitel" class="internalDFN" id="ref-for-dfn-citeertitel-4">citeertitel</a></td>
-<td><a href="http://purl.org/dc/terms/bibliographicCitation">dct:bibliographicCitation</a></td>
-<td>0..*</td>
-<td><a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+<td><a data-link-type="dfn" href="#dfn-label" class="internalDFN" id="ref-for-dfn-label-8">label</a></td>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
+<td>1..*</td>
+<td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a></td>
 </tr>
 <tr>
 <td><a data-link-type="dfn" href="#dfn-uitleg" class="internalDFN" id="ref-for-dfn-uitleg-9">uitleg</a></td>
@@ -2465,10 +2546,10 @@ Een brondocument heeft niet één definitieve taalbinding. Dit komt omdat er vee
 <td><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></td>
 </tr>
 <tr>
-<td><a data-link-type="dfn" href="#dfn-term" class="internalDFN" id="ref-for-dfn-term-8">term</a></td>
-<td><a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
-<td>1..*</td>
-<td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a></td>
+<td><a data-link-type="dfn" href="#dfn-citeertitel" class="internalDFN" id="ref-for-dfn-citeertitel-4">citeertitel</a></td>
+<td><a href="http://purl.org/dc/terms/bibliographicCitation">dct:bibliographicCitation</a></td>
+<td>0..*</td>
+<td><a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
 </tr>
 </tbody></table>
 </section><section id="specificatie-collectie"><div class="header-wrapper"><h4 id="x3-3-4-specificatie-collectie"><bdi class="secno">3.3.4 </bdi>Specificatie Collectie</h4><a class="self-link" href="#specificatie-collectie" aria-label="Permalink for Section 3.3.4"></a></div>
@@ -2483,7 +2564,7 @@ Een brondocument heeft niet één definitieve taalbinding. Dit komt omdat er vee
 </tr>
 </thead>
 <tbody><tr>
-<td><a data-link-type="dfn" href="#dfn-term" class="internalDFN" id="ref-for-dfn-term-9">term</a></td>
+<td><a data-link-type="dfn" href="#dfn-label" class="internalDFN" id="ref-for-dfn-label-9">label</a></td>
 <td><a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
 <td>1..*</td>
 <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a></td>
@@ -2527,7 +2608,7 @@ Een brondocument heeft niet één definitieve taalbinding. Dit komt omdat er vee
 </ul>
 <p></p></div>
 
-<div class="practice advisement"><a class="marker self-link" href="#bp-het-wordt-aangeraden-om-elke-resource-te-voorzien-van-een-term-die-als-technische-naam-kan-functioneren-met-zo-n-term-kunnen-ook-interfaces-overweg-die-de-verschillende-soorten-termen-voorkeursterm-alternatieve-term-zoekterm-niet-kunnen-onderscheiden-daarmee-krijgt-iedere-resource-een-voor-mensen-leesbare-term-ongeacht-de-context"><bdi lang="en">Best Practice 3</bdi></a>: <span class="practicelab" id="bp-het-wordt-aangeraden-om-elke-resource-te-voorzien-van-een-term-die-als-technische-naam-kan-functioneren-met-zo-n-term-kunnen-ook-interfaces-overweg-die-de-verschillende-soorten-termen-voorkeursterm-alternatieve-term-zoekterm-niet-kunnen-onderscheiden-daarmee-krijgt-iedere-resource-een-voor-mensen-leesbare-term-ongeacht-de-context">Het wordt aangeraden om elke resource te voorzien van een term die als 'technische naam' kan functioneren. Met zo'n term kunnen ook interfaces overweg die de verschillende soorten termen (voorkeursterm, alternatieve term, zoekterm) niet kunnen onderscheiden.   Daarmee krijgt iedere resource een voor mensen leesbare term, ongeacht de context.</span><p class="practicedesc"></p><p>Anders dan bij de voorkeursterm, is het verstandig om wel context in het label mee te geven door bijvoorbeeld tussen haakjes deze context weert te geven, zoals bij <i>bank (financiële instelling)</i>. Daardoor onststaat geen verwarring in het kader van homoniemen. Het algemene label bevordert tevens de compatibiliteit met bestaande tools. Het is denkbaar dat tools deze term afleiden van bijvoorbeeld de (Engelse) voorkeursterm of de code.</p></div>
+<div class="practice advisement"><a class="marker self-link" href="#bp-het-wordt-aangeraden-om-elke-resource-te-voorzien-van-een-term-die-als-technische-naam-kan-functioneren-met-zo-n-term-kunnen-ook-interfaces-overweg-die-de-verschillende-soorten-termen-voorkeursterm-alternatieve-term-zoekterm-niet-kunnen-onderscheiden-daarmee-krijgt-iedere-resource-een-voor-mensen-leesbare-term-ongeacht-de-context"><bdi lang="en">Best Practice 3</bdi></a>: <span class="practicelab" id="bp-het-wordt-aangeraden-om-elke-resource-te-voorzien-van-een-term-die-als-technische-naam-kan-functioneren-met-zo-n-term-kunnen-ook-interfaces-overweg-die-de-verschillende-soorten-termen-voorkeursterm-alternatieve-term-zoekterm-niet-kunnen-onderscheiden-daarmee-krijgt-iedere-resource-een-voor-mensen-leesbare-term-ongeacht-de-context">Het wordt aangeraden om elke resource te voorzien van een term die als 'technische naam' kan functioneren. Met zo'n term kunnen ook interfaces overweg die de verschillende soorten termen (voorkeursterm, alternatieve term, zoekterm) niet kunnen onderscheiden. Daarmee krijgt iedere resource een voor mensen leesbare term, ongeacht de context.</span><p class="practicedesc"></p><p>Anders dan bij de voorkeursterm, is het verstandig om wel context in het label mee te geven door bijvoorbeeld tussen haakjes deze context weert te geven, zoals bij <i>bank (financiële instelling)</i>. Daardoor onststaat geen verwarring in het kader van homoniemen. Het algemene label bevordert tevens de compatibiliteit met bestaande tools. Het is denkbaar dat tools deze term afleiden van bijvoorbeeld de (Engelse) voorkeursterm of de code.</p></div>
 
 </section><section id="hierarchische-relaties"><div class="header-wrapper"><h4 id="x4-1-2-hierarchische-relaties"><bdi class="secno">4.1.2 </bdi>Hierarchische relaties</h4><a class="self-link" href="#hierarchische-relaties" aria-label="Permalink for Section 4.1.2"></a></div>
 <p>Het is toegestaan dat één begrip meerdere bovenliggende begrippen kent. Er is zo sprake van een <a data-link-type="dfn" href="#dfn-polyhierarchy" class="internalDFN" id="ref-for-dfn-polyhierarchy-1">polyhierarchy</a>. Een polyhierarchie kan nuttig zijn omdat het een intuitieve manier biedt om een begrip in meerdere categorieën te plaatsen. Veelal zie je dit dan ook toegepast in e-commerce. Hierdoor kunnen gebruikers via verschillende paden een bepaald product vinden. Toch wordt geadviseert om hier terughoudend mee te zijn en bij het maken rekening te blijven houden met best-practices en standaarden op dit gebied.</p>
@@ -2581,8 +2662,8 @@ ex:GemeentewetArt2 a foaf:Document ;
 <p>De bron zelf kan op verschillende manieren beschreven worden, dat ligt immers bij de bronhouder. Er bestaan verschillende standaard vocabulaires die een oplossing hebben voor het beschrijven van en verwijzen naar bronnen, ook zonder de term bron te gebruiken. Denk bijvoorbeeld aan [<cite><a class="bibref" data-link-type="biblio" href="#bib-dcterms" title="DCMI Metadata Terms">DCTERMS</a></cite>], <a href="http://www.sparontologies.net/ontologies/frbr">FRBR</a> <cite><a data-matched-text="[[[WETTENNL]]]" href="https://linkeddata.overheid.nl/terms/" id="ref-for-index-term-wetten-nl-1">Wetten.nl</a></cite> en [<cite><a class="bibref" data-link-type="biblio" href="#bib-foaf" title="FOAF Vocabulary Specification 0.99 (Paddington Edition)">FOAF</a></cite>], maar ook nationale of sectorale-standaarden. Er is geen defacto standaard die van toepassing is op wat binnen dit profiel onder bron wordt verstaan. Om die reden leggen we geen restricties op de typering van de resource die we als bron voor een begrip aanmerken.</p>
 <p>Wel biedt dit profiel een aantal aanbevelingen.</p>
 <div class="practice advisement"><a class="marker self-link" href="#bp-het-is-aanbevolen-om-bronnen-te-typeren-als-foaf-document"><bdi lang="en">Best Practice 4</bdi></a>: <span class="practicelab" id="bp-het-is-aanbevolen-om-bronnen-te-typeren-als-foaf-document">Het is aanbevolen om bronnen te typeren als foaf:Document</span><p class="practicedesc">Vooral omdat dit de meest laagdrempelige typering is aan de hand van bestaande vocabulaire.</p></div>
-<div class="practice advisement"><a class="marker self-link" href="#bp-het-aangeraden-om-de-dcterms-vocabulaire-te-gebruiken-om-bronnen-te-beschrijven"><bdi lang="en">Best Practice 5</bdi></a>: <span class="practicelab" id="bp-het-aangeraden-om-de-dcterms-vocabulaire-te-gebruiken-om-bronnen-te-beschrijven">Het aangeraden om de [<cite><a class="bibref" data-link-type="biblio" href="#bib-dcterms" title="DCMI Metadata Terms">DCTERMS</a></cite>] vocabulaire te gebruiken om bronnen te beschrijven.</span><p class="practicedesc"></p></div>
-<div class="practice advisement"><a class="marker self-link" href="#bp-het-is-aanbevolen-om-bronnen-met-_dct-type_-te-classificeren"><bdi lang="en">Best Practice 6</bdi></a>: <span class="practicelab" id="bp-het-is-aanbevolen-om-bronnen-met-_dct-type_-te-classificeren">Het is aanbevolen om bronnen met _dct:type_ te classificeren</span><p class="practicedesc">Dit doen we aan de hand van een gecontroleerde vocabulaire, ofwel een classificatie schema. Een voorbeeld van zo'n classificatie schema is <a href="http://id.loc.gov/vocabulary/marcgt">MARC Genre/Terms Scheme</a>. Dit is in aanvulling op een rdf:type typering.</p></div>
+<div class="practice advisement"><a class="marker self-link" href="#bp-het-is-aanbevolen-om-de-dcterms-vocabulaire-te-gebruiken-om-bronnen-te-beschrijven"><bdi lang="en">Best Practice 5</bdi></a>: <span class="practicelab" id="bp-het-is-aanbevolen-om-de-dcterms-vocabulaire-te-gebruiken-om-bronnen-te-beschrijven">Het is aanbevolen om de [<cite><a class="bibref" data-link-type="biblio" href="#bib-dcterms" title="DCMI Metadata Terms">DCTERMS</a></cite>] vocabulaire te gebruiken om bronnen te beschrijven.</span><p class="practicedesc"></p></div>
+<div class="practice advisement"><a class="marker self-link" href="#bp-het-is-aanbevolen-om-bronnen-met-_dct-type_-te-classificeren"><bdi lang="en">Best Practice 6</bdi></a>: <span class="practicelab" id="bp-het-is-aanbevolen-om-bronnen-met-_dct-type_-te-classificeren">Het is aanbevolen om bronnen met _dct:type_ te classificeren</span><p class="practicedesc">Dit doen we aan de hand van een gecontroleerde vocabulaire, ofwel een classificatie schema. Een voorbeeld van zo'n classificatie schema is <a href="http://id.loc.gov/vocabulary/marcgt">MARC Genre/Terms Scheme</a>. Dit is in aanvulling op een <code>rdf:type</code> typering.</p></div>
 
 </section></section><section id="harmonisatie-en-hergebruik"><div class="header-wrapper"><h3 id="x4-3-harmonisatie-en-hergebruik"><bdi class="secno">4.3 </bdi>Harmonisatie en hergebruik</h3><a class="self-link" href="#harmonisatie-en-hergebruik" aria-label="Permalink for Section 4.3"></a></div>
 <p>Om data goed te kunnen gebruiken, maar zeker ook om data te combineren met andere data is het belangrijk om deze te begrijpen. 
@@ -2709,93 +2790,97 @@ ex2:Land a skos:Concept ;
     <ul class="index">
     <li>
       <a class="index-term" href="#dfn-alternatieve-term">alternatieve term</a> 
-    <span class="print-only">§2.2.1.1</span></li><li>
+    <span class="print-only">§2.3.1.1</span></li><li>
       <a class="index-term" href="#dfn-begrip">begrip</a> 
-    <span class="print-only">§2.2</span></li><li>
+    <span class="print-only">§2.3</span></li><li>
       <a class="index-term" href="#dfn-begrippenkader">begrippenkader</a> 
-    <span class="print-only">§2.1</span></li><li>
+    <span class="print-only">§2.2</span></li><li>
       <a class="index-term" href="#dfn-begrippenlijst">begrippenlijst</a> 
-    <span class="print-only">§2.2.1</span></li><li>
+    <span class="print-only">§2.3.1</span></li><li>
       <a class="index-term" href="#dfn-bevat">bevat</a> 
-    <span class="print-only">§2.4</span></li><li>
+    <span class="print-only">§2.5</span></li><li>
       <a class="index-term" href="#dfn-bron">bron</a> 
-    <span class="print-only">§2.3</span></li><li>
-      <a class="index-term" href="#dfn-brondocument">brondocument</a> 
-    <span class="print-only">§2.3</span></li><li>
-      <a class="index-term" href="#dfn-citeertitel">citeertitel</a> 
-    <span class="print-only">§2.3</span></li><li>
-      <a class="index-term" href="#dfn-code">code</a> 
-    <span class="print-only">§2.2.1.3</span></li><li>
-      <a class="index-term" href="#dfn-collectie">collectie</a> 
     <span class="print-only">§2.4</span></li><li>
+      <a class="index-term" href="#dfn-brondocument">brondocument</a> 
+    <span class="print-only">§2.4</span></li><li>
+      <a class="index-term" href="#dfn-citeertitel">citeertitel</a> 
+    <span class="print-only">§2.4</span></li><li>
+      <a class="index-term" href="#dfn-code">code</a> 
+    <span class="print-only">§2.3.1.3</span></li><li>
+      <a class="index-term" href="#dfn-collectie">collectie</a> 
+    <span class="print-only">§2.5</span></li><li>
       <a class="index-term" href="#dfn-definitie">definitie</a> 
-    <span class="print-only">§2.2.1.2</span></li><li>
+    <span class="print-only">§2.3.1.2</span></li><li>
       <a class="index-term" href="#dfn-extern-begrip">extern begrip</a> 
     <span class="print-only">§4.3</span></li><li>
       <a class="index-term" href="#dfn-harmonisatierelatie">harmonisatierelatie</a> 
-    <span class="print-only">§2.2.4</span></li><li>
+    <span class="print-only">§2.3.4</span></li><li>
       <a class="index-term" href="#dfn-heeft-bovenliggend-begrip">heeft bovenliggend begrip</a> 
-    <span class="print-only">§2.2.2</span></li><li>
+    <span class="print-only">§2.3.2</span></li><li>
       <a class="index-term" href="#dfn-heeft-onderliggend-begrip">heeft onderliggend begrip</a> 
-    <span class="print-only">§2.2.2</span></li><li>
+    <span class="print-only">§2.3.2</span></li><li>
       <a class="index-term" href="#dfn-heeft-topbegrip">heeft topbegrip</a> 
-    <span class="print-only">§2.1</span></li><li>
-      <a class="index-term" href="#dfn-historie-notitie">historie notitie</a> 
-    <span class="print-only">§2.2.1.2</span></li><li>
-      <a class="index-term" href="#dfn-in-kader">in kader</a> 
     <span class="print-only">§2.2</span></li><li>
+      <a class="index-term" href="#dfn-historie-notitie">historie notitie</a> 
+    <span class="print-only">§2.3.1.2</span></li><li>
+      <a class="index-term" href="#dfn-in-kader">in kader</a> 
+    <span class="print-only">§2.3</span></li><li>
       <a class="index-term" href="#dfn-is-categorie-van">is categorie van</a> 
-    <span class="print-only">§2.2.3.1</span></li><li>
+    <span class="print-only">§2.3.3.1</span></li><li>
       <a class="index-term" href="#dfn-is-exact-overeenkomstig">is exact overeenkomstig</a> 
-    <span class="print-only">§2.2.4</span></li><li>
+    <span class="print-only">§2.3.4</span></li><li>
       <a class="index-term" href="#dfn-is-exemplaar-van">is exemplaar van</a> 
-    <span class="print-only">§2.2.3.1</span></li><li>
+    <span class="print-only">§2.3.3.1</span></li><li>
       <a class="index-term" href="#dfn-is-generalisatie-van">is generalisatie van</a> 
-    <span class="print-only">§2.2.3.1</span></li><li>
+    <span class="print-only">§2.3.3.1</span></li><li>
       <a class="index-term" href="#dfn-is-gerelateerd-aan">is gerelateerd aan</a> 
-    <span class="print-only">§2.2.3</span></li><li>
+    <span class="print-only">§2.3.3</span></li><li>
       <a class="index-term" href="#dfn-is-onderdeel-van">is onderdeel van</a> 
-    <span class="print-only">§2.2.3.1</span></li><li>
+    <span class="print-only">§2.3.3.1</span></li><li>
       <a class="index-term" href="#dfn-is-overeenkomstig-bovenliggend">is overeenkomstig bovenliggend</a> 
-    <span class="print-only">§2.2.4</span></li><li>
+    <span class="print-only">§2.3.4</span></li><li>
       <a class="index-term" href="#dfn-is-overeenkomstig-onderliggend">is overeenkomstig onderliggend</a> 
-    <span class="print-only">§2.2.4</span></li><li>
+    <span class="print-only">§2.3.4</span></li><li>
       <a class="index-term" href="#dfn-is-overeenkomstig-verwant">is overeenkomstig verwant</a> 
-    <span class="print-only">§2.2.4</span></li><li>
+    <span class="print-only">§2.3.4</span></li><li>
       <a class="index-term" href="#dfn-is-specialisatie-van">is specialisatie van</a> 
-    <span class="print-only">§2.2.3.1</span></li><li>
+    <span class="print-only">§2.3.3.1</span></li><li>
+      <a class="index-term" href="#dfn-is-topbegrip-van">is topbegrip van</a> 
+    <span class="print-only">§2.3</span></li><li>
       <a class="index-term" href="#dfn-is-vrijwel-overeenkomstig">is vrijwel overeenkomstig</a> 
-    <span class="print-only">§2.2.4</span></li><li>
+    <span class="print-only">§2.3.4</span></li><li>
+      <a class="index-term" href="#dfn-label">label</a> 
+    <span class="print-only">§2.3.1.1</span></li><li>
       <a class="index-term" href="#dfn-notitie">notitie</a> 
-    <span class="print-only">§2.2.1.2</span></li><li>
+    <span class="print-only">§2.3.1.2</span></li><li>
       <a class="index-term" href="#dfn-omvat">omvat</a> 
-    <span class="print-only">§2.2.3.1</span></li><li>
+    <span class="print-only">§2.3.3.1</span></li><li>
       <a class="index-term" href="#dfn-polyhierarchy">polyhierarchy</a> 
     <span class="print-only">§4.1.2</span></li><li>
       <a class="index-term" href="#dfn-redactionele-notitie">redactionele notitie</a> 
-    <span class="print-only">§2.2.1.2</span></li><li>
+    <span class="print-only">§2.3.1.2</span></li><li>
       <a class="index-term" href="#dfn-soort">soort</a> 
-    <span class="print-only">§2.3</span></li><li>
+    <span class="print-only">§2.4</span></li><li>
       <a class="index-term" href="#dfn-taxonomie">taxonomie</a> 
-    <span class="print-only">§2.2.2</span></li><li>
+    <span class="print-only">§2.3.2</span></li><li>
       <a class="index-term" href="#dfn-term">term</a> 
-    <span class="print-only">§2.2.1.1</span></li><li>
+    <span class="print-only">§2.3.1.1</span></li><li>
       <a class="index-term" href="#dfn-thesaurus">thesaurus</a> 
-    <span class="print-only">§2.2.3</span></li><li>
+    <span class="print-only">§2.3.3</span></li><li>
       <a class="index-term" href="#dfn-toelichting">toelichting</a> 
-    <span class="print-only">§2.2.1.2</span></li><li>
+    <span class="print-only">§2.3.1.2</span></li><li>
       <a class="index-term" href="#dfn-uitleg">uitleg</a> 
-    <span class="print-only">§2.2.1.2</span></li><li>
+    <span class="print-only">§2.3.1.2</span></li><li>
       <a class="index-term" href="#dfn-url">url</a> 
-    <span class="print-only">§2.3</span></li><li>
+    <span class="print-only">§2.4</span></li><li>
       <a class="index-term" href="#dfn-voorbeeld">voorbeeld</a> 
-    <span class="print-only">§2.2.1.2</span></li><li>
+    <span class="print-only">§2.3.1.2</span></li><li>
       <a class="index-term" href="#dfn-voorkeursterm">voorkeursterm</a> 
-    <span class="print-only">§2.2.1.1</span></li><li>
+    <span class="print-only">§2.3.1.1</span></li><li>
       <a class="index-term" href="#dfn-wijzigingsnotitie">wijzigingsnotitie</a> 
-    <span class="print-only">§2.2.1.2</span></li><li>
+    <span class="print-only">§2.3.1.2</span></li><li>
       <a class="index-term" href="#dfn-zoekterm">zoekterm</a> 
-    <span class="print-only">§2.2.1.1</span></li>
+    <span class="print-only">§2.3.1.1</span></li>
   </ul>
   </section><section id="index-defined-elsewhere"><div class="header-wrapper"><h3 id="a-2-terms-defined-by-reference"><bdi class="secno">A.2 </bdi>Terms defined by reference</h3><a class="self-link" href="#index-defined-elsewhere" aria-label="Permalink for Appendix A.2"></a></div>
     
@@ -2846,15 +2931,15 @@ ex2:Land a skos:Concept ;
 </tr>
 <tr>
 <td>beg-sbb:</td>
-<td><a href="http://nlbegrip.nl/sbb/id/begrip/">http://nlbegrip.nl/sbb/id/begrip/</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/sbb/id/begrip/">http://begrippen.nlbegrip.nl/sbb/id/begrip/</a></td>
 </tr>
 <tr>
 <td>begkr-sbb:</td>
-<td><a href="http://nlbegrip.nl/sbb/id/begrippenkader/">http://nlbegrip.nl/sbb/id/begrippenkader/</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/id/begrippenkader/">http://begrippen.nlbegrip.nl/id/begrippenkader/</a></td>
 </tr>
 <tr>
 <td>skosapnl:</td>
-<td><a href="http://nlbegrip.nl/def/skosapnl#">http://nlbegrip.nl/def/skosapnl#</a></td>
+<td><a href="http://begrippen.nlbegrip.nl/def/skosapnl#">http://begrippen.nlbegrip.nl/def/skosapnl#</a></td>
 </tr>
 <tr>
 <td>isothes:</td>
@@ -2952,13 +3037,13 @@ ex2:Land a skos:Concept ;
     <li>
     <a href="#ref-for-dfn-begrippenkader-1" title="§ 2. Conceptuele beschrijving">§ 2. Conceptuele beschrijving</a> <a href="#ref-for-dfn-begrippenkader-2" title="Reference 2">(2)</a> 
   </li><li>
-    <a href="#ref-for-dfn-begrippenkader-3" title="§ 2.1 Begrippenkader">§ 2.1 Begrippenkader</a> 
+    <a href="#ref-for-dfn-begrippenkader-3" title="§ 2.2 Begrippenkader">§ 2.2 Begrippenkader</a> 
   </li><li>
-    <a href="#ref-for-dfn-begrippenkader-4" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-begrippenkader-4" title="§ 2.3 Begrip">§ 2.3 Begrip</a> <a href="#ref-for-dfn-begrippenkader-5" title="Reference 2">(2)</a> 
   </li><li>
-    <a href="#ref-for-dfn-begrippenkader-5" title="§ 2.2.1 Begrippenlijst">§ 2.2.1 Begrippenlijst</a> 
+    <a href="#ref-for-dfn-begrippenkader-6" title="§ 2.3.1 Begrippenlijst">§ 2.3.1 Begrippenlijst</a> 
   </li><li>
-    <a href="#ref-for-dfn-begrippenkader-6" title="§ 3.2.1 Types">§ 3.2.1 Types</a> 
+    <a href="#ref-for-dfn-begrippenkader-7" title="§ 3.2.1 Types">§ 3.2.1 Types</a> 
   </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-heeft-topbegrip" aria-label="Links in this document to definition: heeft topbegrip">
@@ -2970,7 +3055,7 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-heeft-topbegrip-1" title="§ 2.1 Begrippenkader">§ 2.1 Begrippenkader</a> 
+    <a href="#ref-for-dfn-heeft-topbegrip-1" title="§ 2.2 Begrippenkader">§ 2.2 Begrippenkader</a> 
   </li><li>
     <a href="#ref-for-dfn-heeft-topbegrip-2" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -2986,15 +3071,15 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-begrip-1" title="§ 2.1 Begrippenkader">§ 2.1 Begrippenkader</a> <a href="#ref-for-dfn-begrip-2" title="Reference 2">(2)</a> <a href="#ref-for-dfn-begrip-3" title="Reference 3">(3)</a> 
+    <a href="#ref-for-dfn-begrip-1" title="§ 2.2 Begrippenkader">§ 2.2 Begrippenkader</a> <a href="#ref-for-dfn-begrip-2" title="Reference 2">(2)</a> <a href="#ref-for-dfn-begrip-3" title="Reference 3">(3)</a> 
   </li><li>
-    <a href="#ref-for-dfn-begrip-4" title="§ 2.2 Begrip">§ 2.2 Begrip</a> <a href="#ref-for-dfn-begrip-5" title="Reference 2">(2)</a> <a href="#ref-for-dfn-begrip-6" title="Reference 3">(3)</a> <a href="#ref-for-dfn-begrip-7" title="Reference 4">(4)</a> <a href="#ref-for-dfn-begrip-8" title="Reference 5">(5)</a> <a href="#ref-for-dfn-begrip-9" title="Reference 6">(6)</a> <a href="#ref-for-dfn-begrip-10" title="Reference 7">(7)</a> <a href="#ref-for-dfn-begrip-11" title="Reference 8">(8)</a> <a href="#ref-for-dfn-begrip-12" title="Reference 9">(9)</a> <a href="#ref-for-dfn-begrip-13" title="Reference 10">(10)</a> <a href="#ref-for-dfn-begrip-14" title="Reference 11">(11)</a> <a href="#ref-for-dfn-begrip-15" title="Reference 12">(12)</a> <a href="#ref-for-dfn-begrip-16" title="Reference 13">(13)</a> <a href="#ref-for-dfn-begrip-17" title="Reference 14">(14)</a> 
+    <a href="#ref-for-dfn-begrip-4" title="§ 2.3 Begrip">§ 2.3 Begrip</a> <a href="#ref-for-dfn-begrip-5" title="Reference 2">(2)</a> <a href="#ref-for-dfn-begrip-6" title="Reference 3">(3)</a> <a href="#ref-for-dfn-begrip-7" title="Reference 4">(4)</a> <a href="#ref-for-dfn-begrip-8" title="Reference 5">(5)</a> <a href="#ref-for-dfn-begrip-9" title="Reference 6">(6)</a> <a href="#ref-for-dfn-begrip-10" title="Reference 7">(7)</a> <a href="#ref-for-dfn-begrip-11" title="Reference 8">(8)</a> <a href="#ref-for-dfn-begrip-12" title="Reference 9">(9)</a> <a href="#ref-for-dfn-begrip-13" title="Reference 10">(10)</a> <a href="#ref-for-dfn-begrip-14" title="Reference 11">(11)</a> <a href="#ref-for-dfn-begrip-15" title="Reference 12">(12)</a> <a href="#ref-for-dfn-begrip-16" title="Reference 13">(13)</a> <a href="#ref-for-dfn-begrip-17" title="Reference 14">(14)</a> 
   </li><li>
-    <a href="#ref-for-dfn-begrip-18" title="§ 2.3 Bron">§ 2.3 Bron</a> <a href="#ref-for-dfn-begrip-19" title="Reference 2">(2)</a> 
+    <a href="#ref-for-dfn-begrip-18" title="§ 2.4 Bron">§ 2.4 Bron</a> <a href="#ref-for-dfn-begrip-19" title="Reference 2">(2)</a> 
   </li><li>
-    <a href="#ref-for-dfn-begrip-20" title="§ 2.4 Collectie">§ 2.4 Collectie</a> 
+    <a href="#ref-for-dfn-begrip-20" title="§ 2.5 Collectie">§ 2.5 Collectie</a> 
   </li><li>
-    <a href="#ref-for-dfn-begrip-21" title="§ 2.5.1 Skos-lex">§ 2.5.1 Skos-lex</a> 
+    <a href="#ref-for-dfn-begrip-21" title="§ 2.6.1 Skos-lex">§ 2.6.1 Skos-lex</a> 
   </li><li>
     <a href="#ref-for-dfn-begrip-22" title="§ 3.2.1 Types">§ 3.2.1 Types</a> 
   </li>
@@ -3008,13 +3093,29 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-in-kader-1" title="§ 2.1 Begrippenkader">§ 2.1 Begrippenkader</a> 
+    <a href="#ref-for-dfn-in-kader-1" title="§ 2.2 Begrippenkader">§ 2.2 Begrippenkader</a> 
   </li><li>
-    <a href="#ref-for-dfn-in-kader-2" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-in-kader-2" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
   </li><li>
     <a href="#ref-for-dfn-in-kader-3" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
     <a href="#ref-for-dfn-in-kader-4" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-is-topbegrip-van" aria-label="Links in this document to definition: is topbegrip van">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-is-topbegrip-van" aria-label="Permalink for definition: is topbegrip van. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-is-topbegrip-van-1" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
+  </li><li>
+    <a href="#ref-for-dfn-is-topbegrip-van-2" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
+  </li><li>
+    <a href="#ref-for-dfn-is-topbegrip-van-3" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
   </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-begrippenlijst" aria-label="Links in this document to definition: begrippenlijst">
@@ -3038,21 +3139,33 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-term-1" title="§ 2.1 Begrippenkader">§ 2.1 Begrippenkader</a> 
+    <a href="#ref-for-dfn-term-1" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-label" aria-label="Links in this document to definition: label">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-label" aria-label="Permalink for definition: label. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-label-1" title="§ 2.2 Begrippenkader">§ 2.2 Begrippenkader</a> 
   </li><li>
-    <a href="#ref-for-dfn-term-2" title="§ 2.3 Bron">§ 2.3 Bron</a> <a href="#ref-for-dfn-term-3" title="Reference 2">(2)</a> 
+    <a href="#ref-for-dfn-label-2" title="§ 2.4 Bron">§ 2.4 Bron</a> <a href="#ref-for-dfn-label-3" title="Reference 2">(2)</a> 
   </li><li>
-    <a href="#ref-for-dfn-term-4" title="§ 2.4 Collectie">§ 2.4 Collectie</a> 
+    <a href="#ref-for-dfn-label-4" title="§ 2.5 Collectie">§ 2.5 Collectie</a> 
   </li><li>
-    <a href="#ref-for-dfn-term-5" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
+    <a href="#ref-for-dfn-label-5" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
-    <a href="#ref-for-dfn-term-6" title="§ 3.3.1 Specificatie Begrippenkader">§ 3.3.1 Specificatie Begrippenkader</a> 
+    <a href="#ref-for-dfn-label-6" title="§ 3.3.1 Specificatie Begrippenkader">§ 3.3.1 Specificatie Begrippenkader</a> 
   </li><li>
-    <a href="#ref-for-dfn-term-7" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+    <a href="#ref-for-dfn-label-7" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
   </li><li>
-    <a href="#ref-for-dfn-term-8" title="§ 3.3.3 Specificatie Bron">§ 3.3.3 Specificatie Bron</a> 
+    <a href="#ref-for-dfn-label-8" title="§ 3.3.3 Specificatie Bron">§ 3.3.3 Specificatie Bron</a> 
   </li><li>
-    <a href="#ref-for-dfn-term-9" title="§ 3.3.4 Specificatie Collectie">§ 3.3.4 Specificatie Collectie</a> 
+    <a href="#ref-for-dfn-label-9" title="§ 3.3.4 Specificatie Collectie">§ 3.3.4 Specificatie Collectie</a> 
   </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-voorkeursterm" aria-label="Links in this document to definition: voorkeursterm">
@@ -3066,9 +3179,9 @@ ex2:Land a skos:Concept ;
     <li>
     <a href="#ref-for-dfn-voorkeursterm-1" title="§ 2. Conceptuele beschrijving">§ 2. Conceptuele beschrijving</a> 
   </li><li>
-    <a href="#ref-for-dfn-voorkeursterm-2" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-voorkeursterm-2" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
   </li><li>
-    <a href="#ref-for-dfn-voorkeursterm-3" title="§ 2.2.1 Begrippenlijst">§ 2.2.1 Begrippenlijst</a> 
+    <a href="#ref-for-dfn-voorkeursterm-3" title="§ 2.3.1 Begrippenlijst">§ 2.3.1 Begrippenlijst</a> 
   </li><li>
     <a href="#ref-for-dfn-voorkeursterm-4" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -3084,7 +3197,7 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-alternatieve-term-1" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-alternatieve-term-1" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
   </li><li>
     <a href="#ref-for-dfn-alternatieve-term-2" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -3102,7 +3215,7 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-zoekterm-1" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-zoekterm-1" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
   </li><li>
     <a href="#ref-for-dfn-zoekterm-2" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -3118,7 +3231,7 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-notitie-1" title="§ 2.2.1.2 Notities">§ 2.2.1.2 Notities</a> 
+    <a href="#ref-for-dfn-notitie-1" title="§ 2.3.1.2 Notities">§ 2.3.1.2 Notities</a> 
   </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-definitie" aria-label="Links in this document to definition: definitie">
@@ -3132,11 +3245,11 @@ ex2:Land a skos:Concept ;
     <li>
     <a href="#ref-for-dfn-definitie-1" title="§ 2. Conceptuele beschrijving">§ 2. Conceptuele beschrijving</a> 
   </li><li>
-    <a href="#ref-for-dfn-definitie-2" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-definitie-2" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
   </li><li>
-    <a href="#ref-for-dfn-definitie-3" title="§ 2.2.1 Begrippenlijst">§ 2.2.1 Begrippenlijst</a> 
+    <a href="#ref-for-dfn-definitie-3" title="§ 2.3.1 Begrippenlijst">§ 2.3.1 Begrippenlijst</a> 
   </li><li>
-    <a href="#ref-for-dfn-definitie-4" title="§ 2.2.2 Taxonomie">§ 2.2.2 Taxonomie</a> 
+    <a href="#ref-for-dfn-definitie-4" title="§ 2.3.2 Taxonomie">§ 2.3.2 Taxonomie</a> 
   </li><li>
     <a href="#ref-for-dfn-definitie-5" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -3154,7 +3267,7 @@ ex2:Land a skos:Concept ;
     <li>
     <a href="#ref-for-dfn-toelichting-1" title="§ 2. Conceptuele beschrijving">§ 2. Conceptuele beschrijving</a> 
   </li><li>
-    <a href="#ref-for-dfn-toelichting-2" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-toelichting-2" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
   </li><li>
     <a href="#ref-for-dfn-toelichting-3" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -3170,13 +3283,13 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-uitleg-1" title="§ 2.1 Begrippenkader">§ 2.1 Begrippenkader</a> 
+    <a href="#ref-for-dfn-uitleg-1" title="§ 2.2 Begrippenkader">§ 2.2 Begrippenkader</a> 
   </li><li>
-    <a href="#ref-for-dfn-uitleg-2" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-uitleg-2" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
   </li><li>
-    <a href="#ref-for-dfn-uitleg-3" title="§ 2.3 Bron">§ 2.3 Bron</a> <a href="#ref-for-dfn-uitleg-4" title="Reference 2">(2)</a> 
+    <a href="#ref-for-dfn-uitleg-3" title="§ 2.4 Bron">§ 2.4 Bron</a> <a href="#ref-for-dfn-uitleg-4" title="Reference 2">(2)</a> 
   </li><li>
-    <a href="#ref-for-dfn-uitleg-5" title="§ 2.4 Collectie">§ 2.4 Collectie</a> 
+    <a href="#ref-for-dfn-uitleg-5" title="§ 2.5 Collectie">§ 2.5 Collectie</a> 
   </li><li>
     <a href="#ref-for-dfn-uitleg-6" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -3198,7 +3311,7 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-historie-notitie-1" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-historie-notitie-1" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
   </li><li>
     <a href="#ref-for-dfn-historie-notitie-2" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -3214,7 +3327,7 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-redactionele-notitie-1" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-redactionele-notitie-1" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
   </li><li>
     <a href="#ref-for-dfn-redactionele-notitie-2" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -3230,7 +3343,7 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-voorbeeld-1" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-voorbeeld-1" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
   </li><li>
     <a href="#ref-for-dfn-voorbeeld-2" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -3246,7 +3359,7 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-wijzigingsnotitie-1" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-wijzigingsnotitie-1" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
   </li><li>
     <a href="#ref-for-dfn-wijzigingsnotitie-2" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -3262,7 +3375,7 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-code-1" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-code-1" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
   </li><li>
     <a href="#ref-for-dfn-code-2" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -3292,17 +3405,15 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-heeft-bovenliggend-begrip-1" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-heeft-bovenliggend-begrip-1" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
   </li><li>
-    <a href="#ref-for-dfn-heeft-bovenliggend-begrip-2" title="§ 2.2.2 Taxonomie">§ 2.2.2 Taxonomie</a> 
+    <a href="#ref-for-dfn-heeft-bovenliggend-begrip-2" title="§ 2.3.2 Taxonomie">§ 2.3.2 Taxonomie</a> 
   </li><li>
-    <a href="#ref-for-dfn-heeft-bovenliggend-begrip-3" title="§ 2.2.3.1 ISO 25964 hiërarchische relaties">§ 2.2.3.1 ISO 25964 hiërarchische relaties</a> 
+    <a href="#ref-for-dfn-heeft-bovenliggend-begrip-3" title="§ 2.3.3.1 ISO 25964 hiërarchische relaties">§ 2.3.3.1 ISO 25964 hiërarchische relaties</a> 
   </li><li>
-    <a href="#ref-for-dfn-heeft-bovenliggend-begrip-4" title="§ 3.1 Overzicht">§ 3.1 Overzicht</a> 
+    <a href="#ref-for-dfn-heeft-bovenliggend-begrip-4" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
-    <a href="#ref-for-dfn-heeft-bovenliggend-begrip-5" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
-  </li><li>
-    <a href="#ref-for-dfn-heeft-bovenliggend-begrip-6" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+    <a href="#ref-for-dfn-heeft-bovenliggend-begrip-5" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
   </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-heeft-onderliggend-begrip" aria-label="Links in this document to definition: heeft onderliggend begrip">
@@ -3314,9 +3425,9 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-heeft-onderliggend-begrip-1" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-heeft-onderliggend-begrip-1" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
   </li><li>
-    <a href="#ref-for-dfn-heeft-onderliggend-begrip-2" title="§ 2.2.3.1 ISO 25964 hiërarchische relaties">§ 2.2.3.1 ISO 25964 hiërarchische relaties</a> 
+    <a href="#ref-for-dfn-heeft-onderliggend-begrip-2" title="§ 2.3.3.1 ISO 25964 hiërarchische relaties">§ 2.3.3.1 ISO 25964 hiërarchische relaties</a> 
   </li><li>
     <a href="#ref-for-dfn-heeft-onderliggend-begrip-3" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -3344,9 +3455,9 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-is-gerelateerd-aan-1" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-is-gerelateerd-aan-1" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
   </li><li>
-    <a href="#ref-for-dfn-is-gerelateerd-aan-2" title="§ 2.2.3 Thesaurus">§ 2.2.3 Thesaurus</a> 
+    <a href="#ref-for-dfn-is-gerelateerd-aan-2" title="§ 2.3.3 Thesaurus">§ 2.3.3 Thesaurus</a> 
   </li><li>
     <a href="#ref-for-dfn-is-gerelateerd-aan-3" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -3362,7 +3473,7 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-is-specialisatie-van-1" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-is-specialisatie-van-1" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
   </li><li>
     <a href="#ref-for-dfn-is-specialisatie-van-2" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -3378,7 +3489,7 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-is-generalisatie-van-1" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-is-generalisatie-van-1" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
   </li><li>
     <a href="#ref-for-dfn-is-generalisatie-van-2" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -3394,7 +3505,7 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-is-onderdeel-van-1" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-is-onderdeel-van-1" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
   </li><li>
     <a href="#ref-for-dfn-is-onderdeel-van-2" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -3410,7 +3521,7 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-omvat-1" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-omvat-1" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
   </li><li>
     <a href="#ref-for-dfn-omvat-2" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -3426,7 +3537,7 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-is-exemplaar-van-1" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-is-exemplaar-van-1" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
   </li><li>
     <a href="#ref-for-dfn-is-exemplaar-van-2" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -3442,7 +3553,7 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-is-categorie-van-1" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-is-categorie-van-1" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
   </li><li>
     <a href="#ref-for-dfn-is-categorie-van-2" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -3458,9 +3569,9 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-harmonisatierelatie-1" title="§ 2.1 Begrippenkader">§ 2.1 Begrippenkader</a> 
+    <a href="#ref-for-dfn-harmonisatierelatie-1" title="§ 2.2 Begrippenkader">§ 2.2 Begrippenkader</a> 
   </li><li>
-    <a href="#ref-for-dfn-harmonisatierelatie-2" title="§ 2.2.4 Harmonisatiesrelaties">§ 2.2.4 Harmonisatiesrelaties</a> 
+    <a href="#ref-for-dfn-harmonisatierelatie-2" title="§ 2.3.4 Harmonisatiesrelaties">§ 2.3.4 Harmonisatiesrelaties</a> 
   </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-is-exact-overeenkomstig" aria-label="Links in this document to definition: is exact overeenkomstig">
@@ -3472,13 +3583,11 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-is-exact-overeenkomstig-1" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-is-exact-overeenkomstig-1" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
   </li><li>
-    <a href="#ref-for-dfn-is-exact-overeenkomstig-2" title="§ 3.1 Overzicht">§ 3.1 Overzicht</a> 
+    <a href="#ref-for-dfn-is-exact-overeenkomstig-2" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
-    <a href="#ref-for-dfn-is-exact-overeenkomstig-3" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
-  </li><li>
-    <a href="#ref-for-dfn-is-exact-overeenkomstig-4" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+    <a href="#ref-for-dfn-is-exact-overeenkomstig-3" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
   </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-is-vrijwel-overeenkomstig" aria-label="Links in this document to definition: is vrijwel overeenkomstig">
@@ -3490,7 +3599,7 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-is-vrijwel-overeenkomstig-1" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-is-vrijwel-overeenkomstig-1" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
   </li><li>
     <a href="#ref-for-dfn-is-vrijwel-overeenkomstig-2" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -3506,7 +3615,7 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-is-overeenkomstig-verwant-1" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-is-overeenkomstig-verwant-1" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
   </li><li>
     <a href="#ref-for-dfn-is-overeenkomstig-verwant-2" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -3522,7 +3631,7 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-is-overeenkomstig-bovenliggend-1" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-is-overeenkomstig-bovenliggend-1" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
   </li><li>
     <a href="#ref-for-dfn-is-overeenkomstig-bovenliggend-2" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -3540,7 +3649,7 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-is-overeenkomstig-onderliggend-1" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-is-overeenkomstig-onderliggend-1" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
   </li><li>
     <a href="#ref-for-dfn-is-overeenkomstig-onderliggend-2" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -3558,9 +3667,9 @@ ex2:Land a skos:Concept ;
     <li>
     <a href="#ref-for-dfn-bron-1" title="§ 2. Conceptuele beschrijving">§ 2. Conceptuele beschrijving</a> 
   </li><li>
-    <a href="#ref-for-dfn-bron-2" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-bron-2" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
   </li><li>
-    <a href="#ref-for-dfn-bron-3" title="§ 2.3 Bron">§ 2.3 Bron</a> 
+    <a href="#ref-for-dfn-bron-3" title="§ 2.4 Bron">§ 2.4 Bron</a> 
   </li><li>
     <a href="#ref-for-dfn-bron-4" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -3576,9 +3685,9 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-brondocument-1" title="§ 2.2 Begrip">§ 2.2 Begrip</a> 
+    <a href="#ref-for-dfn-brondocument-1" title="§ 2.3 Begrip">§ 2.3 Begrip</a> 
   </li><li>
-    <a href="#ref-for-dfn-brondocument-2" title="§ 2.3 Bron">§ 2.3 Bron</a> <a href="#ref-for-dfn-brondocument-3" title="Reference 2">(2)</a> 
+    <a href="#ref-for-dfn-brondocument-2" title="§ 2.4 Bron">§ 2.4 Bron</a> <a href="#ref-for-dfn-brondocument-3" title="Reference 2">(2)</a> 
   </li><li>
     <a href="#ref-for-dfn-brondocument-4" title="§ 3.2.1 Types">§ 3.2.1 Types</a> 
   </li>
@@ -3592,7 +3701,7 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-url-1" title="§ 2.3 Bron">§ 2.3 Bron</a> <a href="#ref-for-dfn-url-2" title="Reference 2">(2)</a> 
+    <a href="#ref-for-dfn-url-1" title="§ 2.4 Bron">§ 2.4 Bron</a> <a href="#ref-for-dfn-url-2" title="Reference 2">(2)</a> 
   </li><li>
     <a href="#ref-for-dfn-url-3" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -3610,7 +3719,7 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-citeertitel-1" title="§ 2.3 Bron">§ 2.3 Bron</a> <a href="#ref-for-dfn-citeertitel-2" title="Reference 2">(2)</a> 
+    <a href="#ref-for-dfn-citeertitel-1" title="§ 2.4 Bron">§ 2.4 Bron</a> <a href="#ref-for-dfn-citeertitel-2" title="Reference 2">(2)</a> 
   </li><li>
     <a href="#ref-for-dfn-citeertitel-3" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -3628,7 +3737,7 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-soort-1" title="§ 2.3 Bron">§ 2.3 Bron</a> <a href="#ref-for-dfn-soort-2" title="Reference 2">(2)</a> 
+    <a href="#ref-for-dfn-soort-1" title="§ 2.4 Bron">§ 2.4 Bron</a> <a href="#ref-for-dfn-soort-2" title="Reference 2">(2)</a> 
   </li><li>
     <a href="#ref-for-dfn-soort-3" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -3646,7 +3755,7 @@ ex2:Land a skos:Concept ;
     <li>
     <a href="#ref-for-dfn-collectie-1" title="§ 2. Conceptuele beschrijving">§ 2. Conceptuele beschrijving</a> 
   </li><li>
-    <a href="#ref-for-dfn-collectie-2" title="§ 2.4 Collectie">§ 2.4 Collectie</a> <a href="#ref-for-dfn-collectie-3" title="Reference 2">(2)</a> 
+    <a href="#ref-for-dfn-collectie-2" title="§ 2.5 Collectie">§ 2.5 Collectie</a> <a href="#ref-for-dfn-collectie-3" title="Reference 2">(2)</a> 
   </li><li>
     <a href="#ref-for-dfn-collectie-4" title="§ 3.2.1 Types">§ 3.2.1 Types</a> 
   </li>
@@ -3660,7 +3769,7 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-bevat-1" title="§ 2.4 Collectie">§ 2.4 Collectie</a> 
+    <a href="#ref-for-dfn-bevat-1" title="§ 2.5 Collectie">§ 2.5 Collectie</a> 
   </li><li>
     <a href="#ref-for-dfn-bevat-2" title="§ 3.2.2 Eigenschappen">§ 3.2.2 Eigenschappen</a> 
   </li><li>
@@ -3730,7 +3839,7 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-index-term-skos-lex-1" title="§ 2.5.1 Skos-lex">§ 2.5.1 Skos-lex</a> 
+    <a href="#ref-for-index-term-skos-lex-1" title="§ 2.6.1 Skos-lex">§ 2.6.1 Skos-lex</a> 
   </li><li>
     <a href="#ref-for-index-term-skos-lex-2" title="§ C.1 Normatieve referenties">§ C.1 Normatieve referenties</a> <a href="#ref-for-index-term-skos-lex-3" title="Reference 2">(2)</a> 
   </li>
