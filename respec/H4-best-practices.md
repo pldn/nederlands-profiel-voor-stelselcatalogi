@@ -23,7 +23,7 @@
 </ul>
 </p></span></div>
 
-<div class="practice"><p class="practicedesc"><span class="practicelab">Het wordt aangeraden om elke resource te voorzien van een term die als 'technische naam' kan functioneren. Met zo'n term kunnen ook interfaces overweg die de verschillende soorten termen (voorkeursterm, alternatieve term, zoekterm) niet kunnen onderscheiden.   Daarmee krijgt iedere resource een voor mensen leesbare term, ongeacht de context.<p>Anders dan bij de voorkeursterm, is het verstandig om wel context in het label mee te geven door bijvoorbeeld tussen haakjes deze context weert te geven, zoals bij <i>bank (financiële instelling)</i>. Daardoor onststaat geen verwarring in het kader van homoniemen. Het algemene label bevordert tevens de compatibiliteit met bestaande tools. Het is denkbaar dat tools deze term afleiden van bijvoorbeeld de (Engelse) voorkeursterm of de code.</p></span></div>
+<div class="practice"><p class="practicedesc"><span class="practicelab">Het wordt aangeraden om elke resource te voorzien van een term die als 'technische naam' kan functioneren. Met zo'n term kunnen ook interfaces overweg die de verschillende soorten termen (voorkeursterm, alternatieve term, zoekterm) niet kunnen onderscheiden. Daarmee krijgt iedere resource een voor mensen leesbare term, ongeacht de context.<p>Anders dan bij de voorkeursterm, is het verstandig om wel context in het label mee te geven door bijvoorbeeld tussen haakjes deze context weert te geven, zoals bij <i>bank (financiële instelling)</i>. Daardoor onststaat geen verwarring in het kader van homoniemen. Het algemene label bevordert tevens de compatibiliteit met bestaande tools. Het is denkbaar dat tools deze term afleiden van bijvoorbeeld de (Engelse) voorkeursterm of de code.</p></span></div>
 
 ### Hierarchische relaties
 
@@ -81,8 +81,8 @@ De bron zelf kan op verschillende manieren beschreven worden, dat ligt immers bi
 
 Wel biedt dit profiel een aantal aanbevelingen.
 <div class="practice"><p class="practicedesc"><span class="practicelab">Het is aanbevolen om bronnen te typeren als foaf:Document</span>Vooral omdat dit de meest laagdrempelige typering is aan de hand van bestaande vocabulaire.</p></div>
-<div class="practice"><p class="practicedesc"><span class="practicelab">Het aangeraden om de [[DCTERMS]] vocabulaire te gebruiken om bronnen te beschrijven.</span></p></div>
-<div class="practice"><p class="practicedesc"><span class="practicelab">Het is aanbevolen om bronnen met _dct:type_ te classificeren</span>Dit doen we aan de hand van een gecontroleerde vocabulaire, ofwel een classificatie schema. Een voorbeeld van zo'n classificatie schema is <a href="http://id.loc.gov/vocabulary/marcgt">MARC Genre/Terms Scheme</a>. Dit is in aanvulling op een rdf:type typering.</p></div>
+<div class="practice"><p class="practicedesc"><span class="practicelab">Het is aanbevolen om de [[DCTERMS]] vocabulaire te gebruiken om bronnen te beschrijven.</span></p></div>
+<div class="practice"><p class="practicedesc"><span class="practicelab">Het is aanbevolen om bronnen met _dct:type_ te classificeren</span>Dit doen we aan de hand van een gecontroleerde vocabulaire, ofwel een classificatie schema. Een voorbeeld van zo'n classificatie schema is <a href="http://id.loc.gov/vocabulary/marcgt">MARC Genre/Terms Scheme</a>. Dit is in aanvulling op een <code>rdf:type</code> typering.</p></div>
 
 ## Harmonisatie en hergebruik
 Om data goed te kunnen gebruiken, maar zeker ook om data te combineren met andere data is het belangrijk om deze te begrijpen. 

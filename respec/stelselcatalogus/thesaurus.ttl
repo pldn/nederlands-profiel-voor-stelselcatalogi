@@ -4,8 +4,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix beg-sbb: <http://nlbegrip.nl/sbb/id/begrip/> .
-@prefix begkr-sbb: <http://nlbegrip.nl/sbb/id/begrippenkader/> .
+@prefix beg-sbb: <http://begrippen.nlbegrip.nl/sbb/id/begrip/> .
+@prefix begkr-sbb: <http://begrippen.nlbegrip.nl/sbb/id/begrippenkader/> .
 
 # EIGENSCHAPPEN EN METADATA
 

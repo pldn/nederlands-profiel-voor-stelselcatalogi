@@ -4,21 +4,21 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix beg-sbb: <http://nlbegrip.nl/sbb/id/concept/> .
-@prefix begkr-sbb: <http://nlbegrip.nl/sbb/id/begrippenkader/> .
+@prefix beg-sbb: <http://begrippen.nlbegrip.nl/sbb/id/concept/> .
+@prefix begkr-sbb: <http://begrippen.nlbegrip.nl/id/begrippenkader/> .
 
 # DIT BEGRIPPENKADER 
 
 #begrippenkader
 begkr-sbb:nlbegrip
   a skos:ConceptScheme ;
-  rdfs:label "nlbegrip";
+  rdfs:label "Begrippenkader nlbegrip";
   skos:hasTopConcept
     beg-sbb:ConceptScheme ,
     beg-sbb:Concept ,
     beg-sbb:Collection ,
     beg-sbb:Member ,
-    beg-sbb:Label ,
+    beg-sbb:Phrase ,
     beg-sbb:SemanticRelation ,
     beg-sbb:InScheme ,
     beg-sbb:Notation ,
@@ -28,7 +28,8 @@ begkr-sbb:nlbegrip
     beg-sbb:Type ,
     beg-sbb:Page ,
     beg-sbb:BibliographicCitation ,
-    beg-sbb:TopConcept ;
+    beg-sbb:isTopConceptOf ,
+    beg-sbb:hasTopConcept ;
   skos:prefLabel "Begrippenkader Nederlandse standaard voor het beschrijven van begrippen"@nl ;
   skos:altLabel "sbb" .
 
@@ -53,7 +54,7 @@ beg-sbb:Concept
     skos: ,
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#concepts> ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:nlbegrip .
 
 #alternatieve term
   beg-sbb:AltLabel
@@ -65,7 +66,7 @@ beg-sbb:Concept
   skos:notation "UF" ;
   skos:definition
     "An alternative lexical label for a resource."@en ,
-    "Een alternatieve term voor een begrip is een term die gebruikt kan worden als alternatief voor de voorkeursterm van dit begrip, maar niet de voorkeur heeft."@nl ;
+    "Een alternatieve term is een label die gebruikt kan worden als alternatief voor de voorkeursterm van een object, maar niet de voorkeur heeft."@nl ;
   skos:scopeNote 
     "Het is niet gebruikelijk om termen die bij een specifieker begrip geplaatst zouden kunnen worden als alternatieve term op te nemen (ookwel upward-posting). Bijvoorbeeld door 'rechtshandeling' als alternatieve term bij een begrip met de voorkeursterm 'handeling' op te nemen."@nl ,
     "Afkortingen en hun volledige vormen kunnen als synoniemen worden behandeld."@nl,
@@ -77,9 +78,8 @@ beg-sbb:Concept
     <https://www.w3.org/TR/skos-reference/#labels> ,
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skos: ;
-  skos:related beg-sbb:Concept ;
   skos:broader beg-sbb:Label ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS.
+  skos:inScheme begkr-sbb:nlbegrip.
 
 #bron
 beg-sbb:Source
@@ -100,7 +100,7 @@ beg-sbb:Source
   skos:related 
     beg-sbb:Concept ,
     beg-sbb:Source ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS.
+  skos:inScheme begkr-sbb:nlbegrip.
 
 #code
 beg-sbb:Notation
@@ -119,7 +119,7 @@ beg-sbb:Notation
   skos:scopeNote
     "Some concept schemes, for example classification systems such as the Universal Decimal Classification (UDC), use notations (or captions) as the primary means of access to the concepts they contain. Notations are symbols which are not normally recognizable as words or sequences of words in any natural language and are thus usable independently of natural-language contexts. They are typically composed of digits, complemented with punctuation signs and other characters."@en,
     "Sommige begrippenkaders, bijvoorbeeld classificatiesystemen zoals de Universal Decimal Classification (UDC), gebruiken codes (of bijschriften) als primair middel om toegang te krijgen tot de begrippen die ze bevatten. Codes zijn symbolen die normaal gesproken niet herkenbaar zijn als woorden of woordreeksen in een natuurlijke taal en die dus onafhankelijk van natuurlijke taalcontexten kunnen worden gebruikt. Ze zijn meestal samengesteld uit cijfers, aangevuld met leestekens en andere tekens."@nl;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS.
+  skos:inScheme begkr-sbb:nlbegrip.
 
 #definitie
 beg-sbb:Definition
@@ -142,7 +142,7 @@ beg-sbb:Definition
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes>; 
   skos:broader beg-sbb:Note ;
   skos:related beg-sbb:Concept ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS.
+  skos:inScheme begkr-sbb:nlbegrip.
 
 #harmonisatierelatie
 beg-sbb:MatchingRelation
@@ -160,7 +160,7 @@ beg-sbb:MatchingRelation
     <https://www.w3.org/TR/skos-reference/#mapping> ,
     skos: ;
   skos:broader beg-sbb:SemanticRelation ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS.
+  skos:inScheme begkr-sbb:nlbegrip.
 
 #heeft bovenliggend begrip
 beg-sbb:Broader
@@ -183,7 +183,7 @@ beg-sbb:Broader
     skos: ;
   skos:related beg-sbb:Concept ;
   skos:broader beg-sbb:SemanticRelation ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS.
+  skos:inScheme begkr-sbb:nlbegrip.
 
 #heeft onderliggend begrip
 beg-sbb:Narrower
@@ -208,7 +208,7 @@ beg-sbb:Narrower
     skos: ;
   skos:related beg-sbb:Concept ;
   skos:broader beg-sbb:SemanticRelation ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS.
+  skos:inScheme begkr-sbb:nlbegrip.
 
 
 #historische notitie
@@ -229,7 +229,7 @@ beg-sbb:HistoryNote
     skos: ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes>;
   skos:broader beg-sbb:Note ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS.
+  skos:inScheme begkr-sbb:nlbegrip.
 
 #in kader
 beg-sbb:InScheme
@@ -249,7 +249,27 @@ beg-sbb:InScheme
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> ;
   skos:related beg-sbb:Concept ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS.
+  skos:inScheme begkr-sbb:nlbegrip.
+
+#isTopConceptOf
+beg-sbb:isTopConceptOf
+  a skos:Concept ;
+  rdfs:label "is top concept of";
+  skos:prefLabel
+    "is topbegrip van"@nl ,
+    "is top concept of"@en ;
+  skos:definition
+    "Top concepts are concepts which are topmost in the hierarchical relations for a scheme."@en ,
+    "Een topbegrip is een begrip die bovenaan de hiërarchie staat in een bepaald begrippenkader."@nl ;
+  skos:scopeNote
+    "Has top concept adresses a concept that is at the top of a hierarchy, i.e. it has no broader concepts. This makes it easier, on importing a thesaurus, to pick out all the top level concepts from which to build a navigational tree."@en,
+    "Heeft topbegrip adresseert een begrip dat bovenaan een hiërarchie staat, d.w.z. het heeft geen bredere begrippen. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle begrippen op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen."@nl; 
+  dct:source skos: ,
+    <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> ;
+  skos:related 
+    beg-sbb:Taxonomy ,
+    beg-sbb:hasTopconcept ;
+  skos:inScheme begkr-sbb:nlbegrip .
 
 #is categorie van
 beg-sbb:NarrowerInstantial
@@ -271,7 +291,7 @@ beg-sbb:NarrowerInstantial
   skos:broader beg-sbb:Narrower ;
   skos:related beg-sbb:Concept ;
   skosthes:broaderGeneric beg-sbb:Narrower;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:nlbegrip .
 
 #is exact overeenkomstig
 beg-sbb:ExactMatch
@@ -291,7 +311,7 @@ beg-sbb:ExactMatch
     skos: ;
   skos:related beg-sbb:Concept ;
   skos:broader beg-sbb:MatchingRelation;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS.
+  skos:inScheme begkr-sbb:nlbegrip.
 
 #is exemplaar van
 beg-sbb:BroaderInstantial
@@ -313,7 +333,7 @@ beg-sbb:BroaderInstantial
 skos:related beg-sbb:Concept ;
   skos:broader beg-sbb:Broader ;
   skosthes:broaderGeneric beg-sbb:Broader;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:nlbegrip .
 
 #is generalisatie van
 beg-sbb:NarrowerGeneric
@@ -335,7 +355,7 @@ beg-sbb:NarrowerGeneric
   skos:related beg-sbb:Concept ;
   skosthes:broaderGeneric beg-sbb:Narrower ;
   skos:broader beg-sbb:Narrower ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:nlbegrip .
 
 #is gerelateerd aan
 beg-sbb:Related
@@ -357,7 +377,7 @@ beg-sbb:Related
     <https://www.w3.org/TR/skos-reference/#semantic-relations> ,
     skos: ;
   skos:related beg-sbb:Concept ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:nlbegrip .
 
 #is onderdeel van
 beg-sbb:BroaderPartitive
@@ -381,7 +401,7 @@ beg-sbb:BroaderPartitive
     beg-sbb:Thesaurus ;
   skos:broader beg-sbb:Broader ;
   skosthes:broaderGeneric beg-sbb:Broader ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:nlbegrip .
 
 #is overeenkomstig bovenliggend
 beg-sbb:BroadMatch
@@ -402,7 +422,7 @@ beg-sbb:BroadMatch
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
   skos:broader beg-sbb:MatchingRelation ;
   skos:related beg-sbb:Broader ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:nlbegrip .
 
 #is overeenkomstig onderliggend
 beg-sbb:NarrowMatch
@@ -423,7 +443,7 @@ beg-sbb:NarrowMatch
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
   skos:broader beg-sbb:MatchingRelation ;
   skos:related beg-sbb:Narrower ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:nlbegrip .
 
 #is overeenkomstig verwant
 beg-sbb:RelatedMatch
@@ -443,7 +463,7 @@ beg-sbb:RelatedMatch
   dct:source
     <https://www.w3.org/TR/skos-reference/#mapping> ,
     skos: ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS.
+  skos:inScheme begkr-sbb:nlbegrip.
 
 #is specialisatie van
 beg-sbb:BroaderGeneric
@@ -463,7 +483,7 @@ beg-sbb:BroaderGeneric
   skos:related beg-sbb:Concept ;
   skos:broader beg-sbb:Broader ;
   skosthes:broaderGeneric beg-sbb:Broader;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:nlbegrip .
 
 #is vrijwel overeenkomstig
 beg-sbb:CloseMatch
@@ -483,7 +503,7 @@ beg-sbb:CloseMatch
     <https://www.w3.org/TR/skos-reference/#mapping> ;
   skos:related beg-sbb:Concept ;
   skos:broader beg-sbb:MatchingRelation ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:nlbegrip .
 
 #notitie
 beg-sbb:Note
@@ -501,7 +521,7 @@ beg-sbb:Note
   dct:source
     skos: ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes> ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS.
+  skos:inScheme begkr-sbb:nlbegrip.
 
 #omvat
 beg-sbb:NarrowerPartitive
@@ -523,7 +543,7 @@ beg-sbb:NarrowerPartitive
   skos:related beg-sbb:Concept ;
   skos:broader beg-sbb:Narrower ;
   skosthes:broaderGeneric beg-sbb:Narrower;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:nlbegrip .
 
 #redactionele notitie
 beg-sbb:EditorialNote
@@ -544,7 +564,7 @@ beg-sbb:EditorialNote
     skos: ;
   skos:broader beg-sbb:Note ;
   skos:related beg-sbb:Concept ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:nlbegrip .
 
 #semantische relatie
 beg-sbb:SemanticRelation
@@ -562,23 +582,40 @@ beg-sbb:SemanticRelation
   dct:source
     <https://www.w3.org/TR/skos-reference/#semantic-relations> ,
     skos: ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:nlbegrip .
 
 #term
+beg-sbb:Phrase
+  a skos:Concept ;
+  rdfs:label "term";
+  skos:prefLabel "phrase"@en ,
+    "term"@nl ;
+  skos:definition
+    "Een term is een aaneenschakeling van één of meerdere woorden die samen een conceptuele eenheid vormen."@nl ,
+    "A word or a small group of words standing together as a conceptual unit."@en ;
+  skos:scopeNote 
+    "In de definitie moet 'woord' breed worden geïnterpreteerd. Een term mag ook een afkorting zijn, zoals 'B.T.W. (de voorkeursterm voor 'Belasting op toegevoegde waarde'), of een code zoals '013' (Een poppodium in Tilburg)."@nl ,
+    "In the definition, word should be interpreted broadly. A term can also be an abbreviation, such as 'VAT.' (the preferred term for 'Value Added Tax'), or a code such as '013' (A music venue in Tilburg)."@en ;
+  skos:inScheme begkr-sbb:nlbegrip .
+
+#label
 beg-sbb:Label
   a skos:Concept ;
   rdfs:label "label";
   skos:prefLabel "label"@en ,
     "term"@nl ;
   skos:definition
-    "Een term is een aaneenschakeling van één of meerdere woorden ter aanduiding van een object."@nl ,
-    "A label is a word or phrase used to label a concept."@en ;
+    "Een label is een mensleesbare term ter aanduiding van een object."@nl ,
+    "A human-readable label is a word or phrase used to label a resource."@en ;
   skos:scopeNote
-    "Dit is een overkoepelend begrip voor de verschillende soorten termen (voorkeursterm, alternatieve term, zoekterm) waarmee begrippen kunnen worden aangeduid. Good practice is om die specifieke termen te gebruiken. In de definitie moet 'woord' breed worden geïnterpreteerd. Een term mag ook een afkorting zijn, zoals 'B.T.W. (de voorkeursterm voor 'Belasting op toegevoegde waarde'), of een code zoals '013' (Een poppodium in Tilburg)."@nl ,
-    "This is an umbrella term for the different types of labels (preferred label, alternative label, hidden label) with which concepts can be indicated. Good practice is to use those specific terms. In the definition, word should be interpreted broadly. A term can also be an abbreviation, such as 'VAT.' (the preferred term for 'Value Added Tax'), or a code such as '013' (A music venue in Tilburg)."@en ;
+    "Dit is een overkoepelend begrip voor de verschillende soorten termen (voorkeursterm, alternatieve term, zoekterm) waarmee begrippen kunnen worden aangeduid. Good practice is om die specifieke termen te gebruiken."@nl ,
+    "This is an umbrella term for the different types of labels (preferred label, alternative label, hidden label) with which concepts can be indicated. Good practice is to use those specific terms."@en ,
+    "In de definitie moet 'object' breed worden geïnterpreteerd. Het kan ieder onderwerp van gesprek zijn; zoals een specifiek begrip of een specifiek gebouw."@nl ,
+    "In the definition, 'resource' should be interpreted broadly. A resource can be any subject; such as a particular concept or a particular building."@nl ;
   dct:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.61> ;
   skos:related beg-sbb:Concept ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+  skos:broader beg-sbb:Phrase ;
+  skos:inScheme begkr-sbb:nlbegrip .
 
 #toelichting
 beg-sbb:ScopeNote
@@ -599,7 +636,7 @@ beg-sbb:ScopeNote
     skos: ;
   skos:broader beg-sbb:Note ;
   skos:related beg-sbb:Concept ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:nlbegrip .
 
 #uitleg
 beg-sbb:Comment
@@ -616,11 +653,11 @@ beg-sbb:Comment
     "Een uitleg is een beschrijving van een object in eenvoudige taal, op taalniveau B1, die zonder verdere context begrepen kan worden."@nl ,
     "A comment is a description of the subject resourcein simple language, at language level B1, which can be understood without further context."@en ;
   skos:scopeNote 
-    "De definitie moet precies kloppen. De uitleg is er veel meer op gericht om de lezer te laten begrijpen wat er wordt bedoeld. "@nl,
+    "De definitie moet precies kloppen. De uitleg is er veel meer op gericht om de lezer te laten begrijpen wat er wordt bedoeld."@nl,
     "The definition must be exactly correct. The comment is much more focused on making the reader understand what is meant."@en ;
   skos:related beg-sbb:Concept ;
   skos:broader beg-sbb:Note ; 
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:nlbegrip .
 
 #voorbeeld
 beg-sbb:Example
@@ -641,7 +678,7 @@ beg-sbb:Example
     <https://nl.wikipedia.org/wiki/Voorbeeld>;
   skos:broader beg-sbb:Note ;
   skos:related beg-sbb:Concept ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:nlbegrip .
 
 #voorkeursterm
 beg-sbb:PrefLabel
@@ -653,7 +690,7 @@ beg-sbb:PrefLabel
   skos:notation "USE" ;
   skos:definition
     "A preferred label is the preferred lexical label for a resource, in a given language."@en ,
-    "Een voorkeursterm is een gepreferreerde lexicale term voor een begrip, in een specifieke taal."@nl ;
+    "Een voorkeursterm is een label die in een specifieke taal het geprefereerde lexicale label is."@nl ;
   skos:scopeNote
     "The terms selected to represent concepts may be single-word terms or multi-word terms. In ordinary discourse, a single term might have more than one meaning, and the most common meaning is not always the one needed to represent the concept wanted in the thesaurus. If the context provided by the hierarchy of broader and narrower concepts linked to the concept in question is insufficient to elucidate the intended scope, additional measures should be applied. While all thesaurus terms should be expressed as unambiguously as possible, it is especially important to formulate the preferred term of a given concept in such a way that it conveys the intended scope to any user. For example, the multi-meaning term \"depression\" could be reformulated as \"economic depression\" or \"meteorological depression\", as appropriate. Alternatively a qualifier may be used. In cases where these measures are not appropriate or sufficient, or where additional information would help to clarify the meaning and make the usage more consistent, an explicit scope note should be used."@en ,
     "De term om een begrip weer te geven, kan bestaan uit één of meerdere woorden. In het gewone spraakgebruik kan een enkele term meer dan één betekenis hebben. De meest voorkomende betekenis is niet altijd de betekenis die nodig is om het in het begrippenkader gezochte begrip weer te geven. Indien de context die wordt geboden door de hiërarchie van bovenliggende en onderliggende begrippen gekoppeld aan het betreffende begrip onvoldoende is om de beoogde reikwijdte te verduidelijken, dienen aanvullende maatregelen te worden genomen. Hoewel alle termen in een begrippenkader zo ondubbelzinnig mogelijk moeten worden uitgedrukt, is het vooral belangrijk om de voorkeursterm van een bepaald concept zo te formuleren dat het de beoogde reikwijdte aan elke gebruiker overbrengt. De term \"depressie\" met meerdere betekenissen kan bijvoorbeeld worden geherformuleerd als \"economische depressie\" of \"meteorologische depressie\", al naar gelang het geval. Als alternatief kan een kwalificatie worden gebruikt. In gevallen waarin deze maatregelen niet passend of voldoende zijn, of waar aanvullende informatie zou helpen om de betekenis te verduidelijken en het gebruik consistenter te maken, moet een expliciete toelichting worden gebruikt."@nl ;
@@ -663,7 +700,7 @@ beg-sbb:PrefLabel
     skos: ;
   skos:related beg-sbb:Concept ;
   skos:broader beg-sbb:Label ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:nlbegrip .
 
 #wijzigingsnotitie
 beg-sbb:ChangeNote
@@ -682,7 +719,7 @@ beg-sbb:ChangeNote
     skos: ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes> ;
   skos:broader beg-sbb:Note ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:nlbegrip .
 
 #zoekterm
 beg-sbb:HiddenLabel
@@ -693,7 +730,7 @@ beg-sbb:HiddenLabel
     "hidden label"@en ;
   skos:definition
     "A hidden label is a lexical label for a resource that should be hidden when generating visual displays of the resource, but should still be accessible to free text search operations."@en ,
-    "Een zoekterm is een term die beoogd is om het begrip te vinden, maar verder verborgen blijft."@nl ;
+    "Een zoekterm is een label waarmee de vindbaarheid van een resource wordt vergroot, maar verder verborgen blijft."@nl ;
   skos:scopeNote
     "A hidden label is used when a KOS designer would like that character string to be accessible to applications performing text-based indexing and search operations, but would not like that label to be visible otherwise. Hidden labels may for instance be used to include misspelled variants of other lexical labels."@en,
     "Een zoekterm wordt gebruikt wanneer een ontwerper van een begrippenkader wil dat die tekenreeks toegankelijk is voor op tekst gebaseerde indexering en zoekbewerkingen, maar niet wil dat die term zichtbaar is. Zoektermen kunnen bijvoorbeeld worden gebruikt om verkeerd gespelde varianten van andere lexicale labels op te nemen."@nl;
@@ -702,7 +739,7 @@ beg-sbb:HiddenLabel
     skos: ;
   skos:broader beg-sbb:Label ;
   skos:related beg-sbb:Concept ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:nlbegrip .
 
 # BRONDOCUMENT
 
@@ -727,7 +764,7 @@ beg-sbb:SourceDocument
     beg-sbb:Type ,
     beg-sbb:Page ,
     beg-sbb:Concept;
- skos:inScheme begkr-sbb:BegrippenkaderNPS.
+ skos:inScheme begkr-sbb:nlbegrip.
 
 #citeertitel
 beg-sbb:BibliographicCitation
@@ -747,7 +784,7 @@ beg-sbb:BibliographicCitation
     <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/bibliographicCitation> ,
     dct: ,
     foaf: ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:nlbegrip .
 
 #soort
 beg-sbb:Type
@@ -764,7 +801,7 @@ beg-sbb:Type
     "Kind indicates whether it is a 'written resource' or a 'web resource'. "@en;
   dct:source
     dct: ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:nlbegrip .
 
 #url
 beg-sbb:Page
@@ -781,7 +818,7 @@ beg-sbb:Page
     "A URL is captured if the resource is a resource that can be found on the web. This is preferably the iri of the resource and possibly the url of the relevant page on the web."@en;
   dct:source
     foaf: ;
-skos:inScheme begkr-sbb:BegrippenkaderNPS .
+skos:inScheme begkr-sbb:nlbegrip .
 
 # BESCHRIJVING BEGRIPPENKADER
 
@@ -809,9 +846,11 @@ beg-sbb:ConceptScheme
     <https://www.w3.org/TR/skos-reference/#schemes> ,
     skos:,
     <https://en.wikipedia.org/wiki/Controlled_vocabulary>;
-  skos:related beg-sbb:TopConcept ;
+  skos:related
+    beg-sbb:hasTopConcept ,
+    beg-sbb:isTopConceptOf ;
   skos:example "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes. Concept schemes are also embedded in glossaries and terminologies."@en ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:nlbegrip .
 
 #begrippenlijst
 beg-sbb:ControlledVocabulary
@@ -848,7 +887,7 @@ beg-sbb:ControlledVocabulary
     beg-sbb:HiddenLabel ,
     beg-sbb:Example ;
   skos:broader beg-sbb:ConceptScheme ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:nlbegrip .
 
 #taxonomie
 beg-sbb:Taxonomy
@@ -870,9 +909,10 @@ beg-sbb:Taxonomy
   skos:related
     beg-sbb:Narrower ,
     beg-sbb:Broader ,
-    beg-sbb:TopConcept;
+    beg-sbb:hasTopConcept ,
+    beg-sbb:isTopConceptOf ;
   dct:source <https://en.wikipedia.org/wiki/Taxonomy> ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:nlbegrip .
 
 #thesaurus
 beg-sbb:Thesaurus
@@ -891,6 +931,8 @@ beg-sbb:Thesaurus
     <https://en.wikipedia.org/wiki/Thesaurus> ,
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.62> ;
   skos:related
+    beg-sbb:hasTopConcept ,
+    beg-sbb:isTopConceptOf ,
     beg-sbb:ExactMatch ,
     beg-sbb:MatchingRelation ,
     beg-sbb:NarrowerInstantial ,
@@ -905,10 +947,10 @@ beg-sbb:Thesaurus
     beg-sbb:RelatedMatch ,
     beg-sbb:CloseMatch ;
   skos:broader beg-sbb:ConceptScheme ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+  skos:inScheme begkr-sbb:nlbegrip .
 
 #topbegrip
-beg-sbb:TopConcept
+beg-sbb:hasTopConcept
   a skos:Concept ;
   rdfs:label "has top concept";
   skos:prefLabel
@@ -923,6 +965,54 @@ beg-sbb:TopConcept
     "Heeft topbegrip adresseert een begrip dat bovenaan een hiërarchie staat, d.w.z. het heeft geen bredere begrippen. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle begrippen op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen."@nl; 
   dct:source skos: ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> ;
-  skos:related beg-sbb:Taxonomy ;
-  skos:inScheme begkr-sbb:BegrippenkaderNPS .
+  skos:related 
+    beg-sbb:Taxonomy ,
+    beg-sbb:isTopConceptOf ;
+  skos:inScheme begkr-sbb:nlbegrip .
 
+# BESCHRIJVING COLLECTIE
+
+# collectie
+
+beg-sbb:Collection
+  a skos:Concept ;
+  skos:inScheme begkr-sbb:nlbegrip ;
+  skos:definition
+    "A meaningful collection of concepts."@en ,
+    "Een collectie is een verzameling van begrippen die voor een bepaalde situatie betekenisvol bij elkaar passen."@nl ;
+  rdfs:label
+    "collection"@en ,
+    "collectie"@nl ;
+  skos:scopeNote
+    "Met betekenisvol wordt bedoeld dat de begrippen op een bepaalde manier met elkaar samenhangen. Een collectie betreft vaak een deel van de begrippen uit één begrippenkader, maar kan ook begrippen bevatten die afkomstig zijn uit meerdere begrippenkaders"@nl ,
+    "Collections can be used where you would like a set of concepts to be displayed under a 'node label'."@en ;
+  skos:related beg-sbb:Member ;
+  dct:source
+    <https://www.w3.org/TR/skos-reference/#collections> ,
+    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.38> ,
+    skos: ;
+  skos:prefLabel
+    "collectie"@nl ,
+    "collection"@en ;
+  skos:altLabel 
+    "labelled collection"@en ,
+    "gelabelde collectie"@nl ,
+    "verzameling"@nl .
+
+#bevat
+beg-sbb:Member
+  a skos:Concept ;
+  skos:definition
+    "Relates a collection to one of its members."@en ,
+    "Bevat relateert een collectie aan een begrip of een collectie van begrippen dat onderdeel is van deze collectie"@nl ;
+  dct:source
+    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
+    skos: ,
+    <https://www.w3.org/TR/skos-reference/#collections> ;
+  skos:related beg-sbb:Collection ;
+  skos:inScheme begkr-sbb:nlbegrip ;
+  skos:editorialNote "Specifiek gebruik van 'begrip of een collectie van begrippen' in plaats van het minderzeggende 'lid'"@nl ;
+  skos:prefLabel
+    "has member"@en ,
+    "bevat"@nl ;
+  skos:inScheme begkr-sbb:nlbegrip .

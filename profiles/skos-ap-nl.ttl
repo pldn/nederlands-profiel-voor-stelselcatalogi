@@ -35,6 +35,7 @@ skosapnl:Concept
     skosapnl:Concept-broader ,
     skosapnl:Concept-narrower ,
     skosapnl:Concept-inScheme ,
+    skosapnl:Concept-isTopConceptOf ,
     skosapnl:Concept-closeMatch ,
     skosapnl:Concept-label ,
     skosapnl:Concept-narrowerInstantial ,
@@ -307,14 +308,22 @@ skosapnl:Concept-inScheme
   a sh:PropertyShape ;
   rdfs:label "in kader"@nl ;
   sh:class skos:ConceptScheme ;
-  sh:description "Relates a resource (for example a concept) to a concept scheme in which it is included."@en ;
-  sh:description "Een begrippenkader waartoe het concept behoort."@nl ;
   sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
   sh:minCount 1 ;
   sh:name "in kader"@nl ;
   sh:order 6 ;
   sh:nodeKind sh:IRI ;
   sh:path skos:inScheme .
+
+skosapnl:Concept-isTopConceptOf
+  a sh:PropertyShape ;
+  rdfs:label "is topbegrip vann"@nl ;
+  sh:class skos:ConceptScheme ;
+  sh:group skosapnl:SemanticRelationPropertyGroup ;
+  sh:name "is topbegrip vann"@nl ;
+  sh:order 23 ;
+  sh:nodeKind sh:IRI ;
+  sh:path skos:isTopConceptOf .
 
 skosapnl:Concept-altLabel
   a sh:PropertyShape ;
@@ -352,7 +361,7 @@ skosapnl:Concept-narrowerGeneric
 
 skosapnl:Concept-historyNote
   a sh:PropertyShape ;
-  sh:description "Notitie over de voormalige status/gebruik/betekenis van het concept"@nl, "A note about the past state/use/meaning of a concept."@en ;
+  sh:description "Notitie over de voormalige status/gebruik/betekenis van het begrip"@nl, "A note about the past state/use/meaning of a concept."@en ;
   sh:group skosapnl:NotesPropertyGroup ;
   sh:name "history note"@en, "historie notitie"@nl ;
   rdfs:label "historie notitie"@nl;
@@ -420,7 +429,6 @@ skosapnl:Concept-closeMatch
   a sh:PropertyShape ;
   rdfs:label "is vrijwel overeenkomstig"@nl ;
   sh:class skos:Concept ;
-  sh:description "skos:closeMatch is used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of \"compound errors\" when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property."@en ;
   sh:description "Used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of \"compound errors\" when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property."@en ;
   sh:group skosapnl:MatchingRelationshipsPropertyGroup ;
   sh:name "is vrijwel overeenkomstig"@nl ;
@@ -537,6 +545,7 @@ skosapnl:ConceptScheme-hasTopConcept
     "Relateert, bij conventie, een begrippenkader met een begrip dat is de top van een taxonomie."@nl ,
     "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies."@en ;
   sh:group skosapnl:SemanticRelationPropertyGroup ;
+  sh:order 20 ;
   sh:nodeKind sh:IRI ;
   sh:path skos:hasTopConcept .
 
@@ -554,6 +563,7 @@ skosapnl:ConceptScheme-label
   sh:datatype rdf:langString ;
   sh:description "Een label voor een object is een voor mensen leesbare naam ter aanduiding van een object."@nl ;
   sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
+  sh:order 11 ;
   sh:minCount 1 ;
   sh:name "label"@nl ;
   sh:nodeKind sh:Literal ;
