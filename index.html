@@ -1,5 +1,4 @@
 <!DOCTYPE html><html lang="nl"><head>
-<script src="https://hypothes.is/embed.js" async></script>
 <meta charset="utf-8">
 <meta name="generator" content="ReSpec 34.1.1">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -51,6 +50,7 @@ dfn{cursor:pointer}
   
   
   
+
 <style id="respec-mainstyle">
 @keyframes pop{
 0%{transform:scale(1,1)}
@@ -109,7 +109,6 @@ dd{margin-left:0}
 .removeOnSave{display:none}
 }
 </style>
-
 <title>Nederlandse standaard voor het beschrijven van begrippen</title>
 <style>
 ul.index{columns:30ch;column-gap:1.5em}
@@ -465,7 +464,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 <p>In <a href="#uitbreidingen">2.5</a> beschrijven we met skos-lex als voorbeeld van een verdergaande typering van begrippen waarmee nog meer semantiek kan worden toegevoegd. </p>
 <p>Het beschrijven van de kenmerken van een <em>begrip</em>, <em>begrippenkader</em> of <em>collectie</em> doen we conform onze eigen standaard (practice what you preach). Dat betekent dat we voor ieder kenmerk van een begrip de volgende kenmerken beschrijven:</p>
 <ul>
-<li><a data-link-type="dfn|abstract-op" href="#dfn-voorkeursterm" class="internalDFN" id="ref-for-dfn-voorkeursterm-1">voorkeursterm</a>. De Engelse term nemen we over uit SKOS, maar soms ook uit een daarmee samenhangende standaard. In het profiel geven we de Nederlandse definitie.</li>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-voorkeursterm" class="internalDFN" id="ref-for-dfn-voorkeursterm-1">voorkeursterm</a>. De Engelse term nemen we over uit SKOS, maar soms ook uit een daarmee samenhangende standaard zoals iso-thes. In het profiel geven we de Nederlandse definitie.</li>
 <li><a data-link-type="dfn|abstract-op" href="#dfn-definitie" class="internalDFN" id="ref-for-dfn-definitie-1">definitie</a>. De definitie in het Engels nemen we over uit SKOS of een daarmee samenhangende standaard. In het profiel geven we de Nederlandse definitie.</li>
 <li><a data-link-type="dfn|abstract-op" href="#dfn-toelichting" class="internalDFN" id="ref-for-dfn-toelichting-1">toelichting</a>. De toelichting in het Engels nemen we over uit SKOS of een daarmee samenhangende standaard. De ISO 25964 geeft vaak ook een waardevolle (Engelse) toelichting. De ISO 25964 geeft zelf aan dat de toelichting misschien nog wel belangrijker is dan de definitie. Zowel de SKOS- als de ISO toelichting zijn naar het Nederlands vertaald.</li>
 <li><a data-link-type="dfn|abstract-op" href="#dfn-bron" class="internalDFN" id="ref-for-dfn-bron-1">bron</a>. Bij ieder kenmerk geven we aan welke bron(nen) we hebben gebruikt voor de beschrijving.</li>
@@ -504,7 +503,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 <td><a href="http://begrippen.nlbegrip.nl/sbb/id/concept/ConceptScheme">http://begrippen.nlbegrip.nl/sbb/id/concept/ConceptScheme</a></td>
 </tr>
 </tbody></table>
-<p>Een begrippenkader kan beschreven worden aan de hand van verschillende kenmerken. Deze zijn in de volgende tabel weergegeven.</p>
+<p>Een begrippenkader kan beschreven worden aan de hand van verschillende kenmerken. De tabel hieronder geeft een overzicht van deze kenmerken. In de tabel daaronder worden deze kenmerken stuk voor stuk beschreven. bij een begrippenkader is alleen 'heeft topbegrip' specifiek voor een begrippenkader. De kenmerken 'uitleg' en 'label' zijn ook en primair relevant voor begrippen en worden in de paragraaf over begrippen beschreven. 'heeft topebegrip' (begrip) heeft ook een invers kenmerk, namelijk 'is topbegrip van' (een begrippenkader). Dit inverse begrip wordt beschreven in de paragraaf over begrippen.</p>
 <table>
 <thead>
 <tr>
@@ -1250,7 +1249,7 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 </tr>
 </tbody></table>
 </section><section id="codes"><div class="header-wrapper"><h5 id="x2-3-1-3-codes"><bdi class="secno">2.3.1.3 </bdi>Codes</h5><a class="self-link" href="#codes" aria-label="Permalink for Section 2.3.1.3"></a></div>
-<p>Naast termen en notitities kunnen begrippen ook codes als kenmerken hebben. Een code is anders dan een term omdat het niet bedoelt is als aanduiding in natuurlijke taal. Codes zijn veelal ook niet leesbaar en bestaan vaak uit cijfers.</p>
+<p>Naast termen en notitities kunnen begrippen ook codes als kenmerken hebben. Een code is anders dan een term omdat deze niet bedoeld is als aanduiding in natuurlijke taal. Codes zijn veelal ook niet leesbaar en bestaan vaak uit cijfers.</p>
 <table>
 <thead>
 <tr>
@@ -1455,7 +1454,7 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 </tbody></table>
 <section class="informative" id="iso-25964-hierarchische-relaties"><div class="header-wrapper"><h5 id="x2-3-3-1-iso-25964-hierarchische-relaties"><bdi class="secno">2.3.3.1 </bdi>ISO 25964 hiërarchische relaties</h5><a class="self-link" href="#iso-25964-hierarchische-relaties" aria-label="Permalink for Section 2.3.3.1"></a></div><p><em>Dit onderdeel is niet normatief.</em></p> 
 
-Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebruikt als specialisatie respectievelijk generalisatie, kan het ook een partitieve, deel-geheel relatie zijn. De ISO 25964 standaard voor thesauri maakt in plaats van de ongespecificeerde hiërarchische relaties <a data-link-type="dfn|abstract-op" href="#dfn-heeft-bovenliggend-begrip" class="internalDFN" id="ref-for-dfn-heeft-bovenliggend-begrip-3">heeft bovenliggend begrip</a> en <a data-link-type="dfn|abstract-op" href="#dfn-heeft-onderliggend-begrip" class="internalDFN" id="ref-for-dfn-heeft-onderliggend-begrip-2">heeft onderliggend begrip</a> expliciet onderscheid tussen generalaties/specialisaties, partitieve relaties en instantiële relaties. Een kanttekening daarbij is wel dat de meeste tools alleen de standaard hiërarchische relaties herkennen.
+Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebruikt als specialisatie respectievelijk generalisatie, kan het ook een partitieve, deel-geheel relatie zijn. De ISO 25964 standaard voor thesauri maakt in plaats van de ongespecificeerde hiërarchische relaties <a data-link-type="dfn|abstract-op" href="#dfn-heeft-bovenliggend-begrip" class="internalDFN" id="ref-for-dfn-heeft-bovenliggend-begrip-3">heeft bovenliggend begrip</a> en <a data-link-type="dfn|abstract-op" href="#dfn-heeft-onderliggend-begrip" class="internalDFN" id="ref-for-dfn-heeft-onderliggend-begrip-2">heeft onderliggend begrip</a> expliciet onderscheid tussen generalalisaties/specialisaties, partitieve relaties en instantiële relaties. Een kanttekening daarbij is wel dat de meeste tools alleen de standaard hiërarchische relaties herkennen.
 
 <table>
 <thead>
