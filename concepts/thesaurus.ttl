@@ -81,13 +81,13 @@ beg-sbb:Concept
   skos:broader beg-sbb:Label ;
   skos:inScheme begkr-sbb:nlbegrip.
 
-#bron
+#heeft bron
 beg-sbb:Source
   a skos:Concept ;
   rdfs:label "source";
   skos:prefLabel
     "source"@en ,
-    "bron"@nl ;
+    "heeft bron"@nl ;
   skos:altLabel 
     "herkomst"@nl ,
     "bronverwijzing"@nl ;
@@ -755,7 +755,8 @@ beg-sbb:SourceDocument
   dct:source
     dct: ,
     foaf: ,
-    <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source> ;
+    <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#BibliographicResource>,
+    <http://xmlns.com/foaf/0.1/#term_Document>;
   skos:related 
     beg-sbb:BibliographicCitation ,
     beg-sbb:Type ,
@@ -783,18 +784,18 @@ beg-sbb:BibliographicCitation
     foaf: ;
   skos:inScheme begkr-sbb:nlbegrip .
 
-#soort
+#soort bron
 beg-sbb:Type
   a skos:Concept ;
   rdfs:label "type";
   skos:prefLabel
-    "soort"@nl ,
+    "soort bron"@nl ,
     "type"@en ;
   skos:definition
-    "Een soort is de aard of het genre van een bron."@nl ,
+    "Een soort bron is de aard of het genre van een bron."@nl ,
     "A type is the nature or genre of a resource."@en ;
   skos:scopeNote
-    "Met soort kan bijvoorbeeld aangegeven worden of het een 'geschreven bron' of een 'web resource' is. "@nl,
+    "Met soort bron kan bijvoorbeeld aangegeven worden of het een 'geschreven bron' of een 'web resource' is. "@nl,
     "Kind indicates whether it is a 'written resource' or a 'web resource'. "@en;
   dct:source
     dct: ;
