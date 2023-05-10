@@ -210,6 +210,47 @@ beg-sbb:Narrower
   skos:broader beg-sbb:SemanticRelation ;
   skos:inScheme begkr-sbb:nlbegrip.
 
+#heeft overeenkomstig bovenliggend
+beg-sbb:BroadMatch
+  a skos:Concept ;
+  rdfs:label "has broader match";
+  skos:prefLabel
+    "heeft overeenkomstig bovenliggend"@nl ,
+    "has broader match"@en ;
+  skos:definition
+    "Has broader match is used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en ,
+    "Heeft overeenkomstig bovenliggend relateert een begrip aan een bovenliggend begrip uit een ander begrippenkader"@nl ;
+  skos:scopeNote 
+    "Conventie is om heeft overeenkomstig bovenliggend op de zelfde manier als heeft bovenliggend te gebruiken, maar dan om een begrip te verbinden met een begrip in een ander begrippenkader, dus ook in een andere context. Je zou kunnen zeggen dat het in kaart brengen van dit soort relaties minder inherent is aan de betekenis van de betreffende begrippen. Vanuit het standpunt van de oorspronkelijke ontwerper van een begrippenkader kunnen ze soms zelfs verkeerd zijn. Harmonisatie eigenschappen zijn nuttig in toepassingen die meerdere, conceptueel overlappende begrippenkaders gebruiken."@nl ,
+    "By convention, has broader match is used to represent a link to a semantically related term in another term frame that has the same intended meaning as the standard broader relation, but with a different application scope. One might say that mapping relationships are less inherent to the meaning of the concepts they involve. From the point of view of the original designer of a mapped concept scheme, they might even sometimes be wrong. Mapping properties are expected to be useful in specific applications that use multiple, conceptually overlapping KOSs. By convention, mapping relationships are expected to be asserted between concepts that belong to different concept schemes."@en;
+  dct:source
+    <https://www.w3.org/TR/skos-reference/#mapping> ,
+    skos: ,
+    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
+  skos:broader beg-sbb:MatchingRelation ;
+  skos:related beg-sbb:Broader ;
+  skos:inScheme begkr-sbb:nlbegrip .
+
+#heeft overeenkomstig onderliggend
+beg-sbb:NarrowMatch
+  a skos:Concept ;
+  rdfs:label "has narrower match";
+  skos:prefLabel
+    "has narrower match"@en ,
+    "heeft overeenkomstig onderliggend"@nl ;
+  skos:definition
+    "Has narrower match is used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en ,
+    "Heeft overeenkomstig onderliggend relateert een begrip aan een specifieker begrip uit een ander begrippenkader"@nl ;
+  skos:scopeNote 
+    "Conventie is om heeft overeenkomstig onderliggend op zelfde manier als heeft onderliggend te gebruiken, maar dan om een begrip te verbinden met een begrip in een ander begrippenkader, dus ook in een andere context. Je zou kunnen zeggen dat het in kaart brengen van dit soort relaties minder inherent is aan de betekenis van de betreffende begrippen. Vanuit het standpunt van de oorspronkelijke ontwerper van een begrippenkader kunnen ze soms zelfs verkeerd zijn. Harmonisatie eigenschappen zijn nuttig in toepassingen die meerdere, conceptueel overlappende begrippenkaders gebruiken."@nl ,
+    "By convention, has narrower match is used to represent a link that has the same intended meaning as the standard narrower relation, but with a different application scope. One might say that mapping relationships are less inherent to the meaning of the concepts they involve. From the point of view of the original designer of a mapped concept scheme, they might even sometimes be wrong. Mapping properties are expected to be useful in specific applications that use multiple, conceptually overlapping KOSs. By convention, mapping relationships are expected to be asserted between concepts that belong to different concept schemes."@en;
+  dct:source
+    <https://www.w3.org/TR/skos-reference/#mapping> ,
+    skos: ,
+    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
+  skos:broader beg-sbb:MatchingRelation ;
+  skos:related beg-sbb:Narrower ;
+  skos:inScheme begkr-sbb:nlbegrip .
 
 #historische notitie
 beg-sbb:HistoryNote
@@ -239,7 +280,7 @@ beg-sbb:InScheme
     "in kader"@nl ,
     "in scheme"@en ;
   skos:definition
-    "In kader relateert een begrip tot een begrippenkader waarin het is opgenomen."@nl ,
+    "In kader relateert een begrip aan een begrippenkader waarin het is opgenomen."@nl ,
     "Is in scheme relates a resource (for example a concept) to a concept scheme in which it is included."@en ;
    skos:scopeNote
     "According to the SKOS-standard, concepts can be linked to multiple conceptschemes. Practically, this can only be the case when conceptschemes overlap in terms of scope."@en ,
@@ -250,26 +291,6 @@ beg-sbb:InScheme
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> ;
   skos:related beg-sbb:Concept ;
   skos:inScheme begkr-sbb:nlbegrip.
-
-#isTopConceptOf
-beg-sbb:isTopConceptOf
-  a skos:Concept ;
-  rdfs:label "is top concept of";
-  skos:prefLabel
-    "is topbegrip van"@nl ,
-    "is top concept of"@en ;
-  skos:definition
-    "Top concepts are concepts which are topmost in the hierarchical relations for a scheme."@en ,
-    "Een topbegrip is een begrip die bovenaan de hiërarchie staat in een bepaald begrippenkader."@nl ;
-  skos:scopeNote
-    "Has top concept adresses a concept that is at the top of a hierarchy, i.e. it has no broader concepts. This makes it easier, on importing a thesaurus, to pick out all the top level concepts from which to build a navigational tree."@en,
-    "Heeft topbegrip adresseert een begrip dat bovenaan een hiërarchie staat, d.w.z. het heeft geen bredere begrippen. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle begrippen op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen."@nl; 
-  dct:source skos: ,
-    <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> ;
-  skos:related 
-    beg-sbb:Taxonomy ,
-    beg-sbb:hasTopconcept ;
-  skos:inScheme begkr-sbb:nlbegrip .
 
 #is categorie van
 beg-sbb:NarrowerInstantial
@@ -301,7 +322,7 @@ beg-sbb:ExactMatch
     "has exact match"@en ,
     "is exact overeenkomstig"@nl ;
   skos:definition
-    "Is exact overeenkokmstig relateert een begrip aan een overeenkomstig begrip uit een ander begrippenkader, waarbij de betekenis van deze begrippen bij uiteenlopende toepassingen gelijk aan elkaar kan worden verondersteld."@nl ,
+    "Is exact overeenkomstig relateert een begrip aan een overeenkomstig begrip uit een ander begrippenkader, waarbij de betekenis van deze begrippen bij uiteenlopende toepassingen gelijk aan elkaar kan worden verondersteld."@nl ,
     "Exact match is used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. Exact match is a transitive property."@en ;
   skos:scopeNote 
     "Een dergelijke relatie is aanwezig als de betekenis van het betreffende begrip gelijk is aan de betekenis van het begrip uit het andere begrippenkader. Het begrip kan ook een 'leenwoord' zijn, dat wil zeggen dat het begrip is overgenomen uit het andere begrippenkader."@nl,
@@ -403,48 +424,6 @@ beg-sbb:BroaderPartitive
   skosthes:broaderGeneric beg-sbb:Broader ;
   skos:inScheme begkr-sbb:nlbegrip .
 
-#is overeenkomstig bovenliggend
-beg-sbb:BroadMatch
-  a skos:Concept ;
-  rdfs:label "has broader match";
-  skos:prefLabel
-    "is overeenkomstig bovenliggend"@nl ,
-    "has broader match"@en ;
-  skos:definition
-    "Has broader match is used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en ,
-    "Overeenkomstig bovenliggend relateert een begrip aan een bovenliggend begrip uit een ander begrippenkader"@nl ;
-  skos:scopeNote 
-    "Conventie is om overeenkomstig verwant op de zelfde manier als heeft bovenliggend te gebruiken, maar dan om een begrip te verbinden met een begrip in een ander begrippenkader, dus ook in een andere context. Je zou kunnen zeggen dat het in kaart brengen van dit soort relaties minder inherent is aan de betekenis van de betreffende begrippen. Vanuit het standpunt van de oorspronkelijke ontwerper van een begrippenkader kunnen ze soms zelfs verkeerd zijn. Harmonisatie eigenschappen zijn nuttig in toepassingen die meerdere, conceptueel overlappende begrippenkaders gebruiken."@nl ,
-    "By convention, has broader match is used to represent a link to a semantically related term in another term frame that has the same intended meaning as the standard broader relation, but with a different application scope. One might say that mapping relationships are less inherent to the meaning of the concepts they involve. From the point of view of the original designer of a mapped concept scheme, they might even sometimes be wrong. Mapping properties are expected to be useful in specific applications that use multiple, conceptually overlapping KOSs. By convention, mapping relationships are expected to be asserted between concepts that belong to different concept schemes."@en;
-  dct:source
-    <https://www.w3.org/TR/skos-reference/#mapping> ,
-    skos: ,
-    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
-  skos:broader beg-sbb:MatchingRelation ;
-  skos:related beg-sbb:Broader ;
-  skos:inScheme begkr-sbb:nlbegrip .
-
-#is overeenkomstig onderliggend
-beg-sbb:NarrowMatch
-  a skos:Concept ;
-  rdfs:label "has narrower match";
-  skos:prefLabel
-    "has narrower match"@en ,
-    "is overeenkomstig onderliggend"@nl ;
-  skos:definition
-    "Has narrower match is used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en ,
-    "Overeenkomstig onderliggend relateert een begrip aan een specifieker begrip uit een ander begrippenkader"@nl ;
-  skos:scopeNote 
-    "Conventie is om overeenkomstig onderliggend op zelfde manier als heeft onderliggend te gebruiken, maar dan om een begrip te verbinden met een begrip in een ander begrippenkader, dus ook in een andere context. Je zou kunnen zeggen dat het in kaart brengen van dit soort relaties minder inherent is aan de betekenis van de betreffende begrippen. Vanuit het standpunt van de oorspronkelijke ontwerper van een begrippenkader kunnen ze soms zelfs verkeerd zijn. Harmonisatie eigenschappen zijn nuttig in toepassingen die meerdere, conceptueel overlappende begrippenkaders gebruiken."@nl ,
-    "By convention, has narrower match is used to represent a link that has the same intended meaning as the standard narrower relation, but with a different application scope. One might say that mapping relationships are less inherent to the meaning of the concepts they involve. From the point of view of the original designer of a mapped concept scheme, they might even sometimes be wrong. Mapping properties are expected to be useful in specific applications that use multiple, conceptually overlapping KOSs. By convention, mapping relationships are expected to be asserted between concepts that belong to different concept schemes."@en;
-  dct:source
-    <https://www.w3.org/TR/skos-reference/#mapping> ,
-    skos: ,
-    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ;
-  skos:broader beg-sbb:MatchingRelation ;
-  skos:related beg-sbb:Narrower ;
-  skos:inScheme begkr-sbb:nlbegrip .
-
 #is overeenkomstig verwant
 beg-sbb:RelatedMatch
   a skos:Concept ;
@@ -485,6 +464,26 @@ beg-sbb:BroaderGeneric
   skosthes:broaderGeneric beg-sbb:Broader;
   skos:inScheme begkr-sbb:nlbegrip .
 
+#is topbegrip van
+beg-sbb:isTopConceptOf
+  a skos:Concept ;
+  rdfs:label "is top concept of";
+  skos:prefLabel
+    "is topbegrip van"@nl ,
+    "is top concept of"@en ;
+  skos:definition
+    "Top concepts are concepts which are topmost in the hierarchical relations for a scheme."@en ,
+    "Een topbegrip is een begrip die bovenaan de hiërarchie staat in een bepaald begrippenkader."@nl ;
+  skos:scopeNote
+    "Has top concept adresses a concept that is at the top of a hierarchy, i.e. it has no broader concepts. This makes it easier, on importing a thesaurus, to pick out all the top level concepts from which to build a navigational tree."@en,
+    "Heeft topbegrip adresseert een begrip dat bovenaan een hiërarchie staat, d.w.z. het heeft geen bredere begrippen. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle begrippen op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen."@nl; 
+  dct:source skos: ,
+    <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> ;
+  skos:related 
+    beg-sbb:Taxonomy ,
+    beg-sbb:hasTopconcept ;
+  skos:inScheme begkr-sbb:nlbegrip .
+
 #is vrijwel overeenkomstig
 beg-sbb:CloseMatch
   a skos:Concept ;
@@ -503,6 +502,23 @@ beg-sbb:CloseMatch
     <https://www.w3.org/TR/skos-reference/#mapping> ;
   skos:related beg-sbb:Concept ;
   skos:broader beg-sbb:MatchingRelation ;
+  skos:inScheme begkr-sbb:nlbegrip .
+
+#label
+beg-sbb:Label
+  a skos:Concept ;
+  rdfs:label "label";
+  skos:prefLabel "label"@en ,
+    "term"@nl ;
+  skos:definition
+    "Een label is een mensleesbare term ter aanduiding van iets."@nl ,
+    "A human-readable label is a word or phrase used to label a resource."@en ;
+  skos:scopeNote
+    "Dit is een overkoepelend begrip voor de verschillende soorten termen (voorkeursterm, alternatieve term, zoekterm) waarmee begrippen kunnen worden aangeduid. Good practice is om die specifieke termen te gebruiken. In de definitie moet 'iets' breed worden geïnterpreteerd. Het kan ieder onderwerp van gesprek zijn; zoals een specifiek begrip of een specifiek gebouw."@nl ,
+    "This is an umbrella term for the different types of labels (preferred label, alternative label, hidden label) with which concepts can be indicated. Good practice is to use those specific terms. In the definition, 'resource' should be interpreted broadly. A resource can be any subject; such as a particular concept or a particular building."@en;
+  dct:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.61> ;
+  skos:related beg-sbb:Concept ;
+  skos:broader beg-sbb:Phrase ;
   skos:inScheme begkr-sbb:nlbegrip .
 
 #notitie
@@ -598,25 +614,6 @@ beg-sbb:Phrase
     "In the definition, word should be interpreted broadly. A term can also be an abbreviation, such as 'VAT.' (the preferred term for 'Value Added Tax'), or a code such as '013' (A music venue in Tilburg)."@en ;
   skos:inScheme begkr-sbb:nlbegrip .
 
-#label
-beg-sbb:Label
-  a skos:Concept ;
-  rdfs:label "label";
-  skos:prefLabel "label"@en ,
-    "term"@nl ;
-  skos:definition
-    "Een label is een mensleesbare term ter aanduiding van een object."@nl ,
-    "A human-readable label is a word or phrase used to label a resource."@en ;
-  skos:scopeNote
-    "Dit is een overkoepelend begrip voor de verschillende soorten termen (voorkeursterm, alternatieve term, zoekterm) waarmee begrippen kunnen worden aangeduid. Good practice is om die specifieke termen te gebruiken."@nl ,
-    "This is an umbrella term for the different types of labels (preferred label, alternative label, hidden label) with which concepts can be indicated. Good practice is to use those specific terms."@en ,
-    "In de definitie moet 'object' breed worden geïnterpreteerd. Het kan ieder onderwerp van gesprek zijn; zoals een specifiek begrip of een specifiek gebouw."@nl ,
-    "In the definition, 'resource' should be interpreted broadly. A resource can be any subject; such as a particular concept or a particular building."@nl ;
-  dct:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.61> ;
-  skos:related beg-sbb:Concept ;
-  skos:broader beg-sbb:Phrase ;
-  skos:inScheme begkr-sbb:nlbegrip .
-
 #toelichting
 beg-sbb:ScopeNote
   a skos:Concept ;
@@ -650,8 +647,8 @@ beg-sbb:Comment
     <https://www.w3.org/TR/rdf-schema/#ch_comment> ,
     rdfs: ;
   skos:definition
-    "Een uitleg is een beschrijving van een object in eenvoudige taal, op taalniveau B1, die zonder verdere context begrepen kan worden."@nl ,
-    "A comment is a description of the subject resourcein simple language, at language level B1, which can be understood without further context."@en ;
+    "Een uitleg is een beschrijving van iets in eenvoudige taal, op taalniveau B1, die zonder verdere context begrepen kan worden."@nl ,
+    "A comment is a description of the subject resource in simple language, at language level B1, which can be understood without further context."@en ;
   skos:scopeNote 
     "De definitie moet precies kloppen. De uitleg is er veel meer op gericht om de lezer te laten begrijpen wat er wordt bedoeld."@nl,
     "The definition must be exactly correct. The comment is much more focused on making the reader understand what is meant."@en ;
