@@ -61,8 +61,8 @@ skosapnl:SourceDocument
   sh:targetObjectsOf dct:source ;
   sh:property
     skosapnl:SourceDocument-label ,
-    skosapnl:SourceDocument-page ,
     skosapnl:SourceDocument-comment ,
+    skosapnl:SourceDocument-page ,
     skosapnl:SourceDocument-bibliographicCitation ,
     skosapnl:SourceDocument-type .
 
@@ -171,25 +171,25 @@ skosapnl:Concept-changeNote
 
 skosapnl:Concept-broadMatch
   a sh:PropertyShape ;
-  rdfs:label "is overeenkomstig bovenliggend"@nl ;
+  rdfs:label "heeft overeenkomstig bovenliggend"@nl ;
   sh:class skos:Concept ;
   sh:description
     "skos:broadMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en ,
     "Used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en ;
   sh:disjoint skos:relatedMatch ;
   sh:group skosapnl:MatchingRelationshipsPropertyGroup ;
-  sh:name "is overeenkomstig bovenliggend"@nl ;
+  sh:name "heeft overeenkomstig bovenliggend"@nl ;
   sh:order 40 ;
   sh:nodeKind sh:IRI ;
   sh:path skos:broadMatch .
 
 skosapnl:Concept-narrowMatch
   a sh:PropertyShape ;
-  rdfs:label "is overeenkomstig onderliggend"@nl ;
+  rdfs:label "heeft overeenkomstig onderliggend"@nl ;
   sh:class skos:Concept ;
   sh:disjoint skos:relatedMatch ;
   sh:group skosapnl:MatchingRelationshipsPropertyGroup ;
-  sh:name "is overeenkomstig onderliggend"@nl ;
+  sh:name "heeft overeenkomstig onderliggend"@nl ;
   sh:order 41 ;
   sh:nodeKind sh:IRI ;
   sh:path skos:narrowMatch .
@@ -387,7 +387,7 @@ skosapnl:Concept-comment
   sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
   sh:name "uitleg"@nl, "comment"@en ;
   rdfs:label "comment"@nl ;
-  sh:order 10 ;
+  sh:order 5 ;
   sh:datatype rdf:langString ;
   sh:nodeKind sh:Literal ;
   sh:path rdfs:comment .
@@ -453,6 +453,7 @@ skosapnl:Concept-label
   sh:description "Een label voor een object is een voor mensen leesbare naam ter aanduiding van een object."@nl ;
   sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
   sh:name "label"@nl ;
+  sh:order 4 ;
   sh:nodeKind sh:Literal ;
   sh:path rdfs:label .
 
@@ -464,17 +465,9 @@ skosapnl:SourceDocument-label
   sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
   sh:minCount 1 ;
   sh:name "label"@nl ;
+  sh:order 4 ;
   sh:nodeKind sh:Literal ;
   sh:path rdfs:label .
-
-skosapnl:SourceDocument-page
-  a sh:PropertyShape ;
-  rdfs:label "url"@nl ;
-  sh:description "Vindplaats van de bron op internet."@nl ;
-  sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
-  sh:name "url"@nl ;
-  sh:nodeKind sh:IRI ;
-  sh:path foaf:page .
 
 skosapnl:SourceDocument-comment
   a sh:PropertyShape ;
@@ -483,8 +476,20 @@ skosapnl:SourceDocument-comment
   sh:description "Uitgebreide, voor de mens leesbare beschrijving van de bron"@nl ;
   sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
   sh:name "uitleg"@nl ;
+  sh:order 5 ;
   sh:nodeKind sh:Literal ;
   sh:path rdfs:comment .
+
+skosapnl:SourceDocument-page
+  a sh:PropertyShape ;
+  rdfs:label "url"@nl ;
+  sh:description "Vindplaats van de bron op internet."@nl ;
+  sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
+  sh:name "url"@nl ;
+  sh:order 7 ;
+  sh:nodeKind sh:IRI ;
+  sh:path foaf:page .
+
 
 skosapnl:SourceDocument-bibliographicCitation
   a sh:PropertyShape ;
@@ -492,16 +497,18 @@ skosapnl:SourceDocument-bibliographicCitation
   sh:description "Een reeks gegevens waarmee een document of fragment daarvan gevonden kan worden. Er bestaan verschillende citeerstijlen zoals IEEE, APA of MLA."@nl ;
   sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
   sh:name "citeertitel"@nl ;
+  sh:order 8 ;
   sh:nodeKind sh:Literal ;
   sh:datatype xsd:string ;
   sh:path dct:bibliographicCitation .
 
 skosapnl:SourceDocument-type
   a sh:PropertyShape ;
-  rdfs:label "soort"@nl ;
+  rdfs:label "soort bron"@nl ;
   sh:description "Aanduiding van het type of genre van het brondocument."@nl ;
   sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
-  sh:name "soort"@nl ;
+  sh:name "soort bron"@nl ;
+  sh:order 9 ;
   sh:nodeKind sh:IRI ;
   sh:path dct:type ;
   sh:class skos:Concept .
@@ -514,6 +521,7 @@ skosapnl:Collection-label
   sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
   sh:minCount 1 ;
   sh:name "label"@nl ;
+  sh:order 4 ;
   sh:nodeKind sh:Literal ;
   sh:path rdfs:label .
 
@@ -532,7 +540,7 @@ skosapnl:Collection-comment
   a sh:PropertyShape ;
   sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
   sh:name "uitleg"@nl, "comment"@en ;
-  sh:order 10 ;
+  sh:order 5 ;
   sh:datatype rdf:langString ;
   sh:path rdfs:comment .
 
@@ -553,7 +561,7 @@ skosapnl:ConceptScheme-comment
   a sh:PropertyShape ;
   sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
   sh:name "uitleg"@nl, "comment"@en ;
-  sh:order 10 ;
+  sh:order 5 ;
   sh:datatype rdf:langString ;
   sh:path rdfs:comment .
 
@@ -563,8 +571,8 @@ skosapnl:ConceptScheme-label
   sh:datatype rdf:langString ;
   sh:description "Een label voor een object is een voor mensen leesbare naam ter aanduiding van een object."@nl ;
   sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
-  sh:order 11 ;
   sh:minCount 1 ;
   sh:name "label"@nl ;
+  sh:order 4 ;
   sh:nodeKind sh:Literal ;
   sh:path rdfs:label .

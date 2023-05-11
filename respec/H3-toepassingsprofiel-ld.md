@@ -42,7 +42,7 @@ Een brondocument heeft niet één definitieve taalbinding. Dit komt omdat er vee
 | [=is topbegrip van=]                   | [skos:isTopConceptOf](http://www.w3.org/2004/02/skos/core#isTopConceptOf)           |
 | [=uitleg=]                             | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment)                        |
 | [=definitie=]                          | [skos:definition](http://www.w3.org/2004/02/skos/core#definition)                   |
-| [=bron=]                               | [dct:source](http://purl.org/dc/terms/source)                                       |
+| [=heeft bron=]                               | [dct:source](http://purl.org/dc/terms/source)                                       |
 | [=heeft bovenliggend begrip=]          | [skos:broader](http://www.w3.org/2004/02/skos/core#broader)                         |
 | [=heeft onderliggend begrip=]          | [skos:narrower](http://www.w3.org/2004/02/skos/core#narrower)                       |
 | [=is gerelateerd aan=]                 | [skos:related](http://www.w3.org/2004/02/skos/core#related)                         |
@@ -51,8 +51,8 @@ Een brondocument heeft niet één definitieve taalbinding. Dit komt omdat er vee
 | [=historie notitie=]                   | [skos:historyNote](http://www.w3.org/2004/02/skos/core#historyNote)                 |
 | [=toelichting=]                        | [skos:scopeNote](http://www.w3.org/2004/02/skos/core#scopeNote)                     |
 | [=voorbeeld=]                          | [skos:example](http://www.w3.org/2004/02/skos/core#example)                         |
-| [=is overeenkomstig bovenliggend=]     | [skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch)                   |
-| [=is overeenkomstig onderliggend=]     | [skos:narrowMatch](http://www.w3.org/2004/02/skos/core#narrowMatch)                 |
+| [=heeft overeenkomstig bovenliggend=]  | [skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch)                   |
+| [=heeft overeenkomstig onderliggend=]  | [skos:narrowMatch](http://www.w3.org/2004/02/skos/core#narrowMatch)                 |
 | [=is vrijwel overeenkomstig=]          | [skos:closeMatch](http://www.w3.org/2004/02/skos/core#closeMatch)                   |
 | [=is exact overeenkomstig=]            | [skos:exactMatch](http://www.w3.org/2004/02/skos/core#exactMatch)                   |
 | [=is overeenkomstig verwant=]          | [skos:relatedMatch](http://www.w3.org/2004/02/skos/core#relatedMatch)               |
@@ -64,7 +64,7 @@ Een brondocument heeft niet één definitieve taalbinding. Dit komt omdat er vee
 | [=is categorie van=]                   | [isothes:narrowerInstantial](http://purl.org/iso25964/skos-thes#narrowerInstantial) |
 | [=citeertitel=]                        | [dct:bibliographicCitation](http://purl.org/dc/terms/bibliographicCitation)         |
 | [=url=]                                | [foaf:page](http://xmlns.com/foaf/0.1/page)                                         |
-| [=soort=]                              | [dct:type](http://purl.org/dc/terms/type)                                           |
+| [=soort bron=]                         | [dct:type](http://purl.org/dc/terms/type)                                           |
 | [=bevat=]                              | [skos:member](http://www.w3.org/2004/02/skos/core#member)                           |
 
 # Specificatie
@@ -99,7 +99,7 @@ Een begrip wordt gerepresenteerd als een `skos:Concept`. Deze typering is verpli
 | [=is topbegrip van=]            | [skos:isTopConceptOf](http://www.w3.org/2004/02/skos/core#isTopConceptOf)           | 0..*          | [skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme) |
 | [=uitleg=]                      | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment)                        | 0..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
 | [=definitie=]                   | [skos:definition](http://www.w3.org/2004/02/skos/core#definition)                   | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
-| [=bron=]                        | [dct:source](http://purl.org/dc/terms/source)                                       | 0..*          | [sh:BlankNodeOrIRI](http://www.w3.org/ns/shacl#BlankNodeOrIRI)          |
+| [=heeft bron=]                        | [dct:source](http://purl.org/dc/terms/source)                                       | 0..*          | [foaf:Document](http://xmlns.com/foaf/0.1/Document)          |
 | [=heeft bovenliggend begrip=]   | [skos:broader](http://www.w3.org/2004/02/skos/core#broader)                         | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
 | [=heeft onderliggend begrip=]   | [skos:narrower](http://www.w3.org/2004/02/skos/core#narrower)                       | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
 | [=is gerelateerd aan=]          | [skos:related](http://www.w3.org/2004/02/skos/core#related)                         | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
@@ -108,11 +108,11 @@ Een begrip wordt gerepresenteerd als een `skos:Concept`. Deze typering is verpli
 | [=historie notitie=]            | [skos:historyNote](http://www.w3.org/2004/02/skos/core#historyNote)                 | 0..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
 | [=toelichting=]                 | [skos:scopeNote](http://www.w3.org/2004/02/skos/core#scopeNote)                     | 0..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
 | [=voorbeeld=]                   | [skos:example](http://www.w3.org/2004/02/skos/core#example)                         | 0..*          | [sh:IRIOrLiteral](http://www.w3.org/ns/shacl#IRIOrLiteral)              |
-| [=is overeenkomstig bovenliggend=] | [skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch)                   | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
-| [=is overeenkomstig onderliggend=] | [skos:narrowMatch](http://www.w3.org/2004/02/skos/core#narrowMatch)                 | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
-| [=is vrijwel overeenkomstig=]      | [skos:closeMatch](http://www.w3.org/2004/02/skos/core#closeMatch)                   | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
-| [=is exact overeenkomstig=]        | [skos:exactMatch](http://www.w3.org/2004/02/skos/core#exactMatch)                   | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
-| [=is overeenkomstig verwant=]      | [skos:relatedMatch](http://www.w3.org/2004/02/skos/core#relatedMatch)               | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
+| [=heeft overeenkomstig bovenliggend=] | [skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch)             | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
+| [=heeft overeenkomstig onderliggend=] | [skos:narrowMatch](http://www.w3.org/2004/02/skos/core#narrowMatch)           | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
+| [=is vrijwel overeenkomstig=]      | [skos:closeMatch](http://www.w3.org/2004/02/skos/core#closeMatch)                | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
+| [=is exact overeenkomstig=]        | [skos:exactMatch](http://www.w3.org/2004/02/skos/core#exactMatch)                | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
+| [=is overeenkomstig verwant=]      | [skos:relatedMatch](http://www.w3.org/2004/02/skos/core#relatedMatch)            | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
 | [=is specialisatie van=]        | [isothes:broaderGeneric](http://purl.org/iso25964/skos-thes#broaderGeneric)         | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
 | [=is generalisatie van=]        | [isothes:narrowerGeneric](http://purl.org/iso25964/skos-thes#narrowerGeneric)       | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
 | [=is onderdeel van=]            | [isothes:broaderPartitive](http://purl.org/iso25964/skos-thes#broaderPartitive)     | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
@@ -130,7 +130,7 @@ Een Bron wordt gerepresenteerd als een `foaf:Document`. Deze typering wordt aang
 | [=label=]           | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)                    | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
 | [=uitleg=]          | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment)                | 0..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
 | [=url=]             | [foaf:page](http://xmlns.com/foaf/0.1/page)                                 | 0..*          | [sh:IRI](http://www.w3.org/ns/shacl#IRI)                                |
-| [=soort=]           | [dct:type](http://purl.org/dc/terms/type)                                   | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
+| [=soort bron=]      | [dct:type](http://purl.org/dc/terms/type)                                   | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
 | [=citeertitel=]     | [dct:bibliographicCitation](http://purl.org/dc/terms/bibliographicCitation) | 0..*          | [xsd:string](http://www.w3.org/2001/XMLSchema#string)                   |
 
 ## Specificatie Collectie

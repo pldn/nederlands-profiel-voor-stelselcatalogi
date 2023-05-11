@@ -92,7 +92,7 @@ beg-sbb:Source
     "herkomst"@nl ,
     "bronverwijzing"@nl ;
   skos:definition
-    "Heeft bron relateert een begrip aan een brondocument waarvan het is afgeleid"@nl ,
+    "Heeft bron relateert een begrip aan een brondocument waarvan het is afgeleid."@nl ,
     "Source relates a concept to a document from which it is derived."@en ;
   dct:source
     dct: ,
@@ -240,7 +240,7 @@ beg-sbb:NarrowMatch
     "heeft overeenkomstig onderliggend"@nl ;
   skos:definition
     "Has narrower match is used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en ,
-    "Heeft overeenkomstig onderliggend relateert een begrip aan een specifieker begrip uit een ander begrippenkader"@nl ;
+    "Heeft overeenkomstig onderliggend relateert een begrip aan een specifieker begrip uit een ander begrippenkader."@nl ;
   skos:scopeNote 
     "Conventie is om heeft overeenkomstig onderliggend op zelfde manier als heeft onderliggend te gebruiken, maar dan om een begrip te verbinden met een begrip in een ander begrippenkader, dus ook in een andere context. Je zou kunnen zeggen dat het in kaart brengen van dit soort relaties minder inherent is aan de betekenis van de betreffende begrippen. Vanuit het standpunt van de oorspronkelijke ontwerper van een begrippenkader kunnen ze soms zelfs verkeerd zijn. Harmonisatie eigenschappen zijn nuttig in toepassingen die meerdere, conceptueel overlappende begrippenkaders gebruiken."@nl ,
     "By convention, has narrower match is used to represent a link that has the same intended meaning as the standard narrower relation, but with a different application scope. One might say that mapping relationships are less inherent to the meaning of the concepts they involve. From the point of view of the original designer of a mapped concept scheme, they might even sometimes be wrong. Mapping properties are expected to be useful in specific applications that use multiple, conceptually overlapping KOSs. By convention, mapping relationships are expected to be asserted between concepts that belong to different concept schemes."@en;
@@ -746,6 +746,7 @@ beg-sbb:SourceDocument
   skos:prefLabel
     "source document"@en ,
     "brondocument"@nl ;
+  skos:altLabel "bron"@nl ;
   skos:definition
     "Een brondocument is een document of resource op het web waaruit de betekenis van een begrip is afgeleid."@nl ,
     "A source document is a document or web resource from which a described concept is derived."@en ;
