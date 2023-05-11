@@ -1,0 +1,17 @@
+prefix versie: <http://ontologie.nlbegrip.nl/def/versie#>.
+prefix voorbeeld: <http://begrippen.nlbegrip/nl/versievoorbeeld
+
+<http://begrippen.nlbegrip/nl/versievoorbeeld> a versie:Beheereenheid;
+  versie:versienummer "1.0.0";
+.
+
+voorbeeld:Auto a skos:Concept;
+  skos:prefLabel "Auto";
+  skos:definition "Een auto is een voertuig";
+.
+
+voorbeeld:Bestuurder a skos:Concept;
+  skos:prefLabel "Bestuurder";
+  skos:definition "Een bestuurder is degene die achter het stuur van een auto zit";
+  skos:related voorbeeld:Auto;
+.
