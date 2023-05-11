@@ -92,7 +92,7 @@ beg-sbb:Source
     "herkomst"@nl ,
     "bronverwijzing"@nl ;
   skos:definition
-    "Bron relateert een begrip aan een brondocument waarvan het is afgeleid"@nl ,
+    "Heeft bron relateert een begrip aan een brondocument waarvan het is afgeleid"@nl ,
     "Source relates a concept to a document from which it is derived."@en ;
   dct:source
     dct: ,
