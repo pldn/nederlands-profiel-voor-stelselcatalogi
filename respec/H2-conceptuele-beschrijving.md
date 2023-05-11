@@ -15,7 +15,9 @@ Het beschrijven van de kenmerken van een *begrip*, *begrippenkader* of *collecti
   * [=definitie=]. De definitie in het Engels nemen we over uit SKOS of een daarmee samenhangende standaard. In het profiel geven we de Nederlandse definitie.
   * [=toelichting=]. De toelichting in het Engels nemen we over uit SKOS of een daarmee samenhangende standaard. De ISO 25964 geeft vaak ook een waardevolle (Engelse) toelichting. De ISO 25964 geeft zelf aan dat de toelichting misschien nog wel belangrijker is dan de definitie. Zowel de SKOS- als de ISO toelichting zijn naar het Nederlands vertaald.
   * [=bron=]. Bij ieder kenmerk geven we aan welke bron(nen) we hebben gebruikt voor de beschrijving.
-  * relaties met andere kenmerken.
+  * relaties met andere begrippen.
+
+Als een term uit meerdere woorden bestaat ontstaan soms grammaticaal onlogische zinnen, zoals "Heeft bovenliggend begrip relateert een begrip aan...". Dan is het nodig om aan te duiden dat *heeft bovenliggend begrip* 1 begrip aanduidt. Semantisch gezien is het gebruik van enkele of dubbele aanhalingstekens dan onjuist. Daarmee wordt verwezen naar een term en niet naar het begrip. Dit wordt duidelijk in een zin als "De term  'bank' kan zowel een financiële instelling als een zitmeubel aanduiden". In de voorliggende standaard is het essentieel dat duidelijk is wanneer het over een term gaat en wanneer over een begrip. Dit onderscheid is bekend als de [use-mention distinction](https://en.wikipedia.org/wiki/Use%E2%80%93mention_distinction). Voor het aanduiden van een begrip is geen duidelijke standaard. Hier gebruiken we <<...>> om waar nodig aan te geven dat het om een begrip gaat. Bijvoorbeeld "<<Heeft bovenliggend begrip>> relateert een begrip aan...".
 
 ## Overzicht
 Het onderstaande diagram geeft een overzicht van het conceptuele model die met deze standaard is geformuleerd.
@@ -450,7 +452,7 @@ Een [=brondocument=] is een document waaruit de betekenis van het begrip is afge
 Het is good practice om voor ieder begrip bronverwijzingen op te nemen. Zo is het duidelijk waar de definitie van een begrip op gebasseerd is. Dit verhoogt de kwaliteit van het begrip en vooral ook de betrouwbaarheid. Het gebruiken van de hieronder beschreven structuur wordt ten zeerste aanbevolen voor het beschrijven van bronnen en het relateren van begrippen aan bronnen.
 
 Een bronverwijzing wordt vastgelegd als kenmerk van een begrip. Hiervoor geldt we het volgende patroon:
-Een **[=begrip=]** heeft een kenerk '**[=bron=]**'. Dit kenmerk relateert het begrip aan een beschrijving van de bron zelf, het **[=brondocument=]**.
+Een **[=begrip=]** heeft een kenmerk '**[=bron=]**'. Dit kenmerk relateert het begrip aan een beschrijving van de bron zelf, het **[=brondocument=]**.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
