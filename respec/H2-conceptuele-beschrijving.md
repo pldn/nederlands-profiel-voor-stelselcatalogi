@@ -26,7 +26,7 @@ Het onderstaande diagram geeft een overzicht van het conceptuele model die met d
 ![](/respec/media/model-conceptueel.png)
 
 ## Begrippenkader
-Begrippen kunnen als zelfstandige entiteiten worden gezien maar veelal worden ze opgesteld als onderdeel van een gecureerd begrippenkader, zoals begrippenlijsten, taxonomieën en thesauri. Een [=begrippenkader=] is een verzameling van [=begrip=]pen die in een bepaalde context relevant zijn. Een begrippenkader wordt ookwel gezien als een eenheid van context. Als kenmerk van het [=begrip=] wordt aangegeven of het onderdeel is van een begrippenkader ([=in kader=]) Een begrippenkader is vergelijkbaar met een taal die in een bepaald gebied gesproken wordt. En net als een reguliere taal is een begrippenkader een open systeem. Zo kan een taal ook groeien na introductie van nieuwe woorden vanuit talen uit nabijgelegen gebieden. Dat wil zeggen dat een begrippenkader net als een taal naast vertalingen (mappings) kent ook woorden kunnen overnemen; leenwoorden. Zoals "computer", een van origine engels woord, ook behoort tot de nederlandse taal. Het beschrijven welke begrippen behoren tot een begrippenkader is essentieel; maar hoe deze 'vertaald' kunnen worden naar begrippen uit andere begrippenkaders ook. Voor dit laatste gebruiken we [=harmonisatierelatie=]s.
+Begrippen kunnen als zelfstandige entiteiten worden gezien maar veelal worden ze opgesteld als onderdeel van een gecureerd begrippenkader, zoals begrippenlijsten, taxonomieën en thesauri. Een [=begrippenkader=] is een verzameling van [=begrip=]pen die in een bepaalde context relevant zijn. Een begrippenkader wordt ookwel gezien als een eenheid van context. Als kenmerk van het [=begrip=] wordt aangegeven of het onderdeel is van een begrippenkader ([=in kader=]) Een begrippenkader is vergelijkbaar met een taal die in een bepaald gebied gesproken wordt. En net als een reguliere taal is een begrippenkader een open systeem. Zo kan een taal ook groeien na introductie van nieuwe woorden vanuit talen uit nabijgelegen gebieden. Dat wil zeggen dat een begrippenkader net als een taal naast vertalingen (mappings) kent ook woorden kunnen overnemen; leenwoorden. Zoals "computer", een van origine Engels woord, ook behoort tot de Nederlandse taal. Het beschrijven welke begrippen behoren tot een begrippenkader is essentieel; maar hoe deze 'vertaald' kunnen worden naar begrippen uit andere begrippenkaders ook. Voor dit laatste gebruiken we [=harmonisatierelatie=]s.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -36,7 +36,7 @@ Begrippen kunnen als zelfstandige entiteiten worden gezien maar veelal worden ze
 | **toelichting** | Een begrippenkader kan worden gedefinieerd om begrippen uit verschillende bronnen op te nemen. Begrippenkaders bieden een manier om kennis te ordenen voor het later kunnen ophalen. Ze worden gebruikt in indexeringsschema&#39;s, koppen, thesauri, taxonomieën en andere kennisorganisatiesystemen. Begrippenkaders verplichten het gebruik van vooraf gedefinieerde, geautoriseerde termen die zijn geselecteerd door de ontwerpers ervan, in tegenstelling tot natuurlijke taalvocabulaires,die een dergelijke beperking niet hebben. |
 | **uri** | http://begrippen.nlbegrip.nl/sbb/id/concept/ConceptScheme |
 
-Een begrippenkader kan beschreven worden aan de hand van verschillende kenmerken. De tabel hieronder geeft een overzicht van deze kenmerken. In de tabel daaronder worden deze kenmerken stuk voor stuk beschreven. bij een begrippenkader is alleen 'heeft topbegrip' specifiek voor een begrippenkader. De kenmerken 'uitleg' en 'label' zijn ook en primair relevant voor begrippen en worden in de paragraaf over begrippen beschreven. 'heeft topebegrip' (begrip) heeft ook een invers kenmerk, namelijk 'is topbegrip van' (een begrippenkader). Dit inverse begrip wordt beschreven in de paragraaf over begrippen.
+Een begrippenkader kan beschreven worden aan de hand van verschillende kenmerken. De tabel hieronder geeft een overzicht van deze kenmerken. In de tabel daaronder worden deze kenmerken stuk voor stuk beschreven. Bij een begrippenkader is alleen 'heeft topbegrip' specifiek voor een begrippenkader. De kenmerken 'uitleg' en 'label' zijn ook en primair relevant voor begrippen en worden in de paragraaf over begrippen beschreven. 'heeft topbegrip' (begrip) heeft ook een invers kenmerk, namelijk 'is topbegrip van' (een begrippenkader). Dit inverse begrip wordt beschreven in de paragraaf over begrippen.
 
 | Conceptueel element | Kardinaliteit | Type       |
 | ------------------- | ------------- | ---------- |
@@ -122,7 +122,7 @@ Een begrip kan beschreven worden aan de hand van verschillende kenmerken. Deze z
 ### Begrippenlijst
 Aan de hand van de begripsdriehoek, zien we dat om een spreker te kunnen begrijpen, een toehoorder minimaal iets moeten weten over de betekenis en de termen die ter aanduiding gebruikt worden.
 
-Door deze basis voor alle begrippen die binnen een context gebruikt worden vast te leggen onstaat een [=begrippenkader=]. We spreken hier van een begrippenlijst. Dit is het basisniveau voor het beschrijving van begrippen in een bepaald domein. 
+Door deze basis voor alle begrippen die binnen een context gebruikt worden vast te leggen ontstaat een [=begrippenkader=]. We spreken hier van een begrippenlijst. Dit is het basisniveau voor de beschrijving van begrippen in een bepaald domein. 
 
 Een begrippenlijst is een termenlijst met definities die gebruikt worden in een bepaald domein. Een begrippenlijst kent voor ieder begrip dan ook mimimaal één [=voorkeursterm=] en één [=definitie=]. Een toelichting op de definitie is aanbevolen, evenals een verwijzing naar de bron van de betekenis. 
 Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in klare taal, op B1 niveau aanbevolen. De overige kenmerken zijn optioneel.
@@ -264,7 +264,7 @@ De volgende notities zijn aanvullende documentaire notities.
 | **uri** | http://begrippen.nlbegrip.nl/sbb/id/concept/ChangeNote |
 
 #### Codes
-Naast termen en notitities kunnen begrippen ook codes als kenmerken hebben. Een code is anders dan een term omdat deze niet bedoeld is als aanduiding in natuurlijke taal. Codes zijn veelal ook niet leesbaar en bestaan vaak uit cijfers.
+Naast termen en notities kunnen begrippen ook codes als kenmerken hebben. Een code is anders dan een term omdat deze niet bedoeld is als aanduiding in natuurlijke taal. Codes zijn veelal ook niet leesbaar en bestaan vaak uit cijfers.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -323,7 +323,7 @@ Als een eerste begrip een bovenliggend begrip is in relatie tot een tweede begri
 | **toelichting** | Het doel van een thesaurus is traditioneel om de indexeerder en de zoeker te helpen bij het kiezen van dezelfde term voor hetzelfde begrip. Om dit te bereiken, bevat een thesaurus in de eerste plaats alle begrippen die nuttig kunnen zijn voor zoekdoeleinden in een bepaald domein. Ten tweede moet een thesaurus de begrippen zo presenteren dat mensen ze gemakkelijk kunnen vinden. Dit wordt bereikt door relaties tussen begrippen tot stand te leggen en de relaties te gebruiken om de begrippen in een gestructureerde weergave te presenteren. |
 | **uri** | http://begrippen.nlbegrip.nl/sbb/id/concept/Thesaurus |
 
-Naast de kenmerken die voor begrippen in een begrippenlijst of taxonomie zijn geintroduceert, kan een begrip in een thesaurus ook associatieve, niet-hiërarchische relaties tussen begrippen kennen. Hiervoor kennen we de relatie [=is gerelateerd aan=].
+Naast de kenmerken die voor begrippen in een begrippenlijst of taxonomie zijn geintroduceerd, kan een begrip in een thesaurus ook associatieve, niet-hiërarchische relaties tussen begrippen kennen. Hiervoor kennen we de relatie [=is gerelateerd aan=].
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -449,7 +449,7 @@ Specifiek onderscheiden we de volgende verschillende harmonisatierelaties.
 ## Brondocument
 
 Een [=brondocument=] is een document waaruit de betekenis van het begrip is afgeleid.
-Het is good practice om voor ieder begrip bronverwijzingen op te nemen. Zo is het duidelijk waar de definitie van een begrip op gebasseerd is. Dit verhoogt de kwaliteit van het begrip en vooral ook de betrouwbaarheid. Het gebruiken van de hieronder beschreven structuur wordt ten zeerste aanbevolen voor het beschrijven van bronnen en het relateren van begrippen aan bronnen.
+Het is een good practice om voor ieder begrip bronverwijzingen op te nemen. Zo is het duidelijk waar de definitie van een begrip op gebaseerd is. Dit verhoogt de kwaliteit van het begrip en vooral ook de betrouwbaarheid. Het gebruiken van de hieronder beschreven structuur wordt ten zeerste aanbevolen voor het beschrijven van bronnen en het relateren van begrippen aan bronnen.
 
 Een bronverwijzing wordt vastgelegd als kenmerk van een begrip. Hiervoor geldt we het volgende patroon:
 
@@ -516,7 +516,7 @@ Het gebruik van [=Collectie=]s is altijd optioneel binnen deze standaard. Collec
 
 Collecties bieden de mogelijkheid om binnen een begrippenkader begrippen die voor hun betekenis niet direct via semantische relaties met elkaar zijn verbonden, toch bij elkaar te zetten. Zo hebben het begrip 'vervuild' dat in milieuwetgeving wordt gedefinieerd en het begrip 'landgoed' dat in de natuurschoonwet wordt gedefinieerd semantisch geen relatie, maar worden ze beiden beschouwd als 'publiekrechtelijke beperking' in het kader van de Wet Kenbaarheid Publiekrechtelijke Beperkingen (WKPB). Deze begrippen kunnen dan samen met andere begrippen die onder de WKPB vallen worden samengebracht in een collectie.
 
-Begrippen zijn op verschillende manieren te verzamelen. Collecties zijn verzamelingen van begrippen, maar het begrippenkader is bijvoorbeeld ook een verzameling begrippen. Deze zijn echter verschillend in de zin dat een begrippenkader een context geeft en een collectie dat niet doet. Een begrip behoort tot een begrippenkader als het "binnen" die context valt. Bij een collectie is het juist andersom: een collectie bestaat uit begrippen. Dus of een begrip bij een collectie hoort, wordt niet bepaald door de betekenis van het begrip zelf, maar door wat de collectie-eigenaar vindt dat in "zijn" collectie hoort. Anders gezegd: een begrippenkader is een "open" verzameling: de verzameling bestaat uit de begrippen die bij dit begrippenkader horen (obv de context), een collectie is een "gesloten" verzameling; de verzameling bestaat uit de begrippen die als lid zijn toegevoegd aan de verzameling.
+Begrippen zijn op verschillende manieren te verzamelen. Collecties zijn verzamelingen van begrippen, maar het begrippenkader is bijvoorbeeld ook een verzameling begrippen. Deze zijn echter verschillend in de zin dat een begrippenkader een context geeft en een collectie dat niet doet. Een begrip behoort tot een begrippenkader als het "binnen" die context valt. Bij een collectie is het juist andersom: een collectie bestaat uit begrippen. Dus of een begrip bij een collectie hoort, wordt niet bepaald door de betekenis van het begrip zelf, maar door wat de collectie-eigenaar vindt dat in "zijn" collectie hoort. Anders gezegd: een begrippenkader is een "open" verzameling: de verzameling bestaat uit de begrippen die bij dit begrippenkader horen (op basis van de context), een collectie is een "gesloten" verzameling; de verzameling bestaat uit de begrippen die als lid zijn toegevoegd aan de verzameling.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -535,7 +535,7 @@ Een collectie kan beschreven worden aan de hand van verschillende kenmerken. Dez
 | [=uitleg=]          | 0..*          | Tekst                       |
 | [=bevat=]           | 0..*          | [=begrip=] of [=collectie=] |
 
-Collecties maken het mogelijk om begrippen te groepen op een manier die haaks staat op de hierarchische structuur van het begrippenkader en zeggen dus niks over de plek van de bijbehorende begrippen in het begrippenkader. In het bovengenoemde voorbeeld is er met gebruik van de collectie geen semantische relatie tussen het begrip 'publiekrechtelijke beperking' en het begrip 'landgoed'. Een collectie zie je ook vaak terug in de context van een bepaalde toepassing waar het nodig is om bepaalde keuzelijsten en/of dropdown menu's samen te stellen. 
+Collecties maken het mogelijk om begrippen te groepen op een manier die haaks staat op de hiërarchische structuur van het begrippenkader en zeggen dus niks over de plek van de bijbehorende begrippen in het begrippenkader. In het bovengenoemde voorbeeld is er met gebruik van de collectie geen semantische relatie tussen het begrip 'publiekrechtelijke beperking' en het begrip 'landgoed'. Een collectie zie je ook vaak terug in de context van een bepaalde toepassing waar het nodig is om bepaalde keuzelijsten en/of dropdown menu's samen te stellen. 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -547,7 +547,7 @@ Collecties maken het mogelijk om begrippen te groepen op een manier die haaks st
 ## Uitbreidingen
 Voor specifieke domeinen kan het handig zijn om de samenhang van begrippen gedetailleerder te beschrijven dan in een standaard thesauri. Dat kan door begrippen en/of relaties nader te typeren. Op zo'n manier voldoet het betreffende domein aan de hier beschreven standaard en kan de aanvullende informatie worden meegenomen. Voor de hieronder genoemde uitbreidingen geldt dat vastgesteld is dat sprake is van een aanvulling op de voorliggende standaard. Dergelijke nieuwe aanvullingen kunnen aangemeld worden via https://github.com/pldn/nederlands-profiel-voor-stelselcatalogi/ ([pull requests](https://github.com/pldn/nederlands-profiel-voor-stelselcatalogi/pulls/), [new issue](https://github.com/pldn/nederlands-profiel-voor-stelselcatalogi/issues/new), [open issues](https://github.com/pldn/nederlands-profiel-voor-stelselcatalogi/issues/). Domeinen die gebruik maken van een dergelijke aanvulling worden geadviseerd hiervan gebruik te maken, zodat een dergelijke vaststelling als uitbreiding kan worden opgenomen en bovendien. Daarmee wordt de toepassing van dergelijke uitbreidingen ook voor anderen bruikbaar. 
 
-De hieronder beschreven uitbreidingen vallen buiten de scope van standaard glossaries, taxonomieën en thesauri. De beschrijvingen zijn her opgenomen als voorbeeld van een uitbreiding op een standaard thesaurus.
+De hieronder beschreven uitbreidingen vallen buiten de scope van standaard glossaries, taxonomieën en thesauri. De beschrijvingen zijn hier opgenomen als voorbeeld van een uitbreiding op een standaard thesaurus.
 
 ### SkosXL
 SkosXL is een al wat langer bestaande uitbreiding op skos. SkosXL is ontwikkeld om ook kenmerken van een term vast te kunnen leggen, bijvoorbeeld meervoudsvormen.
