@@ -73,36 +73,36 @@ Het hebben van gestandaardiseerde begrippen zorgt ervoor dat iedereen dezelfde t
 
 Een begrip kan beschreven worden aan de hand van verschillende kenmerken. Deze zijn in de volgende tabel weergegeven. In de volgende hoofdstukken worden deze per usecase verder beschreven.
 
-| Conceptueel element             | Kardinaliteit | Type               |
-| ------------------------------- | ------------- | ------------------ |
-| [=voorkeursterm=]               | 1..*          | Tekst              |
-| [=alternatieve term=]           | 0..*          | Tekst              |
-| [=zoekterm=]                    | 0..*          | Tekst              |
-| [=code=]                        | 0..*          | Tekst              |
-| [=in kader=]                    | 1..*          | [=begrippenkader=] |
-| [=is topbegrip van=]            | 0..*          | [=begrippenkader=] |
-| [=definitie=]                   | 1..*          | Tekst              |
-| [=uitleg=]                      | 0..*          | Tekst              |
-| [=heeft bron=]                  | 0..*          | [=brondocument=]   |
-| [=heeft bovenliggend begrip=]   | 0..*          | [=begrip=]         |
-| [=heeft onderliggend begrip=]   | 0..*          | [=begrip=]         |
-| [=is gerelateerd aan=]          | 0..*          | [=begrip=]         |
-| [=wijzigingsnotitie=]           | 0..*          | Text               |
-| [=redactionele notitie=]        | 0..*          | Text               |
-| [=historie notitie=]            | 0..*          | Text               |
-| [=toelichting=]                 | 0..*          | Text               |
-| [=voorbeeld=]                   | 0..*          | Text               |
+| Conceptueel element                   | Kardinaliteit | Type               |
+| ------------------------------------- | ------------- | ------------------ |
+| [=voorkeursterm=]                     | 1..*          | Tekst              |
+| [=alternatieve term=]                 | 0..*          | Tekst              |
+| [=zoekterm=]                          | 0..*          | Tekst              |
+| [=code=]                              | 0..*          | Tekst              |
+| [=in kader=]                          | 1..*          | [=begrippenkader=] |
+| [=is topbegrip van=]                  | 0..*          | [=begrippenkader=] |
+| [=definitie=]                         | 1..*          | Tekst              |
+| [=uitleg=]                            | 0..*          | Tekst              |
+| [=heeft bron=]                        | 0..*          | [=brondocument=]   |
+| [=heeft bovenliggend begrip=]         | 0..*          | [=begrip=]         |
+| [=heeft onderliggend begrip=]         | 0..*          | [=begrip=]         |
+| [=is gerelateerd aan=]                | 0..*          | [=begrip=]         |
+| [=wijzigingsnotitie=]                 | 0..*          | Tekst              |
+| [=redactionele notitie=]              | 0..*          | Tekst              |
+| [=historie notitie=]                  | 0..*          | Tekst              |
+| [=toelichting=]                       | 0..*          | Tekst              |
+| [=voorbeeld=]                         | 0..*          | Tekst              |
 | [=heeft overeenkomstig bovenliggend=] | 0..*          | [=begrip=]         |
 | [=heeft overeenkomstig onderliggend=] | 0..*          | [=begrip=]         |
-| [=is vrijwel overeenkomstig=]      | 0..*          | [=begrip=]         |
-| [=is exact overeenkomstig=]        | 0..*          | [=begrip=]         |
-| [=is overeenkomstig verwant=]      | 0..*          | [=begrip=]         |
-| [=is specialisatie van=]        | 0..*          | [=begrip=]         |
-| [=is generalisatie van=]        | 0..*          | [=begrip=]         |
-| [=is onderdeel van=]            | 0..*          | [=begrip=]         |
-| [=omvat=]                       | 0..*          | [=begrip=]         |
-| [=is exemplaar van=]            | 0..*          | [=begrip=]         |
-| [=is categorie van=]            | 0..*          | [=begrip=]         |
+| [=is vrijwel overeenkomstig=]         | 0..*          | [=begrip=]         |
+| [=is exact overeenkomstig=]           | 0..*          | [=begrip=]         |
+| [=is overeenkomstig verwant=]         | 0..*          | [=begrip=]         |
+| [=is specialisatie van=]              | 0..*          | [=begrip=]         |
+| [=is generalisatie van=]              | 0..*          | [=begrip=]         |
+| [=is onderdeel van=]                  | 0..*          | [=begrip=]         |
+| [=omvat=]                             | 0..*          | [=begrip=]         |
+| [=is exemplaar van=]                  | 0..*          | [=begrip=]         |
+| [=is categorie van=]                  | 0..*          | [=begrip=]         |
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
