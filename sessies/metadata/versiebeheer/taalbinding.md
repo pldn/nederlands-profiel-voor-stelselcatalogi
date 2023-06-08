@@ -67,7 +67,7 @@ De uitwerking hiervan voor variant A en variant B is daarmee als volgt:
 
 ## Variant B - Begripsbeschrijving als eenheid van beheer
 
-![](begrippenstelsel-begripsbeschrijving-taalbinding.svg)
+![](media/begrippenstelsel-begripsbeschrijving-taalbinding.svg)
 
 ```
   @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
