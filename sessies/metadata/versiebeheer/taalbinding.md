@@ -31,7 +31,7 @@ De uitwerking hiervan voor variant A en variant B is daarmee als volgt:
 
 ![](media/begrippenkader-begrippenstelsel-taalbinding.svg)
 
-<pre>
+```
   @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
   @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
   @prefix owl: <http://www.w3.org/2002/07/owl#>.
@@ -63,13 +63,13 @@ De uitwerking hiervan voor variant A en variant B is daarmee als volgt:
     skos:definition "Een VCO is een electronische geluidsbron waarbij de frequency van het geluid wordt gecontroleerd met een electrische spanning (voltage)"@nl;
     rdfs:isDefinedBy <http://nlbegrip.nl/synthesizer/1.0.0-snapshot-1>;
   .
-</pre>
+```
 
 ## Variant B - Begripsbeschrijving als eenheid van beheer
 
 ![](begrippenstelsel-begripsbeschrijving-taalbinding.svg)
 
-<pre>
+```
   @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
   @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
   @prefix owl: <http://www.w3.org/2002/07/owl#>.
@@ -92,4 +92,4 @@ De uitwerking hiervan voor variant A en variant B is daarmee als volgt:
     rdfs:label "Versie 1.0.0 snapshot 1 van de besschrijving van het begrip «VCO»";
     dct:isVersionOf <http://nlbegrip.nl/synthesizer#>;
   .
-</pre>
+```
