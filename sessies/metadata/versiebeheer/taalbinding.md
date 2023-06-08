@@ -19,7 +19,7 @@ Dit is uitgedrukt in onderstaand figuur.
 
 ![](media/beheereenheid-stelsel.svg)
 
-Het voorstel is om de term "begrippenstelsel" te gebruiken als het puur gaat om een stelsel-van-begrippen en de term "begrippenkader" te gebruiken als sprake is van een stelsel-van-begrippen dat gelijktijdig ook de eenheid van beheer is. Dit is weergegeven in onderstaand figuur:
+Het voorstel is om de term "begrippenstelsel" te gebruiken als het puur gaat om een stelsel-van-begrippen en de term "begrippenkader" te gebruiken als sprake is van een stelsel-van-begrippen dat gelijktijdig ook de eenheid van beheer is. Dit is weergegeven in onderstaand figuur (in geval van variant A):
 
 ![](media/begrippenkader-begrippenstelsel.svg)
 
@@ -28,6 +28,8 @@ Het voorstel is om de term "begrippenstelsel" te gebruiken als het puur gaat om 
 De uitwerking hiervan voor variant A en variant B is daarmee als volgt:
 
 ## Variant A - Begrippenkader als eenheid van beheer
+
+![](media/begrippenkader-begrippenstelsel-taalbinding.svg)
 
 <pre>
   @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
@@ -64,6 +66,8 @@ De uitwerking hiervan voor variant A en variant B is daarmee als volgt:
 </pre>
 
 ## Variant B - Begripsbeschrijving als eenheid van beheer
+
+![](begrippenstelsel-begripsbeschrijving-taalbinding.svg)
 
 <pre>
   @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
