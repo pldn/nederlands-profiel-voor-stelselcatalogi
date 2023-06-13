@@ -197,11 +197,11 @@ beg-sbb:Narrower
     "heeft smaller begrip"@nl;
   skos:notation "NT" ;
   skos:definition
-    "Has narrower relates a concept to a concept that is more specific in meaning."@en ,
-    "Heeft onderliggend begrip relateert een begrip aan een begrip met een specifiekere betekenis."@nl ;
+    "«has narrower» relates a concept to a concept that is more specific in meaning."@en ,
+    "«heeft onderliggend begrip» relateert een begrip aan een begrip met een specifiekere betekenis."@nl ;
   skos:scopeNote
-    "Conventie is om heeft onderliggend begrip alleen te gebruiken om een directe hiërarchische link tussen twee begrippen te beschrijven."@nl, 
-    "By convention, has narrower is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."@en ;
+    "Conventie is om «heeft onderliggend begrip» alleen te gebruiken om een directe hiërarchische link tussen twee begrippen te beschrijven."@nl, 
+    "By convention, «has narrower» is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."@en ;
   dct:source
     <https://www.w3.org/TR/skos-reference/#semantic-relations> ,
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
@@ -475,13 +475,13 @@ beg-sbb:isTopConceptOf
     "Top concepts are concepts which are topmost in the hierarchical relations for a scheme."@en ,
     "Een topbegrip is een begrip dat bovenaan de hiërarchie staat in een bepaald begrippenkader."@nl ;
   skos:scopeNote
-    "Has top concept adresses a concept that is at the top of a hierarchy, i.e. it has no broader concepts. This makes it easier, on importing a thesaurus, to pick out all the top level concepts from which to build a navigational tree."@en,
-    "«heeft topbegrip» adresseert een begrip dat bovenaan een hiërarchie staat, d.w.z. het heeft geen bredere begrippen. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle begrippen op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen."@nl; 
+    "«is top concept of» adresses the concept scheme of whick a concept is at the top of a hierarchy, i.e. it has no broader concepts. This makes it easier, on importing a thesaurus, to pick out all the top level concepts from which to build a navigational tree."@en,
+    "«is topbegrip van» adresseert het begrippenkader waarvan een begrip dat bovenaan hiërarchie staat, d.w.z. het heeft geen bredere begrippen. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle begrippen op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen."@nl; 
   dct:source skos: ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> ;
   skos:related 
     beg-sbb:Taxonomy ,
-    beg-sbb:hasTopconcept ;
+    beg-sbb:hasTopConcept;
   skos:inScheme begkr-sbb:nlbegrip .
 
 #is vrijwel overeenkomstig
@@ -948,7 +948,7 @@ beg-sbb:Thesaurus
   skos:broader beg-sbb:ConceptScheme ;
   skos:inScheme begkr-sbb:nlbegrip .
 
-#topbegrip
+#heeft topbegrip
 beg-sbb:hasTopConcept
   a skos:Concept ;
   rdfs:label "has top concept";
@@ -958,10 +958,10 @@ beg-sbb:hasTopConcept
   skos:notation "TT" ;
   skos:definition
     "Top concepts are concepts which are topmost in the hierarchical relations for a scheme."@en ,
-    "Een topbegrip is een begrip die bovenaan de hiërarchie staat in een bepaald begrippenkader."@nl ;
+    "Een topbegrip is een begrip dat bovenaan de hiërarchie staat in een bepaald begrippenkader."@nl ;
   skos:scopeNote
-    "Has top concept adresses a concept that is at the top of a hierarchy, i.e. it has no broader concepts. This makes it easier, on importing a thesaurus, to pick out all the top level concepts from which to build a navigational tree."@en,
-    "Heeft topbegrip adresseert een begrip dat bovenaan een hiërarchie staat, d.w.z. het heeft geen bredere begrippen. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle begrippen op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen."@nl; 
+    "«has top concept» adresses a concept that is at the top of a hierarchy, i.e. it has no broader concepts. This makes it easier, on importing a thesaurus, to pick out all the top level concepts from which to build a navigational tree."@en,
+    "«heeft topbegrip» adresseert een begrip dat bovenaan een hiërarchie staat, d.w.z. het heeft geen bredere begrippen. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle begrippen op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen."@nl; 
   dct:source skos: ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> ;
   skos:related 
