@@ -16,20 +16,20 @@
 
 <div class="practice"><p class="practicedesc"><span class="practicelab">De voorkeursterm sluit aan op de daadwerkelijke term zoals deze lexicaal gebruikt wordt. <p>
 <ul>
-<li>Het is verplicht dat voor iedere taal alle voorkeurtermen die in één taal voorkomen in één begrippenkader uniek zijn. De voorkeursterm is de daadwerkelijke term zoals deze lexicaal gebruikt wordt, dus met spaties, diacrieten en hoofdletters bij namen.</li> 
+<li>Het is verplicht dat voor iedere taal alle voorkeurtermen die in één taal voorkomen in één begrippenkader uniek zijn. De voorkeursterm is de daadwerkelijke term zoals deze lexicaal gebruikt wordt, dus met spaties, diakrieten en hoofdletters bij namen.</li> 
 <li>Mocht binnen één begrippenkader toch twee begrippen terugkomen die vaak met dezelfde term worden aangeduid, dan is het noodzakelijk - om spraakverwarring te voorkomen - om een post of prefix toe te voegen als dit algemeen gebruikelijk is. Denk aan <i>Hengelo (OV)</i> voor de plaats in Overijssel en <i>Hengelo (GLD)</i> voor de plaats in Gelderland.</li> 
 <li>Mocht een post of prefix in de praktijk niet worden gebruikt, dan is dit een sterke aanwijzing dat de twee begrippen feitelijk niet tot hetzelfde begrippenkader behoren, en uit elkaar gehaald moeten worden. De basisregel blijft gelden.</li> 
-<li>Als begrippen in verschillende begrippenkaders zijn geplaatst, dan is een nadere aanduiding van de context ongewenst. Als een lexicale term toch nader gekwalificeerd wordt dan is het aangeraden om een meer generiekere of classificerende term te gebruiken en deze tussen haakjes achter de lexicale term te plaatsen in de term, conform ISO25964. E.g. <i>Bank (Zitobject)</i> en <i>Bank (Financiele instelling)</i>.</li>
+<li>Als begrippen in verschillende begrippenkaders zijn geplaatst, dan is een nadere aanduiding van de context ongewenst. Als een lexicale term toch nader gekwalificeerd wordt dan is het aangeraden om een meer generiekere of classificerende term te gebruiken en deze tussen haakjes achter de lexicale term te plaatsen in de term, conform ISO25964. E.g. <i>Bank (Zitobject)</i> en <i>Bank (Financiële instelling)</i>.</li>
 </ul>
 </p></span></div>
 
-<div class="practice"><p class="practicedesc"><span class="practicelab">Het wordt aangeraden om elke resource te voorzien van een term die als 'technische naam' kan functioneren. Met zo'n term kunnen ook interfaces overweg die de verschillende soorten termen (voorkeursterm, alternatieve term, zoekterm) niet kunnen onderscheiden. Daarmee krijgt iedere resource een voor mensen leesbare term, ongeacht de context.<p>Anders dan bij de voorkeursterm, is het verstandig om wel context in het label mee te geven door bijvoorbeeld tussen haakjes deze context weert te geven, zoals bij <i>bank (financiële instelling)</i>. Daardoor onststaat geen verwarring in het kader van homoniemen. Het algemene label bevordert tevens de compatibiliteit met bestaande tools. Het is denkbaar dat tools deze term afleiden van bijvoorbeeld de (Engelse) voorkeursterm of de code.</p></span></div>
+<div class="practice"><p class="practicedesc"><span class="practicelab">Het wordt aangeraden om elke resource te voorzien van een term die als 'technische naam' kan functioneren. Met zo'n term kunnen ook interfaces overweg die de verschillende soorten termen (voorkeursterm, alternatieve term, zoekterm) niet kunnen onderscheiden. Daarmee krijgt iedere resource een voor mensen leesbare term, ongeacht de context.<p>Anders dan bij de voorkeursterm, is het verstandig om wel context in het label mee te geven door bijvoorbeeld tussen haakjes deze context weert te geven, zoals bij <i>bank (financiële instelling)</i>. Daardoor ontstaat geen verwarring in het kader van homoniemen. Het algemene label bevordert tevens de compatibiliteit met bestaande tools. Het is denkbaar dat tools deze term afleiden van bijvoorbeeld de (Engelse) voorkeursterm of de code.</p></span></div>
 
-### Hierarchische relaties
+### Hiërarchische relaties
 
-Het is toegestaan dat één begrip meerdere bovenliggende begrippen kent. Er is zo sprake van een [=polyhierarchy=]. Een polyhierarchie kan nuttig zijn omdat het een intuitieve manier biedt om een begrip in meerdere categorieën te plaatsen. Veelal zie je dit dan ook toegepast in e-commerce. Hierdoor kunnen gebruikers via verschillende paden een bepaald product vinden. Toch wordt geadviseert om hier terughoudend mee te zijn en bij het maken rekening te blijven houden met best-practices en standaarden op dit gebied.
+Het is toegestaan dat één begrip meerdere bovenliggende begrippen kent. Er is zo sprake van een [=polyhierarchy=]. Een polyhiërarchie kan nuttig zijn omdat het een intuïtieve manier biedt om een begrip in meerdere categorieën te plaatsen. Veelal zie je dit dan ook toegepast in e-commerce. Hierdoor kunnen gebruikers via verschillende paden een bepaald product vinden. Toch wordt geadviseerd om hier terughoudend mee te zijn en bij het maken rekening te blijven houden met best-practices en standaarden op dit gebied.
 
-<div class="definitie">Een <dfn>polyhierarchy</dfn> refereert naar aan hierarchische structuur waar het is toegestaan dat een begrip meerdere bovenliggende begrippen heeft. Tegenovergesteld is een monohierarchy, waar ieder begrip niet meer dan één bovenliggend begrip kent.</div>
+<div class="definitie">Een <dfn>polyhierarchy</dfn> refereert naar aan hiërarchische structuur waar het is toegestaan dat een begrip meerdere bovenliggende begrippen heeft. Tegenovergesteld is een monohierarchy, waar ieder begrip niet meer dan één bovenliggend begrip kent.</div>
 
 ## Bronnen
 Een begrip kan zijn ontleend aan een op het web vindbare bron. Dit kan een (versie van) een bepaald werk zijn of een ander documentair iets waarin een beschrijving van het begrip is te vinden. Bronnen kunnen wel of niet beschreven zijn in RDF. Ook kan een begrip ontleend zijn aan een niet op het web vindbare bron. 
@@ -46,7 +46,7 @@ ex:ingezetene a skos:Concept ;
   dct:source &lt;https://wetten.overheid.nl/jci1.3:c:BWBR0005416&titeldeel=I&artikel=2&z=2022-05-01&g=2022-05-01&gt;  
 </pre>
 
-Op deze manier is goed aangeven waar de betekenis van het begrip (gedocumenteerd als definitie) op gebasseerd is. Verder is er geen informatie over de bron. Wanneer de bron is beschreven in RDF is deze informatie er wel en kan dit meegenomen worden in de interpretatie van het begrip. 
+Op deze manier is goed aangeven waar de betekenis van het begrip (gedocumenteerd als definitie) op gebaseerd is. Verder is er geen informatie over de bron. Wanneer de bron is beschreven in RDF is deze informatie er wel en kan dit meegenomen worden in de interpretatie van het begrip. 
 
 Wanneer een bron als linked data op het web ontsloten is neem je als waarde van bronverwijzing de URI van de bron. Dit kan bijvoorbeeld een instantie van <code>foaf:Document</code> of <code>dct:BibliographicResource</code> zijn. Hoe deze precies is beschreven is maakt voor de bronverwijzing niet uit, maar binnen dit profiel wordt de [specificatie voor bronnen](#specificatie-bron) aangeraden.
 
@@ -82,14 +82,14 @@ De bron zelf kan op verschillende manieren beschreven worden, dat ligt immers bi
 Wel biedt dit profiel een aantal aanbevelingen.
 <div class="practice"><p class="practicedesc"><span class="practicelab">Het is aanbevolen om bronnen te typeren als foaf:Document</span>Vooral omdat dit de meest laagdrempelige typering is aan de hand van bestaande vocabulaire.</p></div>
 <div class="practice"><p class="practicedesc"><span class="practicelab">Het is aanbevolen om de [[DCTERMS]] vocabulaire te gebruiken om bronnen te beschrijven.</span></p></div>
-<div class="practice"><p class="practicedesc"><span class="practicelab">Het is aanbevolen om bronnen met _dct:type_ te classificeren</span>Dit doen we aan de hand van een gecontroleerde vocabulaire, ofwel een classificatie schema. Een voorbeeld van zo'n classificatie schema is <a href="http://id.loc.gov/vocabulary/marcgt">MARC Genre/Terms Scheme</a>. Dit is in aanvulling op een <code>rdf:type</code> typering.</p></div>
+<div class="practice"><p class="practicedesc"><span class="practicelab">Het is aanbevolen om bronnen met _dct:type_ te classificeren</span>Dit doen we aan de hand van een gecontroleerd vocabulaire, ofwel een classificatie schema. Een voorbeeld van zo'n classificatie schema is <a href="http://id.loc.gov/vocabulary/marcgt">MARC Genre/Terms Scheme</a>. Dit is in aanvulling op een <code>rdf:type</code> typering.</p></div>
 
 ## Harmonisatie en hergebruik
 Om data goed te kunnen gebruiken, maar zeker ook om data te combineren met andere data is het belangrijk om deze te begrijpen. 
 Begrippenkaders versterken de interoperabiliteit van datasets omdat het duidelijk maakt wat de betekenis is van termen die gebruikt worden.
 Een vooralsnog belangrijk thema in data is silo-vorming en organisaties zijn ook nadrukkelijk bezig om silo's te ontmantelen omdat data in samenhang meer waarde kan leveren. Om data in samenhang te kunnen bevragen is het noodzakelijk dat de terminologie eenduidig is en op elkaar aansluit. We hebben daarom niet alleen afzonderlijke begrippenkaders per registratie (bijvoorbeeld het begrippenkader van de BRK) nodig maar juist een stelsel van verbonden begrippenkaders per domein (bijvoorbeeld het vastgoed domein). 
 
-Daarnaast hebben we hier het begrippenkader vooral beschreven vanuit het aanbod van gegevens. Maar je wilt dat natuurlijk ook gebruiken. En dan wordt niet altijd hetzelfde begrippenkader gehanteerd. Dat is niet altijd begrippenkader die je bij een registratie mag verwachten, maar vaak juist een begrippenkader van een gebruiksorganisatie, bijvoorbeeld een uitvoeringsorganisatie die gegevens nodig heeft uit een basisregistratie, maar eigen wet- en regelgeving kent en bijbehorend begrippenkader. Juist dan wil je een verbinding leggen tussen de twee begrippenkaders.
+Daarnaast hebben we hier het begrippenkader vooral beschreven vanuit het aanbod van gegevens. Maar je wilt dat natuurlijk ook gebruiken. En dan wordt niet altijd hetzelfde begrippenkader gehanteerd. Dat is niet altijd begrippenkader dat je bij een registratie mag verwachten, maar vaak juist een begrippenkader van een gebruiksorganisatie, bijvoorbeeld een uitvoeringsorganisatie die gegevens nodig heeft uit een basisregistratie, maar eigen wet- en regelgeving kent en bijbehorend begrippenkader. Juist dan wil je een verbinding leggen tussen de twee begrippenkaders.
 
 In dit hoofdstuk bespreken we best-practices op dit gebied.
 
@@ -97,7 +97,7 @@ Het verbinden van begrippenkaders kan op twee manieren;
 1) door begrippen te harmoniseren, en
 2) door begrippen te hergebruiken
   
-Wanneer we het hebben over een begrip die gedefinieerd is in een 'andere context' dan noemen we dat voor het gemak een <dfn>extern begrip</dfn>. 
+Wanneer we het hebben over een begrip dat gedefinieerd is in een 'andere context' dan noemen we dat voor het gemak een <dfn>extern begrip</dfn>. 
 
 ### Harmonisatie
 Onder de noemer harmonisatie beschrijven we hoe begrippen uit verschillende begrippenkaders op basis van betekenis aan elkaar kunnen worden gerelateerd. De letterlijke betekenis van harmoniseren is 'op elkaar afstemmen'. Verbinden is een eerste stap op weg naar afstemmen, maar het is strikt genomen geen afstemming en dus ook geen harmonisatie.
