@@ -56,12 +56,20 @@ De uitwerking hiervan voor variant A en variant B is daarmee als volgt:
     dct:source <https://nl.wikipedia.org/wiki/Synthesizer>;
     rdfs:isDefinedBy <http://nlbegrip.nl/synthesizer/1.0.0-snapshot-1>;
   .
+  <http://nlbegrip.nl/synthesizer/doc/begrip/synthesizer> a prov:Entity;
+    rdfs:label "Beschrijving van het begrip «Synthesizer»";
+    rdfs:comment "Deze beschrijving betreft de beschrijving van het begrip";
+  .
   <http://nlbegrip.nl/synthesizer/id/begrip/vco> a skos:Concept;
     rdfs:label "VCO"@nl;
     skos:prefLabel "VCO"@nl;
     skos:altLabel "Voltage Controlled Oscillator"@en;
     skos:definition "Een VCO is een electronische geluidsbron waarbij de frequency van het geluid wordt gecontroleerd met een electrische spanning (voltage)"@nl;
     rdfs:isDefinedBy <http://nlbegrip.nl/synthesizer/1.0.0-snapshot-1>;
+  .
+  <http://nlbegrip.nl/synthesizer/doc/begrip/vco> a prov:Entity;
+    rdfs:label "Beschrijving van het begrip «VCO»";
+    rdfs:comment "Deze beschrijving betreft de beschrijving van het begrip";
   .
 ```
 

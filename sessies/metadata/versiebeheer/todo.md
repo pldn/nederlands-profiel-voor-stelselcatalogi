@@ -1,5 +1,25 @@
 # TO DO: Nog verder uitwerken
 
+Wat er nog mist in het conceptueel model:
+- Publicaties
+- Informatieobjecten
+- Beschrijvingen van informatieobjecten
+- Beschrijvingen van beschrijving
+
+Wat we nodig hebben
+Jesse:
+- (Meta)begrippen = Voorkeursterm + Definitie (= thesaurus-versiebeheer.ttl)
+- Ontologie = Per (meta)begrip welke eigenschappen we relevant vinden in de beschrijving daarvan (= deel van skos-versiebeheer-ap-nl.ttl)
+- Taalbinding (= rest van skos-versiebeheer-ap-nl.ttl)
+Marco:
+- Spul dat we vandaag hebben gemaakt op de TODO lijst zetten
+- Kennisnotitie: verzameling van objecten in de werkelijkheid vs geheel van informatieobjecten
+Nog ff niet:
+- Stukje tekst in de Respec (= stukje gegeneerd op basis van bovenstaand + klein stukje proza)
+
+
+## Oude TO-DO's
+
 TODO
 - Tekst updaten
 - en voorbeeld uitwerken voor SBB .
