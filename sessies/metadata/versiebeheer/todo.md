@@ -7,14 +7,17 @@ Wat er nog mist in het conceptueel model:
 - Beschrijvingen van beschrijving
 
 Wat we nodig hebben
-Jesse:
+
+### Jesse:
 - (Meta)begrippen = Voorkeursterm + Definitie (= thesaurus-versiebeheer.ttl)
 - Ontologie = Per (meta)begrip welke eigenschappen we relevant vinden in de beschrijving daarvan (= deel van skos-versiebeheer-ap-nl.ttl)
 - Taalbinding (= rest van skos-versiebeheer-ap-nl.ttl)
-Marco:
+
+### Marco:
 - Spul dat we vandaag hebben gemaakt op de TODO lijst zetten
 - Kennisnotitie: verzameling van objecten in de werkelijkheid vs geheel van informatieobjecten
-Nog ff niet:
+
+### Nog ff niet:
 - Stukje tekst in de Respec (= stukje gegeneerd op basis van bovenstaand + klein stukje proza)
 
 
