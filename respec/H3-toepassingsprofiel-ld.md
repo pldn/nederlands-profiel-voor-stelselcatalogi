@@ -121,9 +121,9 @@ Een begrip wordt gerepresenteerd als een `skos:Concept`. Deze typering is verpli
 | [=is categorie van=]            | [isothes:narrowerInstantial](http://purl.org/iso25964/skos-thes#narrowerInstantial) | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
 | [=label=]                       | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)                            | 0..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
 
-## Specificatie Bron
+## Specificatie Brondocument
 
-Een Bron wordt gerepresenteerd als een `foaf:Document`. Deze typering wordt aangeraden.
+Een Brondocument wordt gerepresenteerd als een `foaf:Document`. Deze typering wordt aangeraden.
 
 | Conceptueel element | Eigenschap                                                                  | Kardinaliteit | Type                                                                    |
 | ------------------- | --------------------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- |
