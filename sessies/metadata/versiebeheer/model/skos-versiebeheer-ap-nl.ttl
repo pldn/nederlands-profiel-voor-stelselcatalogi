@@ -1,0 +1,98 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skosapnl: <http://nlbegrip.nl/def/skosapnl#> .
+@prefix isothes: <http://purl.org/iso25964/skos-thes#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+
+# skosapnl:Begrippenkader   <#>  <#> .  # can be extended with informatieobject. 
+# skosapnl:Informatieobject <#>  <#> .  # These could be identical. 
+# skosapnl:BeheerEenheid    <#>  <#> .  # These could be identical. 
+# skosapnl:PulicatieEenheid <#>  <#> .  # These could be identical. 
+
+
+
+
+
+# Van toepassing op 
+# - Gegevensobject (begripsbeschrijving)
+# - Beheer eenheid
+# - Publicatie eenheid
+skosapnl:Informatieobject a sh:NodeShape ;
+  sh:targetClass owl:Ontology ;
+  sh:property 
+    [   sh:name "identificatie" ;
+        sh:path dct:identifier ] ,
+    [   sh:name "type" ;
+        sh:path rdf:type ;
+        sh:in (
+                owl:Ontology
+                adms:Asset
+                skos:Conceptscheme
+            ) ] ,
+    [   sh:name "titel" ;
+        sh:path dct:title ] ,
+    [   sh:name "beschrijving" ;
+        sh:path dct:description ] ,
+    [   sh:name "uitgever" ;
+        sh:path dct:publisher ] ,
+    [   sh:name "versie" ;
+        sh:path owl:versionInfo ] ,
+    [   sh:name "is versie van" ;
+        sh:path dct:isVersionOf ;
+        sh:node skos:ap-nl:Informatieobject ; ] ,
+    [   sh:name "bevat informatieobject" ;
+        sh:path adms:includedAsset ;
+        sh:description "" ; 
+        sh:node skosapnl:Informatieobject ] ,
+    [   sh:name "..." ;
+        sh:path <#> ]
+.
+
+# Van toepassing op
+# - Begripsbeschrijvingen
+# - andere beschrijvingen 
+# Een beschrijving IS een informatieobject en KAN een beheereenheid zijn.
+skosapnl:Gegevensobject a sh:NodeShape ;
+  sh:targetClass prov:Entity ;
+  sh:property 
+    [   sh:name "type" ;
+        sh:path rdf:type ; ] ,
+    [   sh:name "titel" ;
+        sh:path dct:title ] ,
+    [   sh:name "beschrijving" ;
+        sh:path dct:description ] ,
+    [   sh:name "uitgever" ;
+        sh:path dct:publisher ] ,
+    [   sh:name "versie" ;
+        sh:path owl:versionInfo ] ,
+    [   sh:name "heeft versie" ;
+        sh:path dct:isVersionOf ;
+        sh:node skos:ap-nl:Informatieobject ; ] ,
+    [   sh:name "identificatie" ;
+        sh:path dct:identifier ] ,
+    [   sh:name "bevat informatieobject" ;
+        sh:path adms:includedAsset ;
+        sh:description "" ; 
+        sh:node skosapnl:Informatieobject ] ,
+    [   sh:name "..." ;
+        sh:path <#> ]
+.
+
+skosapnl:Begrip a sh:NodeShape ;
+  sh:targetClass skos:Concept ;
+  sh:property 
+    [ sh:name "isDefinedBy" ;
+    sh:path rdfs:isDefinedBy ;
+    sh:node skosapnl:Informatieobject
+  ]
+.

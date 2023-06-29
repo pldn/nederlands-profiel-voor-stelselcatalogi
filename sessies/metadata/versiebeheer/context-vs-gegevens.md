@@ -75,7 +75,7 @@ GRAPH :rood {
 ```
 
 We stellen voor dat:
-- ROOD, BLAUW, GROEN, PAARS en ZWART zijn informatie-objecten: taalbinding *informatie-object* -> `owl:Ontolgy`;
+- ROOD, BLAUW, GROEN, PAARS en ZWART zijn informatie-objecten: taalbinding *informatie-object* -> `owl:Ontology`;
 - ZWART, BLAUW, GROEN en PAARS zijn begrippenkaders: taalbinding *begrippenkader* -> `skos:ConceptScheme` EN `owl:Ontology`
 - ZWART, BLAUW, GROEN en PAARS zijn begrippenstelsels: taalbinding *begrippenstelsel* -> `skos:ConceptScheme`;
 - De begrippen 2 en 3 maken onderdeel uit van het *begrippenstelsel* PAARS;
