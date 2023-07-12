@@ -14,19 +14,6 @@
   <key for="edge" id="d10" yfiles.type="edgegraphics"/>
   <graph edgedefault="directed" id="G">
     <node id="n0">
-      <data key="d3" xml:space="preserve"><![CDATA[http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Collection]]></data>
-      <data key="d5">
-        <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="77.0" width="174.0" x="538.9031748011387" y="712.3"/>
-          <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
-          <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="50.01953125" x="61.990234375" xml:space="preserve" y="4.0">Collectie</y:NodeLabel>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" configuration="com.yworks.entityRelationship.label.attributes" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="top" visible="true" width="32.6875" x="2.0" xml:space="preserve" y="30.701171875">label
-uitleg<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
-        </y:GenericNode>
-      </data>
-    </node>
-    <node id="n1">
       <data key="d3" xml:space="preserve"><![CDATA[http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept]]></data>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
@@ -49,7 +36,7 @@ voorbeeld
         </y:GenericNode>
       </data>
     </node>
-    <node id="n2">
+    <node id="n1">
       <data key="d3" xml:space="preserve"><![CDATA[http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Source]]></data>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
@@ -65,7 +52,7 @@ soort bron<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelP
         </y:GenericNode>
       </data>
     </node>
-    <node id="n3">
+    <node id="n2">
       <data key="d3" xml:space="preserve"><![CDATA[http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#ConceptScheme]]></data>
       <data key="d5">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
@@ -78,20 +65,44 @@ uitleg<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParam
         </y:GenericNode>
       </data>
     </node>
-    <edge id="e0" source="n0" target="n1">
+    <node id="n3">
+      <data key="d4"/>
+      <data key="d5">
+        <y:GenericNode configuration="com.yworks.sbgn.Operator">
+          <y:Geometry height="30.0" width="30.0" x="607.5085896022777" y="705.0624000000003"/>
+          <y:Fill color="#FFFFFF" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" bottomInset="0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="14.701171875" horizontalTextPosition="center" iconTextGap="4" leftInset="0" modelName="custom" rightInset="0" textColor="#000000" topInset="0" verticalTextPosition="center" visible="true" width="18.0" x="6.0" xml:space="preserve" y="7.6494140625">OR<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+        </y:GenericNode>
+      </data>
+    </node>
+    <node id="n4">
+      <data key="d3" xml:space="preserve"><![CDATA[http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Collection]]></data>
+      <data key="d5">
+        <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
+          <y:Geometry height="77.0" width="174.0" x="536.6094148011387" y="788.09648"/>
+          <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="50.01953125" x="61.990234375" xml:space="preserve" y="4.0">Collectie</y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" configuration="com.yworks.entityRelationship.label.attributes" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="top" visible="true" width="32.6875" x="2.0" xml:space="preserve" y="30.701171875">label
+uitleg<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
+        </y:GenericNode>
+      </data>
+    </node>
+    <edge id="e0" source="n4" target="n3">
       <data key="d7" xml:space="preserve"><![CDATA[urn:md5:http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Collectionhttp://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Collection-memberhttp://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept]]></data>
       <data key="d8" xml:space="preserve"><![CDATA[http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Collection-member]]></data>
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:Path sx="0.0" sy="0.0" tx="1.1008251988610027" ty="0.32768000000010034"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="60.0390625" x="-30.019554691048825" xml:space="preserve" y="-34.92452636718747">bevat [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="60.0390625" x="-30.019552484017595" xml:space="preserve" y="-32.344979933529316">bevat [0,n]<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.35543619837304996" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e1" source="n1" target="n2">
+    <edge id="e1" source="n0" target="n1">
       <data key="d7" xml:space="preserve"><![CDATA[urn:md5:http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concepthttp://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-sourcehttp://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Source]]></data>
       <data key="d8" xml:space="preserve"><![CDATA[http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-source]]></data>
       <data key="d10">
@@ -104,7 +115,7 @@ uitleg<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParam
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e2" source="n1" target="n3">
+    <edge id="e2" source="n0" target="n2">
       <data key="d7" xml:space="preserve"><![CDATA[urn:md5:http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concepthttp://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-inSchemehttp://pldn.nl/nederlands-profiel-voor-stelselcatalogi#ConceptScheme]]></data>
       <data key="d8" xml:space="preserve"><![CDATA[http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept-inScheme]]></data>
       <data key="d10">
@@ -117,7 +128,7 @@ uitleg<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParam
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e3" source="n3" target="n1">
+    <edge id="e3" source="n2" target="n0">
       <data key="d7" xml:space="preserve"><![CDATA[urn:md5:http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#ConceptSchemehttp://pldn.nl/nederlands-profiel-voor-stelselcatalogi#ConceptScheme-hasTopConcepthttp://pldn.nl/nederlands-profiel-voor-stelselcatalogi#Concept]]></data>
       <data key="d8" xml:space="preserve"><![CDATA[http://pldn.nl/nederlands-profiel-voor-stelselcatalogi#ConceptScheme-hasTopConcept]]></data>
       <data key="d10">
@@ -130,7 +141,7 @@ uitleg<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParam
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e4" source="n1" target="n1">
+    <edge id="e4" source="n0" target="n0">
       <data key="d7" xml:space="preserve"/>
       <data key="d10">
         <y:PolyLineEdge>
@@ -157,7 +168,7 @@ is vrijwel overeenkomstig<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnable
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e5" source="n1" target="n3">
+    <edge id="e5" source="n0" target="n2">
       <data key="d7" xml:space="preserve"/>
       <data key="d10">
         <y:PolyLineEdge>
@@ -165,6 +176,32 @@ is vrijwel overeenkomstig<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnable
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="88.720703125" x="-143.92610376331447" xml:space="preserve" y="-9.3505859375">is topbegrip van<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e6" source="n3" target="n0">
+      <data key="d7"/>
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="-3.394585198861023" ty="84.16950921027978"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e7" source="n3" target="n4">
+      <data key="d7"/>
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="71.55202519886097" ty="-23.856319999999755">
+            <y:Point x="695.1614399999996" y="720.0624000000003"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>

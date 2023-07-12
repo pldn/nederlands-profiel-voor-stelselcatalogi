@@ -42,7 +42,7 @@ Een brondocument heeft niet één definitieve taalbinding. Dit komt omdat er vee
 | [=is topbegrip van=]                   | [skos:isTopConceptOf](http://www.w3.org/2004/02/skos/core#isTopConceptOf)           |
 | [=uitleg=]                             | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment)                        |
 | [=definitie=]                          | [skos:definition](http://www.w3.org/2004/02/skos/core#definition)                   |
-| [=heeft bron=]                               | [dct:source](http://purl.org/dc/terms/source)                                       |
+| [=heeft bron=]                         | [dct:source](http://purl.org/dc/terms/source)                                       |
 | [=heeft bovenliggend begrip=]          | [skos:broader](http://www.w3.org/2004/02/skos/core#broader)                         |
 | [=heeft onderliggend begrip=]          | [skos:narrower](http://www.w3.org/2004/02/skos/core#narrower)                       |
 | [=is gerelateerd aan=]                 | [skos:related](http://www.w3.org/2004/02/skos/core#related)                         |
@@ -99,7 +99,7 @@ Een begrip wordt gerepresenteerd als een `skos:Concept`. Deze typering is verpli
 | [=is topbegrip van=]            | [skos:isTopConceptOf](http://www.w3.org/2004/02/skos/core#isTopConceptOf)           | 0..*          | [skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme) |
 | [=uitleg=]                      | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment)                        | 0..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
 | [=definitie=]                   | [skos:definition](http://www.w3.org/2004/02/skos/core#definition)                   | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
-| [=heeft bron=]                        | [dct:source](http://purl.org/dc/terms/source)                                       | 0..*          | [foaf:Document](http://xmlns.com/foaf/0.1/Document)          |
+| [=heeft bron=]                  | [dct:source](http://purl.org/dc/terms/source)                                       | 0..*          | [foaf:Document](http://xmlns.com/foaf/0.1/Document)          |
 | [=heeft bovenliggend begrip=]   | [skos:broader](http://www.w3.org/2004/02/skos/core#broader)                         | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
 | [=heeft onderliggend begrip=]   | [skos:narrower](http://www.w3.org/2004/02/skos/core#narrower)                       | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
 | [=is gerelateerd aan=]          | [skos:related](http://www.w3.org/2004/02/skos/core#related)                         | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
@@ -137,8 +137,9 @@ Een Brondocument wordt gerepresenteerd als een `foaf:Document`. Deze typering wo
 
 Een collectie wordt gerepresenteerd als een `skos:Collection`. Deze typering is verplicht.
 
-| Conceptueel element | Eigenschap                                                   | Kardinaliteit | Type                                                                    |
-| ------------------- | ------------------------------------------------------------ | ------------- | ----------------------------------------------------------------------- |
-| [=label=]           | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)     | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
-| [=uitleg=]          | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | 0..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
-| [=bevat=]           | [skos:member](http://www.w3.org/2004/02/skos/core#member)    | 0..*          | [sh:IRI](http://www.w3.org/ns/shacl#IRI)                                |
+| Conceptueel element | Eigenschap                                                   | Kardinaliteit | Type                                                                                                                             |
+| ------------------- | ------------------------------------------------------------ | ------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| [=label=]           | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)     | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString)                                                          |
+| [=uitleg=]          | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | 0..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString)                                                          |
+| [=bevat=]           | [skos:member](http://www.w3.org/2004/02/skos/core#member)    | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept) OR [skos:Collection](http://www.w3.org/2004/02/skos/core#Collection) |
+ 
