@@ -28,7 +28,7 @@ begkr-sbb:nlbegrip
     beg-sbb:Type ,
     beg-sbb:Page ,
     beg-sbb:BibliographicCitation ,
-    beg-sbb:isTopConceptOf ,
+    beg-sbb:topConceptOf ,
     beg-sbb:hasTopConcept ;
   skos:prefLabel "Begrippenkader Nederlandse standaard voor het beschrijven van begrippen"@nl ;
   skos:altLabel "sbb" .
@@ -72,7 +72,7 @@ beg-sbb:Concept
     "Afkortingen en hun volledige vormen kunnen als synoniemen worden behandeld."@nl,
     "Abbreviations and their full forms can be treated as synonyms."@en;
   skos:example
-    "Acroniemen, afkortingen, spellingsvarianten en onregelmatige meervouds-/enkelvoudsvormen kunnen worden opgenomen in de alternatieve termen voor een begrip. Verkeerd gespelde termen worden normaal gesproken als verborgen labels opgenomen (zie skos:hiddenLabel)."@nl ,
+    "Acroniemen, afkortingen, spellingsvarianten en onregelmatige meervouds-/enkelvoudsvormen kunnen worden opgenomen in de alternatieve termen voor een begrip. Verkeerd gespelde termen worden normaal gesproken als zoektermen opgenomen (zie skos:hiddenLabel)."@nl ,
     "Acronyms, abbreviations, spelling variants, and irregular plural/singular forms may be included among the alternative labels for a concept. Mis-spelled terms are normally included as hidden labels (see skos:hiddenLabel)."@en ;
   dct:source
     <https://www.w3.org/TR/skos-reference/#labels> ,
@@ -465,7 +465,7 @@ beg-sbb:BroaderGeneric
   skos:inScheme begkr-sbb:nlbegrip .
 
 #is topbegrip van
-beg-sbb:isTopConceptOf
+beg-sbb:topConceptOf
   a skos:Concept ;
   rdfs:label "is top concept of";
   skos:prefLabel
@@ -847,7 +847,7 @@ beg-sbb:ConceptScheme
     <https://en.wikipedia.org/wiki/Controlled_vocabulary>;
   skos:related
     beg-sbb:hasTopConcept ,
-    beg-sbb:isTopConceptOf ;
+    beg-sbb:topConceptOf ;
   skos:example "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes. Concept schemes are also embedded in glossaries and terminologies."@en ;
   skos:inScheme begkr-sbb:nlbegrip .
 
@@ -909,7 +909,7 @@ beg-sbb:Taxonomy
     beg-sbb:Narrower ,
     beg-sbb:Broader ,
     beg-sbb:hasTopConcept ,
-    beg-sbb:isTopConceptOf ;
+    beg-sbb:topConceptOf ;
   dct:source <https://en.wikipedia.org/wiki/Taxonomy> ;
   skos:inScheme begkr-sbb:nlbegrip .
 
@@ -931,7 +931,7 @@ beg-sbb:Thesaurus
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.62> ;
   skos:related
     beg-sbb:hasTopConcept ,
-    beg-sbb:isTopConceptOf ,
+    beg-sbb:topConceptOf ,
     beg-sbb:ExactMatch ,
     beg-sbb:MatchingRelation ,
     beg-sbb:NarrowerInstantial ,
@@ -966,7 +966,7 @@ beg-sbb:hasTopConcept
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> ;
   skos:related 
     beg-sbb:Taxonomy ,
-    beg-sbb:isTopConceptOf ;
+    beg-sbb:topConceptOf ;
   skos:inScheme begkr-sbb:nlbegrip .
 
 # BESCHRIJVING COLLECTIE

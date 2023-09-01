@@ -39,7 +39,7 @@ Een brondocument heeft niet één definitieve taalbinding. Dit komt omdat er vee
 | [=zoekterm=]                           | [skos:hiddenLabel](http://www.w3.org/2004/02/skos/core#hiddenLabel)                 |
 | [=code=]                               | [skos:notation](http://www.w3.org/2004/02/skos/core#notation)                       |
 | [=in kader=]                           | [skos:inScheme](http://www.w3.org/2004/02/skos/core#inScheme)                       |
-| [=is topbegrip van=]                   | [skos:isTopConceptOf](http://www.w3.org/2004/02/skos/core#isTopConceptOf)           |
+| [=is topbegrip van=]                   | [skos:topConceptOf](http://www.w3.org/2004/02/skos/core#topConceptOf)           |
 | [=uitleg=]                             | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment)                        |
 | [=definitie=]                          | [skos:definition](http://www.w3.org/2004/02/skos/core#definition)                   |
 | [=heeft bron=]                         | [dct:source](http://purl.org/dc/terms/source)                                       |
@@ -96,7 +96,7 @@ Een begrip wordt gerepresenteerd als een `skos:Concept`. Deze typering is verpli
 | [=zoekterm=]                    | [skos:hiddenLabel](http://www.w3.org/2004/02/skos/core#hiddenLabel)                 | 0..*          | [sh:Literal](http://www.w3.org/ns/shacl#Literal)                        |
 | [=code=]                        | [skos:notation](http://www.w3.org/2004/02/skos/core#notation)                       | 0..*          | [sh:Literal](http://www.w3.org/ns/shacl#Literal)                        |
 | [=in kader=]                    | [skos:inScheme](http://www.w3.org/2004/02/skos/core#inScheme)                       | 1..*          | [skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme) |
-| [=is topbegrip van=]            | [skos:isTopConceptOf](http://www.w3.org/2004/02/skos/core#isTopConceptOf)           | 0..*          | [skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme) |
+| [=is topbegrip van=]            | [skos:topConceptOf](http://www.w3.org/2004/02/skos/core#topConceptOf)           | 0..*          | [skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme) |
 | [=uitleg=]                      | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment)                        | 0..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
 | [=definitie=]                   | [skos:definition](http://www.w3.org/2004/02/skos/core#definition)                   | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
 | [=heeft bron=]                  | [dct:source](http://purl.org/dc/terms/source)                                       | 0..*          | [foaf:Document](http://xmlns.com/foaf/0.1/Document)          |

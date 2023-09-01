@@ -35,7 +35,7 @@ skosapnl:Concept
     skosapnl:Concept-broader ,
     skosapnl:Concept-narrower ,
     skosapnl:Concept-inScheme ,
-    skosapnl:Concept-isTopConceptOf ,
+    skosapnl:Concept-topConceptOf ,
     skosapnl:Concept-closeMatch ,
     skosapnl:Concept-label ,
     skosapnl:Concept-narrowerInstantial ,
@@ -315,15 +315,15 @@ skosapnl:Concept-inScheme
   sh:nodeKind sh:IRI ;
   sh:path skos:inScheme .
 
-skosapnl:Concept-isTopConceptOf
+skosapnl:Concept-topConceptOf
   a sh:PropertyShape ;
-  rdfs:label "is topbegrip vann"@nl ;
+  rdfs:label "is topbegrip van"@nl ;
   sh:class skos:ConceptScheme ;
   sh:group skosapnl:SemanticRelationPropertyGroup ;
-  sh:name "is topbegrip vann"@nl ;
+  sh:name "is topbegrip van"@nl ;
   sh:order 23 ;
   sh:nodeKind sh:IRI ;
-  sh:path skos:isTopConceptOf .
+  sh:path skos:topConceptOf .
 
 skosapnl:Concept-altLabel
   a sh:PropertyShape ;
