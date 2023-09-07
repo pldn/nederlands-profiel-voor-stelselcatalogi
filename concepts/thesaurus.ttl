@@ -45,8 +45,8 @@ beg-sbb:Concept
     "concept"@en ,
     "begrip"@nl ;
   skos:definition
-    "Een begrip is een eenheid van denken - idee, betekenis of (categorie van) objecten en gebeurtenissen - die ten grondslag ligt aan veel kennisorganisatiesystemen."@nl ,
-    "A concept is a unit of thought —idea, meaning, or (categorys of) objects and events— that underlies many knowledge organization systems."@en ;
+    "Een begrip is een eenheid van denken — idee, betekenis of catgorisering."@nl ,
+    "A concept is a unit of thought — idea, meaning or category"@en ;
   skos:scopeNote
     "The prime application for a thesaurus is in information retrieval, where the aim is to search for concepts. Concepts are represented by terms. Each term included in a thesaurus should represent a single concept (or unit of thought). Concepts can range from the simple (e.g. cats) to the very complex (e.g. racial discrimination among ethnic minorities). Compound terms or phrases are generally needed to express the more complex concepts."@en ,
     "De belangrijkste toepassing voor een begrippenkader is het ophalen van informatie, waarbij het doel is om naar begrippen te zoeken. Begrippen worden weergegeven door termen. Elke term in een thesaurus moet een enkel begrip (of denkeenheid) vertegenwoordigen. Begrippen kunnen variëren van eenvoudig (bijv. katten) tot zeer complex (bijv. rassendiscriminatie onder etnische minderheden). Samengestelde termen of zinsdelen zijn over het algemeen nodig om de meer complexe begrippen uit te drukken."@nl ;
@@ -472,11 +472,11 @@ beg-sbb:topConceptOf
     "is topbegrip van"@nl ,
     "is top concept of"@en ;
   skos:definition
-    "Top concepts are concepts which are topmost in the hierarchical relations for a scheme."@en ,
-    "Een topbegrip is een begrip dat bovenaan de hiërarchie staat in een bepaald begrippenkader."@nl ;
+    "«is top concept of» adresses the concept scheme of which a concept is at the top of a hierarchy."@en ,
+    "«is topbegrip van» adresseert het begrippenkader waarvan een begrip bovenaan de hiërarchie staat."@nl ;
   skos:scopeNote
-    "«is top concept of» adresses the concept scheme of whick a concept is at the top of a hierarchy, i.e. it has no broader concepts. This makes it easier, on importing a thesaurus, to pick out all the top level concepts from which to build a navigational tree."@en,
-    "«is topbegrip van» adresseert het begrippenkader waarvan een begrip dat bovenaan hiërarchie staat, d.w.z. het heeft geen bredere begrippen. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle begrippen op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen."@nl; 
+    "Topmost implies that it has no broader concepts. This makes it easier, on importing a thesaurus, to pick out all the top level concepts from which to build a navigational tree."@en,
+    "Bovenaan wilt zeggen; het heeft geen bovenliggende begrippen. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle begrippen op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen."@nl; 
   dct:source skos: ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> ;
   skos:related 
@@ -957,11 +957,11 @@ beg-sbb:hasTopConcept
     "has top concept"@en ;
   skos:notation "TT" ;
   skos:definition
-    "Top concepts are concepts which are topmost in the hierarchical relations for a scheme."@en ,
-    "Een topbegrip is een begrip dat bovenaan de hiërarchie staat in een bepaald begrippenkader."@nl ;
+    "«has top concept» adresses a concept that is topmost in the hierarchie of the given concept scheme."@en ,
+    "«heeft topbegrip» adresseert een begrip dat bovenaan de hiërarchie staat in het betreffende begrippenkader."@nl ;
   skos:scopeNote
-    "«has top concept» adresses a concept that is at the top of a hierarchy, i.e. it has no broader concepts. This makes it easier, on importing a thesaurus, to pick out all the top level concepts from which to build a navigational tree."@en,
-    "«heeft topbegrip» adresseert een begrip dat bovenaan een hiërarchie staat, d.w.z. het heeft geen bredere begrippen. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle begrippen op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen."@nl; 
+    "Topmost implies that is has no broader concepts. This makes it easier, on importing a thesaurus, to pick out all the top level concepts from which to build a navigational tree."@en,
+    "Bovenaan wilt zeggen; het heeft geen bredere begrippen. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle begrippen op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen."@nl; 
   dct:source skos: ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> ;
   skos:related 
