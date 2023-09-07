@@ -1,0 +1,110 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sbb: <http://begrippen.nlbegrip.nl/sbb/id/concept/> .
+@prefix begkr-sbb: <http://begrippen.nlbegrip.nl/id/begrippenkader/> .
+@prefix infobj: <http://data.nlbegrip.nl/sbb/id/informatieobject/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+
+begkr-sbb:nlbegrip a owl:Ontology .
+
+
+#taxonomie
+
+
+sbb:Begrip skos:broader sbb:Object .
+sbb:Begrippenkader skos:broader sbb:Object .
+sbb:Brondocument skos:broader sbb:informatieobject .
+sbb:Collectie skos:broader sbb:Object .
+
+
+
+sbb:Object a skos:Concept ;
+  rdfs:isDefinedBy begkr-sbb:nlbegrip ;
+    skos:inScheme begkr-sbb:nlbegrip ;
+    skos:prefLabel "Object"@nl ;
+    skos:altLabel ""@nl ;
+    skos:definition "Een «object» is een ding in de werkelijkheid."@nl .
+
+sbb:Informatieobject a skos:Concept ;
+  rdfs:isDefinedBy begkr-sbb:nlbegrip ;
+    skos:inScheme begkr-sbb:nlbegrip ;
+    skos:broader sbb:Object ;
+    skos:prefLabel "Informatieobject"@nl ;
+    skos:definition "Een «informatieobject» een een geheel aan informatie met een eigen identiteit."@nl .
+
+sbb:SamengesteldInformatieobject a skos:Concept ;
+  rdfs:isDefinedBy begkr-sbb:nlbegrip ;
+    skos:inScheme begkr-sbb:nlbegrip ;
+    skos:broader sbb:Informatieobject ;
+    skos:prefLabel "Samengesteld Informatieobject"@nl ;
+    skos:definition "Een «samengesteld informatieobject» is een «informatieobject» die (gedeeltelijk) bestaat uit andere informatieobjecten."@nl ;
+    skos:scopeNote "Dit kan bijvoorbeeld voorkomen wanneer begrippen, die in een bepaald begrippenkader zijn opgenomen, decentraal beheerd worden. De aggregatie van de verschillende «assets», noemen we een «Samengesteld Informatieobject». Het samengesteld informatieobject kan een eenheid van publicatie vormen."@nl .
+
+sbb:Asset a skos:Concept ;
+  rdfs:isDefinedBy begkr-sbb:nlbegrip ;
+    skos:inScheme begkr-sbb:nlbegrip ;
+    skos:broader sbb:Informatieobject ;
+    skos:related sbb:Begrippenkader ;
+    skos:prefLabel "Asset"@nl ;
+    skos:altLabel "Beheer-eenheid"@nl ;
+    skos:definition "Een «asset» is een «informatieobject» die beheerd wordt."@nl ;
+    skos:scopeNote "In sommige gevallen wordt de «asset» gelijk gesteld aan het «begrippenkader» door middel van punning."@nl .
+
+# sbb:Ontologie a skos:Concept ;
+#   rdfs:isDefinedBy begkr-sbb:nlbegrip ;
+#     skos:inScheme begkr-sbb:nlbegrip ;
+#     skos:broader sbb:Informatieobject ;
+#     skos:related sbb:Begrippenkader ;
+#     skos:prefLabel "Ontology"@nl ;
+#     skos:definition "Een «ontologie» is een «asset» waarme objecten definieert worden."@nl .
+
+sbb:Gegevensobject a skos:Concept ;
+  rdfs:isDefinedBy begkr-sbb:nlbegrip ;
+    skos:inScheme begkr-sbb:nlbegrip ;
+    skos:broader sbb:Informatieobject ;
+    skos:prefLabel "Gegevensobject"@nl ;
+    skos:altLabel "Beschrijving"@nl ;
+    skos:definition "Een «gegevensobject» is een verzameling van enkelvoudige gegevens over één «object»."@nl .
+
+sbb:Begripsbeschrijving a skos:Concept ;
+  rdfs:isDefinedBy begkr-sbb:nlbegrip ;
+    skos:inScheme begkr-sbb:nlbegrip ;
+    skos:broader sbb:Gegevensobject ;
+    skos:related sbb:Begrip ;
+    skos:prefLabel "Begripsbeschrijving"@nl ;
+    skos:definition "Een «begripsbeschrijving» is een «gegevensobject» waarvan het onderwerp een «begrip»."@nl .
+
+# supportive
+
+# sbb:inKader a skos:Concept .
+
+sbb:MaaktGebruikVan a skos:Concept ;
+  rdfs:isDefinedBy begkr-sbb:nlbegrip ;
+    skos:inScheme begkr-sbb:nlbegrip ;
+    skos:prefLabel ""@nl ;
+    skos:definition ""@nl .
+sbb:GedefinieerdIn a skos:Concept ;
+  rdfs:isDefinedBy begkr-sbb:nlbegrip ;
+    skos:inScheme begkr-sbb:nlbegrip ;
+    skos:prefLabel ""@nl ;
+    skos:definition ""@nl .
+sbb:IsVersieVan a skos:Concept ;
+  rdfs:isDefinedBy begkr-sbb:nlbegrip ;
+    skos:inScheme begkr-sbb:nlbegrip ;
+    skos:prefLabel ""@nl ;
+    skos:definition ""@nl .
+sbb:BestaatUit a skos:Concept ;
+  rdfs:isDefinedBy begkr-sbb:nlbegrip ;
+    skos:inScheme begkr-sbb:nlbegrip ;
+    skos:prefLabel ""@nl ;
+    skos:definition ""@nl .
+sbb:Onderwerp a skos:Concept ;
+  rdfs:isDefinedBy begkr-sbb:nlbegrip ;
+    skos:inScheme begkr-sbb:nlbegrip ;
+    skos:prefLabel ""@nl ;
+    skos:definition ""@nl .

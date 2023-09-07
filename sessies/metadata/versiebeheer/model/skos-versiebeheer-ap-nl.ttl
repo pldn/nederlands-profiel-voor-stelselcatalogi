@@ -14,85 +14,114 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 
 
-# skosapnl:Begrippenkader   <#>  <#> .  # can be extended with informatieobject. 
-# skosapnl:Informatieobject <#>  <#> .  # These could be identical. 
-# skosapnl:BeheerEenheid    <#>  <#> .  # These could be identical. 
-# skosapnl:PulicatieEenheid <#>  <#> .  # These could be identical. 
-
-
-
-
-
-# Van toepassing op 
-# - Gegevensobject (begripsbeschrijving)
-# - Beheer eenheid
-# - Publicatie eenheid
-skosapnl:Informatieobject a sh:NodeShape ;
-  sh:targetClass owl:Ontology ;
-  sh:property 
-    [   sh:name "identificatie" ;
-        sh:path dct:identifier ] ,
-    [   sh:name "type" ;
-        sh:path rdf:type ;
-        sh:in (
-                owl:Ontology
-                adms:Asset
-                skos:Conceptscheme
-            ) ] ,
-    [   sh:name "titel" ;
-        sh:path dct:title ] ,
-    [   sh:name "beschrijving" ;
-        sh:path dct:description ] ,
-    [   sh:name "uitgever" ;
-        sh:path dct:publisher ] ,
-    [   sh:name "versie" ;
-        sh:path owl:versionInfo ] ,
-    [   sh:name "is versie van" ;
-        sh:path dct:isVersionOf ;
-        sh:node skos:ap-nl:Informatieobject ; ] ,
-    [   sh:name "bevat informatieobject" ;
-        sh:path adms:includedAsset ;
-        sh:description "" ; 
-        sh:node skosapnl:Informatieobject ] ,
-    [   sh:name "..." ;
-        sh:path <#> ]
+skosapnl:Begrip
+    sh:property [
+        sh:name "gedefinieerd in"@nl ;
+        sh:path rdfs:isDefinedBy ;
+        sh:description "de asset waar dit begrip gedefinieerd wordt"@nl ;
+        sh:class owl:Ontology ;
+    ] , [
+        sh:name "is onderwerp van"@nl ;
+        sh:path [sh:inversePath foaf:topic] ;
+        sh:minCount 1 ;
+        sh:node skosapnl:Begripsbeschrijving ;
+    ]
 .
 
-# Van toepassing op
-# - Begripsbeschrijvingen
-# - andere beschrijvingen 
-# Een beschrijving IS een informatieobject en KAN een beheereenheid zijn.
-skosapnl:Gegevensobject a sh:NodeShape ;
-  sh:targetClass prov:Entity ;
-  sh:property 
-    [   sh:name "type" ;
-        sh:path rdf:type ; ] ,
-    [   sh:name "titel" ;
-        sh:path dct:title ] ,
-    [   sh:name "beschrijving" ;
-        sh:path dct:description ] ,
-    [   sh:name "uitgever" ;
-        sh:path dct:publisher ] ,
-    [   sh:name "versie" ;
-        sh:path owl:versionInfo ] ,
-    [   sh:name "heeft versie" ;
-        sh:path dct:isVersionOf ;
-        sh:node skos:ap-nl:Informatieobject ; ] ,
-    [   sh:name "identificatie" ;
-        sh:path dct:identifier ] ,
-    [   sh:name "bevat informatieobject" ;
-        sh:path adms:includedAsset ;
-        sh:description "" ; 
-        sh:node skosapnl:Informatieobject ] ,
-    [   sh:name "..." ;
-        sh:path <#> ]
+skosapnl:Asset a sh:NodeShape ;
+  rdfs:label "Asset"@nl ;
+  sh:targetClass adms:Asset ;
+  sh:property [ 
+    sh:path rdf:type ;
+    sh:in ( 
+        adms:Asset
+        prov:Entity
+        owl:Ontology
+        skos:ConceptScheme
+    ) ],
+    skosapnl:_identificatie ,
+    skosapnl:_contactpunt ,
+    skosapnl:_beschrijving ,
+    skosapnl:_uitgever ,
+    skosapnl:_titel ,
+    skosapnl:_type ,
+    skosapnl:_versie ,
+    skosapnl:_versieInformatie ,
+    skosapnl:_status ,
+    skosapnl:_isVersieVan ,
+    skosapnl:_bestaatUit ,
+    skosapnl:_maaktGebruikVan ,
 .
 
-skosapnl:Begrip a sh:NodeShape ;
-  sh:targetClass skos:Concept ;
-  sh:property 
-    [ sh:name "isDefinedBy" ;
-    sh:path rdfs:isDefinedBy ;
-    sh:node skosapnl:Informatieobject
-  ]
-.
+skosapnl:Begripsbeschrijving a sh:NodeShape ;
+  rdfs:label "Begripsbeschrijving"@nl ;
+  sh:property [
+      sh:name "onderwerp" ;
+      sh:description "Het begrip waar dit gegevensobject over gaat."@nl ;
+      sh:path foaf:topic ;
+      sh:class skos:Concept ;
+      sh:node skosapnl:Begrip 
+    ] ,
+    skosapnl:_identificatie ,
+    skosapnl:_contactpunt ,
+    skosapnl:_beschrijving ,
+    skosapnl:_uitgever ,
+    skosapnl:_titel ,
+    skosapnl:_type ,
+    skosapnl:_versie ,
+    skosapnl:_versieInformatie ,
+    skosapnl:_status ,
+    skosapnl:_isVersieVan ,
+    skosapnl:_bestaatUit
+ .
+
+########################################################
+
+skosapnl:_identificatie a sh:PropertyShape ;
+    sh:name "identificatie"@nl ;
+    sh:path dct:identifier .
+skosapnl:_contactpunt a sh:PropertyShape ;
+    sh:name "contactpunt" ;
+    sh:path dcat:contactPoint ;
+    sh:description "contactpunt waar meer informatie over de asset kan worden opgevraagd, of waar foutmeldingen en suggesties kunnen worden gedaan"@nl .
+skosapnl:_beschrijving a sh:PropertyShape ;
+    sh:name "beschrijving" ;
+    sh:path dct:description ;
+    sh:description "een beschrijving van de asset"@nl .
+skosapnl:_uitgever a sh:PropertyShape ;
+    sh:name "uitgever"@nl ;
+    sh:path dct:publisher ;
+    sh:description "de organisatie die de asset beschikbaar heeft gesteld"@nl .
+skosapnl:_titel a sh:PropertyShape ;
+    sh:name "titel" ;
+    sh:path dct:title ;
+    sh:description "naam van de asset"@nl .
+skosapnl:_type a sh:PropertyShape ;
+    sh:name "type" ;
+    sh:path dct:type ;
+    sh:class skos:Concept ;
+    sh:description "categorie waartoe de asset behoort"@nl .
+skosapnl:_versie a sh:PropertyShape ;
+    sh:name "versie" ;
+    sh:description "versienummer van de asset" ;
+    sh:path owl:versionInfo .
+skosapnl:_versieInformatie a sh:PropertyShape ;
+    sh:name "versie informatie" ;
+    sh:path adms:versionNotes ;
+    sh:description "beschrijving van de wijzigingen tussen deze en de vorige versie"@nl .
+skosapnl:_status a sh:PropertyShape ;
+    sh:name "status" ;
+    sh:path adms:status ;
+    sh:description "status van de asset in de context van een bepaald workflow process"@nl .
+skosapnl:_isVersieVan a sh:PropertyShape ;
+    sh:name "is versie van" ;
+    sh:path dct:isVersionOf ;
+    sh:description "een asset waar de beschreven asset een versie van is"@nl .
+skosapnl:_bestaatUit a sh:PropertyShape ;
+    sh:name "bestaatUit" ;
+    sh:path adms:includedAsset ;
+    sh:description "een asset die onderdeel is van de beschreven asset"@nl .
+skosapnl:_maaktGeruikVan a sh:PropertyShape ;
+    sh:name "maakt gebruik van" ;
+    sh:path owl:imports ;
+    sh:description "een asset die logisch als onderdeel van de beschreven asset wordt beschouwd"@nl .
