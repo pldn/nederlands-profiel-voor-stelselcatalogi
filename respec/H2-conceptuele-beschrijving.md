@@ -23,7 +23,7 @@ Als een term uit meerdere woorden bestaat ontstaan soms grammaticaal onlogische 
 
 
 ## Overzicht
-Het onderstaande diagram geeft een overzicht van het conceptuele model dat met deze standaard is geformuleerd.
+Het onderstaande diagram geeft een overzicht van de samenhang tussen een begrippenkader, een begrip en een brondocument met hun eigenschappen en onderlinge relaties. Iedere relatie wordt 1 keer beschreven, als uitgaande relatie. Zo wordt "in kader" beschreven bij "begrip" en niet bij "begrippenkader". 
 ![](/respec/media/model-conceptueel.png)
 
 ## Begrippenkader
@@ -338,7 +338,7 @@ Naast de kenmerken die voor begrippen in een begrippenlijst of taxonomie zijn ge
 
 <section class="informative"> 
 <h4>ISO 25964 hiërarchische relaties</h4>
-Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebruikt als specialisatie respectievelijk generalisatie, kan het ook een partitieve, deel-geheel relatie zijn. De ISO 25964 standaard voor thesauri maakt in plaats van de ongespecificeerde hiërarchische relaties [=heeft bovenliggend begrip=] en [=heeft onderliggend begrip=] expliciet onderscheid tussen generalisaties/specialisaties, partitieve relaties en instantiële relaties. Een kanttekening daarbij is wel dat de meeste tools alleen de standaard hiërarchische relaties herkennen.
+Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebruikt als specialisatie respectievelijk generalisatie, kan het ook een partitieve, deel-geheel relatie zijn. De ISO 25964 standaard voor thesauri maakt in plaats van de ongespecificeerde hiërarchische relaties [=heeft bovenliggend begrip=] en [=heeft onderliggend begrip=] expliciet onderscheid tussen generalisaties/specialisaties, partitieve relaties en instantiële relaties. Begrippen worden hiermee expliciet in een hiërarchie geplaatst, waarmee deze relaties transitief zijn. Een kanttekening daarbij is wel dat de meeste tools alleen de standaard hiërarchische relaties herkennen.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -555,7 +555,7 @@ De hieronder beschreven uitbreidingen vallen buiten de scope van standaard gloss
 [SKOS-XL](https://www.w3.org/TR/skos-reference/#xl) [[SKOS-REFERENCE]] is een al wat langer bestaande uitbreiding op skos. SkosXL is ontwikkeld om ook kenmerken van een term vast te kunnen leggen, bijvoorbeeld meervoudsvormen.
 
 ### Skos-lex  
-[[[SKOSLEX]]] is opgezet om begrippen juridisch te kunnen typeren. Skos-lex wordt onder andere toegepast bij de Nationale Politie, Belastingdienst, Notariaat en Kadaster en bij het Digitaal Stelsel Omgevingswet en het Afsprakenstelsel Zorgeloos Vastgoed. 
+[[[SKOSLEX]]] is opgezet om begrippen juridisch te kunnen typeren. Skos-lex wordt onder andere toegepast bij Notariaat en Kadaster en bij het Digitaal Stelsel Omgevingswet en het Afsprakenstelsel Zorgeloos Vastgoed. 
 Door begrippen te typeren als act (rechtshandeling), actor (uitvoerder van die handeling), agent (formele vastlegger van die handeling) en object (van handeling) wordt de (juridische) samenhang duidelijk. Zo kan in een beschrijving van de verkoop van een huis worden aangegeven welke begrippen de rechtshandeling beschrijven (koop/verkoop), welke begrippen de actoren beschrijven (koper, verkoper), welke begrippen de agent (notaris) beschrijven en welke begrippen het object van handeling (onroerende zaak) beschrijven. Dit patroon is relevant voor vrijwel alle overheidsorganisaties die voorvallen of overeenkomsten met rechtsgevolgen vastleggen, van de politie die feiten met daders en slachtoffers vastlegt tot een ambtenaar van de burgerlijke stand die een geboorteakte opmaakt en een notaris die een stichtingsakte opstelt. 
    * **juridische duiding** *(could have)*.  ***Als*** Uitvoeringsorganisatie/uitvoerder van wetgeving ***wil ik*** begrippen kunnen onderscheiden die gaan over rechtshandelingen, actoren, objecten van handeling en organisaties die dit soort rechtshandelingen ondersteunen ***zodat ik*** inzicht heb in hoe de juridische context voor mijn organisatie zoals die in wetgeving is beschreven werkt.
 
