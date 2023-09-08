@@ -18,7 +18,7 @@ begkr-sbb:nlbegrip
     beg-sbb:Concept ,
     beg-sbb:Collection ,
     beg-sbb:Member ,
-    beg-sbb:Phrase ,
+    beg-sbb:Label ,
     beg-sbb:SemanticRelation ,
     beg-sbb:InScheme ,
     beg-sbb:Notation ,
@@ -598,20 +598,6 @@ beg-sbb:SemanticRelation
   dct:source
     <https://www.w3.org/TR/skos-reference/#semantic-relations> ,
     skos: ;
-  skos:inScheme begkr-sbb:nlbegrip .
-
-#term
-beg-sbb:Phrase
-  a skos:Concept ;
-  rdfs:label "term";
-  skos:prefLabel "phrase"@en ,
-    "term"@nl ;
-  skos:definition
-    "Een term is een aaneenschakeling van één of meerdere woorden die samen een conceptuele eenheid vormen."@nl ,
-    "A word or a small group of words standing together as a conceptual unit."@en ;
-  skos:scopeNote 
-    "In de definitie moet 'woord' breed worden geïnterpreteerd. Een term mag ook een afkorting zijn, zoals 'B.T.W. (de voorkeursterm voor 'Belasting op toegevoegde waarde'), of een code zoals '013' (Een poppodium in Tilburg)."@nl ,
-    "In the definition, word should be interpreted broadly. A term can also be an abbreviation, such as 'VAT.' (the preferred term for 'Value Added Tax'), or a code such as '013' (A music venue in Tilburg)."@en ;
   skos:inScheme begkr-sbb:nlbegrip .
 
 #toelichting
