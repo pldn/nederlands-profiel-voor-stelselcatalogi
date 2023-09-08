@@ -140,14 +140,7 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 
 #### Termen
 
-Termen vallen onder de karakteristieken van begrippen. We kunnen termen zien als een referentie naar of aanduiding van een begrip, we spreken dan van een label. Een begrip kan meerdere labels kennen waarbij sommigen ook een andere rol spelen dan andere. 
-
-|                       |                                       |
-|-----------------------|---------------------------------------|
-| **voorkeursterm**   | <dfn>term</dfn> |
-| **definitie**        | Een term is een aaneenschakeling van één of meerdere woorden die samen een conceptuele eenheid vormen. |
-| **toelichting** | In de definitie moet 'woord' breed worden geïnterpreteerd. Een term mag ook een afkorting zijn, zoals 'B.T.W. (de voorkeursterm voor 'Belasting op toegevoegde waarde'), of een code zoals '013' (Een poppodium in Tilburg). |
-| **uri** | http://begrippen.nlbegrip.nl/sbb/id/concept/Phrase |
+Termen vallen onder de karakteristieken van begrippen. Een term is een aaneenschakeling van één of meerdere woorden die samen een conceptuele eenheid vormen. Hierbij moet 'woord' breed worden geïnterpreteerd. Een term mag ook een afkorting zijn, zoals 'B.T.W. (de voorkeursterm voor 'Belasting op toegevoegde waarde'), of een code zoals '013' (Een poppodium in Tilburg).We kunnen termen zien als een referentie naar of aanduiding van een begrip, we spreken dan van een label. Een begrip kan meerdere labels kennen waarbij sommigen ook een andere rol spelen dan andere. 
 
 Hieronder worden de mogelijke soorten termen bij een begrip beschreven.
 
