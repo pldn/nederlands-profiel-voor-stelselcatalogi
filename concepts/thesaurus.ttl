@@ -518,7 +518,6 @@ beg-sbb:Label
     "This is an umbrella term for the different types of labels (preferred label, alternative label, hidden label) with which concepts can be indicated. Good practice is to use those specific terms. In the definition, 'resource' should be interpreted broadly. A resource can be any subject; such as a particular concept or a particular building."@en;
   dct:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.61> ;
   skos:related beg-sbb:Concept ;
-  skos:broader beg-sbb:Phrase ;
   skos:inScheme begkr-sbb:nlbegrip .
 
 #notitie
