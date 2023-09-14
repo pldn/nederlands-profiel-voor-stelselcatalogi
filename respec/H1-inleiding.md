@@ -26,7 +26,7 @@ Uiteindelijk biedt deze standaard transparantie en duidelijkheid aan enerzijds d
 
 ## Rationale
 
-Taxonomieën en thesauri zijn oorspronkelijk ontworpen voor informatieprofessionals die zijn opgeleid in indexeren en zoeken. Er is vooral vraag naar vocabulaires die ongetrainde gebruikers helpen bij het intuïtief vinden van informatie en naar vocabulaires die redeneren door machines mogelijk maken. De ISO 25964 standaard voor thesauri maakt zoals ze zelf in de inleiding aangeeft de transitie die nodig is om compatibel te zijn met de digitale wereld van informatiemanagement. Daarbij gaat het om het zoeken en vinden van informatie in digitale registraties.
+Taxonomieën en thesauri zijn oorspronkelijk ontworpen voor informatieprofessionals die zijn opgeleid in indexeren en zoeken. Er is vooral vraag naar vocabulaires die ongetrainde gebruikers helpen bij het intuïtief vinden van informatie en naar vocabulaires die redeneren door machines mogelijk maken. De [[[ISO25964]]] standaard voor thesauri maakt zoals ze zelf in de inleiding aangeeft de transitie die nodig is om compatibel te zijn met de digitale wereld van informatiemanagement. Daarbij gaat het om het zoeken en vinden van informatie in digitale registraties.
 
 De gedachte achter zo'n index is dat de informatiezoeker via een begrippenkader informatie kan vinden die met een bepaald begrip is geïndexeerd. Daarvoor zijn met name de volgende beschrijvende kenmerken van begrippen bruikbaar:
 * termen,
