@@ -69,7 +69,7 @@ Een brondocument heeft niet één definitieve taalbinding. Dit komt omdat er vee
 
 # Specificatie
 
-Met het conceptueel model en de taalbinding die daar aan toegevoegd is kunnen we een dataspecificatie opstellen. Deze wordt in dit hoofdstuk besproken. De specificatie is ook in SHACL beschreven en beschikbaar in [turtle](https://raw.githubusercontent.com/pldn/nederlands-profiel-voor-stelselcatalogi/profiles/skos-ap-nl.ttl). 
+Met het conceptueel model en de taalbinding die daar aan toegevoegd is kunnen we een dataspecificatie opstellen. Deze wordt in dit hoofdstuk besproken. De specificatie is ook in SHACL beschreven en beschikbaar in [turtle](https://github.com/pldn/nederlands-profiel-voor-stelselcatalogi/blob/main/profiles/skos-ap-nl.ttl). 
 
 ## Specificatie Begrippenkader
 
