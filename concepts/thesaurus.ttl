@@ -92,7 +92,7 @@ beg-sbb:Source
     "herkomst"@nl ,
     "bronverwijzing"@nl ;
   skos:definition
-    "«heeft bron«» relateert een begrip aan een brondocument waarvan het is afgeleid."@nl ,
+    "«heeft bron» relateert een begrip aan een brondocument waarvan het is afgeleid."@nl ,
     "Source relates a concept to a document from which it is derived."@en ;
   dct:source
     dct: ,
@@ -284,7 +284,7 @@ beg-sbb:InScheme
     "Is in scheme relates a resource (for example a concept) to a concept scheme in which it is included."@en ;
    skos:scopeNote
     "According to the SKOS-standard, concepts can be linked to multiple conceptschemes. Practically, this can only be the case when conceptschemes overlap in terms of scope."@en ,
-    "Volgens de SKOS-standaard kan een begrip in meerdere begrippenkaders worden opgenomen. Praktisch gezien kan dit slechts als sprake is van begrippenkaders waarvan de contexten overlappen."@nl;
+    "Volgens de SKOS-standaard kan een begrip in meerdere begrippenkaders worden opgenomen. We bedoelen dan ook niet met deze eigenschap dat een begrip wordt beheerd in dit begrippenkader, maar dat dit begrip valt binnen de context die met het begrippenkader wordt beoogd. Praktisch gezien kan dit slechts als sprake is van begrippenkaders waarvan de contexten overlappen."@nl;
    dct:source
     skos: ,
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
