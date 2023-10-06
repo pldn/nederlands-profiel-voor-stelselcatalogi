@@ -94,6 +94,7 @@ beg-sbb:Source
   skos:definition
     "«heeft bron» relateert een begrip aan een brondocument waarvan het is afgeleid."@nl ,
     "Source relates a concept to a document from which it is derived."@en ;
+  skos:scopeNote "Deze eigenschap ia alleen bedoeld is voor bronnen die definieerd zijn voor het begrip.Als je andere bronnen wilt relateren aan het begrip, dan moet je een andere/eigen eigenschap gebruiken.";
   dct:source
     dct: ,
     <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source> ;
