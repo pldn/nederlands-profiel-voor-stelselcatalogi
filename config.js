@@ -1,12 +1,17 @@
 // All config options at https://respec.org/docs/
-var respecConfig = {
-    // hack to skip W3C specStatus validation
-    latestVersion: "https://profielstelselcatalogus.pldn.nl/",
-    // Working Groups ids at https://respec.org/w3c/groups/
-    group: "webapps",
-    xref: "web-platform",
-    specStatus: "unofficial",
-    maxTocLevel: 5,
+let respecConfig = {
+    useLogo: true,
+    useLabel: true,
+     // title is verplicht! Neem hier de titel van het document op ----------------------
+    title: "SBB - Standaard voor het beschrijven van begrippen",
+    // subtitle is NIET verplicht
+    // subtitle: "Subtitle",
+    specStatus: "cv",               // Consultatieversie
+    specType: "ST",                   // Standaard
+    pubDomain: "sbb",
+    license: "cc-by",
+    shortName: "def-st-mim-20220217",
+    edDraftURI: "https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi/",
     editors: [
         {
             name: "Jesse Bakker"
@@ -71,12 +76,9 @@ var respecConfig = {
             name: "Jan Willem van Veen (ArchiXL)"
         },
     ],
-    github: {
-        branch: "main",
-        repoURL: "pldn/nederlands-profiel-voor-stelselcatalogi",
-    },
-    //  localBiblio: lokale bibliografie, voor verwijzigingen
-    //  NB: kijk eerst naar de beschikbare www.specref.org voor verwijziging
+    github: "pldn/nederlands-profiel-voor-stelselcatalogi",
+    issueBase: "https://github.com/pldn/nederlands-profiel-voor-stelselcatalogi/issues/",
+    maxTocLevel: 5,
     localBiblio: {
         NLAPI: {
             title: "Nederlandse API strategie",
@@ -133,5 +135,26 @@ var respecConfig = {
             date: "1 August 2013"
         },
     lint: { "no-unused-dfns": false },
-    },
+    },    
+
+   // latestVersion: "https://profielstelselcatalogus.pldn.nl/",
+
+     
+
+    // Working Groups ids at https://respec.org/w3c/groups/
+    // group: "webapps",
+    // xref: "web-platform",
+    // specStatus: "unofficial",
+    
+    //  localBiblio: lokale bibliografie, voor verwijzigingen
+    //  NB: kijk eerst naar de beschikbare www.specref.org voor verwijziging
+   
+    // licenses: {
+    //     "cc-by": {
+    //       name: "Creative Commons Attribution 4.0 International Public License",
+    //         short: "CC-BY",
+    //         url: "https://creativecommons.org/licenses/by/4.0/legalcode",
+    //         image: "https://tools.geostandaarden.nl/respec/style/logos/cc-by.svg",
+    //     }
+    //   },
 };

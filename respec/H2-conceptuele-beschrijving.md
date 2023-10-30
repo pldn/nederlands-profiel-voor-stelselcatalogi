@@ -24,7 +24,11 @@ Als een term uit meerdere woorden bestaat ontstaan soms grammaticaal onlogische 
 
 ## Overzicht
 Het onderstaande diagram geeft een overzicht van de samenhang tussen een begrippenkader, een begrip en een brondocument met hun eigenschappen en onderlinge relaties. Iedere relatie wordt 1 keer beschreven, als uitgaande relatie. Zo wordt "in kader" beschreven bij "begrip" en niet bij "begrippenkader". 
-![](/respec/media/model-conceptueel.png)
+
+<figure id="conceptueel-model">
+  <img src="/respec/media/model-conceptueel.png" alt="" />
+  <figcaption>Diagram: conceptueel model</figcaption>
+</figure>
 
 ## Begrippenkader
 Begrippen kunnen als zelfstandige entiteiten worden gezien maar veelal worden ze opgesteld als onderdeel van een gecureerd begrippenkader, zoals begrippenlijsten, taxonomieën en thesauri. Een [=begrippenkader=] is een verzameling van [=begrip=]pen die in een bepaalde context relevant zijn. Een begrippenkader wordt ookwel gezien als een eenheid van context. Als kenmerk van het [=begrip=] wordt aangegeven of het onderdeel is van een begrippenkader ([=in kader=]). Een begrippenkader is vergelijkbaar met een taal die in een bepaald gebied gesproken wordt. En net als een reguliere taal is een begrippenkader een open systeem. Zo kan een taal ook groeien na introductie van nieuwe woorden vanuit talen uit nabijgelegen gebieden. Dat wil zeggen dat een begrippenkader, net als een taal, naast vertalingen (mappings) ook leenwoorden kent. Zoals "computer", een van origine Engels woord, ook behoort tot de Nederlandse taal. Het beschrijven van welke begrippen behoren tot een begrippenkader is essentieel; maar hoe deze 'vertaald' kunnen worden naar begrippen uit andere begrippenkaders ook. Voor dit laatste gebruiken we [=harmonisatierelatie=]s.
@@ -59,7 +63,7 @@ Een begrippenkader kan beschreven worden aan de hand van verschillende kenmerken
 Begrip is het centrale element in deze specificatie. Begrippen spelen ook een centrale rol in de manier waarop we communiceren en we de wereld om ons heen begrijpen. 
 Een begrip is een conceptuele resource; het zijn de eenheden van denken, het idee, de betekenis of categorisering. In de communicatiewetenschap wordt hier vaak gerefereerd aan de 'Triangle of meaning'. Hier wordt duidelijk dat bij het gebruik van bepaalde termen een spreker en toehoorder niet noodzakelijk dezelfde gedachte vormen en elkaar dus niet begrijpen. 
 
-![](https://github.com/bp4mc2/bp4mc2/blob/master/site/image-ch3-1.png?raw=true "Triange of meaning")
+![](https://github.com/bp4mc2/bp4mc2/blob/master/site/image-ch3-1.png?raw=true "Triangle of meaning")
 
 Het hebben van gestandaardiseerde begrippen zorgt ervoor dat iedereen dezelfde taal kan spreken en weet wat de bedoelde betekenis is bij het gebruik van een bepaalde [=naam=] in een bepaalde context. Bijvoorbeeld in berichtgeving of in data. Dit maakt het eenvoudiger om effectief te communiceren en informatie uit te wisselen.
 
@@ -110,7 +114,7 @@ Een begrip kan beschreven worden aan de hand van verschillende kenmerken. Deze z
 | **voorkeursterm**   | <dfn>in kader</dfn> |
 | **definitie**        | In kader relateert een begrip aan een begrippenkader waarin het is opgenomen. |
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes |
-| **toelichting** | Volgens de SKOS-standaard kan een begrip in meerdere begrippenkaders worden opgenomen. Praktisch gezien kan dit slechts als sprake is van begrippenkaders waarvan de contexten overlappen. |
+| **toelichting** | Volgens de SKOS-standaard kan een begrip in meerdere begrippenkaders worden opgenomen. We bedoelen dan ook niet met deze eigenschap dat een begrip wordt beheerd in dit begrippenkader, maar dat dit begrip valt binnen de context die met het begrippenkader wordt beoogd. Praktisch gezien kan dit slechts als sprake is van begrippenkaders waarvan de contexten overlappen. |
 | **uri** | http://begrippen.nlbegrip.nl/sbb/id/concept/InScheme |
 
 |                       |                                       |
@@ -293,7 +297,7 @@ Als een eerste begrip een bovenliggend begrip is in relatie tot een tweede begri
 | **voorkeursterm**   | <dfn>heeft bovenliggend begrip</dfn> |
 | **definitie**        | «heeft bovenliggend begrip» relateert een begrip aan een begrip met een meer algemene betekenis. |
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/skos-reference/#semantic-relations |
-| **toelichting** | Conventie is om «heeft bovenliggend begrip» alleen te gebruiken om een ​​directe hiërarchische link tussen twee begripen te beschrijven. |
+| **toelichting** | Conventie is om «heeft bovenliggend begrip» alleen te gebruiken om een ​​directe hiërarchische link tussen twee begrippen te beschrijven. |
 | **alternatieve term** | heeft breder begrip |
 | **code** | BT |
 | **uri** | http://begrippen.nlbegrip.nl/sbb/id/concept/Broader |
@@ -443,8 +447,8 @@ Specifiek onderscheiden we de volgende verschillende harmonisatierelaties.
 
 ## Brondocument
 
-Een [=brondocument=] is een document waaruit de betekenis van het begrip is afgeleid.
-Het is een good practice om voor ieder begrip bronverwijzingen op te nemen. Zo is het duidelijk waar de definitie van een begrip op gebaseerd is. Dit verhoogt de kwaliteit van het begrip en vooral ook de betrouwbaarheid. Het gebruiken van de hieronder beschreven structuur wordt ten zeerste aanbevolen voor het beschrijven van bronnen en het relateren van begrippen aan bronnen.
+Een [=brondocument=] is een document die relevant is voor een begrip.
+Het is een good practice om voor ieder begrip een verwijzing naar een brondocument op te nemen. Zo is het duidelijk waar bijvoorbeeld de definitie van een begrip op gebaseerd is. Dit verhoogt de kwaliteit van het begrip en vooral ook de betrouwbaarheid. Het gebruiken van de hieronder beschreven structuur wordt ten zeerste aanbevolen voor het beschrijven van bronnen en het relateren van begrippen aan brondocumenten.
 
 Een bronverwijzing wordt vastgelegd als kenmerk van een begrip. Hiervoor geldt we het volgende patroon:
 
@@ -453,18 +457,19 @@ Een **[=begrip=]** heeft een kenmerk '**[=heeft bron=]**'. Dit kenmerk relateert
 |                       |                                       |
 |-----------------------|---------------------------------------|
 | **voorkeursterm**   | <dfn>heeft bron</dfn> |
-| **definitie**        | «heeft bron«» relateert een begrip aan een brondocument waarvan het is afgeleid. |
+| **definitie**        | «heeft bron» relateert een begrip aan een brondocument waarvan het is afgeleid. |
 | **heeft bron** | http://purl.org/dc/terms/, https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source |
-| **alternatieve term** | herkomst, bronverwijzing |
+| **toelichting** | Deze eigenschap is alleen bedoeld om te verwijzen naar brondocumenten waarop de betekenis van het begrip is gebaseerd. Als je naar bronnen met een andere functie wilt verwijzen, dan moet je een andere/eigen eigenschap gebruiken. |
+  | **alternatieve term** | herkomst, bronverwijzing |
 | **uri** | http://begrippen.nlbegrip.nl/sbb/id/concept/Source |
 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
 | **voorkeursterm**   | <dfn>brondocument</dfn> |
-| **definitie**        | Een brondocument is een document of resource op het web waaruit de betekenis van een begrip is afgeleid. |
+| **definitie**        | Een brondocument is een document of resource op het web die relevant is voor een begrip. |
 | **heeft bron** | http://purl.org/dc/terms/, http://xmlns.com/foaf/0.1/, https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#BibliographicResource, http://xmlns.com/foaf/0.1/#term_Document |
-| **toelichting** | De bron kan een geschreven bron zijn of een resource op het web. Aanbevolen best practice is om de bron te beschrijven door middel van een tekenreeks die voldoet aan een formeel identificatiesysteem. Bij een resource op het web is ook de uri van die bron relevant. Om zowel naar een geschreven bron als naar een bron op het web (vaak zonder gestandaardiseerde beschrijving) te verwijzen wordt een hulp-resource gedefinieerd, die zowel een gestandaardiseerde beschrijving als een verwijzing naar de eigenlijke bron bevat. |
+| **toelichting** | De brondocument kan een geschreven document zijn of een resource op het web. Aanbevolen best practice is om het brondocument te beschrijven door middel van een tekenreeks die voldoet aan een formeel identificatiesysteem. Bij een resource op het web is ook de uri van het document relevant. |
 | **alternatieve term** | bron |
 | **uri** | http://begrippen.nlbegrip.nl/sbb/id/concept/SourceDocument |
 
@@ -472,7 +477,7 @@ Een brondocument kan beschreven worden aan de hand van verschillende kenmerken. 
 
 | Conceptueel element | Kardinaliteit | Type         |
 | ------------------- | ------------- | ------------ |
-| [=naam=]           | 1..*          | Tekst        |
+| [=naam=]            | 1..*          | Tekst        |
 | [=uitleg=]          | 0..*          | Tekst        |
 | [=url=]             | 0..*          | Url          |
 | [=citeertitel=]     | 0..*          | Tekst        |
@@ -526,7 +531,7 @@ Een collectie kan beschreven worden aan de hand van verschillende kenmerken. Dez
 
 | Conceptueel element | Kardinaliteit | Type                        |
 | ------------------- | ------------- | --------------------------- |
-| [=naam=]           | 1..*          | Tekst                       |
+| [=naam=]            | 1..*          | Tekst                       |
 | [=uitleg=]          | 0..*          | Tekst                       |
 | [=bevat=]           | 0..*          | [=begrip=] of [=collectie=] |
 
