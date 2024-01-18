@@ -62,9 +62,12 @@ Een begrippenkader kan beschreven worden aan de hand van verschillende kenmerken
 
 ## Begrip
 Begrip is het centrale element in deze specificatie. Begrippen spelen ook een centrale rol in de manier waarop we communiceren en we de wereld om ons heen begrijpen. 
-Een begrip is een conceptuele resource; het zijn de eenheden van denken, het idee, de betekenis of categorisering. In de communicatiewetenschap wordt hier vaak gerefereerd aan de 'Triangle of meaning'. Hier wordt duidelijk dat bij het gebruik van bepaalde termen een spreker en toehoorder niet noodzakelijk dezelfde gedachte vormen en elkaar dus niet begrijpen. 
+Een begrip is een conceptuele resource; het zijn de eenheden van denken, het idee, de betekenis of categorisering. In de communicatiewetenschap wordt hier vaak gerefereerd aan de 'Triangle of meaning'. Dit model beschrijft hoe termen gebruikt worden door een spreker om te verwijzen naar een specifiek ding. DDe spreker heeft het feitelijk niet over het echte ding, maar over zijn gedachte over dit ding, ofwel zijn begrip van dit ding.
 
 ![](https://github.com/bp4mc2/bp4mc2/blob/master/site/image-ch3-1.png?raw=true "Triangle of meaning")
+
+Soms heeft een spreker bij een term een ander ding in gedachten dan de luisteraar. Dan begrijpen ze elkaar niet, ofwel ze hebben een ander begrip in gedachten.
+![](https://github.com/bp4mc2/bp4mc2/blob/master/site/image-ch3-2.png?raw=true "spreker en toehoorder").
 
 Het hebben van gestandaardiseerde begrippen zorgt ervoor dat iedereen dezelfde taal kan spreken en weet wat de bedoelde betekenis is bij het gebruik van een bepaalde [=naam=] in een bepaalde context. Bijvoorbeeld in berichtgeving of in data. Dit maakt het eenvoudiger om effectief te communiceren en informatie uit te wisselen.
 
