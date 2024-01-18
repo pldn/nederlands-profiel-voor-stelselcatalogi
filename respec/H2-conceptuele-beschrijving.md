@@ -67,6 +67,7 @@ Een begrip is een conceptuele resource; het zijn de eenheden van denken, het ide
 ![](https://github.com/bp4mc2/bp4mc2/blob/master/site/image-ch3-1.png?raw=true "Triangle of meaning")
 
 Soms heeft een spreker bij een term een ander ding in gedachten dan de luisteraar. Dan begrijpen ze elkaar niet, ofwel ze hebben een ander begrip in gedachten.
+
 ![](https://github.com/bp4mc2/bp4mc2/blob/master/site/image-ch3-2.png?raw=true "spreker en toehoorder").
 
 Het hebben van gestandaardiseerde begrippen zorgt ervoor dat iedereen dezelfde taal kan spreken en weet wat de bedoelde betekenis is bij het gebruik van een bepaalde [=naam=] in een bepaalde context. Bijvoorbeeld in berichtgeving of in data. Dit maakt het eenvoudiger om effectief te communiceren en informatie uit te wisselen.
