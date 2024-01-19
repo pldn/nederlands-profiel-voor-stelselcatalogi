@@ -208,12 +208,13 @@ De volgende notities zijn verwoordingen van de betekenis van een begrip.
 | **code** | DEF |
 | **uri** | http://begrippen.nlbegrip.nl/sbb/id/concept/Definition |
 
-Formuleringsregels zijn: 
+Formuleringsregels voor definities zijn: 
 * Type 1: Typering (genus/differentia) - BEGRIP is afgeleide van hoger liggend begrip, met onderscheidend kenmerk X (overerving, generalisatie, supertype). Voorbeeld: bles. Een paard met een wit voorhoofd. Palomino. Een paard met witte stippen. Afgedekte relaties uit SBB: «heeft bovenliggend begrip», «is specialisatie van», «is exemplaar van», «is categorie van», «is onderdeel van»
 * Type 2: Samenstelling (totum/dividere) - BEGRIP is een geheel dat is beschreven door de delen te beschrijven (hiërarchie, geheel/deel). Voorbeeld: organisatie. Een stel mensen die dingen doen met spullen. Voorbeeld: trein. Een locomotief met wagons. Afgedekte relaties uit SBB: «omvat»
 * Type 3: Onderdeel (pars) - BEGRIP is een onderdeel van een groter geheel, met een specifiek kenmerk. Voorbeeld: blad – Een onderdeel van een plantaardig organisme, dat zich uitstrekt vanuit de stengel en dat een essentieel onderdeel vormt van het fotosyntheseproces. Afgedekte relaties uit SBB: «heeft bovenliggend begrip», «is onderdeel van»
 * Type 4: Relatie (associatio) - BEGRIP is een relatie tussen twee entiteiten (een associatie). Voorbeeld: huwelijk - Een juridische relatie tussen twee personen. 
 * Type 5: Kenmerk (signum) - BEGRIP is een kenmerk van een entiteit (een eigenschap). Voorbeeld: juistheid - De mate waarin iets z’n echte waarde correct weergeeft. Voorbeeld: beschikbaarheid - De mate waarin iets aanwezig is voor de beoogde situatie/doel.
+  
 NB: Voor taxonomieën maakt men bij voorkeur gebruik van uitsluitend Type 1 definities. De topterm in een taxonomie zal echter van een ander type zijn. In thesauri worden ook de overige typen gebruikt.
 
 |                       |                                       |
