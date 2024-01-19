@@ -32,7 +32,7 @@ Het onderstaande diagram geeft een overzicht van de samenhang tussen een begripp
 </figure>
 
 ## Begrippenkader
-Begrippen kunnen als zelfstandige entiteiten worden gezien maar veelal worden ze opgesteld als onderdeel van een gecureerd begrippenkader, zoals begrippenlijsten, taxonomieën en thesauri. Een [=begrippenkader=] is een verzameling van [=begrip=]pen die in een bepaalde context relevant zijn. Een begrippenkader wordt ookwel gezien als een eenheid van context. Als kenmerk van het [=begrip=] wordt aangegeven of het onderdeel is van een begrippenkader ([=in kader=]). Een begrippenkader is vergelijkbaar met een taal die in een bepaald gebied gesproken wordt. En net als een reguliere taal is een begrippenkader een open systeem. Zo kan een taal ook groeien na introductie van nieuwe woorden vanuit talen uit nabijgelegen gebieden. Dat wil zeggen dat een begrippenkader, net als een taal, naast vertalingen (mappings) ook leenwoorden kent. Zoals "computer", een van origine Engels woord, ook behoort tot de Nederlandse taal. Het beschrijven van welke begrippen behoren tot een begrippenkader is essentieel; maar hoe deze 'vertaald' kunnen worden naar begrippen uit andere begrippenkaders ook. Voor dit laatste gebruiken we [=harmonisatierelatie=]s.
+Begrippen kunnen als zelfstandige entiteiten worden gezien maar veelal worden ze opgesteld als onderdeel van een gecureerd begrippenkader, zoals begrippenlijsten, taxonomieën en thesauri. Een [=begrippenkader=] is een verzameling van [=begrip=]pen die in een bepaalde context relevant zijn. Een begrippenkader wordt ook wel gezien als een eenheid van context. Als kenmerk van het [=begrip=] wordt aangegeven of het onderdeel is van een begrippenkader ([=in kader=]). Een begrippenkader is vergelijkbaar met een taal die in een bepaald gebied gesproken wordt. En net als een reguliere taal is een begrippenkader een open systeem. Zo kan een taal ook groeien na introductie van nieuwe woorden vanuit talen uit nabijgelegen gebieden. Dat wil zeggen dat een begrippenkader, net als een taal, naast vertalingen (mappings) ook leenwoorden kent. Zoals "computer", een van origine Engels woord, ook behoort tot de Nederlandse taal. Het beschrijven van welke begrippen behoren tot een begrippenkader is essentieel; maar hoe deze 'vertaald' kunnen worden naar begrippen uit andere begrippenkaders ook. Voor dit laatste gebruiken we [=harmonisatierelatie=]s.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -131,18 +131,14 @@ Een begrip kan beschreven worden aan de hand van verschillende kenmerken. Deze z
 | **uri** | http://begrippen.nlbegrip.nl/sbb/id/concept/topConceptOf |
 
 ### Begrippenlijst
-Aan de hand van de begripsdriehoek, zien we dat om een spreker te kunnen begrijpen, een toehoorder minimaal iets moeten weten over de betekenis en de termen die ter aanduiding gebruikt worden.
-
-Door deze basis voor alle begrippen die binnen een context gebruikt worden vast te leggen ontstaat een [=begrippenkader=]. We spreken hier van een begrippenlijst. Dit is het basisniveau voor de beschrijving van begrippen in een bepaald domein. 
-
-Een begrippenlijst is een termenlijst met definities die gebruikt worden in een bepaald domein. Een begrippenlijst kent voor ieder begrip dan ook mimimaal één [=voorkeursterm=] en één [=definitie=]. Een toelichting op de definitie is aanbevolen, evenals een verwijzing naar de bron van de betekenis. 
+De meest basale vorm van een [=begrippenkader=] is een [=begrippenlijst=]. Een begrippenlijst is een termenlijst met definities die gebruikt worden in een bepaald domein, zonder relaties tussen begrippen te beschrijven. Een begrippenlijst kent voor ieder begrip dan ook mimimaal één [=voorkeursterm=] en één [=definitie=]. Een toelichting op de definitie is aanbevolen, evenals een verwijzing naar de bron van de betekenis. 
 Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in klare taal, op B1 niveau aanbevolen. De overige kenmerken zijn optioneel.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
 | **voorkeursterm**   | <dfn>begrippenlijst</dfn> |
-| **definitie**        | Een begrippenlijst is een zorgvuldig samengestelde lijst van begrippen, die worden gebruikt om informatie-eenheden (document of werk) te taggen, zodat ze gemakkelijker kunnen worden teruggevonden door een zoekopdracht. |
-| **heeft bron** | https://en.wikipedia.org/wiki/Controlled_vocabulary |
+| **definitie**        | Een begrippenlijst is een alfabetische lijst van termen met hun definities. |
+| **heeft bron** | https://en.wikipedia.org/wiki/Glossary |
 | **toelichting** | In de praktijk worden de termen begrippenlijst en woordenlijst vaak door elkaar gebruikt. In dit geval gaat het nadrukkelijk om een lijst van begrippen, dus inclusief de uitleg van de betekenis. Traditioneel verschijnt er aan het einde van een boek een verklarende woordenlijst met termen in dat boek die ofwel nieuw geïntroduceerd, ongebruikelijk of gespecialiseerd zijn. Semantisch gezien gaat de definitie over het begrip wat met de term wordt aangeduid en niet over de term zelf. |
 | **alternatieve term** | platte termenlijst, woordenlijst |
 | **uri** | http://begrippen.nlbegrip.nl/sbb/id/concept/ControlledVocabulary |
@@ -208,7 +204,24 @@ De volgende notities zijn verwoordingen van de betekenis van een begrip.
 | **voorkeursterm**   | <dfn>definitie</dfn> |
 | **definitie**        | Een definitie is een verwoording van de betekenis van een begrip waarmee het begrip kan worden onderscheiden van andere begrippen. |
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes |
-| **toelichting** | De definitie dient te voldoen aan specifieke formuleringsregels voor definitie en dient in een voor mensen leesbare taal te begrijpen zijn. In dit laatste onderscheid de definitie zich daarmee van een machine-leesbare formele beschrijving. Aan de hand van een definitie kan iemand bepalen of zijn eigen begrip behorende bij een term overeenkomt met het begrip dat gedefinieerd wordt. De uitleg of de toelichting bij een begrip kan gebruik worden voor iemand die het begrip nog niet kent om te begrijpen waar het over gaat. |
+| **toelichting** | De definitie dient te voldoen aan specifieke formuleringsregels voor definitie en dient in een voor mensen leesbare taal te begrijpen zijn. In dit laatste onderscheid de definitie zich daarmee van een machine-leesbare formele beschrijving. Aan de hand van een definitie kan iemand bepalen of zijn eigen begrip behorende bij een term overeenkomt met het begrip dat gedefinieerd wordt. De uitleg of de toelichting bij een begrip kan gebruik worden voor iemand die het begrip nog niet kent om te begrijpen waar het over gaat.
+Formuleringsregels zijn:
+* Type 1: Typering (genus/differentia) - BEGRIP is afgeleide van hoger liggend begrip, met onderscheidend kenmerk X (overerving, generalisatie, supertype).
+Voorbeeld: bles. Een paard met een wit voorhoofd. Palomino. Een paard met witte stippen.
+Afgedekte relaties uit SBB: <<heeft bovenliggend begrip>>, << is specialisatie van>>, <<is exemplaar van>>, <<is categorie van>>, <<is onderdeel van>>
+* Type 2: Samenstelling (totum/dividere) - BEGRIP is een geheel dat is beschreven door de delen te beschrijven (hiërarchie, geheel/deel).
+Voorbeeld: organisatie. Een stel mensen die dingen doen met spullen. 
+Voorbeeld: trein. Een locomotief met wagons.
+Afgedekte relaties uit SBB: <<omvat>>
+* Type 3: Onderdeel (pars) - BEGRIP is een onderdeel van een groter geheel, met een specifiek kenmerk.
+Voorbeeld: blad – Een onderdeel van een plantaardig organisme, dat zich uitstrekt vanuit de stengel en dat een essentieel onderdeel vormt van het fotosyntheseproces.
+Afgedekte relaties uit SBB: <<heeft bovenliggend begrip>>, <<is onderdeel van>>
+* Type 4: Relatie (associatio) - BEGRIP is een relatie tussen twee entiteiten (een associatie).
+Voorbeeld: huwelijk - Een juridische relatie tussen twee personen.
+* Type 5: Kenmerk (signum) - BEGRIP is een kenmerk van een entiteit (een eigenschap).
+Voorbeeld: juistheid - De mate waarin iets z’n echte waarde correct weergeeft. 
+Voorbeeld: beschikbaarheid - De mate waarin iets aanwezig is voor de beoogde situatie/doel.
+NB: Voor taxonomieën maakt men bij voorkeur gebruik van uitsluitend Type 1 definities. De topterm in een taxonomie zal echter van een ander type zijn. In thesauri worden ook de overige typen gebruikt. |
 | **code** | DEF |
 | **uri** | http://begrippen.nlbegrip.nl/sbb/id/concept/Definition |
 
