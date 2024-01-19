@@ -856,9 +856,9 @@ beg-sbb:ConceptScheme
   skos:inScheme begkr-sbb:nlbegrip .
 
 #begrippenlijst
-beg-sbb:ControlledVocabulary
+beg-sbb:Glossary
   a skos:Concept ;
-  rdfs:label "controlled vocabulary";
+  rdfs:label "glossary";
   skos:prefLabel
     "begrippenlijst"@nl ,
     "controlled vocabulary"@en ;
@@ -867,8 +867,8 @@ beg-sbb:ControlledVocabulary
     "woordenlijst"@nl,
     "glossary"@en ;
   skos:definition 
-    "Een begrippenlijst is een zorgvuldig samengestelde lijst van begrippen, die worden gebruikt om informatie-eenheden (document of werk) te taggen, zodat ze gemakkelijker kunnen worden teruggevonden door een zoekopdracht."@nl,
-    "A controlled vocabulary is a carefully selected list of concepts, which are used to tag units of information (document or work) so that they may be more easily retrieved by a search."@en ;
+    "Een begrippenlijst is een alfabetische lijst van termen met hun definities."@nl,
+    "A glossary is an alphabetical list of terms with their definitions."@en ;
   skos:scopeNote 
     "In de praktijk worden de termen begrippenlijst en woordenlijst vaak door elkaar gebruikt. In dit geval gaat het nadrukkelijk om een lijst van begrippen, dus inclusief de uitleg van de betekenis. Traditioneel verschijnt er aan het einde van een boek een verklarende woordenlijst met termen in dat boek die ofwel nieuw geïntroduceerd, ongebruikelijk of gespecialiseerd zijn. Semantisch gezien gaat de definitie over het begrip wat met de term wordt aangeduid en niet over de term zelf."@nl,
     "In practice, the glossary is uses as well for a list of terms as fora list of concepts. In this case it is emphatically a list of concepts, including an explanation of the meaning. Traditionally, a glossary of terms in that book appears at the end of a book that are either newly introduced, uncommon, or specialized. Semantically, the definition is about the concept the term denotes and not about the term itself."@en ;
