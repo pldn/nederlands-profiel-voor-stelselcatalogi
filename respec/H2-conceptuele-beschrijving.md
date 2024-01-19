@@ -145,7 +145,7 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 
 #### Termen
 
-Termen vallen onder de karakteristieken van begrippen. Een term is een aaneenschakeling van één of meerdere woorden die samen een conceptuele eenheid vormen. Hierbij moet 'woord' breed worden geïnterpreteerd. Een term mag ook een afkorting zijn, zoals 'B.T.W. (de voorkeursterm voor 'Belasting op toegevoegde waarde'), of een code zoals '013' (Een poppodium in Tilburg).We kunnen termen zien als een referentie naar of aanduiding van een begrip, we spreken dan van een naam. Een begrip kan meerdere namen hebben waarbij sommigen ook een andere rol spelen dan andere. 
+Termen vallen onder de karakteristieken van begrippen. Een term is een aaneenschakeling van één of meerdere woorden die samen een conceptuele eenheid vormen. Hierbij moet 'woord' breed worden geïnterpreteerd. Een term mag ook een afkorting zijn, zoals 'B.T.W.' (de voorkeursterm voor 'Belasting op toegevoegde waarde'), of een code zoals '013' (Een poppodium in Tilburg). Een term kan worden gebruiken als een referentie naar of aanduiding van een begrip. Dan geef je het begrip een naam. Een begrip kan meerdere namen hebben waarbij sommigen ook een andere rol spelen dan andere. 
 
 Hieronder worden de mogelijke soorten termen bij een begrip beschreven.
 
