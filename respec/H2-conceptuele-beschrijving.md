@@ -204,23 +204,13 @@ De volgende notities zijn verwoordingen van de betekenis van een begrip.
 | **voorkeursterm**   | <dfn>definitie</dfn> |
 | **definitie**        | Een definitie is een verwoording van de betekenis van een begrip waarmee het begrip kan worden onderscheiden van andere begrippen. |
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes |
-| **toelichting** | De definitie dient te voldoen aan specifieke formuleringsregels voor definitie en dient in een voor mensen leesbare taal te begrijpen zijn. In dit laatste onderscheid de definitie zich daarmee van een machine-leesbare formele beschrijving. Aan de hand van een definitie kan iemand bepalen of zijn eigen begrip behorende bij een term overeenkomt met het begrip dat gedefinieerd wordt. De uitleg of de toelichting bij een begrip kan gebruik worden voor iemand die het begrip nog niet kent om te begrijpen waar het over gaat.
-Formuleringsregels zijn:
-* Type 1: Typering (genus/differentia) - BEGRIP is afgeleide van hoger liggend begrip, met onderscheidend kenmerk X (overerving, generalisatie, supertype).
-Voorbeeld: bles. Een paard met een wit voorhoofd. Palomino. Een paard met witte stippen.
-Afgedekte relaties uit SBB: <<heeft bovenliggend begrip>>, << is specialisatie van>>, <<is exemplaar van>>, <<is categorie van>>, <<is onderdeel van>>
-* Type 2: Samenstelling (totum/dividere) - BEGRIP is een geheel dat is beschreven door de delen te beschrijven (hiërarchie, geheel/deel).
-Voorbeeld: organisatie. Een stel mensen die dingen doen met spullen. 
-Voorbeeld: trein. Een locomotief met wagons.
-Afgedekte relaties uit SBB: <<omvat>>
-* Type 3: Onderdeel (pars) - BEGRIP is een onderdeel van een groter geheel, met een specifiek kenmerk.
-Voorbeeld: blad – Een onderdeel van een plantaardig organisme, dat zich uitstrekt vanuit de stengel en dat een essentieel onderdeel vormt van het fotosyntheseproces.
-Afgedekte relaties uit SBB: <<heeft bovenliggend begrip>>, <<is onderdeel van>>
-* Type 4: Relatie (associatio) - BEGRIP is een relatie tussen twee entiteiten (een associatie).
-Voorbeeld: huwelijk - Een juridische relatie tussen twee personen.
-* Type 5: Kenmerk (signum) - BEGRIP is een kenmerk van een entiteit (een eigenschap).
-Voorbeeld: juistheid - De mate waarin iets z’n echte waarde correct weergeeft. 
-Voorbeeld: beschikbaarheid - De mate waarin iets aanwezig is voor de beoogde situatie/doel.
+| **toelichting** | De definitie dient te voldoen aan specifieke formuleringsregels voor definitie en dient in een voor mensen leesbare taal te begrijpen zijn. In dit laatste onderscheid de definitie zich daarmee van een machine-leesbare formele beschrijving. Aan de hand van een definitie kan iemand bepalen of zijn eigen begrip behorende bij een term overeenkomt met het begrip dat gedefinieerd wordt. De uitleg of de toelichting bij een begrip kan gebruik worden voor iemand die het begrip nog niet kent om te begrijpen waar het over gaat. 
+Formuleringsregels zijn: 
+* Type 1: Typering (genus/differentia) - BEGRIP is afgeleide van hoger liggend begrip, met onderscheidend kenmerk X (overerving, generalisatie, supertype). Voorbeeld: bles. Een paard met een wit voorhoofd. Palomino. Een paard met witte stippen. Afgedekte relaties uit SBB: «heeft bovenliggend begrip», «is specialisatie van», «is exemplaar van», «is categorie van», «is onderdeel van»
+* Type 2: Samenstelling (totum/dividere) - BEGRIP is een geheel dat is beschreven door de delen te beschrijven (hiërarchie, geheel/deel). Voorbeeld: organisatie. Een stel mensen die dingen doen met spullen. Voorbeeld: trein. Een locomotief met wagons. Afgedekte relaties uit SBB: «omvat»
+* Type 3: Onderdeel (pars) - BEGRIP is een onderdeel van een groter geheel, met een specifiek kenmerk. Voorbeeld: blad – Een onderdeel van een plantaardig organisme, dat zich uitstrekt vanuit de stengel en dat een essentieel onderdeel vormt van het fotosyntheseproces. Afgedekte relaties uit SBB: «heeft bovenliggend begrip», «is onderdeel van»
+* Type 4: Relatie (associatio) - BEGRIP is een relatie tussen twee entiteiten (een associatie). Voorbeeld: huwelijk - Een juridische relatie tussen twee personen. 
+* Type 5: Kenmerk (signum) - BEGRIP is een kenmerk van een entiteit (een eigenschap). Voorbeeld: juistheid - De mate waarin iets z’n echte waarde correct weergeeft. Voorbeeld: beschikbaarheid - De mate waarin iets aanwezig is voor de beoogde situatie/doel.
 NB: Voor taxonomieën maakt men bij voorkeur gebruik van uitsluitend Type 1 definities. De topterm in een taxonomie zal echter van een ander type zijn. In thesauri worden ook de overige typen gebruikt. |
 | **code** | DEF |
 | **uri** | http://begrippen.nlbegrip.nl/sbb/id/concept/Definition |
