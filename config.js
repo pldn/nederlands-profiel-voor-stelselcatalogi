@@ -136,7 +136,16 @@ let respecConfig = {
         },
     lint: { "no-unused-dfns": false },
     },    
-
+    alternateFormats: [
+        {
+          label: "SHACL",
+          uri: "https://raw.githubusercontent.com/pldn/nederlands-profiel-voor-stelselcatalogi/main/profiles/skos-ap-nl.ttl",
+        },
+        {
+          label: "SKOS",
+          uri: "https://raw.githubusercontent.com/pldn/nederlands-profiel-voor-stelselcatalogi/main/concepts/thesaurus.ttl",
+        },
+    ],
    // latestVersion: "https://profielstelselcatalogus.pldn.nl/",
 
      

@@ -15,18 +15,15 @@
 
 skosapnl:
   a owl:Ontology ;
-  rdfs:label "Toepassingsprofiel Nederlandse standaard voor het beschrijven van begrippen in LD"@nl ;
-  owl:versionInfo "0.0.1" .
+  rdfs:label "Toepassingsprofiel Nederlandse standaard voor het beschrijven van begrippen in RDF"@nl ;
+  owl:versionInfo "1.0.0" .
 
 skosapnl:Concept
   a sh:NodeShape ;
   rdfs:comment "Een abstract idee of notie."@nl, "An idea or notion; a unit of thought."@en ;
   rdfs:label "Begrip"@nl ;
-  sh:property
-    skosapnl:Concept-exactMatch ,
-    skosapnl:Concept-narrowMatch ,
+  sh:property    
     skosapnl:Concept-example ,
-    skosapnl:Concept-relatedMatch ,
     skosapnl:Concept-comment ,
     skosapnl:Concept-source ,
     skosapnl:Concept-hiddenLabel ,
@@ -38,17 +35,20 @@ skosapnl:Concept
     skosapnl:Concept-topConceptOf ,
     skosapnl:Concept-closeMatch ,
     skosapnl:Concept-label ,
-    skosapnl:Concept-narrowerInstantial ,
-    skosapnl:Concept-narrowerPartitive ,
     skosapnl:Concept-editorialNote ,
-    skosapnl:Concept-broaderPartitive ,
     skosapnl:Concept-prefLabel ,
     skosapnl:Concept-historyNote ,
     skosapnl:Concept-altLabel ,
     skosapnl:Concept-changeNote ,
     skosapnl:Concept-scopeNote ,
-    skosapnl:Concept-broaderGeneric ,
     skosapnl:Concept-definition ,
+    skosapnl:Concept-narrowerInstantial ,
+    skosapnl:Concept-exactMatch ,
+    skosapnl:Concept-narrowMatch ,
+    skosapnl:Concept-relatedMatch ,
+    skosapnl:Concept-narrowerPartitive ,
+    skosapnl:Concept-broaderPartitive ,
+    skosapnl:Concept-broaderGeneric ,
     skosapnl:Concept-broaderInstantial ,
     skosapnl:Concept-narrowerGeneric ,
     skosapnl:Concept-broadMatch ;
@@ -229,7 +229,8 @@ skosapnl:Concept-example
   sh:name "example"@en, "voorbeeld"@nl ;
   rdfs:label "voorbeeld"@nl ;
   sh:order 35 ;
-  sh:nodeKind sh:IRIOrLiteral ;
+  sh:datatype xsd:string ;
+  sh:nodeKind sh:Literal ;
   sh:path skos:example .
 
 skosapnl:Concept-narrowerPartitive
@@ -250,6 +251,7 @@ skosapnl:Concept-hiddenLabel
   sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
   sh:name "zoekterm"@nl ;
   sh:order 2 ;
+  sh:datatype xsd:string ;
   sh:nodeKind sh:Literal ;
   sh:path skos:hiddenLabel .
 
