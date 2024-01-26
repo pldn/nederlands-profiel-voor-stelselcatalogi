@@ -80,6 +80,36 @@ let respecConfig = {
     issueBase: "https://github.com/pldn/nederlands-profiel-voor-stelselcatalogi/issues/",
     maxTocLevel: 5,
     localBiblio: {
+        SKOS: 
+            {
+                "authors": [
+                    "Alistair Miles",
+                    "Sean Bechhofer"
+                ],
+                "href": "https://www.w3.org/TR/skos-reference/",
+                "title": "SKOS Simple Knowledge Organization System Reference",
+                "status": "REC",
+                "publisher": "W3C",
+                "deliveredBy": [
+                    {
+                        "url": "https://www.w3.org/2006/07/SWD/",
+                        "shortname": "swd"
+                    }
+                ],
+                "versions": [
+                    "skos-reference-20090818",
+                    "skos-reference-20090615",
+                    "skos-reference-20090317",
+                    "skos-reference-20080829",
+                    "skos-reference-20080609",
+                    "skos-reference-20080125"
+                ],
+                "obsoletes": [
+                    "swbp-skos-core-spec"
+                ],
+                "id": "skos-reference",
+                "date": "18 August 2009"
+            },
         NLAPI: {
             title: "Nederlandse API strategie",
             href: "https://docs.geostandaarden.nl/api/API-Strategie/",
