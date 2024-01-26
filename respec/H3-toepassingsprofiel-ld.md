@@ -6,10 +6,7 @@ Een RDF model bestaat uit twee delen; 1) een RDF vocabulaire en 2) een RDF Shape
 
 Het onderstaande diagram geeft een overzicht van de taalbinding in RDF die bij het conceptuele model gedefinieerd is.
 
-<figure id="TaalbindingRDF">
-  <img src="/respec/media/skosapnl.png" alt="" />
-  <figcaption>Diagram: Taalbinding RDF</figcaption>
-</figure>
+![](/respec/media/skos-ap-nl.svg "Diagram: Toepassingsprofiel skos")
 
 ## Taalbinding
 Voor het representeren van de conceptuele elementen in RDF maken we gebruik van de volgende vocabulaires 1) RDF(s), 2) SKOS, 3) DCTERMS, 4) FOAF en 5) ISOTHES. We geven de taalbinding  voor types en kenmerken apart in [types](#types) en [eigenschappen](#eigenschappen)

@@ -78,7 +78,7 @@ let respecConfig = {
     ],
     github: "pldn/nederlands-profiel-voor-stelselcatalogi",
     issueBase: "https://github.com/pldn/nederlands-profiel-voor-stelselcatalogi/issues/",
-    maxTocLevel: 5,
+    maxTocLevel: 3,
     localBiblio: {
         SKOS: 
             {

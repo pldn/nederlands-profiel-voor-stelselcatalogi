@@ -288,7 +288,7 @@ beg-sbb:InScheme
     "in kader"@nl ,
     "in scheme"@en ;
   skos:definition
-    "In kader relateert een begrip aan een begrippenkader waarin het is opgenomen."@nl ,
+    "«In kader» relateert een begrip aan een begrippenkader waarin het is opgenomen."@nl ,
     "Is in scheme relates a resource (for example a concept) to a concept scheme in which it is included."@en ;
    skos:scopeNote
     "According to the SKOS-standard, concepts can be linked to multiple conceptschemes. Practically, this can only be the case when conceptschemes overlap in terms of scope."@en ,
@@ -789,6 +789,7 @@ beg-sbb:Type
     "Een soort bron is de aard of het genre van een bron."@nl ,
     "A type is the nature or genre of a resource."@en ;
   skos:scopeNote
+  
     "Met soort bron kan bijvoorbeeld aangegeven worden of het een 'geschreven bron' of een 'web resource' is."@nl,
     "Kind indicates whether it is a 'written resource' or a 'web resource'."@en;
   dct:source
