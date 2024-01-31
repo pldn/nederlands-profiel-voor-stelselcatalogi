@@ -15,13 +15,3 @@ jobs:
       - uses: w3c/spec-prod@v2
         with:
           GH_PAGES_BRANCH: gh-pages
-  comments:
-    needs: main
-    name: add feedback tool
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          ref: gh-pages
-      - run: sed -i '2i <script src="https://hypothes.is/embed.js" async></script>' index.html
-      - uses: stefanzweifel/git-auto-commit-action@v4

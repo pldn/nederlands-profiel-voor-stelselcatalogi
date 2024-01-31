@@ -3,11 +3,11 @@
 ### Termen
 <div class="practice"><p class="practicedesc"><span class="practicelab">Gangbare conventies voor het beschrijven van termen (voorkeurstermen, alternatieve termen) zijn:
 <ul>
-<li>Gebruik een zelfstandig naam, eventueel gekwalificeerd met een adjectief (bijvoeglijk naamwoord). Gebruik geen bijwoorden, lidwoorden en voorzetsels.</li>
-<li>Vermijdt dubbele adjectieven.</li>
+<li>Gebruik een zelfstandig naamwoord, eventueel gekwalificeerd met een adjectief (bijvoeglijk naamwoord). Gebruik geen bijwoorden, lidwoorden en voorzetsels.</li>
+<li>Vermijd dubbele adjectieven.</li>
 <li>Gebruik geen werkwoorden.</li>
 <li>Gebruik geen afkortingen.</li>
-<li>Schrijf een term in kleine letters, zoals in een zin, behalve bij eingennamen.</li>
+<li>Schrijf een term in kleine letters, zoals in een zin, behalve bij eigennamen.</li>
 <li>Gebruik Latijnse alfabetische karakters (UTF8). Gebruik geen leestekens (streepjes, punten, komma's en dergelijke).</li>
 <li>Gebruik enkelvoud. Dit geldt specifiek voor Duits, Frans, Nederlands, niet voor het Engels.</li>
 <li>Gebruik standaard spelling, conform het groene boekje.</li>
@@ -16,25 +16,25 @@
 
 <div class="practice"><p class="practicedesc"><span class="practicelab">De voorkeursterm sluit aan op de daadwerkelijke term zoals deze lexicaal gebruikt wordt. <p>
 <ul>
-<li>Het is verplicht dat voor iedere taal alle voorkeurtermen die in één taal voorkomen in één begrippenkader uniek zijn. De voorkeursterm is de daadwerkelijke term zoals deze lexicaal gebruikt wordt, dus met spaties, diacrieten en waar nodig hoofdletters.</li> 
+<li>Het is verplicht dat voor iedere taal alle voorkeurtermen die in één taal voorkomen in één begrippenkader uniek zijn. De voorkeursterm is de daadwerkelijke term zoals deze lexicaal gebruikt wordt, dus met spaties, diakrieten en hoofdletters bij namen.</li> 
 <li>Mocht binnen één begrippenkader toch twee begrippen terugkomen die vaak met dezelfde term worden aangeduid, dan is het noodzakelijk - om spraakverwarring te voorkomen - om een post of prefix toe te voegen als dit algemeen gebruikelijk is. Denk aan <i>Hengelo (OV)</i> voor de plaats in Overijssel en <i>Hengelo (GLD)</i> voor de plaats in Gelderland.</li> 
 <li>Mocht een post of prefix in de praktijk niet worden gebruikt, dan is dit een sterke aanwijzing dat de twee begrippen feitelijk niet tot hetzelfde begrippenkader behoren, en uit elkaar gehaald moeten worden. De basisregel blijft gelden.</li> 
-<li>Als begrippen in verschillende begrippenkaders zijn geplaatst, dan is een nadere aanduiding van de context ongewenst. Als een lexicale term toch nader gekwalificeerd wordt dan is het aangeraden om een meer generiekere of classificerende term te gebruiken en deze tussen haakjes achter de lexicale term te plaatsen in de term, conform ISO25964. E.g. <i>Bank (Zitobject)</i> en <i>Bank (Financiele instelling)</i>.</li>
+<li>Als begrippen in verschillende begrippenkaders zijn geplaatst, dan is een nadere aanduiding van de context ongewenst. Als een lexicale term toch nader gekwalificeerd wordt dan is het aangeraden om een meer generiekere of classificerende term te gebruiken en deze tussen haakjes achter de lexicale term te plaatsen in de term, conform ISO25964. E.g. <i>Bank (Zitobject)</i> en <i>Bank (Financiële instelling)</i>.</li>
 </ul>
 </p></span></div>
 
-<div class="practice"><p class="practicedesc"><span class="practicelab">Het wordt aangeraden om elke resource te voorzien van een term die als 'technische naam' kan functioneren. Met zo'n term kunnen ook interfaces overweg die de verschillende soorten termen (voorkeursterm, alternatieve term, zoekterm) niet kunnen onderscheiden. Daarmee krijgt iedere resource een voor mensen leesbare term, ongeacht de context.<p>Anders dan bij de voorkeursterm, is het verstandig om wel context in het label mee te geven door bijvoorbeeld tussen haakjes deze context weert te geven, zoals bij <i>bank (financiële instelling)</i>. Daardoor onststaat geen verwarring in het kader van homoniemen. Het algemene label bevordert tevens de compatibiliteit met bestaande tools. Het is denkbaar dat tools deze term afleiden van bijvoorbeeld de (Engelse) voorkeursterm of de code.</p></span></div>
+<div class="practice"><p class="practicedesc"><span class="practicelab">Het wordt aangeraden om elke resource te voorzien van een term die als 'technische naam' kan functioneren. Met zo'n term kunnen ook interfaces overweg die de verschillende soorten termen (voorkeursterm, alternatieve term, zoekterm) niet kunnen onderscheiden. Daarmee krijgt iedere resource een voor mensen leesbare term, ongeacht de context.<p>Anders dan bij de voorkeursterm, is het verstandig om wel context in de naam mee te geven door bijvoorbeeld tussen haakjes deze context weert te geven, zoals bij <i>bank (financiële instelling)</i>. Daardoor ontstaat geen verwarring in het kader van homoniemen. De algemene naam bevordert tevens de compatibiliteit met bestaande tools. Het is denkbaar dat tools deze term afleiden van bijvoorbeeld de (Engelse) voorkeursterm of de code.</p></span></div>
 
-### Hierarchische relaties
+### Hiërarchische relaties
 
-Het is toegestaan dat één begrip meerdere bovenliggende begrippen kent. Er is zo sprake van een [=polyhierarchy=]. Een polyhierarchie kan nuttig zijn omdat het een intuitieve manier biedt om een begrip in meerdere categorieën te plaatsen. Veelal zie je dit dan ook toegepast in e-commerce. Hierdoor kunnen gebruikers via verschillende paden een bepaald product vinden. Toch wordt geadviseert om hier terughoudend mee te zijn en bij het maken rekening te blijven houden met best-practices en standaarden op dit gebied.
+Het is toegestaan dat één begrip meerdere bovenliggende begrippen kent. Er is zo sprake van een [=polyhierarchy=]. Een polyhiërarchie kan nuttig zijn omdat het een intuïtieve manier biedt om een begrip in meerdere categorieën te plaatsen. Veelal zie je dit dan ook toegepast in e-commerce. Hierdoor kunnen gebruikers via verschillende paden een bepaald product vinden. Toch wordt geadviseerd om hier terughoudend mee te zijn en bij het maken rekening te blijven houden met best-practices en standaarden op dit gebied.
 
-<div class="definitie">Een <dfn>polyhierarchy</dfn> refereert naar aan hierarchische structuur waar het is toegestaan dat een begrip meerdere bovenliggende begrippen heeft. Tegenovergesteld is een monohierarchy, waar ieder begrip niet meer dan één bovenliggend begrip kent.</div>
+<div class="definitie">Een <dfn>polyhierarchy</dfn> refereert naar aan hiërarchische structuur waar het is toegestaan dat een begrip meerdere bovenliggende begrippen heeft. Tegenovergesteld is een monohierarchy, waar ieder begrip niet meer dan één bovenliggend begrip kent.</div>
 
 ## Bronnen
 Een begrip kan zijn ontleend aan een op het web vindbare bron. Dit kan een (versie van) een bepaald werk zijn of een ander documentair iets waarin een beschrijving van het begrip is te vinden. Bronnen kunnen wel of niet beschreven zijn in RDF. Ook kan een begrip ontleend zijn aan een niet op het web vindbare bron. 
 
-<p class="note">Veelal gaat 'ontleend' hier over de betekenis van het begrip. Niet direct de definitie. Er ontbreekt namelijk vaak een bron waar de definitie letterlijk in voorkomt, en anders  is het zelfs zo dat de bron daarvoor een net iets andere verwoording gebruikt. We hebben het daarom over de bron van de betekenis; en niet over bijvoorbeeld de bron van de definitie. Ook kunnen andere kenmerken kunnen ontleend zijn aan een bron; zoals een [=alternatieve term=] of [=code=].
+<p class="note">Veelal gaat 'ontleend' hier over de betekenis van het begrip. Niet direct de definitie. Er ontbreekt namelijk vaak een bron waar de definitie letterlijk in voorkomt, en anders is het zelfs zo dat de bron daarvoor een net iets andere verwoording gebruikt. We hebben het daarom over de bron van de betekenis; en niet over bijvoorbeeld de bron van de definitie. Ook kunnen andere kenmerken kunnen ontleend zijn aan een bron; zoals een [=alternatieve term=] of een [=code=].
 </p>
 
 In ieder scenario willen we voldoende informatie hebben over de bron zodat we deze kunnen vinden. Dit kan op basis van een *[=url=]* of een *[=citeertitel=]*. 
@@ -46,21 +46,20 @@ ex:ingezetene a skos:Concept ;
   dct:source &lt;https://wetten.overheid.nl/jci1.3:c:BWBR0005416&titeldeel=I&artikel=2&z=2022-05-01&g=2022-05-01&gt;  
 </pre>
 
-Op deze manier is goed aangeven waar de betekenis van het begrip (gedocumenteerd als definitie) op gebasseerd is. Verder is er geen informatie over de bron. Wanneer de bron is beschreven in RDF is deze informatie er wel en kan dit meegenomen worden in de interpretatie van het begrip. 
+Op deze manier is goed aangeven waar de betekenis van het begrip (gedocumenteerd als definitie) op gebaseerd is. Verder is er geen informatie over de bron. Wanneer de bron is beschreven in RDF is deze informatie er wel en kan dit meegenomen worden in de interpretatie van het begrip. 
 
-Wanneer een bron als linked data op het web ontsloten is neem je als waarde van bronverwijzing de URI van de bron. Dit kan bijvoorbeeld een instantie van <code>foaf:Document</code> of <code>dct:BibliographicResource</code> zijn. Hoe deze precies is beschreven is maakt voor de bronverwijzing niet uit, maar binnen dit profiel wordt de [specificatie voor bronnen](#specificatie-bron) aangeraden.
+Wanneer een bron als linked data op het web ontsloten is neem je als waarde van bronverwijzing de URI van de bron. Dit kan bijvoorbeeld een instantie van <code>foaf:Document</code> of <code>dct:BibliographicResource</code> zijn. Hoe deze precies is beschreven is maakt voor de bronverwijzing niet uit, maar binnen dit profiel wordt de [specificatie voor bronnen](#specificatie-brondocument) aangeraden.
 
-Het komt ook voor dat de bron niet vindbaar is op het web en/of niet als linked data ontsloten is. In dat geval kan de beheerder van het begrip zelf een beschrijving van de bron maken wanneer het gewenst is om bijvoorbeeld informatie over de bron bij het begrip te kunnen tonen.
-Hiervoor kunnen URI's of blanknodes gebruikt worden om de bron direct identificeren (zie ook [Fundamentals of Linked Data Modeling](https://bp4mc2.org/modeling/)). Dit is tevens conform een van de basisprincipes van Linked Data, *Anybody can say anything about anything*. Deze identifier kan alleen niet direct gebruikt worden om een mensleesbaar document te vinden. Wanneer de bron vindbaar is op het web kan foaf:page ([=url=]) gebruikt worden om naar deze vindplaats te verwijzen. Wanneer de bron niet op het web vindbaar is, kan dct:bibliographicCitation ([=citeertitel=] gebruikt worden om citeerinformatie vast te leggen. Het kan zijn dat een bron zowel een url als een citeertitel kent.
+Het komt ook voor dat de bron niet vindbaar is op het web en/of niet als linked data ontsloten is. In dat geval kan de beheerder van het begrip zelf een beschrijving van de bron maken. De beschrijving bestaat minimaal uit een aanduiding van het brondocument en de naam. Als aanduiding van het brondocument kunnen in Linked data URI's of blanknodes gebruikt worden. Deze aanduiding is een directe identicatie van het brondocument (zie ook [Fundamentals of Linked Data Modeling](https://bp4mc2.org/modeling/)). De beheerder van het begrip maakt een URI voor het brondocument wat het gebruikt, maar waar het niet de eigenaar van is. Dit is conform een van de basisprincipes van Linked Data, *Anybody can say anything about anything*. Deze URI kan alleen niet direct gebruikt worden om een mensleesbaar document te vinden. Wanneer de bron vindbaar is op het web kan foaf:page ([=url=]) gebruikt worden om naar deze vindplaats te verwijzen. Wanneer de bron niet op het web vindbaar is, kan dct:bibliographicCitation ([=citeertitel=] gebruikt worden om citeerinformatie vast te leggen. Het kan zijn dat een bron zowel een url als een citeertitel kent.
 
-In het volgende voorbeeld zien we een beschrijving van een op het web vindbare bron die door de beheerder van begrippen is opgesteld. De beheerder is eigenaar van de beschrijving; maar niet van de bron zelf.
+In het volgende voorbeeld zien we een beschrijving van een op het web vindbare bron die door de beheerder van het begrip is opgesteld. De beheerder is eigenaar van de beschrijving; maar niet van de bron zelf.
 
 <pre class="example">
 ex:ingezetene a skos:Concept ;
   skos:definition "Zij die hun werkelijke woonplaats in de gemeente hebben"@nl ;
   dct:source ex:GemeentewetArt2 .
 
-ex:GemeentewetArt2 a foaf:Document ;
+ex:GemeentewetArt2 a dct:BibliographicResource ;
   rdfs:label "Gemeentewet Art. 2" ;
   foaf:page &lt;https://wetten.overheid.nl/jci1.3:c:BWBR0005416&titeldeel=I&artikel=2&z=2022-05-01&g=2022-05-01&gt  ;
   rdfs:comment "In deze wet wordt verstaan onder ingezetenen: zij die hun werkelijke woonplaats in de gemeente hebben."@nl ;
@@ -70,7 +69,8 @@ ex:GemeentewetArt2 a foaf:Document ;
 De beschrijving van een niet op het web vindbare bron waarbij gekozen is voor het gebruik van een blank node kan er als volgt uit zien;
 <pre class="example">
 ex:Flora a skos:Concept ;
-  dct:source [ rdfs:label "Heukels' Flora van Nederland" ;
+  dct:source [ a dct:BibliographicResource ;
+               rdfs:label "Heukels' Flora van Nederland" ;
                dct:bibliographicCitation "Van der Meijden, R. (2005): Heukels' Flora van Nederland. Wolters-Noordhoff, Groningen/Houten (23e druk), 685 pp." ;
                dct:type &lt;http://id.loc.gov/vocabulary/marcgt/boo&gt ] .
 </pre>
@@ -82,14 +82,14 @@ De bron zelf kan op verschillende manieren beschreven worden, dat ligt immers bi
 Wel biedt dit profiel een aantal aanbevelingen.
 <div class="practice"><p class="practicedesc"><span class="practicelab">Het is aanbevolen om bronnen te typeren als foaf:Document</span>Vooral omdat dit de meest laagdrempelige typering is aan de hand van bestaande vocabulaire.</p></div>
 <div class="practice"><p class="practicedesc"><span class="practicelab">Het is aanbevolen om de [[DCTERMS]] vocabulaire te gebruiken om bronnen te beschrijven.</span></p></div>
-<div class="practice"><p class="practicedesc"><span class="practicelab">Het is aanbevolen om bronnen met _dct:type_ te classificeren</span>Dit doen we aan de hand van een gecontroleerde vocabulaire, ofwel een classificatie schema. Een voorbeeld van zo'n classificatie schema is <a href="http://id.loc.gov/vocabulary/marcgt">MARC Genre/Terms Scheme</a>. Dit is in aanvulling op een <code>rdf:type</code> typering.</p></div>
+<div class="practice"><p class="practicedesc"><span class="practicelab">Het is aanbevolen om bronnen met _dct:type_ te classificeren</span>Dit doen we aan de hand van een gecontroleerd vocabulaire, ofwel een classificatie schema. Een voorbeeld van zo'n classificatie schema is <a href="http://id.loc.gov/vocabulary/marcgt">MARC Genre/Terms Scheme</a>. Dit is in aanvulling op een <code>rdf:type</code> typering.</p></div>
 
 ## Harmonisatie en hergebruik
 Om data goed te kunnen gebruiken, maar zeker ook om data te combineren met andere data is het belangrijk om deze te begrijpen. 
 Begrippenkaders versterken de interoperabiliteit van datasets omdat het duidelijk maakt wat de betekenis is van termen die gebruikt worden.
 Een vooralsnog belangrijk thema in data is silo-vorming en organisaties zijn ook nadrukkelijk bezig om silo's te ontmantelen omdat data in samenhang meer waarde kan leveren. Om data in samenhang te kunnen bevragen is het noodzakelijk dat de terminologie eenduidig is en op elkaar aansluit. We hebben daarom niet alleen afzonderlijke begrippenkaders per registratie (bijvoorbeeld het begrippenkader van de BRK) nodig maar juist een stelsel van verbonden begrippenkaders per domein (bijvoorbeeld het vastgoed domein). 
 
-Daarnaast hebben we hier het begrippenkader vooral beschreven vanuit het aanbod van gegevens. Maar je wilt dat natuurlijk ook gebruiken. En dan wordt niet altijd hetzelfde begrippenkader gehanteerd. Dat is niet altijd begrippenkader die je bij een registratie mag verwachten, maar vaak juist een begrippenkader van een gebruiksorganisatie, bijvoorbeeld een uitvoeringsorganisatie die gegevens nodig heeft uit een basisregistratie, maar eigen wet- en regelgeving kent en bijbehorend begrippenkader. Juist dan wil je een verbinding leggen tussen de twee begrippenkaders.
+Daarnaast hebben we hier het begrippenkader vooral beschreven vanuit het aanbod van gegevens. Maar je wilt dat natuurlijk ook gebruiken. En dan wordt niet altijd hetzelfde begrippenkader gehanteerd. Dat is niet altijd begrippenkader dat je bij een registratie mag verwachten, maar vaak juist een begrippenkader van een gebruiksorganisatie, bijvoorbeeld een uitvoeringsorganisatie die gegevens nodig heeft uit een basisregistratie, maar eigen wet- en regelgeving kent en bijbehorend begrippenkader. Juist dan wil je een verbinding leggen tussen de twee begrippenkaders.
 
 In dit hoofdstuk bespreken we best-practices op dit gebied.
 
@@ -97,11 +97,11 @@ Het verbinden van begrippenkaders kan op twee manieren;
 1) door begrippen te harmoniseren, en
 2) door begrippen te hergebruiken
   
-Wanneer we het hebben over een begrip die gedefinieerd is in een 'andere context' dan noemen we dat voor het gemak een <dfn>extern begrip</dfn>. 
+Wanneer we het hebben over een begrip dat gedefinieerd is in een 'andere context' dan noemen we dat voor het gemak een <dfn>extern begrip</dfn>. 
 
 ### Harmonisatie
 Onder de noemer harmonisatie beschrijven we hoe begrippen uit verschillende begrippenkaders op basis van betekenis aan elkaar kunnen worden gerelateerd. De letterlijke betekenis van harmoniseren is 'op elkaar afstemmen'. Verbinden is een eerste stap op weg naar afstemmen, maar het is strikt genomen geen afstemming en dus ook geen harmonisatie.
-Daarom gebruiken we nadrukkelijk geen owl:sameAs gezien dat impliceert dat de twee resources op alle mogelijke manieren identiek zijn (sterker nog; het zijn dezelfde resources). Ook als twee begrippen exact dezelfde betekenis hebben kunnen ze  verschillende lexicale labels, eigenaren en documentatie hebben. Ook zijn de logische gevolgen van owl:sameAs hierdoor veelal ongewenst. Een voorbeeld van een ongewenste implicatie is dat het kan leiden tot meerdere voorkeurstermen per taal voor een begrip en dit is niet toegestaan. Dit zien we bijvoorbeeld bij de volgende set statements:
+Daarom gebruiken we nadrukkelijk geen owl:sameAs gezien dat impliceert dat de twee resources op alle mogelijke manieren identiek zijn (sterker nog; het zijn dezelfde resources). Ook als twee begrippen exact dezelfde betekenis hebben kunnen ze  verschillende lexicale namen, eigenaren en documentatie hebben. Ook zijn de logische gevolgen van owl:sameAs hierdoor veelal ongewenst. Een voorbeeld van een ongewenste implicatie is dat het kan leiden tot meerdere voorkeurstermen per taal voor een begrip en dit is niet toegestaan. Dit zien we bijvoorbeeld bij de volgende set statements:
 
 <pre class="example">
 ex:B a skos:Concept ;
@@ -133,10 +133,10 @@ ex2:C a skos:Concept ;
 
 N.B. Voorbeeld 4 en 5 zijn eigenlijk geen voorbeelden, maar contra-voorbeelden. Ze laten zien hoe het niet moet en wat er dan mis kan gaan.
 
-Als alternatief op owl:sameAs zijn harmonisatierelaties gedefinineerd in SKOS. Deze relaties worden gebruik om de mapping tussen begrippen in verschillende begrippenkaders vast te leggen wanneer deze een vergelijkbare betekenis hebben. Bijvoorbeeld door te stellen dat het begrip "Woning" uit één begrippenkader een [=is overeenkomstig bovenliggend=] begrip "Pand" kent uit een ander begrippenkader.
+Als alternatief op owl:sameAs zijn harmonisatierelaties gedefinineerd in SKOS. Deze relaties worden gebruik om de mapping tussen begrippen in verschillende begrippenkaders vast te leggen wanneer deze een vergelijkbare betekenis hebben. Bijvoorbeeld door te stellen dat het begrip "Woning" uit één begrippenkader een [=heeft overeenkomstig bovenliggend=] begrip "Pand" kent uit een ander begrippenkader.
 We nemen zo het begrip "Pand" niet op in het begrippenkader waar "Woning" gedefinieerd is. Op dezelfde wijze kunnen twee begrippen uit verschillende begrippenkaders gerelateerd zijn aan elkaar. 
 
-Bij het harmoniseren van begrippenkaders blijft er binnen ieder begrippenkader controle over de beschrijving van de begrippen. Zelfs bij een skos:exactMatch kunnen de betreffende begrippen verschillende voorkeurstermen hebben. De mapping ligt namelijk op de betekenis van het begrip en niet op de gerelateerde lexicale labels of documentatie bij het begrip. Op deze manier kan je bijvoorbeeld twee contexten op elkaar laten aansluiten waar verschillende voorkeurstermen dezelfde betekenis dragen zonder het taalgebruik van de betreffende domeinen aan te passen. Bijvoorbeeld omdat er vanuit één begrippenkader geen invloed uitgeoefend kan worden op het andere begrippenkader of omdat er twee perspectieven bestaan op één domein.
+Bij het harmoniseren van begrippenkaders blijft er binnen ieder begrippenkader controle over de beschrijving van de begrippen. Zelfs bij een skos:exactMatch kunnen de betreffende begrippen verschillende voorkeurstermen hebben. De mapping ligt namelijk op de betekenis van het begrip en niet op de gerelateerde lexicale namen of documentatie bij het begrip. Op deze manier kan je bijvoorbeeld twee contexten op elkaar laten aansluiten waar verschillende voorkeurstermen dezelfde betekenis dragen zonder het taalgebruik van de betreffende domeinen aan te passen. Bijvoorbeeld omdat er vanuit één begrippenkader geen invloed uitgeoefend kan worden op het andere begrippenkader of omdat er twee perspectieven bestaan op één domein.
 Ook in situaties waar eenzelfde term in twee overlappende contexten net een specifiekere/andere betekenis heeft kan je er voor kiezen om twee begrippen te onderkennen en die te harmoniseren. In dit geval kunnen kunnen harmonisatierelaties gebruikt worden. Bijvoorbeeld twee contexten (ex: en ex2:) waar de term land gebruikt wordt. 
 
 <pre class="example">
