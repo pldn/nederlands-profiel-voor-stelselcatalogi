@@ -72,7 +72,7 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 | **definitie**        | Een begrippenlijst is een alfabetische lijst van termen met hun definities. |
 | **heeft bron** | https://en.wikipedia.org/wiki/Glossary |
 | **toelichting** | In de praktijk worden de termen begrippenlijst en woordenlijst vaak door elkaar gebruikt. In dit geval gaat het nadrukkelijk om een lijst van begrippen, dus inclusief de uitleg van de betekenis. Traditioneel verschijnt er aan het einde van een boek een verklarende woordenlijst met termen in dat boek die ofwel nieuw geïntroduceerd, ongebruikelijk of gespecialiseerd zijn. Semantisch gezien gaat de definitie over het begrip wat met de term wordt aangeduid en niet over de term zelf. |
-| **alternatieve term** | platte termenlijst, woordenlijst |
+| **alternatieve term** | platte termenlijst, woordenlijst, glossary |
 
  </br> 
 
@@ -206,7 +206,7 @@ Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebru
 
 ## Begrip
 Begrip is het centrale element in deze specificatie. Begrippen spelen ook een centrale rol in de manier waarop we communiceren en we de wereld om ons heen begrijpen. 
-Een begrip is een eenheid van denken, idee,  betekenis of categorisering. In de communicatiewetenschap wordt hier vaak gerefereerd aan de 'Triangle of meaning'. Dit model beschrijft hoe termen gebruikt worden door een spreker om te verwijzen naar een specifiek ding. DDe spreker heeft het feitelijk niet over het echte ding, maar over zijn gedachte over dit ding, ofwel zijn begrip van dit ding.
+Een begrip is een eenheid van denken, idee,  betekenis of categorisering. In de communicatiewetenschap wordt hier vaak gerefereerd aan de [Triangle of meaning' ([Charles Ogden, I.A. Richards: The Meaning of Meaning (1923)](https://courses.media.mit.edu/2004spring/mas966/Ogden%20Richards%201923.pdf)). Dit model beschrijft hoe termen gebruikt worden door een spreker om te verwijzen naar een specifiek ding. De spreker heeft het feitelijk niet over het echte ding, maar over zijn gedachte over dit ding, ofwel zijn begrip van dit ding.
 
 ![](https://github.com/bp4mc2/bp4mc2/blob/master/site/image-ch3-1.png?raw=true "Triangle of meaning")
 
@@ -353,15 +353,6 @@ De volgende notities zijn verwoordingen van de betekenis van een begrip.
 
  </br> 
 
-Formuleringsregels voor definities zijn: 
-* Type 1: Typering (genus/differentia) - BEGRIP is afgeleide van hoger liggend begrip, met onderscheidend kenmerk X (overerving, generalisatie, supertype). Voorbeeld: bles. Een paard met een wit voorhoofd. Palomino. Een paard met witte stippen. Afgedekte relaties uit SBB: «heeft bovenliggend begrip», «is specialisatie van», «is exemplaar van», «is categorie van», «is onderdeel van»
-* Type 2: Samenstelling (totum/dividere) - BEGRIP is een geheel dat is beschreven door de delen te beschrijven (hiërarchie, geheel/deel). Voorbeeld: organisatie. Een stel mensen die dingen doen met spullen. Voorbeeld: trein. Een locomotief met wagons. Afgedekte relaties uit SBB: «omvat»
-* Type 3: Onderdeel (pars) - BEGRIP is een onderdeel van een groter geheel, met een specifiek kenmerk. Voorbeeld: blad – Een onderdeel van een plantaardig organisme, dat zich uitstrekt vanuit de stengel en dat een essentieel onderdeel vormt van het fotosyntheseproces. Afgedekte relaties uit SBB: «heeft bovenliggend begrip», «is onderdeel van»
-* Type 4: Relatie (associatio) - BEGRIP is een relatie tussen twee entiteiten (een associatie). Voorbeeld: huwelijk - Een juridische relatie tussen twee personen. 
-* Type 5: Kenmerk (signum) - BEGRIP is een kenmerk van een entiteit (een eigenschap). Voorbeeld: juistheid - De mate waarin iets z’n echte waarde correct weergeeft. Voorbeeld: beschikbaarheid - De mate waarin iets aanwezig is voor de beoogde situatie/doel.
-  
-NB: Voor taxonomieën maakt men bij voorkeur gebruik van uitsluitend Type 1 definities. De topterm in een taxonomie zal echter van een ander type zijn. In thesauri worden ook de overige typen gebruikt.
-
 |                       |                                       |
 |-----------------------|---------------------------------------|
 | **voorkeursterm**   | <dfn>toelichting</dfn> |
@@ -497,10 +488,10 @@ Specifiek onderscheiden we de volgende verschillende harmonisatierelaties.
 
 ## Brondocument
 
-Een [=brondocument=] is een document die relevant is voor een begrip.
+Een [=brondocument=] is een document dat relevant is voor een begrip.
 Het is een good practice om voor ieder begrip een verwijzing naar een brondocument op te nemen. Zo is het duidelijk waar bijvoorbeeld de definitie van een begrip op gebaseerd is. Dit verhoogt de kwaliteit van het begrip en vooral ook de betrouwbaarheid. Het gebruiken van de hieronder beschreven structuur wordt ten zeerste aanbevolen voor het beschrijven van bronnen en het relateren van begrippen aan brondocumenten.
 
-Een bronverwijzing wordt vastgelegd als kenmerk van een begrip. Hiervoor geldt we het volgende patroon:
+Een bronverwijzing wordt vastgelegd als kenmerk van een begrip. Hiervoor geldt het volgende patroon:
 
 Een **[=begrip=]** heeft een kenmerk '**[=heeft bron=]**'. Dit kenmerk relateert het begrip aan het betreffende **[=brondocument=]**.
 
