@@ -183,7 +183,7 @@ beg-sbb:Broader
     "«has broader» relates a concept to a concept that is more general in meaning."@en ,
     "«heeft bovenliggend begrip» relateert een begrip aan een begrip met een meer algemene betekenis."@nl ;
   skos:scopeNote 
-    "Conventie is om «heeft bovenliggend begrip» alleen te gebruiken om een ​​directe hiërarchische link tussen twee begrippen te beschrijven."@nl, 
+    "Conventie is om «heeft bovenliggend begrip» alleen te gebruiken om een ​​directe hiërarchische link tussen twee begrippen te beschrijven. In 'nette' taxonomieën zijn hiërarchische relaties in een begrippenkader transitief. Dat wil zeggen als «dier» een bovenliggend begrip is van «zoogdier» en «zoogdier» een bovenliggend begrip van «kat», dan is de bewering dat «dier In 'slordige' taxonomieën is dit niet zo, bijvoorbeeld als «voertuig» wordt gedefinieerd als bovenliggend begrip van «auto» en «wiel» als onderliggend begrip van «auto» dan is «wiel» niet echt een onderliggend begrip van «voertuig»."@nl, 
     "By convention, «has broader» is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."@en;
   dct:source
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
@@ -208,7 +208,7 @@ beg-sbb:Narrower
     "«has narrower» relates a concept to a concept that is more specific in meaning."@en ,
     "«heeft onderliggend begrip» relateert een begrip aan een begrip met een specifiekere betekenis."@nl ;
   skos:scopeNote
-    "Conventie is om «heeft onderliggend begrip» alleen te gebruiken om een directe hiërarchische link tussen twee begrippen te beschrijven."@nl, 
+    "Conventie is om «heeft onderliggend begrip» alleen te gebruiken om een directe hiërarchische link tussen twee begrippen te beschrijven. In 'nette' taxonomieën zijn hiërarchische relaties in een begrippenkader transitief. Dat wil zeggen als «dier» een bovenliggend begrip is van «zoogdier» en «zoogdier» een bovenliggend begrip van «kat», dan is de bewering dat «dier In 'slordige' taxonomieën is dit niet zo, bijvoorbeeld als «voertuig» wordt gedefinieerd als bovenliggend begrip van «auto» en «wiel» als onderliggend begrip van «auto» dan is «wiel» niet echt een onderliggend begrip van «voertuig»."@nl, 
     "By convention, «has narrower» is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."@en ;
   dct:source
     <https://www.w3.org/TR/skos-reference/#semantic-relations> ,
