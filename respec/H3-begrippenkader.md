@@ -1,6 +1,6 @@
 In blijlage A worden alle in deze standaard gedefinieerde begrippen gerepresenteerd in een alfabetische begrippenlijst in de vorm van een index.
 
-Het is ook mogelijk een taxonomie van deze begrippen te maken. In paragraaf 1.3 werd beschreven dat we het hebben over begrippen en een begrippenkader. Deze kunnen dus worden gezien als topconcepten in het begrippenkader van deze standaard. Ook wordt aangegeven dat de bron belangrijk is en dat collecties (van begrippen) handig kunnen zijn. 
+Het is ook mogelijk een taxonomie van deze begrippen te maken. In paragraaf 1.3 werd beschreven dat we het hebben over begrippen en een begrippenkader. Deze kunnen dus worden gezien als topbegrippen in het begrippenkader van deze standaard. Ook wordt aangegeven dat de bron belangrijk is en dat collecties (van begrippen) handig kunnen zijn. 
 Topconcepten zijn dan: 
 * [=begrip]
 * [=begrippenkader=]
