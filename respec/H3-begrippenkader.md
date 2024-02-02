@@ -56,4 +56,4 @@ Dezen kunnen we in een taxonomie opnemen. In een lijst ziet die er als volgt uit
   * [=bronverwijzing=]
   * [=url=]
 
-Deze taxonomie geeft al meer overzicht en inzicht dan een alfabetische begrippenlijst, maar mist nog een aantal belangrijke elementen. Zo is niet zichtbaar dat de semantische relatie [=heeft bron=] is gerelateerd aan [=begrip=] en aan [=bron=] en bijvoorbeeld ook niet dat [=topbegrip=] is gerelateerd aan [=begrip=] en [=begrippenkader=]. In een thesaurus zijn deze semantische relaties wel zichtbaar.
+Deze taxonomie geeft al meer overzicht en inzicht dan een alfabetische begrippenlijst, maar mist nog een aantal belangrijke elementen. Zo is niet zichtbaar dat de semantische relatie [=heeft bron=] is gerelateerd aan [=begrip=] en aan [=bron=] en bijvoorbeeld ook niet dat [=topbegrip=] is gerelateerd aan [=begrip=] en [=begrippenkader=]. In een thesaurus zijn deze semantische relaties wel zichtbaar. Onderstaand plaatje toont de in deze standaard gedefinieerde begrippen in een thesaurus. De pijlen geven hiërarchische relaties aan, de lijnen niet-hiërarchische semantische relaties.
