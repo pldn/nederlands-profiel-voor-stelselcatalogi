@@ -1,5 +1,7 @@
+# Begrippenlijst
 In blijlage A worden alle in deze standaard gedefinieerde begrippen gerepresenteerd in een alfabetische begrippenlijst in de vorm van een index.
 
+# Taxonomie
 Het is ook mogelijk een taxonomie van deze begrippen te maken. In paragraaf 1.3 werd beschreven dat we het hebben over begrippen en een begrippenkader. Deze kunnen dus worden gezien als topbegrippen in het begrippenkader van deze standaard. Ook wordt aangegeven dat de bron belangrijk is en dat collecties (van begrippen) handig kunnen zijn. 
 Topconcepten zijn dan: 
 * [=begrip]
@@ -55,5 +57,7 @@ Dezen kunnen we in een taxonomie opnemen. In een lijst ziet die er als volgt uit
 * [=bron=]
   * [=bronverwijzing=]
   * [=url=]
+# Thesaurus
+Een taxonomie geeft al meer overzicht en inzicht dan een alfabetische begrippenlijst, maar mist nog een aantal belangrijke elementen. Zo is niet zichtbaar dat de semantische relatie [=heeft bron=] is gerelateerd aan [=begrip=] en aan [=bron=] en bijvoorbeeld ook niet dat [=topbegrip=] is gerelateerd aan [=begrip=] en [=begrippenkader=]. In een thesaurus zijn deze semantische relaties wel zichtbaar. Onderstaand plaatje toont de in deze standaard gedefinieerde begrippen in een thesaurus. De pijlen geven hiërarchische relaties aan, de lijnen niet-hiërarchische semantische relaties.
 
-Deze taxonomie geeft al meer overzicht en inzicht dan een alfabetische begrippenlijst, maar mist nog een aantal belangrijke elementen. Zo is niet zichtbaar dat de semantische relatie [=heeft bron=] is gerelateerd aan [=begrip=] en aan [=bron=] en bijvoorbeeld ook niet dat [=topbegrip=] is gerelateerd aan [=begrip=] en [=begrippenkader=]. In een thesaurus zijn deze semantische relaties wel zichtbaar. Onderstaand plaatje toont de in deze standaard gedefinieerde begrippen in een thesaurus. De pijlen geven hiërarchische relaties aan, de lijnen niet-hiërarchische semantische relaties.
+![](https://](https://github.com/pldn/nederlands-profiel-voor-stelselcatalogi/blob/verwerking-opmerkingen-openbare-consultatie/respec/media/thesaurusSBB.jpg)https://github.com/pldn/nederlands-profiel-voor-stelselcatalogi/blob/verwerking-opmerkingen-openbare-consultatie/respec/media/thesaurusSBB.jpg).
