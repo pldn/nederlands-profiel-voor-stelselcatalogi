@@ -1,7 +1,7 @@
 # Kenmerken van begrippen
 
 ## Overzicht
-In dit hoofdstuk beschrijven we de kenmerken die kunnen worden gebruikt voor het beschrijven van een begrip. Hiermee komen we tot een gedeeld beeld en gedeelde taal waarmee we een [=begrip=], [=begrippenkader=] of [=collectie=] van begrippen beschrijven. Dergelijke [semantisch interoperabele](https://nl.wikipedia.org/wiki/Interoperabiliteit) beschrijvingen van begrippen maken hergebruik van deze begrippen uit bijvoorbeeld de basisregistraties gemakkelijker.  Dit hoofdstuk is normatief in de zin dat als een of meerdere van deze kenmerken worden gebruikt om begrippen te beschrijven, dit gebeurt zoals hier beschreven.
+In dit hoofdstuk beschrijven we de kenmerken die kunnen worden gebruikt voor het beschrijven van een begrip. Hiermee komen we tot een gedeeld beeld en gedeelde taal waarmee we een [=begrip=], [=begrippenkader=] of [=collectie=] van begrippen beschrijven. Dergelijke [semantisch interoperabele](https://nl.wikipedia.org/wiki/Interoperabiliteit) beschrijvingen van begrippen maken hergebruik van deze begrippen uit bijvoorbeeld de basisregistraties gemakkelijker.  Dit hoofdstuk is normatief in de zin dat als een of meerdere van de hier gedefinieerde kenmerken worden gebruikt om begrippen te beschrijven, dit gebeurt zoals hier beschreven.
 
 In [2.2](#begrippenkader) beschrijven we wat een [=begrippenkader=] is. In [2.3](#begrip) beschrijven we wat een begrip is. Vervolgens beschrijven we in [2.3.1](#begrippenlijst) de kenmerken van een begrip die relevant zijn voor het basisniveau, een [=begrippenlijst=]. In [2.3.2](#taxonomie) voegen we daar de hiërarchische relaties aan toe die een begrippenlijst uitbreiden tot een [=taxonomie=]. In [2.3.3](#thesaurus) voegen we meer genuanceerde hiërarchische relaties toe om tot een ISO compatible [=thesaurus=] te komen. In [2.3.4](#harmonisatiesrelaties) beschrijven we de harmonisatierelaties waarmee begrippen kunnen worden verbonden met begrippen in een ander begrippenkader.
 
@@ -9,20 +9,26 @@ In [2.4](#brondocument) beschrijven we de elementen van een bibliografische of o
 
 In [2.5](#collectie) beschrijven we hoe begrippen los van hun semantische samenhang binnen een begrippenkader kunnen worden gegroepeerd in [=collectie=]s.
 
-Het beschrijven van de kenmerken van een *begrip*, *begrippenkader* of *collectie* doen we conform onze eigen standaard (practice what you preach). Dat betekent dat we voor ieder kenmerk van een begrip de volgende kenmerken beschrijven:
+### Conventies
+*  Het beschrijven van de kenmerken van een *begrip*, *begrippenkader* of *collectie* doen we conform onze eigen standaard (practice what you preach). Dat betekent dat we voor ieder kenmerk van een begrip de volgende kenmerken beschrijven:
   * [=voorkeursterm=]. De Engelse term nemen we over uit SKOS, maar soms ook uit een daarmee samenhangende standaard zoals iso-thes. In het profiel geven we de Nederlandse definitie.
-  * [=definitie=]. De definitie in het Engels nemen we over uit SKOS of een daarmee samenhangende standaard. In het profiel geven we de Nederlandse definitie.
+  * [=definitie=]. De definitie in het Engels nemen we over uit SKOS of een daarmee samenhangende standaard. In het profiel geven we de Nederlandse definitie. 
   * [=toelichting=]. De toelichting in het Engels nemen we over uit SKOS of een daarmee samenhangende standaard. De ISO 25964 geeft vaak ook een waardevolle (Engelse) toelichting. De ISO 25964 geeft zelf aan dat de toelichting misschien nog wel belangrijker is dan de definitie. Zowel de SKOS- als de ISO toelichting zijn naar het Nederlands vertaald.
   * [=code=]. De ISO 25964 hanteert voor een groot aantal concepten een code. Bij de concepten waarvoor deze ISO standaard een code kent wordt deze code meegegeven.
   * [=heeft bron=]. Bij ieder begrip geven we aan welke bron(nen) we hebben gebruikt voor de beschrijving.
   * [=semantische relaties=]. Dit zijn relaties met andere begrippen.
 
-Als een term uit meerdere woorden bestaat ontstaan soms grammaticaal onlogische zinnen, zoals "Heeft bovenliggend begrip relateert een begrip aan...". Dan is het nodig om aan te duiden dat *heeft bovenliggend begrip* een begrip aanduidt. Semantisch gezien is het gebruik van enkele of dubbele aanhalingstekens dan onjuist. Daarmee wordt verwezen naar een term en niet naar het begrip. Dit wordt duidelijk in een zin als "De term 'bank' kan zowel een financiële instelling als een zitmeubel aanduiden". In de voorliggende standaard is het essentieel dat duidelijk is wanneer het over een *term* gaat en wanneer over een *begrip*. Dit onderscheid is bekend als de [use-mention distinction](https://en.wikipedia.org/wiki/Use%E2%80%93mention_distinction). Voor het aanduiden van een begrip is geen duidelijke standaard. Hier gebruiken we guillemets (French quotation marks) «» om waar nodig aan te geven dat het om een begrip gaat. Bijvoorbeeld «heeft bovenliggend begrip» relateert een begrip aan...".
+* Voor het formuleren van definities bestaan twee gangbare conventies:
+  * Formuleren van een definitie als in een zin. Zo'n definitie heeft de structuur van 'Een ... is een ... die/dat ...'. Een voorbeeld is: 'Een duiker is een kokervormige constructie (met meestal een vrije waterspiegel), die twee waterlopen met elkaar verbindt.'
+  * Formuleren van een definitie zonder het begrip in de defnitie en zonder met 'is een' aan te geven dat het om een definitie gaat. Zo'n defnitie laat het stukje 'Een ... is een' achterwege. Een voorbeeld is 'kokervormige constructie (met meestal een vrije waterspiegel), die twee waterlopen met elkaar verbindt.'
+  Afhankelijk van de context voldoet de ene of de andere conventie beter. In deze standaard kiezen we voor de eerste optie: het formuleren van een definitie in een zin.
+
+* Als een term uit meerdere woorden bestaat ontstaan soms grammaticaal onlogische zinnen, zoals "Heeft bovenliggend begrip relateert een begrip aan...". Dan is het nodig om aan te duiden dat *heeft bovenliggend begrip* een begrip aanduidt. Semantisch gezien is het gebruik van enkele of dubbele aanhalingstekens dan onjuist. Daarmee wordt verwezen naar een term en niet naar het begrip. Dit wordt duidelijk in een zin als "De term 'bank' kan zowel een financiële instelling als een zitmeubel aanduiden". In de voorliggende standaard is het essentieel dat duidelijk is wanneer het over een *term* gaat en wanneer over een *begrip*. Dit onderscheid is bekend als de [use-mention distinction](https://en.wikipedia.org/wiki/Use%E2%80%93mention_distinction). Voor het aanduiden van een begrip is geen duidelijke standaard. Hier gebruiken we guillemets (French quotation marks) «» om waar nodig aan te geven dat het om een begrip gaat. Bijvoorbeeld «heeft bovenliggend begrip» relateert een begrip aan...".
 
 ## Begrippenkader
-Begrippen kunnen als zelfstandige entiteiten worden gezien maar meestal worden ze opgesteld als onderdeel van een samenhangend begrippenkader. Een [=begrippenkader=] is een verzameling van [=begrip=]pen die in een bepaalde context relevant zijn. Voorbeelden van zo'n context zijn een bepaalde basisregistratie of een boek. Zo bevat het begrippenkader voor de Basisregistratie alle begrippen die in deze registratie worden gebruikt. Een  ander voorbeeld is een index achterin een boek. Een begrippenkader kan de vorm hebben van een [=begrippenlijst=], [=taxonomieën=] of [thesaurius=].
+Begrippen kunnen als zelfstandige entiteiten worden gezien, maar meestal worden ze opgesteld als onderdeel van een samenhangend begrippenkader. Een [=begrippenkader=] is een verzameling van [=begrip=]pen die in een bepaalde context relevant zijn. Voorbeelden van zo'n context zijn een bepaalde basisregistratie of een boek. Zo bevat het begrippenkader voor de Basisregistratie alle begrippen die in deze registratie worden gebruikt. Een ander voorbeeld is een index achterin een boek. 
 
-Als kenmerk van het [=begrip=] wordt aangegeven of het onderdeel is van een begrippenkader ([=in kader=]). Een perceel in de Basisregsitratie Kadaster is een ander begrip dan een perceel in een boek over wisselteelt. Een begrippenkader is vergelijkbaar met een taal die in een bepaald gebied gesproken wordt. En net als een reguliere taal is een begrippenkader een open systeem. Zo kan een taal ook groeien na introductie van nieuwe woorden vanuit talen uit nabijgelegen gebieden. Dat wil zeggen dat een begrippenkader, net als een taal, naast vertalingen (mappings) ook leenwoorden kent. Zoals "computer", een van origine Engels woord, ook behoort tot de Nederlandse taal. Het beschrijven van welke begrippen behoren tot een begrippenkader is essentieel; maar hoe deze 'vertaald' kunnen worden naar begrippen uit andere begrippenkaders ook. Voor dit laatste gebruiken we [=harmonisatierelatie=]s.
+Een perceel in de Basisregsitratie Kadaster is een ander begrip dan een perceel in een boek over wisselteelt. Een begrippenkader is vergelijkbaar met een taal die in een bepaald gebied gesproken wordt. Net als een reguliere taal is een begrippenkader een open systeem. Zo kan een taal ook groeien na introductie van nieuwe woorden vanuit talen uit nabijgelegen gebieden. Dat wil zeggen dat een begrippenkader, net als een taal, naast vertalingen (mappings) ook leenwoorden kent. Zoals "computer", een van origine Engels woord, ook behoort tot de Nederlandse taal. Het beschrijven van welke begrippen behoren tot een begrippenkader is essentieel; maar hoe deze 'vertaald' kunnen worden naar begrippen uit andere begrippenkaders ook. Voor dit laatste gebruiken we [=harmonisatierelatie=]s.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -31,32 +37,10 @@ Als kenmerk van het [=begrip=] wordt aangegeven of het onderdeel is van een begr
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://en.wikipedia.org/wiki/Controlled_vocabulary, https://www.w3.org/TR/skos-reference/#schemes |
 | **toelichting** | Een begrippenkader kan worden gedefinieerd om begrippen uit verschillende bronnen op te nemen. Begrippenkaders bieden een manier om kennis te ordenen voor het later kunnen ophalen. Ze worden gebruikt in indexeringsschema's, koppen, thesauri, taxonomieën en andere kennisorganisatiesystemen. Begrippenkaders verplichten het gebruik van vooraf gedefinieerde, geautoriseerde termen die zijn geselecteerd door de ontwerpers ervan, in tegenstelling tot natuurlijke taalvocabulaires,die een dergelijke beperking niet hebben. |
 
- </br> 
-
-Een begrippenkader kan beschreven worden aan de hand van verschillende kenmerken. De tabel hieronder geeft een overzicht van deze kenmerken. In de tabel daaronder worden deze kenmerken stuk voor stuk beschreven. Bij een begrippenkader is alleen 'heeft topbegrip' specifiek voor een begrippenkader. De kenmerken 'uitleg' en 'naam' zijn ook en primair relevant voor begrippen en worden in de paragraaf over begrippen beschreven. 'heeft topbegrip' (begrip) heeft ook een invers kenmerk, namelijk 'is topbegrip van' (een begrippenkader). Dit inverse kenmerk wordt beschreven in de paragraaf over begrippen.
-
-| Conceptueel element | Kardinaliteit | Type       |
-| ------------------- | ------------- | ---------- |
-| [=naam=]            | 1..*          | Tekst      |
-| [=uitleg=]          | 0..*          | Tekst      |
-| [=heeft topbegrip=] | 0..*          | [=begrip=] |
-
-</br>
-
-|                       |                                       |
-|-----------------------|---------------------------------------|
-| **voorkeursterm**   | <dfn>heeft topbegrip</dfn> |
-| **definitie**        | «heeft topbegrip» adresseert een begrip dat bovenaan de hiërarchie staat in het betreffende begrippenkader. |
-| **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes |
-| **toelichting** | Bovenaan wilt zeggen; het heeft geen bredere begrippen. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle begrippen op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen. |
-| **code** | TT |
-
- </br> 
-
+Een begrippenkader kan de vorm hebben van een [=begrippenlijst=], [=taxonomieën=] of [thesaurius=].
 
 ### Begrippenlijst
-De meest basale vorm van een [=begrippenkader=] is een [=begrippenlijst=]. Een begrippenlijst is een termenlijst met definities die gebruikt worden in een bepaald domein, zonder relaties tussen begrippen te beschrijven. Een begrippenlijst kent voor ieder begrip dan ook mimimaal één [=voorkeursterm=] en één [=definitie=]. Een toelichting op de definitie is aanbevolen, evenals een verwijzing naar de bron van de betekenis. 
-Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in klare taal, op B1 niveau aanbevolen. De overige kenmerken zijn optioneel.
+De meest basale vorm van een [=begrippenkader=] is een [=begrippenlijst=]. Een begrippenlijst is een termenlijst met definities die gebruikt worden in een bepaald domein, zonder relaties tussen begrippen te beschrijven. 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -70,7 +54,7 @@ Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in k
 
 ### Taxonomie
 
-Naast documentaire eigenschappen zoals een [=definitie=], waar de betekenis van een begrip in tekstuele vorm beschreven wordt; kan de betekenis van een begrip ook beschreven worden aan de hand van een ander begrip. Een taxonomie kent behalve alle elementen van een begrippenlijst ook hiërarchische relaties. Deze hiërarchische relaties zijn optioneel in een begrippenlijst en zijn bijvoorbeeld relevant als een begrip wordt gedefinieerd in termen van een ander begrip, bijvoorbeeld `'een gemaal *is een* kunstwerk dat ...'`. Deze definitie impliceert dat een gemaal een 'enger begrip' is dan een kunstwerk, die ook als semantische relatie kan worden opgenomen.
+Een taxonomie kent ook hiërarchische relaties. Deze hiërarchische relaties zijn optioneel in een begrippenlijst en zijn bijvoorbeeld relevant als een begrip wordt gedefinieerd in termen van een ander begrip, bijvoorbeeld `'een gemaal *is een* kunstwerk dat ...'`. Deze definitie impliceert dat een gemaal een 'enger begrip' is dan een kunstwerk, die ook als semantische relatie kan worden opgenomen.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -80,9 +64,23 @@ Naast documentaire eigenschappen zoals een [=definitie=], waar de betekenis van 
 | **toelichting** | Een taxonomie wordt gebruikt om kennis te ordenen en te indexeren (opgeslagen als documenten, artikelen, video's, enz.), zoals in de vorm van een bibliotheekclassificatiesysteem of een taxonomie van een zoekmachine, zodat gebruikers de informatie die ze zoeken gemakkelijker kunnen vinden. Taxonomieën zijn hiërarchieën (en hebben dus een intrinsieke structuur en betekenis). |
 | **alternatieve term** | classificatieschema, taxonomische classificatie |
 
+### Thesaurus
+
+Naast de kenmerken die voor begrippen in een begrippenlijst of taxonomie zijn geïntroduceerd, kan een begrip in een thesaurus ook associatieve, niet-hiërarchische relaties tussen begrippen kennen.
+
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**   | <dfn>thesaurus</dfn> |
+| **definitie**        | Een thesaurus is een begrippenkader waarin begrippen semantisch en hiërarchisch zijn geordend. |
+| **heeft bron** | https://en.wikipedia.org/wiki/Thesaurus, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.62 |
+| **toelichting** | Het doel van een thesaurus is traditioneel om de indexeerder en de zoeker te helpen bij het kiezen van dezelfde term voor hetzelfde begrip. Om dit te bereiken, bevat een thesaurus in de eerste plaats alle begrippen die nuttig kunnen zijn voor zoekdoeleinden in een bepaald domein. Ten tweede moet een thesaurus de begrippen zo presenteren dat mensen ze gemakkelijk kunnen vinden. Dit wordt bereikt door relaties tussen begrippen tot stand te leggen en de relaties te gebruiken om de begrippen in een gestructureerde weergave te presenteren. |
+
  </br> 
 
-In een taxonomie zijn alle begrippen direct of indirect als via '[=heeft bovenliggend begrip=]' gekoppeld aan een top-begrip. Typerend voor een taxonomie is een interface waarbij op het eerste niveau de top-begrippen worden getoond, waarbij per top-begrip begrippen met een engere betekenis worden getoond, die op hun beurt ook weer begrippen met een engere betekenis tonen, enzovoort. Dit betekent dat, als je een taxonomie publiceert, ieder begrip ofwel via een hiërarchische relatie moet worden gekoppeld aan een ander begrip, ofwel een top-begrip moet zijn. Zonder hiërarchische relaties is er in een begrippenkader geen sprake van een top-begrip.
+ 
+ </br> 
+
+In een taxonomie zijn alle begrippen direct of indirect gekoppeld aan een topbegrip. Typerend voor een taxonomie is een interface waarbij op het eerste niveau de topbegrippen worden getoond, waarbij per topbegrip begrippen met een engere betekenis worden getoond, die op hun beurt ook weer begrippen met een engere betekenis tonen, enzovoort. Dit betekent dat, als je een taxonomie publiceert, ieder begrip ofwel via een hiërarchische relatie moet worden gekoppeld aan een ander begrip, ofwel een topbegrip moet zijn. Zonder hiërarchische relaties is er in een begrippenkader geen sprake van een top-begrip.
 
 Als een eerste begrip een bovenliggend begrip is in relatie tot een tweede begrip en het tweede begrip weer een bovenliggend begrip is in relatie tot een derde begrip, dan betekent dit niet automatisch dat dit eerste begrip semantisch gezien óók een bovenliggend begrip is in relatie tot het derde begrip (transitief is). Dit kan voorkomen in 'slordige' taxonomieën. Een voorbeeld is het definiëren van 'auto' als onderliggend begrip in relatie tot 'voertuig' en 'wiel' als een onderliggend begrip in relatie tot 'auto'. Maar 'wiel' is niet logischerwijs een onderliggend begrip in relatie tot 'voertuig'. 'Heeft bovenliggend begrip' en 'heeft onderliggend begrip' zijn dus niet per definitie transitief.
 
@@ -110,18 +108,7 @@ Als een eerste begrip een bovenliggend begrip is in relatie tot een tweede begri
 
  </br> 
 
-### Thesaurus
-
-|                       |                                       |
-|-----------------------|---------------------------------------|
-| **voorkeursterm**   | <dfn>thesaurus</dfn> |
-| **definitie**        | Een thesaurus is een begrippenkader waarin begrippen semantisch en hiërarchisch zijn geordend. |
-| **heeft bron** | https://en.wikipedia.org/wiki/Thesaurus, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.62 |
-| **toelichting** | Het doel van een thesaurus is traditioneel om de indexeerder en de zoeker te helpen bij het kiezen van dezelfde term voor hetzelfde begrip. Om dit te bereiken, bevat een thesaurus in de eerste plaats alle begrippen die nuttig kunnen zijn voor zoekdoeleinden in een bepaald domein. Ten tweede moet een thesaurus de begrippen zo presenteren dat mensen ze gemakkelijk kunnen vinden. Dit wordt bereikt door relaties tussen begrippen tot stand te leggen en de relaties te gebruiken om de begrippen in een gestructureerde weergave te presenteren. |
-
- </br> 
-
-Naast de kenmerken die voor begrippen in een begrippenlijst of taxonomie zijn geïntroduceerd, kan een begrip in een thesaurus ook associatieve, niet-hiërarchische relaties tussen begrippen kennen. Hiervoor kennen we de relatie [=is gerelateerd aan=].
+ Hiervoor kennen we de relatie [=is gerelateerd aan=].
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
