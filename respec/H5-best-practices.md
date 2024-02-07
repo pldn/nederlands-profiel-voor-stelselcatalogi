@@ -25,6 +25,58 @@
 
 <div class="practice"><p class="practicedesc"><span class="practicelab">Het wordt aangeraden om elke resource te voorzien van een term die als 'technische naam' kan functioneren. Met zo'n term kunnen ook interfaces overweg die de verschillende soorten termen (voorkeursterm, alternatieve term, zoekterm) niet kunnen onderscheiden. Daarmee krijgt iedere resource een voor mensen leesbare term, ongeacht de context.<p>Anders dan bij de voorkeursterm, is het verstandig om wel context in de naam mee te geven door bijvoorbeeld tussen haakjes deze context weert te geven, zoals bij <i>bank (financiële instelling)</i>. Daardoor ontstaat geen verwarring in het kader van homoniemen. De algemene naam bevordert tevens de compatibiliteit met bestaande tools. Het is denkbaar dat tools deze term afleiden van bijvoorbeeld de (Engelse) voorkeursterm of de code.</p></span></div>
 
+### Definities en uitleg
+Verschillende organisaties hebben uitgewerkte conventies voor het formuleren van een definitie. Deze conventies zijn 1 op 1 ook toepasbaar op het formuleren van een goede uitleg in begrijpelijke taal.
+
+#### ISO:704
+In de NORA werkgroep begrippenkader hanteert men de [ISO 704](https://www.iso.org/obp/ui/en/#iso:std:iso:704:ed-4:v1:en). Een samenvatting daarvan is te vinden op <https://www.noraonline.nl/wiki/Expertgroep_NORA_Begrippenkader_20231003#ISO_704>
+
+#### Typen definities
+Vanuit de Stichting SURVUZ zijn de volgende typen definities aangedragen:
+* **Type 1**: Typering (genus/differentia) - BEGRIP is afgeleide van hoger liggend begrip, met onderscheidend kenmerk X (overerving, generalisatie, supertype).
+  *Voorbeeld: bles. Een paard met een wit voorhoofd. Palomino. Een paard met witte stippen.
+  *Afgedekte relaties uit SBB: <<heeft bovenliggend begrip>>, << is specialisatie van>>, <<is exemplaar van>>, <<is categorie van>>, <<is onderdeel van>>
+* **Type 2**: Samenstelling (totum/dividere) - BEGRIP is een geheel dat is beschreven door de delen te beschrijven (hiërarchie, geheel/deel).
+  *Voorbeeld: organisatie. Een stel mensen die dingen doen met spullen. 
+  *Voorbeeld: trein. Een locomotief met wagons.
+  *Afgedekte relaties uit SBB: <<omvat>>
+* **Type 3**: Onderdeel (pars) - BEGRIP is een onderdeel van een groter geheel, met een specifiek kenmerk.
+  * Voorbeeld: blad – Een onderdeel van een plantaardig organisme, dat zich uitstrekt vanuit de stengel en dat een essentieel onderdeel vormt van het fotosyntheseproces.
+  * Afgedekte relaties uit SBB: <<heeft bovenliggend begrip>>, <<is onderdeel van>>
+* **Type 4**: Relatie (associatio) - BEGRIP is een relatie tussen twee entiteiten (een associatie).
+  *Voorbeeld: huwelijk - Een juridische relatie tussen twee personen.
+* **Type 5**: Kenmerk (signum) - BEGRIP is een kenmerk van een entiteit (een eigenschap).
+  * Voorbeeld: juistheid - De mate waarin iets z’n echte waarde correct weergeeft. 
+  * Voorbeeld: beschikbaarheid - De mate waarin iets aanwezig is voor de beoogde situatie/doel.
+
+NB: Voor taxonomieën maakt men bij voorkeur gebruik van uitsluitend Type 1 definities. De topterm in een taxonomie zal echter van een ander type zijn.
+
+#### Nationale politie
+##### Aanleiding
+Als mensen samenwerken dan is het noodzakelijk dat ze de gemeenschappelijke termen uit het dagelijks werk op dezelfde wijze interpreteren. Dat lijkt vanzelfsprekend, maar in de praktijk is dat zeker niet altijd zo. Zeker in een grote organisatie zoals de politie worden regelmatig termen op verschillende manieren geïnterpreteerd. Termen als 'draaideurcrimineel', 'jihadist' of 'huiselijk geweld' kunnen in verschillende organisatieonderdelen op een andere manier uitgelegd worden.
+
+Als dergelijke termen gebruikt worden bij de ontwikkeling van hulpmiddelen, zoals computersystemen of opleidingen of als gegevens gebaseerd op deze termen worden gedeeld binnen de Politie of met ketenpartners, dan kan dit tot ongewenste situaties leiden.
+
+Eenduidige definities van de begrippen die aangeduid worden met de gebruikte termen, zogenaamde begripsdefinities, kunnen zulke spraakverwarringen voorkomen. Een begripsdefinitie verbindt een term met een eenduidige betekenis. Zij nemen interpretatieverschillen bij de uitvoering van het werk weg. Begripsdefinities vormen een hulpmiddel om te komen tot één gemeenschappelijke taal. Met een goed geformuleerde definitie is het voor iedereen duidelijk wat onder een bepaald term wordt verstaan in een specifieke context.
+
+Het definiëren van begrippen is niet nieuw. Ook binnen de politie bestaan al heel veel definities van begrippen. Hierbij zijn echter kanttekeningen te maken:
+* Door het ontbreken van een duidelijke methode voor het definiëren van begrippen is de kwaliteit hiervan niet altijd optimaal.
+* Door het ontbreken van een eenduidige beheer- en publicatiefunctie voor opgestelde definities is het eindresultaat vaak enkel bekend bij een beperkt aantal direct betrokkenen. Hierdoor raken definities uiteindelijk in de vergetelheid en dragen ze niet bij aan het streven naar één gemeenschappelijk taal.
+* De status van bestaande definities is vaak onbekend, omdat onduidelijk is welke functionaris verantwoordelijk is voor de definitie, wie deze heeft opgesteld en wat de context ervan is. Bij nieuwe ontwikkelingen worden bestaande definities regelmatig genegeerd, omdat onduidelijk is of de bestaande definitie voldoende draagvlak heeft.
+
+Dit voorschrift geeft handvatten om eenduidige definities van goede kwaliteit op te stellen. Correct opgestelde definities worden na formele vaststelling opgenomen in de landelijke verzameling bedrijfsbegrippen die een onderdeel is van het Semantisch Model Politie (SMP). Eenduidige publicatie voor alle medewerkers vindt plaats vanuit deze landelijke verzameling.
+
+De landelijke verzameling bevat alleen goedgekeurde begripsdefinities. Definities die niet voldoen aan de regels uit dit voorschrift zullen eerst aangepast moeten worden tot ze wel juist zijn.
+
+#####Achtergrond
+Een begrip wordt gebruikt in het dagelijks politiewerk of de ondersteuning daarvan. Begrippen komen voor in geformuleerde bedrijfsregels. De termen (woorden of een samenstel van woorden) uit een bedrijfsregel duiden de begrippen aan. Voor de juiste interpretatie van een bedrijfsregel is het noodzakelijk dat gehanteerde termen eenduidig gedefinieerd zijn. Pas als iedereen een term op dezelfde manier interpreteert kan de bedrijfsregel op de juiste manier worden toegepast.
+In het volgende voorbeeld van een bedrijfsregel zijn de termen onderstreept die een (te definiëren) begrip aanduiden. Zonder goede definities zal het onmogelijk blijken om de bedrijfsregel overal op dezelfde manier toe te passen.
+
+‘Een verdachte die is aangehouden wegens het begaan van een strafbaar feit moet onmiddellijk worden voorgeleid aan een hulpofficier van justitie.’
+In de praktijk blijkt het heel lastig om goede definities op te stellen. Dit voorschrift helpt de opsteller om een definitie zodanig te formuleren dat deze eenduidig is, geen overtollige informatie bevat en een juiste weergave is van de politiewerkelijkheid.
+
+Dit voorschrift gaat uit van de begrippen zoals gedefinieerd in het SMP/SCM Metamodel.
+
 ### Hiërarchische relaties
 
 Het is toegestaan dat één begrip meerdere bovenliggende begrippen kent. Er is zo sprake van een [=polyhierarchy=]. Een polyhiërarchie kan nuttig zijn omdat het een intuïtieve manier biedt om een begrip in meerdere categorieën te plaatsen. Veelal zie je dit dan ook toegepast in e-commerce. Hierdoor kunnen gebruikers via verschillende paden een bepaald product vinden. Toch wordt geadviseerd om hier terughoudend mee te zijn en bij het maken rekening te blijven houden met best-practices en standaarden op dit gebied.
