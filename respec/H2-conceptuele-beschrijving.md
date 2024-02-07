@@ -19,7 +19,7 @@ In [2.5](#collectie) beschrijven we hoe begrippen los van hun semantische samenh
   * [=semantische relaties=]. Dit zijn relaties met andere begrippen.
 
 * Voor het formuleren van definities bestaan twee gangbare conventies:
-  * Formuleren van een definitie als in een zin. Zo'n definitie heeft de structuur van /'Een ... is een ... die/dat .../'. Een voorbeeld is: 'Een duiker is een kokervormige constructie (met meestal een vrije waterspiegel), die twee waterlopen met elkaar verbindt.'
+  * Formuleren van een definitie als in een zin. Zo'n definitie heeft de structuur van 'Een ... is een ... die/dat ...'. Een voorbeeld is: 'Een duiker is een kokervormige constructie (met meestal een vrije waterspiegel), die twee waterlopen met elkaar verbindt.'
   * Formuleren van een definitie zonder het begrip in de defnitie en zonder met 'is een' aan te geven dat het om een definitie gaat. Zo'n defnitie laat het stukje 'Een ... is een' achterwege. Een voorbeeld is 'kokervormige constructie (met meestal een vrije waterspiegel), die twee waterlopen met elkaar verbindt.'
 
   Afhankelijk van de context voldoet de ene of de andere conventie beter. In deze standaard kiezen we voor de eerste optie: het formuleren van een definitie in een zin.
