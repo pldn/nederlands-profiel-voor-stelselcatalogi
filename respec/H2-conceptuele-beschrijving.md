@@ -471,7 +471,7 @@ Een **[=begrip=]** heeft een kenmerk '**[=heeft bron=]**'. Dit kenmerk relateert
 
  </br> 
 
-Het wordt aangeraden om een bron altijd te beschrijven met een **[=bronverwijzing=]** waarin de verwijzing conform een gangbare conventie is vastgelegd. Er is een conventie voor de verwijzing naar passage van een artikel in een tijdschrift of in een boek. Ook voor de verwijzing naar wetgeving is er een conventie. Als de bron een vindplaats heeft op het web is een **[=url=]** relevant.  Hiermee kan de bron direct gevonden worden. 
+Het wordt aangeraden om een brondocument altijd te beschrijven met een **[=bronverwijzing=]** waarin de verwijzing conform een gangbare conventie is vastgelegd. Er is een conventie voor de verwijzing naar passage van een artikel in een tijdschrift of in een boek. Ook voor de verwijzing naar wetgeving is er een conventie. Als de bron een vindplaats heeft op het web is een **[=url=]** relevant.  Hiermee kan de bron direct gevonden worden. 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
