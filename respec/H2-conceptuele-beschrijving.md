@@ -276,8 +276,7 @@ Een topbegrip kan worden gedefinieerd vanuit een begrip in relatie tot een begri
 | **voorkeursterm**   | <dfn>heeft bovenliggend begrip</dfn> |
 | **definitie**        | «heeft bovenliggend begrip» relateert een begrip aan een begrip met een meer algemene betekenis. |
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/skos-reference/#semantic-relations |
-| **toelichting** | Conventie is om «heeft bovenliggend begrip» alleen te gebruiken om een ​​directe hiërarchische link tussen twee begrippen te beschrijven. In 'nette' taxonomieën zijn hiërarchische relaties in een begrippenkader transitief. Dat wil zeggen als «dier» een bovenliggend begrip is van «zoogdier» en «zoogdier» een bovenliggend begrip van «kat», dan is de bewering dat «dier In 'slordige' taxonomieën is dit niet zo, bijvoorbeeld als «voertuig» wordt gedefinieerd als bovenliggend begrip van «auto» en «wiel» als onderliggend begrip van «auto» dan is «wiel» niet echt een onderliggend begrip van «voertuig»."@nl, 
-    "By convention, «has broader» is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources. |
+| **toelichting** | Conventie is om «heeft bovenliggend begrip» alleen te gebruiken om een ​​directe hiërarchische link tussen twee begrippen te beschrijven. In 'nette' taxonomieën zijn hiërarchische relaties in een begrippenkader transitief. Dat wil zeggen als «dier» een bovenliggend begrip is van «zoogdier» en «zoogdier» een bovenliggend begrip van «kat», dan is de bewering dat «dier In 'slordige' taxonomieën is dit niet zo, bijvoorbeeld als «voertuig» wordt gedefinieerd als bovenliggend begrip van «auto» en «wiel» als onderliggend begrip van «auto» dan is «wiel» niet echt een onderliggend begrip van «voertuig»."@nl |
 | **alternatieve term** | heeft breder begrip |
 | **code** | BT |
 
@@ -288,8 +287,7 @@ Een topbegrip kan worden gedefinieerd vanuit een begrip in relatie tot een begri
 | **voorkeursterm**   | <dfn>heeft onderliggend begrip</dfn> |
 | **definitie**        | «heeft onderliggend begrip» relateert een begrip aan een begrip met een specifiekere betekenis. |
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/skos-reference/#semantic-relations |
-| **toelichting** | Conventie is om «heeft onderliggend begrip» alleen te gebruiken om een directe hiërarchische link tussen twee begrippen te beschrijven. In 'nette' taxonomieën zijn hiërarchische relaties in een begrippenkader transitief. Dat wil zeggen als «dier» een bovenliggend begrip is van «zoogdier» en «zoogdier» een bovenliggend begrip van «kat», dan is de bewering dat «dier In 'slordige' taxonomieën is dit niet zo, bijvoorbeeld als «voertuig» wordt gedefinieerd als bovenliggend begrip van «auto» en «wiel» als onderliggend begrip van «auto» dan is «wiel» niet echt een onderliggend begrip van «voertuig»."@nl, 
-    "By convention, «has narrower» is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources. |
+| **toelichting** | Conventie is om «heeft onderliggend begrip» alleen te gebruiken om een directe hiërarchische link tussen twee begrippen te beschrijven. In 'nette' taxonomieën zijn hiërarchische relaties in een begrippenkader transitief. Dat wil zeggen als «dier» een bovenliggend begrip is van «zoogdier» en «zoogdier» een bovenliggend begrip van «kat», dan is de bewering dat «dier In 'slordige' taxonomieën is dit niet zo, bijvoorbeeld als «voertuig» wordt gedefinieerd als bovenliggend begrip van «auto» en «wiel» als onderliggend begrip van «auto» dan is «wiel» niet echt een onderliggend begrip van «voertuig»."@nl|
 | **alternatieve term** | heeft enger begrip |
 | **code** | NT |
 
