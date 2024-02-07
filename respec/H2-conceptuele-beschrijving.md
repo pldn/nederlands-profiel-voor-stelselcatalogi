@@ -29,15 +29,7 @@ In [2.6](#collectie) beschrijven we hoe begrippen los van hun semantische samenh
 * Als een term uit meerdere woorden bestaat ontstaan soms grammaticaal onlogische zinnen, zoals "Heeft bovenliggend begrip relateert een begrip aan...". Dan is het nodig om aan te duiden dat *heeft bovenliggend begrip* een begrip aanduidt. Semantisch gezien is het gebruik van enkele of dubbele aanhalingstekens dan onjuist. Daarmee wordt verwezen naar een term en niet naar het begrip. Dit wordt duidelijk in een zin als "De term 'bank' kan zowel een financiële instelling als een zitmeubel aanduiden". In de voorliggende standaard is het essentieel dat duidelijk is wanneer het over een *term* gaat en wanneer over een *begrip*. Dit onderscheid is bekend als de [use-mention distinction](https://en.wikipedia.org/wiki/Use%E2%80%93mention_distinction). Voor het aanduiden van een begrip is geen duidelijke standaard. Hier gebruiken we guillemets (French quotation marks) «» om waar nodig aan te geven dat het om een begrip gaat. Bijvoorbeeld «heeft bovenliggend begrip» relateert een begrip aan...".
 
 ## Begrip
-Begrip is het centrale element in deze specificatie. Begrippen spelen ook een centrale rol in de manier waarop we communiceren en we de wereld om ons heen begrijpen. 
-Een begrip is een eenheid van denken, idee,  betekenis of categorisering. In de communicatiewetenschap wordt hier vaak gerefereerd aan de [Triangle of meaning' ([Charles Ogden, I.A. Richards: The Meaning of Meaning (1923)](https://courses.media.mit.edu/2004spring/mas966/Ogden%20Richards%201923.pdf)). Dit model beschrijft hoe termen gebruikt worden door een spreker om te verwijzen naar een specifiek ding. De spreker heeft het feitelijk niet over het echte ding, maar over zijn gedachte over dit ding, ofwel zijn begrip van dit ding.
-
-![](https://github.com/bp4mc2/bp4mc2/blob/master/site/image-ch3-1.png?raw=true "Triangle of meaning")
-
-Soms heeft een spreker bij een term een ander ding in gedachten dan de luisteraar. Dan begrijpen ze elkaar niet, ofwel ze hebben een ander begrip in gedachten.
-
-![](https://github.com/bp4mc2/bp4mc2/blob/master/site/image-ch3-2.png?raw=true "spreker en toehoorder").
-
+Begrip is het centrale element in deze specificatie. Begrippen spelen een centrale rol in de manier waarop we communiceren en we de wereld om ons heen begrijpen. Een begrip is een eenheid van denken, idee,  betekenis of categorisering. 
 Het hebben van gestandaardiseerde begrippen zorgt ervoor dat iedereen dezelfde taal kan spreken en weet wat de bedoelde betekenis is bij het gebruik van een bepaalde term in een bepaalde context. Bijvoorbeeld in berichtgeving of in data. Dit maakt het eenvoudiger om effectief te communiceren en informatie uit te wisselen.
 
 |                       |                                       |
