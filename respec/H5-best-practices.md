@@ -68,7 +68,7 @@ Dit voorschrift geeft handvatten om eenduidige definities van goede kwaliteit op
 
 De landelijke verzameling bevat alleen goedgekeurde begripsdefinities. Definities die niet voldoen aan de regels uit dit voorschrift zullen eerst aangepast moeten worden tot ze wel juist zijn.
 
-#####Achtergrond
+##### Achtergrond
 Een begrip wordt gebruikt in het dagelijks politiewerk of de ondersteuning daarvan. Begrippen komen voor in geformuleerde bedrijfsregels. De termen (woorden of een samenstel van woorden) uit een bedrijfsregel duiden de begrippen aan. Voor de juiste interpretatie van een bedrijfsregel is het noodzakelijk dat gehanteerde termen eenduidig gedefinieerd zijn. Pas als iedereen een term op dezelfde manier interpreteert kan de bedrijfsregel op de juiste manier worden toegepast.
 In het volgende voorbeeld van een bedrijfsregel zijn de termen onderstreept die een (te definiëren) begrip aanduiden. Zonder goede definities zal het onmogelijk blijken om de bedrijfsregel overal op dezelfde manier toe te passen.
 
