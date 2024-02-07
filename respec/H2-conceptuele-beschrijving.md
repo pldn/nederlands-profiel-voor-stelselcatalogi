@@ -21,6 +21,9 @@ In [2.5](#collectie) beschrijven we hoe begrippen los van hun semantische samenh
 * Voor het formuleren van definities bestaan twee gangbare conventies:
   * Formuleren van een definitie als in een zin. Zo'n definitie heeft de structuur van 'Een ... is een ... die/dat ...'. Een voorbeeld is: 'Een duiker is een kokervormige constructie (met meestal een vrije waterspiegel), die twee waterlopen met elkaar verbindt.'
   * Formuleren van een definitie zonder het begrip in de defnitie en zonder met 'is een' aan te geven dat het om een definitie gaat. Zo'n defnitie laat het stukje 'Een ... is een' achterwege. Een voorbeeld is 'kokervormige constructie (met meestal een vrije waterspiegel), die twee waterlopen met elkaar verbindt.'
+
+</br>
+
   Afhankelijk van de context voldoet de ene of de andere conventie beter. In deze standaard kiezen we voor de eerste optie: het formuleren van een definitie in een zin.
 
 * Als een term uit meerdere woorden bestaat ontstaan soms grammaticaal onlogische zinnen, zoals "Heeft bovenliggend begrip relateert een begrip aan...". Dan is het nodig om aan te duiden dat *heeft bovenliggend begrip* een begrip aanduidt. Semantisch gezien is het gebruik van enkele of dubbele aanhalingstekens dan onjuist. Daarmee wordt verwezen naar een term en niet naar het begrip. Dit wordt duidelijk in een zin als "De term 'bank' kan zowel een financiële instelling als een zitmeubel aanduiden". In de voorliggende standaard is het essentieel dat duidelijk is wanneer het over een *term* gaat en wanneer over een *begrip*. Dit onderscheid is bekend als de [use-mention distinction](https://en.wikipedia.org/wiki/Use%E2%80%93mention_distinction). Voor het aanduiden van een begrip is geen duidelijke standaard. Hier gebruiken we guillemets (French quotation marks) «» om waar nodig aan te geven dat het om een begrip gaat. Bijvoorbeeld «heeft bovenliggend begrip» relateert een begrip aan...".
