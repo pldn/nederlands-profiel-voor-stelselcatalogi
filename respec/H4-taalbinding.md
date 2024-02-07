@@ -1,6 +1,6 @@
 # Toepassingsprofiel in LD
-Dit hoofdstuk beschrijft de set aan afspraken voor het toepassen van het conceptuele model (zoals beschreven in hoofdstuk 2) in Linked Data. Deze afspraken zijn vastgelegd in een RDF model.
-Een RDF model bestaat uit twee delen; 1) een RDF vocabulaire en 2) een RDF Shapesgraph. Als RDF vocabulaire hanteren we bestaande W3C standaarden. Welke dit zijn en hoe deze zich verhouden tot het conceptueel model wordt beschreven in sectie [Taalbinding](#taalbinding). Hoe deze vocabulaires toegepast moeten worden, conform het conceptuele model, is beschreven in sectie [Specificatie](#specificatie).
+Dit hoofdstuk beschrijft de set aan afspraken voor het toepassen van de kenmerken zoals beschreven in hoofdstuk 2 op basis van bestaande semantische standaarden. Deze afspraken zijn vastgelegd in een RDF model.
+Een RDF model bestaat uit twee delen; 1) een RDF vocabulaire en 2) een RDF Shapesgraph. Als RDF vocabulaire hanteren we bestaande W3C standaarden. Welke dit zijn en hoe deze zich verhouden tot het conceptueel model wordt beschreven in sectie [Uitwerking](#uitwerking). Hoe deze vocabulaires toegepast moeten worden, conform het conceptuele model, is beschreven in sectie [Specificatie](#specificatie).
 
 ## Overzicht
 
@@ -8,7 +8,7 @@ Het onderstaande diagram geeft een overzicht van de taalbinding in RDF die bij h
 
 ![](/respec/media/skos-ap-nl.svg "Diagram: Toepassingsprofiel skos")
 
-## Taalbinding
+## Uitwerking
 Voor het representeren van de conceptuele elementen in RDF maken we gebruik van de volgende vocabulaires 1) RDF(s), 2) SKOS, 3) DCTERMS, 4) FOAF en 5) ISOTHES. We geven de taalbinding  voor types en kenmerken apart in [types](#types) en [eigenschappen](#eigenschappen)
 
 
