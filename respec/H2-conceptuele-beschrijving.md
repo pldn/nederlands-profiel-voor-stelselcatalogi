@@ -3,11 +3,13 @@
 ## Overzicht
 In dit hoofdstuk beschrijven we de kenmerken die kunnen worden gebruikt voor het beschrijven van een begrip. Hiermee komen we tot een gedeeld beeld en gedeelde taal waarmee we een [=begrip=], [=begrippenkader=] of [=collectie=] van begrippen beschrijven. Dergelijke [semantisch interoperabele](https://nl.wikipedia.org/wiki/Interoperabiliteit) beschrijvingen van begrippen maken hergebruik van deze begrippen uit bijvoorbeeld de basisregistraties gemakkelijker.  Dit hoofdstuk is normatief in de zin dat als een of meerdere van de hier gedefinieerde kenmerken worden gebruikt om begrippen te beschrijven, dit gebeurt zoals hier beschreven.
 
-In [2.2](#begrippenkader) beschrijven we wat een [=begrippenkader=] is. In [2.3](#begrip) beschrijven we wat een begrip is. Vervolgens beschrijven we in [2.3.1](#begrippenlijst) de kenmerken van een begrip die relevant zijn voor het basisniveau, een [=begrippenlijst=]. In [2.3.2](#taxonomie) voegen we daar de hiërarchische relaties aan toe die een begrippenlijst uitbreiden tot een [=taxonomie=]. In [2.3.3](#thesaurus) voegen we meer genuanceerde hiërarchische relaties toe om tot een ISO compatible [=thesaurus=] te komen. In [2.3.4](#harmonisatiesrelaties) beschrijven we de harmonisatierelaties waarmee begrippen kunnen worden verbonden met begrippen in een ander begrippenkader.
+In [2.2](#conventies) beschrijven we de wijze waarop we begrippen, begrippekaders en hun kenmerken in deze standaard worden gedefinieerd.
 
-In [2.4](#brondocument) beschrijven we de elementen van een bibliografische of op het web vindbare bron waarop de definitie van een begrip is gebaseerd.
+In [2.3](#begrip) beschrijven we wat een begrip is. In [2.4](#begrippenkader) beschrijven we wat een [=begrippenkader=] is. Vervolgens beschrijven we in [2.4.1](#begrippenlijst) de kenmerken van een begrip die relevant zijn voor het basisniveau, een [=begrippenlijst=]. In [2.4.2](#taxonomie) voegen we daar de hiërarchische relaties aan toe die een begrippenlijst uitbreiden tot een [=taxonomie=]. In [2.4.3](#thesaurus) voegen we meer genuanceerde hiërarchische relaties toe om tot een ISO compatible [=thesaurus=] te komen. In [2.4.4](#harmonisatiesrelaties) beschrijven we de harmonisatierelaties waarmee begrippen kunnen worden verbonden met begrippen in een ander begrippenkader.
 
-In [2.5](#collectie) beschrijven we hoe begrippen los van hun semantische samenhang binnen een begrippenkader kunnen worden gegroepeerd in [=collectie=]s.
+In [2.5](#brondocument) beschrijven we de elementen van een bibliografische of op het web vindbare bron waarop de definitie van een begrip is gebaseerd.
+
+In [2.6](#collectie) beschrijven we hoe begrippen los van hun semantische samenhang binnen een begrippenkader kunnen worden gegroepeerd in [=collectie=]s.
 
 ## Conventies
 * Het beschrijven van de kenmerken van een *begrip*, *begrippenkader* of *collectie* doen we conform onze eigen standaard (practice what you preach). Dat betekent dat we voor ieder kenmerk van een begrip de volgende kenmerken beschrijven:
@@ -380,51 +382,7 @@ Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebru
 | **toelichting** | De hiërarchische geheel-deel-relatie omvat een beperkt aantal situaties waarin een deel van een entiteit of systeem uniek behoort tot een bepaald bezittend geheel. Dit geldt voor vier hoofdklassen van termen: systemen en organen van het lichaam, geografische locaties, disciplines of onderzoeksgebieden en hiërarchische sociale structuren. De meeste andere gevallen van de geheel-deelrelatie komen niet in aanmerking voor een hiërarchische koppeling omdat het deel tot meer dan één geheel kan behoren. |
 | **code** | NTI |
 
- </br> 
-</section>
-
-
-Een begrip kan beschreven worden aan de hand van verschillende kenmerken. Deze zijn in de volgende tabel weergegeven.
-
-| Conceptueel element                   | Kardinaliteit | Type               |
-| ------------------------------------- | ------------- | ------------------ |
-| [=voorkeursterm=]                     | 1..*          | Tekst              |
-| [=alternatieve term=]                 | 0..*          | Tekst              |
-| [=zoekterm=]                          | 0..*          | Tekst              |
-| [=code=]                              | 0..*          | Tekst              |
-| [=in kader=]                          | 1..*          | [=begrippenkader=] |
-| [=is topbegrip van=]                  | 0..*          | [=begrippenkader=] |
-| [=definitie=]                         | 1..*          | Tekst              |
-| [=uitleg=]                            | 0..*          | Tekst              |
-| [=heeft bron=]                        | 0..*          | [=brondocument=]   |
-| [=heeft bovenliggend begrip=]         | 0..*          | [=begrip=]         |
-| [=heeft onderliggend begrip=]         | 0..*          | [=begrip=]         |
-| [=is gerelateerd aan=]                | 0..*          | [=begrip=]         |
-| [=wijzigingsnotitie=]                 | 0..*          | Tekst              |
-| [=redactionele notitie=]              | 0..*          | Tekst              |
-| [=historie notitie=]                  | 0..*          | Tekst              |
-| [=toelichting=]                       | 0..*          | Tekst              |
-| [=voorbeeld=]                         | 0..*          | Tekst              |
-| [=heeft overeenkomstig bovenliggend=] | 0..*          | [=begrip=]         |
-| [=heeft overeenkomstig onderliggend=] | 0..*          | [=begrip=]         |
-| [=is vrijwel overeenkomstig=]         | 0..*          | [=begrip=]         |
-| [=is exact overeenkomstig=]           | 0..*          | [=begrip=]         |
-| [=is overeenkomstig verwant=]         | 0..*          | [=begrip=]         |
-| [=is specialisatie van=]              | 0..*          | [=begrip=]         |
-| [=is generalisatie van=]              | 0..*          | [=begrip=]         |
-| [=is onderdeel van=]                  | 0..*          | [=begrip=]         |
-| [=omvat=]                             | 0..*          | [=begrip=]         |
-| [=is exemplaar van=]                  | 0..*          | [=begrip=]         |
-| [=is categorie van=]                  | 0..*          | [=begrip=]         |
-| [=naam=]                              | 0..*          | Tekst              |
-
-
-
- 
- </br> 
-
-
-
+</br> 
 
 ### Harmonisatiesrelaties
 Begrippen kunnen ook worden gerelateerd aan begrippen in een ander begrippenkader. Hiervoor gebruiken we [=harmonisatierelatie=].
@@ -447,7 +405,6 @@ Specifiek onderscheiden we de volgende verschillende harmonisatierelaties.
 | **toelichting** | Een dergelijke relatie is aanwezig als de betekenis van het betreffende begrip gelijk is aan de betekenis van het begrip uit het andere begrippenkader. Het begrip kan ook een 'leenwoord' zijn, dat wil zeggen dat het begrip is overgenomen uit het andere begrippenkader. |
 
  </br> 
-
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -487,12 +444,12 @@ Specifiek onderscheiden we de volgende verschillende harmonisatierelaties.
 
 ## Brondocument
 
-Een [=brondocument=] is een document dat relevant is voor een begrip.
-Het is een good practice om voor ieder begrip een verwijzing naar een brondocument op te nemen. Zo is het duidelijk waar bijvoorbeeld de definitie van een begrip op gebaseerd is. Dit verhoogt de kwaliteit van het begrip en vooral ook de betrouwbaarheid. Het gebruiken van de hieronder beschreven structuur wordt ten zeerste aanbevolen voor het beschrijven van bronnen en het relateren van begrippen aan brondocumenten.
+Een [=brondocument=] is een document dat relevant is voor een begrip. 
+Het is een good practice om voor ieder begrip een verwijzing naar een brondocument op te nemen. Het brondocument kan een heel document of een fragment daarvan zijn, denk aan een boek, een hoofdstuk of een paragraaf. Zo is het duidelijk waar bijvoorbeeld de definitie van een begrip op gebaseerd is. Dit verhoogt de kwaliteit van het begrip en vooral ook de betrouwbaarheid. Het gebruiken van de hieronder beschreven structuur wordt ten zeerste aanbevolen voor het beschrijven van bronnen en het relateren van begrippen aan brondocumenten.
 
 Een bronverwijzing wordt vastgelegd als kenmerk van een begrip. Hiervoor geldt het volgende patroon:
 
-Een **[=begrip=]** heeft een kenmerk '**[=heeft bron=]**'. Dit kenmerk relateert het begrip aan het betreffende **[=brondocument=]**.
+Een **[=begrip=]** heeft een kenmerk '**[=heeft bron=]**'. Dit kenmerk relateert het begrip aan de betreffende **[=brondocument=]**.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -504,30 +461,26 @@ Een **[=begrip=]** heeft een kenmerk '**[=heeft bron=]**'. Dit kenmerk relateert
 
  </br> 
 
-
 |                       |                                       |
 |-----------------------|---------------------------------------|
 | **voorkeursterm**   | <dfn>brondocument</dfn> |
 | **definitie**        | Een brondocument is een document of resource op het web die relevant is voor een begrip. |
 | **heeft bron** | http://purl.org/dc/terms/, http://xmlns.com/foaf/0.1/, https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#BibliographicResource, http://xmlns.com/foaf/0.1/#term_Document |
-| **toelichting** | De brondocument kan een geschreven document zijn of een resource op het web. Aanbevolen best practice is om het brondocument te beschrijven door middel van een tekenreeks die voldoet aan een formeel identificatiesysteem. Bij een resource op het web is ook de uri van het document relevant. |
+| **toelichting** | Een brondocument kan een geschreven document zijn of een resource op het web. Aanbevolen best practice is om het brondocument te beschrijven door middel van een tekenreeks die voldoet aan een formeel identificatiesysteem. Bij een resource op het web is ook de uri van het document relevant. |
 | **alternatieve term** | bron |
 
  </br> 
 
-Een brondocument kan beschreven worden aan de hand van verschillende kenmerken. Deze zijn in de volgende tabel weergegeven.
+Het wordt aangeraden om een bron altijd te beschrijven met een **[=bronverwijzing=]** waarin de verwijzing conform een gangbare conventie is vastgelegd. Er is een conventie voor de verwijzing naar passage van een artikel in een tijdschrift of in een boek. Ook voor de verwijzing naar wetgeving is er een conventie. Als de bron een vindplaats heeft op het web is een **[=url=]** relevant.  Hiermee kan de bron direct gevonden worden. 
 
-| Conceptueel element | Kardinaliteit | Type         |
-| ------------------- | ------------- | ------------ |
-| [=naam=]            | 1..*          | Tekst        |
-| [=uitleg=]          | 0..*          | Tekst        |
-| [=url=]             | 0..*          | Url          |
-| [=citeertitel=]     | 0..*          | Tekst        |
-| [=soort bron=]      | 0..*          | [=begrip=]   |
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**   | <dfn>bronverwijzing</dfn> |
+| **definitie**        | Een bronverwijzing is een bibliografische referentie naar het document. |
+| **heeft bron** | http://purl.org/dc/terms/, http://xmlns.com/foaf/0.1/, https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/bibliographicCitation |
+| **toelichting** | Een bronverwijzing wordt als tekst vastgelegd. Hier dient voldoende detail in aangebracht te zijn zodat de resource gevonden kan worden. Er bestaan verschillende conventies die toegepast kunnen worden zoals IEEE, MLA of APA. Voor Nederlandse wetgeving is dit de citeertitel. |
 
-Het wordt aangeraden om een bron te beschrijven met een **[=url=]** als de bron een vindplaats heeft op het web en anders een **[=citeertitel=]** waarin de citeerinformatie van de bron in een bepaalde citeerstijl is vastgelegd. Hiermee kan de bron gevonden worden. Ook kan de bron beschreven worden met een compact, voor de mens leesbare **[=naam=]**, een uitgebreide, voor de mens leesbare **[=uitleg=]** en een **[=soort bron=]** om aan te geven wat de aard van het brondocument is.
-
-De bron kan een heel document of een fragment daarvan zijn, denk aan een boek, een hoofdstuk of een paragraaf.
+ </br> 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -538,28 +491,10 @@ De bron kan een heel document of een fragment daarvan zijn, denk aan een boek, e
 
  </br> 
 
-|                       |                                       |
-|-----------------------|---------------------------------------|
-| **voorkeursterm**   | <dfn>citeertitel</dfn> |
-| **definitie**        | Een citeertitel is een bibliografische referentie naar het document. |
-| **heeft bron** | http://purl.org/dc/terms/, http://xmlns.com/foaf/0.1/, https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/bibliographicCitation |
-| **toelichting** | Een citeertitel wordt als tekst vastgelegd. Hier dient voldoende detail in aangebracht te zijn zodat de resource gevonden kan worden. Er bestaan verschillende citeerstijlen die toegepast kunnen worden zoals IEEE, MLA of APA. Voor Nederlandse wetgeving is dit de citeertitel. |
-
- </br> 
-
-|                       |                                       |
-|-----------------------|---------------------------------------|
-| **voorkeursterm**   | <dfn>soort bron</dfn> |
-| **definitie**        | Een soort is de aard of het genre van een bron. |
-| **heeft bron** | http://purl.org/dc/terms/ |
-| **toelichting** | Met soort bron kan bijvoorbeeld aangegeven worden of het een 'geschreven bron' of een 'web resource' is. |
-
- </br> 
-
 ## Collectie
 Het gebruik van [=Collectie=]s is altijd optioneel binnen deze standaard. Collecties zijn geen onderdeel van een begrippenlijst, taxonomie of thesaurus. 
 
-Collecties bieden de mogelijkheid om binnen een begrippenkader begrippen die voor hun betekenis niet direct via semantische relaties met elkaar zijn verbonden, toch bij elkaar te zetten. Zo hebben het begrip 'vervuild' dat in milieuwetgeving wordt gedefinieerd en het begrip 'landgoed' dat in de natuurschoonwet wordt gedefinieerd semantisch geen semantische relatie. In het begrippenkader van de Omgevingswet worden ze beiden beschouwd als 'publiekrechtelijke beperking' in het kader van de Wet Kenbaarheid Publiekrechtelijke Beperkingen (WKPB). Door deze begrippen samen te brengen in een collectie, kan er toch een lijst van publiekrechtelijke beperkingen worden gemaakt.
+Collecties bieden de mogelijkheid om binnen een begrippenkader begrippen die voor hun betekenis niet direct via semantische relaties met elkaar zijn verbonden te groeperen. Zo hebben het begrip 'vervuild' dat in milieuwetgeving wordt gedefinieerd en het begrip 'landgoed' dat in de natuurschoonwet wordt gedefinieerd semantisch geen relatie. Beiden leiden tot beperkingen op het mogelijke gebruik van onroerende zaken en moeten als zodanig kenbaar worden gemaakt in het kader van de Wet Kenbaarheid Publiekrechtelijke Beperkingen (WKPB). Door deze begrippen samen te brengen in een collectie, kan er een lijst van publiekrechtelijke beperkingen worden gemaakt.
 
 Het maken van dergelijke lijstjes binnen een begrippenkader is een typische toepassing van collecties. Zo kunnen ook 'NV', 'BV', 'VOF' et cetera in een lijst met rechtsvormen worden ondergebracht. Collecties kunnen dus ook worden gebruikt voor het maken van lijstjes van begrippen die wel semantisch verwant zijn. In het voorbeeld zijn 'NV', 'BV' en 'VOF' ook specialisaties van 'rechtsvorm'.
 
@@ -575,35 +510,9 @@ Een collectie geeft ook geen context zoals een begrippenkader dat per definitie 
 
  </br> 
 
-Een collectie kan beschreven worden aan de hand van verschillende kenmerken. Deze zijn in de volgende tabel weergegeven.
-
-| Conceptueel element | Kardinaliteit | Type                        |
-| ------------------- | ------------- | --------------------------- |
-| [=naam=]            | 1..*          | Tekst                       |
-| [=uitleg=]          | 0..*          | Tekst                       |
-| [=bevat=]           | 0..*          | [=begrip=] of [=collectie=] |
-
-Collecties maken het mogelijk om begrippen te groepen op een manier die haaks staat op de hiërarchische structuur van het begrippenkader en zeggen dus niks over de plek van de bijbehorende begrippen in het begrippenkader. In het bovengenoemde voorbeeld is er met gebruik van de collectie geen semantische relatie tussen het begrip 'publiekrechtelijke beperking' en het begrip 'landgoed'. Een collectie zie je ook vaak terug in de context van een bepaalde toepassing waar het nodig is om bepaalde keuzelijsten en/of dropdown menu's samen te stellen. 
-
 |                       |                                       |
 |-----------------------|---------------------------------------|
 | **voorkeursterm**   | <dfn>bevat</dfn> |
 | **definitie**        | Bevat relateert een collectie aan een begrip of een collectie van begrippen dat onderdeel is van deze collectie. |
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/skos-reference/#collections |
 
- </br> 
-
-<!-- ## Uitbreidingen
-Voor specifieke domeinen kan het handig zijn om de samenhang van begrippen gedetailleerder te beschrijven dan in een standaard thesauri. Dat kan door begrippen en/of relaties nader te typeren. Op zo'n manier voldoet het betreffende domein aan de hier beschreven standaard en kan de aanvullende informatie worden meegenomen. Voor de hieronder genoemde uitbreidingen geldt dat vastgesteld is dat sprake is van een aanvulling op de voorliggende standaard. Dergelijke nieuwe aanvullingen kunnen aangemeld worden via https://github.com/pldn/nederlands-profiel-voor-stelselcatalogi/ ([pull requests](https://github.com/pldn/nederlands-profiel-voor-stelselcatalogi/pulls/), [new issue](https://github.com/pldn/nederlands-profiel-voor-stelselcatalogi/issues/new), [open issues](https://github.com/pldn/nederlands-profiel-voor-stelselcatalogi/issues/). Domeinen die gebruik maken van een dergelijke aanvulling worden geadviseerd hiervan gebruik te maken, zodat een dergelijke vaststelling als uitbreiding kan worden opgenomen en bovendien. Daarmee wordt de toepassing van dergelijke uitbreidingen ook voor anderen bruikbaar. 
-
-De hieronder beschreven uitbreidingen vallen buiten de scope van standaard glossaries, taxonomieën en thesauri. De beschrijvingen zijn hier opgenomen als voorbeeld van een uitbreiding op een standaard thesaurus.
-
-### SkosXL
-[SKOS-XL](https://www.w3.org/TR/skos-reference/#xl) [[SKOS-REFERENCE]] is een al wat langer bestaande uitbreiding op skos. SkosXL is ontwikkeld om ook kenmerken van een term vast te kunnen leggen, bijvoorbeeld meervoudsvormen.
-
-### Skos-lex  
-[[[SKOSLEX]]] is opgezet om begrippen juridisch te kunnen typeren. Skos-lex wordt onder andere toegepast bij Notariaat en Kadaster en bij het Digitaal Stelsel Omgevingswet en het Afsprakenstelsel Zorgeloos Vastgoed. 
-Door begrippen te typeren als act (rechtshandeling), actor (uitvoerder van die handeling), agent (formele vastlegger van die handeling) en object (van handeling) wordt de (juridische) samenhang duidelijk. Zo kan in een beschrijving van de verkoop van een huis worden aangegeven welke begrippen de rechtshandeling beschrijven (koop/verkoop), welke begrippen de actoren beschrijven (koper, verkoper), welke begrippen de agent (notaris) beschrijven en welke begrippen het object van handeling (onroerende zaak) beschrijven. Dit patroon is relevant voor vrijwel alle overheidsorganisaties die voorvallen of overeenkomsten met rechtsgevolgen vastleggen, van de politie die feiten met daders en slachtoffers vastlegt tot een ambtenaar van de burgerlijke stand die een geboorteakte opmaakt en een notaris die een stichtingsakte opstelt. 
-   * **juridische duiding** *(could have)*.  ***Als*** Uitvoeringsorganisatie/uitvoerder van wetgeving ***wil ik*** begrippen kunnen onderscheiden die gaan over rechtshandelingen, actoren, objecten van handeling en organisaties die dit soort rechtshandelingen ondersteunen ***zodat ik*** inzicht heb in hoe de juridische context voor mijn organisatie zoals die in wetgeving is beschreven werkt.
-
-Naast skos-lex zijn er ook andere standaarden die nadere typeringen van begrip introduceren zoals [[vocab-dcat]] en [[vocab-org]] waar specialisaties van wat we in LD als [=begrip=] zien worden gedefinieerd. -->
