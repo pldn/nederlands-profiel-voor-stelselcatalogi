@@ -77,6 +77,9 @@ In de praktijk blijkt het heel lastig om goede definities op te stellen. Dit voo
 
 Dit voorschrift gaat uit van de begrippen zoals gedefinieerd in het SMP/SCM Metamodel.
 
+#### BKR
+Het Bureau Krediet Registratie (BKR) gebruikt https://www.brsolutions.com/wp-content/uploads/2016/10/How-to-Define-Business-Terms-Primer.pdf.
+
 ### Hiërarchische relaties
 
 Het is toegestaan dat één begrip meerdere bovenliggende begrippen kent. Er is zo sprake van een [=polyhierarchy=]. Een polyhiërarchie kan nuttig zijn omdat het een intuïtieve manier biedt om een begrip in meerdere categorieën te plaatsen. Veelal zie je dit dan ook toegepast in e-commerce. Hierdoor kunnen gebruikers via verschillende paden een bepaald product vinden. Toch wordt geadviseerd om hier terughoudend mee te zijn en bij het maken rekening te blijven houden met best-practices en standaarden op dit gebied.
