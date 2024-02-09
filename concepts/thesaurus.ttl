@@ -306,8 +306,9 @@ beg-sbb:NarrowerInstantial
     "«is categorie van» relateert een begrip, de categorie, aan een begrip dat exemplarisch is voor eerstgenoemde begrip."@nl ,
     "Narrower term (instantial) is the immediate (direct or one-step) class - instance relationship."@en ;
   skos:scopeNote
-    "De hiërarchische geheel-deel-relatie omvat een beperkt aantal situaties waarin een deel van een entiteit of systeem uniek behoort tot een bepaald bezittend geheel. Dit geldt voor vier hoofdklassen van termen: systemen en organen van het lichaam, geografische locaties, disciplines of onderzoeksgebieden en hiërarchische sociale structuren. De meeste andere gevallen van de geheel-deelrelatie komen niet in aanmerking voor een hiërarchische koppeling omdat het deel tot meer dan één geheel kan behoren."@nl,
-    "The hierarchical whole-part relationship covers a limited range of situations in which a part of an entity or system belongs uniquely to a particular possessing whole. This applies to four main classes of terms: systems and organs of the body, geographical locations, disciplines or fields of discourse and hierarchical social structures. Most other cases of the whole-part relationship are not eligible for a hierarchical linkage because the part could belong to more than one whole."@en;
+    "Bij deze instantiële relatie gaat het om begrippen die een bovengeschikte positie in een hiërarchie hebben. Het gaat hierbij om een hogere categorie van individuele voorbeelden en niet van soorten of delen van deze catagorie. "@nl;
+  skos: example
+    "Een van de povinciehoofdsteden is Utrecht."@nl;
   dct:source
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skosthes: ;
@@ -347,9 +348,10 @@ beg-sbb:BroaderInstantial
   skos:definition
     "Broader term (instantial) is the immediate (direct or one-step) instance - class relationship."@en ,
     "«is exemplaar van» relateert een begrip, een exemplaar, aan een ander begrip, de categorie, waartoe eerstgenoemde begrip behoort."@nl ;
-    skos:scopeNote
-    "De hiërarchische geheel-deel-relatie omvat een beperkt aantal situaties waarin een deel van een entiteit of systeem uniek behoort tot een bepaald bezittend geheel. Dit geldt voor vier hoofdklassen van termen: systemen en organen van het lichaam, geografische locaties, disciplines onderzoeksgebieden of hiërarchische sociale structuren. De meeste andere gevallen van de geheel-deelrelatie komen niet in aanmerking voor een hiërarchische koppeling omdat het deel tot meer dan één geheel kan behoren."@nl,
-    "The hierarchical whole-part relationship covers a limited range of situations in which a part of an entity or system belongs uniquely to a particular possessing whole. This applies to four main classes of terms: systems and organs of the body, geographical locations, disciplines or fields of discourse and hierarchical social structures. Most other cases of the whole-part relationship are not eligible for a hierarchical linkage because the part could belong to more than one whole."@en;
+  skos:scopeNote
+    "Bij deze instantiële relatie gaat het om begrippen die een ondergeschikte positie in een hiërarchie hebben. Dit zijn geen soorten of delen van een hogere categorie, maar individuele voorbeelden."@nl;
+  skos:example
+    "De Alpen zijn een berggebied."@nl;
   dct:source
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skosthes: ;
@@ -372,6 +374,7 @@ beg-sbb:NarrowerGeneric
   skos:scopeNote
     "The hierarchical relationship should be established between a pair of concepts when the scope of one of them falls completely within the scope of the other. It should be based on degrees or levels of superordination and subordination, where the superordinate concept represents a class or whole, and subordinate concepts refer to its members or species. A generalization is used when it is relevant to distinguish the relation from a partial or instantaneous hierarchical relation."@en,
     "De hiërarchische relatie tussen een paar begrippen wordt gebruikt wanneer de reikwijdte van het ene begrip volledig binnen de reikwijdte van het andere begrip valt. Deze relatie is gebaseerd op graden of niveaus van bovenliggend en onderliggend, waarbij het bovenliggende concept een klasse of geheel vertegenwoordigt, en onderliggende begrippen verwijzen naar haar leden of soorten. Een generalisatie wordt gebruikt wanneer het relevant is om deze relatie te onderscheiden van een partiële of instantiële hiërarchische relatie."@nl;
+  skos:example: "Een pers is een kat en een kat is een dier."@nl;
   dct:source
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skosthes: ;
@@ -414,8 +417,9 @@ beg-sbb:BroaderPartitive
     "«is onderdeel van» relateert een begrip aan een meer omvattend begrip."@nl ,
     "Broader term (partitive) relates a concept to a more including concept."@en ;
   skos:scopeNote
-    "De hiërarchische geheel-deel-relatie omvat een beperkt aantal situaties waarin een deel van een entiteit of systeem uniek behoort tot een bepaald bezittend geheel. Dit geldt voor vier hoofdklassen van termen: systemen en organen van het lichaam, geografische locaties, disciplines onderzoeksgebieden of hiërarchische sociale structuren. De meeste andere gevallen van de geheel-deelrelatie komen niet in aanmerking voor een hiërarchische koppeling omdat het deel tot meer dan één geheel kan behoren."@nl,
+    "De hiërarchische geheel-deel-relatie omvat een beperkt aantal situaties. Het gaat daarbij om situaties waarin een deel van een entiteit of systeem behoort tot een bepaald geheel. Dit geldt voor vier soorten begrippen, namelijk: (1) systemen en organen van het lichaam, (2) geografische locaties, (3) disciplines onderzoeksgebieden of (4) hiërarchische sociale structuren. De meeste andere gevallen van de geheel-deelrelatie komen niet in aanmerking voor een hiërarchische koppeling omdat het deel tot meer dan één geheel kan behoren."@nl,
     "The hierarchical whole-part relationship covers a limited range of situations in which a part of an entity or system belongs uniquely to a particular possessing whole. This applies to four main classes of terms: systems and organs of the body, geographical locations, disciplines or fields of discourse and hierarchical social structures. Most other cases of the whole-part relationship are not eligible for a hierarchical linkage because the part could belong to more than one whole."@en;
+  skos:example "(1) een slagader is een bloedvat, (2) Amersfoort ligt in de provincie Utrecht. (3) zoölogie is ene discipline van de biologie of (4) Een bataljon is een legereenheid. Fout is de onderdeel van relatie tussen een wiel en een fiets omdat een wiel ook een onderdeel van een auto of machine kan zijn."@nl;
   dct:source
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skosthes: ;
@@ -460,6 +464,7 @@ beg-sbb:BroaderGeneric
   skos:scopeNote
     "The hierarchical relationship should be established between a pair of concepts when the scope of one of them falls completely within the scope of the other. It should be based on degrees or levels of superordination and subordination, where the superordinate concept represents a class or whole, and subordinate concepts refer to its members or species. A generalization is used when it is relevant to distinguish the relation from a partial or instantaneous hierarchical relation."@en,
     "De hiërarchische relatie tussen een paar begrippen wordt gebruikt wanneer de reikwijdte van het ene begrip volledig binnen de reikwijdte van het andere begrip valt. Deze relatie is gebaseerd op graden of niveaus van bovenliggend en onderliggend, waarbij het bovenliggende concept een klasse of geheel vertegenwoordigt, en onderliggende begrippen verwijzen naar haar leden of soorten. Een generalisatie wordt gebruikt wanneer het relevant is om deze relatie te onderscheiden van een partiële of instantiële hiërarchische relatie."@nl;
+  skos:example "Sommige dieren zijn katten en sommige katten zijn perzen."@nl;
   dct:source skosthes: ;
   skos:related beg-sbb:Concept ;
   skos:broader beg-sbb:Broader ;
@@ -552,8 +557,9 @@ beg-sbb:NarrowerPartitive
     "Omvat relateert een begrip aan een minder omvattend begrip."@nl ,
     "Broader term (partitive) relates a concept to a less including concept."@en ;
   skos:scopeNote
-    "De hiërarchische geheel-deel-relatie omvat een beperkt aantal situaties waarin een deel van een entiteit of systeem uniek behoort tot een bepaald bezittend geheel. Dit geldt voor vier hoofdklassen van termen: systemen en organen van het lichaam, geografische locaties, disciplines onderzoeksgebieden of hiërarchische sociale structuren. De meeste andere gevallen van de geheel-deelrelatie komen niet in aanmerking voor een hiërarchische koppeling omdat het deel tot meer dan één geheel kan behoren."@nl,
+    "De hiërarchische geheel-deel-relatie omvat een beperkt aantal situaties. Het gaat daarbij om situaties waarin een deel van een entiteit of systeem behoort tot een bepaald geheel. Dit geldt voor vier soorten begrippen, namelijk: (1) systemen en organen van het lichaam, (2) geografische locaties, (3) disciplines onderzoeksgebieden of (4) hiërarchische sociale structuren. De meeste andere gevallen van de geheel-deelrelatie komen niet in aanmerking voor een hiërarchische koppeling omdat het deel tot meer dan één geheel kan behoren."@nl,
     "The hierarchical whole-part relationship covers a limited range of situations in which a part of an entity or system belongs uniquely to a particular possessing whole. This applies to four main classes of terms: systems and organs of the body, geographical locations, disciplines or fields of discourse and hierarchical social structures. Most other cases of the whole-part relationship are not eligible for a hierarchical linkage because the part could belong to more than one whole."@en;
+  skos:example "(1) een bloedvat kan een slagader zijn, (2) in de provincie Utrecht ligt Amersfoort, (3) biologie heeft als discipline zoölogie, (4) een legereenheid kan een bataljon zijn. Fout is de omvat relatie tussen een fiets en een wiel omdat een loopfiets bijvoorbeeld geen wielen heeft."@nl;
   dct:source
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skosthes: ;
