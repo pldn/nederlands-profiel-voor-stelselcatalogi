@@ -1,4 +1,8 @@
 # Best practices
+
+## Conformiteit
+Dit hoofdstuk is informatief.
+
 ## Begrippen
 ### Termen
 <div class="practice"><p class="practicedesc"><span class="practicelab">Gangbare conventies voor het beschrijven van termen (voorkeurstermen, alternatieve termen) zijn:
