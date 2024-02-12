@@ -2,6 +2,9 @@
 Dit hoofdstuk beschrijft de set aan afspraken voor het toepassen van de kenmerken zoals beschreven in hoofdstuk 2 op basis van bestaande semantische standaarden. Deze afspraken zijn vastgelegd in een RDF model.
 Een RDF model bestaat uit twee delen; 1) een RDF vocabulaire en 2) een RDF Shapesgraph. Als RDF vocabulaire hanteren we bestaande W3C standaarden. Welke dit zijn en hoe deze zich verhouden tot het conceptueel model wordt beschreven in sectie [Uitwerking](#uitwerking). Hoe deze vocabulaires toegepast moeten worden, conform het conceptuele model, is beschreven in sectie [Specificatie](#specificatie).
 
+## Conformiteit
+Dit hoofdstuk is normatief in de zin dat als begrippen via het web worden gepubliceerd, dit gebeurt zoals hier beschreven.
+
 ## Overzicht
 
 Het onderstaande diagram geeft een overzicht van de taalbinding in RDF die bij het conceptuele model gedefinieerd is.
