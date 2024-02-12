@@ -1,7 +1,10 @@
 # Kenmerken van begrippen
 
+## Conformiteit
+Dit hoofdstuk is normatief in de zin dat als een of meerdere van de hier gedefinieerde kenmerken worden gebruikt om begrippen te beschrijven, dit gebeurt zoals hier beschreven.
+
 ## Overzicht
-In dit hoofdstuk beschrijven we de kenmerken die kunnen worden gebruikt voor het beschrijven van een begrip. Hiermee komen we tot een gedeeld beeld en gedeelde taal waarmee we een [=begrip=], [=begrippenkader=] of [=collectie=] van begrippen beschrijven. Dergelijke [semantisch interoperabele](https://nl.wikipedia.org/wiki/Interoperabiliteit) beschrijvingen van begrippen maken hergebruik van deze begrippen uit bijvoorbeeld de basisregistraties gemakkelijker.  Dit hoofdstuk is normatief in de zin dat als een of meerdere van de hier gedefinieerde kenmerken worden gebruikt om begrippen te beschrijven, dit gebeurt zoals hier beschreven.
+In dit hoofdstuk beschrijven we de kenmerken die kunnen worden gebruikt voor het beschrijven van een begrip. Hiermee komen we tot een gedeeld beeld en gedeelde taal waarmee we een [=begrip=], [=begrippenkader=] of [=collectie=] van begrippen beschrijven. Dergelijke [semantisch interoperabele](https://nl.wikipedia.org/wiki/Interoperabiliteit) beschrijvingen van begrippen maken hergebruik van deze begrippen uit bijvoorbeeld de basisregistraties gemakkelijker.  
 
 In [2.2](#conventies) beschrijven we de wijze waarop we begrippen, begrippekaders en hun kenmerken in deze standaard worden gedefinieerd.
 
