@@ -66,8 +66,7 @@ skosapnl:SourceDocument
   a sh:NodeShape ;
   rdfs:comment "Een Bron is een document, of fragment van een document, die als bron dient voor een bepaald begrip."@nl ;
   rdfs:label "Brondocument"@nl ;
-  sh:warning sh:Info ;
-  # sh:targetObjectsOf dct:source ;
+  sh:targetObjectsOf dct:source ;
   sh:property
     skosapnl:SourceDocument-label ,
     skosapnl:SourceDocument-comment ,
@@ -432,7 +431,6 @@ skosapnl:Concept-source
   sh:name "bron"@nl ;
   sh:order 11 ;
   sh:nodeKind sh:BlankNodeOrIRI ;
-  # sh:node skosapnl:SourceDocument ;
   sh:severity sh:Warning ;
   sh:path dct:source .
 
@@ -533,7 +531,7 @@ skosapnl:SourceDocument-label
   sh:name "label"@nl ;
   sh:order 4 ;
   sh:nodeKind sh:Literal ;
-  sh:severity sh:Warning ;
+  sh:severity sh:Info ;
   sh:path rdfs:label .
 
 skosapnl:SourceDocument-comment
