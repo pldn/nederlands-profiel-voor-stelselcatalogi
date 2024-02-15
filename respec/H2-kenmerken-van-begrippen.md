@@ -1,16 +1,13 @@
 # Kenmerken van begrippen
 
-## Conformiteit
-Dit hoofdstuk is normatief in de zin dat als een of meerdere van de hier gedefinieerde kenmerken worden gebruikt om begrippen te beschrijven, dit gebeurt zoals hier beschreven.
-
 ## Overzicht
-In dit hoofdstuk beschrijven we de kenmerken die kunnen worden gebruikt voor het beschrijven van een begrip. Hiermee komen we tot een gedeeld beeld en gedeelde taal waarmee we een [=begrip=], [=begrippenkader=] of [=collectie=] van begrippen beschrijven. Dergelijke [semantisch interoperabele](https://nl.wikipedia.org/wiki/Interoperabiliteit) beschrijvingen van begrippen maken hergebruik van deze begrippen uit bijvoorbeeld de basisregistraties gemakkelijker.  
+In dit hoofdstuk beschrijven we de kenmerken die kunnen worden gebruikt voor het beschrijven van een begrip. Hiermee komen we tot een gedeeld beeld en gedeelde taal waarmee we een [=begrip=], [=begrippenkader=] of [=collectie=] van begrippen [=brondocument=]en daarbij beschrijven. Dergelijke [semantisch interoperabele](https://nl.wikipedia.org/wiki/Interoperabiliteit) beschrijvingen van begrippen maken hergebruik van deze begrippen uit bijvoorbeeld de basisregistraties gemakkelijker.  
 
-In [2.2](#conventies) beschrijven we de wijze waarop we begrippen, begrippekaders en hun kenmerken in deze standaard worden gedefinieerd.
+In [2.2](#conventies) beschrijven we de wijze waarop we begrippen, begrippenkaders en hun kenmerken in deze standaard worden gedefinieerd.
 
 In [2.3](#begrip) beschrijven we wat een begrip is. In [2.4](#begrippenkader) beschrijven we wat een [=begrippenkader=] is. Vervolgens beschrijven we in [2.4.1](#begrippenlijst) de kenmerken van een begrip die relevant zijn voor het basisniveau, een [=begrippenlijst=]. In [2.4.2](#taxonomie) voegen we daar de hiërarchische relaties aan toe die een begrippenlijst uitbreiden tot een [=taxonomie=]. In [2.4.3](#thesaurus) voegen we meer genuanceerde hiërarchische relaties toe om tot een ISO compatible [=thesaurus=] te komen. In [2.4.4](#harmonisatiesrelaties) beschrijven we de harmonisatierelaties waarmee begrippen kunnen worden verbonden met begrippen in een ander begrippenkader.
 
-In [2.5](#brondocument) beschrijven we de elementen van een bibliografische of op het web vindbare bron waarop de definitie van een begrip is gebaseerd.
+In [2.5](#brondocument) beschrijven we de elementen van een bibliografische of een op het web vindbare bronnen die relevant zijn voor een begrip.
 
 In [2.6](#collectie) beschrijven we hoe begrippen los van hun semantische samenhang binnen een begrippenkader kunnen worden gegroepeerd in [=collectie=]s.
 
@@ -21,20 +18,20 @@ In [2.6](#collectie) beschrijven we hoe begrippen los van hun semantische samenh
   * [=toelichting=]. De toelichting in het Engels nemen we over uit SKOS of een daarmee samenhangende standaard. De ISO 25964 geeft vaak ook een waardevolle (Engelse) toelichting. De ISO 25964 geeft zelf aan dat de toelichting misschien nog wel belangrijker is dan de definitie. Zowel de SKOS- als de ISO toelichting zijn naar het Nederlands vertaald.
   * [=code=]. De ISO 25964 hanteert voor een groot aantal concepten een code. Bij de concepten waarvoor deze ISO standaard een code kent wordt deze code meegegeven.
   * [=heeft bron=]. Bij ieder begrip geven we aan welke bron(nen) we hebben gebruikt voor de beschrijving.
-  * [=semantische relaties=]. Dit zijn relaties met andere begrippen.
+  * [=semantische relatie=]s. Dit zijn relaties tussen begrippen.
 
 * Voor het formuleren van definities bestaan twee gangbare conventies:
   * Formuleren van een definitie als in een zin. Zo'n definitie heeft de structuur van 'Een ... is een ... die/dat ...'. Een voorbeeld is: 'Een duiker is een kokervormige constructie (met meestal een vrije waterspiegel), die twee waterlopen met elkaar verbindt.'
   * Formuleren van een definitie zonder het begrip in de defnitie en zonder met 'is een' aan te geven dat het om een definitie gaat. Zo'n defnitie laat het stukje 'Een ... is een' achterwege. Een voorbeeld is 'kokervormige constructie (met meestal een vrije waterspiegel), die twee waterlopen met elkaar verbindt.'
 
-  Afhankelijk van de context voldoet de ene of de andere conventie beter. In deze standaard kiezen we voor de eerste optie: het formuleren van een definitie in een zin.
+Afhankelijk van de context voldoet de ene of de andere conventie beter. In deze standaard kiezen we voor de eerste optie: het formuleren van een definitie in een zin.
 
 * Als een term uit meerdere woorden bestaat ontstaan soms grammaticaal onlogische zinnen, zoals "Heeft bovenliggend begrip relateert een begrip aan...". Dan is het nodig om aan te duiden dat *heeft bovenliggend begrip* een begrip aanduidt. Semantisch gezien is het gebruik van enkele of dubbele aanhalingstekens dan onjuist. Daarmee wordt verwezen naar een term en niet naar het begrip. Dit wordt duidelijk in een zin als "De term 'bank' kan zowel een financiële instelling als een zitmeubel aanduiden". In de voorliggende standaard is het essentieel dat duidelijk is wanneer het over een *term* gaat en wanneer over een *begrip*. Dit onderscheid is bekend als de [use-mention distinction](https://en.wikipedia.org/wiki/Use%E2%80%93mention_distinction). Voor het aanduiden van een begrip is geen duidelijke standaard. Hier gebruiken we guillemets (French quotation marks) «» om waar nodig aan te geven dat het om een begrip gaat. Bijvoorbeeld «heeft bovenliggend begrip» relateert een begrip aan...".
 
-* Dit document is als Nederlandse standaard voor het beschrijven van begrippen opgesteld in de Nederlandse taal. Alle beschrijvende kenmerken kunnen meertalig worden toegepast. Zo heeft ieder begrip 1 voorkeursterm per taal. De taal kan dan daarbij worden gespecificeerd met een taalaanduiding. Bij publicatie via het web geldt de aanduiding van de [IANA](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry) (Internet Assigned Numbers Authority).
+* Dit document is als Nederlandse standaard voor het beschrijven van begrippen opgesteld in de Nederlandse taal. Alle beschrijvende kenmerken kunnen meertalig worden toegepast. Zo heeft ieder begrip één voorkeursterm per taal. De taal kan dan daarbij worden gespecificeerd met een taalaanduiding. Bij publicatie via het web geldt de aanduiding van de [IANA](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry) (Internet Assigned Numbers Authority).
 
 ## Begrip
-Begrip is het centrale element in deze specificatie. Begrippen spelen een centrale rol in de manier waarop we communiceren en we de wereld om ons heen begrijpen. Een begrip is een eenheid van denken, idee,  betekenis of categorisering. 
+Begrip is het centrale element in deze specificatie. Begrippen spelen een centrale rol in de manier waarop we communiceren en we de wereld om ons heen begrijpen. Een begrip is een eenheid van denken, idee, betekenis of categorisering. 
 Het hebben van gestandaardiseerde begrippen zorgt ervoor dat iedereen dezelfde taal kan spreken en weet wat de bedoelde betekenis is bij het gebruik van een bepaalde term in een bepaalde context. Bijvoorbeeld in berichtgeving of in data. Dit maakt het eenvoudiger om effectief te communiceren en informatie uit te wisselen.
 
 |                       |                                       |
@@ -77,9 +74,14 @@ De meest basale vorm van een [=begrippenkader=] is een [=begrippenlijst=].
 | **toelichting** | In de praktijk worden de termen begrippenlijst en woordenlijst vaak door elkaar gebruikt. In dit geval gaat het nadrukkelijk om een lijst van begrippen, dus inclusief de uitleg van de betekenis. Traditioneel verschijnt er aan het einde van een boek een verklarende woordenlijst met termen in dat boek die ofwel nieuw geïntroduceerd, ongebruikelijk of gespecialiseerd zijn. Semantisch gezien gaat de definitie over het begrip wat met de term wordt aangeduid en niet over de term zelf. |
 | **alternatieve term** | platte termenlijst, woordenlijst, glossary |
 
-Een begrippenlijst is een termenlijst met definities en eventuele andere notities die gebruikt worden in een bepaald domein, zonder relaties tussen begrippen te beschrijven.
+Een begrippenlijst is een termenlijst met definities en eventuele andere notities die gebruikt worden in een bepaald domein, zonder [=relatie=]s tussen begrippen te beschrijven. Wel zien we de relatie [=in kader=] naar de begrippenlijst en eventueel de relatie [=heeft bron=] naar de betreffende brondocumenten.
 
- #### Termen
+|                       |                                       |
+|-----------------------|---------------------------------------|
+| **voorkeursterm**   | <dfn>relatie</dfn> |
+| **definitie**        | Een relatie is het structurele verband tussen twee objecten. |
+
+#### Termen
 
 Termen vallen onder de karakteristieken van begrippen. Een term is een aaneenschakeling van één of meerdere woorden die samen een conceptuele eenheid vormen. Hierbij moet 'woord' breed worden geïnterpreteerd. Een term mag ook een afkorting zijn, zoals 'B.T.W.' (de voorkeursterm voor 'Belasting op toegevoegde waarde'), of een code zoals '013' (Een poppodium in Tilburg). Een term kan worden gebruiken als een referentie naar of aanduiding van een begrip. Dan geef je het begrip een naam. Een begrip kan meerdere namen hebben waarbij sommigen ook een andere rol spelen dan andere. 
 
@@ -92,7 +94,7 @@ Hieronder worden de mogelijke soorten termen bij een begrip beschreven.
 | **heeft bron** | https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.61 |
 | **toelichting** | Dit is een overkoepelend begrip voor de verschillende soorten termen (voorkeursterm, alternatieve term, zoekterm) waarmee begrippen kunnen worden aangeduid. Good practice is om die specifieke termen te gebruiken. In de definitie moet 'iets' breed worden geïnterpreteerd. Het kan ieder onderwerp van gesprek zijn; zoals een specifiek begrip of een specifiek gebouw. |
 
- </br> 
+</br> 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -103,7 +105,7 @@ Hieronder worden de mogelijke soorten termen bij een begrip beschreven.
 | **uitleg** | Een begrip heeft één voorkeursterm per taal. Deze voorkeursterm hoeft niet persé uniek te zijn. Het is goed mogelijk dat binnen een bepaald domein één term meerdere betekenissen heeft en dus gaat over meerdere begrippen, mogelijk is het doel van een Thesaurus zelfs om dit inzicht te geven. We gebruiken geen post of prefix om voorkeurstermen context te geven of uniek te maken, tenzij deze post/prefix algemeen gebruikt wordt. Denk aan Hengelo (OV) voor de plaats in Overijssel en Hengelo (GLD) voor de plaats in Gelderland. |
 | **code** | USE |
 
- </br> 
+</br> 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -114,7 +116,7 @@ Hieronder worden de mogelijke soorten termen bij een begrip beschreven.
 | **voorbeeld** | Acroniemen, afkortingen, spellingsvarianten en onregelmatige meervouds-/enkelvoudsvormen kunnen worden opgenomen in de alternatieve termen voor een begrip. Verkeerd gespelde termen worden normaal gesproken als zoektermen opgenomen (zie skos:hiddenLabel). |
 | **code** | UF |
 
- </br> 
+</br> 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -123,7 +125,7 @@ Hieronder worden de mogelijke soorten termen bij een begrip beschreven.
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/skos-reference/#labels |
 | **toelichting** | Een zoekterm wordt gebruikt wanneer een ontwerper van een begrippenkader wil dat die tekenreeks toegankelijk is voor op tekst gebaseerde indexering en zoekbewerkingen, maar niet wil dat die term zichtbaar is. Zoektermen kunnen bijvoorbeeld worden gebruikt om verkeerd gespelde varianten van andere lexicale labels op te nemen. |
 
- </br> 
+</br> 
 
 #### Notities
 [=Notitie=]s zijn karakteristieken waarmee een begrip op een mensleesbare manier beschreven kan worden. Notities kunnen heel breed toegepast worden. Om meer specifieke documentaire eigenschappen vast te leggen zijn ook specifiekere notities gedefinieerd. In deze sectie beschrijven we 1) notities die nadrukkelijk een verwoording van de betekenis geven en 2) aanvullende documentaire notities.
@@ -135,7 +137,7 @@ Hieronder worden de mogelijke soorten termen bij een begrip beschreven.
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes |
 | **toelichting** | Dit is een overkoepelend begrip voor de verschillende soorten notities (definitie, toelichting, redactionele notitie) waarmee een begrip kan worden beschreven. Good practice is om die specifieke notities te gebruiken. Notities worden gebruikt om informatie te geven over begrippen. Er is geen beperking op de aard van deze informatie, het kan bijvoorbeeld platte tekst, hypertekst of een afbeelding zijn; het kan een definitie zijn, informatie over de reikwijdte van een begrip, redactionele informatie of elk ander type informatie. Deze eigenschap kan direct worden gebruikt, of als een supereigenschap voor meer specifieke notitietypes. |
 
- </br> 
+</br> 
 
 De volgende notities zijn verwoordingen van de betekenis van een begrip.
 
@@ -147,7 +149,7 @@ De volgende notities zijn verwoordingen van de betekenis van een begrip.
 | **toelichting** | De definitie dient te voldoen aan specifieke formuleringsregels voor definitie en dient in een voor mensen leesbare taal te begrijpen zijn. In dit laatste onderscheid de definitie zich daarmee van een machine-leesbare formele beschrijving. Aan de hand van een definitie kan iemand bepalen of zijn eigen begrip behorende bij een term overeenkomt met het begrip dat gedefinieerd wordt. De uitleg of de toelichting bij een begrip kan gebruik worden voor iemand die het begrip nog niet kent om te begrijpen waar het over gaat.  |
 | **code** | DEF |
 
- </br> 
+</br> 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -157,7 +159,7 @@ De volgende notities zijn verwoordingen van de betekenis van een begrip.
 | **toelichting** | Een toelichting wordt gebruikt om de grenzen van een begrip te verduidelijken, vooral wanneer de betekenis van de voorkeursterm in het gewone spraakgebruik te breed of te eng kan worden geïnterpreteerd, of om onderscheid te maken tussen voorkeurstermen die overlappende betekenissen hebben. Een toelichting kan ook worden gebruikt om ander advies te geven over het gebruik van termen aan de indexeerder of de zoeker. Een toelichting hoeft geen volledige definitie te zijn, maar verduidelijkt het beoogde gebruik van een term binnen de thesaurus. |
 | **code** | SN |
 
- </br> 
+</br> 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -167,7 +169,7 @@ De volgende notities zijn verwoordingen van de betekenis van een begrip.
 | **toelichting** | De definitie moet precies kloppen. De uitleg is er veel meer op gericht om de lezer te laten begrijpen wat er wordt bedoeld. |
 | **alternatieve term** | omschrijving |
 
- </br> 
+</br> 
 
 
 De volgende notities zijn aanvullende documentaire notities.
@@ -178,10 +180,10 @@ De volgende notities zijn aanvullende documentaire notities.
 | **voorkeursterm**   | <dfn>historie notitie</dfn> |
 | **definitie**        | Een historie notitie is een notitie van de voormalige status/gebruik/betekenis van het begrip. |
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes |
-| **toelichting** | Een historie notitie wordt gebruikt wanneer een nieuw begrip wordt toegevoegd aan het begrippenkader of wanneer er een wijziging wordt aangebracht in de beschrijving van een bestaand begrip die van invloed is op de reikwijdte van het begrip in verschillende toepassingsperioden. Hoewel het mogelijk is om dergelijke informatie in de toelichting op te nemen, heeft een aparte historische notitie de voorkeur. Deze kan de datum van introductie vermelden, of het kan meer complexe informatie geven over hoe te zoeken naar het begrip op een eerder of later tijdstip. |
+| **toelichting** | Een «historie notitie» wordt gebruikt wanneer een nieuw begrip wordt toegevoegd aan het begrippenkader of wanneer er een wijziging wordt aangebracht in de beschrijving van een bestaand begrip die van invloed is op de reikwijdte van het begrip in verschillende toepassingsperioden. Hoewel het mogelijk is om dergelijke informatie in de toelichting op te nemen, heeft een aparte historische notitie de voorkeur. Deze kan de datum van introductie vermelden, of het kan meer complexe informatie geven over hoe te zoeken naar het begrip op een eerder of later tijdstip. |
 | **code** | HN |
 
- </br> 
+</br> 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -190,16 +192,16 @@ De volgende notities zijn aanvullende documentaire notities.
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes |
 | **toelichting** | Redactionele notities zijn handig voor vermeldingen als -Controleer deze term nadat de bedrijfsfusie is voltooid- of -Deze term wordt genoemd in de scopenota van Concept X- of -Controleer de spelling met expert A-. Opmerkingen zoals deze, en verschillende attributen, zijn nuttiger voor housekeeping dan voor gebruikers raadpleging. Er kan een keuze worden gemaakt of gebruikers deze al dan niet mogen inzien. |
 
- </br> 
+</br> 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
 | **voorkeursterm**   | <dfn>voorbeeld</dfn> |
 | **definitie**        | Een voorbeeld is een notitie die meer duidelijkheid geeft over het gebruik van een begrip. |
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://nl.wikipedia.org/wiki/Voorbeeld, https://www.w3.org/TR/skos-reference/#notes |
-| **toelichting** | Een voorbeeld is een exemplaar van, of een verbeelding van een begrip dat voor het begrip zelf in de plaats treedt om dit abstracte idee toe te lichten met een concrete voorstelling. Het kan tekst zijn, maar ook een plaatje, een geluidsfragment of een videofragment. |
+| **toelichting** | Een voorbeeld is een beschrijving van een begrip met als doel het abstracte idee toe te lichten met een concrete voorstelling. |
 
- </br> 
+</br> 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -208,7 +210,7 @@ De volgende notities zijn aanvullende documentaire notities.
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes |
 | **toelichting** | Een wijzigingsnota documenteert fijnmazige wijzigingen aan een begrip, ten behoeve van beheer en onderhoud. |
 
- </br> 
+</br> 
 
 #### Codes
 Naast termen en notities kunnen begrippen ook codes als kenmerken hebben. Een code is anders dan een term omdat deze niet bedoeld is als aanduiding in natuurlijke taal. Codes zijn veelal ook niet leesbaar en bestaan vaak uit cijfers.
@@ -226,7 +228,7 @@ Naast termen en notities kunnen begrippen ook codes als kenmerken hebben. Een co
 
 ### Taxonomie
 
-Een taxonomie kent ook hiërarchische relaties. Deze hiërarchische relaties zijn optioneel in een begrippenlijst en zijn bijvoorbeeld relevant als een begrip wordt gedefinieerd in termen van een ander begrip, bijvoorbeeld 'een gemaal *is een* kunstwerk dat ...'. Deze definitie impliceert dat een gemaal een 'enger begrip' is dan een kunstwerk, die ook als semantische relatie kan worden opgenomen.
+Een taxonomie kent hiërarchische relaties. Deze hiërarchische relaties zijn optioneel in een begrippenlijst en zijn bijvoorbeeld relevant als een begrip wordt gedefinieerd in termen van een ander begrip, bijvoorbeeld 'een gemaal *is een* kunstwerk dat ...'. Deze definitie impliceert dat een gemaal een 'enger begrip' is dan een kunstwerk, die ook als semantische relatie kan worden opgenomen.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -236,61 +238,49 @@ Een taxonomie kent ook hiërarchische relaties. Deze hiërarchische relaties zij
 | **toelichting** | Een taxonomie wordt gebruikt om kennis te ordenen en te indexeren (opgeslagen als documenten, artikelen, video's, enz.), zoals in de vorm van een bibliotheekclassificatiesysteem of een taxonomie van een zoekmachine, zodat gebruikers de informatie die ze zoeken gemakkelijker kunnen vinden. Taxonomieën zijn hiërarchieën (en hebben dus een intrinsieke structuur en betekenis). |
 | **alternatieve term** | classificatieschema, taxonomische classificatie |
 
-
 In een taxonomie zijn alle begrippen direct of indirect gekoppeld aan een topbegrip. Typerend voor een taxonomie is een interface waarbij op het eerste niveau de topbegrippen worden getoond, waarbij per topbegrip begrippen met een engere betekenis worden getoond, die op hun beurt ook weer begrippen met een engere betekenis tonen, enzovoort. Dit betekent dat, als je een taxonomie publiceert, ieder begrip ofwel via een hiërarchische relatie moet worden gekoppeld aan een ander begrip, ofwel een topbegrip moet zijn. Dit impliceert dat de betekenis van een begrip niet alleen wordt bepaald door de namen en de notities, maar ook door de semantische relaties naar andere begrippen in het begrippenkader.
-
-Als een eerste begrip een bovenliggend begrip is in relatie tot een tweede begrip en het tweede begrip weer een bovenliggend begrip is in relatie tot een derde begrip, dan betekent dit niet automatisch dat dit eerste begrip semantisch gezien óók een bovenliggend begrip is in relatie tot het derde begrip (transitief is). Dit kan voorkomen in 'slordige' taxonomieën. Een voorbeeld is het definiëren van 'auto' als onderliggend begrip in relatie tot 'voertuig' en 'wiel' als een onderliggend begrip in relatie tot 'auto'. Maar 'wiel' is niet logischerwijs een onderliggend begrip in relatie tot 'voertuig'. 'Heeft bovenliggend begrip' en 'heeft onderliggend begrip' zijn dus niet per definitie transitief.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
 | **voorkeursterm** | <dfn>semantische relatie</dfn>            |
-| **definitie** | Een semantische relatie bepaalt de betekenis van een begrip door relaties naar andere begrippen in een begrippenkader te definiëren." |
+| **definitie** | Een semantische relatie is een relatie tussen twee begrippen waarbij de relatie inherent is aan de betekenis van de begrippen. |
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes |
 | **toelichting** | Een semantische relatie is een generalisatie van de verschillende hiërarchische en associatieve relaties. In de praktijk worden deze hiërarchische en associatieve relaties gebruikt. |
 
 </br> 
 
-Een topbegrip kan worden gedefinieerd vanuit een begrip in relatie tot een begrippenkader of andersom. «is topbegrip van» en «heeft topbegrip» zijn elkaars inverse.
+Een topbegrip kan worden gedefinieerd vanuit een begrip in relatie tot een begrippenkader of andersom. «<dfn>is topbegrip van</dfn>» en «<dfn>heeft topbegrip</dfn>» zijn elkaars inverse.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
-| **voorkeursterm** | <dfn>is topbegrip van</dfn>            |
-| **definitie** |  «is topbegrip van» adresseert het begrippenkader waarvan een begrip bovenaan de hiërarchie staat." |
+| **voorkeursterm** | <dfn>topbegrip</dfn>            |
+| **definitie** |  Een topbegrip is een begrip dat bovenaan de hiërarchie staat in een begrippenkader. |
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes |
 | **toelichting** | Bovenaan wilt zeggen; het heeft geen bovenliggende begrippen. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle begrippen op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen. |
 
- </br> 
-
-|                       |                                       |
-|-----------------------|---------------------------------------|
-| **voorkeursterm** | <dfn>heeft topbegrip</dfn>            |
-| **definitie** |  «heeft topbegrip» adresseert een begrip dat bovenaan de hiërarchie staat in het begrippenkader." |
-| **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes |
-| **toelichting** | Bovenaan wilt zeggen; het heeft geen bovenliggende begrippen. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle begrippen op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen. |
-
- </br> 
+</br> 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
 | **voorkeursterm**   | <dfn>heeft bovenliggend begrip</dfn> |
 | **definitie**        | «heeft bovenliggend begrip» relateert een begrip aan een begrip met een meer algemene betekenis. |
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/skos-reference/#semantic-relations |
-| **toelichting** | Conventie is om «heeft bovenliggend begrip» alleen te gebruiken om een ​​directe hiërarchische link tussen twee begrippen te beschrijven. In 'nette' taxonomieën zijn hiërarchische relaties in een begrippenkader transitief. Dat wil zeggen als «dier» een bovenliggend begrip is van «zoogdier» en «zoogdier» een bovenliggend begrip van «kat», dan is de bewering dat «dier In 'slordige' taxonomieën is dit niet zo, bijvoorbeeld als «voertuig» wordt gedefinieerd als bovenliggend begrip van «auto» en «wiel» als onderliggend begrip van «auto» dan is «wiel» niet echt een onderliggend begrip van «voertuig»."@nl |
+| **toelichting** | Conventie is om «heeft bovenliggend begrip» alleen te gebruiken om een ​​directe hiërarchische link tussen twee begrippen te beschrijven. In 'nette' taxonomieën zijn hiërarchische relaties in een begrippenkader transitief. Dat wil zeggen als «dier» een bovenliggend begrip is van «zoogdier» en «zoogdier» een bovenliggend begrip van «kat», dan is de bewering dat «dier In 'slordige' taxonomieën is dit niet zo, bijvoorbeeld als «voertuig» wordt gedefinieerd als bovenliggend begrip van «auto» en «wiel» als onderliggend begrip van «auto» dan is «wiel» niet echt een onderliggend begrip van «voertuig». |
 | **alternatieve term** | heeft breder begrip |
 | **code** | BT |
 
- </br> 
+</br> 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
 | **voorkeursterm**   | <dfn>heeft onderliggend begrip</dfn> |
 | **definitie**        | «heeft onderliggend begrip» relateert een begrip aan een begrip met een specifiekere betekenis. |
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/skos-reference/#semantic-relations |
-| **toelichting** | Conventie is om «heeft onderliggend begrip» alleen te gebruiken om een directe hiërarchische link tussen twee begrippen te beschrijven. In 'nette' taxonomieën zijn hiërarchische relaties in een begrippenkader transitief. Dat wil zeggen als «dier» een bovenliggend begrip is van «zoogdier» en «zoogdier» een bovenliggend begrip van «kat», dan is de bewering dat «dier In 'slordige' taxonomieën is dit niet zo, bijvoorbeeld als «voertuig» wordt gedefinieerd als bovenliggend begrip van «auto» en «wiel» als onderliggend begrip van «auto» dan is «wiel» niet echt een onderliggend begrip van «voertuig»."@nl|
+| **toelichting** | Conventie is om «heeft onderliggend begrip» alleen te gebruiken om een directe hiërarchische link tussen twee begrippen te beschrijven. In 'nette' taxonomieën zijn hiërarchische relaties in een begrippenkader transitief. Dat wil zeggen als «dier» een bovenliggend begrip is van «zoogdier» en «zoogdier» een bovenliggend begrip van «kat», dan is de bewering dat «dier In 'slordige' taxonomieën is dit niet zo, bijvoorbeeld als «voertuig» wordt gedefinieerd als bovenliggend begrip van «auto» en «wiel» als onderliggend begrip van «auto» dan is «wiel» niet echt een onderliggend begrip van «voertuig».|
 | **alternatieve term** | heeft enger begrip |
 | **code** | NT |
 
- </br> 
+</br> 
 
 ### Thesaurus
 
@@ -303,7 +293,7 @@ Naast de kenmerken die voor begrippen in een begrippenlijst of taxonomie zijn ge
 | **heeft bron** | https://en.wikipedia.org/wiki/Thesaurus, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.62 |
 | **toelichting** | Het doel van een thesaurus is traditioneel om de indexeerder en de zoeker te helpen bij het kiezen van dezelfde term voor hetzelfde begrip. Om dit te bereiken, bevat een thesaurus in de eerste plaats alle begrippen die nuttig kunnen zijn voor zoekdoeleinden in een bepaald domein. Ten tweede moet een thesaurus de begrippen zo presenteren dat mensen ze gemakkelijk kunnen vinden. Dit wordt bereikt door relaties tussen begrippen tot stand te leggen en de relaties te gebruiken om de begrippen in een gestructureerde weergave te presenteren. |
 
- </br> 
+</br> 
 
  Hiervoor kennen we de relatie [=is gerelateerd aan=].
 
@@ -315,10 +305,10 @@ Naast de kenmerken die voor begrippen in een begrippenlijst of taxonomie zijn ge
 | **toelichting** | De associatieve relatie omvat associaties tussen paren begrippen die niet hiërarchisch met elkaar verbonden zijn, maar semantisch of conceptueel zodanig geassocieerd zijn dat de link ertussen expliciet gemaakt moet worden, omdat het aanvullende of alternatieve termen kan suggereren die kunnen worden gebruikt bij het indexeren of vinden van een begrip. |
 | **code** | RT |
 
- </br> 
+</br> 
 
-<section class="informative"> 
-<h4>ISO 25964 hiërarchische relaties</h4>
+
+#### ISO 25964 hiërarchische relaties
 Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebruikt als specialisatie respectievelijk generalisatie, kan het ook een partitieve, deel-geheel relatie of een instantiële relaties zijn. De ISO 25964 standaard voor thesauri maakt in plaats van de ongespecificeerde hiërarchische relaties [=heeft bovenliggend begrip=] en [=heeft onderliggend begrip=] expliciet onderscheid tussen generalisaties/specialisaties, partitieve relaties en instantiële relaties. Begrippen worden hiermee expliciet in een hiërarchie geplaatst, waarmee deze relaties transitief zijn. Een kanttekening daarbij is wel dat de meeste tools alleen de standaard hiërarchische relaties herkennen.
 
 |                       |                                       |
@@ -330,7 +320,7 @@ Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebru
 | **voorbeeld** | Een pers is een kat en een kat is een dier. |
 | **code** | NTG |
 
- </br> 
+</br> 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -341,7 +331,7 @@ Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebru
 | **voorbeeld** | Sommige dieren zijn katten en sommige katten zijn perzen. |
 | **code** | BTG |
 
- </br> 
+</br> 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -352,7 +342,7 @@ Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebru
 | **voorbeeld** | (1) een slagader is een bloedvat, (2) Amersfoort ligt in de provincie Utrecht. (3) zoölogie is ene discipline van de biologie of (4) Een bataljon is een legereenheid. Fout is de onderdeel van relatie tussen een wiel en een fiets omdat een wiel ook een onderdeel van een auto of machine kan zijn. |
 | **code** | BTP |
 
- </br> 
+</br> 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -363,7 +353,7 @@ Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebru
 | **voorbeeld** | (1) een bloedvat kan een slagader zijn, (2) in de provincie Utrecht ligt Amersfoort, (3) biologie heeft als discipline zoölogie, (4) een legereenheid kan een bataljon zijn. Fout is de omvat relatie tussen een fiets en een wiel omdat een loopfiets bijvoorbeeld geen wielen heeft. |
 | **code** | NTP |
 
- </br> 
+</br> 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -374,7 +364,7 @@ Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebru
 | **voorbeeld** | De Alpen zijn een berggebied. |
 | **code** | BTI |
 
- </br> 
+</br> 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -396,7 +386,7 @@ Begrippen kunnen ook worden gerelateerd aan begrippen in een ander begrippenkade
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/skos-reference/#mapping |
 | **toelichting** | Dit is een hulpbegrip om de 5 harmonisatierelaties met begrippen in externe begrippenkaders samen te kunnen nemen. De bedoeling is om een van deze 5 relaties te gebruiken bij het relateren van een begrip aan een begrip uit een ander begrippenkader. Het gaat niet zozeer om het harmoniseren in de zin dat iedereen dezelfde term voor een begrip moet gebruiken, maar om inzichtelijk te maken hoe het begrip samenhangt met begrippen in andere contexten. |
 
- </br> 
+</br> 
 
 Specifiek onderscheiden we de volgende verschillende harmonisatierelaties.
 
@@ -407,7 +397,7 @@ Specifiek onderscheiden we de volgende verschillende harmonisatierelaties.
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/skos-reference/#mapping |
 | **toelichting** | Een dergelijke relatie is aanwezig als de betekenis van het betreffende begrip gelijk is aan de betekenis van het begrip uit het andere begrippenkader. Het begrip kan ook een 'leenwoord' zijn, dat wil zeggen dat het begrip is overgenomen uit het andere begrippenkader. |
 
- </br> 
+</br> 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -416,7 +406,7 @@ Specifiek onderscheiden we de volgende verschillende harmonisatierelaties.
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/skos-reference/#mapping |
 | **toelichting** | Een dergelijke relatie is aanwezig als de betekenis van het betreffende begrip ongeveer gelijk is aan de betekenis van het begrip uit het andere begrippenkader, dus niet precies hetzelfde. |
 
- </br> 
+</br> 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -425,7 +415,7 @@ Specifiek onderscheiden we de volgende verschillende harmonisatierelaties.
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/skos-reference/#mapping |
 | **toelichting** | Conventie is om «is overeenkomstig verwant» op dezelfde manier als gerelateerd te gebruiken, maar dan om een begrip te verbinden met een begrip in een ander begrippenkader, dus ook in een andere context. Je zou kunnen zeggen dat het in kaart brengen van dit soort relaties minder inherent is aan de betekenis van de betreffende begrippen. Vanuit het standpunt van de oorspronkelijke ontwerper van een begrippenkader kunnen ze soms zelfs verkeerd zijn. Harmonisatie eigenschappen zijn nuttig in toepassingen die meerdere, conceptueel overlappende begrippenkaders gebruiken. |
 
- </br> 
+</br> 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -434,7 +424,7 @@ Specifiek onderscheiden we de volgende verschillende harmonisatierelaties.
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/skos-reference/#mapping |
 | **toelichting** | Conventie is om «heeft overeenkomstig bovenliggend» op dezelfde manier als «heeft bovenliggend» te gebruiken, maar dan om een begrip te verbinden met een begrip in een ander begrippenkader, dus ook in een andere context. Je zou kunnen zeggen dat het in kaart brengen van dit soort relaties minder inherent is aan de betekenis van de betreffende begrippen. Vanuit het standpunt van de oorspronkelijke ontwerper van een begrippenkader kunnen ze soms zelfs verkeerd zijn. Harmonisatie eigenschappen zijn nuttig in toepassingen die meerdere, conceptueel overlappende begrippenkaders gebruiken. |
 
- </br> 
+</br> 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -443,7 +433,7 @@ Specifiek onderscheiden we de volgende verschillende harmonisatierelaties.
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/skos-reference/#mapping |
 | **toelichting** | Conventie is om «heeft overeenkomstig onderliggend» op dezelfde manier als «heeft onderliggend» te gebruiken, maar dan om een begrip te verbinden met een begrip in een ander begrippenkader, dus ook in een andere context. Je zou kunnen zeggen dat het in kaart brengen van dit soort relaties minder inherent is aan de betekenis van de betreffende begrippen. Vanuit het standpunt van de oorspronkelijke ontwerper van een begrippenkader kunnen ze soms zelfs verkeerd zijn. Harmonisatie eigenschappen zijn nuttig in toepassingen die meerdere, conceptueel overlappende begrippenkaders gebruiken. |
 
- </br> 
+</br> 
 
 ## Brondocument
 
@@ -462,7 +452,7 @@ Een **[=begrip=]** heeft een kenmerk '**[=heeft bron=]**'. Dit kenmerk relateert
 | **toelichting** | Deze eigenschap is alleen bedoeld om te verwijzen naar brondocumenten waarop de betekenis van het begrip is gebaseerd. Als je naar bronnen met een andere functie wilt verwijzen, dan moet je een andere/eigen eigenschap gebruiken. |
   | **alternatieve term** | herkomst, bronverwijzing |
 
- </br> 
+</br> 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -472,7 +462,7 @@ Een **[=begrip=]** heeft een kenmerk '**[=heeft bron=]**'. Dit kenmerk relateert
 | **toelichting** | Een brondocument kan een geschreven document zijn of een resource op het web. Aanbevolen best practice is om het brondocument te beschrijven door middel van een tekenreeks die voldoet aan een formeel identificatiesysteem. Bij een resource op het web is ook de uri van het document relevant. |
 | **alternatieve term** | bron |
 
- </br> 
+</br> 
 
 Het wordt aangeraden om een brondocument altijd te beschrijven met een **[=bronverwijzing=]** waarin de verwijzing conform een gangbare conventie is vastgelegd. Er is een conventie voor de verwijzing naar passage van een artikel in een tijdschrift of in een boek. Ook voor de verwijzing naar wetgeving is er een conventie. Als de bron een vindplaats heeft op het web is een **[=url=]** relevant.  Hiermee kan de bron direct gevonden worden. 
 
@@ -483,7 +473,7 @@ Het wordt aangeraden om een brondocument altijd te beschrijven met een **[=bronv
 | **heeft bron** | http://purl.org/dc/terms/, http://xmlns.com/foaf/0.1/, https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/bibliographicCitation |
 | **toelichting** | Een bronverwijzing wordt als tekst vastgelegd. Hier dient voldoende detail in aangebracht te zijn zodat de resource gevonden kan worden. Er bestaan verschillende conventies die toegepast kunnen worden zoals IEEE, MLA of APA. Voor Nederlandse wetgeving is dit de citeertitel. |
 
- </br> 
+</br> 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -492,7 +482,7 @@ Het wordt aangeraden om een brondocument altijd te beschrijven met een **[=bronv
 | **heeft bron** | http://xmlns.com/foaf/0.1/ |
 | **toelichting** | Een url wordt vastgelegd als de bron een bron is die vindbaar is op het web. Dit is bij voorkeur de uri van de van de bron en eventueel de url van de betreffende pagina op het web. |
 
- </br> 
+</br> 
 
 ## Collectie
 Het gebruik van [=Collectie=]s is altijd optioneel binnen deze standaard. Collecties zijn geen onderdeel van een begrippenlijst, taxonomie of thesaurus. 
@@ -511,11 +501,10 @@ Een collectie geeft ook geen context zoals een begrippenkader dat per definitie 
 | **toelichting** | Met betekenisvol wordt bedoeld dat de begrippen op een bepaalde manier met elkaar samenhangen. Een collectie betreft vaak een deel van de begrippen uit één begrippenkader, maar kan ook begrippen bevatten die afkomstig zijn uit meerdere begrippenkaders. |
 | **alternatieve term** | gelabelde collectie, verzameling |
 
- </br> 
+</br> 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
 | **voorkeursterm**   | <dfn>bevat</dfn> |
 | **definitie**        | Bevat relateert een collectie aan een begrip of een collectie van begrippen dat onderdeel is van deze collectie. |
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/skos-reference/#collections |
-

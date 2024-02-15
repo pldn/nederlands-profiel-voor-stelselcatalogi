@@ -12,26 +12,18 @@
 #begrippenkader
 begkr-sbb:nlbegrip
   a skos:ConceptScheme ;
-  rdfs:label "Begrippenkader nlbegrip";
+  rdfs:label "Begrippenkader nlbegrip"@nl;
   skos:hasTopConcept
     beg-sbb:ConceptScheme ,
     beg-sbb:Concept ,
     beg-sbb:Collection ,
-    beg-sbb:Member ,
-    beg-sbb:Naam ,
-    beg-sbb:SemanticRelation ,
-    beg-sbb:InScheme ,
+    beg-sbb:Label ,
+    beg-sbb:Association ,
     beg-sbb:Notation ,
     beg-sbb:Note ,
-    beg-sbb:Source ,
-    beg-sbb:SourceDocument ,
-    beg-sbb:Type ,
-    beg-sbb:Page ,
-    beg-sbb:BibliographicCitation ,
-    beg-sbb:topConceptOf ,
-    beg-sbb:hasTopConcept ;
+    beg-sbb:SourceDocument ;
   skos:prefLabel "Begrippenkader Nederlandse standaard voor het beschrijven van begrippen"@nl ;
-  skos:altLabel "sbb" .
+  skos:altLabel "sbb"@nl .
 
 # BEGRIPPEN IN DIT BEGRIPPENKADER
 
@@ -56,6 +48,31 @@ beg-sbb:Concept
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#concepts> ;
   skos:inScheme begkr-sbb:nlbegrip .
 
+#begrip
+beg-sbb:TopConcept
+  a skos:Concept ;
+  rdfs:label "topconcept";
+  skos:prefLabel
+    "top concept"@en ,
+    "topbegrip"@nl ;
+  skos:definition
+    "Een topbegrip is een begrip dat bovenaan de hiërarchie staat in een begrippenkader."@nl ,
+    "A top concept is a concept that constitutes an entry point in the hierarchy of a concept scheme."@en ;
+  skos:scopeNote
+    "Bovenaan wilt zeggen; het heeft geen bovenliggende begrippen. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle begrippen op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen."@nl ,
+    "A top concept has no broader concepts in the given concept scheme."@en ;
+  skos:notation
+    "TT" ;
+  skos:broader beg-sbb:Concept ;
+  skos:related 
+    beg-sbb:Taxonomy ,
+    beg-sbb:Thesaurus ;
+  dct:source
+    skos: ,
+    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
+    <https://www.w3.org/TR/skos-reference/#schemes> ;
+  skos:inScheme begkr-sbb:nlbegrip .
+
 #alternatieve term
   beg-sbb:AltLabel
   a skos:Concept ;
@@ -78,7 +95,7 @@ beg-sbb:Concept
     <https://www.w3.org/TR/skos-reference/#labels> ,
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skos: ;
-  skos:broader beg-sbb:Naam ;
+  skos:broader beg-sbb:Label ;
   skos:inScheme begkr-sbb:nlbegrip.
 
 #heeft bron
@@ -89,19 +106,19 @@ beg-sbb:Source
     "source"@en ,
     "heeft bron"@nl ;
   skos:altLabel 
-    "herkomst"@nl ,
-    "bronverwijzing"@nl ;
+    "herkomst"@nl ;
   skos:definition
     "«heeft bron» relateert een begrip aan een brondocument waarvan het is afgeleid."@nl ,
     "Source relates a concept to a document from which it is derived."@en ;
   skos:scopeNote
-    "Deze eigenschap is alleen bedoeld om te verwijzen naar brondocumenten waarop de betekenis van het begrip is gebaseerd. Als je naar bronnen met een andere functie wilt verwijzen, dan moet je een andere/eigen eigenschap gebruiken.";
+    "Deze eigenschap is alleen bedoeld om te verwijzen naar brondocumenten waarop de betekenis van het begrip is gebaseerd. Als je naar bronnen met een andere functie wilt verwijzen, dan moet je een andere/eigen eigenschap gebruiken."@nl;
   dct:source
     dct: ,
     <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source> ;
   skos:related 
     beg-sbb:Concept ,
-    beg-sbb:Source ;
+    beg-sbb:SourceDocument ;
+  skos:broader beg-sbb:Association ;
   skos:inScheme begkr-sbb:nlbegrip.
 
 #code
@@ -140,7 +157,7 @@ beg-sbb:Definition
 * Type 2: Samenstelling (totum/dividere) - BEGRIP is een geheel dat is beschreven door de delen te beschrijven (hiërarchie, geheel/deel). Voorbeeld: organisatie. Een stel mensen die dingen doen met spullen. Voorbeeld: trein. Een locomotief met wagons. Afgedekte relaties uit SBB: «omvat» 
 * Type 3: Onderdeel (pars) - BEGRIP is een onderdeel van een groter geheel, met een specifiek kenmerk. Voorbeeld: blad – Een onderdeel van een plantaardig organisme, dat zich uitstrekt vanuit de stengel en dat een essentieel onderdeel vormt van het fotosyntheseproces. Afgedekte relaties uit SBB: «heeft bovenliggend begrip», «is onderdeel van» 
 * Type 4: Relatie (associatio) - BEGRIP is een relatie tussen twee entiteiten (een associatie). Voorbeeld: huwelijk - Een juridische relatie tussen twee personen. 
-* Type 5: Kenmerk (signum) - BEGRIP is een kenmerk van een entiteit (een eigenschap). Voorbeeld: juistheid - De mate waarin iets z’n echte waarde correct weergeeft. Voorbeeld: beschikbaarheid - De mate waarin iets aanwezig is voor de beoogde situatie/doel. 
+* Type 5: Kenmerk (signum) - BEGRIP is een kenmerk van een entiteit (een eigenschap). Voorbeeld: juistheid - De mate waarin iets z'n echte waarde correct weergeeft. Voorbeeld: beschikbaarheid - De mate waarin iets aanwezig is voor de beoogde situatie/doel. 
 NB: Voor taxonomieën maakt men bij voorkeur gebruik van uitsluitend Type 1 definities. De topterm in een taxonomie zal echter van een ander type zijn. In thesauri worden ook de overige typen gebruikt.'''@nl ;
   skos:editorialNote 
     "De ISO11179 is gevolgd bij het opstellen van de Nederlandse definitie en niet de SKOS definitie vanwege de verwarring die kan optreden m.b.t. 'formele uitleg': dit laatste zou je eerder bij een ontologie verwachten."@nl ;
@@ -297,7 +314,10 @@ beg-sbb:InScheme
     skos: ,
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> ;
-  skos:related beg-sbb:Concept ;
+  skos:related 
+    beg-sbb:Concept ,
+    beg-sbb:ConceptScheme ;
+  skos:broader beg-sbb:Association ;
   skos:inScheme begkr-sbb:nlbegrip.
 
 #is categorie van
@@ -359,7 +379,7 @@ beg-sbb:BroaderInstantial
   dct:source
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skosthes: ;
-skos:related beg-sbb:Concept ;
+  skos:related beg-sbb:Concept ;
   skos:broader beg-sbb:Broader ;
   skosthes:broaderGeneric beg-sbb:Broader;
   skos:inScheme begkr-sbb:nlbegrip .
@@ -472,26 +492,6 @@ beg-sbb:BroaderGeneric
   skosthes:broaderGeneric beg-sbb:Broader;
   skos:inScheme begkr-sbb:nlbegrip .
 
-#is topbegrip van
-beg-sbb:topConceptOf
-  a skos:Concept ;
-  rdfs:label "is top concept of";
-  skos:prefLabel
-    "is topbegrip van"@nl ,
-    "is top concept of"@en ;
-  skos:definition
-    "«is top concept of» adresses the concept scheme of which a concept is at the top of a hierarchy."@en ,
-    "«is topbegrip van» adresseert het begrippenkader waarvan een begrip bovenaan de hiërarchie staat."@nl ;
-  skos:scopeNote
-    "Topmost implies that it has no broader concepts. This makes it easier, on importing a thesaurus, to pick out all the top level concepts from which to build a navigational tree."@en,
-    "Bovenaan wilt zeggen; het heeft geen bovenliggende begrippen. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle begrippen op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen."@nl; 
-  dct:source skos: ,
-    <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> ;
-  skos:related 
-    beg-sbb:Taxonomy ,
-    beg-sbb:hasTopConcept;
-  skos:inScheme begkr-sbb:nlbegrip .
-
 #is vrijwel overeenkomstig
 beg-sbb:CloseMatch
   a skos:Concept ;
@@ -513,11 +513,11 @@ beg-sbb:CloseMatch
   skos:inScheme begkr-sbb:nlbegrip .
 
 #naam
-beg-sbb:Naam
+beg-sbb:Label
   a skos:Concept ;
-  rdfs:label "naam";
-  skos:prefLabel "naam"@en ,
-    "term"@nl ;
+  rdfs:label "label";
+  skos:prefLabel "label"@en ,
+    "naam"@nl ;
   skos:definition
     "Een naam is een mensleesbare term ter aanduiding van iets."@nl ,
     "A human-readable label is a word or phrase used to label a resource."@en ;
@@ -549,14 +549,14 @@ beg-sbb:Note
 #omvat
 beg-sbb:NarrowerPartitive
   a skos:Concept ;
-  rdfs:label "broader term (partitive)";
+  rdfs:label "narrower term (partitive)";
   skos:prefLabel
     "omvat"@nl ,
-    "broader term (partitive)"@en ;
+    "narrower term (partitive)"@en ;
   skos:notation "NTP" ;
   skos:definition
     "Omvat relateert een begrip aan een minder omvattend begrip."@nl ,
-    "Broader term (partitive) relates a concept to a less including concept."@en ;
+    "Narrower term (partitive) relates a concept to a less including concept."@en ;
   skos:scopeNote
     "De hiërarchische geheel-deel-relatie omvat een beperkt aantal situaties waarin een deel van een entiteit of systeem uniek behoort tot een bepaald bezittend geheel. Dit geldt voor vier hoofdklassen van termen: systemen en organen van het lichaam, geografische locaties, disciplines onderzoeksgebieden of hiërarchische sociale structuren. De meeste andere gevallen van de geheel-deelrelatie komen niet in aanmerking voor een hiërarchische koppeling omdat het deel tot meer dan één geheel kan behoren."@nl,
     "The hierarchical whole-part relationship covers a limited range of situations in which a part of an entity or system belongs uniquely to a particular possessing whole. This applies to four main classes of terms: systems and organs of the body, geographical locations, disciplines or fields of discourse and hierarchical social structures. Most other cases of the whole-part relationship are not eligible for a hierarchical linkage because the part could belong to more than one whole."@en;
@@ -589,6 +589,18 @@ beg-sbb:EditorialNote
   skos:related beg-sbb:Concept ;
   skos:inScheme begkr-sbb:nlbegrip .
 
+#relatie
+beg-sbb:Association
+  a skos:Concept ;
+  rdfs:label "association";
+  skos:prefLabel
+    "relatie"@nl ,
+    "association"@en ;
+  skos:definition
+    "An association is a structural connection between two objects."@en ,
+    "Een relatie is het structurele verband tussen twee objecten."@nl ;
+  skos:inScheme begkr-sbb:nlbegrip .
+
 #semantische relatie
 beg-sbb:SemanticRelation
   a skos:Concept ;
@@ -598,10 +610,11 @@ beg-sbb:SemanticRelation
     "semantic relation"@en ;
   skos:definition
     "A semantic relations links a concept to a concept related by meaning."@en ,
-    "Een semantische relatie relateert een begrip aan een ander begrip op basis van de betekenis."@nl ;
+    "Een semantische relatie is een relatie tussen twee begrippen waarbij de relatie inherent is aan de betekenis van de begrippen."@nl ;
   skos:scopeNote
     "This is an umbrella term for the different types of semantic relations (broader, narrower, is related to) that can be used to describe relations between concepts. Good practice is to use those specific semantic relations. In concept schemes semantic relations play a crucial role for defining concepts. The meaning of a concept is defined not just by the natural-language words in its labels but also by its links to other concepts in the vocabulary."@en,
     "Dit is een overkoepelend begrip voor de verschillende soorten semantische relaties (bovenliggend, onderliggend, gerelateerd) waarmee relaties tussen begrippen kunnen worden beschreven. Het is een goed gebruik om de specifieke soorten semantische relaties te gebruiken. In begrippenkaders spelen semantische relaties een cruciale rol bij het definiëren van een begrip. De betekenis van een begrip wordt niet alleen bepaald door de woorden in natuurlijke taal in de termen en notities, maar ook door de links naar andere begrippen in het begrippenkader."@nl;
+  skos:broader beg-sbb:Association ;
   dct:source
     <https://www.w3.org/TR/skos-reference/#semantic-relations> ,
     skos: ;
@@ -660,8 +673,8 @@ beg-sbb:Example
     "An example of the use of a concept."@en ,
     "Een voorbeeld is een notitie die meer duidelijkheid geeft over het gebruik van een begrip."@nl ;
   skos:scopeNote
-    "Een voorbeeld is een exemplaar van, of een verbeelding van een begrip dat voor het begrip zelf in de plaats treedt om dit abstracte idee toe te lichten met een concrete voorstelling. Het kan tekst zijn, maar ook een plaatje, een geluidsfragment of een videofragment."@nl,
-    "An example is an instance of or a representation of a concept that replaces the concept itself in order to illustrate this abstract idea with a concrete representation. It can be text, but also a picture, a sound fragment or a video fragment."@en;
+    "Een voorbeeld is beschrijving van een begrip met als doel het abstracte idee toe te lichten met een concrete voorstelling."@nl,
+    "An example is a description of a concept with the aim of explaining the abstract idea with a concrete representation."@en;
   dct:source
     <https://www.w3.org/TR/skos-reference/#notes> ,
     skos: , 
@@ -689,7 +702,7 @@ beg-sbb:PrefLabel
     <https://www.w3.org/TR/skos-reference/#labels> ,
     skos: ;
   skos:related beg-sbb:Concept ;
-  skos:broader beg-sbb:Naam ;
+  skos:broader beg-sbb:Label ;
   skos:inScheme begkr-sbb:nlbegrip .
 
 #wijzigingsnotitie
@@ -727,7 +740,7 @@ beg-sbb:HiddenLabel
   dct:source
     <https://www.w3.org/TR/skos-reference/#labels> ,
     skos: ;
-  skos:broader beg-sbb:Naam ;
+  skos:broader beg-sbb:Label ;
   skos:related beg-sbb:Concept ;
   skos:inScheme begkr-sbb:nlbegrip .
 
@@ -753,48 +766,32 @@ beg-sbb:SourceDocument
     <http://xmlns.com/foaf/0.1/#term_Document>;
   skos:related 
     beg-sbb:BibliographicCitation ,
-    beg-sbb:Type ,
     beg-sbb:Page ,
     beg-sbb:Concept;
  skos:inScheme begkr-sbb:nlbegrip.
 
-#citeertitel
+#bronverwijzing 
 beg-sbb:BibliographicCitation
   a skos:Concept ;
   rdfs:label "bibliographic citation";
   skos:prefLabel
-    "citeertitel"@nl ,
+    "bronverwijzing "@nl ,
     "bibliographic citation"@en ;
   skos:definition
-    "Een citeertitel is een bibliografische referentie naar het document."@nl ,
+    "Een bronverwijzing  is een bibliografische referentie naar het document."@nl ,
     "A bibliographic reference for the resource."@en ;
   skos:scopeNote 
-    "Een citeertitel wordt als tekst vastgelegd. Hier dient voldoende detail in aangebracht te zijn zodat de resource gevonden kan worden. Er bestaan verschillende citeerstijlen die toegepast kunnen worden zoals IEEE, MLA of APA. Voor Nederlandse wetgeving is dit de citeertitel."@nl,
+    "Een bronverwijzing wordt als tekst vastgelegd. Hier dient voldoende detail in aangebracht te zijn zodat de resource gevonden kan worden. Er bestaan verschillende conventies die toegepast kunnen worden zoals IEEE, MLA of APA. Voor Nederlandse wetgeving is dit de citeertitel."@nl,
     "A bibliographic citation is captured as text. Sufficient detail must be provided here so that the resource can be found. There are different citation styles that can be used, such as IEEE, MLA or APA. For Dutch legislation this is the citation title."@en;
   skos:example "Scripta Materialia 48(5), 475-481 (2003)", "Martin Greenberger et al., eds., Networks for Research and Education: Sharing of Computer Information Resources Nationwide (Cambridge: MIT Press, 1974), artikel 1 Kadasterwet" ;
   dct:source
     <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/bibliographicCitation> ,
     dct: ,
     foaf: ;
+  skos:broader beg-sbb:Label ;
   skos:inScheme begkr-sbb:nlbegrip .
 
-#soort bron
-beg-sbb:Type
-  a skos:Concept ;
-  rdfs:label "type";
-  skos:prefLabel
-    "soort bron"@nl ,
-    "type"@en ;
-  skos:definition
-    "Een soort bron is de aard of het genre van een bron."@nl ,
-    "A type is the nature or genre of a resource."@en ;
-  skos:scopeNote
-  
-    "Met soort bron kan bijvoorbeeld aangegeven worden of het een 'geschreven bron' of een 'web resource' is."@nl,
-    "Kind indicates whether it is a 'written resource' or a 'web resource'."@en;
-  dct:source
-    dct: ;
-  skos:inScheme begkr-sbb:nlbegrip .
+
 
 #url
 beg-sbb:Page
@@ -811,6 +808,7 @@ beg-sbb:Page
     "A URL is captured if the resource is a resource that can be found on the web. This is preferably the uri of the resource and possibly the url of the relevant page on the web."@en;
   dct:source
     foaf: ;
+  skos:broader beg-sbb:Association ;
 skos:inScheme begkr-sbb:nlbegrip .
 
 # BESCHRIJVING BEGRIPPENKADER
@@ -825,10 +823,10 @@ beg-sbb:ConceptScheme
     "begrippenkader"@nl ,
     "concept scheme"@en ;
   skos:altLabel
-    "controlled vocabulary" ,
-    "structured vocabulary" ,
-    "begrippencatalogus" ,
-    "knowledge organisation system" ;
+    "controlled vocabulary"@en ,
+    "structured vocabulary"@en ,
+    "begrippencatalogus"@nl ,
+    "knowledge organisation system"@en ;
   skos:definition
     "A set of concepts that are relevant in a given context."@en ,
     "Een begrippenkader is een verzameling van begrippen die in een bepaalde context relevant zijn."@nl ;
@@ -840,8 +838,7 @@ beg-sbb:ConceptScheme
     skos:,
     <https://en.wikipedia.org/wiki/Controlled_vocabulary>;
   skos:related
-    beg-sbb:hasTopConcept ,
-    beg-sbb:topConceptOf ;
+    beg-sbb:TopConcept ;
   skos:example "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes. Concept schemes are also embedded in glossaries and terminologies."@en ;
   skos:inScheme begkr-sbb:nlbegrip .
 
@@ -866,13 +863,12 @@ beg-sbb:Glossary
   skos:related
     beg-sbb:AltLabel ,
     beg-sbb:InScheme ,
-    beg-sbb:Source ,
     beg-sbb:Notation ,
     beg-sbb:Definition ,
     beg-sbb:HistoryNote,
     beg-sbb:Note ,
     beg-sbb:EditorialNote ,
-    beg-sbb:Naam ,
+    beg-sbb:Label ,
     beg-sbb:ScopeNote ,
     beg-sbb:Comment ,
     beg-sbb:PrefLabel ,
@@ -890,8 +886,8 @@ beg-sbb:Taxonomy
     "taxonomie"@nl ,
     "taxonomy"@en ;
   skos:altLabel 
-    "classificatieschema",
-    "taxonomische classificatie" ;
+    "classificatieschema"@nl,
+    "taxonomische classificatie"@nl ;
   skos:broader beg-sbb:ConceptScheme ;
   skos:definition 
     "Een taxonomie is een begrippenkader, waarin begrippen hiërarchisch op basis van een classificatiecriterium zijn geordend in groepen of types."@nl ,
@@ -902,8 +898,7 @@ beg-sbb:Taxonomy
   skos:related
     beg-sbb:Narrower ,
     beg-sbb:Broader ,
-    beg-sbb:hasTopConcept ,
-    beg-sbb:topConceptOf ;
+    beg-sbb:TopConcept ;
   dct:source <https://en.wikipedia.org/wiki/Taxonomy> ;
   skos:inScheme begkr-sbb:nlbegrip .
 
@@ -924,8 +919,7 @@ beg-sbb:Thesaurus
     <https://en.wikipedia.org/wiki/Thesaurus> ,
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.62> ;
   skos:related
-    beg-sbb:hasTopConcept ,
-    beg-sbb:topConceptOf ,
+    beg-sbb:TopConcept ,
     beg-sbb:ExactMatch ,
     beg-sbb:MatchingRelation ,
     beg-sbb:NarrowerInstantial ,
@@ -942,26 +936,7 @@ beg-sbb:Thesaurus
   skos:broader beg-sbb:ConceptScheme ;
   skos:inScheme begkr-sbb:nlbegrip .
 
-#heeft topbegrip
-beg-sbb:hasTopConcept
-  a skos:Concept ;
-  rdfs:label "has top concept";
-  skos:prefLabel
-    "heeft topbegrip"@nl ,
-    "has top concept"@en ;
-  skos:notation "TT" ;
-  skos:definition
-    "«has top concept» adresses a concept that is topmost in the hierarchie of the given concept scheme."@en ,
-    "«heeft topbegrip» adresseert een begrip dat bovenaan de hiërarchie staat in het betreffende begrippenkader."@nl ;
-  skos:scopeNote
-    "Topmost implies that is has no broader concepts. This makes it easier, on importing a thesaurus, to pick out all the top level concepts from which to build a navigational tree."@en,
-    "Bovenaan wilt zeggen; het heeft geen bredere begrippen. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle begrippen op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen."@nl; 
-  dct:source skos: ,
-    <https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes> ;
-  skos:related 
-    beg-sbb:Taxonomy ,
-    beg-sbb:topConceptOf ;
-  skos:inScheme begkr-sbb:nlbegrip .
+
 
 # BESCHRIJVING COLLECTIE
 
@@ -973,9 +948,7 @@ beg-sbb:Collection
   skos:definition
     "A meaningful collection of concepts."@en ,
     "Een collectie is een verzameling van begrippen die voor een bepaalde situatie betekenisvol bij elkaar passen."@nl ;
-  rdfs:label
-    "collection"@en ,
-    "collectie"@nl ;
+  rdfs:label "collection" ;
   skos:scopeNote
     "Met betekenisvol wordt bedoeld dat de begrippen op een bepaalde manier met elkaar samenhangen. Een collectie betreft vaak een deel van de begrippen uit één begrippenkader, maar kan ook begrippen bevatten die afkomstig zijn uit meerdere begrippenkaders."@nl ,
     "Collections can be used where you would like a set of concepts to be displayed under a 'node label'."@en ;
@@ -1003,9 +976,11 @@ beg-sbb:Member
     skos: ,
     <https://www.w3.org/TR/skos-reference/#collections> ;
   skos:related beg-sbb:Collection ;
+  skos:broader beg-sbb:Association ;
   skos:inScheme begkr-sbb:nlbegrip ;
   skos:editorialNote "Specifiek gebruik van 'begrip of een collectie van begrippen' in plaats van het minderzeggende 'lid'."@nl ;
   skos:prefLabel
     "has member"@en ,
     "bevat"@nl ;
   skos:inScheme begkr-sbb:nlbegrip .
+

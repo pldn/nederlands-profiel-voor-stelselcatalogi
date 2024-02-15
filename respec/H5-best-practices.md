@@ -1,8 +1,5 @@
 # Best practices
 
-## Conformiteit
-Dit hoofdstuk is informatief.
-
 ## Begrippen
 ### Termen
 <div class="practice"><p class="practicedesc"><span class="practicelab">Gangbare conventies voor het beschrijven van termen (voorkeurstermen, alternatieve termen) zijn:
@@ -18,7 +15,7 @@ Dit hoofdstuk is informatief.
 </ul>
 </p></span></div>
 
-<div class="practice"><p class="practicedesc"><span class="practicelab">De voorkeursterm sluit aan op de daadwerkelijke term zoals deze lexicaal gebruikt wordt. <p>
+<div class="practice"><p class="practicedesc"><span class="practicelab">De voorkeursterm sluit aan op de daadwerkelijke term zoals deze lexicaal gebruikt wordt.<p>
 <ul>
 <li>Het is verplicht dat voor iedere taal alle voorkeurtermen die in één taal voorkomen in één begrippenkader uniek zijn. De voorkeursterm is de daadwerkelijke term zoals deze lexicaal gebruikt wordt, dus met spaties, diakrieten en hoofdletters bij namen.</li> 
 <li>Mocht binnen één begrippenkader toch twee begrippen terugkomen die vaak met dezelfde term worden aangeduid, dan is het noodzakelijk - om spraakverwarring te voorkomen - om een post of prefix toe te voegen als dit algemeen gebruikelijk is. Denk aan <i>Hengelo (OV)</i> voor de plaats in Overijssel en <i>Hengelo (GLD)</i> voor de plaats in Gelderland.</li> 
@@ -27,10 +24,15 @@ Dit hoofdstuk is informatief.
 </ul>
 </p></span></div>
 
+<div class="practice"><p class="practicedesc"><span class="practicelab">Maak expliciet voor de lezer wanneer in een zin het woord zelf en niet de betekenis van het woord wordt bedoeld.<p>Wanneer een woord naar zichzelf verwijst, bijvoorbeeld in de zin "'Bank' is een zelfstandignaamwoord", dan zou dit moeten worden aangegeven met enkele of dubbele aanhalingsteken. Wanneer een term uit meerdere woorden bestaat en gebruikt wordt in een zin om een begrip aan te duiden zou dit kenbaar gemaakt moeten worden met guillemets (French quotation marks) «». Bijvoorbeeld «heeft bovenliggend begrip» relateert een begrip aan...". Dit zorgt ervoor dat er geen grammaticaal onlogische zinnen onstaan en dat de lezer de tekst beter begrijpt.</p></span></div>
+
+<div class="practice"><p class="practicedesc"><span class="practicelab">Geef bij lexicale labels en notities aan in welke taal deze gegeven zijn.
+<p>Voor labels moet aangegeven worden in welke taal deze gespecificeerd zijn.</p></span></div>
+
 <div class="practice"><p class="practicedesc"><span class="practicelab">In rdf is het gebruikelijk om ieder begrip een naam in de vorm van een rdfs:label te geven. Daarmee kunnen ook interfaces overweg die de verschillende soorten termen (voorkeursterm, alternatieve term, zoekterm) niet kunnen onderscheiden. Daarmee krijgt ieder begrip een leesbare naam, ongeacht de context.<p>Anders dan bij de voorkeursterm, is het verstandig om wel context in de naam mee te geven door bijvoorbeeld tussen haakjes deze context weert te geven, zoals bij <i>bank (financiële instelling)</i>. Daardoor ontstaat geen verwarring in het kader van homoniemen. De algemene naam bevordert tevens de compatibiliteit met bestaande tools. Het is denkbaar dat tools deze term afleiden van bijvoorbeeld de (Engelse) voorkeursterm of de code.</p></span></div>
 
 ### Definities en uitleg
-Verschillende organisaties hebben uitgewerkte conventies voor het formuleren van een definitie. Deze conventies zijn 1 op 1 ook toepasbaar op het formuleren van een goede uitleg in begrijpelijke taal.
+Verschillende organisaties hebben uitgewerkte conventies voor het formuleren van een definitie. Deze conventies zijn één-op-één ook toepasbaar op het formuleren van een goede uitleg in begrijpelijke taal.
 
 #### ISO:704
 In de NORA werkgroep begrippenkader hanteert men de [ISO 704](https://www.iso.org/obp/ui/en/#iso:std:iso:704:ed-4:v1:en). Een samenvatting daarvan is te vinden op <https://www.noraonline.nl/wiki/Expertgroep_NORA_Begrippenkader_20231003#ISO_704>
@@ -39,14 +41,14 @@ In de NORA werkgroep begrippenkader hanteert men de [ISO 704](https://www.iso.or
 Vanuit de Stichting SURVUZ zijn de volgende typen definities aangedragen:
 * **Type 1**: Typering (genus/differentia) - BEGRIP is afgeleide van hoger liggend begrip, met onderscheidend kenmerk X (overerving, generalisatie, supertype).
   *Voorbeeld: bles. Een paard met een wit voorhoofd. Palomino. Een paard met witte stippen.
-  *Afgedekte relaties uit SBB: <<heeft bovenliggend begrip>>, << is specialisatie van>>, <<is exemplaar van>>, <<is categorie van>>, <<is onderdeel van>>
+  *Afgedekte relaties uit SBB: «heeft bovenliggend begrip», «is specialisatie van», «is exemplaar van», «is categorie van», «is onderdeel van».
 * **Type 2**: Samenstelling (totum/dividere) - BEGRIP is een geheel dat is beschreven door de delen te beschrijven (hiërarchie, geheel/deel).
   *Voorbeeld: organisatie. Een stel mensen die dingen doen met spullen. 
   *Voorbeeld: trein. Een locomotief met wagons.
-  *Afgedekte relaties uit SBB: <<omvat>>
+  *Afgedekte relaties uit SBB: «omvat»
 * **Type 3**: Onderdeel (pars) - BEGRIP is een onderdeel van een groter geheel, met een specifiek kenmerk.
   * Voorbeeld: blad – Een onderdeel van een plantaardig organisme, dat zich uitstrekt vanuit de stengel en dat een essentieel onderdeel vormt van het fotosyntheseproces.
-  * Afgedekte relaties uit SBB: <<heeft bovenliggend begrip>>, <<is onderdeel van>>
+  * Afgedekte relaties uit SBB: «heeft bovenliggend begrip», «is onderdeel van»
 * **Type 4**: Relatie (associatio) - BEGRIP is een relatie tussen twee entiteiten (een associatie).
   *Voorbeeld: huwelijk - Een juridische relatie tussen twee personen.
 * **Type 5**: Kenmerk (signum) - BEGRIP is een kenmerk van een entiteit (een eigenschap).
@@ -56,7 +58,9 @@ Vanuit de Stichting SURVUZ zijn de volgende typen definities aangedragen:
 NB: Voor taxonomieën maakt men bij voorkeur gebruik van uitsluitend Type 1 definities. De topterm in een taxonomie zal echter van een ander type zijn.
 
 #### Nationale politie
-##### Aanleiding
+
+**Aanleiding**
+
 Als mensen samenwerken dan is het noodzakelijk dat ze de gemeenschappelijke termen uit het dagelijks werk op dezelfde wijze interpreteren. Dat lijkt vanzelfsprekend, maar in de praktijk is dat zeker niet altijd zo. Zeker in een grote organisatie zoals de politie worden regelmatig termen op verschillende manieren geïnterpreteerd. Termen als 'draaideurcrimineel', 'jihadist' of 'huiselijk geweld' kunnen in verschillende organisatieonderdelen op een andere manier uitgelegd worden.
 
 Als dergelijke termen gebruikt worden bij de ontwikkeling van hulpmiddelen, zoals computersystemen of opleidingen of als gegevens gebaseerd op deze termen worden gedeeld binnen de Politie of met ketenpartners, dan kan dit tot ongewenste situaties leiden.
@@ -72,7 +76,8 @@ Dit voorschrift geeft handvatten om eenduidige definities van goede kwaliteit op
 
 De landelijke verzameling bevat alleen goedgekeurde begripsdefinities. Definities die niet voldoen aan de regels uit dit voorschrift zullen eerst aangepast moeten worden tot ze wel juist zijn.
 
-##### Achtergrond
+**Achtergrond**
+
 Een begrip wordt gebruikt in het dagelijks politiewerk of de ondersteuning daarvan. Begrippen komen voor in geformuleerde bedrijfsregels. De termen (woorden of een samenstel van woorden) uit een bedrijfsregel duiden de begrippen aan. Voor de juiste interpretatie van een bedrijfsregel is het noodzakelijk dat gehanteerde termen eenduidig gedefinieerd zijn. Pas als iedereen een term op dezelfde manier interpreteert kan de bedrijfsregel op de juiste manier worden toegepast.
 In het volgende voorbeeld van een bedrijfsregel zijn de termen onderstreept die een (te definiëren) begrip aanduiden. Zonder goede definities zal het onmogelijk blijken om de bedrijfsregel overal op dezelfde manier toe te passen.
 
@@ -83,6 +88,8 @@ Dit voorschrift gaat uit van de begrippen zoals gedefinieerd in het SMP/SCM Meta
 
 #### BKR
 Het Bureau Krediet Registratie (BKR) gebruikt https://www.brsolutions.com/wp-content/uploads/2016/10/How-to-Define-Business-Terms-Primer.pdf.
+
+
 
 ### Hiërarchische relaties
 
@@ -96,7 +103,7 @@ Een begrip kan zijn ontleend aan een op het web vindbare bron. Dit kan een (vers
 <p class="note">Veelal gaat 'ontleend' hier over de betekenis van het begrip. Niet direct de definitie. Er ontbreekt namelijk vaak een bron waar de definitie letterlijk in voorkomt, en anders is het zelfs zo dat de bron daarvoor een net iets andere verwoording gebruikt. We hebben het daarom over de bron van de betekenis; en niet over bijvoorbeeld de bron van de definitie. Ook kunnen andere kenmerken kunnen ontleend zijn aan een bron; zoals een [=alternatieve term=] of een [=code=].
 </p>
 
-In ieder scenario willen we voldoende informatie hebben over de bron zodat we deze kunnen vinden. Dit kan op basis van een *[=url=]* of een *[=citeertitel=]*. 
+In ieder scenario willen we voldoende informatie hebben over de bron zodat we deze kunnen vinden. Dit kan op basis van een *[=url=]* of een *[=bronverwijzing=]*. 
 In het eenvoudigste geval is de bron vindbaar op het web en is het voldoende om als bronverwijzing de bijbehorende url op te nemen. De verwachting is dat middels deze url een mensleesbare representatie van het document gevonden kan worden. Dit kan er als volgt uit zien.
 
 <pre class="example">
@@ -109,7 +116,7 @@ Op deze manier is goed aangeven waar de betekenis van het begrip (gedocumenteerd
 
 Wanneer een bron als linked data op het web ontsloten is neem je als waarde van bronverwijzing de URI van de bron. Dit kan bijvoorbeeld een instantie van <code>foaf:Document</code> of <code>dct:BibliographicResource</code> zijn. Hoe deze precies is beschreven is maakt voor de bronverwijzing niet uit, maar binnen dit profiel wordt de [specificatie voor bronnen](#specificatie-brondocument) aangeraden.
 
-Het komt ook voor dat de bron niet vindbaar is op het web en/of niet als linked data ontsloten is. In dat geval kan de beheerder van het begrip zelf een beschrijving van de bron maken. De beschrijving bestaat minimaal uit een aanduiding van het brondocument en de naam. Als aanduiding van het brondocument kunnen in Linked data URI's of blanknodes gebruikt worden. Deze aanduiding is een directe identicatie van het brondocument (zie ook [Fundamentals of Linked Data Modeling](https://bp4mc2.org/modeling/)). De beheerder van het begrip maakt een URI voor het brondocument wat het gebruikt, maar waar het niet de eigenaar van is. Dit is conform een van de basisprincipes van Linked Data, *Anybody can say anything about anything*. Deze URI kan alleen niet direct gebruikt worden om een mensleesbaar document te vinden. Wanneer de bron vindbaar is op het web kan foaf:page ([=url=]) gebruikt worden om naar deze vindplaats te verwijzen. Wanneer de bron niet op het web vindbaar is, kan dct:bibliographicCitation ([=citeertitel=] gebruikt worden om citeerinformatie vast te leggen. Het kan zijn dat een bron zowel een url als een citeertitel kent.
+Het komt ook voor dat de bron niet vindbaar is op het web en/of niet als linked data ontsloten is. In dat geval kan de beheerder van het begrip zelf een beschrijving van de bron maken. De beschrijving bestaat minimaal uit een aanduiding van het brondocument en de naam. Als aanduiding van het brondocument kunnen in Linked data URI's of blanknodes gebruikt worden. Deze aanduiding is een directe identicatie van het brondocument (zie ook [Fundamentals of Linked Data Modeling](https://bp4mc2.org/modeling/)). De beheerder van het begrip maakt een URI voor het brondocument wat het gebruikt, maar waar het niet de eigenaar van is. Dit is conform een van de basisprincipes van Linked Data, *Anybody can say anything about anything*. Deze URI kan alleen niet direct gebruikt worden om een mensleesbaar document te vinden. Wanneer de bron vindbaar is op het web kan foaf:page ([=url=]) gebruikt worden om naar deze vindplaats te verwijzen. Wanneer de bron niet op het web vindbaar is, kan dct:bibliographicCitation ([=bronverwijzing=]) gebruikt worden om citeerinformatie vast te leggen. Het kan zijn dat een bron zowel een url als een citeertitel kent.
 
 In het volgende voorbeeld zien we een beschrijving van een op het web vindbare bron die door de beheerder van het begrip is opgesteld. De beheerder is eigenaar van de beschrijving; maar niet van de bron zelf.
 
