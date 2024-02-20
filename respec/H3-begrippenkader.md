@@ -72,5 +72,5 @@ N.B. Dit is een thesaurus (MIM niveau 1) van alle in deze standaard gedefinieerd
 * concept = 'concept' We hebben hier voor Engelstalig gekozen voor de internationale herkenbaarheid. 
 * reference = een betekenisvolle aanduiding van het begrip in upper camelcase.
 
-Er zijn twee practices voor de reference, namelijk een betekenisvolle aanduiding en een betekenisloze aanduiding. In bijvoorbeeld datamodellen is een betekenisloze referentie meestal de meest praktische omdat voorkeurstermen kunnen veranderen. Bij begrippen is dit in de praktijk geen issue. In deze standaard hebben we voor betekenisvolle uri's gekozen. 
+Er zijn twee practices voor de reference, namelijk een betekenisvolle aanduiding en een betekenisloze aanduiding. Belangrijk is dat deze aanduidig persistent is. Bij de begrippen in deze standaard is dit geen issue. In deze standaard hebben we voor betekenisvolle uri's gekozen vanwege de herkenbaarheid en eenvoudige hanteerbaarheid. 
 Het volgende hoofdstuk beschrijft de samenhang van het model op MIM niveau 3).
