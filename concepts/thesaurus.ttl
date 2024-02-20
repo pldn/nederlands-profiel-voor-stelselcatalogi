@@ -85,11 +85,10 @@ beg-sbb:TopConcept
     "An alternative lexical label for a resource."@en ,
     "Een alternatieve term is een naam die gebruikt kan worden als alternatief voor de voorkeursterm van een object, maar niet de voorkeur heeft."@nl ;
   skos:scopeNote 
-    "Het is niet gebruikelijk om termen die bij een specifieker begrip geplaatst zouden kunnen worden als alternatieve term op te nemen (ookwel upward-posting). Bijvoorbeeld door 'rechtshandeling' als alternatieve term bij een begrip met de voorkeursterm 'handeling' op te nemen."@nl ,
-    "Afkortingen en hun volledige vormen kunnen als synoniemen worden behandeld."@nl,
+    "Synoniemen en bijna synoniemen zoals acroniemen en afkortingen kunnen als alternatieve term worden behandeld. Het is niet de bedoeling een specifieker begrip als alternatieve term op te nemen (ookwel upward-posting). Bijvoorbeeld door 'rechtshandeling' als alternatieve term bij een begrip met de voorkeursterm 'handeling' op te nemen. Ook is het niet de bedoeling meervouden, onregelmatige vormen, spellingsvarianten op te nemen als alternatieve term. "@nl,
     "Abbreviations and their full forms can be treated as synonyms."@en;
   skos:example
-    "Acroniemen, afkortingen, spellingsvarianten en onregelmatige meervouds-/enkelvoudsvormen kunnen worden opgenomen in de alternatieve termen voor een begrip. Verkeerd gespelde termen worden normaal gesproken als zoektermen opgenomen (zie skos:hiddenLabel)."@nl ,
+    "Acroniemen, afkortingen, en dergelijke kunnen worden opgenomen als alternatieve termen voor een begrip. Specifiekere begrippen worden beschreven als onderliggende begrippen. Verkeerd gespelde termen en onregelmatige meervouds-/enkelvoudsvormen worden normaal gesproken als zoektermen opgenomen (zie skos:hiddenLabel)."@nl ,
     "Acronyms, abbreviations, spelling variants, and irregular plural/singular forms may be included among the alternative labels for a concept. Mis-spelled terms are normally included as hidden labels (see skos:hiddenLabel)."@en ;
   dct:source
     <https://www.w3.org/TR/skos-reference/#labels> ,
@@ -522,7 +521,7 @@ beg-sbb:Label
     "Een naam is een mensleesbare term ter aanduiding van iets."@nl ,
     "A human-readable label is a word or phrase used to label a resource."@en ;
   skos:scopeNote
-    "Dit is een overkoepelend begrip voor de verschillende soorten termen (voorkeursterm, alternatieve term, zoekterm) waarmee begrippen kunnen worden aangeduid. Good practice is om die specifieke termen te gebruiken. In de definitie moet 'iets' breed worden geïnterpreteerd. Het kan ieder onderwerp van gesprek zijn; zoals een specifiek begrip of een specifiek gebouw."@nl ,
+    "Dit is een overkoepelend begrip voor de verschillende soorten termen (voorkeursterm, alternatieve term, zoekterm) waarmee begrippen kunnen worden aangeduid. Good practice is om die specifieke termen te gebruiken. In de definitie moet 'iets' breed worden geïnterpreteerd. Het kan ieder onderwerp van gesprek zijn; zoals een specifiek begrip of een specifiek gebouw. Als een naam een afkorting is, wordt dat in deze standaard niet expliciet aangegeven. Als daar een usecase voor is, kan de uitbreiding skosXL mogelijk worden gebruikt."@nl ,
     "This is an umbrella term for the different types of labels (preferred label, alternative label, hidden label) with which concepts can be indicated. Good practice is to use those specific terms. In the definition, 'resource' should be interpreted broadly. A resource can be any subject; such as a particular concept or a particular building."@en;
   dct:source <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.61> ;
   skos:related beg-sbb:Concept ;
