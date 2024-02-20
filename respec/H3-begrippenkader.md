@@ -66,4 +66,11 @@ Een taxonomie geeft al meer overzicht en inzicht dan een alfabetische begrippenl
 
 ![](./respec/media/thesaurusSBB.jpg "SBB thesaurus").
 
-N.B. Dit is een thesaurus (MIM niveau 1) van alle in deze standaard gedefinieerde begrippen. Deze thesaurus is als machine leesbaar begrippenkader [beschikbaar in rdf](https://github.com/pldn/nederlands-profiel-voor-stelselcatalogi/blob/verwerking-opmerkingen-openbare-consultatie/concepts/thesaurus.ttl). Het volgende hoofdstuk beschrijft de samenhang van het model op MIM niveau 3).
+N.B. Dit is een thesaurus (MIM niveau 1) van alle in deze standaard gedefinieerde begrippen. Deze thesaurus is als machine leesbaar begrippenkader [beschikbaar in rdf](https://github.com/pldn/nederlands-profiel-voor-stelselcatalogi/blob/verwerking-opmerkingen-openbare-consultatie/concepts/thesaurus.ttl). In deze thesaurus krijgen de hier beschreven begrippen een uri conform de Nederlandse uri-strategie: http://{domain}/{type}/{concept}/{reference}, waarbij:
+* domain = 'nlbegrip.nl'
+* type = 'id'
+* concept = 'concept' We hebben hier voor Engelstalig gekozen voor de internationale herkenbaarheid. 
+* reference = een betekenisvolle aanduiding van het begrip in upper camelcase.
+
+Er zijn twee practices voor de reference, namelijk een betekenisvolle aanduiding en een betekenisloze aanduiding. In bijvoorbeeld datamodellen is een betekenisloze referentie meestal de meest praktische omdat voorkeurstermen kunnen veranderen. Bij begrippen is dit in de praktijk geen issue. In deze standaard hebben we voor betekenisvolle uri's gekozen. 
+Het volgende hoofdstuk beschrijft de samenhang van het model op MIM niveau 3).
