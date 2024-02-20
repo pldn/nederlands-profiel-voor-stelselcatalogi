@@ -92,7 +92,7 @@ Hieronder worden de mogelijke soorten termen bij een begrip beschreven.
 | **voorkeursterm**   | <dfn>naam</dfn> |
 | **definitie** | Een naam is een mensleesbare term ter aanduiding van iets. |
 | **heeft bron** | https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.61 |
-| **toelichting** | Dit is een overkoepelend begrip voor de verschillende soorten termen (voorkeursterm, alternatieve term, zoekterm) waarmee begrippen kunnen worden aangeduid. Good practice is om die specifieke termen te gebruiken. In de definitie moet 'iets' breed worden geïnterpreteerd. Het kan ieder onderwerp van gesprek zijn; zoals een specifiek begrip of een specifiek gebouw. |
+| **toelichting** | Dit is een overkoepelend begrip voor de verschillende soorten termen (voorkeursterm, alternatieve term, zoekterm) waarmee begrippen kunnen worden aangeduid. Good practice is om die specifieke termen te gebruiken. In de definitie moet 'iets' breed worden geïnterpreteerd. Het kan ieder onderwerp van gesprek zijn; zoals een specifiek begrip of een specifiek gebouw.  Als een naam een afkorting is, wordt dat in deze standaard niet expliciet aangegeven. Als daar een usecase voor is, kan de uitbreiding skosXL mogelijk worden gebruikt.|
 
 </br> 
 
@@ -112,8 +112,8 @@ Hieronder worden de mogelijke soorten termen bij een begrip beschreven.
 | **voorkeursterm**   | <dfn>alternatieve term</dfn> |
 | **definitie**        | Een alternatieve term is een naam die gebruikt kan worden als alternatief voor de voorkeursterm van een object, maar niet de voorkeur heeft. |
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/skos-reference/#labels |
-| **toelichting** | Het is niet gebruikelijk om termen die bij een specifieker begrip geplaatst zouden kunnen worden als alternatieve term op te nemen (ookwel upward-posting). Bijvoorbeeld door 'rechtshandeling' als alternatieve term bij een begrip met de voorkeursterm 'handeling' op te nemen. Afkortingen en hun volledige vormen kunnen als synoniemen worden behandeld. |
-| **voorbeeld** | Acroniemen, afkortingen, spellingsvarianten en onregelmatige meervouds-/enkelvoudsvormen kunnen worden opgenomen in de alternatieve termen voor een begrip. Verkeerd gespelde termen worden normaal gesproken als zoektermen opgenomen (zie skos:hiddenLabel). |
+| **toelichting** | Synoniemen en bijna synoniemen zoals acroniemen en afkortingen kunnen als alternatieve term worden behandeld. Het is niet de bedoeling een specifieker begrip als alternatieve term op te nemen (ookwel upward-posting). Bijvoorbeeld door 'rechtshandeling' als alternatieve term bij een begrip met de voorkeursterm 'handeling' op te nemen. Ook is het niet de bedoeling meervouden, onregelmatige vormen, spellingsvarianten op te nemen als alternatieve term. |
+| **voorbeeld** | Acroniemen, afkortingen, en dergelijke kunnen worden opgenomen als alternatieve termen voor een begrip. Specifiekere begrippen worden beschreven als onderliggende begrippen. Verkeerd gespelde termen en onregelmatige meervouds-/enkelvoudsvormen worden normaal gesproken als zoektermen opgenomen (zie skos:hiddenLabel). |
 | **code** | UF |
 
 </br> 
