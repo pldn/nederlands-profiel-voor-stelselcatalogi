@@ -72,6 +72,7 @@ B. De begripsbeschrijving is de eenheid van beheer
   .
   <http://nlbegrip.nl/synthesizer/doc/begrip/synthesizer> a prov:Entity;
     rdfs:label "Beschrijving van het begrip «Synthesizer»";
+    foaf:primaryTopic <http://nlbegrip.nl/synthesizer/id/begrip/synthesizer>;
     rdfs:comment "Deze beschrijving betreft de beschrijving van het begrip";
   .
   <http://nlbegrip.nl/synthesizer/id/begrip/vco> a skos:Concept;
@@ -79,6 +80,7 @@ B. De begripsbeschrijving is de eenheid van beheer
     skos:prefLabel "VCO"@nl;
     skos:altLabel "Voltage Controlled Oscillator"@en;
     skos:definition "Een VCO is een electronische geluidsbron waarbij de frequency van het geluid wordt gecontroleerd met een electrische spanning (voltage)"@nl;
+    foaf:primaryTopic <http://nlbegrip.nl/synthesizer/id/begrip/vco>;
     rdfs:isDefinedBy <http://nlbegrip.nl/synthesizer/1.0.0-snapshot-1>;
   .
   <http://nlbegrip.nl/synthesizer/doc/begrip/vco> a prov:Entity;
@@ -106,6 +108,7 @@ B. De begripsbeschrijving is de eenheid van beheer
 
   <http://nlbegrip.nl/synthesizer/doc/begrip/vco> a dcat:Dataset, prov:Entity;
     rdfs:label "Beschrijving van het begrip «VCO»";
+    foaf:primaryTopic <http://nlbegrip.nl/synthesizer/id/begrip/vco>;
     rdfs:comment "Deze beschrijving is zowel een begripsbeschrijving, een beheereenheid als de vindplek van de meest actuele versie van deze begripsbeschrijving";
   .
   <http://nlbegrip.nl/doc/begrip/vco/1.0.0-snapshot-1> a dcat:Dataset;
