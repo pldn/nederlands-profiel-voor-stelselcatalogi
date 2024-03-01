@@ -10,8 +10,13 @@ let respecConfig = {
     specType: "ST",                   // Standaard
     pubDomain: "sbb",
     license: "cc-by",
-    shortName: "def-st-mim-20220217",
-    edDraftURI: "https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi/",
+    shortName: "sbb",
+    // edDraftURI: "https://profielstelselcatalogus.pldn.nl",
+    publishVersion: "1.0",
+    publishDate: "2024-03-01",
+    previousPublishVersion: "1.0",
+    previousPublishDate: "2023-10-30",
+    previousMaturity: "cv",
     editors: [
         {
             name: "Jesse Bakker"
@@ -203,11 +208,11 @@ let respecConfig = {
             image: "https://tools.geostandaarden.nl/respec/style/logos/cc-by-nd.svg",
         },
     },
-    nl_organisationName: " ",
+    nl_organisationName: "Geonovum",
     nl_organisationPublishURL: "https://profielstelselcatalogus.pldn.nl",
-    latestVersion: ["nl_organisationPublishURL", "pubDomain", "/", "shortName", "/"],
-    thisVersion: ["nl_organisationPublishURL", "pubDomain", "/", "specStatus", "-", "specType", "-", "shortName", "-", "publishDate"],
-    prevVersion: ["nl_organisationPublishURL", "pubDomain", "/", "previousMaturity", "-", "specType", "-", "shortName", "-", "previousPublishDate"],
+    latestVersion: ["nl_organisationPublishURL"],
+    thisVersion: ["nl_organisationPublishURL", "specStatus", "-", "shortName", "-", "publishDate"],
+    prevVersion: ["nl_organisationPublishURL", "previousMaturity", "-", "shortName", "-", "previousPublishDate"],
     useLogo: true,
     useLabel: true,
 

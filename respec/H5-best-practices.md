@@ -264,3 +264,308 @@ Ergens ligt een knip tussen een samenhangende beschrijving van begrippen in een 
   * Soms wordt een ontologie ook gezien als een nog wat gedetailleerdere conceptualisering dan een thesaurus. Dit gebeurt bijvoorbeeld in de NEN 2660. Soms ook wordt een ontologie gezien als een soort informatiemodel of datamodel. In dit profiel doen we geen uitspraak over wat een ontologie is en waar exact de knip tussen een samenhangende beschrijving van begrippen en een ontologie ligt.
 * Good practice is om het begrippenkader en de ontologie te scheiden. 
 
+## Begrippenbeheer en metadata
+
+### Kernprincipes
+
+Om versiebeheer uit te werken, hanteren we de volgende kernprincipes die we hieronder verder zullen uitwerken:
+
+1. Gegevens zijn iets anders dan de onderwerpen waarover deze gegevens gaan.
+2. Om het over een onderwerp te kunnen hebben, zul je er aan moeten kunnen refereren.
+3. Onderwerpen kunnen gerelateerd aan elkaar zijn, hiervoor zijn geen gegevens nodig.
+4. We versioneren gegevens, niet de onderwerpen waarover de gegevens gaan.
+5. Als we het over de gegevens *zelf* hebben, dan hebben we het over meta-gegevens.
+6. Van één onderwerp kunnen er meerdere gegevensobjecten zijn.
+7. De eenheid van beheer bestaat uit één of meerdere gegevensobjecten.
+
+#### 1. Gegevens zijn iets anders dan de onderwerpen waarover deze gegevens gaan.
+Een website over Johan Cruyff, is iets anders dan de persoon Johan Cruyff.
+
+Gegevens zien we als uitspraken over een bepaald onderwerp. Gegevens die over hetzelfde onderwerp gaan, noemen we een "gegevensobject".
+
+Als twee onderwerpen aan elkaar gerelateerd zijn, dan zijn (dus) de onderwerpen aan elkaar gerelateerd, en niet de gegevensobjecten.
+
+Omdat de relatie ook een uitspraak is, zul je (dus) moeten nadenken welk gegevensobject deze uitspraak omvat. Kandidaten zijn daarbij de gegevensobjecten die gaan over de onderwerpen van de relatie. Maar het is ook mogelijk om de relatie als een zelfstandig onderwerp te beschouwen. Op dat moment is het ook mogelijk om de gegevens over de relatie in een afzonderlijk gegevensobject op te nemen.
+
+#### 2. Om het over een onderwerp te kunnen hebben, zul je er aan moeten kunnen refereren.
+Een referentie is niet het onderwerp zelf, maar we verwijzen er wel naar. Zoals we met de naam "Johan Cruyff" verwijzen naar de beroemde voetballer. Ook betreft dit niet een referentie naar het gegevensobject, maar juist de persoon zelf.
+
+#### 3. Onderwerpen kunnen gerelateerd aan elkaar zijn, hierover zijn geen gegevens nodig
+Een uitspraak als "Johan Cruyff is een voetballer" of "Johan Cruyff is geboren in Amsterdam" zijn relaties tussen twee onderwerpen:
+
+- De relatie tussen het onderwerp «Johan Cruyff» en het onderwerp «Voetballer»;
+- De relatie tussen het onderwerp «Johan Cruyff» en het onderwerp «Amsterdam».
+
+Het gaat hier duidelijk niet over relaties tussen de gegevensobjecten. In de uitspraken gebruiken we de referenties naar de onderwerpen.
+
+#### 4. We versioneren gegevens, niet de onderwerpen waarover de gegevens gaan.
+Hoewel zowel Johan Cruyff, voetbal en Amsterdam een levenscyclus doormaken (waarover we ook weer gegevens kunnen vastleggen), als we het over versiebeheer hebben: dan hebben we het over versies van vastlegde gegevens.
+
+Zo kan een website over Johan Cruyff meerdere versies hebben. Zo is de eerste versie van de Nederlandse wikipediapagina over Johan Cruyf gemaakt op 9 november 2003. En zijn er inmiddels al meer dan 500 verschillende versies van geweest.
+
+#### 5. Als we het over de gegevens zelf hebben, dan hebben we het over meta-gegevens
+De uitspraak "De eerste versie van de Nederlandse wikipediapagina over Johan Cruyff is gemaakt op 9 november 2003" gaat over een gegevensobject die zelf weer over een onderwerp gaat.
+
+Bovendien zit er eigenlijk nog een onderwerp verstopt in bovenstaande zin, namelijk de "Nederlandse wikipediapagina over Johan Cruyff". Als we uitspraken over dit onderwerp zeggen, dan zijn ook dat uitspraken die (net als uitspraken over het onderwerp zelf) kunnen veranderen door de tijd heen.
+
+Ook uitspraken over een versie van een gegevensobject kunnen veranderen door de tijd heen. Zoals de status van een versie. Dezelfde versie kan eerst de status «in concept» hebben, en op een later moment de status «gepubliceerd».
+
+#### 6. Van één onderwerp kunnen er meerdere gegevensobjecten zijn
+De wikipediapagina over Johan Cruyff bevat andere soorten gegevens dan het medisch dossier van Johan Cruyff. Toch zijn het beiden gegevensobjecten over Johan Cruyff. Bij het nemen van beslissingen over versiebeheer is het van belang om na te denken welke soorten gegevens in welk gegevensobject worden beheerd.
+
+#### 7. De eenheid van beheer bestaat uit één of meerdere gegevensobjecten
+De eenheid van beheer is het geheel van gegevensobjecten die als één gezamenlijk eenheid wordt beheerd. Die eenheden van beheer krijgen versies. Het is een keuze om de eenheid van beheer op het niveau van een enkel gegevensobject te doen (zoals bij de wikipediapagina van Johan Cruyff), of juist de eenheid van beheer te doen op een geheel van gegevensobjecten.
+
+### Varianten voor versiebeheer van begripsbeschrijvingen
+
+Het toepassen van de kernprincipes voor versiebeheer leidt tot het volgende model.
+
+![](respec/media/versiebeheer.svg)
+
+Dit model is op twee manieren te gebruiken bij het versiesbeheer in de context van SBB:
+
+- A. De eenheid van beheer is een afzonderlijke begripsbeschrijving. We beheren deze begripsbeschrijvingen (die daarmee een eigen versiehistorie kennen).
+- B. De eenheid van beheer is het begrippenkader. We beheren begrippenkaders (die ook een eigen versiehistorie kennen) en daarmee de beschrijvingen van de begrippen die ertoe behoren;
+- C. De eenheid van beheer is een (thematische) bundeling van beschrijvingen anders dan het begrippenkader (de bundeling heeft als geheel versiehistorie).
+
+#### A. Begripsbeschrijving als eenheid van beheer
+
+![](respec/media/versiebeheer2.png)
+
+Ook in dit model lopen relaties tussen begrippen altijd van het ene begrip naar het andere begrip. Stel dat er een relatie loopt van het begrip «Autobestuurder» naar het begrip «Auto». De begripsbeschrijving worden in dit model altijd afzonderlijk bijgehouden. We weten dan niet direct welke versie van de begripsbeschrijving is gebruikt. Immers: onze basisprincipes stellen dat een relatie tussen onderwerpen loopt (en niet tussen gegevensobjecten).
+
+- De relatie is: «Autobestuurder» *is gerelateerd aan* «Auto»
+- De versierelatie is: [Beschrijving van het begrip Autobestuurder versie 1.0.3] *maakt gebruik van* [Beschrijving van het begrip auto versie 1.2.3].
+
+Ook in dit geval zou je kunnen spreken van een "import" relatie.
+
+#### B. Begrippenkader als eenheid van beheer
+
+![](respec/media/versiebeheer1.svg)
+
+In dit model lopen relaties tussen begrippen altijd van het ene begrip naar het andere begrip. Stel dat er een relatie loopt van het begrip «Autobestuurder» naar het begrip «Auto», waarbij de beschrijving van het begrip «Auto» wordt bijgehouden in een ander begrippenkader dan de beschrijving van het begrip «Autobestuurder». We weten dan niet direct welke versie van de begripsbeschrijving is gebruikt. Immers: onze basisprincipes stellen dat een relatie tussen onderwerpen loopt (en niet tussen gegevensobjecten).
+
+- De relatie is: «Autobestuurder» *is gerelateerd aan* «Auto»
+- De versierelatie is: [Begrippenkader autobestuurder versie 1.0.3] *maakt gebruik van* [Begrippnkader auto versie 1.2.3].
+
+Een dergelijke versierelatie wordt ook vaak wel een "import" relatie genoemd.
+
+#### C. (thematische) bundeling als eenheid van beheer
+
+![](respec/media/versiebeheer3.png)
+
+In dit model lopen relaties tussen begrippen altijd van het ene begrip naar het andere begrip. Stel dat er een relatie loopt van het begrip «Autobestuurder» naar het begrip «Auto», waarbij de beschrijving van het begrip «Auto» wordt bijgehouden in een andere beheer eenheid dan de beschrijving van het begrip «Autobestuurder». We weten dan niet direct welke versie van de begripsbeschrijving is gebruikt. Immers: onze basisprincipes stellen dat een relatie tussen onderwerpen loopt (en niet tussen gegevensobjecten).
+
+- De relatie is: «Autobestuurder» *is gerelateerd aan* «Auto»
+- De versierelatie is: [Beheereenheid 42 versie 1.0.3] *maakt gebruik van* [Beheereenheid 76 versie 1.2.3].
+
+Een dergelijke versierelatie wordt ook vaak wel een "import" relatie genoemd.
+
+### Taalbinding
+
+De taalbinding die we voorstellen maakt gebruik van de volgende vocabulaires:
+
+- SKOS voor het beschrijven van begrippen;
+- DCAT voor het beschrijven van datasets (als eenheid van beheer, eenheid van publicatie of eenheid van gebruik);
+- PROV voor het beschrijving van herkomstinformatie m.b.t. datasets.
+
+Met deze keuze voor de taalbinding is het van belang om rekening te houden met de volgende requirements:
+
+1. Een voorkomen van `skos:Concept` kan onderdeel zijn van meerdere voorkomens van `skos:ConceptScheme`.
+2. Elk onderdeel van de beschrijving van een `skos:Concept` wordt beheerd in precies één voorkomen van een `dcat:Dataset`.
+3. Elk onderdeel van de beschrijving van een `skos:Concept` kan gepubliceerd worden in meerdere voorkomens van een `dcat:Dataset`.
+4. Onderdelen van de beschrijving van een `skos:Concept` kunnen gebundeld worden in een voorkomen van een `dcat:Dataset`, zodat hierover herkomstinformatie genoteerd kan worden.
+
+#### Taalbinding Begrippenkader en Dataset (eenheid van publicatie, eenheid van beheer)
+
+In de SBB wordt gesproken over "Begrippenkader" en "in kader". De taalbinding voor deze twee termen is als volgt:
+- Begrippenkader = `skos:ConceptScheme`;
+- in kader = `skos:inScheme`
+
+Begrippen kunnen in meerdere begrippenkaders voorkomen. Indien een dergelijk begrippenkader ook beoogd is als de beheer-eenheid, dan geldt bovendien *ook* nog de taalbinding:
+- Begrippenkader = `skos:ConceptScheme` EN `dcat:Dataset`
+
+Merk op dat we geen specifieke taalbinding hebben voor begrippenkaders-als-eenheid van beheer of begrippenkaders-als eenheid van publicatie. Of een dataset een beheereenheid is of een publicatie-eenheid volgt uit het gebruik, niet uit de definitie. We onderkennen (dus) alleen de taalbinding:
+- Dataset = `dcat:Dataset`.
+
+Of een bepaalde dataset een eenheid van publicatie of beheer is, volgt uit het gebruik, niet uit de taalbinding.
+
+Het term "Begrippenkader" en synoniemen als "Taxonomie", "Thesaurus" of "Begrippenstelsel" zijn daarmee zowel bruikbaar voor situaties waarbij een abstracte verzameling van begrippen wordt bedoeld (via `skos:inScheme`) en voor situaties waar bij een verzameling van beschrijvingen van dergelijke begrippen wordt bedoeld (via `dcat:Dataset`). Alleen als in de taalbinding beide aanwezig zijn, is sprake van *punning* en wordt zowel een abstracte verzameling van begrippen bedoeld als een verzameling van beschrijvingen.
+
+> Advies is om expliciet aan te geven bij de beschrijving van een dataset (al-dan-niet gelijkt aan het begrippenkader) of ook sprake is van een eenheid van beheer, publicatie of herkomst.
+
+> Advies is om afzonderlijke resources (met eigen URI's) te gebruiken op het moment dat het onderscheid van belang is.
+
+#### Taalbinding Herkomstinformatie
+
+Voor de taalbinding van herkomstinformatie wordt gebruik gemaakt van PROV:
+- Een eenheid van herkomstinformatie = `prov:Entity`
+
+#### Voorbeelduitwerkingen.
+
+Drie voorbeelduitwerkingen geven we:
+- A. De begripsbeschrijving is de eenheid van beheer
+- B. Het begrippenkader is ook de eenheid van beheer
+- C. De (thematische) bundeling is de eenheid van beheer
+
+
+#### Variant A - Begripsbeschrijving als eenheid van beheer
+
+```
+  @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+  @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+  @prefix owl: <http://www.w3.org/2002/07/owl#>.
+  @prefix dct: <http://purl.org/dc/terms/>.
+  @prefix dcat: <http://www.w3.org/ns/dcat#>.
+
+  <http://nlbegrip.nl/synthesizer/id/begrip/vco> a skos:Concept;
+    rdfs:label "VCO"@nl;
+    skos:prefLabel "VCO"@nl;
+    skos:altLabel "Voltage Controlled Oscillator"@en;
+    skos:definition "Een VCO is een electronische geluidsbron waarbij de frequency van het geluid wordt gecontroleerd met een electrische spanning (voltage)"@nl;
+    rdfs:isDefinedBy <http://nlbegrip.nl/doc/begrip/vco/1.0.0-snapshot-1>;
+  .
+
+  <http://nlbegrip.nl/synthesizer/doc/begrip/vco> a dcat:Dataset, prov:Entity;
+    rdfs:label "Beschrijving van het begrip «VCO»";
+    foaf:primaryTopicOf <http://nlbegrip.nl/synthesizer/id/begrip/vco>;
+    rdfs:comment "Deze beschrijving is zowel een begripsbeschrijving, een beheereenheid als de vindplek van de meest actuele versie van deze begripsbeschrijving";
+  .
+  <http://nlbegrip.nl/doc/begrip/vco/1.0.0-snapshot-1> a dcat:Dataset;
+    rdfs:label "Versie 1.0.0 snapshot 1 van de besschrijving van het begrip «VCO»";
+    dct:isVersionOf <http://nlbegrip.nl/synthesizer/doc/begrip/vco>;
+  .
+```
+
+#### Variant B - Begrippenkader als eenheid van beheer
+
+```
+  @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+  @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+  @prefix owl: <http://www.w3.org/2002/07/owl#>.
+  @prefix dct: <http://purl.org/dc/terms/>.
+  @prefix dcat: <http://www.w3.org/ns/dcat#>.
+
+  <http://nlbegrip.nl/synthesizer#> a skos:ConceptScheme, dcat:Dataset;
+    rdfs:label "Synthesizer begrippen";
+    rdfs:comment "Dit begrippenkader is ook een beheereenheid en de vindplek van de meest actuele versie";
+    owl:versionInfo "Versie 1.0.0 snapshot 1";
+    rdfs:isDefinedBy <http://nlbegrip.nl/synthesizer>;
+  .
+  <http://nlbegrip.nl/synthesizer/1.0.0-snapshot-1> a dcat:Dataset;
+    rdfs:label "Versie 1.0.0 snapshot 1 van het begrippenkader voor synthesizers";
+    dct:isVersionOf <http://nlbegrip.nl/synthesizer#>;
+  .
+  <http://nlbegrip.nl/synthesizer/id/begrip/synthesizer> a skos:Concept;
+    rdfs:label "Synthesizer"@nl;
+    skos:prefLabel "Synthesizer"@nl;
+    skos:definition "Een synthesizer is een elektronisch muziekinstrument dat klanken en geluiden kunstmatig opwekt."@nl;
+    skos:inScheme <http://nlbegrip.nl/synthesizer#>
+    dct:source <https://nl.wikipedia.org/wiki/Synthesizer>;
+    rdfs:isDefinedBy <http://nlbegrip.nl/synthesizer/1.0.0-snapshot-1>;
+  .
+  <http://nlbegrip.nl/synthesizer/doc/begrip/synthesizer> a prov:Entity;
+    rdfs:label "Beschrijving van het begrip «Synthesizer»";
+    foaf:primaryTopic <http://nlbegrip.nl/synthesizer/id/begrip/synthesizer>;
+    rdfs:comment "Deze beschrijving betreft de beschrijving van het begrip";
+  .
+  <http://nlbegrip.nl/synthesizer/id/begrip/vco> a skos:Concept;
+    rdfs:label "VCO"@nl;
+    skos:prefLabel "VCO"@nl;
+    skos:altLabel "Voltage Controlled Oscillator"@en;
+    skos:definition "Een VCO is een electronische geluidsbron waarbij de frequency van het geluid wordt gecontroleerd met een electrische spanning (voltage)"@nl;
+    rdfs:isDefinedBy <http://nlbegrip.nl/synthesizer/1.0.0-snapshot-1>;
+  .
+  <http://nlbegrip.nl/synthesizer/doc/begrip/vco> a prov:Entity;
+    rdfs:label "Beschrijving van het begrip «VCO»";
+    rdfs:comment "Deze beschrijving betreft de beschrijving van het begrip";
+  .
+```
+
+#### Variant C - (thematische) bundeling als eenheid van beheer
+
+```
+  @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+  @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+  @prefix owl: <http://www.w3.org/2002/07/owl#>.
+  @prefix dct: <http://purl.org/dc/terms/>.
+  @prefix dcat: <http://www.w3.org/ns/dcat#>.
+
+  <http://nlbegrip.nl/synthesizer#> a dcat:Dataset;
+    rdfs:label "Synthesizer basis"@nl;
+    rdfs:comment "Deze dataset bevat de beschrijvingen van de begrippen(kaders), collecties en bronnen binnen de context van Begrippenkader Synthesizer";
+    owl:versionInfo "Versie 1.0.0 snapshot 1";
+    rdfs:isDefinedBy <http://nlbegrip.nl/synthesizer>;
+  .
+  <http://nlbegrip.nl/synthesizer-basis/1.0.0-snapshot-1> a dcat:Dataset;
+    rdfs:label "Versie 1.0.0 snapshot 1 van synthesizer beschrijvingen"@nl;
+    dct:isVersionOf <http://nlbegrip.nl/synthesizer-basis#>;
+  .
+  <http://nlbegrip.nl/synthesizer/id/begrippenkader/synthesizer> a skos:ConceptScheme;
+    rdfs:label "Syntesizer begrippen"@nl;
+    rdfs:comment "Dit begrippenkader is een verzameling van begrippen die in de context van synthesizers relevant zijn."@nl;
+    skos:hasTopConcept 
+      <http://nlbegrip.nl/synthesizer/id/begrip/synthese> ,
+      <http://nlbegrip.nl/synthesizer/id/begrip/synthesizer> ,
+      <http://nlbegrip.nl/synthesizer/id/begrip/vco>;
+  .
+  <http://nlbegrip.nl/synthesizer/id/begrip/synthesizer> a skos:Concept;
+    rdfs:label "Synthesizer"@nl;
+    skos:prefLabel "Synthesizer"@nl;
+    skos:definition "Een synthesizer is een elektronisch muziekinstrument dat klanken en geluiden kunstmatig opwekt."@nl;
+    skos:related <http://nlbegrip.nl/synthesizer/id/begrip/synthese>;
+    skos:inScheme <http://nlbegrip.nl/synthesizer/id/begrippenkader/synthesizer>;
+    dct:source <https://nl.wikipedia.org/wiki/Synthesizer>;
+    rdfs:isDefinedBy <http://nlbegrip.nl/synthesizer/1.0.0-snapshot-1>;
+  .  
+  <http://nlbegrip.nl/synthesizer/id/begrip/synthese> a skos:Concept;
+    rdfs:label "Synthese"@nl;
+    skos:prefLabel "Synthese"@nl;
+    skos:definition "Het kunstmatig opwekken van klanken en geluiden."@nl;
+    skos:inScheme <http://nlbegrip.nl/synthesizer/id/begrippenkader/synthesizer>;
+    rdfs:isDefinedBy <http://nlbegrip.nl/synthesizer/1.0.0-snapshot-1>;
+  .
+  <http://nlbegrip.nl/synthesizer/id/begrip/vco> a skos:Concept;
+    rdfs:label "VCO"@nl;
+    skos:prefLabel "VCO"@nl;
+    skos:altLabel "Voltage Controlled Oscillator"@en;
+    skos:definition "Een VCO is een electronische geluidsbron waarbij de frequency van het geluid wordt gecontroleerd met een electrische spanning (voltage)"@nl;
+    skos:inScheme <http://nlbegrip.nl/synthesizer/id/begrippenkader/synthesizer>;
+    rdfs:isDefinedBy <http://nlbegrip.nl/synthesizer/1.0.0-snapshot-1>;
+  .
+  <http://nlbegrip.nl/synthesizer-synthese#> a dcat:Dataset;
+    rdfs:label "Synthese begrippen"@nl;
+    rdfs:comment "Deze dataset bevat beschrijvingen van begrippen over modulatie; voortbouwend op het begrippenkader Synthesizer"@nl;
+    owl:versionInfo "Versie 1.0.0 snapshot 1";
+    rdfs:isDefinedBy <http://nlbegrip.nl/synthesizer-synthese>;
+  .
+  <http://nlbegrip.nl/synthesizer-synthese/1.0.0-snapshot-1> a dcat:Dataset;
+    rdfs:label "Versie 1.0.0 snapshot 1 van synthesizer-synthese beschrijvingen"@nl;
+    dct:isVersionOf <http://nlbegrip.nl/synthesizer-synthese#>;
+  .
+  <http://nlbegrip.nl/synthesizer-synthese/id/begrip/granulaire-synthese> a skos:Concept;
+    rdfs:label "Granulaire Synthese"@nl;
+    skos:prefLabel "Granulaire Synthese"@nl;
+    skos:definition "Een techniek waarbij een geluidsfragment, ook wel sample, wordt opgedeeld in zeer korte fragmenten, om daarna te worden herschikt voor het verkrijgen van nieuwe klanken."@nl;
+    skos:broader <http://nlbegrip.nl/synthesizer/id/begrip/synthese>;
+    skos:inScheme <http://nlbegrip.nl/synthesizer/id/begrippenkader/synthesizer>;
+    rdfs:isDefinedBy <http://nlbegrip.nl/synthesizer-synthese/1.0.0-snapshot-1>;
+  .
+  <http://nlbegrip.nl/synthesizer-synthese/id/begrip/subharmonische-synthese> a skos:Concept;
+    rdfs:label "Subharmonische Synthese"@nl;
+    skos:prefLabel "Subharmonische Synthese"@nl;
+    skos:definition "Een techniek waarbij de frequentie van een geluid wordt verdeeld in subharmonische componenten, wat resulteert in diepe, rijke klanken."@nl;
+    skos:broader <http://nlbegrip.nl/synthesizer/id/begrip/synthese>;
+    skos:inScheme <http://nlbegrip.nl/synthesizer/id/begrippenkader/synthesizer>;
+    rdfs:isDefinedBy <http://nlbegrip.nl/synthesizer-synthese/1.0.0-snapshot-1>;
+  .
+  <http://nlbegrip.nl/synthesizer-synthese/id/begrip/fm-synthese> a skos:Concept;
+    rdfs:label "M-synthese (Frequentie Modulatie)"@nl;
+    skos:prefLabel "FM-synthese"@nl;
+    skos:altLabel "Frequentie modulatie"@nl;
+    skos:definition "Een techniek waarbij de frequentie van een draaggolfgolf wordt gemoduleerd door een modulerende golf. Dit leidt tot complexe, bell-achtige klanken."@nl;
+    skos:broader <http://nlbegrip.nl/synthesizer/id/begrip/synthese>;
+    skos:inScheme <http://nlbegrip.nl/synthesizer/id/begrippenkader/synthesizer>;
+    rdfs:isDefinedBy <http://nlbegrip.nl/synthesizer-synthese/1.0.0-snapshot-1>;
+  .
+```
