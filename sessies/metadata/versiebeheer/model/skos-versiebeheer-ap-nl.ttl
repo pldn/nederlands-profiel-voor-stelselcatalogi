@@ -16,112 +16,74 @@
 
 skosapnl:Begrip
     sh:property [
-        sh:name "gedefinieerd in"@nl ;
-        sh:path rdfs:isDefinedBy ;
-        sh:description "de asset waar dit begrip gedefinieerd wordt"@nl ;
-        sh:class owl:Ontology ;
+        sh:name "gedefinieerd in"@nl;
+        sh:path rdfs:isDefinedBy;
+        sh:description "de dataset waar dit begrip gedefinieerd wordt"@nl;
+        sh:class owl:Ontology;
     ] , [
-        sh:name "is onderwerp van"@nl ;
-        sh:path [sh:inversePath foaf:topic] ;
-        sh:minCount 1 ;
-        sh:node skosapnl:Begripsbeschrijving ;
-    ]
+        sh:name "is onderwerp van"@nl;
+        sh:path [sh:inversePath foaf:primaryTopic];
+        sh:minCount 1;
+        sh:node skosapnl:Begripsbeschrijving;
+    ];
 .
 
-skosapnl:Asset a sh:NodeShape ;
-  rdfs:label "Asset"@nl ;
-  sh:targetClass adms:Asset ;
-  sh:property [ 
-    sh:path rdf:type ;
-    sh:in ( 
-        adms:Asset
-        prov:Entity
-        owl:Ontology
-        skos:ConceptScheme
-    ) ],
-    skosapnl:_identificatie ,
-    skosapnl:_contactpunt ,
+skosapnl:Dataset a sh:NodeShape;
+  rdfs:label "Dataset"@nl;
+  sh:targetClass dcat:Dataset;
+  sh:property
     skosapnl:_beschrijving ,
     skosapnl:_uitgever ,
     skosapnl:_titel ,
-    skosapnl:_type ,
     skosapnl:_versie ,
-    skosapnl:_versieInformatie ,
-    skosapnl:_status ,
     skosapnl:_isVersieVan ,
-    skosapnl:_bestaatUit ,
-    skosapnl:_maaktGebruikVan ,
+    skosapnl:_maaktGebruikVan;
 .
 
-skosapnl:Begripsbeschrijving a sh:NodeShape ;
-  rdfs:label "Begripsbeschrijving"@nl ;
+skosapnl:Begripsbeschrijving a sh:NodeShape;
+  rdfs:label "Begripsbeschrijving"@nl;
   sh:property [
-      sh:name "onderwerp" ;
-      sh:description "Het begrip waar dit gegevensobject over gaat."@nl ;
-      sh:path foaf:topic ;
-      sh:class skos:Concept ;
+      sh:name "onderwerp"@nl;
+      sh:description "Het begrip waar deze beschrijving over gaat."@nl;
+      sh:path foaf:primaryTopic;
+      sh:class skos:Concept;
       sh:node skosapnl:Begrip 
     ] ,
-    skosapnl:_identificatie ,
-    skosapnl:_contactpunt ,
     skosapnl:_beschrijving ,
     skosapnl:_uitgever ,
     skosapnl:_titel ,
-    skosapnl:_type ,
     skosapnl:_versie ,
-    skosapnl:_versieInformatie ,
-    skosapnl:_status ,
-    skosapnl:_isVersieVan ,
-    skosapnl:_bestaatUit
+    skosapnl:_isVersieVan;
  .
 
 ########################################################
 
-skosapnl:_identificatie a sh:PropertyShape ;
-    sh:name "identificatie"@nl ;
-    sh:path dct:identifier .
-skosapnl:_contactpunt a sh:PropertyShape ;
-    sh:name "contactpunt" ;
-    sh:path dcat:contactPoint ;
-    sh:description "contactpunt waar meer informatie over de asset kan worden opgevraagd, of waar foutmeldingen en suggesties kunnen worden gedaan"@nl .
-skosapnl:_beschrijving a sh:PropertyShape ;
-    sh:name "beschrijving" ;
-    sh:path dct:description ;
-    sh:description "een beschrijving van de asset"@nl .
-skosapnl:_uitgever a sh:PropertyShape ;
-    sh:name "uitgever"@nl ;
-    sh:path dct:publisher ;
-    sh:description "de organisatie die de asset beschikbaar heeft gesteld"@nl .
-skosapnl:_titel a sh:PropertyShape ;
-    sh:name "titel" ;
-    sh:path dct:title ;
-    sh:description "naam van de asset"@nl .
-skosapnl:_type a sh:PropertyShape ;
-    sh:name "type" ;
-    sh:path dct:type ;
-    sh:class skos:Concept ;
-    sh:description "categorie waartoe de asset behoort"@nl .
-skosapnl:_versie a sh:PropertyShape ;
-    sh:name "versie" ;
-    sh:description "versienummer van de asset" ;
+skosapnl:_beschrijving a sh:PropertyShape;
+    sh:name "beschrijving"@nl;
+    sh:path dct:description;
+    sh:description "een beschrijving van de dataset"@nl .
+
+skosapnl:_uitgever a sh:PropertyShape;
+    sh:name "uitgever"@nl;
+    sh:path dct:publisher;
+    sh:description "de organisatie die de dataset beschikbaar heeft gesteld"@nl .
+
+skosapnl:_titel a sh:PropertyShape;
+    sh:name "titel"@nl;
+    sh:path dct:title;
+    sh:description "naam van de dataset"@nl .
+
+skosapnl:_versie a sh:PropertyShape;
+    sh:name "versie"@nl;
+    sh:description "versienummer van de asset"@nl;
     sh:path owl:versionInfo .
-skosapnl:_versieInformatie a sh:PropertyShape ;
-    sh:name "versie informatie" ;
-    sh:path adms:versionNotes ;
-    sh:description "beschrijving van de wijzigingen tussen deze en de vorige versie"@nl .
-skosapnl:_status a sh:PropertyShape ;
-    sh:name "status" ;
-    sh:path adms:status ;
-    sh:description "status van de asset in de context van een bepaald workflow process"@nl .
-skosapnl:_isVersieVan a sh:PropertyShape ;
-    sh:name "is versie van" ;
-    sh:path dct:isVersionOf ;
+
+skosapnl:_isVersieVan a sh:PropertyShape;
+    sh:name "is versie van"@nl;
+    sh:path dct:isVersionOf;
     sh:description "een asset waar de beschreven asset een versie van is"@nl .
-skosapnl:_bestaatUit a sh:PropertyShape ;
-    sh:name "bestaatUit" ;
-    sh:path adms:includedAsset ;
-    sh:description "een asset die onderdeel is van de beschreven asset"@nl .
-skosapnl:_maaktGeruikVan a sh:PropertyShape ;
-    sh:name "maakt gebruik van" ;
-    sh:path owl:imports ;
-    sh:description "een asset die logisch als onderdeel van de beschreven asset wordt beschouwd"@nl .
+
+skosapnl:_maaktGebruikVan a sh:PropertyShape;
+    sh:name "maakt gebruik van"@nl;
+    sh:path owl:imports;
+    sh:description "Een dataset die logisch als onderdeel van de beschreven asset wordt beschouwd"@nl .

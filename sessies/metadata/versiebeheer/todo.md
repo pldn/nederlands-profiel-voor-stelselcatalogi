@@ -1,5 +1,13 @@
 # TO DO: Nog verder uitwerken
 
+- Update Varianten.md
+- Update Thesaurus-versiebeheer.ttl
+- archiveren niet gebruikte documentatie.
+
+
+
+## Oude TO-DO's
+
 Wat er nog mist in het conceptueel model:
 - Publicaties
 - Informatieobjecten
@@ -20,8 +28,6 @@ Wat we nodig hebben
 ### Nog ff niet:
 - Stukje tekst in de Respec (= stukje gegeneerd op basis van bovenstaand + klein stukje proza)
 
-
-## Oude TO-DO's
 
 TODO
 - Tekst updaten
