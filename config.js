@@ -6,12 +6,17 @@ let respecConfig = {
     title: "SBB - Standaard voor het beschrijven van begrippen",
     // subtitle is NIET verplicht
     // subtitle: "Subtitle",
-    specStatus: "cv",               // Consultatieversie
+    specStatus: "vv",               // Versie ter vaststelling
     specType: "ST",                   // Standaard
     pubDomain: "sbb",
     license: "cc-by",
-    shortName: "def-st-mim-20220217",
-    edDraftURI: "https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi/",
+    shortName: "sbb",
+    // edDraftURI: "https://profielstelselcatalogus.pldn.nl",
+    publishVersion: "1.0",
+    publishDate: "2024-03-01",
+    previousPublishVersion: "1.0",
+    previousPublishDate: "2023-10-30",
+    previousMaturity: "cv",
     editors: [
         {
             name: "Jesse Bakker"
@@ -78,8 +83,38 @@ let respecConfig = {
     ],
     github: "pldn/nederlands-profiel-voor-stelselcatalogi",
     issueBase: "https://github.com/pldn/nederlands-profiel-voor-stelselcatalogi/issues/",
-    maxTocLevel: 5,
+    maxTocLevel: 3,
     localBiblio: {
+        SKOS: 
+            {
+                "authors": [
+                    "Alistair Miles",
+                    "Sean Bechhofer"
+                ],
+                "href": "https://www.w3.org/TR/skos-reference/",
+                "title": "SKOS Simple Knowledge Organization System Reference",
+                "status": "REC",
+                "publisher": "W3C",
+                "deliveredBy": [
+                    {
+                        "url": "https://www.w3.org/2006/07/SWD/",
+                        "shortname": "swd"
+                    }
+                ],
+                "versions": [
+                    "skos-reference-20090818",
+                    "skos-reference-20090615",
+                    "skos-reference-20090317",
+                    "skos-reference-20080829",
+                    "skos-reference-20080609",
+                    "skos-reference-20080125"
+                ],
+                "obsoletes": [
+                    "swbp-skos-core-spec"
+                ],
+                "id": "skos-reference",
+                "date": "18 August 2009"
+            },
         NLAPI: {
             title: "Nederlandse API strategie",
             href: "https://docs.geostandaarden.nl/api/API-Strategie/",
@@ -134,8 +169,113 @@ let respecConfig = {
             id: "vocab-adms-asset",
             date: "1 August 2013"
         },
-    lint: { "no-unused-dfns": false },
     },    
+    alternateFormats: [
+        {
+          label: "SHACL",
+          uri: "https://raw.githubusercontent.com/pldn/nederlands-profiel-voor-stelselcatalogi/main/profiles/skos-ap-nl.ttl",
+        },
+        {
+          label: "SKOS",
+          uri: "https://raw.githubusercontent.com/pldn/nederlands-profiel-voor-stelselcatalogi/main/concepts/thesaurus.ttl",
+        },
+    ],
+    labelColor: {
+        def: "#045D9F",
+        wv: "#FF0000",
+        cv: "#045D9F",
+        vv: "#045D9F",
+        basis: "#80CC28",
+    },
+    
+    licenses: {
+        "cc0": {
+            name: "Creative Commons 0 Public Domain Dedication",
+            short: "CC0",
+            url: "https://creativecommons.org/publicdomain/zero/1.0/",
+            image: "https://tools.geostandaarden.nl/respec/style/logos/CC-Licentie.svg",
+        },
+        "cc-by": {
+            name: "Creative Commons Attribution 4.0 International Public License",
+            short: "CC-BY",
+            url: "https://creativecommons.org/licenses/by/4.0/legalcode",
+            image: "https://tools.geostandaarden.nl/respec/style/logos/cc-by.svg",
+        },
+        "cc-by-nd": {
+            name: "Creative Commons Naamsvermelding-GeenAfgeleideWerken 4.0 Internationaal",
+            short: "CC-BY-ND",
+            url: "https://creativecommons.org/licenses/by-nd/4.0/legalcode.nl",
+            image: "https://tools.geostandaarden.nl/respec/style/logos/cc-by-nd.svg",
+        },
+    },
+    nl_organisationName: "Geonovum",
+    nl_organisationPublishURL: "https://profielstelselcatalogus.pldn.nl",
+    latestVersion: ["nl_organisationPublishURL"],
+    thisVersion: ["nl_organisationPublishURL", "specStatus", "-", "shortName", "-", "publishDate"],
+    prevVersion: ["nl_organisationPublishURL", "previousMaturity", "-", "shortName", "-", "previousPublishDate"],
+    useLogo: true,
+    useLabel: true,
+
+    license: "cc-by",
+    addSectionLinks: true,
+
+    localizationStrings: {
+        en: {
+            wv: "Editor's draft",
+            cv: "Candidate recommendation",
+            vv: "Proposed recommendation",
+            def: "Recommendation",
+            basis: "Document",
+            //eo: "Outdated version",
+            //tg: "Rescinded version",
+            no: "Norm",
+            st: "Standard",
+            im: "Information model",
+            pr: "Practical guideline",
+            hr: "Guide",
+            wa: "Work process agreement",
+            al: "General",
+            bd: "Governance documentation",
+            bp: "Best practice",
+        },
+        nl: {
+            wv: "Werkversie",
+            cv: "Consultatieversie",
+            vv: "Versie ter vaststelling",
+            def: "Vastgestelde versie",
+            basis: "Document",
+            //eo: "Verouderde versie",
+            //tg: "Teruggetrokken versie",
+            no: "Norm",
+            st: "Standaard",
+            im: "Informatiemodel",
+            pr: "Praktijkrichtlijn",
+            hr: "Handreiking",
+            wa: "Werkafspraak",
+            al: "Algemeen",
+            bd: "Beheerdocumentatie",
+            bp: "Best practice",
+        },
+    },
+
+    sotdText: {
+        nl: {
+            sotd: "Status van dit document",
+            def: `Dit is de definitieve versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.`,
+            wv: `Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.`,
+            cv: `Dit is een consultatieversie. Commentaar over dit document kan gestuurd worden naar []`,
+            vv: `Dit is de definitieve conceptversie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.`,
+            basis: "Dit is een document zonder officiële status.",
+        },
+        en: {
+            sotd: "Status of this document",
+            def: `This is the definitive version of this document. Edits resulting from consultations have been applied.`,
+            wv: `This is a working draft that can be changed, removed or replaced by other documents at any time. It is not a stable document.`,
+            cv: `This is a stable draft, published for public comment. Comments regarding this document may be sent to `,
+            vv: `This is the final draft of this document. Edits resulting from consultations have been applied.`,
+            basis: "This document has no official standing.",
+        },
+    },
 
    // latestVersion: "https://profielstelselcatalogus.pldn.nl/",
 
