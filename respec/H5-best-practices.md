@@ -320,7 +320,7 @@ De eenheid van beheer is het geheel van gegevensobjecten die als één gezamenli
 
 Het toepassen van de kernprincipes voor versiebeheer leidt tot het volgende model.
 
-![](respec/media/versiebeheer.svg)
+<!-- ![](respec/media/versiebeheer.png) -->
 
 Dit model is op twee manieren te gebruiken bij het versiesbeheer in de context van SBB:
 
@@ -330,7 +330,7 @@ Dit model is op twee manieren te gebruiken bij het versiesbeheer in de context v
 
 #### A. Begripsbeschrijving als eenheid van beheer
 
-![](respec/media/versiebeheer2.png)
+<!-- ![](respec/media/versiebeheer2.png) -->
 
 Ook in dit model lopen relaties tussen begrippen altijd van het ene begrip naar het andere begrip. Stel dat er een relatie loopt van het begrip «Autobestuurder» naar het begrip «Auto». De begripsbeschrijving worden in dit model altijd afzonderlijk bijgehouden. We weten dan niet direct welke versie van de begripsbeschrijving is gebruikt. Immers: onze basisprincipes stellen dat een relatie tussen onderwerpen loopt (en niet tussen gegevensobjecten).
 
@@ -341,18 +341,18 @@ Ook in dit geval zou je kunnen spreken van een "import" relatie.
 
 #### B. Begrippenkader als eenheid van beheer
 
-![](respec/media/versiebeheer1.svg)
+<!-- ![](respec/media/versiebeheer1.png) -->
 
 In dit model lopen relaties tussen begrippen altijd van het ene begrip naar het andere begrip. Stel dat er een relatie loopt van het begrip «Autobestuurder» naar het begrip «Auto», waarbij de beschrijving van het begrip «Auto» wordt bijgehouden in een ander begrippenkader dan de beschrijving van het begrip «Autobestuurder». We weten dan niet direct welke versie van de begripsbeschrijving is gebruikt. Immers: onze basisprincipes stellen dat een relatie tussen onderwerpen loopt (en niet tussen gegevensobjecten).
 
 - De relatie is: «Autobestuurder» *is gerelateerd aan* «Auto»
-- De versierelatie is: [Begrippenkader autobestuurder versie 1.0.3] *maakt gebruik van* [Begrippnkader auto versie 1.2.3].
+- De versierelatie is: [Begrippenkader autobestuurder versie 1.0.3] *maakt gebruik van* [Begrippenkader auto versie 1.2.3].
 
 Een dergelijke versierelatie wordt ook vaak wel een "import" relatie genoemd.
 
 #### C. (thematische) bundeling als eenheid van beheer
 
-![](respec/media/versiebeheer3.png)
+<!-- ![](respec/media/versiebeheer3.png) -->
 
 In dit model lopen relaties tussen begrippen altijd van het ene begrip naar het andere begrip. Stel dat er een relatie loopt van het begrip «Autobestuurder» naar het begrip «Auto», waarbij de beschrijving van het begrip «Auto» wordt bijgehouden in een andere beheer eenheid dan de beschrijving van het begrip «Autobestuurder». We weten dan niet direct welke versie van de begripsbeschrijving is gebruikt. Immers: onze basisprincipes stellen dat een relatie tussen onderwerpen loopt (en niet tussen gegevensobjecten).
 
@@ -392,7 +392,7 @@ Of een bepaalde dataset een eenheid van publicatie of beheer is, volgt uit het g
 
 Het term "Begrippenkader" en synoniemen als "Taxonomie", "Thesaurus" of "Begrippenstelsel" zijn daarmee zowel bruikbaar voor situaties waarbij een abstracte verzameling van begrippen wordt bedoeld (via `skos:inScheme`) en voor situaties waar bij een verzameling van beschrijvingen van dergelijke begrippen wordt bedoeld (via `dcat:Dataset`). Alleen als in de taalbinding beide aanwezig zijn, is sprake van *punning* en wordt zowel een abstracte verzameling van begrippen bedoeld als een verzameling van beschrijvingen.
 
-> Advies is om expliciet aan te geven bij de beschrijving van een dataset (al-dan-niet gelijkt aan het begrippenkader) of ook sprake is van een eenheid van beheer, publicatie of herkomst.
+> Advies is om expliciet aan te geven bij de beschrijving van een dataset (al-dan-niet gelijk aan het begrippenkader) of ook sprake is van een eenheid van beheer, publicatie of herkomst.
 
 > Advies is om afzonderlijke resources (met eigen URI's) te gebruiken op het moment dat het onderscheid van belang is.
 

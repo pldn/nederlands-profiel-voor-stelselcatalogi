@@ -345,7 +345,7 @@ beg-sbb:NarrowerInstantial
     "Narrower term (instantial) is the immediate (direct or one-step) class - instance relationship."@en ;
   skos:scopeNote
     "Bij deze instantiële relatie gaat het om begrippen die een bovengeschikte positie in een hiërarchie hebben. Het gaat hierbij om een hogere categorie van individuele voorbeelden en niet van soorten of delen van deze catagorie. "@nl;
-  skos: example
+  skos:example
     "Een van de povinciehoofdsteden is Utrecht."@nl;
   dct:source
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
