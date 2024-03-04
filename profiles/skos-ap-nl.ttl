@@ -432,6 +432,7 @@ skosapnl:Concept-source
   sh:order 11 ;
   sh:nodeKind sh:BlankNodeOrIRI ;
   sh:severity sh:Warning ;
+  sh:node skosapnl:SourceDocument ;
   sh:path dct:source .
 
 skosapnl:Concept-comment
@@ -511,11 +512,11 @@ skosapnl:Concept-notation
 
 skosapnl:Concept-label
   a sh:PropertyShape ;
-  rdfs:label "label"@nl ;
+  rdfs:label "naam"@nl ;
   sh:datatype xsd:string ;
-  sh:description "Een label voor een object is een voor mensen leesbare naam ter aanduiding van een object."@nl ;
+  sh:description "Een naam is een voor mensen leesbare term ter aanduiding van het begrip."@nl ;
   sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
-  sh:name "label"@nl ;
+  sh:name "naam"@nl ;
   sh:order 4 ;
   sh:nodeKind sh:Literal ;
   sh:severity sh:Warning ;
@@ -523,16 +524,16 @@ skosapnl:Concept-label
 
 skosapnl:SourceDocument-label
   a sh:PropertyShape ;
-  rdfs:label "label"@nl ;
+  rdfs:label "naam"@nl ;
   sh:datatype rdf:langString ;
-  sh:description "Compacte, voor de mens leesbare aanduiding van de bron."@nl ;
+  sh:description "Een naam is een voor mensen leesbare term ter aanduiding van het brondocument."@nl ;
   sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
   sh:minCount 1 ;
-  sh:name "label"@nl ;
+  sh:name "naam"@nl ;
   sh:order 4 ;
   sh:nodeKind sh:Literal ;
   sh:severity sh:Info ;
-  sh:path rdfs:label .
+  sh:path dct:title .
 
 skosapnl:SourceDocument-comment
   a sh:PropertyShape ;
@@ -570,20 +571,18 @@ skosapnl:SourceDocument-bibliographicCitation
   sh:severity sh:Warning ;
   sh:path dct:bibliographicCitation .
 
-
-
 skosapnl:Collection-label
   a sh:PropertyShape ;
-  rdfs:label "label"@nl ;
+  rdfs:label "naam"@nl ;
   sh:datatype rdf:langString ;
-  sh:description "Een label voor een object is een voor mensen leesbare naam ter aanduiding van een object."@nl ;
+  sh:description "Een naam is een voor mensen leesbare term ter aanduiding van de collectie."@nl ;
   sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
   sh:minCount 1 ;
-  sh:name "label"@nl ;
+  sh:name "naam"@nl ;
   sh:order 4 ;
   sh:nodeKind sh:Literal ;
   sh:severity sh:Warning ;
-  sh:path rdfs:label .
+  sh:path skos:prefLabel .
 
 skosapnl:Collection-member
   a sh:PropertyShape ;
@@ -631,16 +630,16 @@ skosapnl:ConceptScheme-comment
 
 skosapnl:ConceptScheme-label
   a sh:PropertyShape ;
-  rdfs:label "label"@nl ;
+  rdfs:label "naam"@nl ;
   sh:datatype rdf:langString ;
-  sh:description "Een label voor een object is een voor mensen leesbare naam ter aanduiding van een object."@nl ;
+  sh:description "Een naam is een voor mensen leesbare term ter aanduiding van het begrippenkader."@nl ;
   sh:group skosapnl:LabelsAndDescriptionPropertyGroup ;
   sh:minCount 1 ;
-  sh:name "label"@nl ;
+  sh:name "naam"@nl ;
   sh:order 4 ;
   sh:nodeKind sh:Literal ;
   sh:severity sh:Warning ;
-  sh:path rdfs:label .
+  sh:path dct:title .
 
 
 

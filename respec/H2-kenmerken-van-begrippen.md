@@ -411,7 +411,7 @@ Specifiek onderscheiden we de volgende verschillende harmonisatierelaties.
 |                       |                                       |
 |-----------------------|---------------------------------------|
 | **voorkeursterm**   | <dfn>is overeenkomstig verwant</dfn> |
-| **definitie**        | «is ereenkomstig verwant» relateert een begrip aan een verwant begrip uit een ander begrippenkader. |
+| **definitie**        | «is overeenkomstig verwant» relateert een begrip aan een verwant begrip uit een ander begrippenkader. |
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/skos-reference/#mapping |
 | **toelichting** | Conventie is om «is overeenkomstig verwant» op dezelfde manier als gerelateerd te gebruiken, maar dan om een begrip te verbinden met een begrip in een ander begrippenkader, dus ook in een andere context. Je zou kunnen zeggen dat het in kaart brengen van dit soort relaties minder inherent is aan de betekenis van de betreffende begrippen. Vanuit het standpunt van de oorspronkelijke ontwerper van een begrippenkader kunnen ze soms zelfs verkeerd zijn. Harmonisatie eigenschappen zijn nuttig in toepassingen die meerdere, conceptueel overlappende begrippenkaders gebruiken. |
 
@@ -442,7 +442,7 @@ Het is een good practice om voor ieder begrip een verwijzing naar een brondocume
 
 Een bronverwijzing wordt vastgelegd als kenmerk van een begrip. Hiervoor geldt het volgende patroon:
 
-Een **[=begrip=]** heeft een kenmerk '**[=heeft bron=]**'. Dit kenmerk relateert het begrip aan de betreffende **[=brondocument=]**.
+Een **[=begrip=]** heeft een kenmerk '**[=heeft bron=]**'. Dit kenmerk relateert een begrip aan het betreffende **[=brondocument=]**.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -457,19 +457,18 @@ Een **[=begrip=]** heeft een kenmerk '**[=heeft bron=]**'. Dit kenmerk relateert
 |                       |                                       |
 |-----------------------|---------------------------------------|
 | **voorkeursterm**   | <dfn>brondocument</dfn> |
-| **definitie**        | Een brondocument is een document of resource op het web die relevant is voor een begrip. |
+| **definitie**        | Een brondocument is een resource op het web of een fysiek document dat relevant is voor een begrip. |
 | **heeft bron** | http://purl.org/dc/terms/, http://xmlns.com/foaf/0.1/, https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#BibliographicResource, http://xmlns.com/foaf/0.1/#term_Document |
-| **toelichting** | Een brondocument kan een geschreven document zijn of een resource op het web. Aanbevolen best practice is om het brondocument te beschrijven door middel van een tekenreeks die voldoet aan een formeel identificatiesysteem. Bij een resource op het web is ook de uri van het document relevant. |
 | **alternatieve term** | bron |
 
 </br> 
 
-Het wordt aangeraden om een brondocument altijd te beschrijven met een **[=bronverwijzing=]** waarin de verwijzing conform een gangbare conventie is vastgelegd. Er is een conventie voor de verwijzing naar passage van een artikel in een tijdschrift of in een boek. Ook voor de verwijzing naar wetgeving is er een conventie. Als de bron een vindplaats heeft op het web is een **[=url=]** relevant.  Hiermee kan de bron direct gevonden worden. 
+Het wordt aangeraden om een brondocument altijd te beschrijven met een **[=bronverwijzing=]** waarin de verwijzing conform een gangbare conventie is vastgelegd. Er zijn (internationale) conventies voor de verwijzing naar passage van een artikel in een tijdschrift of in een boek. Ook voor de verwijzing naar wetgeving is er een [conventie](#conv-lido). Als de bron een vindplaats heeft op het web is een **[=url=]** relevant. Hiermee kan de bron direct gevonden worden. 
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
 | **voorkeursterm**   | <dfn>bronverwijzing</dfn> |
-| **definitie**        | Een bronverwijzing is een bibliografische referentie naar het document. |
+| **definitie**        | Een bronverwijzing is een bibliografische referentie naar het brondocument. |
 | **heeft bron** | http://purl.org/dc/terms/, http://xmlns.com/foaf/0.1/, https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/bibliographicCitation |
 | **toelichting** | Een bronverwijzing wordt als tekst vastgelegd. Hier dient voldoende detail in aangebracht te zijn zodat de resource gevonden kan worden. Er bestaan verschillende conventies die toegepast kunnen worden zoals IEEE, MLA of APA. Voor Nederlandse wetgeving is dit de citeertitel. |
 
@@ -478,11 +477,11 @@ Het wordt aangeraden om een brondocument altijd te beschrijven met een **[=bronv
 |                       |                                       |
 |-----------------------|---------------------------------------|
 | **voorkeursterm**   | <dfn>url</dfn> |
-| **definitie**        | Een url is de vindplaats van een bron op het internet. |
+| **definitie**        | Een url is de vindplaats van een brondocument op het internet. |
 | **heeft bron** | http://xmlns.com/foaf/0.1/ |
-| **toelichting** | Een url wordt vastgelegd als de bron een bron is die vindbaar is op het web. Dit is bij voorkeur de uri van de van de bron en eventueel de url van de betreffende pagina op het web. |
+| **toelichting** | Een url wordt vastgelegd als het brondocument een resource is die vindbaar is op het web. Dit is bij voorkeur de uri van het brondocument en eventueel de url van de betreffende pagina op het web. |
 
-</br> 
+</br>
 
 ## Collectie
 Het gebruik van [=Collectie=]s is altijd optioneel binnen deze standaard. Collecties zijn geen onderdeel van een begrippenlijst, taxonomie of thesaurus. 

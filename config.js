@@ -213,10 +213,7 @@ let respecConfig = {
     latestVersion: ["nl_organisationPublishURL"],
     thisVersion: ["nl_organisationPublishURL", "specStatus", "-", "shortName", "-", "publishDate"],
     prevVersion: ["nl_organisationPublishURL", "previousMaturity", "-", "shortName", "-", "previousPublishDate"],
-    useLogo: true,
-    useLabel: true,
 
-    license: "cc-by",
     addSectionLinks: true,
 
     localizationStrings: {

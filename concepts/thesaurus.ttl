@@ -482,7 +482,7 @@ beg-sbb:RelatedMatch
     "is overeenkomstig verwant"@nl ;
   skos:definition
     "Has related match is used to state an associative mapping link between two conceptual resources in different concept schemes."@en ,
-    "«is ereenkomstig verwant» relateert een begrip aan een verwant begrip uit een ander begrippenkader."@nl ;
+    "«is overeenkomstig verwant» relateert een begrip aan een verwant begrip uit een ander begrippenkader."@nl ;
   skos:scopeNote 
     "Conventie is om «is overeenkomstig verwant» op dezelfde manier als gerelateerd te gebruiken, maar dan om een begrip te verbinden met een begrip in een ander begrippenkader, dus ook in een andere context. Je zou kunnen zeggen dat het in kaart brengen van dit soort relaties minder inherent is aan de betekenis van de betreffende begrippen. Vanuit het standpunt van de oorspronkelijke ontwerper van een begrippenkader kunnen ze soms zelfs verkeerd zijn. Harmonisatie eigenschappen zijn nuttig in toepassingen die meerdere, conceptueel overlappende begrippenkaders gebruiken."@nl ,
     "By convention, has related match is used to represent a link that has the same intended meaning as the standard related relation, but with a different application scope. One might say that mapping relationships are less inherent to the meaning of the concepts they involve. From the point of view of the original designer of a mapped concept scheme, they might even sometimes be wrong. Mapping properties are expected to be useful in specific applications that use multiple, conceptually overlapping KOSs. By convention, mapping relationships are expected to be asserted between concepts that belong to different concept schemes."@en;
@@ -790,11 +790,8 @@ beg-sbb:SourceDocument
     "brondocument"@nl ;
   skos:altLabel "bron"@nl ;
   skos:definition
-    "Een brondocument is een document of resource op het web die relevant is voor een begrip."@nl ,
+    "Een brondocument is een resource op het web of een fysiek document dat relevant is voor een begrip."@nl ,
     "A source document is a document or web resource that is relevant for a concept."@en ;
-  skos:scopeNote 
-    "De brondocument kan een geschreven document zijn of een resource op het web. Aanbevolen best practice is om het brondocument te beschrijven door middel van een tekenreeks die voldoet aan een formeel identificatiesysteem. Bij een resource op het web is ook de uri van het document relevant."@nl ,
-    "The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."@en ;
   dct:source
     dct: ,
     foaf: ,
@@ -814,7 +811,7 @@ beg-sbb:BibliographicCitation
     "bronverwijzing "@nl ,
     "bibliographic citation"@en ;
   skos:definition
-    "Een bronverwijzing  is een bibliografische referentie naar het document."@nl ,
+    "Een bronverwijzing is een bibliografische referentie naar het brondocument."@nl ,
     "A bibliographic reference for the resource."@en ;
   skos:scopeNote 
     "Een bronverwijzing wordt als tekst vastgelegd. Hier dient voldoende detail in aangebracht te zijn zodat de resource gevonden kan worden. Er bestaan verschillende conventies die toegepast kunnen worden zoals IEEE, MLA of APA. Voor Nederlandse wetgeving is dit de citeertitel."@nl,
@@ -838,10 +835,10 @@ beg-sbb:Page
     "url"@nl ,
     "page"@en ;
   skos:definition
-    "Een url is de vindplaats van een bron op het internet."@nl ,
+    "Een url is de vindplaats van een brondocument op het internet."@nl ,
     "A page is the location of a resource on the internet."@en ;
   skos:scopeNote
-    "Een url wordt vastgelegd als de bron een bron is die vindbaar is op het web. Dit is bij voorkeur de uri van de van de bron en eventueel de url van de betreffende pagina op het web."@nl,
+    "Een url wordt vastgelegd als het brondocument een resource is die vindbaar is op het web. Dit is bij voorkeur de uri van het brondocument en eventueel de url van de betreffende pagina op het web."@nl,
     "A URL is captured if the resource is a resource that can be found on the web. This is preferably the uri of the resource and possibly the url of the relevant page on the web."@en;
   dct:source
     foaf: ;

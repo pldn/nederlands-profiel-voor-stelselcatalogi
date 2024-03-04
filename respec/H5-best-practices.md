@@ -116,7 +116,9 @@ Op deze manier is goed aangeven waar de betekenis van het begrip (gedocumenteerd
 
 Wanneer een bron als linked data op het web ontsloten is neem je als waarde van bronverwijzing de URI van de bron. Dit kan bijvoorbeeld een instantie van <code>foaf:Document</code> of <code>dct:BibliographicResource</code> zijn. Hoe deze precies is beschreven is maakt voor de bronverwijzing niet uit, maar binnen dit profiel wordt de [specificatie voor bronnen](#specificatie-brondocument) aangeraden.
 
-Het komt ook voor dat de bron niet vindbaar is op het web en/of niet als linked data ontsloten is. In dat geval kan de beheerder van het begrip zelf een beschrijving van de bron maken. De beschrijving bestaat minimaal uit een aanduiding van het brondocument en de naam. Als aanduiding van het brondocument kunnen in Linked data URI's of blanknodes gebruikt worden. Deze aanduiding is een directe identicatie van het brondocument (zie ook [Fundamentals of Linked Data Modeling](https://bp4mc2.org/modeling/)). De beheerder van het begrip maakt een URI voor het brondocument wat het gebruikt, maar waar het niet de eigenaar van is. Dit is conform een van de basisprincipes van Linked Data, *Anybody can say anything about anything*. Deze URI kan alleen niet direct gebruikt worden om een mensleesbaar document te vinden. Wanneer de bron vindbaar is op het web kan foaf:page ([=url=]) gebruikt worden om naar deze vindplaats te verwijzen. Wanneer de bron niet op het web vindbaar is, kan dct:bibliographicCitation ([=bronverwijzing=]) gebruikt worden om citeerinformatie vast te leggen. Het kan zijn dat een bron zowel een url als een citeertitel kent.
+Het komt ook voor dat de bron niet vindbaar is op het web en/of niet als linked data ontsloten is. In dat geval kan de beheerder van het begrip zelf een beschrijving van de bron maken. De beschrijving bestaat minimaal uit een aanduiding van het brondocument en de naam. Als aanduiding van het brondocument kunnen in Linked data URI's of blanknodes gebruikt worden. Deze aanduiding is een directe identicatie van het brondocument (zie ook [Fundamentals of Linked Data Modeling](https://bp4mc2.org/modeling/)). De beheerder van het begrip maakt een URI (of blank node) voor het brondocument wat het gebruikt, maar waar het niet de eigenaar van is. Dit is conform een van de basisprincipes van Linked Data, *Anybody can say anything about anything*. Deze URI kan alleen niet direct gebruikt worden om een mensleesbaar document te vinden. Wanneer de bron vindbaar is op het web kan foaf:page ([=url=]) gebruikt worden om naar deze vindplaats te verwijzen. Wanneer de bron niet op het web vindbaar is, kan dct:bibliographicCitation ([=bronverwijzing=]) gebruikt worden om citeerinformatie vast te leggen. Het kan zijn dat een bron zowel een [=url=] als een [=bronverwijzing=] kent.
+
+<div class="practice" id="conv-lido"><p class="practicedesc"><span class="practicelab">Conventie verwijzing wet- en regelgeving</span>Voor verwijzingen naar wet- en regelgeving moet <a href='wetten.overheid.nl/BWBR0005730/2022-04-01/#Hoofdstuk3_Paragraaf3.3'>§ 3.3 Aanwijzingen voor de regelgeving</a> gevolgd worden. Met behulp van de Linktool van LiDO is het eenvoudig om verwijzingen te maken die aan de aanwijzingen voor de regelgeving voldoen.</p></div>
 
 In het volgende voorbeeld zien we een beschrijving van een op het web vindbare bron die door de beheerder van het begrip is opgesteld. De beheerder is eigenaar van de beschrijving; maar niet van de bron zelf.
 
@@ -155,7 +157,7 @@ Om data goed te kunnen gebruiken, maar zeker ook om data te combineren met ander
 Begrippenkaders versterken de interoperabiliteit van datasets omdat het duidelijk maakt wat de betekenis is van termen die gebruikt worden.
 Een vooralsnog belangrijk thema in data is silo-vorming en organisaties zijn ook nadrukkelijk bezig om silo's te ontmantelen omdat data in samenhang meer waarde kan leveren. Om data in samenhang te kunnen bevragen is het noodzakelijk dat de terminologie eenduidig is en op elkaar aansluit. We hebben daarom niet alleen afzonderlijke begrippenkaders per registratie (bijvoorbeeld het begrippenkader van de BRK) nodig maar juist een stelsel van verbonden begrippenkaders per domein (bijvoorbeeld het vastgoed domein). 
 
-Daarnaast hebben we hier het begrippenkader vooral beschreven vanuit het aanbod van gegevens. Maar je wilt dat natuurlijk ook gebruiken. En dan wordt niet altijd hetzelfde begrippenkader gehanteerd. Dat is niet altijd begrippenkader dat je bij een registratie mag verwachten, maar vaak juist een begrippenkader van een gebruiksorganisatie, bijvoorbeeld een uitvoeringsorganisatie die gegevens nodig heeft uit een basisregistratie, maar eigen wet- en regelgeving kent en bijbehorend begrippenkader. Juist dan wil je een verbinding leggen tussen de twee begrippenkaders.
+Daarnaast is in deze standaard het begrippenkader vooral beschreven vanuit het aanbod van gegevens. Maar data wordt ook afgenomen. Denk aan een auto-handelaar die een eigen begrippenkader kent en een registratie die je kan verwachten bij een auto-handelaar. De autohandelaar maakt gebruik van de Basisregistratie Voertuigen (BRV). De context van autohandelaar (en dus het begrippenkader) heeft overlap de de context van de BRV. Het is dan zaak dat de begrippen uit de BRV, correct worden toegepast in de context van de auto-handelaar om verkeerde data interpretatie te voorkomen. Juist bij het integreren van data wil je een verbinding leggen tussen de bijbehorende begrippenkaders.
 
 In dit hoofdstuk bespreken we best-practices op dit gebied.
 
@@ -167,7 +169,7 @@ Wanneer we het hebben over een begrip dat gedefinieerd is in een 'andere context
 
 ### Harmonisatie
 Onder de noemer harmonisatie beschrijven we hoe begrippen uit verschillende begrippenkaders op basis van betekenis aan elkaar kunnen worden gerelateerd. De letterlijke betekenis van harmoniseren is 'op elkaar afstemmen'. Verbinden is een eerste stap op weg naar afstemmen, maar het is strikt genomen geen afstemming en dus ook geen harmonisatie.
-Daarom gebruiken we nadrukkelijk geen owl:sameAs gezien dat impliceert dat de twee resources op alle mogelijke manieren identiek zijn (sterker nog; het zijn dezelfde resources). Ook als twee begrippen exact dezelfde betekenis hebben kunnen ze  verschillende lexicale namen, eigenaren en documentatie hebben. Ook zijn de logische gevolgen van owl:sameAs hierdoor veelal ongewenst. Een voorbeeld van een ongewenste implicatie is dat het kan leiden tot meerdere voorkeurstermen per taal voor een begrip en dit is niet toegestaan. Dit zien we bijvoorbeeld bij de volgende set statements:
+Daarom gebruiken we nadrukkelijk geen owl:sameAs gezien dat impliceert dat de twee resources op alle mogelijke manieren identiek zijn (sterker nog; het zijn dezelfde resources). Ook als twee begrippen exact dezelfde betekenis hebben kunnen ze verschillende lexicale namen, eigenaren en documentatie hebben. Ook zijn de logische gevolgen van owl:sameAs hierdoor veelal ongewenst. Een voorbeeld van een ongewenste implicatie is dat het kan leiden tot meerdere voorkeurstermen per taal voor een begrip en dit is niet toegestaan. Dit zien we bijvoorbeeld bij de volgende set statements:
 
 <pre class="example">
 ex:B a skos:Concept ;
@@ -199,20 +201,20 @@ ex2:C a skos:Concept ;
 
 N.B. Voorbeeld 4 en 5 zijn eigenlijk geen voorbeelden, maar contra-voorbeelden. Ze laten zien hoe het niet moet en wat er dan mis kan gaan.
 
-Als alternatief op owl:sameAs zijn harmonisatierelaties gedefinineerd in SKOS. Deze relaties worden gebruik om de mapping tussen begrippen in verschillende begrippenkaders vast te leggen wanneer deze een vergelijkbare betekenis hebben. Bijvoorbeeld door te stellen dat het begrip "Woning" uit één begrippenkader een [=heeft overeenkomstig bovenliggend=] begrip "Pand" kent uit een ander begrippenkader.
-We nemen zo het begrip "Pand" niet op in het begrippenkader waar "Woning" gedefinieerd is. Op dezelfde wijze kunnen twee begrippen uit verschillende begrippenkaders gerelateerd zijn aan elkaar. 
+Als alternatief op owl:sameAs zijn harmonisatierelaties gedefinineerd in SKOS. Deze relaties worden gebruik om de mapping tussen begrippen in verschillende begrippenkaders vast te leggen wanneer deze een vergelijkbare betekenis hebben. Bijvoorbeeld door te stellen dat het begrip "Woning" uit één begrippenkader een [=heeft overeenkomstig bovenliggend=] begrip «Pand» kent uit een ander begrippenkader.
+We nemen zo het begrip «Pand» niet op in het begrippenkader waar "Woning" gedefinieerd is. Op dezelfde wijze kunnen twee begrippen uit verschillende begrippenkaders gerelateerd zijn aan elkaar. 
 
-Bij het harmoniseren van begrippenkaders blijft er binnen ieder begrippenkader controle over de beschrijving van de begrippen. Zelfs bij een skos:exactMatch kunnen de betreffende begrippen verschillende voorkeurstermen hebben. De mapping ligt namelijk op de betekenis van het begrip en niet op de gerelateerde lexicale namen of documentatie bij het begrip. Op deze manier kan je bijvoorbeeld twee contexten op elkaar laten aansluiten waar verschillende voorkeurstermen dezelfde betekenis dragen zonder het taalgebruik van de betreffende domeinen aan te passen. Bijvoorbeeld omdat er vanuit één begrippenkader geen invloed uitgeoefend kan worden op het andere begrippenkader of omdat er twee perspectieven bestaan op één domein.
-Ook in situaties waar eenzelfde term in twee overlappende contexten net een specifiekere/andere betekenis heeft kan je er voor kiezen om twee begrippen te onderkennen en die te harmoniseren. In dit geval kunnen kunnen harmonisatierelaties gebruikt worden. Bijvoorbeeld twee contexten (ex: en ex2:) waar de term land gebruikt wordt. 
+Bij het harmoniseren van begrippenkaders blijft er binnen ieder begrippenkader controle over de beschrijving van de begrippen. Zelfs bij een [=is exact overeenkomstig=] relatie kunnen de betreffende begrippen verschillende voorkeurstermen hebben. De mapping ligt namelijk op de betekenis van het begrip en niet op de gerelateerde lexicale namen of documentatie bij het begrip. Op deze manier kan je bijvoorbeeld twee contexten op elkaar laten aansluiten waar verschillende voorkeurstermen dezelfde betekenis dragen zonder het taalgebruik van de betreffende domeinen aan te passen. Bijvoorbeeld omdat er vanuit één begrippenkader geen invloed uitgeoefend kan worden op het andere begrippenkader of omdat er twee perspectieven bestaan op één domein.
+Ook in situaties waar eenzelfde term in twee overlappende contexten net een specifiekere/andere betekenis heeft kan je er voor kiezen om twee begrippen te onderkennen en deze te harmoniseren. In dit geval kunnen kunnen harmonisatierelaties gebruikt worden. Bijvoorbeeld twee contexten (ex: en ex2:) waar de term land gebruikt wordt. 
 
 <pre class="example">
 ex:Land a skos:Concept ;
   skos:prefLabel "Land"@nl ;
-  skos:definition "Een land is een gebied met grenzen en een eigen regering." .
+  skos:definition "Een land is een gebied met grenzen en een eigen regering."@nl .
 
 ex2:Land a skos:Concept
   skos:closeMatch ex:Land .
-  skos:definition "Een land is een gebied dat in ISO 3166-1 als land wordt beschouwd." .
+  skos:definition "Een land is een gebied dat in ISO 3166-1 als land wordt beschouwd."@nl .
 </pre>
 
 Het harmoniseren van begrippen is binnen één samenwerkingsverband of organisatie vaak niet het eindoel, maar een (belangrijke) tussenstap. Wanneer het duidelijk is wat de overlap tussen twee begrippenkaders precies is, is het pas mogelijk om tot een samenhangend netwerk of stelsel van begrippen te komen. Het harmoniseren van begrippenkaders kan dus een eerste stap zijn naar het kunnen herbruiken van externe begrippen. Dit wordt nader toegelicht in [hergebruik](#hergebruik).
@@ -220,16 +222,16 @@ Het harmoniseren van begrippen is binnen één samenwerkingsverband of organisat
 Aanbevelingen:
 <div class="practice"><p class="practicedesc"><span class="practicelab">Er kan worden verwezen naar een [=extern begrip=] met de harmonisatierelaties zoals gedefinieerd door SKOS.</span>We maken expliciet geen gebruik van owl:sameAs.</p></div>
 
-
 ### Hergebruik
-Het hergebruiken van begrippen is het opnemen van begrippen in verschillende begrippenkaders. In tegenstelling tot bij harmonisatie, waar twee losse sets van begrippen aan elkaar gerelateerd worden door extra relaties te leggen, wordt bij hergebruik één begrip aan verschillende begrippenkaders toegevoegd. In deze zin commiteer je volledig aan de beschrijving van het begrip uit een ander begrippenkader. Dit is afgebeeld in het volgende diagram.
+Het hergebruiken van begrippen is het opnemen van begrippen in verschillende begrippenkaders. In tegenstelling tot bij harmonisatie, waar twee losse verzamelingen van begrippen aan elkaar gerelateerd worden door extra relaties te leggen, wordt bij hergebruik één begrip aan verschillende begrippenkaders toegevoegd. In deze zin commiteer je volledig aan de beschrijving van het begrip uit een ander begrippenkader. Dit is afgebeeld in het volgende diagram.
+
 ![](respec/media/hergebruik.png "Datastructuren hergebruik en harmonisatie")
 
-Begrippen komen zo terug in verschillende contexten. Dit is een algemene good practice omdat we hiermee contexten integreren (waarmee we expliciet dezelfde taal spreken) maar ook omdat we hiermee contexten kunnen modularizeren (conform het Don't Repeat Yourself principe (DRY)).
+Begrippen komen zo terug in verschillende contexten. Dit is een algemene good-practice omdat we hiermee contexten integreren (waarmee we expliciet dezelfde taal spreken) maar ook omdat we hiermee contexten kunnen modularizeren (conform het Don't Repeat Yourself principe (DRY)).
 
-SKOS gaat er van uit dat de betekenis van een begrip niet beïnvloed wordt door de statements die er over vastgelegd zijn. De eigenaar van het begrip bepaald namelijk de betekenis. De statements over een begrip maken we om deze inherente betekenis te kunnen communiceren. Eveneens dat een huis niet blauw wordt puur omdat er is vastgelegd dat deze blauw is. Een goede beschrijving zorgt ervoor dat men het begrip juist interpreteert zodat het we begrip op de correcte wijze begrijpen. Wanneer je naar een blauw huis zoekt die in de werkelijkheid helemaal niet blauw is; is het lastig om het betreffende huis te vinden. De betekenis van een begrip is dus niet afhankelijk van de statements die we er over maken, maar de statements verwoorden de betekenis die het begrip al heeft. 
+SKOS gaat er van uit dat de betekenis van een begrip niet beïnvloed wordt door de statements die er over vastgelegd zijn. De eigenaar van het begrip bepaald namelijk de betekenis. De statements over een begrip maken we om deze inherente betekenis te kunnen communiceren. Eveneens dat een huis niet blauw wordt puur omdat er is geregistreerd dat deze blauw is. Een goede beschrijving zorgt ervoor dat men het begrip juist interpreteert zodat het we begrip op de correcte wijze begrijpen. Wanneer je naar een blauw huis zoekt die in de werkelijkheid helemaal niet blauw is; is het lastig om het betreffende huis te vinden. De betekenis van een begrip is dus niet afhankelijk van de statements die we er over maken, maar de statements verwoorden de betekenis die het begrip al heeft. 
 
-In de praktijk betekent dit dat een begrip in elke context gebruikt kan worden, zonder dat de betekenis zal veranderen. Het toevoegen van eigenschappen is mogelijk, ([anybody can say anything about anything](https://www.w3.org/TR/rdf-concepts/#section-anyone)); al moet wel beoordeeld worden wat de impact is op de interpretatie van het begrip door mensen. Een begrip wordt onderdeel van een begrippenkader wanneer het een skos:inScheme relatie heeft naar het begrippenkader. Het is niet noodzakelijk om eigenschappen van het externe begrip, zoals de voorkeursterm, te repliceren wanneer het externe begrip gepubliceert is. Een Semantic Web applicatie zal op basis van de URI de beschrijving kunnen ophalen, (dereferencen) of het gehele begrippenkader importeren, bijvoorbeeld op basis van een owl:imports statement. 
+In de praktijk betekent dit dat een begrip in elke context gebruikt kan worden, zonder dat de betekenis zal veranderen. Het toevoegen van eigenschappen is mogelijk, ([anybody can say anything about anything](https://www.w3.org/TR/rdf-concepts/#section-anyone)); al moet wel beoordeeld worden wat de impact is op de interpretatie van het begrip door mensen. Een begrip wordt onderdeel van een begrippenkader wanneer het een [=in kader=] relatie heeft naar het begrippenkader. Het is niet noodzakelijk om eigenschappen van het externe begrip, zoals de voorkeursterm, te repliceren wanneer het externe begrip gepubliceert is. Een Semantic Web applicatie zal op basis van de URI de beschrijving kunnen ophalen, (dereferencen) of het gehele begrippenkader importeren, bijvoorbeeld op basis van een owl:imports statement. Hierbij komt versiebeheer van begrippen nadrukkelijk om de hoek kijken. Hiervoor is een uitwerking gemaakt in [hoofdstuk 5.5](#versiebeheer-en-metadata).
 
 Vervolgens kunnen relaties tussen de externe begrippen en de andere begrippen in het begrippenkader gelegd waardoor een netwerk of stelsel ontstaat. In RDF kan dat er als volgt uit zien.
 
@@ -278,7 +280,7 @@ Om versiebeheer uit te werken, hanteren we de volgende kernprincipes die we hier
 6. Van één onderwerp kunnen er meerdere gegevensobjecten zijn.
 7. De eenheid van beheer bestaat uit één of meerdere gegevensobjecten.
 
-#### 1. Gegevens zijn iets anders dan de onderwerpen waarover deze gegevens gaan.
+#### Gegevens zijn iets anders dan de onderwerpen waarover deze gegevens gaan.
 Een website over Johan Cruyff, is iets anders dan de persoon Johan Cruyff.
 
 Gegevens zien we als uitspraken over een bepaald onderwerp. Gegevens die over hetzelfde onderwerp gaan, noemen we een "gegevensobject".
@@ -287,10 +289,10 @@ Als twee onderwerpen aan elkaar gerelateerd zijn, dan zijn (dus) de onderwerpen 
 
 Omdat de relatie ook een uitspraak is, zul je (dus) moeten nadenken welk gegevensobject deze uitspraak omvat. Kandidaten zijn daarbij de gegevensobjecten die gaan over de onderwerpen van de relatie. Maar het is ook mogelijk om de relatie als een zelfstandig onderwerp te beschouwen. Op dat moment is het ook mogelijk om de gegevens over de relatie in een afzonderlijk gegevensobject op te nemen.
 
-#### 2. Om het over een onderwerp te kunnen hebben, zul je er aan moeten kunnen refereren.
+#### Om het over een onderwerp te kunnen hebben, zul je er aan moeten kunnen refereren.
 Een referentie is niet het onderwerp zelf, maar we verwijzen er wel naar. Zoals we met de naam "Johan Cruyff" verwijzen naar de beroemde voetballer. Ook betreft dit niet een referentie naar het gegevensobject, maar juist de persoon zelf.
 
-#### 3. Onderwerpen kunnen gerelateerd aan elkaar zijn, hierover zijn geen gegevens nodig
+#### Onderwerpen kunnen gerelateerd aan elkaar zijn, hierover zijn geen gegevens nodig
 Een uitspraak als "Johan Cruyff is een voetballer" of "Johan Cruyff is geboren in Amsterdam" zijn relaties tussen twee onderwerpen:
 
 - De relatie tussen het onderwerp «Johan Cruyff» en het onderwerp «Voetballer»;
@@ -298,29 +300,29 @@ Een uitspraak als "Johan Cruyff is een voetballer" of "Johan Cruyff is geboren i
 
 Het gaat hier duidelijk niet over relaties tussen de gegevensobjecten. In de uitspraken gebruiken we de referenties naar de onderwerpen.
 
-#### 4. We versioneren gegevens, niet de onderwerpen waarover de gegevens gaan.
+#### We versioneren gegevens, niet de onderwerpen waarover de gegevens gaan.
 Hoewel zowel Johan Cruyff, voetbal en Amsterdam een levenscyclus doormaken (waarover we ook weer gegevens kunnen vastleggen), als we het over versiebeheer hebben: dan hebben we het over versies van vastlegde gegevens.
 
 Zo kan een website over Johan Cruyff meerdere versies hebben. Zo is de eerste versie van de Nederlandse wikipediapagina over Johan Cruyf gemaakt op 9 november 2003. En zijn er inmiddels al meer dan 500 verschillende versies van geweest.
 
-#### 5. Als we het over de gegevens zelf hebben, dan hebben we het over meta-gegevens
+#### Als we het over de gegevens zelf hebben, dan hebben we het over meta-gegevens
 De uitspraak "De eerste versie van de Nederlandse wikipediapagina over Johan Cruyff is gemaakt op 9 november 2003" gaat over een gegevensobject die zelf weer over een onderwerp gaat.
 
 Bovendien zit er eigenlijk nog een onderwerp verstopt in bovenstaande zin, namelijk de "Nederlandse wikipediapagina over Johan Cruyff". Als we uitspraken over dit onderwerp zeggen, dan zijn ook dat uitspraken die (net als uitspraken over het onderwerp zelf) kunnen veranderen door de tijd heen.
 
 Ook uitspraken over een versie van een gegevensobject kunnen veranderen door de tijd heen. Zoals de status van een versie. Dezelfde versie kan eerst de status «in concept» hebben, en op een later moment de status «gepubliceerd».
 
-#### 6. Van één onderwerp kunnen er meerdere gegevensobjecten zijn
+#### Van één onderwerp kunnen er meerdere gegevensobjecten zijn
 De wikipediapagina over Johan Cruyff bevat andere soorten gegevens dan het medisch dossier van Johan Cruyff. Toch zijn het beiden gegevensobjecten over Johan Cruyff. Bij het nemen van beslissingen over versiebeheer is het van belang om na te denken welke soorten gegevens in welk gegevensobject worden beheerd.
 
-#### 7. De eenheid van beheer bestaat uit één of meerdere gegevensobjecten
+#### De eenheid van beheer bestaat uit één of meerdere gegevensobjecten
 De eenheid van beheer is het geheel van gegevensobjecten die als één gezamenlijk eenheid wordt beheerd. Die eenheden van beheer krijgen versies. Het is een keuze om de eenheid van beheer op het niveau van een enkel gegevensobject te doen (zoals bij de wikipediapagina van Johan Cruyff), of juist de eenheid van beheer te doen op een geheel van gegevensobjecten.
 
 ### Varianten voor versiebeheer van begripsbeschrijvingen
 
 Het toepassen van de kernprincipes voor versiebeheer leidt tot het volgende model.
 
-<!-- ![](respec/media/versiebeheer.png) -->
+![](respec/media/versiebeheer.jpg "Versiebeheer")
 
 Dit model is op twee manieren te gebruiken bij het versiesbeheer in de context van SBB:
 
@@ -330,7 +332,7 @@ Dit model is op twee manieren te gebruiken bij het versiesbeheer in de context v
 
 #### A. Begripsbeschrijving als eenheid van beheer
 
-<!-- ![](respec/media/versiebeheer2.png) -->
+![](respec/media/versiebeheer2.png "Begripsbeschrijving als eenheid van beheer")
 
 Ook in dit model lopen relaties tussen begrippen altijd van het ene begrip naar het andere begrip. Stel dat er een relatie loopt van het begrip «Autobestuurder» naar het begrip «Auto». De begripsbeschrijving worden in dit model altijd afzonderlijk bijgehouden. We weten dan niet direct welke versie van de begripsbeschrijving is gebruikt. Immers: onze basisprincipes stellen dat een relatie tussen onderwerpen loopt (en niet tussen gegevensobjecten).
 
@@ -341,7 +343,7 @@ Ook in dit geval zou je kunnen spreken van een "import" relatie.
 
 #### B. Begrippenkader als eenheid van beheer
 
-<!-- ![](respec/media/versiebeheer1.png) -->
+![](respec/media/versiebeheer1.png "Begrippenkader als eenheid van beheer")
 
 In dit model lopen relaties tussen begrippen altijd van het ene begrip naar het andere begrip. Stel dat er een relatie loopt van het begrip «Autobestuurder» naar het begrip «Auto», waarbij de beschrijving van het begrip «Auto» wordt bijgehouden in een ander begrippenkader dan de beschrijving van het begrip «Autobestuurder». We weten dan niet direct welke versie van de begripsbeschrijving is gebruikt. Immers: onze basisprincipes stellen dat een relatie tussen onderwerpen loopt (en niet tussen gegevensobjecten).
 
@@ -350,9 +352,9 @@ In dit model lopen relaties tussen begrippen altijd van het ene begrip naar het 
 
 Een dergelijke versierelatie wordt ook vaak wel een "import" relatie genoemd.
 
-#### C. (thematische) bundeling als eenheid van beheer
+#### C. (Thematische) bundeling als eenheid van beheer
 
-<!-- ![](respec/media/versiebeheer3.png) -->
+![](respec/media/versiebeheer3.png "(Thematische) bundeling als eenheid van beheer")
 
 In dit model lopen relaties tussen begrippen altijd van het ene begrip naar het andere begrip. Stel dat er een relatie loopt van het begrip «Autobestuurder» naar het begrip «Auto», waarbij de beschrijving van het begrip «Auto» wordt bijgehouden in een andere beheer eenheid dan de beschrijving van het begrip «Autobestuurder». We weten dan niet direct welke versie van de begripsbeschrijving is gebruikt. Immers: onze basisprincipes stellen dat een relatie tussen onderwerpen loopt (en niet tussen gegevensobjecten).
 

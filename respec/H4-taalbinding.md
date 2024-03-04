@@ -82,7 +82,7 @@ Een begrippenkader wordt gerepresenteerd als een `skos:ConceptScheme`. Deze type
 
 | Conceptueel element | Eigenschap                                                              | Kardinaliteit | Type                                                                    |
 | ------------------- | ----------------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- |
-| [=naam=]            | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)                | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
+| [=naam=]            | [dct:title](http://purl.org/dc/terms/title)                             | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
 | [=uitleg=]          | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment)            | 0..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
 | [=heeft topbegrip=] | [skos:hasTopConcept](http://www.w3.org/2004/02/skos/core#hasTopConcept) | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)             |
 
@@ -128,18 +128,18 @@ Een Brondocument wordt gerepresenteerd als een `foaf:Document`. Deze typering wo
 
 | Conceptueel element | Eigenschap                                                                  | Kardinaliteit | Type                                                                    |
 | ------------------- | --------------------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- |
-| [=naam=]            | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)                    | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
+| [=naam=]            | [dct:title](http://purl.org/dc/terms/title)                                 | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
 | [=uitleg=]          | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment)                | 0..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) |
 | [=url=]             | [foaf:page](http://xmlns.com/foaf/0.1/page)                                 | 0..*          | [sh:IRI](http://www.w3.org/ns/shacl#IRI)                                |
-| [=bronverwijzing=]     | [dct:bibliographicCitation](http://purl.org/dc/terms/bibliographicCitation) | 0..*          | [xsd:string](http://www.w3.org/2001/XMLSchema#string)                   |
+| [=bronverwijzing=]  | [dct:bibliographicCitation](http://purl.org/dc/terms/bibliographicCitation) | 0..*          | [xsd:string](http://www.w3.org/2001/XMLSchema#string)                   |
 
 ## Specificatie Collectie
 
 Een collectie wordt gerepresenteerd als een `skos:Collection`. Deze typering is verplicht.
 
-| Conceptueel element | Eigenschap                                                   | Kardinaliteit | Type                                                                                                                             |
-| ------------------- | ------------------------------------------------------------ | ------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| [=naam=]            | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)     | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString)                                                          |
-| [=uitleg=]          | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | 0..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString)                                                          |
-| [=bevat=]           | [skos:member](http://www.w3.org/2004/02/skos/core#member)    | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept) OR [skos:Collection](http://www.w3.org/2004/02/skos/core#Collection) |
+| Conceptueel element | Eigenschap                                                      | Kardinaliteit | Type                                                                                                                             |
+| ------------------- | --------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| [=naam=]            | [skos:prefLabel](http://www.w3.org/2004/02/skos/core#prefLabel) | 1..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString)                                                          |
+| [=uitleg=]          | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment)    | 0..*          | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString)                                                          |
+| [=bevat=]           | [skos:member](http://www.w3.org/2004/02/skos/core#member)       | 0..*          | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept) OR [skos:Collection](http://www.w3.org/2004/02/skos/core#Collection) |
  
