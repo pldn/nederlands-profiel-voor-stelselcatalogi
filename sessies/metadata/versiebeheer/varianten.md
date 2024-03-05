@@ -1,39 +1,48 @@
 # Varianten voor versiebeheer van begripsbeschrijvingen
 
-het toepassen van de kernprincipes voor versiebeheer leidt tot het volgende model.
+Het toepassen van de kernprincipes voor versiebeheer leidt tot het volgende model.
 
-![](media/versiebeheer.svg)
+![](media/versiebeheer.conceptueel.svg)
 
-Dit model is op twee manieren te gebruiken bij het versiesbeheer van begripsbeschrijvingen:
+Het uitgangspunt is dat een dataset iets anders is als een gegevensobject en een gegevensobject iets anders is als een object.
 
-A. De eenheid van beheer is het begrippenkader. We beheren begrippenkaders (die ook een eigen versiehistorie kennen);
-B. De eenheid van beheer is een afzonderlijke begripsbeschrijving. We beheren deze begripsbeschrijvingen (die daarmee een eigen versiehistorie kennen).
-C. De eenheid van beheer is een bundeling van beschrijvingen. Deze beschrijvingen kunnen over begrippen, begrippenkader, collecties en bronnen gaan.
+## Varianten
 
-### A. Begrippenkader als eenheid van beheer
+Omdat Dit model op op veel verschillende manieren te gebruiken is schetsen we hier een aantal voor de hand liggende scenario's voor het inrichten van versiebeheer van begripsbeschrijvingen:
 
-TODO
-![](media/versiebeheer1.svg)
+- A. De eenheid van beheer is een complete begripsbeschrijving.
+- B. De eenheid van beheer is een begrippenkaderbeschrijving.
+- C. De eenheid van beheer is een deel van een complete begripsbeschrijving.
 
-In dit model lopen relaties tussen begrippen altijd van het ene begrip naar het andere begrip. Stel dat er een relatie loopt van het begrip «Autobestuurder» naar het begrip «Auto», waarbij de beschrijving van het begrip «Auto» wordt bijgehouden in een ander begrippenkader dan de beschrijving van het begrip «Autobestuurder». We weten dan niet direct welke versie van de begripsbeschrijving is gebruikt. Immers: onze basisprincipes stellen dat een relatie tussen onderwerpen loopt (en niet tussen gegevensobjecten).
 
-- De relatie is: «Autobestuurder» *is gerelateerd aan* «Auto»
-- De versierelatie is: [Begrippenkader autobestuurder versie 1.0.3] *maakt gebruik van* [Begrippnkader auto versie 1.2.3].
+### A. Begripsbeschrijving als eenheid van beheer
 
-Een dergelijke versierelatie wordt ook vaak wel een "import" relatie genoemd.
+![](media/versiebeheer.begripsbeschrijving.svg)
 
-### B. Begripsbeschrijving als eenheid van beheer
+Versiebeheer op begripsbeschrijving gaat ervan uit dat er een gegevensobject per begrip in een begrippenkader wordt gemaakt en dat het beheer op dat niveau wordt gereregeld.
+Elke wijziging op een individuele begripsbeschrijving heeft geen impact op de andere begripsbeschrijvingen.
 
-TODO
-![](media/versiebeheer2.svg)
+### B. Begrippenkaderbeschrijving als eenheid van beheer
 
-Ook in dit model lopen relaties tussen begrippen altijd van het ene begrip naar het andere begrip. Stel dat er een relatie loopt van het begrip «Autobestuurder» naar het begrip «Auto». De begripsbeschrijving worden in dit model altijd afzonderlijk bijgehouden. We weten dan niet direct welke versie van de begripsbeschrijving is gebruikt. Immers: onze basisprincipes stellen dat een relatie tussen onderwerpen loopt (en niet tussen gegevensobjecten).
+![](media/versiebeheer.begrippenkaderbeschrijving.svg)
 
-- De relatie is: «Autobestuurder» *is gerelateerd aan* «Auto»
-- De versierelatie is: [Beschrijving van het begrip Autobestuurder versie 1.0.3] *maakt gebruik van* [Beschrijving van het begrip auto versie 1.2.3].
-
-Ook in dit geval zou je kunnen spreken van een "import" relatie.
+Bij versiebeheer op begrippenenkaderbeschrijvingniveau zitten alle gegevensobjecten die horen bij de beschrijving van een begrippenkader onder de beheerset van dat begrippenkader.
+Wanneer een begripsbeschrijving wijzigt is er sprake van een nieuwe versie van de begrippenkaderbeschrijving.
 
 ### C. (thematische) bundeling als eenheid van beheer
 
+![](media/versiebeheer.thematischeBundeling.svg)
+
 TODO
+
+## Tijdcontext van datasets
+
+Omdat er verschillende manieren zijn om versiebeheer in te richten schrijft dit profiel geen specifieke vorm van versiebeheer voor.
+
+Het is wel van belang om afspraken te maken over hoe de gegevens in een stelsel uitgewisseld moeten worden. 
+Een belangrijk aspect voor een stelsel is het in een tijdcontext kunnen relateren van gegevensobjecten.
+
+Daarmee moet van een gegevensobject in ieder geval bepaald kunnen worden
+
+* of het op eem gegeven moment geldig was.
+* of het op een gegeven moment beschikbaar was.
