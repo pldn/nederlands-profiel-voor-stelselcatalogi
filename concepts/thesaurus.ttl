@@ -69,7 +69,7 @@ beg-sbb:TopConcept
     "Een topbegrip is een begrip dat bovenaan de hiërarchie staat in een begrippenkader."@nl ,
     "A top concept is a concept that constitutes an entry point in the hierarchy of a concept scheme."@en ;
   skos:scopeNote
-    "Bovenaan wilt zeggen; het heeft geen bovenliggende begrippen. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle begrippen op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen."@nl ,
+    "Bovenaan wil zeggen; het heeft geen bovenliggende begrippen. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle begrippen op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen."@nl ,
     "A top concept has no broader concepts in the given concept scheme."@en ;
   skos:notation
     "TT" ;
@@ -142,6 +142,9 @@ beg-sbb:Notation
     "notatie"@nl ,
     "classificatiecode"@nl ;
   skos:notation "CC" ;
+  dct:source 
+    <https://www.w3.org/TR/skos-reference/#notations>,
+    <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.40>
   skos:definition
     "A notation, also known as classification code, is a string of characters used to uniquely identify a concept within the scope of a given concept scheme."@en ,
     "Een code voor een begrip is een tekenreeks ter aanduiding van precies één begrip uit een begrippenkader."@nl ;
@@ -210,7 +213,7 @@ beg-sbb:Broader
     "«has broader» relates a concept to a concept that is more general in meaning."@en ,
     "«heeft bovenliggend begrip» relateert een begrip aan een begrip met een meer algemene betekenis."@nl ;
   skos:scopeNote 
-    "Conventie is om «heeft bovenliggend begrip» alleen te gebruiken om een ​​directe hiërarchische link tussen twee begrippen te beschrijven. In 'nette' taxonomieën zijn hiërarchische relaties in een begrippenkader transitief. Dat wil zeggen als «dier» een bovenliggend begrip is van «zoogdier» en «zoogdier» een bovenliggend begrip van «kat», dan is de bewering dat «dier In 'slordige' taxonomieën is dit niet zo, bijvoorbeeld als «voertuig» wordt gedefinieerd als bovenliggend begrip van «auto» en «wiel» als onderliggend begrip van «auto» dan is «wiel» niet echt een onderliggend begrip van «voertuig»."@nl, 
+    "Conventie is om «heeft bovenliggend begrip» alleen te gebruiken om een ​​directe hiërarchische link tussen twee begrippen te beschrijven. In 'nette' taxonomieën zijn hiërarchische relaties in een begrippenkader transitief. Dat wil zeggen als «dier» een bovenliggend begrip is van «zoogdier» en «zoogdier» een bovenliggend begrip van «kat», dan is de bewering dat «dier» een bovenliggend begrip is van «kat» juist. In 'slordige' taxonomieën is dit niet zo, bijvoorbeeld als «voertuig» wordt gedefinieerd als bovenliggend begrip van «auto» en «wiel» als onderliggend begrip van «auto» dan is «wiel» niet echt een onderliggend begrip van «voertuig»."@nl, 
     "By convention, «has broader» is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."@en;
   dct:source
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
@@ -344,7 +347,7 @@ beg-sbb:NarrowerInstantial
     "«is categorie van» relateert een begrip, de categorie, aan een begrip dat exemplarisch is voor eerstgenoemde begrip."@nl ,
     "Narrower term (instantial) is the immediate (direct or one-step) class - instance relationship."@en ;
   skos:scopeNote
-    "Bij deze instantiële relatie gaat het om begrippen die een bovengeschikte positie in een hiërarchie hebben. Het gaat hierbij om een hogere categorie van individuele voorbeelden en niet van soorten of delen van deze catagorie. "@nl;
+    "Bij deze instantiële relatie gaat het om begrippen die een bovengeschikte positie in een hiërarchie hebben. Het gaat hierbij om een hogere categorie van individuele voorbeelden en niet van soorten of delen van deze categorie. "@nl;
   skos:example
     "Een van de povinciehoofdsteden is Utrecht."@nl;
   dct:source
@@ -436,7 +439,7 @@ beg-sbb:Related
     "«is gerelateerd aan» verbindt een begrip met een ander begrip waarmee het semantisch samenhangt."@nl ,
     "Relates a concept to a concept with which there is an associative semantic relationship."@en ;
   skos:scopeNote 
-    "De associatieve relatie omvat associaties tussen paren begrippen die niet hiërarchisch met elkaar verbonden zijn, maar semantisch of conceptueel zodanig geassocieerd zijn dat de link ertussen expliciet gemaakt moet worden, omdat het aanvullende of alternatieve termen kan suggereren die kunnen worden gebruikt bij het indexeren of vinden van een begrip."@nl,
+    "De associatieve relatie omvat associaties tussen paren begrippen die niet hiërarchisch met elkaar verbonden zijn, maar semantisch of conceptueel zodanig geassocieerd zijn dat de link ertussen expliciet gemaakt moet worden, omdat het aanvullende of alternatieve termen kan suggereren die kunnen worden gebruikt bij het indexeren, vinden of begrijpen van een begrip."@nl,
     "The associative relationship covers associations between pairs of concepts that are not related hierarchically, but are semantically or conceptually associated to such an extent that the link between them needs to be made explicit, on the grounds that it may suggest additional or alternative terms for use in indexing or retrieval."@en;
   skos:broader beg-sbb:SemanticRelation ;
   dct:source
@@ -461,7 +464,7 @@ beg-sbb:BroaderPartitive
   skos:scopeNote
     "De hiërarchische geheel-deel-relatie omvat een beperkt aantal situaties. Het gaat daarbij om situaties waarin een deel van een entiteit of systeem behoort tot een bepaald geheel. Dit geldt voor vier soorten begrippen, namelijk: (1) systemen en organen van het lichaam, (2) geografische locaties, (3) disciplines onderzoeksgebieden of (4) hiërarchische sociale structuren. De meeste andere gevallen van de geheel-deelrelatie komen niet in aanmerking voor een hiërarchische koppeling omdat het deel tot meer dan één geheel kan behoren."@nl,
     "The hierarchical whole-part relationship covers a limited range of situations in which a part of an entity or system belongs uniquely to a particular possessing whole. This applies to four main classes of terms: systems and organs of the body, geographical locations, disciplines or fields of discourse and hierarchical social structures. Most other cases of the whole-part relationship are not eligible for a hierarchical linkage because the part could belong to more than one whole."@en;
-  skos:example "(1) een slagader is een bloedvat, (2) Amersfoort ligt in de provincie Utrecht. (3) zoölogie is ene discipline van de biologie of (4) Een bataljon is een legereenheid. Fout is de onderdeel van relatie tussen een wiel en een fiets omdat een wiel ook een onderdeel van een auto of machine kan zijn."@nl;
+  skos:example "(1) een slagader is een bloedvat, (2) Amersfoort ligt in de provincie Utrecht. (3) zoölogie is een discipline van de biologie of (4) Een bataljon is een legereenheid. Fout is de onderdeel van relatie tussen een wiel en een fiets omdat een wiel ook een onderdeel van een auto of machine kan zijn."@nl;
   dct:source
     <https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12> ,
     skosthes: ;
@@ -505,8 +508,8 @@ beg-sbb:BroaderGeneric
     "«is specialisatie van» relateert een begrip aan een meer generiek begrip."@nl ,
     "Broader term (generic)is the immediate (direct or one-step) class - generalized class relationship."@en ;
   skos:scopeNote
-    "The hierarchical relationship should be established between a pair of concepts when the scope of one of them falls completely within the scope of the other. It should be based on degrees or levels of superordination and subordination, where the superordinate concept represents a class or whole, and subordinate concepts refer to its members or species. A generalization is used when it is relevant to distinguish the relation from a partial or instantaneous hierarchical relation."@en,
-    "De hiërarchische relatie tussen een paar begrippen wordt gebruikt wanneer de reikwijdte van het ene begrip volledig binnen de reikwijdte van het andere begrip valt. Deze relatie is gebaseerd op graden of niveaus van bovenliggend en onderliggend, waarbij het bovenliggende concept een klasse of geheel vertegenwoordigt, en onderliggende begrippen verwijzen naar haar leden of soorten. Een generalisatie wordt gebruikt wanneer het relevant is om deze relatie te onderscheiden van een partiële of instantiële hiërarchische relatie."@nl;
+    "The hierarchical relationship should be established between a pair of concepts when the scope of one of them falls completely within the scope of the other. It should be based on degrees or levels of superordination and subordination, where the superordinate concept represents a class or whole, and subordinate concepts refer to its members or species. A specialization is used when it is relevant to distinguish the relation from a partial or instantaneous hierarchical relation."@en,
+    "De hiërarchische relatie tussen een paar begrippen wordt gebruikt wanneer de reikwijdte van het ene begrip volledig binnen de reikwijdte van het andere begrip valt. Deze relatie is gebaseerd op graden of niveaus van bovenliggend en onderliggend, waarbij het bovenliggende concept een klasse of geheel vertegenwoordigt, en onderliggende begrippen verwijzen naar haar leden of soorten. Een specialisatie wordt gebruikt wanneer het relevant is om deze relatie te onderscheiden van een partiële of instantiële hiërarchische relatie."@nl;
   skos:example "Sommige dieren zijn katten en sommige katten zijn perzen."@nl;
   dct:source skosthes: ;
   skos:related beg-sbb:Concept ;
@@ -951,7 +954,7 @@ beg-sbb:Thesaurus
     "Een thesaurus is een begrippenkader waarin begrippen semantisch en hiërarchisch zijn geordend."@nl ,
     "A thesaurus is a controlled and structured vocabulary in which concepts are organized semantically and hierarchically."@en;
   skos:scopeNote
-    "Het doel van een thesaurus is traditioneel om de indexeerder en de zoeker te helpen bij het kiezen van dezelfde term voor hetzelfde begrip. Om dit te bereiken, bevat een thesaurus in de eerste plaats alle begrippen die nuttig kunnen zijn voor zoekdoeleinden in een bepaald domein. Ten tweede moet een thesaurus de begrippen zo presenteren dat mensen ze gemakkelijk kunnen vinden. Dit wordt bereikt door relaties tussen begrippen tot stand te leggen en de relaties te gebruiken om de begrippen in een gestructureerde weergave te presenteren."@nl ,
+    "Het doel van een thesaurus is traditioneel om de indexeerder en de zoeker te helpen bij het kiezen van dezelfde term voor hetzelfde begrip. Om dit te bereiken, bevat een thesaurus in de eerste plaats alle begrippen die nuttig kunnen zijn voor zoekdoeleinden in een bepaald domein. Ten tweede moet een thesaurus de begrippen zo presenteren dat mensen ze gemakkelijk kunnen vinden. Dit wordt bereikt door relaties tussen begrippen te leggen en de relaties te gebruiken om de begrippen in een gestructureerde weergave te presenteren."@nl ,
     "The traditional aim of a thesaurus of a thesaurus is to help the indexer and searcher choose the same term for the same concept. To achieve this, a thesaurus primarily contains all concepts that can be useful for search purposes in a particular domain. Second, a thesaurus should present the concepts in such a way that people can find them easily. This is achieved by establishing relationships between concepts and using the relationships to present the concepts in a structured representation."@en ;
   dct:source
     <https://en.wikipedia.org/wiki/Thesaurus> ,

@@ -1,7 +1,7 @@
 # Kenmerken van begrippen
 
 ## Overzicht
-In dit hoofdstuk beschrijven we de kenmerken die kunnen worden gebruikt voor het beschrijven van een begrip. Hiermee komen we tot een gedeeld beeld en gedeelde taal waarmee we een [=begrip=], [=begrippenkader=] of [=collectie=] van begrippen [=brondocument=]en daarbij beschrijven. Dergelijke [semantisch interoperabele](https://nl.wikipedia.org/wiki/Interoperabiliteit) beschrijvingen van begrippen maken hergebruik van deze begrippen uit bijvoorbeeld de basisregistraties gemakkelijker.  
+In dit hoofdstuk beschrijven we de kenmerken die kunnen worden gebruikt voor het beschrijven van een begrip. Hiermee komen we tot een gedeeld beeld en gedeelde taal waarmee we een [=begrip=], [=begrippenkader=], [=brondocument=] of [=collectie=] van begrippen beschrijven. Dergelijke [semantisch interoperabele](https://nl.wikipedia.org/wiki/Interoperabiliteit) beschrijvingen van begrippen maken hergebruik van deze begrippen uit bijvoorbeeld de basisregistraties gemakkelijker.
 
 In [2.2](#conventies) beschrijven we de wijze waarop we begrippen, begrippenkaders en hun kenmerken in deze standaard worden gedefinieerd.
 
@@ -12,7 +12,7 @@ In [2.5](#brondocument) beschrijven we de elementen van een bibliografische of e
 In [2.6](#collectie) beschrijven we hoe begrippen los van hun semantische samenhang binnen een begrippenkader kunnen worden gegroepeerd in [=collectie=]s.
 
 ## Conventies
-* Het beschrijven van de kenmerken van een *begrip*, *begrippenkader* of *collectie* doen we conform onze eigen standaard (practice what you preach). Dat betekent dat we voor ieder kenmerk van een begrip de volgende kenmerken beschrijven:
+* Het beschrijven van de kenmerken van een *begrip*, *begrippenkader*, *brondocument* of *collectie* doen we conform onze eigen standaard (practice what you preach). Dat betekent dat we voor ieder kenmerk van een begrip de volgende aspecten beschrijven:
   * [=voorkeursterm=]. De Engelse term nemen we over uit SKOS, maar soms ook uit een daarmee samenhangende standaard zoals iso-thes. In het profiel geven we de Nederlandse definitie.
   * [=definitie=]. De definitie in het Engels nemen we over uit SKOS of een daarmee samenhangende standaard. In het profiel geven we de Nederlandse definitie. 
   * [=toelichting=]. De toelichting in het Engels nemen we over uit SKOS of een daarmee samenhangende standaard. De ISO 25964 geeft vaak ook een waardevolle (Engelse) toelichting. De ISO 25964 geeft zelf aan dat de toelichting misschien nog wel belangrijker is dan de definitie. Zowel de SKOS- als de ISO toelichting zijn naar het Nederlands vertaald.
@@ -238,7 +238,7 @@ Een taxonomie kent hiërarchische relaties. Deze hiërarchische relaties zijn op
 | **toelichting** | Een taxonomie wordt gebruikt om kennis te ordenen en te indexeren (opgeslagen als documenten, artikelen, video's, enz.), zoals in de vorm van een bibliotheekclassificatiesysteem of een taxonomie van een zoekmachine, zodat gebruikers de informatie die ze zoeken gemakkelijker kunnen vinden. Taxonomieën zijn hiërarchieën (en hebben dus een intrinsieke structuur en betekenis). |
 | **alternatieve term** | classificatieschema, taxonomische classificatie |
 
-In een taxonomie zijn alle begrippen direct of indirect gekoppeld aan een topbegrip. Typerend voor een taxonomie is een interface waarbij op het eerste niveau de topbegrippen worden getoond, waarbij per topbegrip begrippen met een engere betekenis worden getoond, die op hun beurt ook weer begrippen met een engere betekenis tonen, enzovoort. Dit betekent dat, als je een taxonomie publiceert, ieder begrip ofwel via een hiërarchische relatie moet worden gekoppeld aan een ander begrip, ofwel een topbegrip moet zijn. Dit impliceert dat de betekenis van een begrip niet alleen wordt bepaald door de namen en de notities, maar ook door de semantische relaties naar andere begrippen in het begrippenkader.
+In een taxonomie zijn alle begrippen direct of indirect gekoppeld aan een topbegrip, of ze zijn zelf een topbegrip. Typerend voor een taxonomie is een interface waarbij op het eerste niveau de topbegrippen worden getoond, waarbij per topbegrip begrippen met een engere betekenis worden getoond, die op hun beurt ook weer begrippen met een engere betekenis tonen, enzovoort. Dit betekent dat, als je een taxonomie publiceert, ieder begrip ofwel via een hiërarchische relatie moet worden gekoppeld aan een ander begrip, ofwel een topbegrip moet zijn. Dit impliceert dat de betekenis van een begrip niet alleen wordt bepaald door de namen en de notities, maar ook door de semantische relaties naar andere begrippen in het begrippenkader.
 
 |                       |                                       |
 |-----------------------|---------------------------------------|
@@ -256,7 +256,7 @@ Een topbegrip kan worden gedefinieerd vanuit een begrip in relatie tot een begri
 | **voorkeursterm** | <dfn>topbegrip</dfn>            |
 | **definitie** |  Een topbegrip is een begrip dat bovenaan de hiërarchie staat in een begrippenkader. |
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes |
-| **toelichting** | Bovenaan wilt zeggen; het heeft geen bovenliggende begrippen. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle begrippen op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen. |
+| **toelichting** | Bovenaan wil zeggen; het heeft geen bovenliggende begrippen. Dit maakt het gemakkelijker om bij het importeren van een thesaurus alle begrippen op het hoogste niveau eruit te halen en van daaruit een navigatieboom op te bouwen. |
 
 </br> 
 
@@ -265,7 +265,7 @@ Een topbegrip kan worden gedefinieerd vanuit een begrip in relatie tot een begri
 | **voorkeursterm**   | <dfn>heeft bovenliggend begrip</dfn> |
 | **definitie**        | «heeft bovenliggend begrip» relateert een begrip aan een begrip met een meer algemene betekenis. |
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/skos-reference/#semantic-relations |
-| **toelichting** | Conventie is om «heeft bovenliggend begrip» alleen te gebruiken om een ​​directe hiërarchische link tussen twee begrippen te beschrijven. In 'nette' taxonomieën zijn hiërarchische relaties in een begrippenkader transitief. Dat wil zeggen als «dier» een bovenliggend begrip is van «zoogdier» en «zoogdier» een bovenliggend begrip van «kat», dan is de bewering dat «dier In 'slordige' taxonomieën is dit niet zo, bijvoorbeeld als «voertuig» wordt gedefinieerd als bovenliggend begrip van «auto» en «wiel» als onderliggend begrip van «auto» dan is «wiel» niet echt een onderliggend begrip van «voertuig». |
+| **toelichting** | Conventie is om «heeft bovenliggend begrip» alleen te gebruiken om een ​​directe hiërarchische link tussen twee begrippen te beschrijven. In 'nette' taxonomieën zijn hiërarchische relaties in een begrippenkader transitief. Dat wil zeggen als «dier» een bovenliggend begrip is van «zoogdier» en «zoogdier» een bovenliggend begrip van «kat», dan is de bewering dat «dier» een bovenliggend begrip is van «kat» juist. In 'slordige' taxonomieën is dit niet zo, bijvoorbeeld als «voertuig» wordt gedefinieerd als bovenliggend begrip van «auto» en «wiel» als onderliggend begrip van «auto» dan is «wiel» niet echt een onderliggend begrip van «voertuig». |
 | **alternatieve term** | heeft breder begrip |
 | **code** | BT |
 
@@ -291,7 +291,7 @@ Naast de kenmerken die voor begrippen in een begrippenlijst of taxonomie zijn ge
 | **voorkeursterm**   | <dfn>thesaurus</dfn> |
 | **definitie**        | Een thesaurus is een begrippenkader waarin begrippen semantisch en hiërarchisch zijn geordend. |
 | **heeft bron** | https://en.wikipedia.org/wiki/Thesaurus, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.62 |
-| **toelichting** | Het doel van een thesaurus is traditioneel om de indexeerder en de zoeker te helpen bij het kiezen van dezelfde term voor hetzelfde begrip. Om dit te bereiken, bevat een thesaurus in de eerste plaats alle begrippen die nuttig kunnen zijn voor zoekdoeleinden in een bepaald domein. Ten tweede moet een thesaurus de begrippen zo presenteren dat mensen ze gemakkelijk kunnen vinden. Dit wordt bereikt door relaties tussen begrippen tot stand te leggen en de relaties te gebruiken om de begrippen in een gestructureerde weergave te presenteren. |
+| **toelichting** | Het doel van een thesaurus is traditioneel om de indexeerder en de zoeker te helpen bij het kiezen van dezelfde term voor hetzelfde begrip. Om dit te bereiken, bevat een thesaurus in de eerste plaats alle begrippen die nuttig kunnen zijn voor zoekdoeleinden in een bepaald domein. Ten tweede moet een thesaurus de begrippen zo presenteren dat mensen ze gemakkelijk kunnen vinden. Dit wordt bereikt door relaties tussen begrippen te leggen en de relaties te gebruiken om de begrippen in een gestructureerde weergave te presenteren. |
 
 </br> 
 
@@ -302,7 +302,7 @@ Naast de kenmerken die voor begrippen in een begrippenlijst of taxonomie zijn ge
 | **voorkeursterm**   | <dfn>is gerelateerd aan</dfn> |
 | **definitie**        | «is gerelateerd aan» verbindt een begrip met een ander begrip waarmee het semantisch samenhangt. |
 | **heeft bron** | http://www.w3.org/2004/02/skos/core#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12, https://www.w3.org/TR/skos-reference/#semantic-relations |
-| **toelichting** | De associatieve relatie omvat associaties tussen paren begrippen die niet hiërarchisch met elkaar verbonden zijn, maar semantisch of conceptueel zodanig geassocieerd zijn dat de link ertussen expliciet gemaakt moet worden, omdat het aanvullende of alternatieve termen kan suggereren die kunnen worden gebruikt bij het indexeren of vinden van een begrip. |
+| **toelichting** | De associatieve relatie omvat associaties tussen paren begrippen die niet hiërarchisch met elkaar verbonden zijn, maar semantisch of conceptueel zodanig geassocieerd zijn dat de link ertussen expliciet gemaakt moet worden, omdat het aanvullende of alternatieve termen kan suggereren die kunnen worden gebruikt bij het indexeren, vinden of begrijpen van een begrip. |
 | **code** | RT |
 
 </br> 
@@ -316,7 +316,7 @@ Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebru
 | **voorkeursterm**   | <dfn>is specialisatie van</dfn> |
 | **definitie**        | «is specialisatie van» relateert een begrip aan een meer generiek begrip. |
 | **heeft bron** | http://purl.org/iso25964/skos-thes# |
-| **toelichting** | De hiërarchische relatie tussen een paar begrippen wordt gebruikt wanneer de reikwijdte van het ene begrip volledig binnen de reikwijdte van het andere begrip valt. Deze relatie is gebaseerd op graden of niveaus van bovenliggend en onderliggend, waarbij het bovenliggende concept een klasse of geheel vertegenwoordigt, en onderliggende begrippen verwijzen naar haar leden of soorten. Een generalisatie wordt gebruikt wanneer het relevant is om deze relatie te onderscheiden van een partiële of instantiële hiërarchische relatie. |
+| **toelichting** | De hiërarchische relatie tussen een paar begrippen wordt gebruikt wanneer de reikwijdte van het ene begrip volledig binnen de reikwijdte van het andere begrip valt. Deze relatie is gebaseerd op graden of niveaus van bovenliggend en onderliggend, waarbij het bovenliggende concept een klasse of geheel vertegenwoordigt, en onderliggende begrippen verwijzen naar haar leden of soorten. Een specialisatie wordt gebruikt wanneer het relevant is om deze relatie te onderscheiden van een partiële of instantiële hiërarchische relatie. |
 | **voorbeeld** | Een pers is een kat en een kat is een dier. |
 | **code** | NTG |
 
@@ -339,7 +339,7 @@ Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebru
 | **definitie**        | «is onderdeel van» relateert een begrip aan een meer omvattend begrip. |
 | **heeft bron** | http://purl.org/iso25964/skos-thes#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12 |
 | **toelichting** | De hiërarchische geheel-deel-relatie omvat een beperkt aantal situaties. Het gaat daarbij om situaties waarin een deel van een entiteit of systeem behoort tot een bepaald geheel. Dit geldt voor vier soorten begrippen, namelijk: (1) systemen en organen van het lichaam, (2) geografische locaties, (3) disciplines onderzoeksgebieden of (4) hiërarchische sociale structuren. De meeste andere gevallen van de geheel-deelrelatie komen niet in aanmerking voor een hiërarchische koppeling omdat het deel tot meer dan één geheel kan behoren. |
-| **voorbeeld** | (1) een slagader is een bloedvat, (2) Amersfoort ligt in de provincie Utrecht. (3) zoölogie is ene discipline van de biologie of (4) Een bataljon is een legereenheid. Fout is de onderdeel van relatie tussen een wiel en een fiets omdat een wiel ook een onderdeel van een auto of machine kan zijn. |
+| **voorbeeld** | (1) een slagader is een bloedvat, (2) Amersfoort ligt in de provincie Utrecht. (3) zoölogie is een discipline van de biologie of (4) Een bataljon is een legereenheid. Fout is de onderdeel van relatie tussen een wiel en een fiets omdat een wiel ook een onderdeel van een auto of machine kan zijn. |
 | **code** | BTP |
 
 </br> 
@@ -371,7 +371,7 @@ Hoewel een al dan niet transitief onderliggend of bovenliggend begrip vaak gebru
 | **voorkeursterm**   | <dfn>is categorie van</dfn> |
 | **definitie**        | «is categorie van» relateert een begrip, de categorie, aan een begrip dat exemplarisch is voor eerstgenoemde begrip. |
 | **heeft bron** | http://purl.org/iso25964/skos-thes#, https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12 |
-| **toelichting** | Bij deze instantiële relatie gaat het om begrippen die een bovengeschikte positie in een hiërarchie hebben. Het gaat hierbij om een hogere categorie van individuele voorbeelden en niet van soorten of delen van deze catagorie. |
+| **toelichting** | Bij deze instantiële relatie gaat het om begrippen die een bovengeschikte positie in een hiërarchie hebben. Het gaat hierbij om een hogere categorie van individuele voorbeelden en niet van soorten of delen van deze categorie. |
 | **voorbeeld** | Een van de povinciehoofdsteden is Utrecht. |
 | **code** | NTI |
 

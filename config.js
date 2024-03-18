@@ -169,6 +169,25 @@ let respecConfig = {
             id: "vocab-adms-asset",
             date: "1 August 2013"
         },
+        FOAF: {
+            "authors": [
+                "Dan Brickley",
+                "Libby Miller"
+            ],
+            "href": "http://xmlns.com/foaf/spec",
+            "title": "FOAF Vocabulary",
+            "publisher": "FOAF project",
+            "versions": [
+                "FOAF-20140114",
+                "FOAF-20100809",
+                "FOAF-20100101",
+                "FOAF-20091215",
+                "FOAF-20071002",
+                "FOAF-20070524"
+            ],
+            "id": "FOAF",
+            "date": "14 January 2014"
+        },
     },    
     alternateFormats: [
         {
