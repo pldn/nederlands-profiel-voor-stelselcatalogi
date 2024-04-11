@@ -8,7 +8,7 @@ Het uitgangspunt is dat een dataset iets anders is als een gegevensobject en een
 
 ## Varianten
 
-Omdat Dit model op op veel verschillende manieren te gebruiken is schetsen we hier een aantal voor de hand liggende scenario's voor het inrichten van versiebeheer van begripsbeschrijvingen:
+Omdat dit model op op veel verschillende manieren te gebruiken is schetsen we hier een aantal voor de hand liggende scenario's voor het inrichten van versiebeheer van begripsbeschrijvingen:
 
 - A. De eenheid van beheer is een complete begripsbeschrijving.
 - B. De eenheid van beheer is een begrippenkaderbeschrijving.
@@ -29,11 +29,11 @@ Elke wijziging op een individuele begripsbeschrijving heeft geen impact op de an
 Bij versiebeheer op begrippenenkaderbeschrijvingniveau zitten alle gegevensobjecten die horen bij de beschrijving van een begrippenkader onder de beheerset van dat begrippenkader.
 Wanneer een begripsbeschrijving wijzigt is er sprake van een nieuwe versie van de begrippenkaderbeschrijving.
 
-### C. (thematische) bundeling als eenheid van beheer
+### C. Begripsbeschrijving deel als eenheid van beheer
 
-![](media/versiebeheer.thematischeBundeling.svg)
+![](media/versiebeheer.begripsbeschrijvingDeel.svg)
 
-TODO
+Versiebeheer op een deel van de complete begripsbeschrijving gaat er van uit dat bepaalde gegevens over een begrip tezamen beheerd worden. Ieder begrip heeft zo meerdere, complementaire, beschrijvingen. Deze beschrijvingen kunnen conform Variant A individueel beheerd, of conform Variant B als verzameling beheerd worden.
 
 ## Tijdcontext van datasets
 
@@ -44,5 +44,5 @@ Een belangrijk aspect voor een stelsel is het in een tijdcontext kunnen relatere
 
 Daarmee moet van een gegevensobject in ieder geval bepaald kunnen worden
 
-* of het op eem gegeven moment geldig was.
+* of het op een gegeven moment geldig was.
 * of het op een gegeven moment beschikbaar was.
