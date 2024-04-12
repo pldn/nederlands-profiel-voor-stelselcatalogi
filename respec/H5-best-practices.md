@@ -322,7 +322,7 @@ De eenheid van beheer is het geheel van gegevensobjecten die als één gezamenli
 
 Het toepassen van de kernprincipes voor versiebeheer leidt tot het volgende model.
 
-![](respec/media/versiebeheer.conceptueel.svg)
+![](respec/media/versiebeheer.conceptueel.svg "Diagram: Versiebeheer conceptueel")
 
 Omdat dit model op op veel verschillende manieren te gebruiken is schetsen we hier een aantal voor de hand liggende scenario's voor het inrichten van versiebeheer van begripsbeschrijvingen:
 
@@ -332,21 +332,21 @@ Omdat dit model op op veel verschillende manieren te gebruiken is schetsen we hi
 
 #### A. Begripsbeschrijving als eenheid van beheer
 
-![](respec/media/versiebeheer.begripsbeschrijving.svg)
+![](respec/media/versiebeheer.begripsbeschrijving.svg "Diagram: Variant A")
 
 Versiebeheer op begripsbeschrijving gaat ervan uit dat er een gegevensobject per begrip in een begrippenkader wordt gemaakt en dat het beheer op dat niveau wordt gereregeld.
 Elke wijziging op een individuele begripsbeschrijving heeft geen impact op de andere begripsbeschrijvingen.
 
 #### B. Begrippenkaderbeschrijving als eenheid van beheer
 
-![](respec/media/versiebeheer.begrippenkaderbeschrijving.svg)
+![](respec/media/versiebeheer.begrippenkaderbeschrijving.svg  "Diagram: Variant B")
 
 Bij versiebeheer op begrippenenkaderbeschrijvingniveau zitten alle gegevensobjecten die horen bij de beschrijving van een begrippenkader onder de beheerset van dat begrippenkader.
 Wanneer een begripsbeschrijving wijzigt is er sprake van een nieuwe versie van de begrippenkaderbeschrijving.
 
 #### C. Begripsbeschrijving deel als eenheid van beheer
 
-![](respec/media/versiebeheer.begripsbeschrijvingDeel.svg)
+![](respec/media/versiebeheer.begripsbeschrijvingDeel.svg  "Diagram: Variant C")
 
 Versiebeheer op een deel van de complete begripsbeschrijving gaat er van uit dat bepaalde gegevens over een begrip tezamen beheerd worden. Ieder begrip heeft zo meerdere, complementaire, beschrijvingen. Deze beschrijvingen kunnen conform Variant A individueel beheerd, of conform Variant B als verzameling beheerd worden.
 
