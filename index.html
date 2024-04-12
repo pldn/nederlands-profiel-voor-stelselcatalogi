@@ -536,7 +536,7 @@ De standaard kent een taalbinding waarmee een begrippenkader als Linked data kan
   <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>De <strong>standaard voor het beschrijven van begrippen</strong> geeft aan hoe begrippen in een begrippenlijst, taxonomie of thesaurus eenduidig worden beschreven. Er is aandacht voor uitleg in begrijpelijke taal (B1 niveau) en de verwijzing naar de (juridische) grondslag van een begrip in een geschreven bron of een bron op het internet (zoals wetten.nl).
 De standaard kent een taalbinding waarmee een begrippenkader als Linked data kan worden gepubliceerd. Daarbij wordt gebruik gemaakt van met name SKOS, maar de standaard kan ook worden gebruikt zonder gebruik te maken van Linked data. Daarmee kunnen organisaties los van de door hen gebruikte technologie de standaard toepassen als stap op weg naar semantische interoperabiliteit.</p>
 </section>
-  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is de definitieve conceptversie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#H1"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#toepassingsgebied"><bdi class="secno">1.1 </bdi>Toepassingsgebied</a></li><li class="tocline"><a class="tocxref" href="#doelgroep"><bdi class="secno">1.2 </bdi>Doelgroep</a></li><li class="tocline"><a class="tocxref" href="#onderbouwing"><bdi class="secno">1.3 </bdi>Onderbouwing</a></li><li class="tocline"><a class="tocxref" href="#use-cases"><bdi class="secno">1.4 </bdi>Use cases</a></li><li class="tocline"><a class="tocxref" href="#leeswijzer"><bdi class="secno">1.5 </bdi>Leeswijzer</a></li></ol></li><li class="tocline"><a class="tocxref" href="#H2"><bdi class="secno">2. </bdi>Kenmerken van begrippen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#overzicht"><bdi class="secno">2.1 </bdi>Overzicht</a></li><li class="tocline"><a class="tocxref" href="#conventies"><bdi class="secno">2.2 </bdi>Conventies</a></li><li class="tocline"><a class="tocxref" href="#begrip"><bdi class="secno">2.3 </bdi>Begrip</a></li><li class="tocline"><a class="tocxref" href="#begrippenkader"><bdi class="secno">2.4 </bdi>Begrippenkader</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#begrippenlijst"><bdi class="secno">2.4.1 </bdi>Begrippenlijst</a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#taxonomie"><bdi class="secno">2.4.2 </bdi>Taxonomie</a></li><li class="tocline"><a class="tocxref" href="#thesaurus"><bdi class="secno">2.4.3 </bdi>Thesaurus</a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#harmonisatiesrelaties"><bdi class="secno">2.4.4 </bdi>Harmonisatiesrelaties</a></li></ol></li><li class="tocline"><a class="tocxref" href="#brondocument"><bdi class="secno">2.5 </bdi>Brondocument</a></li><li class="tocline"><a class="tocxref" href="#collectie"><bdi class="secno">2.6 </bdi>Collectie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#H3"><bdi class="secno">3. </bdi>Begrippenkader</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#begrippenlijst-0"><bdi class="secno">3.1 </bdi>Begrippenlijst</a></li><li class="tocline"><a class="tocxref" href="#taxonomie-0"><bdi class="secno">3.2 </bdi>Taxonomie</a></li><li class="tocline"><a class="tocxref" href="#thesaurus-0"><bdi class="secno">3.3 </bdi>Thesaurus</a></li></ol></li><li class="tocline"><a class="tocxref" href="#H4"><bdi class="secno">4. </bdi>Toepassingsprofiel in RDF</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#overzicht-0"><bdi class="secno">4.1 </bdi>Overzicht</a></li><li class="tocline"><a class="tocxref" href="#uitwerking"><bdi class="secno">4.2 </bdi>Uitwerking</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#types"><bdi class="secno">4.2.1 </bdi>Types</a></li><li class="tocline"><a class="tocxref" href="#eigenschappen"><bdi class="secno">4.2.2 </bdi>Eigenschappen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#specificatie"><bdi class="secno">4.3 </bdi>Specificatie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#specificatie-begrippenkader"><bdi class="secno">4.3.1 </bdi>Specificatie Begrippenkader</a></li><li class="tocline"><a class="tocxref" href="#specificatie-begrip"><bdi class="secno">4.3.2 </bdi>Specificatie Begrip</a></li><li class="tocline"><a class="tocxref" href="#specificatie-brondocument"><bdi class="secno">4.3.3 </bdi>Specificatie Brondocument</a></li><li class="tocline"><a class="tocxref" href="#specificatie-collectie"><bdi class="secno">4.3.4 </bdi>Specificatie Collectie</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#H5"><bdi class="secno">5. </bdi>Best practices</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#begrippen"><bdi class="secno">5.1 </bdi>Begrippen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#termen-0"><bdi class="secno">5.1.1 </bdi>Termen</a></li><li class="tocline"><a class="tocxref" href="#definities-en-uitleg"><bdi class="secno">5.1.2 </bdi>Definities en uitleg</a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#hierarchische-relaties"><bdi class="secno">5.1.3 </bdi>Hiërarchische relaties</a></li></ol></li><li class="tocline"><a class="tocxref" href="#bronnen"><bdi class="secno">5.2 </bdi>Bronnen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#typering"><bdi class="secno">5.2.1 </bdi>Typering</a></li></ol></li><li class="tocline"><a class="tocxref" href="#harmonisatie-en-hergebruik"><bdi class="secno">5.3 </bdi>Harmonisatie en hergebruik</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#harmonisatie"><bdi class="secno">5.3.1 </bdi>Harmonisatie</a></li><li class="tocline"><a class="tocxref" href="#hergebruik"><bdi class="secno">5.3.2 </bdi>Hergebruik</a></li></ol></li><li class="tocline"><a class="tocxref" href="#samenwerking-informatiemodel-en-begrippenkader"><bdi class="secno">5.4 </bdi>Samenwerking Informatiemodel en Begrippenkader</a></li><li class="tocline"><a class="tocxref" href="#begrippenbeheer-en-metadata"><bdi class="secno">5.5 </bdi>Begrippenbeheer en metadata</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#kernprincipes"><bdi class="secno">5.5.1 </bdi>Kernprincipes</a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#varianten-voor-versiebeheer-van-begripsbeschrijvingen"><bdi class="secno">5.5.2 </bdi>Varianten voor versiebeheer van begripsbeschrijvingen</a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#taalbinding"><bdi class="secno">5.5.3 </bdi>Taalbinding</a><ol class="toc"></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#H6"><bdi class="secno">6. </bdi>Uitbreidingen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#aanvullingen"><bdi class="secno">6.1 </bdi>Aanvullingen</a></li><li class="tocline"><a class="tocxref" href="#skos-xl"><bdi class="secno">6.2 </bdi>SKOS-XL</a></li><li class="tocline"><a class="tocxref" href="#skos-lex"><bdi class="secno">6.3 </bdi>Skos-lex</a></li><li class="tocline"><a class="tocxref" href="#ontolex"><bdi class="secno">6.4 </bdi>Ontolex</a></li><li class="tocline"><a class="tocxref" href="#lemon-tree"><bdi class="secno">6.5 </bdi>Lemon-tree</a></li><li class="tocline"><a class="tocxref" href="#xkos"><bdi class="secno">6.6 </bdi>XKOS</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">7. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#namespace-verklaringen"><bdi class="secno">B. </bdi>Namespace verklaringen</a></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">C. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatieve-referenties"><bdi class="secno">C.1 </bdi>Informatieve referenties</a></li></ol></li></ol></nav>
+  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is de definitieve conceptversie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#H1"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#toepassingsgebied"><bdi class="secno">1.1 </bdi>Toepassingsgebied</a></li><li class="tocline"><a class="tocxref" href="#doelgroep"><bdi class="secno">1.2 </bdi>Doelgroep</a></li><li class="tocline"><a class="tocxref" href="#onderbouwing"><bdi class="secno">1.3 </bdi>Onderbouwing</a></li><li class="tocline"><a class="tocxref" href="#use-cases"><bdi class="secno">1.4 </bdi>Use cases</a></li><li class="tocline"><a class="tocxref" href="#leeswijzer"><bdi class="secno">1.5 </bdi>Leeswijzer</a></li></ol></li><li class="tocline"><a class="tocxref" href="#H2"><bdi class="secno">2. </bdi>Kenmerken van begrippen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#overzicht"><bdi class="secno">2.1 </bdi>Overzicht</a></li><li class="tocline"><a class="tocxref" href="#conventies"><bdi class="secno">2.2 </bdi>Conventies</a></li><li class="tocline"><a class="tocxref" href="#begrip"><bdi class="secno">2.3 </bdi>Begrip</a></li><li class="tocline"><a class="tocxref" href="#begrippenkader"><bdi class="secno">2.4 </bdi>Begrippenkader</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#begrippenlijst"><bdi class="secno">2.4.1 </bdi>Begrippenlijst</a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#taxonomie"><bdi class="secno">2.4.2 </bdi>Taxonomie</a></li><li class="tocline"><a class="tocxref" href="#thesaurus"><bdi class="secno">2.4.3 </bdi>Thesaurus</a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#harmonisatiesrelaties"><bdi class="secno">2.4.4 </bdi>Harmonisatiesrelaties</a></li></ol></li><li class="tocline"><a class="tocxref" href="#brondocument"><bdi class="secno">2.5 </bdi>Brondocument</a></li><li class="tocline"><a class="tocxref" href="#collectie"><bdi class="secno">2.6 </bdi>Collectie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#H3"><bdi class="secno">3. </bdi>Begrippenkader</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#begrippenlijst-0"><bdi class="secno">3.1 </bdi>Begrippenlijst</a></li><li class="tocline"><a class="tocxref" href="#taxonomie-0"><bdi class="secno">3.2 </bdi>Taxonomie</a></li><li class="tocline"><a class="tocxref" href="#thesaurus-0"><bdi class="secno">3.3 </bdi>Thesaurus</a></li></ol></li><li class="tocline"><a class="tocxref" href="#H4"><bdi class="secno">4. </bdi>Toepassingsprofiel in RDF</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#overzicht-0"><bdi class="secno">4.1 </bdi>Overzicht</a></li><li class="tocline"><a class="tocxref" href="#uitwerking"><bdi class="secno">4.2 </bdi>Uitwerking</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#types"><bdi class="secno">4.2.1 </bdi>Types</a></li><li class="tocline"><a class="tocxref" href="#eigenschappen"><bdi class="secno">4.2.2 </bdi>Eigenschappen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#specificatie"><bdi class="secno">4.3 </bdi>Specificatie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#specificatie-begrippenkader"><bdi class="secno">4.3.1 </bdi>Specificatie Begrippenkader</a></li><li class="tocline"><a class="tocxref" href="#specificatie-begrip"><bdi class="secno">4.3.2 </bdi>Specificatie Begrip</a></li><li class="tocline"><a class="tocxref" href="#specificatie-brondocument"><bdi class="secno">4.3.3 </bdi>Specificatie Brondocument</a></li><li class="tocline"><a class="tocxref" href="#specificatie-collectie"><bdi class="secno">4.3.4 </bdi>Specificatie Collectie</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#H5"><bdi class="secno">5. </bdi>Best practices</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#begrippen"><bdi class="secno">5.1 </bdi>Begrippen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#termen-0"><bdi class="secno">5.1.1 </bdi>Termen</a></li><li class="tocline"><a class="tocxref" href="#definities-en-uitleg"><bdi class="secno">5.1.2 </bdi>Definities en uitleg</a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#hierarchische-relaties"><bdi class="secno">5.1.3 </bdi>Hiërarchische relaties</a></li></ol></li><li class="tocline"><a class="tocxref" href="#bronnen"><bdi class="secno">5.2 </bdi>Bronnen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#typering"><bdi class="secno">5.2.1 </bdi>Typering</a></li></ol></li><li class="tocline"><a class="tocxref" href="#harmonisatie-en-hergebruik"><bdi class="secno">5.3 </bdi>Harmonisatie en hergebruik</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#harmonisatie"><bdi class="secno">5.3.1 </bdi>Harmonisatie</a></li><li class="tocline"><a class="tocxref" href="#hergebruik"><bdi class="secno">5.3.2 </bdi>Hergebruik</a></li></ol></li><li class="tocline"><a class="tocxref" href="#samenwerking-informatiemodel-en-begrippenkader"><bdi class="secno">5.4 </bdi>Samenwerking Informatiemodel en Begrippenkader</a></li><li class="tocline"><a class="tocxref" href="#begrippenbeheer-en-metadata"><bdi class="secno">5.5 </bdi>Begrippenbeheer en metadata</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#kernprincipes"><bdi class="secno">5.5.1 </bdi>Kernprincipes</a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#varianten-voor-versiebeheer-van-begripsbeschrijvingen"><bdi class="secno">5.5.2 </bdi>Varianten voor versiebeheer van begripsbeschrijvingen</a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#tijdcontext-van-datasets"><bdi class="secno">5.5.3 </bdi>Tijdcontext van datasets</a></li><li class="tocline"><a class="tocxref" href="#taalbinding"><bdi class="secno">5.5.4 </bdi>Taalbinding</a><ol class="toc"></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#H6"><bdi class="secno">6. </bdi>Uitbreidingen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#aanvullingen"><bdi class="secno">6.1 </bdi>Aanvullingen</a></li><li class="tocline"><a class="tocxref" href="#skos-xl"><bdi class="secno">6.2 </bdi>SKOS-XL</a></li><li class="tocline"><a class="tocxref" href="#skos-lex"><bdi class="secno">6.3 </bdi>Skos-lex</a></li><li class="tocline"><a class="tocxref" href="#ontolex"><bdi class="secno">6.4 </bdi>Ontolex</a></li><li class="tocline"><a class="tocxref" href="#lemon-tree"><bdi class="secno">6.5 </bdi>Lemon-tree</a></li><li class="tocline"><a class="tocxref" href="#xkos"><bdi class="secno">6.6 </bdi>XKOS</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">7. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#namespace-verklaringen"><bdi class="secno">B. </bdi>Namespace verklaringen</a></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">C. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatieve-referenties"><bdi class="secno">C.1 </bdi>Informatieve referenties</a></li></ol></li></ol></nav>
   <section id="H1" class="informative"><div class="header-wrapper"><h2 id="x1-inleiding"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#H1" aria-label="Permalink for Section 1."></a></div><p><em>Dit onderdeel is niet normatief.</em></p>
 <section id="toepassingsgebied"><div class="header-wrapper"><h3 id="x1-1-toepassingsgebied"><bdi class="secno">1.1 </bdi>Toepassingsgebied</h3><a class="self-link" href="#toepassingsgebied" aria-label="Permalink for Section 1.1"></a></div>
 <p>De voorliggende standaard richt zich op het beschrijven van begrippen in een begrippenkader. Dit maakt het mogelijk om:</p>
@@ -2801,57 +2801,53 @@ ex2:Land a skos:Concept ;
 </section></section><section id="varianten-voor-versiebeheer-van-begripsbeschrijvingen"><div class="header-wrapper"><h4 id="x5-5-2-varianten-voor-versiebeheer-van-begripsbeschrijvingen"><bdi class="secno">5.5.2 </bdi>Varianten voor versiebeheer van begripsbeschrijvingen</h4><a class="self-link" href="#varianten-voor-versiebeheer-van-begripsbeschrijvingen" aria-label="Permalink for Section 5.5.2"></a></div>
 <p>Het toepassen van de kernprincipes voor versiebeheer leidt tot het volgende model.</p>
 <p>
-      </p><figure id="fig-versiebeheer">
-        <img src="respec/media/versiebeheer.jpg" alt="">
-        <figcaption><a class="self-link" href="#fig-versiebeheer">Figuur <bdi class="figno">6</bdi></a> <span class="fig-title">Versiebeheer</span></figcaption>
+      </p><figure id="fig-diagram-versiebeheer-conceptueel">
+        <img src="respec/media/versiebeheer.conceptueel.svg" alt="">
+        <figcaption><a class="self-link" href="#fig-diagram-versiebeheer-conceptueel">Figuur <bdi class="figno">6</bdi></a> <span class="fig-title">Diagram: Versiebeheer conceptueel</span></figcaption>
       </figure>
     <p></p>
-<p>Dit model is op twee manieren te gebruiken bij het versiesbeheer in de context van SBB:</p>
+<p>Omdat dit model op op veel verschillende manieren te gebruiken is schetsen we hier een aantal voor de hand liggende scenario's voor het inrichten van versiebeheer van begripsbeschrijvingen:</p>
 <ul>
-<li>A. De eenheid van beheer is een afzonderlijke begripsbeschrijving. We beheren deze begripsbeschrijvingen (die daarmee een eigen versiehistorie kennen).</li>
-<li>B. De eenheid van beheer is het begrippenkader. We beheren begrippenkaders (die ook een eigen versiehistorie kennen) en daarmee de beschrijvingen van de begrippen die ertoe behoren;</li>
-<li>C. De eenheid van beheer is een (thematische) bundeling van beschrijvingen anders dan het begrippenkader (de bundeling heeft als geheel versiehistorie).</li>
+<li>A. De eenheid van beheer is een complete begripsbeschrijving.</li>
+<li>B. De eenheid van beheer is een begrippenkaderbeschrijving.</li>
+<li>C. De eenheid van beheer is een deel van een complete begripsbeschrijving.</li>
 </ul>
 <section id="a-begripsbeschrijving-als-eenheid-van-beheer"><div class="header-wrapper"><h5 id="x5-5-2-1-a-begripsbeschrijving-als-eenheid-van-beheer"><bdi class="secno">5.5.2.1 </bdi>A. Begripsbeschrijving als eenheid van beheer</h5><a class="self-link" href="#a-begripsbeschrijving-als-eenheid-van-beheer" aria-label="Permalink for Section 5.5.2.1"></a></div>
 <p>
-      </p><figure id="fig-begripsbeschrijving-als-eenheid-van-beheer">
-        <img src="respec/media/versiebeheer2.png" alt="">
-        <figcaption><a class="self-link" href="#fig-begripsbeschrijving-als-eenheid-van-beheer">Figuur <bdi class="figno">7</bdi></a> <span class="fig-title">Begripsbeschrijving als eenheid van beheer</span></figcaption>
+      </p><figure id="fig-diagram-variant-a">
+        <img src="respec/media/versiebeheer.begripsbeschrijving.svg" alt="">
+        <figcaption><a class="self-link" href="#fig-diagram-variant-a">Figuur <bdi class="figno">7</bdi></a> <span class="fig-title">Diagram: Variant A</span></figcaption>
       </figure>
     <p></p>
-<p>Ook in dit model lopen relaties tussen begrippen altijd van het ene begrip naar het andere begrip. Stel dat er een relatie loopt van het begrip «Autobestuurder» naar het begrip «Auto». De begripsbeschrijving worden in dit model altijd afzonderlijk bijgehouden. We weten dan niet direct welke versie van de begripsbeschrijving is gebruikt. Immers: onze basisprincipes stellen dat een relatie tussen onderwerpen loopt (en niet tussen gegevensobjecten).</p>
-<ul>
-<li>De relatie is: «Autobestuurder» <em>is gerelateerd aan</em> «Auto»</li>
-<li>De versierelatie is: [Beschrijving van het begrip Autobestuurder versie 1.0.3] <em>maakt gebruik van</em> [Beschrijving van het begrip auto versie 1.2.3].</li>
-</ul>
-<p>Ook in dit geval zou je kunnen spreken van een "import" relatie.</p>
-</section><section id="b-begrippenkader-als-eenheid-van-beheer"><div class="header-wrapper"><h5 id="x5-5-2-2-b-begrippenkader-als-eenheid-van-beheer"><bdi class="secno">5.5.2.2 </bdi>B. Begrippenkader als eenheid van beheer</h5><a class="self-link" href="#b-begrippenkader-als-eenheid-van-beheer" aria-label="Permalink for Section 5.5.2.2"></a></div>
+<p>Versiebeheer op begripsbeschrijving gaat ervan uit dat er een gegevensobject per begrip in een begrippenkader wordt gemaakt en dat het beheer op dat niveau wordt gereregeld.
+Elke wijziging op een individuele begripsbeschrijving heeft geen impact op de andere begripsbeschrijvingen.</p>
+</section><section id="b-begrippenkaderbeschrijving-als-eenheid-van-beheer"><div class="header-wrapper"><h5 id="x5-5-2-2-b-begrippenkaderbeschrijving-als-eenheid-van-beheer"><bdi class="secno">5.5.2.2 </bdi>B. Begrippenkaderbeschrijving als eenheid van beheer</h5><a class="self-link" href="#b-begrippenkaderbeschrijving-als-eenheid-van-beheer" aria-label="Permalink for Section 5.5.2.2"></a></div>
 <p>
-      </p><figure id="fig-begrippenkader-als-eenheid-van-beheer">
-        <img src="respec/media/versiebeheer1.png" alt="">
-        <figcaption><a class="self-link" href="#fig-begrippenkader-als-eenheid-van-beheer">Figuur <bdi class="figno">8</bdi></a> <span class="fig-title">Begrippenkader als eenheid van beheer</span></figcaption>
+      </p><figure id="fig-diagram-variant-b">
+        <img src="respec/media/versiebeheer.begrippenkaderbeschrijving.svg" alt="">
+        <figcaption><a class="self-link" href="#fig-diagram-variant-b">Figuur <bdi class="figno">8</bdi></a> <span class="fig-title">Diagram: Variant B</span></figcaption>
       </figure>
     <p></p>
-<p>In dit model lopen relaties tussen begrippen altijd van het ene begrip naar het andere begrip. Stel dat er een relatie loopt van het begrip «Autobestuurder» naar het begrip «Auto», waarbij de beschrijving van het begrip «Auto» wordt bijgehouden in een ander begrippenkader dan de beschrijving van het begrip «Autobestuurder». We weten dan niet direct welke versie van de begripsbeschrijving is gebruikt. Immers: onze basisprincipes stellen dat een relatie tussen onderwerpen loopt (en niet tussen gegevensobjecten).</p>
-<ul>
-<li>De relatie is: «Autobestuurder» <em>is gerelateerd aan</em> «Auto»</li>
-<li>De versierelatie is: [Begrippenkader autobestuurder versie 1.0.3] <em>maakt gebruik van</em> [Begrippenkader auto versie 1.2.3].</li>
-</ul>
-<p>Een dergelijke versierelatie wordt ook vaak wel een "import" relatie genoemd.</p>
-</section><section id="c-thematische-bundeling-als-eenheid-van-beheer"><div class="header-wrapper"><h5 id="x5-5-2-3-c-thematische-bundeling-als-eenheid-van-beheer"><bdi class="secno">5.5.2.3 </bdi>C. (Thematische) bundeling als eenheid van beheer</h5><a class="self-link" href="#c-thematische-bundeling-als-eenheid-van-beheer" aria-label="Permalink for Section 5.5.2.3"></a></div>
+<p>Bij versiebeheer op begrippenenkaderbeschrijvingniveau zitten alle gegevensobjecten die horen bij de beschrijving van een begrippenkader onder de beheerset van dat begrippenkader.
+Wanneer een begripsbeschrijving wijzigt is er sprake van een nieuwe versie van de begrippenkaderbeschrijving.</p>
+</section><section id="c-begripsbeschrijving-deel-als-eenheid-van-beheer"><div class="header-wrapper"><h5 id="x5-5-2-3-c-begripsbeschrijving-deel-als-eenheid-van-beheer"><bdi class="secno">5.5.2.3 </bdi>C. Begripsbeschrijving deel als eenheid van beheer</h5><a class="self-link" href="#c-begripsbeschrijving-deel-als-eenheid-van-beheer" aria-label="Permalink for Section 5.5.2.3"></a></div>
 <p>
-      </p><figure id="fig-thematische-bundeling-als-eenheid-van-beheer">
-        <img src="respec/media/versiebeheer3.png" alt="">
-        <figcaption><a class="self-link" href="#fig-thematische-bundeling-als-eenheid-van-beheer">Figuur <bdi class="figno">9</bdi></a> <span class="fig-title">(Thematische) bundeling als eenheid van beheer</span></figcaption>
+      </p><figure id="fig-diagram-variant-c">
+        <img src="respec/media/versiebeheer.begripsbeschrijvingDeel.svg" alt="">
+        <figcaption><a class="self-link" href="#fig-diagram-variant-c">Figuur <bdi class="figno">9</bdi></a> <span class="fig-title">Diagram: Variant C</span></figcaption>
       </figure>
     <p></p>
-<p>In dit model lopen relaties tussen begrippen altijd van het ene begrip naar het andere begrip. Stel dat er een relatie loopt van het begrip «Autobestuurder» naar het begrip «Auto», waarbij de beschrijving van het begrip «Auto» wordt bijgehouden in een andere beheer eenheid dan de beschrijving van het begrip «Autobestuurder». We weten dan niet direct welke versie van de begripsbeschrijving is gebruikt. Immers: onze basisprincipes stellen dat een relatie tussen onderwerpen loopt (en niet tussen gegevensobjecten).</p>
+<p>Versiebeheer op een deel van de complete begripsbeschrijving gaat er van uit dat bepaalde gegevens over een begrip tezamen beheerd worden. Ieder begrip heeft zo meerdere, complementaire, beschrijvingen. Deze beschrijvingen kunnen conform Variant A individueel beheerd, of conform Variant B als verzameling beheerd worden.</p>
+</section></section><section id="tijdcontext-van-datasets"><div class="header-wrapper"><h4 id="x5-5-3-tijdcontext-van-datasets"><bdi class="secno">5.5.3 </bdi>Tijdcontext van datasets</h4><a class="self-link" href="#tijdcontext-van-datasets" aria-label="Permalink for Section 5.5.3"></a></div>
+<p>Omdat er verschillende manieren zijn om versiebeheer in te richten schrijft dit profiel geen specifieke vorm van versiebeheer voor.</p>
+<p>Het is wel van belang om afspraken te maken over hoe de gegevens in een stelsel uitgewisseld moeten worden. 
+Een belangrijk aspect voor een stelsel is het in een tijdcontext kunnen relateren van gegevensobjecten.</p>
+<p>Daarmee moet van een gegevensobject in ieder geval bepaald kunnen worden</p>
 <ul>
-<li>De relatie is: «Autobestuurder» <em>is gerelateerd aan</em> «Auto»</li>
-<li>De versierelatie is: [Beheereenheid 42 versie 1.0.3] <em>maakt gebruik van</em> [Beheereenheid 76 versie 1.2.3].</li>
+<li>of het op een gegeven moment geldig was.</li>
+<li>of het op een gegeven moment beschikbaar was.</li>
 </ul>
-<p>Een dergelijke versierelatie wordt ook vaak wel een "import" relatie genoemd.</p>
-</section></section><section id="taalbinding"><div class="header-wrapper"><h4 id="x5-5-3-taalbinding"><bdi class="secno">5.5.3 </bdi>Taalbinding</h4><a class="self-link" href="#taalbinding" aria-label="Permalink for Section 5.5.3"></a></div>
+</section><section id="taalbinding"><div class="header-wrapper"><h4 id="x5-5-4-taalbinding"><bdi class="secno">5.5.4 </bdi>Taalbinding</h4><a class="self-link" href="#taalbinding" aria-label="Permalink for Section 5.5.4"></a></div>
 <p>De taalbinding die we voorstellen maakt gebruik van de volgende vocabulaires:</p>
 <ul>
 <li>SKOS voor het beschrijven van begrippen;</li>
@@ -2865,47 +2861,57 @@ ex2:Land a skos:Concept ;
 <li>Elk onderdeel van de beschrijving van een <code>skos:Concept</code> kan gepubliceerd worden in meerdere voorkomens van een <code>dcat:Dataset</code>.</li>
 <li>Onderdelen van de beschrijving van een <code>skos:Concept</code> kunnen gebundeld worden in een voorkomen van een <code>dcat:Dataset</code>, zodat hierover herkomstinformatie genoteerd kan worden.</li>
 </ol>
-<section id="taalbinding-begrippenkader-en-dataset-eenheid-van-publicatie-eenheid-van-beheer"><div class="header-wrapper"><h5 id="x5-5-3-1-taalbinding-begrippenkader-en-dataset-eenheid-van-publicatie-eenheid-van-beheer"><bdi class="secno">5.5.3.1 </bdi>Taalbinding Begrippenkader en Dataset (eenheid van publicatie, eenheid van beheer)</h5><a class="self-link" href="#taalbinding-begrippenkader-en-dataset-eenheid-van-publicatie-eenheid-van-beheer" aria-label="Permalink for Section 5.5.3.1"></a></div>
+<section id="taalbinding-begrippenkader-en-dataset-eenheid-van-publicatie-eenheid-van-beheer"><div class="header-wrapper"><h5 id="x5-5-4-1-taalbinding-begrippenkader-en-dataset-eenheid-van-publicatie-eenheid-van-beheer"><bdi class="secno">5.5.4.1 </bdi>Taalbinding Begrippenkader en Dataset (eenheid van publicatie, eenheid van beheer)</h5><a class="self-link" href="#taalbinding-begrippenkader-en-dataset-eenheid-van-publicatie-eenheid-van-beheer" aria-label="Permalink for Section 5.5.4.1"></a></div>
 <p>In de SBB wordt gesproken over "Begrippenkader" en "in kader". De taalbinding voor deze twee termen is als volgt:</p>
 <ul>
 <li>Begrippenkader = <code>skos:ConceptScheme</code>;</li>
 <li>in kader = <code>skos:inScheme</code></li>
 </ul>
-<p>Begrippen kunnen in meerdere begrippenkaders voorkomen. Indien een dergelijk begrippenkader ook beoogd is als de beheer-eenheid, dan geldt bovendien <em>ook</em> nog de taalbinding:</p>
-<ul>
-<li>Begrippenkader = <code>skos:ConceptScheme</code> EN <code>dcat:Dataset</code></li>
-</ul>
-<p>Merk op dat we geen specifieke taalbinding hebben voor begrippenkaders-als-eenheid van beheer of begrippenkaders-als eenheid van publicatie. Of een dataset een beheereenheid is of een publicatie-eenheid volgt uit het gebruik, niet uit de definitie. We onderkennen (dus) alleen de taalbinding:</p>
+<p>Begrippen kunnen in meerdere begrippenkaders voorkomen. Maar worden in één dataset beheerd. Merk op dat we geen specifieke taalbinding hebben voor 'eenheid van beheer' of 'eenheid van publicatie'. Of een dataset een beheereenheid is of een publicatie-eenheid volgt uit het gebruik, niet uit de definitie. We onderkennen (dus) alleen de taalbinding:</p>
 <ul>
 <li>Dataset = <code>dcat:Dataset</code>.</li>
 </ul>
-<p>Of een bepaalde dataset een eenheid van publicatie of beheer is, volgt uit het gebruik, niet uit de taalbinding.</p>
-<p>Het term "Begrippenkader" en synoniemen als "Taxonomie", "Thesaurus" of "Begrippenstelsel" zijn daarmee zowel bruikbaar voor situaties waarbij een abstracte verzameling van begrippen wordt bedoeld (via <code>skos:inScheme</code>) en voor situaties waar bij een verzameling van beschrijvingen van dergelijke begrippen wordt bedoeld (via <code>dcat:Dataset</code>). Alleen als in de taalbinding beide aanwezig zijn, is sprake van <em>punning</em> en wordt zowel een abstracte verzameling van begrippen bedoeld als een verzameling van beschrijvingen.</p>
+<section id="begrippenkader-als-dataset"><div class="header-wrapper"><h6 id="begrippenkader-als-dataset-0">Begrippenkader als dataset</h6><a class="self-link" href="#begrippenkader-als-dataset" aria-label="Permalink for this Section"></a></div>
+<p>Een object is beschreven in een gegevensobject en dit gegevensobject is onderdeel van een dataset. Dat is het patroon wat gehanteerd wordt voor het versiebeheer van begrippen(kaders).</p>
+<p>Cognitief maken mensen niet altijd een onderscheid tussen het ding-als-concept (“begrip”, “begrippenkader”, “taxonomie”, “lijstje”) en het ding-als-informatieobject (waar dan dezelfde woorden worden gebruikt). Als dit onderscheid minder belangrijk is kan er gekozen worden om dat onderscheid niet te maken. We volgen dan een ander patroon voor versiebeheer. Technisch gezien leidt dit patroon tot punning. Het begrippenkader bevat begrippen én begripsbeschrijvingen. Dit maakt het begrippenkader zowel een 'conceptueel object' als een 'informatieobject'. Dit is een variatie op Variant B waarbij het begrippenkader én de begrippenkaderbeschrijving én de beheereenheid (of publicatieeenheid) dezelfde identiteit hebben.</p>
+<p>Indien een begrippenkader dus ook beoogd is als de dataset, dan geldt bovendien <em>ook</em> nog de taalbinding:</p>
+<ul>
+<li>Begrippenkader = <code>skos:ConceptScheme</code> EN <code>dcat:Dataset</code></li>
+</ul>
+<p>Het term "Begrippenkader" en synoniemen als "Taxonomie", "Thesaurus" of "Begrippenstelsel" zijn daarmee zowel bruikbaar voor situaties waarbij een abstracte verzameling van begrippen wordt bedoeld (via <code>skos:inScheme</code>) en voor situaties waar bij een verzameling van beschrijvingen van dergelijke begrippen wordt bedoeld (via <code>dcat:Dataset</code>). Alleen als in de taalbinding beide aanwezig zijn, is sprake van <em>punning</em> en wordt zowel een abstracte verzameling van begrippen bedoeld als een verzameling van beschrijvingen. Dit is een ruime opvatting van de definitie van begrippenkader maar dit wordt niet uitgesloten in SBB.</p>
 <blockquote>
-<p>Advies is om expliciet aan te geven bij de beschrijving van een dataset (al-dan-niet gelijk aan het begrippenkader) of ook sprake is van een eenheid van beheer, publicatie of herkomst.</p>
+<p>Advies is om expliciet aan te geven bij de beschrijving van een begrippenkader of ook sprake is van een eenheid van beheer, publicatie of herkomst.</p>
 </blockquote>
 <blockquote>
 <p>Advies is om afzonderlijke resources (met eigen URI's) te gebruiken op het moment dat het onderscheid van belang is.</p>
 </blockquote>
-</section><section id="taalbinding-herkomstinformatie"><div class="header-wrapper"><h5 id="x5-5-3-2-taalbinding-herkomstinformatie"><bdi class="secno">5.5.3.2 </bdi>Taalbinding Herkomstinformatie</h5><a class="self-link" href="#taalbinding-herkomstinformatie" aria-label="Permalink for Section 5.5.3.2"></a></div>
+</section></section><section id="taalbinding-herkomstinformatie"><div class="header-wrapper"><h5 id="x5-5-4-2-taalbinding-herkomstinformatie"><bdi class="secno">5.5.4.2 </bdi>Taalbinding Herkomstinformatie</h5><a class="self-link" href="#taalbinding-herkomstinformatie" aria-label="Permalink for Section 5.5.4.2"></a></div>
 <p>Voor de taalbinding van herkomstinformatie wordt gebruik gemaakt van PROV:</p>
 <ul>
 <li>Een eenheid van herkomstinformatie = <code>prov:Entity</code></li>
 </ul>
-</section><section id="voorbeelduitwerkingen"><div class="header-wrapper"><h5 id="x5-5-3-3-voorbeelduitwerkingen"><bdi class="secno">5.5.3.3 </bdi>Voorbeelduitwerkingen.</h5><a class="self-link" href="#voorbeelduitwerkingen" aria-label="Permalink for Section 5.5.3.3"></a></div>
-<p>Drie voorbeelduitwerkingen geven we:</p>
+</section><section id="voorbeelduitwerkingen"><div class="header-wrapper"><h5 id="x5-5-4-3-voorbeelduitwerkingen"><bdi class="secno">5.5.4.3 </bdi>Voorbeelduitwerkingen</h5><a class="self-link" href="#voorbeelduitwerkingen" aria-label="Permalink for Section 5.5.4.3"></a></div>
+<p>Voor de drie gedefinieerde variaties geven we een voorbeelduitwerking. </p>
 <ul>
-<li>A. De begripsbeschrijving is de eenheid van beheer</li>
-<li>B. Het begrippenkader is ook de eenheid van beheer</li>
-<li>C. De (thematische) bundeling is de eenheid van beheer</li>
+<li>Variant A De begripsbeschrijving is de eenheid van beheer</li>
+<li>Variant B Het begrippenkader komt overeen met de eenheid van beheer</li>
+<li>Variant C Een deel van een complete begripsbeschrijving als eenheid van beheer</li>
 </ul>
-</section><section id="variant-a-begripsbeschrijving-als-eenheid-van-beheer"><div class="header-wrapper"><h5 id="x5-5-3-4-variant-a-begripsbeschrijving-als-eenheid-van-beheer"><bdi class="secno">5.5.3.4 </bdi>Variant A - Begripsbeschrijving als eenheid van beheer</h5><a class="self-link" href="#variant-a-begripsbeschrijving-als-eenheid-van-beheer" aria-label="Permalink for Section 5.5.3.4"></a></div>
+<p>Aanvullend geven we twee extra uitwerkingen</p>
+<ul>
+<li>Variant B.1 Het begrippenkader is óók de eenheid van beheer</li>
+<li>Variant B.2 De beheereenheid is een verzameling begripsbeschrijvingen die niet overeenkomt met het begrippenkader</li>
+</ul>
+</section><section id="variant-a-begripsbeschrijving-als-eenheid-van-beheer"><div class="header-wrapper"><h5 id="x5-5-4-4-variant-a-begripsbeschrijving-als-eenheid-van-beheer"><bdi class="secno">5.5.4.4 </bdi>Variant A - Begripsbeschrijving als eenheid van beheer</h5><a class="self-link" href="#variant-a-begripsbeschrijving-als-eenheid-van-beheer" aria-label="Permalink for Section 5.5.4.4"></a></div>
 <pre><code aria-busy="false" class="hljs css">  <span class="hljs-keyword">@prefix</span> <span class="hljs-attribute">skos</span>: &lt;<span class="hljs-attribute">http</span>://www.w3.org/<span class="hljs-number">2004</span>/<span class="hljs-number">02</span>/skos/core#&gt;.
   @prefix <span class="hljs-attribute">rdfs</span>: &lt;<span class="hljs-attribute">http</span>://www.w3.org/<span class="hljs-number">2000</span>/<span class="hljs-number">01</span>/rdf-schema#&gt;.
   @prefix <span class="hljs-attribute">owl</span>: &lt;<span class="hljs-attribute">http</span>://www.w3.org/<span class="hljs-number">2002</span>/<span class="hljs-number">07</span>/owl#&gt;.
   @prefix <span class="hljs-attribute">dct</span>: &lt;<span class="hljs-attribute">http</span>://purl.org/dc/terms/&gt;.
   @prefix <span class="hljs-attribute">dcat</span>: &lt;<span class="hljs-attribute">http</span>://www.w3.org/ns/dcat#&gt;.
+  @prefix <span class="hljs-attribute">prov</span>: &lt;<span class="hljs-attribute">http</span>://www.w3.org/ns/prov#&gt;.
+  @prefix <span class="hljs-attribute">foaf</span>: &lt;<span class="hljs-attribute">http</span>://xmlns.com/foaf/<span class="hljs-number">0.1</span>/&gt;.
 
+# Begrip
   &lt;<span class="hljs-attribute">http</span>://nlbegrip.nl/synthesizer/id/begrip/vco&gt; a <span class="hljs-attribute">skos</span>:Concept;
     rdfs:label <span class="hljs-string">"VCO"</span>@nl;
     skos:prefLabel <span class="hljs-string">"VCO"</span>@nl;
@@ -2913,47 +2919,67 @@ ex2:Land a skos:Concept ;
     skos:definition <span class="hljs-string">"Een VCO is een electronische geluidsbron waarbij de frequency van het geluid wordt gecontroleerd met een electrische spanning (voltage)"</span>@nl;
     rdfs<span class="hljs-selector-pseudo">:is</span>DefinedBy &lt;http://nlbegrip.nl/doc/begrip/vco/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt;;
   .
-
+# Begripsbeschrijving, Beheereenheid, provenance eenheid
   &lt;http://nlbegrip.nl/synthesizer/doc/begrip/vco&gt; a dcat:Dataset, prov:Entity;
     rdfs:label <span class="hljs-string">"Beschrijving van het begrip «VCO»"</span>;
-    foaf:primaryTopicOf &lt;http://nlbegrip.nl/synthesizer/id/begrip/vco&gt;;
     rdfs:comment <span class="hljs-string">"Deze beschrijving is zowel een begripsbeschrijving, een beheereenheid als de vindplek van de meest actuele versie van deze begripsbeschrijving"</span>;
+    foaf:primaryTopic &lt;http://nlbegrip.nl/synthesizer/id/begrip/vco&gt;;
   .
+# Begripsbeschrijving versie
   &lt;http://nlbegrip.nl/doc/begrip/vco/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt; a dcat:Dataset;
-    rdfs:label <span class="hljs-string">"Versie 1.0.0 snapshot 1 van de besschrijving van het begrip «VCO»"</span>;
+    rdfs:label <span class="hljs-string">"Versie 1.0.0 snapshot 1 van de beschrijving van het begrip «VCO»"</span>;
     dct<span class="hljs-selector-pseudo">:is</span>VersionOf &lt;http://nlbegrip.nl/synthesizer/doc/begrip/vco&gt;;
   .
 </code></pre>
-</section><section id="variant-b-begrippenkader-als-eenheid-van-beheer"><div class="header-wrapper"><h5 id="x5-5-3-5-variant-b-begrippenkader-als-eenheid-van-beheer"><bdi class="secno">5.5.3.5 </bdi>Variant B - Begrippenkader als eenheid van beheer</h5><a class="self-link" href="#variant-b-begrippenkader-als-eenheid-van-beheer" aria-label="Permalink for Section 5.5.3.5"></a></div>
+</section><section id="variant-b-begrippenkader-als-eenheid-van-beheer"><div class="header-wrapper"><h5 id="x5-5-4-5-variant-b-begrippenkader-als-eenheid-van-beheer"><bdi class="secno">5.5.4.5 </bdi>Variant B - Begrippenkader als eenheid van beheer</h5><a class="self-link" href="#variant-b-begrippenkader-als-eenheid-van-beheer" aria-label="Permalink for Section 5.5.4.5"></a></div>
 <pre><code aria-busy="false" class="hljs css">  <span class="hljs-keyword">@prefix</span> <span class="hljs-attribute">skos</span>: &lt;<span class="hljs-attribute">http</span>://www.w3.org/<span class="hljs-number">2004</span>/<span class="hljs-number">02</span>/skos/core#&gt;.
   @prefix <span class="hljs-attribute">rdfs</span>: &lt;<span class="hljs-attribute">http</span>://www.w3.org/<span class="hljs-number">2000</span>/<span class="hljs-number">01</span>/rdf-schema#&gt;.
   @prefix <span class="hljs-attribute">owl</span>: &lt;<span class="hljs-attribute">http</span>://www.w3.org/<span class="hljs-number">2002</span>/<span class="hljs-number">07</span>/owl#&gt;.
   @prefix <span class="hljs-attribute">dct</span>: &lt;<span class="hljs-attribute">http</span>://purl.org/dc/terms/&gt;.
   @prefix <span class="hljs-attribute">dcat</span>: &lt;<span class="hljs-attribute">http</span>://www.w3.org/ns/dcat#&gt;.
+  @prefix <span class="hljs-attribute">prov</span>: &lt;<span class="hljs-attribute">http</span>://www.w3.org/ns/prov#&gt;.
+  @prefix <span class="hljs-attribute">foaf</span>: &lt;<span class="hljs-attribute">http</span>://xmlns.com/foaf/<span class="hljs-number">0.1</span>/&gt;.
 
-  &lt;<span class="hljs-attribute">http</span>://nlbegrip.nl/synthesizer#&gt; a <span class="hljs-attribute">skos</span>:ConceptScheme, <span class="hljs-attribute">dcat</span>:Dataset;
-    rdfs:label <span class="hljs-string">"Synthesizer begrippen"</span>;
-    rdfs:comment <span class="hljs-string">"Dit begrippenkader is ook een beheereenheid en de vindplek van de meest actuele versie"</span>;
-    owl:versionInfo <span class="hljs-string">"Versie 1.0.0 snapshot 1"</span>;
-    rdfs<span class="hljs-selector-pseudo">:is</span>DefinedBy &lt;http://nlbegrip.nl/synthesizer&gt;;
+# Beheereenheid
+  &lt;<span class="hljs-attribute">http</span>://nlbegrip.nl/synthesizer&gt; a <span class="hljs-attribute">dcat</span>:Dataset;
+    rdfs:label <span class="hljs-string">"De beheereenheid voor begrippenkader synthesizer begrippen en vindplaats van de laatste versie van beschrijvingen die onderdeel zijn van deze beheereenheid."</span>;
+    dct<span class="hljs-selector-pseudo">:is</span>VersionOf &lt;http://nlbegrip.nl/syntheziser/doc/begrippenkader/synthesizer&gt;;
   .
+# Beheereenheid versie
   &lt;http://nlbegrip.nl/synthesizer/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt; a dcat:Dataset;
-    rdfs:label <span class="hljs-string">"Versie 1.0.0 snapshot 1 van het begrippenkader voor synthesizers"</span>;
-    dct<span class="hljs-selector-pseudo">:is</span>VersionOf &lt;http://nlbegrip.nl/synthesizer#&gt;;
+    rdfs:label <span class="hljs-string">"Versie 1.0.0 snapshot 1 van de beheereenheid voor begrippenkader synthesizer begrippen"</span>;
+    dct<span class="hljs-selector-pseudo">:is</span>VersionOf &lt;http://nlbegrip.nl/synthesize&gt;;
   .
+# Begrippenkader
+  &lt;http://nlbegrip.nl/syntheziser/id/begrippenkader/synthesizer&gt; a skos:ConceptScheme ;
+    rdfs:label <span class="hljs-string">"Synthesizer begrippen"</span>;
+    rdfs:comment <span class="hljs-string">"Dit is het begrippenkader als conceptuele bundeling van begrippen."</span>;
+    rdfs<span class="hljs-selector-pseudo">:is</span>DefinedBy &lt;http://nlbegrip.nl/synthesizer/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt;;
+  .
+# Begrippenkader beschrijving, provenance eenheid
+&lt;http://nlbegrip.nl/syntheziser/doc/begrippenkader/synthesizer&gt; a prov:Entity ;
+    rdfs:label <span class="hljs-string">"Beschrijving van het begrippenkader"</span>;
+    rdfs:comment <span class="hljs-string">"Deze beschrijving is zowel een begrippenkaderbeschrijving, vindplek van de meest actuele versie van deze begrippenkaderbeschrijving"</span>;
+    foaf:primaryTopic &lt;http://nlbegrip.nl/syntheziser/id/begrippenkader/synthesizer&gt;;
+    dct<span class="hljs-selector-pseudo">:is</span>PartOf &lt;http://nlbegrip.nl/synthesizer/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt;
+  .
+# Begrip
   &lt;http://nlbegrip.nl/synthesizer/id/begrip/synthesizer&gt; a skos:Concept;
     rdfs:label <span class="hljs-string">"Synthesizer"</span>@nl;
     skos:prefLabel <span class="hljs-string">"Synthesizer"</span>@nl;
     skos:definition <span class="hljs-string">"Een synthesizer is een elektronisch muziekinstrument dat klanken en geluiden kunstmatig opwekt."</span>@nl;
-    skos:inScheme &lt;http://nlbegrip.nl/synthesizer#&gt;
+    skos:inScheme &lt;http://nlbegrip.nl/syntheziser/id/begrippenkader/synthesizer&gt;;
     dct:source &lt;https://nl.wikipedia.org/wiki/Synthesizer&gt;;
-    rdfs<span class="hljs-selector-pseudo">:is</span>DefinedBy &lt;http://nlbegrip.nl/synthesizer/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt;;
+    rdfs<span class="hljs-selector-pseudo">:is</span>DefinedBy &lt;http://nlbegrip.nl/synthesizer/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt;
   .
+# Begripsbeschijving, provenance eenheid
   &lt;http://nlbegrip.nl/synthesizer/doc/begrip/synthesizer&gt; a prov:Entity;
     rdfs:label <span class="hljs-string">"Beschrijving van het begrip «Synthesizer»"</span>;
     foaf:primaryTopic &lt;http://nlbegrip.nl/synthesizer/id/begrip/synthesizer&gt;;
     rdfs:comment <span class="hljs-string">"Deze beschrijving betreft de beschrijving van het begrip"</span>;
+    dct<span class="hljs-selector-pseudo">:is</span>PartOf &lt;http://nlbegrip.nl/synthesizer/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt;
   .
+# Begrip
   &lt;http://nlbegrip.nl/synthesizer/id/begrip/vco&gt; a skos:Concept;
     rdfs:label <span class="hljs-string">"VCO"</span>@nl;
     skos:prefLabel <span class="hljs-string">"VCO"</span>@nl;
@@ -2961,28 +2987,149 @@ ex2:Land a skos:Concept ;
     skos:definition <span class="hljs-string">"Een VCO is een electronische geluidsbron waarbij de frequency van het geluid wordt gecontroleerd met een electrische spanning (voltage)"</span>@nl;
     rdfs<span class="hljs-selector-pseudo">:is</span>DefinedBy &lt;http://nlbegrip.nl/synthesizer/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt;;
   .
+# Begripsbeschrijving, provenance eenheid
   &lt;http://nlbegrip.nl/synthesizer/doc/begrip/vco&gt; a prov:Entity;
-    rdfs:label <span class="hljs-string">"Beschrijving van het begrip «VCO»"</span>;
+    rdfs:label <span class="hljs-string">"Beschrijving van het begrip «VCO»"</span>; 
+    foaf:primaryTopic &lt;http://nlbegrip.nl/synthesizer/id/begrip/vco&gt;;
     rdfs:comment <span class="hljs-string">"Deze beschrijving betreft de beschrijving van het begrip"</span>;
+    dct<span class="hljs-selector-pseudo">:is</span>PartOf &lt;http://nlbegrip.nl/synthesizer/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt;
   .
 </code></pre>
-</section><section id="variant-c-thematische-bundeling-als-eenheid-van-beheer"><div class="header-wrapper"><h5 id="x5-5-3-6-variant-c-thematische-bundeling-als-eenheid-van-beheer"><bdi class="secno">5.5.3.6 </bdi>Variant C - (thematische) bundeling als eenheid van beheer</h5><a class="self-link" href="#variant-c-thematische-bundeling-als-eenheid-van-beheer" aria-label="Permalink for Section 5.5.3.6"></a></div>
+</section><section id="variant-c-begripsbeschrijving-deel-als-eenheid-van-beheer"><div class="header-wrapper"><h5 id="x5-5-4-6-variant-c-begripsbeschrijving-deel-als-eenheid-van-beheer"><bdi class="secno">5.5.4.6 </bdi>Variant C - Begripsbeschrijving deel als eenheid van beheer</h5><a class="self-link" href="#variant-c-begripsbeschrijving-deel-als-eenheid-van-beheer" aria-label="Permalink for Section 5.5.4.6"></a></div>
 <pre><code aria-busy="false" class="hljs css">  <span class="hljs-keyword">@prefix</span> <span class="hljs-attribute">skos</span>: &lt;<span class="hljs-attribute">http</span>://www.w3.org/<span class="hljs-number">2004</span>/<span class="hljs-number">02</span>/skos/core#&gt;.
   @prefix <span class="hljs-attribute">rdfs</span>: &lt;<span class="hljs-attribute">http</span>://www.w3.org/<span class="hljs-number">2000</span>/<span class="hljs-number">01</span>/rdf-schema#&gt;.
   @prefix <span class="hljs-attribute">owl</span>: &lt;<span class="hljs-attribute">http</span>://www.w3.org/<span class="hljs-number">2002</span>/<span class="hljs-number">07</span>/owl#&gt;.
   @prefix <span class="hljs-attribute">dct</span>: &lt;<span class="hljs-attribute">http</span>://purl.org/dc/terms/&gt;.
   @prefix <span class="hljs-attribute">dcat</span>: &lt;<span class="hljs-attribute">http</span>://www.w3.org/ns/dcat#&gt;.
+  @prefix <span class="hljs-attribute">prov</span>: &lt;<span class="hljs-attribute">http</span>://www.w3.org/ns/prov#&gt;.
+  @prefix <span class="hljs-attribute">foaf</span>: &lt;<span class="hljs-attribute">http</span>://xmlns.com/foaf/<span class="hljs-number">0.1</span>/&gt;.
 
-  &lt;<span class="hljs-attribute">http</span>://nlbegrip.nl/synthesizer#&gt; a <span class="hljs-attribute">dcat</span>:Dataset;
-    rdfs:label <span class="hljs-string">"Synthesizer basis"</span>@nl;
-    rdfs:comment <span class="hljs-string">"Deze dataset bevat de beschrijvingen van de begrippen(kaders), collecties en bronnen binnen de context van Begrippenkader Synthesizer"</span>;
+
+&lt;<span class="hljs-attribute">http</span>://nlbegrip.nl/lex/doc/begrip/vco/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt; {
+
+# Begrip
+  &lt;http://nlbegrip.nl/synthesizer/id/begrip/vco&gt; a skos:Concept;
+    rdfs:label <span class="hljs-string">"VCO"</span>@nl;
+    skos:prefLabel <span class="hljs-string">"VCO"</span>@nl;
+    skos:altLabel <span class="hljs-string">"Voltage Controlled Oscillator"</span>@en;
+    skos:definition <span class="hljs-string">"Een VCO is een electronische geluidsbron waarbij de frequency van het geluid wordt gecontroleerd met een electrische spanning (voltage)"</span>@nl;
+    rdfs<span class="hljs-selector-pseudo">:is</span>DefinedBy &lt;http://nlbegrip.nl/doc/begrip/vco/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt;;
+  .
+# Begripsbeschrijvingdeel, Beheereenheid, provenance eenheid
+  &lt;http://nlbegrip.nl/synthesizer/doc/begrip/vco&gt; a dcat:Dataset, prov:Entity;
+    rdfs:label <span class="hljs-string">"Deelbeschrijving van het begrip «VCO» "</span>;
+    rdfs:comment <span class="hljs-string">"Deze beschrijving is zowel een begripsbeschrijving deel, een beheereenheid als de vindplek van de meest actuele versie van deze begripsbeschrijving deel"</span>;
+    foaf:primaryTopic &lt;http://nlbegrip.nl/synthesizer/id/begrip/vco&gt;;
+  .
+# Begripsbeschrijvingdeel versie
+  &lt;http://nlbegrip.nl/doc/begrip/vco/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt; a dcat:Dataset;
+    rdfs:label <span class="hljs-string">"Versie 1.0.0 snapshot 1 van de Lexicale beschrijving van het begrip «VCO»"</span>;
+    dct<span class="hljs-selector-pseudo">:is</span>VersionOf &lt;http://nlbegrip.nl/synthesizer/doc/begrip/vco&gt;;
+  .
+}
+
+&lt;http://nlbegrip.nl/search/doc/begrip/vco/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt; {
+
+# Begrip
+  &lt;http://nlbegrip.nl/synthesizer/id/begrip/vco&gt; a skos:Concept;
+    rdfs:label <span class="hljs-string">"VCO"</span>@nl;
+    skos:hiddenlabel
+      <span class="hljs-string">"Voltage Oscillator"</span>,
+      <span class="hljs-string">"Controlled Oscillator"</span>,
+      <span class="hljs-string">"Electronic Signal Oscillator"</span>;
+    rdfs<span class="hljs-selector-pseudo">:is</span>DefinedBy &lt;http://nlbegrip.nl/lex/doc/begrip/vco/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt;;
+  .
+# Begripsbeschrijvingdeel, Beheereenheid, provenance eenheid
+  &lt;http://nlbegrip.nl/synthesizer/doc/begrip/vco&gt; a dcat:Dataset, prov:Entity;
+    rdfs:label <span class="hljs-string">"Deelbeschrijving van het begrip «VCO» "</span>;
+    rdfs:comment <span class="hljs-string">"Deze beschrijving is zowel een begripsbeschrijving deel, een beheereenheid als de vindplek van de meest actuele versie van deze begripsbeschrijving deel"</span>;
+    foaf:primaryTopic &lt;http://nlbegrip.nl/synthesizer/id/begrip/vco&gt;;
+  .
+# Begripsbeschrijvingdeel versie
+  &lt;http://nlbegrip.nl/doc/begrip/vco/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt; a dcat:Dataset;
+    rdfs:label <span class="hljs-string">"Versie 1.0.0 snapshot 1 van de Lexicale beschrijving van het begrip «VCO»"</span>;
+    dct<span class="hljs-selector-pseudo">:is</span>VersionOf &lt;http://nlbegrip.nl/synthesizer/doc/begrip/vco&gt;;
+  .
+}
+</code></pre>
+</section><section id="variant-b-1"><div class="header-wrapper"><h5 id="x5-5-4-7-variant-b-1"><bdi class="secno">5.5.4.7 </bdi>Variant B.1</h5><a class="self-link" href="#variant-b-1" aria-label="Permalink for Section 5.5.4.7"></a></div>
+<pre><code aria-busy="false" class="hljs css">  <span class="hljs-keyword">@prefix</span> <span class="hljs-attribute">skos</span>: &lt;<span class="hljs-attribute">http</span>://www.w3.org/<span class="hljs-number">2004</span>/<span class="hljs-number">02</span>/skos/core#&gt;.
+  @prefix <span class="hljs-attribute">rdfs</span>: &lt;<span class="hljs-attribute">http</span>://www.w3.org/<span class="hljs-number">2000</span>/<span class="hljs-number">01</span>/rdf-schema#&gt;.
+  @prefix <span class="hljs-attribute">owl</span>: &lt;<span class="hljs-attribute">http</span>://www.w3.org/<span class="hljs-number">2002</span>/<span class="hljs-number">07</span>/owl#&gt;.
+  @prefix <span class="hljs-attribute">dct</span>: &lt;<span class="hljs-attribute">http</span>://purl.org/dc/terms/&gt;.
+  @prefix <span class="hljs-attribute">dcat</span>: &lt;<span class="hljs-attribute">http</span>://www.w3.org/ns/dcat#&gt;.
+  @prefix <span class="hljs-attribute">prov</span>: &lt;<span class="hljs-attribute">http</span>://www.w3.org/ns/prov#&gt;.
+  @prefix <span class="hljs-attribute">foaf</span>: &lt;<span class="hljs-attribute">http</span>://xmlns.com/foaf/<span class="hljs-number">0.1</span>/&gt;.
+
+# Begrippenkader, Begrippenkaderbeschrijving, Beheereenheid
+  &lt;<span class="hljs-attribute">http</span>://nlbegrip.nl/synthesizer#&gt; a <span class="hljs-attribute">skos</span>:ConceptScheme, <span class="hljs-attribute">dcat</span>:Dataset;
+    rdfs:label <span class="hljs-string">"Synthesizer begrippen"</span>;
+    rdfs:comment <span class="hljs-string">"Dit begrippenkader is ook een beheereenheid en de vindplek van de meest actuele versie"</span>;
     owl:versionInfo <span class="hljs-string">"Versie 1.0.0 snapshot 1"</span>;
     rdfs<span class="hljs-selector-pseudo">:is</span>DefinedBy &lt;http://nlbegrip.nl/synthesizer&gt;;
   .
-  &lt;http://nlbegrip.nl/synthesizer-basis/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt; a dcat:Dataset;
-    rdfs:label <span class="hljs-string">"Versie 1.0.0 snapshot 1 van synthesizer beschrijvingen"</span>@nl;
-    dct<span class="hljs-selector-pseudo">:is</span>VersionOf &lt;http://nlbegrip.nl/synthesizer-basis#&gt;;
+  
+# Begrippenkaderbeschrijving versie, Beheereenheid versie
+  &lt;http://nlbegrip.nl/synthesizer/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt; a dcat:Dataset;
+    rdfs:label <span class="hljs-string">"Versie 1.0.0 snapshot 1 van het begrippenkader voor synthesizers"</span>;
+    dct<span class="hljs-selector-pseudo">:is</span>VersionOf &lt;http://nlbegrip.nl/synthesizer#&gt;;
   .
+# Begrip
+  &lt;http://nlbegrip.nl/synthesizer/id/begrip/synthesizer&gt; a skos:Concept;
+    rdfs:label <span class="hljs-string">"Synthesizer"</span>@nl;
+    skos:prefLabel <span class="hljs-string">"Synthesizer"</span>@nl;
+    skos:definition <span class="hljs-string">"Een synthesizer is een elektronisch muziekinstrument dat klanken en geluiden kunstmatig opwekt."</span>@nl;
+    skos:inScheme &lt;http://nlbegrip.nl/synthesizer#&gt;;
+    dct:source &lt;https://nl.wikipedia.org/wiki/Synthesizer&gt;;
+    rdfs<span class="hljs-selector-pseudo">:is</span>DefinedBy &lt;http://nlbegrip.nl/synthesizer/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt;;
+  .
+# Begripsbeschrijving, provenance eenheid
+  &lt;http://nlbegrip.nl/synthesizer/doc/begrip/synthesizer&gt; a prov:Entity;
+    rdfs:label <span class="hljs-string">"Beschrijving van het begrip «Synthesizer»"</span>;
+    foaf:primaryTopic &lt;http://nlbegrip.nl/synthesizer/id/begrip/synthesizer&gt;;
+    rdfs:comment <span class="hljs-string">"Deze beschrijving betreft de beschrijving van het begrip"</span>;
+  .
+# Begrip
+  &lt;http://nlbegrip.nl/synthesizer/id/begrip/vco&gt; a skos:Concept;
+    rdfs:label <span class="hljs-string">"VCO"</span>@nl;
+    skos:prefLabel <span class="hljs-string">"VCO"</span>@nl;
+    skos:altLabel <span class="hljs-string">"Voltage Controlled Oscillator"</span>@en;
+    skos:definition <span class="hljs-string">"Een VCO is een electronische geluidsbron waarbij de frequency van het geluid wordt gecontroleerd met een electrische spanning (voltage)"</span>@nl;
+    foaf:primaryTopic &lt;http://nlbegrip.nl/synthesizer/id/begrip/vco&gt;;
+    rdfs<span class="hljs-selector-pseudo">:is</span>DefinedBy &lt;http://nlbegrip.nl/synthesizer/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt;;
+  .
+# Begripsbeschrijving, provenance eenheid
+  &lt;http://nlbegrip.nl/synthesizer/doc/begrip/vco&gt; a prov:Entity;
+    rdfs:label <span class="hljs-string">"Beschrijving van het begrip «VCO»"</span>;
+    rdfs:comment <span class="hljs-string">"Deze beschrijving betreft de beschrijving van het begrip"</span>;
+  .
+</code></pre>
+</section><section id="variant-b-2"><div class="header-wrapper"><h5 id="x5-5-4-8-variant-b-2"><bdi class="secno">5.5.4.8 </bdi>Variant B.2</h5><a class="self-link" href="#variant-b-2" aria-label="Permalink for Section 5.5.4.8"></a></div>
+<pre><code aria-busy="false" class="hljs css">  <span class="hljs-keyword">@prefix</span> <span class="hljs-attribute">skos</span>: &lt;<span class="hljs-attribute">http</span>://www.w3.org/<span class="hljs-number">2004</span>/<span class="hljs-number">02</span>/skos/core#&gt;.
+  @prefix <span class="hljs-attribute">rdfs</span>: &lt;<span class="hljs-attribute">http</span>://www.w3.org/<span class="hljs-number">2000</span>/<span class="hljs-number">01</span>/rdf-schema#&gt;.
+  @prefix <span class="hljs-attribute">owl</span>: &lt;<span class="hljs-attribute">http</span>://www.w3.org/<span class="hljs-number">2002</span>/<span class="hljs-number">07</span>/owl#&gt;.
+  @prefix <span class="hljs-attribute">dct</span>: &lt;<span class="hljs-attribute">http</span>://purl.org/dc/terms/&gt;.
+  @prefix <span class="hljs-attribute">dcat</span>: &lt;<span class="hljs-attribute">http</span>://www.w3.org/ns/dcat#&gt;.
+  @prefix <span class="hljs-attribute">prov</span>: &lt;<span class="hljs-attribute">http</span>://www.w3.org/ns/prov#&gt;.
+  @prefix <span class="hljs-attribute">foaf</span>: &lt;<span class="hljs-attribute">http</span>://xmlns.com/foaf/<span class="hljs-number">0.1</span>/&gt;.
+
+# Beheereenheid, provenance eenheid
+  &lt;<span class="hljs-attribute">http</span>://nlbegrip.nl/synthesizer-basis&gt; a <span class="hljs-attribute">dcat</span>:Dataset, <span class="hljs-attribute">prov</span>:Entity;
+    rdfs:label <span class="hljs-string">"Synthesizer basis"</span>@nl;
+    rdfs:comment <span class="hljs-string">"Deze dataset bevat de beschrijvingen van de begrippen(kaders), collecties en bronnen binnen de context van Begrippenkader Synthesizer"</span>;
+    owl:versionInfo <span class="hljs-string">"Versie 1.0.0 snapshot 1"</span>;
+  .
+# Beheereenheid versie, provenance eenheid versie
+  &lt;http://nlbegrip.nl/synthesizer-basis/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt; a dcat:Dataset, prov:Entity;
+    rdfs:label <span class="hljs-string">"Versie 1.0.0 snapshot 1 van synthesizer basis"</span>@nl;
+    dct<span class="hljs-selector-pseudo">:is</span>VersionOf &lt;http://nlbegrip.nl/synthesizer-basis&gt;;
+    foaf:topic
+      &lt;http://nlbegrip.nl/synthesizer/id/begrippenkader/synthesizer&gt;,
+      &lt;http://nlbegrip.nl/synthesizer/id/begrip/synthesizer&gt;,
+      &lt;http://nlbegrip.nl/synthesizer/id/begrip/synthese&gt;,
+      &lt;http://nlbegrip.nl/synthesizer/id/begrip/vco&gt;;
+  .
+# Begrippenkader
   &lt;http://nlbegrip.nl/synthesizer/id/begrippenkader/synthesizer&gt; a skos:ConceptScheme;
     rdfs:label <span class="hljs-string">"Syntesizer begrippen"</span>@nl;
     rdfs:comment <span class="hljs-string">"Dit begrippenkader is een verzameling van begrippen die in de context van synthesizers relevant zijn."</span>@nl;
@@ -2990,7 +3137,9 @@ ex2:Land a skos:Concept ;
       &lt;http://nlbegrip.nl/synthesizer/id/begrip/synthese&gt; ,
       &lt;http://nlbegrip.nl/synthesizer/id/begrip/synthesizer&gt; ,
       &lt;http://nlbegrip.nl/synthesizer/id/begrip/vco&gt;;
+    rdfs<span class="hljs-selector-pseudo">:is</span>DefinedBy &lt;http://nlbegrip.nl/synthesizer-basis/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt;;
   .
+# Begrip
   &lt;http://nlbegrip.nl/synthesizer/id/begrip/synthesizer&gt; a skos:Concept;
     rdfs:label <span class="hljs-string">"Synthesizer"</span>@nl;
     skos:prefLabel <span class="hljs-string">"Synthesizer"</span>@nl;
@@ -2998,33 +3147,43 @@ ex2:Land a skos:Concept ;
     skos:related &lt;http://nlbegrip.nl/synthesizer/id/begrip/synthese&gt;;
     skos:inScheme &lt;http://nlbegrip.nl/synthesizer/id/begrippenkader/synthesizer&gt;;
     dct:source &lt;https://nl.wikipedia.org/wiki/Synthesizer&gt;;
-    rdfs<span class="hljs-selector-pseudo">:is</span>DefinedBy &lt;http://nlbegrip.nl/synthesizer/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt;;
+    rdfs<span class="hljs-selector-pseudo">:is</span>DefinedBy &lt;http://nlbegrip.nl/synthesizer-basis/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt;;
   .  
+# Begrip
   &lt;http://nlbegrip.nl/synthesizer/id/begrip/synthese&gt; a skos:Concept;
     rdfs:label <span class="hljs-string">"Synthese"</span>@nl;
     skos:prefLabel <span class="hljs-string">"Synthese"</span>@nl;
     skos:definition <span class="hljs-string">"Het kunstmatig opwekken van klanken en geluiden."</span>@nl;
     skos:inScheme &lt;http://nlbegrip.nl/synthesizer/id/begrippenkader/synthesizer&gt;;
-    rdfs<span class="hljs-selector-pseudo">:is</span>DefinedBy &lt;http://nlbegrip.nl/synthesizer/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt;;
+    rdfs<span class="hljs-selector-pseudo">:is</span>DefinedBy &lt;http://nlbegrip.nl/synthesizer-basis/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt;;
   .
+# Begrip
   &lt;http://nlbegrip.nl/synthesizer/id/begrip/vco&gt; a skos:Concept;
     rdfs:label <span class="hljs-string">"VCO"</span>@nl;
     skos:prefLabel <span class="hljs-string">"VCO"</span>@nl;
     skos:altLabel <span class="hljs-string">"Voltage Controlled Oscillator"</span>@en;
     skos:definition <span class="hljs-string">"Een VCO is een electronische geluidsbron waarbij de frequency van het geluid wordt gecontroleerd met een electrische spanning (voltage)"</span>@nl;
     skos:inScheme &lt;http://nlbegrip.nl/synthesizer/id/begrippenkader/synthesizer&gt;;
-    rdfs<span class="hljs-selector-pseudo">:is</span>DefinedBy &lt;http://nlbegrip.nl/synthesizer/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt;;
+    rdfs<span class="hljs-selector-pseudo">:is</span>DefinedBy &lt;http://nlbegrip.nl/synthesizer-basis/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt;;
   .
-  &lt;http://nlbegrip.nl/synthesizer-synthese#&gt; a dcat:Dataset;
+# Beheereenheid, provenance eenheid
+  &lt;http://nlbegrip.nl/synthesizer-synthese&gt; a dcat:Dataset, prov:Entity;
     rdfs:label <span class="hljs-string">"Synthese begrippen"</span>@nl;
     rdfs:comment <span class="hljs-string">"Deze dataset bevat beschrijvingen van begrippen over modulatie; voortbouwend op het begrippenkader Synthesizer"</span>@nl;
     owl:versionInfo <span class="hljs-string">"Versie 1.0.0 snapshot 1"</span>;
     rdfs<span class="hljs-selector-pseudo">:is</span>DefinedBy &lt;http://nlbegrip.nl/synthesizer-synthese&gt;;
   .
-  &lt;http://nlbegrip.nl/synthesizer-synthese/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt; a dcat:Dataset;
+# Beheereenheid versie, provenance eenheid versie
+  &lt;http://nlbegrip.nl/synthesizer-synthese/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt; a dcat:Dataset, prov:Entity;
     rdfs:label <span class="hljs-string">"Versie 1.0.0 snapshot 1 van synthesizer-synthese beschrijvingen"</span>@nl;
-    dct<span class="hljs-selector-pseudo">:is</span>VersionOf &lt;http://nlbegrip.nl/synthesizer-synthese#&gt;;
+    dct<span class="hljs-selector-pseudo">:is</span>VersionOf &lt;http://nlbegrip.nl/synthesizer-synthese&gt;;
+    owl:imports &lt;http://nlbegrip.nl/synthesizer-basis/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt;;
+    foaf:topic 
+      &lt;http://nlbegrip.nl/synthesizer-synthese/id/begrip/granulaire-synthese&gt;,
+      &lt;http://nlbegrip.nl/synthesizer-synthese/id/begrip/subharmonische-synthese&gt;,
+      &lt;http://nlbegrip.nl/synthesizer-synthese/id/begrip/fm-synthese&gt;;
   .
+# Begrip
   &lt;http://nlbegrip.nl/synthesizer-synthese/id/begrip/granulaire-synthese&gt; a skos:Concept;
     rdfs:label <span class="hljs-string">"Granulaire Synthese"</span>@nl;
     skos:prefLabel <span class="hljs-string">"Granulaire Synthese"</span>@nl;
@@ -3033,6 +3192,7 @@ ex2:Land a skos:Concept ;
     skos:inScheme &lt;http://nlbegrip.nl/synthesizer/id/begrippenkader/synthesizer&gt;;
     rdfs<span class="hljs-selector-pseudo">:is</span>DefinedBy &lt;http://nlbegrip.nl/synthesizer-synthese/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt;;
   .
+# Begrip
   &lt;http://nlbegrip.nl/synthesizer-synthese/id/begrip/subharmonische-synthese&gt; a skos:Concept;
     rdfs:label <span class="hljs-string">"Subharmonische Synthese"</span>@nl;
     skos:prefLabel <span class="hljs-string">"Subharmonische Synthese"</span>@nl;
@@ -3041,6 +3201,7 @@ ex2:Land a skos:Concept ;
     skos:inScheme &lt;http://nlbegrip.nl/synthesizer/id/begrippenkader/synthesizer&gt;;
     rdfs<span class="hljs-selector-pseudo">:is</span>DefinedBy &lt;http://nlbegrip.nl/synthesizer-synthese/<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>-snapshot-<span class="hljs-number">1</span>&gt;;
   .
+# Begrip
   &lt;http://nlbegrip.nl/synthesizer-synthese/id/begrip/fm-synthese&gt; a skos:Concept;
     rdfs:label <span class="hljs-string">"M-synthese (Frequentie Modulatie)"</span>@nl;
     skos:prefLabel <span class="hljs-string">"FM-synthese"</span>@nl;
