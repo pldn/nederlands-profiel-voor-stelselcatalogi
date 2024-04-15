@@ -8,11 +8,11 @@ Het uitgangspunt is dat een dataset iets anders is als een gegevensobject en een
 
 ## Varianten
 
-Omdat dit model op op veel verschillende manieren te gebruiken is schetsen we hier een aantal voor de hand liggende scenario's voor het inrichten van versiebeheer van begripsbeschrijvingen:
+Omdat dit model op op veel verschillende manieren te gebruiken is schetsen we hier een aantal voor de hand liggende scenario's voor het inrichten van versiebeheer van beschrijvingen van begrippen. 
 
-- A. De eenheid van beheer is een complete begripsbeschrijving.
-- B. De eenheid van beheer is een begrippenkaderbeschrijving.
-- C. De eenheid van beheer is een deel van een complete begripsbeschrijving.
+- A. De eenheid van beheer bestaat uit één complete begripsbeschrijving
+- B. De eenheid van beheer bestaat uit één complete begrippenkaderbeschrijving EN de complete beschrijvingen van alle begrippen in dat begrippenkader.
+- C. De eenheid van beheer bestaat uit één begripsbeschrijving deel of verzameling daarvan.
 
 
 ### A. Begripsbeschrijving als eenheid van beheer
@@ -26,8 +26,8 @@ Elke wijziging op een individuele begripsbeschrijving heeft geen impact op de an
 
 ![](media/versiebeheer.begrippenkaderbeschrijving.svg)
 
-Bij versiebeheer op begrippenenkaderbeschrijvingniveau zitten alle gegevensobjecten die horen bij de beschrijving van een begrippenkader onder de beheerset van dat begrippenkader.
-Wanneer een begripsbeschrijving wijzigt is er sprake van een nieuwe versie van de begrippenkaderbeschrijving.
+Bij versiebeheer op begrippenenkaderniveau zitten alle gegevensobjecten die horen bij de beschrijving van een begrippenkader onder de beheerset van dat begrippenkader.
+Wanneer een begripsbeschrijving wijzigt is er sprake van een nieuwe versie van de begrippenkaderbeschrijvingbeheerset.
 
 ### C. Begripsbeschrijving deel als eenheid van beheer
 
