@@ -33,7 +33,7 @@ Wanneer een begripsbeschrijving wijzigt is er sprake van een nieuwe versie van d
 
 ![](media/versiebeheer.begripsbeschrijvingDeel.svg)
 
-Versiebeheer op een deel van de complete begripsbeschrijving gaat er van uit dat bepaalde gegevens over een begrip tezamen beheerd worden. Ieder begrip heeft zo meerdere, complementaire, beschrijvingen. Deze beschrijvingen kunnen conform Variant A individueel beheerd, of conform Variant B als verzameling beheerd worden.
+Versiebeheer op een deel van de complete begripsbeschrijving gaat er van uit dat bepaalde gegevens over een begrip tezamen beheerd worden, bijvoorbeeld harmonisatieregels of hierarchische relaties. Ieder begrip heeft zo mogelijk meerdere, complementaire, gegevensobjecten. Deze gegevensobjecten kunnen conform Variant A individueel, of conform Variant B als verzameling beheerd worden.
 
 ## Tijdcontext van datasets
 

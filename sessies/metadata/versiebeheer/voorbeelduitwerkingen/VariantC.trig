@@ -1,0 +1,51 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+
+<http://nlbegrip.nl/lex/doc/begrip/vco/1.0.0-snapshot-1> {
+    # Begrip
+    <http://nlbegrip.nl/synthesizer/id/begrip/vco> a skos:Concept;
+        rdfs:label "VCO"@nl;
+        skos:prefLabel "VCO"@nl;
+        skos:altLabel "Voltage Controlled Oscillator"@en;
+        skos:definition "Een VCO is een electronische geluidsbron waarbij de frequency van het geluid wordt gecontroleerd met een electrische spanning (voltage)"@nl;
+        rdfs:isDefinedBy <http://nlbegrip.nl/doc/begrip/vco/1.0.0-snapshot-1>;
+    .
+    # Begripsbeschrijvingdeel, Beheereenheid, provenance eenheid
+    <http://nlbegrip.nl/synthesizer/doc/begrip/vco> a dcat:Dataset, prov:Entity;
+        rdfs:label "Deelbeschrijving van het begrip «VCO» ";
+        rdfs:comment "Deze beschrijving is zowel een begripsbeschrijving deel, een beheereenheid als de vindplek van de meest actuele versie van deze begripsbeschrijving deel";
+        foaf:primaryTopic <http://nlbegrip.nl/synthesizer/id/begrip/vco>;
+    .
+    # Begripsbeschrijvingdeel versie
+    <http://nlbegrip.nl/doc/begrip/vco/1.0.0-snapshot-1> a dcat:Dataset;
+        rdfs:label "Versie 1.0.0 snapshot 1 van de Lexicale beschrijving van het begrip «VCO»";
+        dct:isVersionOf <http://nlbegrip.nl/synthesizer/doc/begrip/vco>;
+    .
+}
+<http://nlbegrip.nl/search/doc/begrip/vco/1.0.0-snapshot-1> {
+    # Begrip
+    <http://nlbegrip.nl/synthesizer/id/begrip/vco> a skos:Concept;
+        rdfs:label "VCO"@nl;
+        skos:hiddenlabel
+        "Voltage Oscillator",
+        "Controlled Oscillator",
+        "Electronic Signal Oscillator";
+        rdfs:isDefinedBy <http://nlbegrip.nl/lex/doc/begrip/vco/1.0.0-snapshot-1>;
+    .
+    # Begripsbeschrijvingdeel, Beheereenheid, provenance eenheid
+    <http://nlbegrip.nl/synthesizer/doc/begrip/vco> a dcat:Dataset, prov:Entity;
+        rdfs:label "Deelbeschrijving van het begrip «VCO» ";
+        rdfs:comment "Deze beschrijving is zowel een begripsbeschrijving deel, een beheereenheid als de vindplek van de meest actuele versie van deze begripsbeschrijving deel";
+        foaf:primaryTopic <http://nlbegrip.nl/synthesizer/id/begrip/vco>;
+    .
+    # Begripsbeschrijvingdeel versie
+    <http://nlbegrip.nl/doc/begrip/vco/1.0.0-snapshot-1> a dcat:Dataset;
+        rdfs:label "Versie 1.0.0 snapshot 1 van de Lexicale beschrijving van het begrip «VCO»";
+        dct:isVersionOf <http://nlbegrip.nl/synthesizer/doc/begrip/vco>;
+    .
+}
