@@ -1,5 +1,7 @@
 # Nederlands profiel voor stelselcatalogi
 
+**Dit is de oude werkrepository, de nieuwe beheerrepository is: <https://github.com/geonovum/NL-SBB/>**
+
 Deze repository is onderdeel van de activiteiten voor de PLDN Werkgroep Nederlands profiel voor stelselcatalogi.
 
 De werkversie van het profiel is te vinden op [https://profielstelselcatalogus.pldn.nl/](https://profielstelselcatalogus.pldn.nl/).
