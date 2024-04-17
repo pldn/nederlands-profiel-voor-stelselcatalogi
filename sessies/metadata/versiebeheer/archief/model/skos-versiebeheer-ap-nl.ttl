@@ -1,0 +1,89 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skosapnl: <http://nlbegrip.nl/def/skosapnl#> .
+@prefix isothes: <http://purl.org/iso25964/skos-thes#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+
+skosapnl:Begrip
+    sh:property [
+        sh:name "gedefinieerd in"@nl;
+        sh:path rdfs:isDefinedBy;
+        sh:description "de dataset waar dit begrip gedefinieerd wordt"@nl;
+        sh:class owl:Ontology;
+    ] , [
+        sh:name "is onderwerp van"@nl;
+        sh:path [sh:inversePath foaf:primaryTopic];
+        sh:minCount 1;
+        sh:node skosapnl:Begripsbeschrijving;
+    ];
+.
+
+skosapnl:Dataset a sh:NodeShape;
+  rdfs:label "Dataset"@nl;
+  sh:targetClass dcat:Dataset;
+  sh:property
+    skosapnl:_beschrijving ,
+    skosapnl:_uitgever ,
+    skosapnl:_titel ,
+    skosapnl:_versie ,
+    skosapnl:_isVersieVan ,
+    skosapnl:_maaktGebruikVan;
+.
+
+skosapnl:Begripsbeschrijving a sh:NodeShape;
+  rdfs:label "Begripsbeschrijving"@nl;
+  sh:property [
+      sh:name "onderwerp"@nl;
+      sh:description "Het begrip waar deze beschrijving over gaat."@nl;
+      sh:path foaf:primaryTopic;
+      sh:class skos:Concept;
+      sh:node skosapnl:Begrip 
+    ] ,
+    skosapnl:_beschrijving ,
+    skosapnl:_uitgever ,
+    skosapnl:_titel ,
+    skosapnl:_versie ,
+    skosapnl:_isVersieVan;
+ .
+
+########################################################
+
+skosapnl:_beschrijving a sh:PropertyShape;
+    sh:name "beschrijving"@nl;
+    sh:path dct:description;
+    sh:description "een beschrijving van de dataset"@nl .
+
+skosapnl:_uitgever a sh:PropertyShape;
+    sh:name "uitgever"@nl;
+    sh:path dct:publisher;
+    sh:description "de organisatie die de dataset beschikbaar heeft gesteld"@nl .
+
+skosapnl:_titel a sh:PropertyShape;
+    sh:name "titel"@nl;
+    sh:path dct:title;
+    sh:description "naam van de dataset"@nl .
+
+skosapnl:_versie a sh:PropertyShape;
+    sh:name "versie"@nl;
+    sh:description "versienummer van de asset"@nl;
+    sh:path owl:versionInfo .
+
+skosapnl:_isVersieVan a sh:PropertyShape;
+    sh:name "is versie van"@nl;
+    sh:path dct:isVersionOf;
+    sh:description "een asset waar de beschreven asset een versie van is"@nl .
+
+skosapnl:_maaktGebruikVan a sh:PropertyShape;
+    sh:name "maakt gebruik van"@nl;
+    sh:path owl:imports;
+    sh:description "Een dataset die logisch als onderdeel van de beschreven asset wordt beschouwd"@nl .

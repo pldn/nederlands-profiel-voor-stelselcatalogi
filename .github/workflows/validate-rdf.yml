@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - '**.ttl'
+      - '**.trig'
   workflow_dispatch:
 
 jobs:
