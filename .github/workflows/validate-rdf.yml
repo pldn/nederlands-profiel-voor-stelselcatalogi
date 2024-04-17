@@ -5,6 +5,7 @@ on:
     paths:
       - '**.ttl'
       - '**.trig'
+  workflow_dispatch:
 
 jobs:
   rdf-syntax-check:
